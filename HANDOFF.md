@@ -20,6 +20,7 @@ validation:
   - clean GitHub clone at 5faead9 + validator + 19 tests PASS
   - clean GitHub clone at 7e2c41f + validator + 20 tests PASS
   - clean GitHub clone at 6cc662d + validator + 21 tests PASS
+  - clean GitHub clone at cd3d1f6 + validator + 22 tests PASS
 remote: https://github.com/Hangsau/psychology-knowledge-atlas
 next_gate: adjudicate ANZSRC field groups 5203, 5204 and 5205 in order, then add a genuinely global or multi-region reference system and an explicit Indigenous-psychology axis before knowledge claims
 ```
