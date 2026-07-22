@@ -15,6 +15,7 @@ validation:
   - 19 foundation and P1 system tests PASS
   - git diff whitespace gate PASS
   - APA CoA C-5 P snapshot: 11/11 candidates adjudicated
+  - clean GitHub clone at 5faead9 + validator + 19 tests PASS
 remote: https://github.com/Hangsau/psychology-knowledge-atlas
 next_gate: add complementary international and general-psychology reference systems; do not start knowledge claims until P1 coverage axes are explicitly bounded
 ```
