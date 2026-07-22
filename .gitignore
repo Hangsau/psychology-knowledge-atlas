@@ -1,0 +1,11 @@
+.research-cache/
+.private-sources/
+.test-work/
+.locks/
+__pycache__/
+*.py[cod]
+*.pdf
+*.epub
+*.mobi
+*.sqlite
+views/generated/

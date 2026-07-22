@@ -1,0 +1,21 @@
+{
+  "id": "d1-d13",
+  "semantic_version": "1.0.0",
+  "status": "legacy_seed_unverified",
+  "publishable": false,
+  "domains": [
+    {"id": "D1", "name_zh": "存在與意義", "name_en": "Existence & Meaning"},
+    {"id": "D2", "name_zh": "自我與認同", "name_en": "Self & Identity"},
+    {"id": "D3", "name_zh": "愛與親密", "name_en": "Love & Intimacy"},
+    {"id": "D4", "name_zh": "家庭與傳承", "name_en": "Family & Legacy"},
+    {"id": "D5", "name_zh": "群體·社會·公義", "name_en": "Community, Society & Justice"},
+    {"id": "D6", "name_zh": "情緒與內在生活", "name_en": "Emotion & Inner Life"},
+    {"id": "D7", "name_zh": "善惡·良心·品格", "name_en": "Good, Evil, Conscience & Character"},
+    {"id": "D8", "name_zh": "工作·成就·召喚", "name_en": "Work, Achievement & Calling"},
+    {"id": "D9", "name_zh": "苦難·疾病·身體", "name_en": "Suffering, Illness & Body"},
+    {"id": "D10", "name_zh": "無常·老·死·失去", "name_en": "Impermanence, Aging, Death & Loss"},
+    {"id": "D11", "name_zh": "自由·命運·改變", "name_en": "Freedom, Fate & Change"},
+    {"id": "D12", "name_zh": "信仰·神聖·超越", "name_en": "Faith, Sacred & Transcendence"},
+    {"id": "D13", "name_zh": "安頓·修復·平安", "name_en": "Settling, Repair & Peace"}
+  ]
+}

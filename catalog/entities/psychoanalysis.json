@@ -1,0 +1,13 @@
+{
+  "id": "psychoanalysis",
+  "record_type": "entity",
+  "entity_type": "tradition",
+  "name": "精神分析",
+  "aliases": ["psychoanalytic tradition"],
+  "status": "unverified",
+  "publishable": false,
+  "provenance": "legacy_seed",
+  "source_ids": [],
+  "tags": [],
+  "notes": "Identity-only discovery seed; entity type must be re-adjudicated from reference systems."
+}

@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Hangsau/psychology-knowledge-atlas/schemas/vocabulary.schema.json",
+  "title": "Controlled vocabulary",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "version", "axis", "terms"],
+  "properties": {
+    "id": {"type": "string"},
+    "version": {"type": "string"},
+    "axis": {"type": "string"},
+    "terms": {"type": "array", "items": {"type": "object"}}
+  }
+}

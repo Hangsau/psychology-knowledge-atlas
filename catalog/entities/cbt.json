@@ -1,0 +1,13 @@
+{
+  "id": "cbt",
+  "record_type": "entity",
+  "entity_type": "therapy",
+  "name": "認知行為治療",
+  "aliases": ["cognitive behavioral therapy", "cognitive behaviour therapy"],
+  "status": "unverified",
+  "publishable": false,
+  "provenance": "legacy_seed",
+  "source_ids": [],
+  "tags": [],
+  "notes": "Identity-only discovery seed from the former pilot list."
+}

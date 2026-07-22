@@ -1,0 +1,22 @@
+{
+  "id": "entity-types",
+  "version": "0.1.0",
+  "axis": "entity_type",
+  "terms": [
+    {"id": "tradition", "label_zh": "傳統"},
+    {"id": "school", "label_zh": "學派"},
+    {"id": "paradigm", "label_zh": "典範"},
+    {"id": "theory", "label_zh": "理論"},
+    {"id": "model", "label_zh": "模型"},
+    {"id": "therapy", "label_zh": "治療取向"},
+    {"id": "subfield", "label_zh": "次領域"},
+    {"id": "method", "label_zh": "方法"},
+    {"id": "construct", "label_zh": "構念"},
+    {"id": "person", "label_zh": "人物"},
+    {"id": "work", "label_zh": "著作"},
+    {"id": "institution", "label_zh": "機構"},
+    {"id": "event", "label_zh": "事件"},
+    {"id": "finding", "label_zh": "研究發現"},
+    {"id": "controversy", "label_zh": "爭議"}
+  ]
+}

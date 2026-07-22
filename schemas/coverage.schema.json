@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Hangsau/psychology-knowledge-atlas/schemas/coverage.schema.json",
+  "title": "Reference-system coverage decision",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["reference_system_id", "candidate_id", "decision", "reason"],
+  "properties": {
+    "reference_system_id": {"type": "string"},
+    "candidate_id": {"type": "string"},
+    "decision": {"enum": ["included", "merged", "excluded", "pending"]},
+    "reason": {"type": "string", "minLength": 1},
+    "target_entity_id": {"type": "string"}
+  }
+}

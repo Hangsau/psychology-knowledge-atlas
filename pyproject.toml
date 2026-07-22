@@ -1,0 +1,8 @@
+[project]
+name = "psychology-knowledge-atlas"
+version = "0.1.0"
+requires-python = ">=3.12"
+description = "Evidence-first canonical psychology knowledge atlas"
+
+[tool.unittest]
+start-directory = "tests"

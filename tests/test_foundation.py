@@ -1,0 +1,203 @@
+from __future__ import annotations
+
+import json
+import multiprocessing
+import shutil
+import sys
+import time
+import unittest
+import uuid
+from pathlib import Path
+
+
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / "tools"))
+
+from build_views import build
+from store import LockTimeoutError, atomic_write_json, record_lock
+from validate import MAX_RECORD_BYTES, migrate_legacy_identity, validate_repository
+
+
+def _hold_lock(root: str, record_id: str, ready: multiprocessing.Queue) -> None:
+    with record_lock(Path(root), record_id, timeout=2):
+        ready.put("locked")
+        time.sleep(0.5)
+
+
+def _try_lock(root: str, record_id: str, result: multiprocessing.Queue) -> None:
+    try:
+        with record_lock(Path(root), record_id, timeout=0.15):
+            result.put("acquired")
+    except LockTimeoutError:
+        result.put("timeout")
+
+
+def _write_record(root: str, record_id: str, result: multiprocessing.Queue) -> None:
+    record = {
+        "id": record_id,
+        "record_type": "entity",
+        "entity_type": "theory",
+        "name": record_id,
+        "aliases": [],
+        "status": "unverified",
+        "publishable": False,
+        "provenance": "manual",
+    }
+    atomic_write_json(Path(root), Path("catalog/entities") / f"{record_id}.json", record)
+    result.put(record_id)
+
+
+class FoundationTests(unittest.TestCase):
+    def setUp(self) -> None:
+        self.work = ROOT / ".test-work" / uuid.uuid4().hex
+        self.work.mkdir(parents=True)
+        for name in ("schemas", "catalog", "library", "knowledge", "vocabularies", "crosswalks", "views"):
+            shutil.copytree(ROOT / name, self.work / name)
+
+    def tearDown(self) -> None:
+        shutil.rmtree(self.work, ignore_errors=True)
+
+    def write_json(self, relative: str, data: dict) -> Path:
+        path = self.work / relative
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(json.dumps(data, ensure_ascii=False), encoding="utf-8")
+        return path
+
+    def valid_entity(self, record_id: str) -> dict:
+        return {
+            "id": record_id,
+            "record_type": "entity",
+            "entity_type": "theory",
+            "name": record_id,
+            "aliases": [],
+            "status": "unverified",
+            "publishable": False,
+            "provenance": "manual",
+        }
+
+    def test_repository_baseline_passes(self) -> None:
+        self.assertEqual(validate_repository(ROOT), [])
+
+    def test_empty_and_partial_json_are_rejected(self) -> None:
+        empty = self.work / "catalog/entities/empty.json"
+        empty.write_text("", encoding="utf-8")
+        partial = self.work / "catalog/entities/partial.json"
+        partial.write_text('{"id":"partial"', encoding="utf-8")
+        errors = validate_repository(self.work)
+        self.assertTrue(any("empty file" in error for error in errors))
+        self.assertTrue(any("invalid JSON" in error for error in errors))
+
+    def test_large_record_is_rejected(self) -> None:
+        path = self.work / "catalog/entities/huge.json"
+        path.write_text(" " * (MAX_RECORD_BYTES + 1), encoding="utf-8")
+        self.assertTrue(any("exceeds" in error for error in validate_repository(self.work)))
+
+    def test_unknown_field_and_duplicate_id_are_rejected(self) -> None:
+        record = self.valid_entity("duplicate")
+        record["legacy_verdict"] = "corroborated"
+        self.write_json("catalog/entities/duplicate.json", record)
+        source = {
+            "id": "duplicate", "record_type": "source", "title": "x", "identifiers": {},
+            "access_status": "metadata_only", "status": "unverified", "publishable": False,
+            "provenance": "manual"
+        }
+        self.write_json("library/sources/duplicate.json", source)
+        errors = validate_repository(self.work)
+        self.assertTrue(any("unknown fields" in error for error in errors))
+        self.assertTrue(any("duplicate id" in error for error in errors))
+
+    def test_orphan_and_compound_claim_are_rejected(self) -> None:
+        claim = {
+            "id": "bad-claim", "record_type": "claim", "subject_id": "missing",
+            "statement": "A 發生；B 也發生", "claim_type": "chronology", "evidence_ids": ["missing-evidence"],
+            "status": "unverified", "publishable": False, "provenance": "manual"
+        }
+        self.write_json("knowledge/claims/bad-claim.json", claim)
+        errors = validate_repository(self.work)
+        self.assertTrue(any("orphan subject_id" in error for error in errors))
+        self.assertTrue(any("compound claim" in error for error in errors))
+
+    def test_metadata_only_cannot_support_publishable_evidence(self) -> None:
+        source = {
+            "id": "meta-source", "record_type": "source", "title": "Metadata", "identifiers": {},
+            "access_status": "metadata_only", "status": "retrieved", "publishable": False,
+            "provenance": "manual"
+        }
+        claim = {
+            "id": "publish-claim", "record_type": "claim", "subject_id": "cbt",
+            "statement": "A single testable statement", "claim_type": "identity", "evidence_ids": ["meta-evidence"],
+            "status": "verified", "publishable": True, "provenance": "manual"
+        }
+        evidence = {
+            "id": "meta-evidence", "record_type": "evidence", "claim_id": "publish-claim",
+            "source_id": "meta-source", "locator": "metadata record", "evidence_level": "metadata_only",
+            "status": "verified", "publishable": True, "provenance": "manual"
+        }
+        self.write_json("library/sources/meta-source.json", source)
+        self.write_json("knowledge/claims/publish-claim.json", claim)
+        self.write_json("knowledge/evidence/meta-evidence.json", evidence)
+        errors = validate_repository(self.work)
+        self.assertTrue(any("cannot support publishable" in error for error in errors))
+        self.assertTrue(any("metadata/abstract" in error for error in errors))
+
+    def test_legacy_migration_is_identity_only(self) -> None:
+        migrated = migrate_legacy_identity({"id": "seed", "name": "Seed", "entity_type": "school"})
+        self.assertEqual(migrated["status"], "unverified")
+        self.assertFalse(migrated["publishable"])
+        with self.assertRaises(ValueError):
+            migrate_legacy_identity({"id": "seed", "name": "Seed", "entity_type": "school", "verdict": "corroborated"})
+
+    def test_interrupted_write_preserves_existing_record(self) -> None:
+        record = self.valid_entity("atomic-test")
+        target = atomic_write_json(self.work, Path("catalog/entities/atomic-test.json"), record)
+        before = target.read_bytes()
+        broken = dict(record)
+        broken["name"] = {"not-json-serializable"}
+        with self.assertRaises(TypeError):
+            atomic_write_json(self.work, Path("catalog/entities/atomic-test.json"), broken)
+        self.assertEqual(target.read_bytes(), before)
+
+    def test_same_record_lock_blocks_second_process(self) -> None:
+        ready: multiprocessing.Queue = multiprocessing.Queue()
+        result: multiprocessing.Queue = multiprocessing.Queue()
+        first = multiprocessing.Process(target=_hold_lock, args=(str(self.work), "shared", ready))
+        first.start()
+        self.assertEqual(ready.get(timeout=2), "locked")
+        second = multiprocessing.Process(target=_try_lock, args=(str(self.work), "shared", result))
+        second.start()
+        second.join(timeout=3)
+        first.join(timeout=3)
+        self.assertEqual(result.get(timeout=1), "timeout")
+        self.assertEqual(second.exitcode, 0)
+        self.assertEqual(first.exitcode, 0)
+
+    def test_different_records_can_write_concurrently(self) -> None:
+        result: multiprocessing.Queue = multiprocessing.Queue()
+        processes = [multiprocessing.Process(target=_write_record, args=(str(self.work), rid, result)) for rid in ("alpha", "beta")]
+        for process in processes:
+            process.start()
+        for process in processes:
+            process.join(timeout=3)
+            self.assertEqual(process.exitcode, 0)
+        self.assertEqual({result.get(timeout=1), result.get(timeout=1)}, {"alpha", "beta"})
+
+    def test_generated_view_is_reproducible(self) -> None:
+        first = build(self.work).read_bytes()
+        shutil.rmtree(self.work / "views/generated")
+        second = build(self.work).read_bytes()
+        self.assertEqual(first, second)
+
+    def test_private_and_publication_files_are_ignored(self) -> None:
+        ignore = (ROOT / ".gitignore").read_text(encoding="utf-8")
+        for pattern in (".private-sources/", "*.pdf", "*.epub", "*.mobi"):
+            self.assertIn(pattern, ignore)
+
+    def test_known_error_regression_fixture_is_not_canonical_knowledge(self) -> None:
+        fixture = json.loads((ROOT / "tests/fixtures/legacy-known-errors.json").read_text(encoding="utf-8"))
+        self.assertGreaterEqual(len(fixture["cases"]), 4)
+        self.assertTrue(all("expected" in case for case in fixture["cases"]))
+
+
+if __name__ == "__main__":
+    multiprocessing.freeze_support()
+    unittest.main()

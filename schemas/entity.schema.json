@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Hangsau/psychology-knowledge-atlas/schemas/entity.schema.json",
+  "title": "Psychology entity",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "record_type", "entity_type", "name", "aliases", "status", "publishable", "provenance"],
+  "properties": {
+    "id": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"},
+    "record_type": {"const": "entity"},
+    "entity_type": {"enum": ["tradition", "school", "paradigm", "theory", "model", "therapy", "subfield", "method", "construct", "person", "work", "institution", "event", "finding", "controversy"]},
+    "name": {"type": "string", "minLength": 1},
+    "aliases": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "status": {"enum": ["unverified", "retrieved", "verified", "disputed", "excluded"]},
+    "publishable": {"type": "boolean"},
+    "provenance": {"enum": ["legacy_seed", "reference_system", "source_derived", "manual"]},
+    "source_ids": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "tags": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "notes": {"type": "string"}
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Hangsau/psychology-knowledge-atlas/schemas/claim.schema.json",
+  "title": "Atomic knowledge claim",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "record_type", "subject_id", "statement", "claim_type", "evidence_ids", "status", "publishable", "provenance"],
+  "properties": {
+    "id": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"},
+    "record_type": {"const": "claim"},
+    "subject_id": {"type": "string"},
+    "statement": {"type": "string", "minLength": 1},
+    "claim_type": {"enum": ["identity", "chronology", "attribution", "definition", "mechanism", "finding", "bibliographic", "critique", "scope"]},
+    "evidence_ids": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "status": {"enum": ["unverified", "retrieved", "verified", "disputed", "excluded"]},
+    "publishable": {"type": "boolean"},
+    "provenance": {"enum": ["legacy_seed", "reference_system", "source_derived", "manual"]},
+    "scope_note": {"type": "string"}
+  }
+}

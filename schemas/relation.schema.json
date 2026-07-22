@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Hangsau/psychology-knowledge-atlas/schemas/relation.schema.json",
+  "title": "Evidence-backed relation",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "record_type", "subject_id", "object_id", "relation_type", "evidence_ids", "status", "publishable", "provenance"],
+  "properties": {
+    "id": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"},
+    "record_type": {"const": "relation"},
+    "subject_id": {"type": "string"},
+    "object_id": {"type": "string"},
+    "relation_type": {"enum": ["alias_of", "parent_of", "branch_of", "influenced", "opposed", "explains", "contextualizes", "compares_with", "contrasts_with", "empirical_research_on", "clinical_application", "appropriation_risk", "not_applicable"]},
+    "evidence_ids": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "status": {"enum": ["unverified", "retrieved", "verified", "disputed", "excluded"]},
+    "publishable": {"type": "boolean"},
+    "provenance": {"enum": ["legacy_seed", "reference_system", "source_derived", "manual"]},
+    "scope_note": {"type": "string"}
+  }
+}

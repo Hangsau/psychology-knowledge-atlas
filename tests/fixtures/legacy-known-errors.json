@@ -1,0 +1,9 @@
+{
+  "purpose": "Regression seeds only; entries are not knowledge claims.",
+  "cases": [
+    {"id": "fake-book-title", "input": "The Power Is in the Pair", "expected": "reject-unverified-bibliography"},
+    {"id": "wrong-axline-degree", "input": "Virginia Axline earned a doctorate at Ohio State University", "expected": "reject-known-error"},
+    {"id": "wrong-ferrer-dates", "input": "Jorge Ferrer (1953-2022)", "expected": "reject-known-error"},
+    {"id": "legacy-confidence", "input": "reviewed and green therefore verified", "expected": "reject-legacy-verdict"}
+  ]
+}

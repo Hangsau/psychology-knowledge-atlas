@@ -1,0 +1,13 @@
+{
+  "id": "indigenous-psychology",
+  "record_type": "entity",
+  "entity_type": "paradigm",
+  "name": "本土心理學",
+  "aliases": ["indigenous psychologies"],
+  "status": "unverified",
+  "publishable": false,
+  "provenance": "legacy_seed",
+  "source_ids": [],
+  "tags": [],
+  "notes": "Identity-only discovery seed. The unfinished legacy section-3a work was not imported."
+}

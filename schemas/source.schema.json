@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Hangsau/psychology-knowledge-atlas/schemas/source.schema.json",
+  "title": "Research source",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "record_type", "title", "identifiers", "access_status", "status", "publishable", "provenance"],
+  "properties": {
+    "id": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"},
+    "record_type": {"const": "source"},
+    "title": {"type": "string", "minLength": 1},
+    "identifiers": {"type": "object"},
+    "access_status": {"enum": ["open_fulltext", "public_domain_fulltext", "repository_manuscript", "preprint", "publicly_readable_license_unclear", "privately_observed_unredistributable", "abstract_only", "metadata_only", "paywalled_unread", "unavailable"]},
+    "status": {"enum": ["unverified", "retrieved", "verified", "disputed", "excluded"]},
+    "publishable": {"type": "boolean"},
+    "provenance": {"enum": ["legacy_seed", "reference_system", "source_derived", "manual"]},
+    "authors": {"type": "array", "items": {"type": "string"}},
+    "issued": {"type": "string"},
+    "url": {"type": "string"},
+    "version_note": {"type": "string"}
+  }
+}
