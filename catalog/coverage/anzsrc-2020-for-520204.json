@@ -1,6 +1,7 @@
 {
   "id": "anzsrc-2020-for-520204", "record_type": "coverage", "reference_system_id": "anzsrc-2020-for-psychology-fields",
-  "candidate_id": "anzsrc-520204", "candidate_label": "Evolutionary psychological studies", "decision": "pending",
-  "reason": "Recorded from the complete ANZSRC field inventory; entity type and cross-system identity remain to be adjudicated in the 5202 batch.",
+  "candidate_id": "anzsrc-520204", "candidate_label": "Evolutionary psychological studies", "decision": "included",
+  "reason": "ANZSRC 2020 FoR code 520204 is a substantive field; the source label is preserved without asserting equivalence to other evolutionary-psychology taxonomies.",
+  "target_entity_id": "evolutionary-psychological-studies",
   "status": "retrieved", "publishable": false, "provenance": "reference_system"
 }

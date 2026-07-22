@@ -1,6 +1,7 @@
 {
   "id": "anzsrc-2020-for-520205", "record_type": "coverage", "reference_system_id": "anzsrc-2020-for-psychology-fields",
-  "candidate_id": "anzsrc-520205", "candidate_label": "Psychopharmacology", "decision": "pending",
-  "reason": "Recorded from the complete ANZSRC field inventory; entity type and cross-system identity remain to be adjudicated in the 5202 batch.",
+  "candidate_id": "anzsrc-520205", "candidate_label": "Psychopharmacology", "decision": "included",
+  "reason": "ANZSRC 2020 FoR code 520205 is a substantive field under Biological psychology.",
+  "target_entity_id": "psychopharmacology",
   "status": "retrieved", "publishable": false, "provenance": "reference_system"
 }

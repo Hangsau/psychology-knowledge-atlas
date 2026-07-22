@@ -1,6 +1,7 @@
 {
   "id": "anzsrc-2020-for-520203", "record_type": "coverage", "reference_system_id": "anzsrc-2020-for-psychology-fields",
-  "candidate_id": "anzsrc-520203", "candidate_label": "Cognitive neuroscience", "decision": "pending",
-  "reason": "Recorded from the complete ANZSRC field inventory; entity type and cross-system identity remain to be adjudicated in the 5202 batch.",
+  "candidate_id": "anzsrc-520203", "candidate_label": "Cognitive neuroscience", "decision": "included",
+  "reason": "ANZSRC 2020 FoR code 520203 is a substantive field under Biological psychology.",
+  "target_entity_id": "cognitive-neuroscience",
   "status": "retrieved", "publishable": false, "provenance": "reference_system"
 }

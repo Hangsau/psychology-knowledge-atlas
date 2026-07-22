@@ -1,0 +1,12 @@
+{
+  "id": "behavioural-neuroscience",
+  "record_type": "entity",
+  "entity_type": "subfield",
+  "name": "Behavioural neuroscience",
+  "aliases": ["behavioral neuroscience"],
+  "status": "retrieved",
+  "publishable": false,
+  "provenance": "reference_system",
+  "source_ids": ["abs-anzsrc-2020-for-data-cube"],
+  "tags": []
+}

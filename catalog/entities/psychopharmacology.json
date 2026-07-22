@@ -1,0 +1,12 @@
+{
+  "id": "psychopharmacology",
+  "record_type": "entity",
+  "entity_type": "subfield",
+  "name": "Psychopharmacology",
+  "aliases": [],
+  "status": "retrieved",
+  "publishable": false,
+  "provenance": "reference_system",
+  "source_ids": ["abs-anzsrc-2020-for-data-cube"],
+  "tags": []
+}
