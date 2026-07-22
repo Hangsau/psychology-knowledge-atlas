@@ -17,6 +17,7 @@ validation:
   - APA CoA C-5 P snapshot: 11/11 candidates adjudicated
   - ANZSRC 2020 FoR Division 52 group slice: 6/6 candidates adjudicated
   - clean GitHub clone at 5faead9 + validator + 19 tests PASS
+  - clean GitHub clone at 7e2c41f + validator + 20 tests PASS
 remote: https://github.com/Hangsau/psychology-knowledge-atlas
 next_gate: expand ANZSRC from six groups to its field-level terms, then add a genuinely global or multi-region reference system and an explicit Indigenous-psychology axis before knowledge claims
 ```
