@@ -28,6 +28,8 @@ tests/                   邊界、schema、參照、併發、安全測試
 | 新增參考系 | `schemas/reference-system.schema.json` + `schemas/coverage.schema.json`；候選集合必須與裁決集合完全一致 |
 | 新增來源 | `schemas/source.schema.json`；取得狀態不等於證據品質 |
 | 新增主張／證據 | claim + evidence schema；locator 與 source access gate |
+| 新增命名效應（後續） | `PLAN.md` 的 P1-E / P2-E；schema 與 bounded universe 尚未啟動前，只能列為候選，不得直接建立 claim |
+| 新增跨層機制（後續） | `PLAN.md` 的 P3-M；先驗證 relationship evidence linkage，每一跨層跳接都必須可追溯到 claim 與 source |
 | 對接宗教庫 | `crosswalks/d1-d13.json`；第一階段不改 religions-history |
 | 產文章／索引 | 只從 canonical records 生成到 `views/generated/` |
 

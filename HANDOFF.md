@@ -37,6 +37,15 @@ next_gate: adjudicate ANZSRC field groups 5203, 5204 and 5205 in order, then add
 - Coverage completeness is now executable: every declared candidate must have exactly one `included`, `merged`, `excluded`, or `pending` decision, and included/merged targets must resolve.
 - Generated `views/generated/coverage-report.json` is disposable and reproducible from canonical records.
 
+## APPROVED FUTURE WORK（QUEUED, NOT ACTIVE）
+
+- P1-E：建立命名效應／偏誤／現象的 schema 與 bounded candidate universe；名稱不等於證據。
+- P2-E：建立來源庫與證據路由，先以吊橋效應、達克效應、破窗效應測試不同證據型態。
+- P3-M：建立 physical → chemical / biological → cognitive / behavioral → social / cultural 的受控機制層級，並先驗證 relationship evidence linkage。
+- P3-M 首個建議 pilot：光照、晝夜節律／褪黑激素、睡眠、認知情緒、行為與社會作息的跨層鏈。
+- P4-E/M：產生 Named Effect Card、Popular Claim vs Evidence、Replication / Controversy 與 Mechanism Ladder 視圖。
+- 啟動條件：必須先完成 `ACTIVE WORK` 的 `next_gate`；排入 roadmap 不代表可提前建立 claims。
+
 ## Legacy provenance
 
 - 舊 repo：`C:\claudehome\projects\psychology-schools`

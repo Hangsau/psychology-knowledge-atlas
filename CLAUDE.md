@@ -11,6 +11,12 @@
 3. 修改 canonical records 前執行 `python tools/validate.py`。
 4. 完成後執行 validator 與完整 unittest。
 
+## 計畫與執行節奏
+
+- 若工作已列入 `PLAN.md`／`HANDOFF.md`，或已在對話中核准，使用者說「開始／繼續」後直接執行，不重跑 `plan-check`。
+- 只有使用者明確要求、出現未核准的重大跨階段擴張，或涉及高風險／不可逆操作時，才執行完整 `plan-check`。
+- 已排入後續 roadmap 不等於立即開工；必須遵守 `PLAN.md` 的 gate 順序。
+
 ## 強制規則
 
 - LLM 不得作 `source_id`，也不得自行把 claim 判為已證實。
