@@ -4,7 +4,7 @@
 
 ```yaml
 phase: P0-foundation
-status: in_progress
+status: validated
 started_at: 2026-07-22
 targets:
   - schemas
@@ -12,7 +12,13 @@ targets:
   - atomic store and locking
   - legacy identity and regression seeds
   - workspace registry migration
-next_gate: validator and full unittest pass, then create/push GitHub repo
+validation:
+  - canonical validator baseline PASS
+  - 13 foundation system tests PASS
+  - git diff whitespace gate PASS
+  - private/publication ignore gate PASS
+remote: https://github.com/Hangsau/psychology-knowledge-atlas
+next_gate: define authoritative reference-system inventory before adding knowledge claims
 ```
 
 ## Legacy provenance
