@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Hangsau/psychology-knowledge-atlas/schemas/reference-system.schema.json",
+  "title": "Authoritative reference system",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "record_type", "title", "authority", "scope", "version", "retrieved_at", "source_ids", "candidate_ids", "status", "publishable", "provenance"],
+  "properties": {
+    "id": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"},
+    "record_type": {"const": "reference_system"},
+    "title": {"type": "string", "minLength": 1},
+    "authority": {"type": "string", "minLength": 1},
+    "scope": {"type": "string", "minLength": 1},
+    "version": {"type": "string", "minLength": 1},
+    "retrieved_at": {"type": "string", "format": "date"},
+    "source_ids": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "candidate_ids": {"type": "array", "items": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"}, "uniqueItems": true},
+    "status": {"enum": ["unverified", "retrieved", "verified", "disputed", "excluded"]},
+    "publishable": {"type": "boolean"},
+    "provenance": {"enum": ["legacy_seed", "reference_system", "source_derived", "manual"]},
+    "notes": {"type": "string"}
+  }
+}

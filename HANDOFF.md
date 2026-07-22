@@ -3,24 +3,28 @@
 ## ACTIVE WORK
 
 ```yaml
-phase: P0-foundation
+phase: P1-universe
 status: validated
 started_at: 2026-07-22
 targets:
-  - schemas
-  - validator
-  - atomic store and locking
-  - legacy identity and regression seeds
-  - workspace registry migration
+  - reference-system and coverage contracts
+  - first bounded authoritative inventory
+  - deterministic coverage report
 validation:
   - canonical validator baseline PASS
-  - 13 foundation system tests PASS
+  - 19 foundation and P1 system tests PASS
   - git diff whitespace gate PASS
-  - private/publication ignore gate PASS
-  - clean GitHub clone + 13 tests PASS
+  - APA CoA C-5 P snapshot: 11/11 candidates adjudicated
 remote: https://github.com/Hangsau/psychology-knowledge-atlas
-next_gate: define authoritative reference-system inventory before adding knowledge claims
+next_gate: add complementary international and general-psychology reference systems; do not start knowledge claims until P1 coverage axes are explicitly bounded
 ```
+
+## P1 progress
+
+- `apa-coa-postdoctoral-specialty-practice-areas` is the first completed reference-system slice: 11/11 official candidates are recorded and mapped to non-publishable `subfield` identities.
+- Its scope is deliberately narrow: United States health-service psychology postdoctoral specialty accreditation. It is not evidence for a global or exhaustive psychology taxonomy.
+- Coverage completeness is now executable: every declared candidate must have exactly one `included`, `merged`, `excluded`, or `pending` decision, and included/merged targets must resolve.
+- Generated `views/generated/coverage-report.json` is disposable and reproducible from canonical records.
 
 ## Legacy provenance
 
@@ -31,4 +35,4 @@ next_gate: define authoritative reference-system inventory before adding knowled
 
 ## 發布狀態
 
-`evidence_release: false`。目前只有未驗證 legacy identity seeds，沒有可發布知識 claim。
+`evidence_release: false`。目前有未驗證 legacy identity seeds 與一個已擷取的 reference-system identity slice，沒有可發布知識 claim。

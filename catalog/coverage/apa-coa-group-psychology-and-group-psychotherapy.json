@@ -1,0 +1,13 @@
+{
+  "id": "apa-coa-group-psychology-and-group-psychotherapy",
+  "record_type": "coverage",
+  "reference_system_id": "apa-coa-postdoctoral-specialty-practice-areas",
+  "candidate_id": "group-psychology-and-group-psychotherapy",
+  "candidate_label": "Group Psychology and Group Psychotherapy",
+  "decision": "included",
+  "reason": "Explicitly listed in APA CoA Implementing Regulation C-5 P as currently meeting the provisions for a recognized specialty practice area; the compound source label is preserved without asserting conceptual identity.",
+  "target_entity_id": "group-psychology-and-group-psychotherapy",
+  "status": "retrieved",
+  "publishable": false,
+  "provenance": "reference_system"
+}

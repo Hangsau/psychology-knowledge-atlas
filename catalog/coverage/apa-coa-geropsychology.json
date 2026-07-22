@@ -1,0 +1,13 @@
+{
+  "id": "apa-coa-geropsychology",
+  "record_type": "coverage",
+  "reference_system_id": "apa-coa-postdoctoral-specialty-practice-areas",
+  "candidate_id": "geropsychology",
+  "candidate_label": "Geropsychology",
+  "decision": "included",
+  "reason": "Explicitly listed in APA CoA Implementing Regulation C-5 P as currently meeting the provisions for a recognized specialty practice area.",
+  "target_entity_id": "geropsychology",
+  "status": "retrieved",
+  "publishable": false,
+  "provenance": "reference_system"
+}

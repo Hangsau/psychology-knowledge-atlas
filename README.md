@@ -21,4 +21,4 @@ python tools\validate.py
 python -m unittest discover -s tests -v
 ```
 
-目前階段是 foundation：schema、validator、legacy seeds 與安全測試已建立；尚未開始四類 pilot 的實質來源研究，也尚未對外發布 evidence-verified 內容。
+目前階段是 P1 universe：foundation 已驗收，第一個 APA CoA 專業領域參考系已完成 11/11 候選裁決。這只是美國健康服務心理學認證的一個窄切片；仍須加入互補的國際與一般心理學參考系，尚未開始四類 pilot 的實質 claims 研究，也尚未對外發布 evidence-verified 內容。

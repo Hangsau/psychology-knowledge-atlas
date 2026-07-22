@@ -1,0 +1,13 @@
+{
+  "id": "apa-coa-rehabilitation-psychology",
+  "record_type": "coverage",
+  "reference_system_id": "apa-coa-postdoctoral-specialty-practice-areas",
+  "candidate_id": "rehabilitation-psychology",
+  "candidate_label": "Rehabilitation Psychology",
+  "decision": "included",
+  "reason": "Explicitly listed in APA CoA Implementing Regulation C-5 P as currently meeting the provisions for a recognized specialty practice area.",
+  "target_entity_id": "rehabilitation-psychology",
+  "status": "retrieved",
+  "publishable": false,
+  "provenance": "reference_system"
+}

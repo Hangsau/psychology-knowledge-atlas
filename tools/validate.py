@@ -7,6 +7,7 @@ import json
 import re
 import sys
 from dataclasses import dataclass
+from datetime import date
 from pathlib import Path
 from typing import Any
 
@@ -29,6 +30,8 @@ ALLOWED = {
     "claim": COMMON | {"subject_id", "statement", "claim_type", "evidence_ids", "scope_note"},
     "evidence": COMMON | {"claim_id", "source_id", "locator", "evidence_level", "summary", "short_quote"},
     "relation": COMMON | {"subject_id", "object_id", "relation_type", "evidence_ids", "scope_note"},
+    "reference_system": COMMON | {"title", "authority", "scope", "version", "retrieved_at", "source_ids", "candidate_ids", "notes"},
+    "coverage": COMMON | {"reference_system_id", "candidate_id", "candidate_label", "decision", "reason", "target_entity_id"},
 }
 REQUIRED = {
     "entity": COMMON | {"entity_type", "name", "aliases"},
@@ -36,6 +39,8 @@ REQUIRED = {
     "claim": COMMON | {"subject_id", "statement", "claim_type", "evidence_ids"},
     "evidence": COMMON | {"claim_id", "source_id", "locator", "evidence_level"},
     "relation": COMMON | {"subject_id", "object_id", "relation_type", "evidence_ids"},
+    "reference_system": COMMON | {"title", "authority", "scope", "version", "retrieved_at", "source_ids", "candidate_ids"},
+    "coverage": COMMON | {"reference_system_id", "candidate_id", "candidate_label", "decision", "reason"},
 }
 LOCATIONS = {
     "entity": "catalog/entities",
@@ -43,6 +48,8 @@ LOCATIONS = {
     "claim": "knowledge/claims",
     "evidence": "knowledge/evidence",
     "relation": "knowledge/relations",
+    "reference_system": "catalog/reference-systems",
+    "coverage": "catalog/coverage",
 }
 
 
@@ -157,6 +164,42 @@ def _validate_shape(record: Record, errors: list[str]) -> None:
             errors.append(f"{path}: statement is required")
         elif any(marker in statement for marker in ("；", ";", "以及同時", "並且還")):
             errors.append(f"{path}: likely compound claim; split into atomic claims")
+    elif record_type == "reference_system":
+        for field in ("title", "authority", "scope", "version", "retrieved_at"):
+            if not isinstance(data.get(field), str) or not data.get(field, "").strip():
+                errors.append(f"{path}: {field} is required")
+        retrieved_at = data.get("retrieved_at")
+        if isinstance(retrieved_at, str):
+            try:
+                date.fromisoformat(retrieved_at)
+            except ValueError:
+                errors.append(f"{path}: retrieved_at must be an ISO date")
+        source_ids = data.get("source_ids")
+        candidate_ids = data.get("candidate_ids")
+        if not isinstance(source_ids, list) or not source_ids:
+            errors.append(f"{path}: source_ids must be a non-empty array")
+        elif any(not isinstance(source_id, str) or not ID_RE.fullmatch(source_id) for source_id in source_ids):
+            errors.append(f"{path}: invalid source_id")
+        if not isinstance(candidate_ids, list) or not candidate_ids:
+            errors.append(f"{path}: candidate_ids must be a non-empty array")
+        elif any(not isinstance(candidate_id, str) or not ID_RE.fullmatch(candidate_id) for candidate_id in candidate_ids):
+            errors.append(f"{path}: invalid candidate_id")
+        elif len(candidate_ids) != len(set(candidate_ids)):
+            errors.append(f"{path}: candidate_ids must be unique")
+    elif record_type == "coverage":
+        for field in ("reference_system_id", "candidate_id"):
+            if not isinstance(data.get(field), str) or not ID_RE.fullmatch(data[field]):
+                errors.append(f"{path}: invalid {field}")
+        for field in ("candidate_label", "reason"):
+            if not isinstance(data.get(field), str) or not data.get(field, "").strip():
+                errors.append(f"{path}: {field} is required")
+        decision = data.get("decision")
+        if decision not in {"included", "merged", "excluded", "pending"}:
+            errors.append(f"{path}: invalid decision")
+        if decision in {"included", "merged"} and not data.get("target_entity_id"):
+            errors.append(f"{path}: included/merged decision requires target_entity_id")
+        if decision in {"pending", "excluded"} and "target_entity_id" in data:
+            errors.append(f"{path}: pending/excluded decision must not have target_entity_id")
 
 
 def validate_repository(root: Path = ROOT) -> list[str]:
@@ -220,6 +263,39 @@ def validate_repository(root: Path = ROOT) -> list[str]:
                 errors.append(f"{record.path}: orphan evidence_id {evidence_id!r}")
         if data.get("publishable") and not data.get("evidence_ids"):
             errors.append(f"{record.path}: publishable relation requires evidence")
+
+    reference_systems = by_type["reference_system"]
+    coverage_by_system: dict[str, dict[str, Record]] = {}
+    for record in reference_systems.values():
+        source_ids = record.data.get("source_ids")
+        for source_id in source_ids if isinstance(source_ids, list) else []:
+            if isinstance(source_id, str) and source_id not in sources:
+                errors.append(f"{record.path}: orphan source_id {source_id!r}")
+    for record in by_type["coverage"].values():
+        data = record.data
+        system_id = data.get("reference_system_id")
+        candidate_id = data.get("candidate_id")
+        if isinstance(system_id, str) and system_id not in reference_systems:
+            errors.append(f"{record.path}: orphan reference_system_id {system_id!r}")
+        target_id = data.get("target_entity_id")
+        if isinstance(target_id, str) and target_id not in entities:
+            errors.append(f"{record.path}: orphan target_entity_id {target_id!r}")
+        if isinstance(system_id, str) and isinstance(candidate_id, str):
+            decisions = coverage_by_system.setdefault(system_id, {})
+            if candidate_id in decisions:
+                errors.append(f"{record.path}: duplicate candidate decision also used by {decisions[candidate_id].path}")
+            else:
+                decisions[candidate_id] = record
+    for system_id, record in reference_systems.items():
+        candidate_ids = record.data.get("candidate_ids")
+        expected = {candidate_id for candidate_id in candidate_ids if isinstance(candidate_id, str)} if isinstance(candidate_ids, list) else set()
+        actual = set(coverage_by_system.get(system_id, {}))
+        missing = sorted(expected - actual)
+        extra = sorted(actual - expected)
+        if missing:
+            errors.append(f"{record.path}: missing coverage decisions {missing}")
+        if extra:
+            errors.append(f"{record.path}: coverage decisions not declared as candidates {extra}")
 
     vocabulary = _read_json(root / "vocabularies" / "entity-types.json", errors)
     if isinstance(vocabulary, dict):

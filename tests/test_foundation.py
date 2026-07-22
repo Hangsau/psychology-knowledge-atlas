@@ -75,6 +75,37 @@ class FoundationTests(unittest.TestCase):
             "provenance": "manual",
         }
 
+    def valid_reference_system(self, record_id: str, candidate_ids: list[str]) -> dict:
+        return {
+            "id": record_id,
+            "record_type": "reference_system",
+            "title": record_id,
+            "authority": "Test authority",
+            "scope": "A bounded test inventory.",
+            "version": "test-v1",
+            "retrieved_at": "2026-07-22",
+            "source_ids": [],
+            "candidate_ids": candidate_ids,
+            "status": "retrieved",
+            "publishable": False,
+            "provenance": "manual",
+        }
+
+    def valid_coverage(self, record_id: str, system_id: str, candidate_id: str, target_id: str) -> dict:
+        return {
+            "id": record_id,
+            "record_type": "coverage",
+            "reference_system_id": system_id,
+            "candidate_id": candidate_id,
+            "candidate_label": candidate_id,
+            "decision": "included",
+            "reason": "Explicitly included by the test reference system.",
+            "target_entity_id": target_id,
+            "status": "retrieved",
+            "publishable": False,
+            "provenance": "reference_system",
+        }
+
     def test_repository_baseline_passes(self) -> None:
         self.assertEqual(validate_repository(ROOT), [])
 
@@ -182,9 +213,11 @@ class FoundationTests(unittest.TestCase):
         self.assertEqual({result.get(timeout=1), result.get(timeout=1)}, {"alpha", "beta"})
 
     def test_generated_view_is_reproducible(self) -> None:
-        first = build(self.work).read_bytes()
+        build(self.work)
+        first = {path.name: path.read_bytes() for path in sorted((self.work / "views/generated").glob("*.json"))}
         shutil.rmtree(self.work / "views/generated")
-        second = build(self.work).read_bytes()
+        build(self.work)
+        second = {path.name: path.read_bytes() for path in sorted((self.work / "views/generated").glob("*.json"))}
         self.assertEqual(first, second)
 
     def test_private_and_publication_files_are_ignored(self) -> None:
@@ -196,6 +229,63 @@ class FoundationTests(unittest.TestCase):
         fixture = json.loads((ROOT / "tests/fixtures/legacy-known-errors.json").read_text(encoding="utf-8"))
         self.assertGreaterEqual(len(fixture["cases"]), 4)
         self.assertTrue(all("expected" in case for case in fixture["cases"]))
+
+    def test_reference_system_requires_exact_candidate_coverage(self) -> None:
+        system = self.valid_reference_system("test-system", ["alpha", "beta"])
+        self.write_json("catalog/reference-systems/test-system.json", system)
+        self.write_json(
+            "catalog/coverage/test-system-alpha.json",
+            self.valid_coverage("test-system-alpha", "test-system", "alpha", "cbt"),
+        )
+        errors = validate_repository(self.work)
+        self.assertTrue(any("missing coverage decisions" in error and "beta" in error for error in errors))
+
+    def test_coverage_rejects_orphan_system_and_target(self) -> None:
+        coverage = self.valid_coverage("orphan-coverage", "missing-system", "alpha", "missing-entity")
+        self.write_json("catalog/coverage/orphan-coverage.json", coverage)
+        errors = validate_repository(self.work)
+        self.assertTrue(any("orphan reference_system_id" in error for error in errors))
+        self.assertTrue(any("orphan target_entity_id" in error for error in errors))
+
+    def test_coverage_decision_target_rules_are_enforced(self) -> None:
+        system = self.valid_reference_system("decision-system", ["included", "pending"])
+        self.write_json("catalog/reference-systems/decision-system.json", system)
+        included = self.valid_coverage("decision-included", "decision-system", "included", "cbt")
+        included.pop("target_entity_id")
+        pending = self.valid_coverage("decision-pending", "decision-system", "pending", "cbt")
+        pending["decision"] = "pending"
+        self.write_json("catalog/coverage/decision-included.json", included)
+        self.write_json("catalog/coverage/decision-pending.json", pending)
+        errors = validate_repository(self.work)
+        self.assertTrue(any("included/merged decision requires target_entity_id" in error for error in errors))
+        self.assertTrue(any("pending/excluded decision must not have target_entity_id" in error for error in errors))
+
+    def test_duplicate_candidate_decisions_are_rejected(self) -> None:
+        system = self.valid_reference_system("duplicate-system", ["alpha"])
+        self.write_json("catalog/reference-systems/duplicate-system.json", system)
+        first = self.valid_coverage("duplicate-first", "duplicate-system", "alpha", "cbt")
+        second = self.valid_coverage("duplicate-second", "duplicate-system", "alpha", "cbt")
+        self.write_json("catalog/coverage/duplicate-first.json", first)
+        self.write_json("catalog/coverage/duplicate-second.json", second)
+        self.assertTrue(any("duplicate candidate decision" in error for error in validate_repository(self.work)))
+
+    def test_malformed_reference_system_input_is_rejected_without_crashing(self) -> None:
+        system = self.valid_reference_system("malformed-system", [["not", "an", "id"]])
+        system["source_ids"] = [{"not": "an id"}]
+        system["retrieved_at"] = "not-a-date"
+        self.write_json("catalog/reference-systems/malformed-system.json", system)
+        errors = validate_repository(self.work)
+        self.assertTrue(any("invalid candidate_id" in error for error in errors))
+        self.assertTrue(any("invalid source_id" in error for error in errors))
+        self.assertTrue(any("retrieved_at must be an ISO date" in error for error in errors))
+
+    def test_p1_reference_system_coverage_is_complete(self) -> None:
+        build(self.work)
+        report = json.loads((self.work / "views/generated/coverage-report.json").read_text(encoding="utf-8"))
+        apa = next(item for item in report["reference_systems"] if item["id"] == "apa-coa-postdoctoral-specialty-practice-areas")
+        self.assertEqual(apa["candidate_count"], 11)
+        self.assertEqual(apa["decision_count"], 11)
+        self.assertTrue(apa["complete"])
 
 
 if __name__ == "__main__":

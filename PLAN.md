@@ -15,3 +15,7 @@
 7. `P6 expansion`：門檻通過後才擴展全庫。
 
 舊 `psychology-schools` 保留為 legacy archive，不刪除、不改寫歷史。
+
+## 即時階段
+
+P1 已開始。APA CoA postdoctoral specialty practice areas 是第一個完成的窄範圍垂直切片；下一 gate 是加入互補的國際與一般心理學參考系，在明確宣告 coverage axes 前不進入 P2／P3 claims。

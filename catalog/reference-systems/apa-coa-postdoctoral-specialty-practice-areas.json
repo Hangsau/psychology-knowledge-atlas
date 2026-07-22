@@ -1,0 +1,27 @@
+{
+  "id": "apa-coa-postdoctoral-specialty-practice-areas",
+  "record_type": "reference_system",
+  "title": "APA CoA postdoctoral specialty practice areas",
+  "authority": "American Psychological Association Commission on Accreditation",
+  "scope": "The 11 specialty practice areas that Implementing Regulation C-5 P lists as currently meeting APA CoA provisions for postdoctoral residency accreditation. This is a bounded United States health-service psychology accreditation inventory, not a taxonomy of all psychology.",
+  "version": "retrieved-2026-07-22",
+  "retrieved_at": "2026-07-22",
+  "source_ids": ["apa-coa-implementing-regulations-section-c"],
+  "candidate_ids": [
+    "behavioral-and-cognitive-psychology",
+    "clinical-child-psychology",
+    "clinical-health-psychology",
+    "clinical-neuropsychology",
+    "couple-and-family-psychology",
+    "forensic-psychology",
+    "geropsychology",
+    "rehabilitation-psychology",
+    "serious-mental-illness-psychology",
+    "group-psychology-and-group-psychotherapy",
+    "police-and-public-safety-psychology"
+  ],
+  "status": "retrieved",
+  "publishable": false,
+  "provenance": "reference_system",
+  "notes": "Snapshot the source list as retrieved; create a new versioned reference-system record if the official list changes."
+}
