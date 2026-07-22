@@ -1,0 +1,13 @@
+{
+  "id": "applied-and-developmental-psychology",
+  "record_type": "entity",
+  "entity_type": "subfield",
+  "name": "Applied and developmental psychology",
+  "aliases": [],
+  "status": "retrieved",
+  "publishable": false,
+  "provenance": "reference_system",
+  "source_ids": ["abs-anzsrc-2020-for-data-cube"],
+  "tags": [],
+  "notes": "Preserves the compound ANZSRC 2020 FoR group label; no assertion that applied psychology and developmental psychology are identical concepts."
+}

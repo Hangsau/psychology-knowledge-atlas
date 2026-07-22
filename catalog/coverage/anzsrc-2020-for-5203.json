@@ -1,0 +1,13 @@
+{
+  "id": "anzsrc-2020-for-5203",
+  "record_type": "coverage",
+  "reference_system_id": "anzsrc-2020-for-psychology-groups",
+  "candidate_id": "anzsrc-5203",
+  "candidate_label": "Clinical and health psychology",
+  "decision": "included",
+  "reason": "ANZSRC 2020 FoR code 5203 is an explicit group under Division 52 Psychology and is broader than the APA CoA Clinical Health Psychology specialty.",
+  "target_entity_id": "clinical-and-health-psychology",
+  "status": "retrieved",
+  "publishable": false,
+  "provenance": "reference_system"
+}

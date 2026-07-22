@@ -1,0 +1,25 @@
+{
+  "id": "anzsrc-2020-for-psychology-groups",
+  "record_type": "reference_system",
+  "title": "ANZSRC 2020 FoR Division 52 Psychology groups",
+  "authority": "Australian Bureau of Statistics, Stats NZ, Australian Research Council, and New Zealand Ministry of Business, Innovation and Employment",
+  "scope": "The six group-level categories directly under ANZSRC 2020 Fields of Research Division 52 Psychology. This classifies R&D activity in Australia and New Zealand; it is neither a taxonomy of every psychological concept nor a global psychology universe. Division 52 explicitly excludes Indigenous psychology to Division 45 Indigenous studies.",
+  "version": "2020-data-cube-corrected-2025-10-24",
+  "retrieved_at": "2026-07-23",
+  "source_ids": [
+    "abs-anzsrc-2020-release",
+    "abs-anzsrc-2020-for-data-cube"
+  ],
+  "candidate_ids": [
+    "anzsrc-5201",
+    "anzsrc-5202",
+    "anzsrc-5203",
+    "anzsrc-5204",
+    "anzsrc-5205",
+    "anzsrc-5299"
+  ],
+  "status": "retrieved",
+  "publishable": false,
+  "provenance": "reference_system",
+  "notes": "Group-level slice only. Field-level 520101-529999 terms remain a later P1 expansion and must not be implied by this coverage result."
+}

@@ -21,4 +21,4 @@ python tools\validate.py
 python -m unittest discover -s tests -v
 ```
 
-目前階段是 P1 universe：foundation 已驗收，第一個 APA CoA 專業領域參考系已完成 11/11 候選裁決。這只是美國健康服務心理學認證的一個窄切片；仍須加入互補的國際與一般心理學參考系，尚未開始四類 pilot 的實質 claims 研究，也尚未對外發布 evidence-verified 內容。
+目前階段是 P1 universe：foundation 已驗收；APA CoA 美國專業領域切片完成 11/11，ANZSRC 2020 澳紐研究領域 group-level 切片完成 6/6。兩者合計 17/17 僅代表各自來源內 coverage，不是全球心理學全集；仍須展開 ANZSRC field-level、全球／多地域與 Indigenous-psychology 軸。尚未開始四類 pilot 的實質 claims 研究，也尚未對外發布 evidence-verified 內容。

@@ -1,0 +1,13 @@
+{
+  "id": "anzsrc-2020-for-5202",
+  "record_type": "coverage",
+  "reference_system_id": "anzsrc-2020-for-psychology-groups",
+  "candidate_id": "anzsrc-5202",
+  "candidate_label": "Biological psychology",
+  "decision": "included",
+  "reason": "ANZSRC 2020 FoR code 5202 is an explicit group under Division 52 Psychology.",
+  "target_entity_id": "biological-psychology",
+  "status": "retrieved",
+  "publishable": false,
+  "provenance": "reference_system"
+}

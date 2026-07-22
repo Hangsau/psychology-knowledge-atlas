@@ -1,0 +1,19 @@
+{
+  "id": "abs-anzsrc-2020-release",
+  "record_type": "source",
+  "title": "Australian and New Zealand Standard Research Classification (ANZSRC), 2020",
+  "identifiers": {},
+  "access_status": "open_fulltext",
+  "status": "retrieved",
+  "publishable": false,
+  "provenance": "reference_system",
+  "authors": [
+    "Australian Bureau of Statistics",
+    "Stats NZ",
+    "Australian Research Council",
+    "New Zealand Ministry of Business, Innovation and Employment"
+  ],
+  "issued": "2020-06-30",
+  "url": "https://www.abs.gov.au/statistics/classifications/australian-and-new-zealand-standard-research-classification-anzsrc/latest-release",
+  "version_note": "ANZSRC 2020 latest release page retrieved 2026-07-23; the page records minor FoR label and orthographic corrections dated 2025-10-24."
+}

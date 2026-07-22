@@ -287,6 +287,21 @@ class FoundationTests(unittest.TestCase):
         self.assertEqual(apa["decision_count"], 11)
         self.assertTrue(apa["complete"])
 
+    def test_anzsrc_group_coverage_preserves_scope_and_residual_boundary(self) -> None:
+        build(self.work)
+        report = json.loads((self.work / "views/generated/coverage-report.json").read_text(encoding="utf-8"))
+        anzsrc = next(item for item in report["reference_systems"] if item["id"] == "anzsrc-2020-for-psychology-groups")
+        self.assertEqual(anzsrc["candidate_count"], 6)
+        self.assertEqual(anzsrc["decision_count"], 6)
+        self.assertTrue(anzsrc["complete"])
+        decisions = {item["candidate_id"]: item for item in anzsrc["decisions"]}
+        self.assertEqual(decisions["anzsrc-5202"]["decision"], "included")
+        self.assertEqual(decisions["anzsrc-5202"]["target_entity_id"], "biological-psychology")
+        self.assertEqual(decisions["anzsrc-5203"]["target_entity_id"], "clinical-and-health-psychology")
+        self.assertNotEqual(decisions["anzsrc-5203"]["target_entity_id"], "clinical-health-psychology")
+        self.assertEqual(decisions["anzsrc-5299"]["decision"], "excluded")
+        self.assertNotIn("target_entity_id", decisions["anzsrc-5299"])
+
 
 if __name__ == "__main__":
     multiprocessing.freeze_support()

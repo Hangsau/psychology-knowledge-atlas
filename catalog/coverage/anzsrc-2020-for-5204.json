@@ -1,0 +1,13 @@
+{
+  "id": "anzsrc-2020-for-5204",
+  "record_type": "coverage",
+  "reference_system_id": "anzsrc-2020-for-psychology-groups",
+  "candidate_id": "anzsrc-5204",
+  "candidate_label": "Cognitive and computational psychology",
+  "decision": "included",
+  "reason": "ANZSRC 2020 FoR code 5204 is an explicit group under Division 52 Psychology.",
+  "target_entity_id": "cognitive-and-computational-psychology",
+  "status": "retrieved",
+  "publishable": false,
+  "provenance": "reference_system"
+}

@@ -38,3 +38,4 @@ tests/                   邊界、schema、參照、併發、安全測試
 - metadata、snippet、abstract 與全文證據必須區分。
 - 同一實體寫入必須取得 lock；禁止直接覆寫 canonical JSON。
 - 單一參考系的 100% coverage 只證明該來源內沒有漏項，不代表心理學宇宙完整；每個參考系都必須保留地域、用途與版本邊界。
+- 名稱近似不等於同一 entity：例如 ANZSRC `Clinical and health psychology` 是研究群組，APA CoA `Clinical Health Psychology` 是較窄的專業認證領域，未有 equivalence evidence 前不得合併。

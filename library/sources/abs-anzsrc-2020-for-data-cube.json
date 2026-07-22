@@ -1,0 +1,14 @@
+{
+  "id": "abs-anzsrc-2020-for-data-cube",
+  "record_type": "source",
+  "title": "ANZSRC 2020 Fields of Research: structure, definitions and explanatory notes",
+  "identifiers": {},
+  "access_status": "open_fulltext",
+  "status": "retrieved",
+  "publishable": false,
+  "provenance": "reference_system",
+  "authors": ["Australian Bureau of Statistics"],
+  "issued": "2020",
+  "url": "https://www.abs.gov.au/statistics/classifications/australian-and-new-zealand-standard-research-classification-anzsrc/2020/anzsrc2020_for.xlsx",
+  "version_note": "Official FoR data cube retrieved 2026-07-23 after the release page's 2025-10-24 minor label and orthographic corrections. Division 52 contains six group-level categories."
+}

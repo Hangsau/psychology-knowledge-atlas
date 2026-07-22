@@ -4,4 +4,6 @@
 
 第一個已完成切片是 `apa-coa-postdoctoral-specialty-practice-areas`（11/11），範圍僅限 APA CoA 的美國健康服務心理學博士後專業領域。四個 legacy seeds 不計入 reference-system coverage。
 
+第二個已完成切片是 `anzsrc-2020-for-psychology-groups`（6/6），範圍是 ANZSRC 2020 FoR Division 52 的 group level。它是澳洲／紐西蘭 R&D 統計分類；`5299 Other psychology` 是 residual bucket，因此記錄後排除，不建立假實體。Division 52 對 Indigenous psychology 的排除指向 Division 45，必須在後續 P1 另行盤點。
+
 新增參考系時，必須建立一個 `reference_system` record，並在 `catalog/coverage/` 為 `candidate_ids` 中每一項建立恰好一個裁決 record。`included`／`merged` 必須指向可解析的 entity；`excluded`／`pending` 不得假造 target。

@@ -18,4 +18,4 @@
 
 ## 即時階段
 
-P1 已開始。APA CoA postdoctoral specialty practice areas 是第一個完成的窄範圍垂直切片；下一 gate 是加入互補的國際與一般心理學參考系，在明確宣告 coverage axes 前不進入 P2／P3 claims。
+P1 已開始。APA CoA postdoctoral specialty practice areas 與 ANZSRC 2020 FoR Division 52 groups 是前兩個完成的窄範圍垂直切片；下一 gate 是展開 ANZSRC field-level，並加入全球／多地域及 Indigenous-psychology 參考軸。在明確宣告 coverage axes 前不進入 P2／P3 claims。

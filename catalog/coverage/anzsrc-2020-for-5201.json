@@ -1,0 +1,13 @@
+{
+  "id": "anzsrc-2020-for-5201",
+  "record_type": "coverage",
+  "reference_system_id": "anzsrc-2020-for-psychology-groups",
+  "candidate_id": "anzsrc-5201",
+  "candidate_label": "Applied and developmental psychology",
+  "decision": "included",
+  "reason": "ANZSRC 2020 FoR code 5201 is an explicit group under Division 52 Psychology; the compound source label is preserved without asserting equivalence between its components.",
+  "target_entity_id": "applied-and-developmental-psychology",
+  "status": "retrieved",
+  "publishable": false,
+  "provenance": "reference_system"
+}

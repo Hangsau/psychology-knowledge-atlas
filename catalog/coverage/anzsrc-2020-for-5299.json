@@ -1,0 +1,12 @@
+{
+  "id": "anzsrc-2020-for-5299",
+  "record_type": "coverage",
+  "reference_system_id": "anzsrc-2020-for-psychology-groups",
+  "candidate_id": "anzsrc-5299",
+  "candidate_label": "Other psychology",
+  "decision": "excluded",
+  "reason": "ANZSRC 5299 is a residual statistical bucket for psychology not elsewhere classified, not a coherent psychological subfield entity; the candidate remains recorded for complete source coverage.",
+  "status": "retrieved",
+  "publishable": false,
+  "provenance": "reference_system"
+}
