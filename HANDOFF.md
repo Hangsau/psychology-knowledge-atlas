@@ -19,6 +19,7 @@ validation:
   - ANZSRC 2020 FoR Division 52 field inventory: 36/36 registered; 14 resolved; 22 pending
   - clean GitHub clone at 5faead9 + validator + 19 tests PASS
   - clean GitHub clone at 7e2c41f + validator + 20 tests PASS
+  - clean GitHub clone at 6cc662d + validator + 21 tests PASS
 remote: https://github.com/Hangsau/psychology-knowledge-atlas
 next_gate: adjudicate ANZSRC field groups 5202, 5203, 5204 and 5205 in order, then add a genuinely global or multi-region reference system and an explicit Indigenous-psychology axis before knowledge claims
 ```
