@@ -1,0 +1,13 @@
+{
+  "id": "anzsrc-2020-for-520103",
+  "record_type": "coverage",
+  "reference_system_id": "anzsrc-2020-for-psychology-fields",
+  "candidate_id": "anzsrc-520103",
+  "candidate_label": "Forensic psychology",
+  "decision": "merged",
+  "reason": "ANZSRC 2020 FoR code 520103 maps to the existing Forensic Psychology entity created from the APA CoA specialty list; this is an identity merge, not a claim that the two systems give it identical scope.",
+  "target_entity_id": "forensic-psychology",
+  "status": "retrieved",
+  "publishable": false,
+  "provenance": "reference_system"
+}

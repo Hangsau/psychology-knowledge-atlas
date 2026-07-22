@@ -1,0 +1,6 @@
+{
+  "id": "anzsrc-2020-for-520302", "record_type": "coverage", "reference_system_id": "anzsrc-2020-for-psychology-fields",
+  "candidate_id": "anzsrc-520302", "candidate_label": "Clinical psychology", "decision": "pending",
+  "reason": "Recorded from the complete ANZSRC field inventory; entity type and cross-system identity remain to be adjudicated in the 5203 batch.",
+  "status": "retrieved", "publishable": false, "provenance": "reference_system"
+}

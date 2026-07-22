@@ -1,0 +1,6 @@
+{
+  "id": "anzsrc-2020-for-520304", "record_type": "coverage", "reference_system_id": "anzsrc-2020-for-psychology-fields",
+  "candidate_id": "anzsrc-520304", "candidate_label": "Health psychology", "decision": "pending",
+  "reason": "Recorded from the complete ANZSRC field inventory; it must not be conflated with the narrower Clinical Health Psychology specialty before adjudication.",
+  "status": "retrieved", "publishable": false, "provenance": "reference_system"
+}

@@ -28,6 +28,11 @@ def build(root: Path = ROOT) -> Path:
     for path in sorted((root / "catalog" / "reference-systems").glob("*.json")):
         data = json.loads(path.read_text(encoding="utf-8"))
         decisions = sorted(decisions_by_system.get(data["id"], []), key=lambda item: item["candidate_id"])
+        decision_counts = {
+            decision: sum(item["decision"] == decision for item in decisions)
+            for decision in ("included", "merged", "excluded", "pending")
+        }
+        complete = set(data["candidate_ids"]) == {item["candidate_id"] for item in decisions}
         systems.append({
             "id": data["id"],
             "title": data["title"],
@@ -37,7 +42,9 @@ def build(root: Path = ROOT) -> Path:
             "retrieved_at": data["retrieved_at"],
             "candidate_count": len(data["candidate_ids"]),
             "decision_count": len(decisions),
-            "complete": set(data["candidate_ids"]) == {item["candidate_id"] for item in decisions},
+            "decision_counts": decision_counts,
+            "complete": complete,
+            "resolved": complete and decision_counts["pending"] == 0,
             "decisions": decisions,
         })
     coverage_output = root / "views" / "generated" / "coverage-report.json"

@@ -1,0 +1,13 @@
+{
+  "id": "anzsrc-2020-for-520102",
+  "record_type": "coverage",
+  "reference_system_id": "anzsrc-2020-for-psychology-fields",
+  "candidate_id": "anzsrc-520102",
+  "candidate_label": "Educational psychology",
+  "decision": "included",
+  "reason": "ANZSRC 2020 FoR code 520102 is a substantive field under Applied and developmental psychology.",
+  "target_entity_id": "educational-psychology",
+  "status": "retrieved",
+  "publishable": false,
+  "provenance": "reference_system"
+}

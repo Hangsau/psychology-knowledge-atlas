@@ -21,4 +21,4 @@ python tools\validate.py
 python -m unittest discover -s tests -v
 ```
 
-目前階段是 P1 universe：foundation 已驗收；APA CoA 美國專業領域切片完成 11/11，ANZSRC 2020 澳紐研究領域 group-level 切片完成 6/6。兩者合計 17/17 僅代表各自來源內 coverage，不是全球心理學全集；仍須展開 ANZSRC field-level、全球／多地域與 Indigenous-psychology 軸。尚未開始四類 pilot 的實質 claims 研究，也尚未對外發布 evidence-verified 內容。
+目前階段是 P1 universe：foundation 已驗收；APA CoA 美國專業領域切片完成 11/11，ANZSRC 2020 澳紐研究領域 group-level 完成 6/6，field-level 36/36 已完整登錄但只有 14 項完成裁決、22 項仍 pending。`complete` 只表示來源內無漏登，`resolved` 才表示無 pending；這些範圍都不是全球心理學全集。尚須完成 ANZSRC fields、全球／多地域與 Indigenous-psychology 軸，也尚未開始四類 pilot 的實質 claims 研究或發布 evidence-verified 內容。
