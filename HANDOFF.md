@@ -17,6 +17,7 @@ validation:
   - 13 foundation system tests PASS
   - git diff whitespace gate PASS
   - private/publication ignore gate PASS
+  - clean GitHub clone + 13 tests PASS
 remote: https://github.com/Hangsau/psychology-knowledge-atlas
 next_gate: define authoritative reference-system inventory before adding knowledge claims
 ```
