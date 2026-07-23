@@ -10,6 +10,8 @@
     {"id": "model", "label_zh": "模型"},
     {"id": "therapy", "label_zh": "治療取向"},
     {"id": "subfield", "label_zh": "次領域"},
+    {"id": "context_domain", "label_zh": "脈絡領域"},
+    {"id": "phenomenon", "label_zh": "命名現象"},
     {"id": "method", "label_zh": "方法"},
     {"id": "construct", "label_zh": "構念"},
     {"id": "person", "label_zh": "人物"},

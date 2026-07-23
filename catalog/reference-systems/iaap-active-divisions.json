@@ -4,6 +4,7 @@
   "title": "IAAP active divisions",
   "authority": "International Association of Applied Psychology",
   "scope": "The 18 active divisions listed by IAAP. This is a global applied-psychology membership and organizational inventory, not a taxonomy of all psychology; some divisions may represent member cohorts or professional functions rather than substantive subfields.",
+  "system_role": "specialist_index",
   "version": "retrieved-2026-07-23",
   "retrieved_at": "2026-07-23",
   "source_ids": ["iaap-divisions-page"],

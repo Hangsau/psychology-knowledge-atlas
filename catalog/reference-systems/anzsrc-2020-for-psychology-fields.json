@@ -4,6 +4,7 @@
   "title": "ANZSRC 2020 FoR Division 52 Psychology fields",
   "authority": "Australian Bureau of Statistics, Stats NZ, Australian Research Council, and New Zealand Ministry of Business, Innovation and Employment",
   "scope": "All 36 field-level codes nested under the six groups of ANZSRC 2020 Fields of Research Division 52 Psychology. This is an Australia and New Zealand R&D statistical classification, not a global ontology. Indigenous psychology is explicitly located outside Division 52 in Division 45 Indigenous studies.",
+  "system_role": "canonical_taxonomy",
   "version": "2020-data-cube-corrected-2025-10-24",
   "retrieved_at": "2026-07-23",
   "source_ids": [

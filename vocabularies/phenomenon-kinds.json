@@ -1,0 +1,15 @@
+{
+  "id": "phenomenon-kinds",
+  "version": "0.1.0",
+  "axis": "phenomenon_kind",
+  "terms": [
+    {"id": "effect", "label_zh": "效應"},
+    {"id": "bias", "label_zh": "偏誤"},
+    {"id": "illusion", "label_zh": "錯覺"},
+    {"id": "paradox", "label_zh": "悖論"},
+    {"id": "heuristic", "label_zh": "捷思"},
+    {"id": "law", "label_zh": "定律"},
+    {"id": "syndrome", "label_zh": "症候群名稱"},
+    {"id": "popular_label", "label_zh": "流行稱呼"}
+  ]
+}

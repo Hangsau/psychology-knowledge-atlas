@@ -18,19 +18,21 @@ MAX_RECORD_BYTES = 2 * 1024 * 1024
 
 STATUS = {"unverified", "retrieved", "verified", "disputed", "excluded"}
 PROVENANCE = {"legacy_seed", "reference_system", "source_derived", "manual"}
-ENTITY_TYPES = {"tradition", "school", "paradigm", "theory", "model", "therapy", "subfield", "context_domain", "method", "construct", "person", "work", "institution", "event", "finding", "controversy"}
+ENTITY_TYPES = {"tradition", "school", "paradigm", "theory", "model", "therapy", "subfield", "context_domain", "phenomenon", "method", "construct", "person", "work", "institution", "event", "finding", "controversy"}
+PHENOMENON_KINDS = {"effect", "bias", "illusion", "paradox", "heuristic", "law", "syndrome", "popular_label"}
+SYSTEM_ROLES = {"canonical_taxonomy", "specialist_index", "discovery_seed", "popular_language_inventory"}
 ACCESS_STATUSES = {"open_fulltext", "public_domain_fulltext", "repository_manuscript", "preprint", "publicly_readable_license_unclear", "privately_observed_unredistributable", "abstract_only", "metadata_only", "paywalled_unread", "unavailable"}
 EVIDENCE_LEVELS = {"fulltext_direct", "fulltext_indirect", "abstract_only", "metadata_only"}
 RELATION_TYPES = {"alias_of", "parent_of", "branch_of", "influenced", "opposed", "explains", "contextualizes", "compares_with", "contrasts_with", "empirical_research_on", "clinical_application", "appropriation_risk", "not_applicable"}
 
 COMMON = {"id", "record_type", "status", "publishable", "provenance"}
 ALLOWED = {
-    "entity": COMMON | {"entity_type", "name", "aliases", "source_ids", "tags", "notes"},
+    "entity": COMMON | {"entity_type", "name", "aliases", "name_zh", "phenomenon_kind", "domain_entity_ids", "source_ids", "tags", "notes"},
     "source": COMMON | {"title", "identifiers", "access_status", "authors", "issued", "url", "version_note"},
     "claim": COMMON | {"subject_id", "statement", "claim_type", "evidence_ids", "scope_note"},
     "evidence": COMMON | {"claim_id", "source_id", "locator", "evidence_level", "summary", "short_quote"},
     "relation": COMMON | {"subject_id", "object_id", "relation_type", "evidence_ids", "scope_note"},
-    "reference_system": COMMON | {"title", "authority", "scope", "version", "retrieved_at", "source_ids", "candidate_ids", "notes"},
+    "reference_system": COMMON | {"title", "authority", "scope", "system_role", "version", "retrieved_at", "source_ids", "candidate_ids", "notes"},
     "coverage": COMMON | {"reference_system_id", "candidate_id", "candidate_label", "decision", "reason", "target_entity_id"},
 }
 REQUIRED = {
@@ -39,7 +41,7 @@ REQUIRED = {
     "claim": COMMON | {"subject_id", "statement", "claim_type", "evidence_ids"},
     "evidence": COMMON | {"claim_id", "source_id", "locator", "evidence_level"},
     "relation": COMMON | {"subject_id", "object_id", "relation_type", "evidence_ids"},
-    "reference_system": COMMON | {"title", "authority", "scope", "version", "retrieved_at", "source_ids", "candidate_ids"},
+    "reference_system": COMMON | {"title", "authority", "scope", "system_role", "version", "retrieved_at", "source_ids", "candidate_ids"},
     "coverage": COMMON | {"reference_system_id", "candidate_id", "candidate_label", "decision", "reason"},
 }
 LOCATIONS = {
@@ -149,6 +151,20 @@ def _validate_shape(record: Record, errors: list[str]) -> None:
             errors.append(f"{path}: invalid entity_type")
         if not isinstance(data.get("aliases"), list):
             errors.append(f"{path}: aliases must be an array")
+        if data.get("entity_type") == "phenomenon":
+            if data.get("phenomenon_kind") not in PHENOMENON_KINDS:
+                errors.append(f"{path}: phenomenon requires a controlled phenomenon_kind")
+            domain_entity_ids = data.get("domain_entity_ids")
+            if not isinstance(domain_entity_ids, list) or not domain_entity_ids:
+                errors.append(f"{path}: phenomenon requires non-empty domain_entity_ids")
+            elif any(not isinstance(domain_id, str) or not ID_RE.fullmatch(domain_id) for domain_id in domain_entity_ids):
+                errors.append(f"{path}: invalid domain_entity_id")
+            elif len(domain_entity_ids) != len(set(domain_entity_ids)):
+                errors.append(f"{path}: domain_entity_ids must be unique")
+            if "name_zh" in data and (not isinstance(data["name_zh"], str) or not data["name_zh"].strip()):
+                errors.append(f"{path}: name_zh must be a non-empty string")
+        elif any(field in data for field in ("phenomenon_kind", "domain_entity_ids", "name_zh")):
+            errors.append(f"{path}: phenomenon-only fields require entity_type phenomenon")
     elif record_type == "source" and data.get("access_status") not in ACCESS_STATUSES:
         errors.append(f"{path}: invalid access_status")
     elif record_type == "evidence":
@@ -169,6 +185,8 @@ def _validate_shape(record: Record, errors: list[str]) -> None:
             if not isinstance(data.get(field), str) or not data.get(field, "").strip():
                 errors.append(f"{path}: {field} is required")
         retrieved_at = data.get("retrieved_at")
+        if data.get("system_role") not in SYSTEM_ROLES:
+            errors.append(f"{path}: invalid system_role")
         if isinstance(retrieved_at, str):
             try:
                 date.fromisoformat(retrieved_at)
@@ -230,6 +248,9 @@ def validate_repository(root: Path = ROOT) -> list[str]:
         for source_id in record.data.get("source_ids", []):
             if source_id not in sources:
                 errors.append(f"{record.path}: orphan source_id {source_id!r}")
+        for domain_id in record.data.get("domain_entity_ids", []):
+            if domain_id not in entities:
+                errors.append(f"{record.path}: orphan domain_entity_id {domain_id!r}")
     for record in claims.values():
         data = record.data
         if data.get("subject_id") not in entities:
@@ -302,6 +323,18 @@ def validate_repository(root: Path = ROOT) -> list[str]:
         term_ids = [term.get("id") for term in vocabulary.get("terms", []) if isinstance(term, dict)]
         if len(term_ids) != len(set(term_ids)):
             errors.append("entity-types vocabulary has duplicate term ids")
+        if set(term_ids) != ENTITY_TYPES:
+            errors.append("entity-types vocabulary must match validator entity types")
+    phenomenon_vocabulary = _read_json(root / "vocabularies" / "phenomenon-kinds.json", errors)
+    if isinstance(phenomenon_vocabulary, dict):
+        term_ids = [term.get("id") for term in phenomenon_vocabulary.get("terms", []) if isinstance(term, dict)]
+        if set(term_ids) != PHENOMENON_KINDS:
+            errors.append("phenomenon-kinds vocabulary must match validator phenomenon kinds")
+    role_vocabulary = _read_json(root / "vocabularies" / "reference-system-roles.json", errors)
+    if isinstance(role_vocabulary, dict):
+        term_ids = [term.get("id") for term in role_vocabulary.get("terms", []) if isinstance(term, dict)]
+        if set(term_ids) != SYSTEM_ROLES:
+            errors.append("reference-system-roles vocabulary must match validator system roles")
     crosswalk = _read_json(root / "crosswalks" / "d1-d13.json", errors)
     if isinstance(crosswalk, dict):
         domain_ids = [item.get("id") for item in crosswalk.get("domains", []) if isinstance(item, dict)]

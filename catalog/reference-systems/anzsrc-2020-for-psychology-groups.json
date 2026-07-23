@@ -4,6 +4,7 @@
   "title": "ANZSRC 2020 FoR Division 52 Psychology groups",
   "authority": "Australian Bureau of Statistics, Stats NZ, Australian Research Council, and New Zealand Ministry of Business, Innovation and Employment",
   "scope": "The six group-level categories directly under ANZSRC 2020 Fields of Research Division 52 Psychology. This classifies R&D activity in Australia and New Zealand; it is neither a taxonomy of every psychological concept nor a global psychology universe. Division 52 explicitly excludes Indigenous psychology to Division 45 Indigenous studies.",
+  "system_role": "canonical_taxonomy",
   "version": "2020-data-cube-corrected-2025-10-24",
   "retrieved_at": "2026-07-23",
   "source_ids": [

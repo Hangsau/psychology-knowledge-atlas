@@ -18,7 +18,7 @@
 
 ## 即時階段
 
-P1 核心 coverage axes 已完成：APA CoA postdoctoral specialty practice areas、ANZSRC 2020 FoR Division 52 groups 與 field-level 36/36、全球 applied-psychology 軸 IAAP 18 active divisions，以及 Indigenous contextual axis ANZSRC Division 45 groups 20/20 均已完成裁決。下一 gate 是 P1-E：建立命名效應、偏誤與現象的 schema 及 bounded candidate universe；尚不建立 evidence claims。
+P1 核心 coverage axes 已完成。P1-E 的 `phenomenon`、`phenomenon_kind` 與 reference-system `system_role` 合約也已建立並通過測試；下一 gate 是登錄有明確邊界與角色的命名效應／偏誤／現象 candidate universe，尚不建立 evidence claims。
 
 ## 已核准後續工作軸（排隊中，尚未開工）
 
@@ -27,7 +27,7 @@ P1 核心 coverage axes 已完成：APA CoA postdoctoral specialty practice area
 ### Gate 順序
 
 1. P1 核心 coverage axes：已完成。
-2. 建立 P1-E 命名現象的 schema 與 bounded candidate universe。
+2. P1-E schema 已完成；下一步建立 bounded candidate universe。
 3. 在 P2-E 建立命名效應來源庫與證據路由。
 4. 在 P3-M 驗證跨層機制 claim 與 relationship evidence contract。
 5. 在 P4-E/M 產生效應卡與機制階梯等衍生視圖。

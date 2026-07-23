@@ -3,16 +3,16 @@
 ## ACTIVE WORK
 
 ```yaml
-phase: P1-universe
+phase: P1-E
 status: validated
 started_at: 2026-07-22
 targets:
-  - reference-system and coverage contracts
-  - bounded authoritative inventories
-  - deterministic coverage report
+  - phenomenon entity contract
+  - controlled phenomenon_kind and reference-system system_role vocabularies
+  - explicit roles for all existing reference systems
 validation:
   - canonical validator baseline PASS
-  - 27 foundation and P1 system tests PASS
+  - 30 foundation and P1/P1-E system tests PASS
   - git diff whitespace gate PASS
   - APA CoA C-5 P snapshot: 11/11 candidates adjudicated
   - ANZSRC 2020 FoR Division 52 group slice: 6/6 candidates adjudicated
@@ -28,12 +28,15 @@ validation:
   - Division 45 groups 4513–4518: 6/6 included as Pacific Peoples context domains
   - Division 45 group 4519: included as a global Indigenous data, methodologies and studies context domain
   - corrected ABS 2025 labels: 4517 Pacific Peoples society and community; 4518 Pacific Peoples sciences
+  - phenomenon contract: controlled kind, optional Chinese label, and non-empty resolvable domain_entity_ids
+  - reference-system role contract: canonical taxonomy, specialist index, discovery seed, or popular-language inventory
+  - entity-types vocabulary now matches validator and includes context_domain plus phenomenon
   - clean GitHub clone at 5faead9 + validator + 19 tests PASS
   - clean GitHub clone at 7e2c41f + validator + 20 tests PASS
   - clean GitHub clone at 6cc662d + validator + 21 tests PASS
   - clean GitHub clone at cd3d1f6 + validator + 22 tests PASS
 remote: https://github.com/Hangsau/psychology-knowledge-atlas
-next_gate: begin P1-E by defining the phenomenon entity contract and a bounded named-effect, bias and phenomenon candidate universe; do not create evidence claims yet
+next_gate: register a bounded named-phenomenon candidate universe with explicit system_role and coverage decisions; do not create evidence claims yet
 ```
 
 ## P1 progress

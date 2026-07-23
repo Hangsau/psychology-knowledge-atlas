@@ -1,0 +1,11 @@
+{
+  "id": "reference-system-roles",
+  "version": "0.1.0",
+  "axis": "system_role",
+  "terms": [
+    {"id": "canonical_taxonomy", "label_zh": "正式分類系統"},
+    {"id": "specialist_index", "label_zh": "專門領域索引"},
+    {"id": "discovery_seed", "label_zh": "探索種子"},
+    {"id": "popular_language_inventory", "label_zh": "流行語彙清單"}
+  ]
+}

@@ -4,6 +4,7 @@
   "title": "APA CoA postdoctoral specialty practice areas",
   "authority": "American Psychological Association Commission on Accreditation",
   "scope": "The 11 specialty practice areas that Implementing Regulation C-5 P lists as currently meeting APA CoA provisions for postdoctoral residency accreditation. This is a bounded United States health-service psychology accreditation inventory, not a taxonomy of all psychology.",
+  "system_role": "specialist_index",
   "version": "retrieved-2026-07-22",
   "retrieved_at": "2026-07-22",
   "source_ids": ["apa-coa-implementing-regulations-section-c"],

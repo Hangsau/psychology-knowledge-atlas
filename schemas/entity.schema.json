@@ -8,14 +8,37 @@
   "properties": {
     "id": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"},
     "record_type": {"const": "entity"},
-    "entity_type": {"enum": ["tradition", "school", "paradigm", "theory", "model", "therapy", "subfield", "context_domain", "method", "construct", "person", "work", "institution", "event", "finding", "controversy"]},
+    "entity_type": {"enum": ["tradition", "school", "paradigm", "theory", "model", "therapy", "subfield", "context_domain", "phenomenon", "method", "construct", "person", "work", "institution", "event", "finding", "controversy"]},
     "name": {"type": "string", "minLength": 1},
     "aliases": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "name_zh": {"type": "string", "minLength": 1},
+    "phenomenon_kind": {"enum": ["effect", "bias", "illusion", "paradox", "heuristic", "law", "syndrome", "popular_label"]},
+    "domain_entity_ids": {
+      "type": "array",
+      "items": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"},
+      "minItems": 1,
+      "uniqueItems": true
+    },
     "status": {"enum": ["unverified", "retrieved", "verified", "disputed", "excluded"]},
     "publishable": {"type": "boolean"},
     "provenance": {"enum": ["legacy_seed", "reference_system", "source_derived", "manual"]},
     "source_ids": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
     "tags": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
     "notes": {"type": "string"}
-  }
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"entity_type": {"const": "phenomenon"}}, "required": ["entity_type"]},
+      "then": {"required": ["phenomenon_kind", "domain_entity_ids"]},
+      "else": {
+        "not": {
+          "anyOf": [
+            {"required": ["phenomenon_kind"]},
+            {"required": ["domain_entity_ids"]},
+            {"required": ["name_zh"]}
+          ]
+        }
+      }
+    }
+  ]
 }

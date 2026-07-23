@@ -28,7 +28,8 @@ tests/                   邊界、schema、參照、併發、安全測試
 | 新增參考系 | `schemas/reference-system.schema.json` + `schemas/coverage.schema.json`；候選集合必須與裁決集合完全一致 |
 | 新增來源 | `schemas/source.schema.json`；取得狀態不等於證據品質 |
 | 新增主張／證據 | claim + evidence schema；locator 與 source access gate |
-| 新增命名效應（後續） | `PLAN.md` 的 P1-E / P2-E；schema 與 bounded universe 尚未啟動前，只能列為候選，不得直接建立 claim |
+| 新增命名效應 | `schemas/entity.schema.json` 的 `phenomenon` contract + `vocabularies/phenomenon-kinds.json`；必須有受控 kind 與可解析 `domain_entity_ids`，名稱本身不得建立 claim |
+| 新增命名現象參考系 | `schemas/reference-system.schema.json` + `vocabularies/reference-system-roles.json`；先判定 canonical taxonomy / specialist index / discovery seed / popular-language inventory |
 | 新增跨層機制（後續） | `PLAN.md` 的 P3-M；先驗證 relationship evidence linkage，每一跨層跳接都必須可追溯到 claim 與 source |
 | 對接宗教庫 | `crosswalks/d1-d13.json`；第一階段不改 religions-history |
 | 產文章／索引 | 只從 canonical records 生成到 `views/generated/` |
@@ -43,3 +44,5 @@ tests/                   邊界、schema、參照、併發、安全測試
 - 名稱近似不等於同一 entity：例如 ANZSRC `Clinical and health psychology` 是研究群組，APA CoA `Clinical Health Psychology` 是較窄的專業認證領域，未有 equivalence evidence 前不得合併。
 - Coverage view 的 `complete`＝候選集合與裁決紀錄集合相等；`resolved`＝`complete` 且 pending 為零。不得把 `complete:true, resolved:false` 寫成「完成裁決」。
 - `context_domain` 是心理學主張的文化／制度／跨學科背景軸，不是心理學 `subfield`；不得因 context record 被納入就宣稱該完整領域屬於心理學。
+- `phenomenon` 只登錄命名身份與分類角色；`phenomenon_kind: effect` 不表示效應存在、可重複或已有因果證據。`name_zh` 是譯名，不是獨立 identity。
+- `system_role` 決定 reference system 的知識權重；discovery seed 與 popular-language inventory 只能產生候選，不能直接支持 evidence verdict。

@@ -82,6 +82,7 @@ class FoundationTests(unittest.TestCase):
             "title": record_id,
             "authority": "Test authority",
             "scope": "A bounded test inventory.",
+            "system_role": "discovery_seed",
             "version": "test-v1",
             "retrieved_at": "2026-07-22",
             "source_ids": [],
@@ -108,6 +109,52 @@ class FoundationTests(unittest.TestCase):
 
     def test_repository_baseline_passes(self) -> None:
         self.assertEqual(validate_repository(ROOT), [])
+
+    def test_phenomenon_contract_requires_kind_and_resolvable_domain(self) -> None:
+        phenomenon = {
+            "id": "test-effect",
+            "record_type": "entity",
+            "entity_type": "phenomenon",
+            "name": "Test effect",
+            "name_zh": "測試效應",
+            "aliases": [],
+            "phenomenon_kind": "effect",
+            "domain_entity_ids": ["cognitive-and-computational-psychology"],
+            "status": "unverified",
+            "publishable": False,
+            "provenance": "manual",
+        }
+        self.write_json("catalog/entities/test-effect.json", phenomenon)
+        self.assertEqual(validate_repository(self.work), [])
+
+    def test_phenomenon_only_fields_and_vocabularies_are_enforced(self) -> None:
+        bad_phenomenon = {
+            "id": "bad-effect",
+            "record_type": "entity",
+            "entity_type": "phenomenon",
+            "name": "Bad effect",
+            "aliases": [],
+            "phenomenon_kind": "viral-effect",
+            "domain_entity_ids": ["missing-domain"],
+            "status": "unverified",
+            "publishable": False,
+            "provenance": "manual",
+        }
+        ordinary = self.valid_entity("ordinary-theory")
+        ordinary["name_zh"] = "不應出現"
+        self.write_json("catalog/entities/bad-effect.json", bad_phenomenon)
+        self.write_json("catalog/entities/ordinary-theory.json", ordinary)
+        errors = validate_repository(self.work)
+        self.assertTrue(any("controlled phenomenon_kind" in error for error in errors))
+        self.assertTrue(any("orphan domain_entity_id" in error for error in errors))
+        self.assertTrue(any("phenomenon-only fields" in error for error in errors))
+
+    def test_reference_system_role_is_controlled(self) -> None:
+        system = self.valid_reference_system("bad-role-system", ["candidate"])
+        system["system_role"] = "internet-list"
+        self.write_json("catalog/reference-systems/bad-role-system.json", system)
+        errors = validate_repository(self.work)
+        self.assertTrue(any("invalid system_role" in error for error in errors))
 
     def test_empty_and_partial_json_are_rejected(self) -> None:
         empty = self.work / "catalog/entities/empty.json"
