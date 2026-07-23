@@ -22,12 +22,15 @@ validation:
   - ANZSRC field group 5205: 5/5 substantive candidates adjudicated; 520599 NEC residual excluded
   - IAAP active divisions: 18/18 candidates registered and resolved; 12 included; 4 merged; 2 excluded; 0 pending
   - ANZSRC Division 45 Indigenous studies groups: 20/20 registered; complete true; resolved false; 19 pending; 4599 residual excluded
+  - context_domain entity type added to distinguish contextual axes from psychology subfields
+  - Division 45 groups 4501–4506: 6/6 included as Aboriginal and Torres Strait Islander context domains
+  - corrected ABS 2025 labels: 4517 Pacific Peoples society and community; 4518 Pacific Peoples sciences
   - clean GitHub clone at 5faead9 + validator + 19 tests PASS
   - clean GitHub clone at 7e2c41f + validator + 20 tests PASS
   - clean GitHub clone at 6cc662d + validator + 21 tests PASS
   - clean GitHub clone at cd3d1f6 + validator + 22 tests PASS
 remote: https://github.com/Hangsau/psychology-knowledge-atlas
-next_gate: adjudicate psychology relevance and entity boundaries for the 19 substantive ANZSRC Division 45 Indigenous studies groups before knowledge claims
+next_gate: adjudicate the 13 remaining Māori, Pacific Peoples, and global Indigenous methodology groups as context domains before knowledge claims
 ```
 
 ## P1 progress
@@ -39,7 +42,7 @@ next_gate: adjudicate psychology relevance and entity boundaries for the 19 subs
 - Similar labels remain distinct when their scopes differ: ANZSRC `Clinical and health psychology` is not merged into the narrower APA CoA `Clinical Health Psychology` specialty.
 - `anzsrc-2020-for-psychology-fields` registers and resolves all 36 Division 52 field codes. The 5201 batch has 7 included fields, 1 identity merge (`Forensic psychology`), and 1 NEC residual excluded. The 5202 batch has 7 substantive biological-psychology fields included. The 5203 batch has 3 included fields, 1 identity merge (`Clinical neuropsychology`), and a preserved boundary between ANZSRC `Health psychology` and the narrower APA CoA `Clinical Health Psychology` specialty. The 5204 batch preserves all 6 entries as research-field identities, including compound statistical labels, without converting them into construct claims. The 5205 batch includes 5 research fields while preserving compound-label, adjacent-discipline, and cross-project boundaries. Final field totals are 28 included, 2 merged, 6 excluded, and 0 pending.
 - `iaap-active-divisions` is the first global organizational slice: all 18 active IAAP divisions are registered and resolved from the official live page. Its scope is explicitly global applied psychology and membership organization, not an exhaustive psychology taxonomy. Twelve substantive or compound applied fields are included; Work and Organizational Psychology, Health Psychology, Sport Psychology, and Counseling Psychology merge into existing cross-system identities while preserving source scope; the student/early-career cohort and cross-cutting Professional Practice function are excluded. Final totals are 12 included, 4 merged, 2 excluded, and 0 pending.
-- `anzsrc-2020-for-indigenous-studies-groups` registers all 20 group-level codes under Division 45 as a contextual Indigenous axis. It preserves separate Aboriginal and Torres Strait Islander, Māori, Pacific Peoples, and global Indigenous data/methodologies structures rather than selecting only health or society categories. The `4599 Other Indigenous studies` residual is excluded; 19 substantive groups remain pending until psychology relevance and entity boundaries are adjudicated with the division's broad, co-designed Indigenous research definition intact.
+- `anzsrc-2020-for-indigenous-studies-groups` registers all 20 group-level codes under Division 45 as a contextual Indigenous axis. It preserves separate Aboriginal and Torres Strait Islander, Māori, Pacific Peoples, and global Indigenous data/methodologies structures rather than selecting only health or society categories. A new `context_domain` entity type prevents these broad fields from masquerading as psychology subfields. Groups 4501–4506 are included as Aboriginal and Torres Strait Islander context domains; 4504 is directly psychology-relevant because its official definition explicitly includes psychological wellbeing. The corrected ABS cube reverses the older ARC guide's Pacific labels: 4517 is society and community, 4518 is sciences. The `4599` residual is excluded; 13 substantive groups remain pending.
 - Coverage reports now separate `complete` (every source candidate has a record) from `resolved` (no pending decisions). The field inventory is `complete:true`, `resolved:false`; this prevents a full candidate scrape from masquerading as completed adjudication.
 - Coverage completeness is now executable: every declared candidate must have exactly one `included`, `merged`, `excluded`, or `pending` decision, and included/merged targets must resolve.
 - Generated `views/generated/coverage-report.json` is disposable and reproducible from canonical records.

@@ -1,0 +1,13 @@
+{
+  "id": "aboriginal-and-torres-strait-islander-environmental-knowledges-and-management",
+  "record_type": "entity",
+  "entity_type": "context_domain",
+  "name": "Aboriginal and Torres Strait Islander environmental knowledges and management",
+  "aliases": [],
+  "status": "retrieved",
+  "publishable": false,
+  "provenance": "reference_system",
+  "source_ids": ["abs-anzsrc-2020-for-data-cube", "arc-indigenous-studies-for-guide"],
+  "tags": [],
+  "notes": "ANZSRC Division 45 context domain covering environmental and earth sciences, caring for Country, agricultural sciences, and veterinary sciences. It is retained as cultural and ecological context, not reclassified as psychology."
+}

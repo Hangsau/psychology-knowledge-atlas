@@ -10,6 +10,6 @@
 
 `iaap-active-divisions` 登錄並裁決 IAAP 官方頁列出的 18 個 active divisions，作為第一個全球 applied-psychology organizational inventory。它是會員分部系統，不是全球心理學 taxonomy；12 個實質或複合 applied-psychology fields 納入、4 個跨參考系 identities 合併、member-cohort Division 15 與 cross-cutting professional-function Division 17 排除，`complete:true` 且 `resolved:true`。
 
-`anzsrc-2020-for-indigenous-studies-groups` 完整登錄 ANZSRC Division 45 的 20 個 group-level codes，保留 Aboriginal and Torres Strait Islander、Māori、Pacific Peoples，以及 Indigenous data／methodologies／global studies 的分立軸線。此 contextual inventory 不把 Indigenous psychology 縮減成健康或社會單一面向，也不表示所有 groups 都是心理學 subfields；19 個實質候選待 psychology-relevance adjudication，`4599 Other Indigenous studies` residual 排除，因此 `complete:true`、`resolved:false`。
+`anzsrc-2020-for-indigenous-studies-groups` 完整登錄 ANZSRC Division 45 的 20 個 group-level codes，保留 Aboriginal and Torres Strait Islander、Māori、Pacific Peoples，以及 Indigenous data／methodologies／global studies 的分立軸線。此 contextual inventory 不把 Indigenous psychology 縮減成健康或社會單一面向；納入項使用 `context_domain`，不冒充心理學 `subfield`。4501–4506 已裁決，Māori、Pacific Peoples 與 global methodology 共 13 個實質候選待裁決，`4599 Other Indigenous studies` residual 排除，因此 `complete:true`、`resolved:false`。Pacific Peoples 的 `4517 society and community`／`4518 sciences` 依 2025-10-24 修正版 ABS data cube，而非舊 ARC guide 排列。
 
 新增參考系時，必須建立一個 `reference_system` record，並在 `catalog/coverage/` 為 `candidate_ids` 中每一項建立恰好一個裁決 record。`included`／`merged` 必須指向可解析的 entity；`excluded`／`pending` 不得假造 target。

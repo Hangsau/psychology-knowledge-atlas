@@ -1,0 +1,13 @@
+{
+  "id": "aboriginal-and-torres-strait-islander-peoples-society-and-community",
+  "record_type": "entity",
+  "entity_type": "context_domain",
+  "name": "Aboriginal and Torres Strait Islander peoples, society and community",
+  "aliases": [],
+  "status": "retrieved",
+  "publishable": false,
+  "provenance": "reference_system",
+  "source_ids": ["abs-anzsrc-2020-for-data-cube", "arc-indigenous-studies-for-guide"],
+  "tags": [],
+  "notes": "ANZSRC Division 45 context domain covering society, community, governance, decision making, anthropology, geography, community-based research, and related fields. Health policy is excluded to the health and wellbeing group."
+}

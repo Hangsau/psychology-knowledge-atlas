@@ -10,5 +10,5 @@
   "authors": ["Australian Bureau of Statistics"],
   "issued": "2020",
   "url": "https://www.abs.gov.au/statistics/classifications/australian-and-new-zealand-standard-research-classification-anzsrc/2020/anzsrc2020_for.xlsx",
-  "version_note": "Official FoR data cube retrieved 2026-07-23 after the release page's 2025-10-24 minor label and orthographic corrections. Division 52 contains six group-level categories."
+  "version_note": "Official FoR data cube retrieved 2026-07-23 after the release page's 2025-10-24 minor label and orthographic corrections. Division 52 contains six group-level categories. The corrected cube assigns Pacific Peoples society and community to 4517 and Pacific Peoples sciences to 4518."
 }

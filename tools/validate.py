@@ -18,7 +18,7 @@ MAX_RECORD_BYTES = 2 * 1024 * 1024
 
 STATUS = {"unverified", "retrieved", "verified", "disputed", "excluded"}
 PROVENANCE = {"legacy_seed", "reference_system", "source_derived", "manual"}
-ENTITY_TYPES = {"tradition", "school", "paradigm", "theory", "model", "therapy", "subfield", "method", "construct", "person", "work", "institution", "event", "finding", "controversy"}
+ENTITY_TYPES = {"tradition", "school", "paradigm", "theory", "model", "therapy", "subfield", "context_domain", "method", "construct", "person", "work", "institution", "event", "finding", "controversy"}
 ACCESS_STATUSES = {"open_fulltext", "public_domain_fulltext", "repository_manuscript", "preprint", "publicly_readable_license_unclear", "privately_observed_unredistributable", "abstract_only", "metadata_only", "paywalled_unread", "unavailable"}
 EVIDENCE_LEVELS = {"fulltext_direct", "fulltext_indirect", "abstract_only", "metadata_only"}
 RELATION_TYPES = {"alias_of", "parent_of", "branch_of", "influenced", "opposed", "explains", "contextualizes", "compares_with", "contrasts_with", "empirical_research_on", "clinical_application", "appropriation_risk", "not_applicable"}

@@ -8,7 +8,7 @@
   "properties": {
     "id": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"},
     "record_type": {"const": "entity"},
-    "entity_type": {"enum": ["tradition", "school", "paradigm", "theory", "model", "therapy", "subfield", "method", "construct", "person", "work", "institution", "event", "finding", "controversy"]},
+    "entity_type": {"enum": ["tradition", "school", "paradigm", "theory", "model", "therapy", "subfield", "context_domain", "method", "construct", "person", "work", "institution", "event", "finding", "controversy"]},
     "name": {"type": "string", "minLength": 1},
     "aliases": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
     "status": {"enum": ["unverified", "retrieved", "verified", "disputed", "excluded"]},

@@ -406,7 +406,7 @@ class FoundationTests(unittest.TestCase):
             "educational-psychology",
         )
 
-    def test_indigenous_studies_group_inventory_is_complete_but_pending(self) -> None:
+    def test_indigenous_studies_group_inventory_preserves_context_boundary(self) -> None:
         build(self.work)
         report = json.loads((self.work / "views/generated/coverage-report.json").read_text(encoding="utf-8"))
         indigenous = next(
@@ -420,10 +420,23 @@ class FoundationTests(unittest.TestCase):
         self.assertFalse(indigenous["resolved"])
         self.assertEqual(
             indigenous["decision_counts"],
-            {"included": 0, "merged": 0, "excluded": 1, "pending": 19},
+            {"included": 6, "merged": 0, "excluded": 1, "pending": 13},
         )
         decisions = {item["candidate_id"]: item for item in indigenous["decisions"]}
+        aboriginal_batch = [decisions[f"anzsrc-450{number}"] for number in range(1, 7)]
+        self.assertTrue(all(item["decision"] == "included" for item in aboriginal_batch))
+        health_target = decisions["anzsrc-4504"]["target_entity_id"]
+        health = json.loads(
+            (self.work / f"catalog/entities/{health_target}.json").read_text(encoding="utf-8")
+        )
+        self.assertEqual(health["entity_type"], "context_domain")
+        self.assertIn("broader than psychology", health["notes"])
         self.assertIn("Māori", decisions["anzsrc-4507"]["candidate_label"])
+        self.assertEqual(
+            decisions["anzsrc-4517"]["candidate_label"],
+            "Pacific Peoples society and community",
+        )
+        self.assertEqual(decisions["anzsrc-4518"]["candidate_label"], "Pacific Peoples sciences")
         self.assertEqual(decisions["anzsrc-4519"]["decision"], "pending")
         self.assertEqual(decisions["anzsrc-4599"]["decision"], "excluded")
         self.assertNotIn("target_entity_id", decisions["anzsrc-4599"])

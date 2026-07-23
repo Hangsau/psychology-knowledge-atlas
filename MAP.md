@@ -42,3 +42,4 @@ tests/                   邊界、schema、參照、併發、安全測試
 - 單一參考系的 100% coverage 只證明該來源內沒有漏項，不代表心理學宇宙完整；每個參考系都必須保留地域、用途與版本邊界。
 - 名稱近似不等於同一 entity：例如 ANZSRC `Clinical and health psychology` 是研究群組，APA CoA `Clinical Health Psychology` 是較窄的專業認證領域，未有 equivalence evidence 前不得合併。
 - Coverage view 的 `complete`＝候選集合與裁決紀錄集合相等；`resolved`＝`complete` 且 pending 為零。不得把 `complete:true, resolved:false` 寫成「完成裁決」。
+- `context_domain` 是心理學主張的文化／制度／跨學科背景軸，不是心理學 `subfield`；不得因 context record 被納入就宣稱該完整領域屬於心理學。

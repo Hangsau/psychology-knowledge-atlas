@@ -1,6 +1,7 @@
 {
   "id": "anzsrc-2020-for-4502", "record_type": "coverage", "reference_system_id": "anzsrc-2020-for-indigenous-studies-groups",
-  "candidate_id": "anzsrc-4502", "candidate_label": "Aboriginal and Torres Strait Islander education", "decision": "pending",
-  "reason": "Registered from the complete Division 45 group inventory; psychology relevance and entity scope remain to be adjudicated.",
+  "candidate_id": "anzsrc-4502", "candidate_label": "Aboriginal and Torres Strait Islander education", "decision": "included",
+  "reason": "Included as an Indigenous context domain, not a psychology subfield; it supplies the educational context needed for educational and developmental psychology.",
+  "target_entity_id": "aboriginal-and-torres-strait-islander-education",
   "status": "retrieved", "publishable": false, "provenance": "reference_system"
 }

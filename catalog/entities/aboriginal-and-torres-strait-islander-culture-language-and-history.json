@@ -1,0 +1,13 @@
+{
+  "id": "aboriginal-and-torres-strait-islander-culture-language-and-history",
+  "record_type": "entity",
+  "entity_type": "context_domain",
+  "name": "Aboriginal and Torres Strait Islander culture, language and history",
+  "aliases": [],
+  "status": "retrieved",
+  "publishable": false,
+  "provenance": "reference_system",
+  "source_ids": ["abs-anzsrc-2020-for-data-cube", "arc-indigenous-studies-for-guide"],
+  "tags": [],
+  "notes": "ANZSRC Division 45 context domain covering culture, languages, history, arts, archaeology, design, philosophy, religion, and relevant Indigenous research methods. Inclusion supplies context for Indigenous psychology; it does not classify the whole domain as a psychology subfield."
+}
