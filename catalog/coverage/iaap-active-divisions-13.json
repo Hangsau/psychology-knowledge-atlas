@@ -1,0 +1,12 @@
+{
+  "id": "iaap-active-divisions-13",
+  "record_type": "coverage",
+  "reference_system_id": "iaap-active-divisions",
+  "candidate_id": "iaap-division-13",
+  "candidate_label": "Traffic and Transportation Psychology",
+  "decision": "pending",
+  "reason": "Registered from the complete IAAP active-division inventory; entity type and scope remain to be adjudicated.",
+  "status": "retrieved",
+  "publishable": false,
+  "provenance": "reference_system"
+}

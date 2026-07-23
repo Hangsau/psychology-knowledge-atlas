@@ -374,6 +374,23 @@ class FoundationTests(unittest.TestCase):
         self.assertNotIn("target_entity_id", decisions["anzsrc-520599"])
         self.assertTrue(fields["resolved"])
 
+    def test_iaap_active_division_inventory_is_complete_but_pending(self) -> None:
+        build(self.work)
+        report = json.loads((self.work / "views/generated/coverage-report.json").read_text(encoding="utf-8"))
+        iaap = next(item for item in report["reference_systems"] if item["id"] == "iaap-active-divisions")
+        self.assertEqual(iaap["candidate_count"], 18)
+        self.assertEqual(iaap["decision_count"], 18)
+        self.assertTrue(iaap["complete"])
+        self.assertFalse(iaap["resolved"])
+        self.assertEqual(
+            iaap["decision_counts"],
+            {"included": 0, "merged": 0, "excluded": 0, "pending": 18},
+        )
+        decisions = {item["candidate_id"]: item for item in iaap["decisions"]}
+        self.assertEqual(decisions["iaap-division-01"]["candidate_label"], "Work and Organizational Psychology")
+        self.assertEqual(decisions["iaap-division-15"]["candidate_label"], "Students and Early Career Psychologists")
+        self.assertTrue(all("target_entity_id" not in item for item in decisions.values()))
+
 
 if __name__ == "__main__":
     multiprocessing.freeze_support()

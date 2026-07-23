@@ -12,7 +12,7 @@ targets:
   - deterministic coverage report
 validation:
   - canonical validator baseline PASS
-  - 25 foundation and P1 system tests PASS
+  - 26 foundation and P1 system tests PASS
   - git diff whitespace gate PASS
   - APA CoA C-5 P snapshot: 11/11 candidates adjudicated
   - ANZSRC 2020 FoR Division 52 group slice: 6/6 candidates adjudicated
@@ -20,12 +20,13 @@ validation:
   - ANZSRC field group 5203: 4/4 substantive candidates adjudicated; 520399 NEC residual excluded
   - ANZSRC field group 5204: 6/6 substantive candidates adjudicated as research-field identities; 520499 NEC residual excluded
   - ANZSRC field group 5205: 5/5 substantive candidates adjudicated; 520599 NEC residual excluded
+  - IAAP active divisions: 18/18 candidates registered; complete true; resolved false; 18 pending adjudication
   - clean GitHub clone at 5faead9 + validator + 19 tests PASS
   - clean GitHub clone at 7e2c41f + validator + 20 tests PASS
   - clean GitHub clone at 6cc662d + validator + 21 tests PASS
   - clean GitHub clone at cd3d1f6 + validator + 22 tests PASS
 remote: https://github.com/Hangsau/psychology-knowledge-atlas
-next_gate: add a genuinely global or multi-region reference system and an explicit Indigenous-psychology axis before knowledge claims
+next_gate: adjudicate the 18 IAAP active-division candidates, then add an explicit Indigenous-psychology axis before knowledge claims
 ```
 
 ## P1 progress
@@ -36,6 +37,7 @@ next_gate: add a genuinely global or multi-region reference system and an explic
 - ANZSRC is an Australia/New Zealand R&D classification, not a global ontology. Its Division 52 explicitly sends Indigenous psychology to Division 45 Indigenous studies, so the atlas must inspect that axis rather than treating the omission as absence.
 - Similar labels remain distinct when their scopes differ: ANZSRC `Clinical and health psychology` is not merged into the narrower APA CoA `Clinical Health Psychology` specialty.
 - `anzsrc-2020-for-psychology-fields` registers and resolves all 36 Division 52 field codes. The 5201 batch has 7 included fields, 1 identity merge (`Forensic psychology`), and 1 NEC residual excluded. The 5202 batch has 7 substantive biological-psychology fields included. The 5203 batch has 3 included fields, 1 identity merge (`Clinical neuropsychology`), and a preserved boundary between ANZSRC `Health psychology` and the narrower APA CoA `Clinical Health Psychology` specialty. The 5204 batch preserves all 6 entries as research-field identities, including compound statistical labels, without converting them into construct claims. The 5205 batch includes 5 research fields while preserving compound-label, adjacent-discipline, and cross-project boundaries. Final field totals are 28 included, 2 merged, 6 excluded, and 0 pending.
+- `iaap-active-divisions` is the first global organizational slice: all 18 active IAAP divisions are registered from the official live page. Its scope is explicitly global applied psychology and membership organization, not an exhaustive psychology taxonomy. All candidates remain pending until substantive fields, compound organizational categories, member cohorts, professional functions, and cross-system identities are adjudicated.
 - Coverage reports now separate `complete` (every source candidate has a record) from `resolved` (no pending decisions). The field inventory is `complete:true`, `resolved:false`; this prevents a full candidate scrape from masquerading as completed adjudication.
 - Coverage completeness is now executable: every declared candidate must have exactly one `included`, `merged`, `excluded`, or `pending` decision, and included/merged targets must resolve.
 - Generated `views/generated/coverage-report.json` is disposable and reproducible from canonical records.

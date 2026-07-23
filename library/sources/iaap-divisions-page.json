@@ -1,0 +1,13 @@
+{
+  "id": "iaap-divisions-page",
+  "record_type": "source",
+  "title": "Divisions",
+  "identifiers": {},
+  "access_status": "open_fulltext",
+  "status": "retrieved",
+  "publishable": false,
+  "provenance": "reference_system",
+  "authors": ["International Association of Applied Psychology"],
+  "url": "https://www.iaapsy.org/divisions/",
+  "version_note": "Live IAAP divisions page retrieved 2026-07-23; it states that IAAP has eighteen active divisions and supplies their numbered labels and descriptions."
+}

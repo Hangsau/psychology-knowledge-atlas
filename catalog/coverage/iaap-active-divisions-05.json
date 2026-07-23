@@ -1,0 +1,12 @@
+{
+  "id": "iaap-active-divisions-05",
+  "record_type": "coverage",
+  "reference_system_id": "iaap-active-divisions",
+  "candidate_id": "iaap-division-05",
+  "candidate_label": "Education and School Psychology",
+  "decision": "pending",
+  "reason": "Registered from the complete IAAP active-division inventory; the compound organizational category requires adjudication.",
+  "status": "retrieved",
+  "publishable": false,
+  "provenance": "reference_system"
+}

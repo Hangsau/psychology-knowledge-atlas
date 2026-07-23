@@ -18,7 +18,7 @@
 
 ## 即時階段
 
-P1 已開始。APA CoA postdoctoral specialty practice areas、ANZSRC 2020 FoR Division 52 groups，以及 ANZSRC field-level 36/36 均已完成裁決。下一 gate 是加入全球／多地域及 Indigenous-psychology 參考軸。在明確宣告 coverage axes 前不進入 P2／P3 claims。
+P1 已開始。APA CoA postdoctoral specialty practice areas、ANZSRC 2020 FoR Division 52 groups，以及 ANZSRC field-level 36/36 均已完成裁決。全球軸已登錄 IAAP 18 個 active divisions，候選全集完整但尚待逐項裁決；其後再建立 Indigenous-psychology 參考軸。在明確宣告 coverage axes 前不進入 P2／P3 claims。
 
 ## 已核准後續工作軸（排隊中，尚未開工）
 
@@ -26,7 +26,7 @@ P1 已開始。APA CoA postdoctoral specialty practice areas、ANZSRC 2020 FoR D
 
 ### Gate 順序
 
-1. 完成目前 P1：建立 global / multi-region 參考系統與 Indigenous psychology 專屬軸。
+1. 完成目前 P1：裁決 IAAP 18 個 active divisions，再建立 Indigenous psychology 專屬軸。
 2. 建立 P1-E 命名現象的 schema 與 bounded candidate universe。
 3. 在 P2-E 建立命名效應來源庫與證據路由。
 4. 在 P3-M 驗證跨層機制 claim 與 relationship evidence contract。

@@ -1,0 +1,12 @@
+{
+  "id": "iaap-active-divisions-07",
+  "record_type": "coverage",
+  "reference_system_id": "iaap-active-divisions",
+  "candidate_id": "iaap-division-07",
+  "candidate_label": "Applied Gerontology",
+  "decision": "pending",
+  "reason": "Registered from the complete IAAP active-division inventory; cross-system identity and scope remain to be adjudicated.",
+  "status": "retrieved",
+  "publishable": false,
+  "provenance": "reference_system"
+}

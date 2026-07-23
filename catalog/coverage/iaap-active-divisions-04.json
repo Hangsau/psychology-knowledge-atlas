@@ -1,0 +1,12 @@
+{
+  "id": "iaap-active-divisions-04",
+  "record_type": "coverage",
+  "reference_system_id": "iaap-active-divisions",
+  "candidate_id": "iaap-division-04",
+  "candidate_label": "Environmental Psychology",
+  "decision": "pending",
+  "reason": "Registered from the complete IAAP active-division inventory; entity type and cross-system identity remain to be adjudicated.",
+  "status": "retrieved",
+  "publishable": false,
+  "provenance": "reference_system"
+}
