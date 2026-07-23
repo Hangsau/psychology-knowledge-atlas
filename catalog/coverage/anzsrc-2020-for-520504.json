@@ -1,6 +1,7 @@
 {
   "id": "anzsrc-2020-for-520504", "record_type": "coverage", "reference_system_id": "anzsrc-2020-for-psychology-fields",
-  "candidate_id": "anzsrc-520504", "candidate_label": "Psychology of religion", "decision": "pending",
-  "reason": "Recorded from the complete ANZSRC field inventory; cross-project and cross-system identity remain to be adjudicated in the 5205 batch.",
+  "candidate_id": "anzsrc-520504", "candidate_label": "Psychology of religion", "decision": "included",
+  "reason": "ANZSRC 2020 FoR code 520504 is a substantive research field; inclusion does not assert a cross-project identity or evidence relation with religions-history.",
+  "target_entity_id": "psychology-of-religion",
   "status": "retrieved", "publishable": false, "provenance": "reference_system"
 }

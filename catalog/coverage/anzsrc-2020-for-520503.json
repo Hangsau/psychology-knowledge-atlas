@@ -1,6 +1,7 @@
 {
   "id": "anzsrc-2020-for-520503", "record_type": "coverage", "reference_system_id": "anzsrc-2020-for-psychology-fields",
-  "candidate_id": "anzsrc-520503", "candidate_label": "Personality and individual differences", "decision": "pending",
-  "reason": "Recorded from the complete ANZSRC field inventory; the compound statistical category requires adjudication in the 5205 batch.",
+  "candidate_id": "anzsrc-520503", "candidate_label": "Personality and individual differences", "decision": "included",
+  "reason": "ANZSRC 2020 FoR code 520503 is a substantive compound statistical field; the source grouping is preserved without asserting equivalence among its components.",
+  "target_entity_id": "personality-and-individual-differences",
   "status": "retrieved", "publishable": false, "provenance": "reference_system"
 }

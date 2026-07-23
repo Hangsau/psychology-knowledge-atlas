@@ -1,6 +1,7 @@
 {
   "id": "anzsrc-2020-for-520502", "record_type": "coverage", "reference_system_id": "anzsrc-2020-for-psychology-fields",
-  "candidate_id": "anzsrc-520502", "candidate_label": "Gender psychology", "decision": "pending",
-  "reason": "Recorded from the complete ANZSRC field inventory; entity type and cross-system identity remain to be adjudicated in the 5205 batch.",
+  "candidate_id": "anzsrc-520502", "candidate_label": "Gender psychology", "decision": "included",
+  "reason": "ANZSRC 2020 FoR code 520502 is a substantive research field under Social and personality psychology; no adjacent-classification equivalence is asserted.",
+  "target_entity_id": "gender-psychology",
   "status": "retrieved", "publishable": false, "provenance": "reference_system"
 }
