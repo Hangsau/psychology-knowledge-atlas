@@ -4,8 +4,9 @@
   "reference_system_id": "iaap-active-divisions",
   "candidate_id": "iaap-division-04",
   "candidate_label": "Environmental Psychology",
-  "decision": "pending",
-  "reason": "Registered from the complete IAAP active-division inventory; entity type and cross-system identity remain to be adjudicated.",
+  "decision": "included",
+  "reason": "IAAP Division 4 is a substantive applied-psychology field concerning interactions between people and physical settings.",
+  "target_entity_id": "environmental-psychology",
   "status": "retrieved",
   "publishable": false,
   "provenance": "reference_system"

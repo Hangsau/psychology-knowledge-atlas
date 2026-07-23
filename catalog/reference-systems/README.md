@@ -8,6 +8,6 @@
 
 `anzsrc-2020-for-psychology-fields` 已完整登錄並裁決 Division 52 的 36 個 field codes：28 個實質 fields 納入、2 個跨參考系 identity 合併、6 個 NEC residual codes 排除，`complete:true` 且 `resolved:true`。此結果只代表 ANZSRC 來源內完成，仍不代表全球心理學 universe 完整。
 
-`iaap-active-divisions` 登錄 IAAP 官方頁列出的 18 個 active divisions，作為第一個全球 applied-psychology organizational inventory。它是會員分部系統，不是全球心理學 taxonomy；18/18 候選已登錄，但在逐項區分實質 subfield、複合 organizational category、member cohort 與 professional function 前維持 `pending`，因此 `complete:true`、`resolved:false`。
+`iaap-active-divisions` 登錄並裁決 IAAP 官方頁列出的 18 個 active divisions，作為第一個全球 applied-psychology organizational inventory。它是會員分部系統，不是全球心理學 taxonomy；12 個實質或複合 applied-psychology fields 納入、4 個跨參考系 identities 合併、member-cohort Division 15 與 cross-cutting professional-function Division 17 排除，`complete:true` 且 `resolved:true`。
 
 新增參考系時，必須建立一個 `reference_system` record，並在 `catalog/coverage/` 為 `candidate_ids` 中每一項建立恰好一個裁決 record。`included`／`merged` 必須指向可解析的 entity；`excluded`／`pending` 不得假造 target。

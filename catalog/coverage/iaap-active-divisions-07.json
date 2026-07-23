@@ -4,8 +4,9 @@
   "reference_system_id": "iaap-active-divisions",
   "candidate_id": "iaap-division-07",
   "candidate_label": "Applied Gerontology",
-  "decision": "pending",
-  "reason": "Registered from the complete IAAP active-division inventory; cross-system identity and scope remain to be adjudicated.",
+  "decision": "included",
+  "reason": "IAAP Division 7 is a substantive applied-gerontology field and is broader than the existing Geropsychology and Psychology of ageing identities.",
+  "target_entity_id": "applied-gerontology",
   "status": "retrieved",
   "publishable": false,
   "provenance": "reference_system"

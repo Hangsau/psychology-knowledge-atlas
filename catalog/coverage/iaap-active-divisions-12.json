@@ -4,8 +4,9 @@
   "reference_system_id": "iaap-active-divisions",
   "candidate_id": "iaap-division-12",
   "candidate_label": "Sport Psychology",
-  "decision": "pending",
-  "reason": "Registered from the complete IAAP active-division inventory; cross-system identity and scope remain to be adjudicated.",
+  "decision": "merged",
+  "reason": "IAAP Division 12 maps to the existing Sport and exercise psychology entity; IAAP's description explicitly includes sport, exercise, physical education, and motor learning, while the source labels remain preserved.",
+  "target_entity_id": "sport-and-exercise-psychology",
   "status": "retrieved",
   "publishable": false,
   "provenance": "reference_system"

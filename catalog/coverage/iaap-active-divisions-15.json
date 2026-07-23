@@ -4,8 +4,8 @@
   "reference_system_id": "iaap-active-divisions",
   "candidate_id": "iaap-division-15",
   "candidate_label": "Students and Early Career Psychologists",
-  "decision": "pending",
-  "reason": "Registered from the complete IAAP active-division inventory; whether this member-cohort division represents an atlas entity remains to be adjudicated.",
+  "decision": "excluded",
+  "reason": "IAAP Division 15 is a membership and career-stage cohort rather than a coherent psychological subfield; it remains recorded for complete organizational coverage.",
   "status": "retrieved",
   "publishable": false,
   "provenance": "reference_system"

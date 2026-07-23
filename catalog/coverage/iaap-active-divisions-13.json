@@ -4,8 +4,9 @@
   "reference_system_id": "iaap-active-divisions",
   "candidate_id": "iaap-division-13",
   "candidate_label": "Traffic and Transportation Psychology",
-  "decision": "pending",
-  "reason": "Registered from the complete IAAP active-division inventory; entity type and scope remain to be adjudicated.",
+  "decision": "included",
+  "reason": "IAAP Division 13 is a substantive applied-psychology field concerning traffic, transportation, and road-safety behaviour.",
+  "target_entity_id": "traffic-and-transportation-psychology",
   "status": "retrieved",
   "publishable": false,
   "provenance": "reference_system"

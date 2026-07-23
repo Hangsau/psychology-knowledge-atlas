@@ -4,8 +4,9 @@
   "reference_system_id": "iaap-active-divisions",
   "candidate_id": "iaap-division-03",
   "candidate_label": "Psychology and Societal Development",
-  "decision": "pending",
-  "reason": "Registered from the complete IAAP active-division inventory; entity type and scope remain to be adjudicated.",
+  "decision": "included",
+  "reason": "IAAP Division 3 is a substantive applied-psychology field with an explicitly societal and culturally contextualized scope.",
+  "target_entity_id": "psychology-and-societal-development",
   "status": "retrieved",
   "publishable": false,
   "provenance": "reference_system"

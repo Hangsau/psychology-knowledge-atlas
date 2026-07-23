@@ -4,8 +4,9 @@
   "reference_system_id": "iaap-active-divisions",
   "candidate_id": "iaap-division-11",
   "candidate_label": "Political Psychology",
-  "decision": "pending",
-  "reason": "Registered from the complete IAAP active-division inventory; entity type and scope remain to be adjudicated.",
+  "decision": "included",
+  "reason": "IAAP Division 11 is a substantive applied-psychology field concerning political behaviour and processes.",
+  "target_entity_id": "political-psychology",
   "status": "retrieved",
   "publishable": false,
   "provenance": "reference_system"

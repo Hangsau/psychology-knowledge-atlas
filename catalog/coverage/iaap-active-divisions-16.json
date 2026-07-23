@@ -4,8 +4,9 @@
   "reference_system_id": "iaap-active-divisions",
   "candidate_id": "iaap-division-16",
   "candidate_label": "Counseling Psychology",
-  "decision": "pending",
-  "reason": "Registered from the complete IAAP active-division inventory; identity with the ANZSRC Counselling psychology entity remains to be adjudicated.",
+  "decision": "merged",
+  "reason": "IAAP Division 16 maps to the existing Counselling psychology entity created from ANZSRC; the spelling and source-specific scopes remain preserved.",
+  "target_entity_id": "counselling-psychology",
   "status": "retrieved",
   "publishable": false,
   "provenance": "reference_system"

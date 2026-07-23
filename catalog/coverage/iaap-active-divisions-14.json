@@ -4,8 +4,9 @@
   "reference_system_id": "iaap-active-divisions",
   "candidate_id": "iaap-division-14",
   "candidate_label": "Applied Cognitive Psychology",
-  "decision": "pending",
-  "reason": "Registered from the complete IAAP active-division inventory; identity and scope relative to ANZSRC cognitive fields remain to be adjudicated.",
+  "decision": "included",
+  "reason": "IAAP Division 14 is a substantive applied-cognitive field and remains distinct from the broader ANZSRC Cognitive and computational psychology group.",
+  "target_entity_id": "applied-cognitive-psychology",
   "status": "retrieved",
   "publishable": false,
   "provenance": "reference_system"

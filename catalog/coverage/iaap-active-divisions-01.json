@@ -4,8 +4,9 @@
   "reference_system_id": "iaap-active-divisions",
   "candidate_id": "iaap-division-01",
   "candidate_label": "Work and Organizational Psychology",
-  "decision": "pending",
-  "reason": "Registered from the complete IAAP active-division inventory; cross-system identity and scope remain to be adjudicated.",
+  "decision": "merged",
+  "reason": "IAAP Division 1 maps to the existing Industrial and organisational psychology entity; this identity merge preserves IAAP's work-and-organizational label and does not assert identical scope with the ANZSRC inclusion of human factors.",
+  "target_entity_id": "industrial-and-organisational-psychology",
   "status": "retrieved",
   "publishable": false,
   "provenance": "reference_system"

@@ -4,8 +4,9 @@
   "reference_system_id": "iaap-active-divisions",
   "candidate_id": "iaap-division-05",
   "candidate_label": "Education and School Psychology",
-  "decision": "pending",
-  "reason": "Registered from the complete IAAP active-division inventory; the compound organizational category requires adjudication.",
+  "decision": "included",
+  "reason": "IAAP Division 5 is a substantive compound organizational category; it remains distinct from the narrower ANZSRC Educational psychology field.",
+  "target_entity_id": "education-and-school-psychology",
   "status": "retrieved",
   "publishable": false,
   "provenance": "reference_system"

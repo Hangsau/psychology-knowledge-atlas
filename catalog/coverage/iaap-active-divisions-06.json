@@ -4,8 +4,9 @@
   "reference_system_id": "iaap-active-divisions",
   "candidate_id": "iaap-division-06",
   "candidate_label": "Clinical and Community Psychology",
-  "decision": "pending",
-  "reason": "Registered from the complete IAAP active-division inventory; the compound organizational category and existing entities require adjudication.",
+  "decision": "included",
+  "reason": "IAAP Division 6 is a substantive compound organizational category; it is preserved without asserting equivalence between clinical and community psychology.",
+  "target_entity_id": "clinical-and-community-psychology",
   "status": "retrieved",
   "publishable": false,
   "provenance": "reference_system"

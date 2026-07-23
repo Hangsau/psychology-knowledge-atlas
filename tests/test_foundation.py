@@ -374,22 +374,37 @@ class FoundationTests(unittest.TestCase):
         self.assertNotIn("target_entity_id", decisions["anzsrc-520599"])
         self.assertTrue(fields["resolved"])
 
-    def test_iaap_active_division_inventory_is_complete_but_pending(self) -> None:
+    def test_iaap_active_division_inventory_is_complete_and_resolved(self) -> None:
         build(self.work)
         report = json.loads((self.work / "views/generated/coverage-report.json").read_text(encoding="utf-8"))
         iaap = next(item for item in report["reference_systems"] if item["id"] == "iaap-active-divisions")
         self.assertEqual(iaap["candidate_count"], 18)
         self.assertEqual(iaap["decision_count"], 18)
         self.assertTrue(iaap["complete"])
-        self.assertFalse(iaap["resolved"])
+        self.assertTrue(iaap["resolved"])
         self.assertEqual(
             iaap["decision_counts"],
-            {"included": 0, "merged": 0, "excluded": 0, "pending": 18},
+            {"included": 12, "merged": 4, "excluded": 2, "pending": 0},
         )
         decisions = {item["candidate_id"]: item for item in iaap["decisions"]}
-        self.assertEqual(decisions["iaap-division-01"]["candidate_label"], "Work and Organizational Psychology")
-        self.assertEqual(decisions["iaap-division-15"]["candidate_label"], "Students and Early Career Psychologists")
-        self.assertTrue(all("target_entity_id" not in item for item in decisions.values()))
+        self.assertEqual(
+            decisions["iaap-division-01"]["target_entity_id"],
+            "industrial-and-organisational-psychology",
+        )
+        self.assertEqual(decisions["iaap-division-08"]["target_entity_id"], "health-psychology")
+        self.assertEqual(
+            decisions["iaap-division-12"]["target_entity_id"],
+            "sport-and-exercise-psychology",
+        )
+        self.assertEqual(decisions["iaap-division-16"]["target_entity_id"], "counselling-psychology")
+        self.assertEqual(decisions["iaap-division-15"]["decision"], "excluded")
+        self.assertEqual(decisions["iaap-division-17"]["decision"], "excluded")
+        self.assertNotIn("target_entity_id", decisions["iaap-division-15"])
+        self.assertNotIn("target_entity_id", decisions["iaap-division-17"])
+        self.assertNotEqual(
+            decisions["iaap-division-05"]["target_entity_id"],
+            "educational-psychology",
+        )
 
 
 if __name__ == "__main__":
