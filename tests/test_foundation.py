@@ -417,10 +417,10 @@ class FoundationTests(unittest.TestCase):
         self.assertEqual(indigenous["candidate_count"], 20)
         self.assertEqual(indigenous["decision_count"], 20)
         self.assertTrue(indigenous["complete"])
-        self.assertFalse(indigenous["resolved"])
+        self.assertTrue(indigenous["resolved"])
         self.assertEqual(
             indigenous["decision_counts"],
-            {"included": 12, "merged": 0, "excluded": 1, "pending": 7},
+            {"included": 19, "merged": 0, "excluded": 1, "pending": 0},
         )
         decisions = {item["candidate_id"]: item for item in indigenous["decisions"]}
         aboriginal_batch = [decisions[f"anzsrc-450{number}"] for number in range(1, 7)]
@@ -445,7 +445,21 @@ class FoundationTests(unittest.TestCase):
             "Pacific Peoples society and community",
         )
         self.assertEqual(decisions["anzsrc-4518"]["candidate_label"], "Pacific Peoples sciences")
-        self.assertEqual(decisions["anzsrc-4519"]["decision"], "pending")
+        pacific_batch = [decisions[f"anzsrc-45{number}"] for number in range(13, 19)]
+        self.assertTrue(all(item["decision"] == "included" for item in pacific_batch))
+        pacific_health_target = decisions["anzsrc-4516"]["target_entity_id"]
+        pacific_health = json.loads(
+            (self.work / f"catalog/entities/{pacific_health_target}.json").read_text(encoding="utf-8")
+        )
+        self.assertEqual(pacific_health["entity_type"], "context_domain")
+        self.assertIn("broader than psychology", pacific_health["notes"])
+        self.assertEqual(decisions["anzsrc-4519"]["decision"], "included")
+        global_target = decisions["anzsrc-4519"]["target_entity_id"]
+        global_context = json.loads(
+            (self.work / f"catalog/entities/{global_target}.json").read_text(encoding="utf-8")
+        )
+        self.assertEqual(global_context["entity_type"], "context_domain")
+        self.assertIn("does not treat Indigenous methodologies as aliases", global_context["notes"])
         self.assertEqual(decisions["anzsrc-4599"]["decision"], "excluded")
         self.assertNotIn("target_entity_id", decisions["anzsrc-4599"])
 

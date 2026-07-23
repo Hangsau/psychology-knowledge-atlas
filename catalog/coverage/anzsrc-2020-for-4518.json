@@ -1,6 +1,7 @@
 {
   "id": "anzsrc-2020-for-4518", "record_type": "coverage", "reference_system_id": "anzsrc-2020-for-indigenous-studies-groups",
-  "candidate_id": "anzsrc-4518", "candidate_label": "Pacific Peoples sciences", "decision": "pending",
-  "reason": "Registered from the complete Division 45 group inventory; psychology relevance and entity scope remain to be adjudicated.",
+  "candidate_id": "anzsrc-4518", "candidate_label": "Pacific Peoples sciences", "decision": "included",
+  "reason": "Included as a Pacific Peoples context domain, not a psychology subfield; it preserves the broader knowledge-system boundary and the exclusion of broader Indigenous data technologies to group 4519.",
+  "target_entity_id": "pacific-peoples-sciences",
   "status": "retrieved", "publishable": false, "provenance": "reference_system"
 }

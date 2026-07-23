@@ -1,0 +1,13 @@
+{
+  "id": "indigenous-data-methodologies-and-global-indigenous-studies",
+  "record_type": "entity",
+  "entity_type": "context_domain",
+  "name": "Other Indigenous data, methodologies and global Indigenous studies",
+  "aliases": ["Indigenous data, methodologies and global Indigenous studies"],
+  "status": "retrieved",
+  "publishable": false,
+  "provenance": "reference_system",
+  "source_ids": ["abs-anzsrc-2020-for-data-cube", "arc-indigenous-studies-for-guide"],
+  "tags": [],
+  "notes": "ANZSRC Division 45 context domain covering Indigenous data, data technologies, Indigenous methodologies, and global Indigenous studies. Source-specific research methods remain in groups 4501, 4511, and 4513; Māori data sovereignty remains in 4512. This context domain does not treat Indigenous methodologies as aliases of general Western research methods."
+}

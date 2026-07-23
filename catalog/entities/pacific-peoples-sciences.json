@@ -1,0 +1,13 @@
+{
+  "id": "pacific-peoples-sciences",
+  "record_type": "entity",
+  "entity_type": "context_domain",
+  "name": "Pacific Peoples sciences",
+  "aliases": [],
+  "status": "retrieved",
+  "publishable": false,
+  "provenance": "reference_system",
+  "source_ids": ["abs-anzsrc-2020-for-data-cube", "arc-indigenous-studies-for-guide"],
+  "tags": [],
+  "notes": "ANZSRC Division 45 context domain covering mathematical, biological, physical, chemical, engineering, information systems, and computing sciences related to Pacific Peoples. Broader Indigenous data technologies are excluded to group 4519. The 4518 assignment follows the ABS data cube corrected 2025-10-24."
+}

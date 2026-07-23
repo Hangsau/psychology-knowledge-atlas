@@ -1,0 +1,13 @@
+{
+  "id": "pacific-peoples-health-and-wellbeing",
+  "record_type": "entity",
+  "entity_type": "context_domain",
+  "name": "Pacific Peoples health and wellbeing",
+  "aliases": [],
+  "status": "retrieved",
+  "publishable": false,
+  "provenance": "reference_system",
+  "source_ids": ["abs-anzsrc-2020-for-data-cube", "arc-indigenous-studies-for-guide"],
+  "tags": [],
+  "notes": "ANZSRC Division 45 context domain explicitly covering physical, psychological, and spiritual wellbeing, health services, and biomedical and clinical sciences related to Pacific Peoples. It is directly relevant to Indigenous psychology but broader than psychology."
+}

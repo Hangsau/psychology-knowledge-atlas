@@ -1,6 +1,7 @@
 {
   "id": "anzsrc-2020-for-4515", "record_type": "coverage", "reference_system_id": "anzsrc-2020-for-indigenous-studies-groups",
-  "candidate_id": "anzsrc-4515", "candidate_label": "Pacific Peoples environmental knowledges", "decision": "pending",
-  "reason": "Registered from the complete Division 45 group inventory; psychology relevance and entity scope remain to be adjudicated.",
+  "candidate_id": "anzsrc-4515", "candidate_label": "Pacific Peoples environmental knowledges", "decision": "included",
+  "reason": "Included as a Pacific Peoples context domain, not a psychology subfield; environmental knowledges supply cultural and ecological context for Indigenous psychology.",
+  "target_entity_id": "pacific-peoples-environmental-knowledges",
   "status": "retrieved", "publishable": false, "provenance": "reference_system"
 }
