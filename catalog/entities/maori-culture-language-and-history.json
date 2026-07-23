@@ -1,0 +1,13 @@
+{
+  "id": "maori-culture-language-and-history",
+  "record_type": "entity",
+  "entity_type": "context_domain",
+  "name": "Te ahurea, reo me te hītori o te Māori",
+  "aliases": ["Māori culture, language and history"],
+  "status": "retrieved",
+  "publishable": false,
+  "provenance": "reference_system",
+  "source_ids": ["abs-anzsrc-2020-for-data-cube", "arc-indigenous-studies-for-guide"],
+  "tags": [],
+  "notes": "ANZSRC Division 45 context domain covering Māori culture, languages, history, arts, archaeology, design, philosophy, and religion. Inclusion supplies context for Indigenous psychology; it does not classify the whole domain as a psychology subfield."
+}

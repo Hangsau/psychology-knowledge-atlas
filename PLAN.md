@@ -18,7 +18,7 @@
 
 ## 即時階段
 
-P1 已開始。APA CoA postdoctoral specialty practice areas、ANZSRC 2020 FoR Division 52 groups，以及 ANZSRC field-level 36/36 均已完成裁決。全球 applied-psychology 軸的 IAAP 18 個 active divisions 也已完成裁決。Indigenous contextual axis 已完整登錄 ANZSRC Division 45 的 20 個 groups；4501–4506 已用 `context_domain` 完成裁決，尚餘 Māori、Pacific Peoples 與 global methodology 13 個實質候選。在明確宣告 coverage axes 前不進入 P2／P3 claims。
+P1 已開始。APA CoA postdoctoral specialty practice areas、ANZSRC 2020 FoR Division 52 groups，以及 ANZSRC field-level 36/36 均已完成裁決。全球 applied-psychology 軸的 IAAP 18 個 active divisions 也已完成裁決。Indigenous contextual axis 已完整登錄 ANZSRC Division 45 的 20 個 groups；4501–4512 已用 `context_domain` 完成裁決，尚餘 Pacific Peoples 六項與 global Indigenous data／methodologies 一項。在明確宣告 coverage axes 前不進入 P2／P3 claims。
 
 ## 已核准後續工作軸（排隊中，尚未開工）
 
@@ -26,7 +26,7 @@ P1 已開始。APA CoA postdoctoral specialty practice areas、ANZSRC 2020 FoR D
 
 ### Gate 順序
 
-1. 完成目前 P1：裁決 ANZSRC Division 45 尚餘 13 個實質 Indigenous studies groups，完成 Indigenous psychology 專屬軸。
+1. 完成目前 P1：裁決 ANZSRC Division 45 尚餘 7 個實質 Indigenous studies groups，完成 Indigenous psychology 專屬軸。
 2. 建立 P1-E 命名現象的 schema 與 bounded candidate universe。
 3. 在 P2-E 建立命名效應來源庫與證據路由。
 4. 在 P3-M 驗證跨層機制 claim 與 relationship evidence contract。

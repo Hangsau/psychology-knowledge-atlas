@@ -420,7 +420,7 @@ class FoundationTests(unittest.TestCase):
         self.assertFalse(indigenous["resolved"])
         self.assertEqual(
             indigenous["decision_counts"],
-            {"included": 6, "merged": 0, "excluded": 1, "pending": 13},
+            {"included": 12, "merged": 0, "excluded": 1, "pending": 7},
         )
         decisions = {item["candidate_id"]: item for item in indigenous["decisions"]}
         aboriginal_batch = [decisions[f"anzsrc-450{number}"] for number in range(1, 7)]
@@ -431,7 +431,15 @@ class FoundationTests(unittest.TestCase):
         )
         self.assertEqual(health["entity_type"], "context_domain")
         self.assertIn("broader than psychology", health["notes"])
-        self.assertIn("Māori", decisions["anzsrc-4507"]["candidate_label"])
+        maori_batch = [decisions[f"anzsrc-45{number:02d}"] for number in range(7, 13)]
+        self.assertTrue(all(item["decision"] == "included" for item in maori_batch))
+        maori_health_target = decisions["anzsrc-4510"]["target_entity_id"]
+        maori_health = json.loads(
+            (self.work / f"catalog/entities/{maori_health_target}.json").read_text(encoding="utf-8")
+        )
+        self.assertEqual(maori_health["entity_type"], "context_domain")
+        self.assertEqual(maori_health["name"], "Te hauora me te oranga o te Māori")
+        self.assertIn("Māori health and wellbeing", maori_health["aliases"])
         self.assertEqual(
             decisions["anzsrc-4517"]["candidate_label"],
             "Pacific Peoples society and community",
