@@ -1,0 +1,40 @@
+{
+  "id": "anzsrc-2020-for-indigenous-studies-groups",
+  "record_type": "reference_system",
+  "title": "ANZSRC 2020 FoR Division 45 Indigenous studies groups",
+  "authority": "Australian Bureau of Statistics, Stats NZ, Australian Research Council, and New Zealand Ministry of Business, Innovation and Employment",
+  "scope": "All 20 group-level codes under ANZSRC 2020 Fields of Research Division 45 Indigenous studies. This Australia and New Zealand R&D classification is used as a contextual Indigenous axis because Division 52 Psychology explicitly routes Indigenous psychology to Division 45. Registration does not imply that every Indigenous studies group is a psychology subfield.",
+  "version": "2020-data-cube-corrected-2025-10-24",
+  "retrieved_at": "2026-07-23",
+  "source_ids": [
+    "abs-anzsrc-2020-release",
+    "abs-anzsrc-2020-for-data-cube",
+    "arc-indigenous-studies-for-guide"
+  ],
+  "candidate_ids": [
+    "anzsrc-4501",
+    "anzsrc-4502",
+    "anzsrc-4503",
+    "anzsrc-4504",
+    "anzsrc-4505",
+    "anzsrc-4506",
+    "anzsrc-4507",
+    "anzsrc-4508",
+    "anzsrc-4509",
+    "anzsrc-4510",
+    "anzsrc-4511",
+    "anzsrc-4512",
+    "anzsrc-4513",
+    "anzsrc-4514",
+    "anzsrc-4515",
+    "anzsrc-4516",
+    "anzsrc-4517",
+    "anzsrc-4518",
+    "anzsrc-4519",
+    "anzsrc-4599"
+  ],
+  "status": "retrieved",
+  "publishable": false,
+  "provenance": "reference_system",
+  "notes": "The full Division 45 group inventory is preserved to avoid reducing Indigenous psychology to health-only or society-only categories. Relevance and entity decisions remain separate from candidate registration."
+}

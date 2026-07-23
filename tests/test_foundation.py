@@ -406,6 +406,28 @@ class FoundationTests(unittest.TestCase):
             "educational-psychology",
         )
 
+    def test_indigenous_studies_group_inventory_is_complete_but_pending(self) -> None:
+        build(self.work)
+        report = json.loads((self.work / "views/generated/coverage-report.json").read_text(encoding="utf-8"))
+        indigenous = next(
+            item
+            for item in report["reference_systems"]
+            if item["id"] == "anzsrc-2020-for-indigenous-studies-groups"
+        )
+        self.assertEqual(indigenous["candidate_count"], 20)
+        self.assertEqual(indigenous["decision_count"], 20)
+        self.assertTrue(indigenous["complete"])
+        self.assertFalse(indigenous["resolved"])
+        self.assertEqual(
+            indigenous["decision_counts"],
+            {"included": 0, "merged": 0, "excluded": 1, "pending": 19},
+        )
+        decisions = {item["candidate_id"]: item for item in indigenous["decisions"]}
+        self.assertIn("Māori", decisions["anzsrc-4507"]["candidate_label"])
+        self.assertEqual(decisions["anzsrc-4519"]["decision"], "pending")
+        self.assertEqual(decisions["anzsrc-4599"]["decision"], "excluded")
+        self.assertNotIn("target_entity_id", decisions["anzsrc-4599"])
+
 
 if __name__ == "__main__":
     multiprocessing.freeze_support()
