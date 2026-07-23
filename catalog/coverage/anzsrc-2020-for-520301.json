@@ -1,6 +1,7 @@
 {
   "id": "anzsrc-2020-for-520301", "record_type": "coverage", "reference_system_id": "anzsrc-2020-for-psychology-fields",
-  "candidate_id": "anzsrc-520301", "candidate_label": "Clinical neuropsychology", "decision": "pending",
-  "reason": "Recorded from the complete ANZSRC field inventory; cross-system identity with the APA CoA specialty remains to be adjudicated in the 5203 batch.",
+  "candidate_id": "anzsrc-520301", "candidate_label": "Clinical neuropsychology", "decision": "merged",
+  "reason": "ANZSRC 2020 FoR code 520301 maps to the existing Clinical Neuropsychology entity created from the APA CoA specialty list; this is an identity merge, not a claim that the two systems give it identical scope.",
+  "target_entity_id": "clinical-neuropsychology",
   "status": "retrieved", "publishable": false, "provenance": "reference_system"
 }

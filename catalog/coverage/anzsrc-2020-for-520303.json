@@ -1,6 +1,7 @@
 {
   "id": "anzsrc-2020-for-520303", "record_type": "coverage", "reference_system_id": "anzsrc-2020-for-psychology-fields",
-  "candidate_id": "anzsrc-520303", "candidate_label": "Counselling psychology", "decision": "pending",
-  "reason": "Recorded from the complete ANZSRC field inventory; entity type and cross-system identity remain to be adjudicated in the 5203 batch.",
+  "candidate_id": "anzsrc-520303", "candidate_label": "Counselling psychology", "decision": "included",
+  "reason": "ANZSRC 2020 FoR code 520303 is a substantive field under Clinical and health psychology.",
+  "target_entity_id": "counselling-psychology",
   "status": "retrieved", "publishable": false, "provenance": "reference_system"
 }

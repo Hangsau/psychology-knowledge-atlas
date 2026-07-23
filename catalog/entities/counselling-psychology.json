@@ -1,0 +1,13 @@
+{
+  "id": "counselling-psychology",
+  "record_type": "entity",
+  "entity_type": "subfield",
+  "name": "Counselling psychology",
+  "aliases": [],
+  "status": "retrieved",
+  "publishable": false,
+  "provenance": "reference_system",
+  "source_ids": ["abs-anzsrc-2020-for-data-cube"],
+  "tags": [],
+  "notes": "ANZSRC field identity; the Australian and New Zealand statistical-classification scope is preserved."
+}

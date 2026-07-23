@@ -1,0 +1,13 @@
+{
+  "id": "clinical-psychology",
+  "record_type": "entity",
+  "entity_type": "subfield",
+  "name": "Clinical psychology",
+  "aliases": [],
+  "status": "retrieved",
+  "publishable": false,
+  "provenance": "reference_system",
+  "source_ids": ["abs-anzsrc-2020-for-data-cube"],
+  "tags": [],
+  "notes": "ANZSRC field identity; no equivalence with a professional specialty or regulatory scope has been asserted."
+}

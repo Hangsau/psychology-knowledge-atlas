@@ -1,6 +1,7 @@
 {
   "id": "anzsrc-2020-for-520304", "record_type": "coverage", "reference_system_id": "anzsrc-2020-for-psychology-fields",
-  "candidate_id": "anzsrc-520304", "candidate_label": "Health psychology", "decision": "pending",
-  "reason": "Recorded from the complete ANZSRC field inventory; it must not be conflated with the narrower Clinical Health Psychology specialty before adjudication.",
+  "candidate_id": "anzsrc-520304", "candidate_label": "Health psychology", "decision": "included",
+  "reason": "ANZSRC 2020 FoR code 520304 is a substantive field under Clinical and health psychology and remains distinct from the narrower APA CoA Clinical Health Psychology specialty.",
+  "target_entity_id": "health-psychology",
   "status": "retrieved", "publishable": false, "provenance": "reference_system"
 }
