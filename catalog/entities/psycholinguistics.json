@@ -1,0 +1,13 @@
+{
+  "id": "psycholinguistics",
+  "record_type": "entity",
+  "entity_type": "subfield",
+  "name": "Psycholinguistics (incl. speech production and comprehension)",
+  "aliases": ["Psycholinguistics"],
+  "status": "retrieved",
+  "publishable": false,
+  "provenance": "reference_system",
+  "source_ids": ["abs-anzsrc-2020-for-data-cube"],
+  "tags": [],
+  "notes": "Preserves the ANZSRC inclusion note and statistical-classification scope; no cross-disciplinary equivalence has been asserted."
+}

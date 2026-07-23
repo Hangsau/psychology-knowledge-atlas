@@ -1,6 +1,7 @@
 {
   "id": "anzsrc-2020-for-520401", "record_type": "coverage", "reference_system_id": "anzsrc-2020-for-psychology-fields",
-  "candidate_id": "anzsrc-520401", "candidate_label": "Cognition", "decision": "pending",
-  "reason": "Recorded from the complete ANZSRC field inventory; the research-field category must be distinguished from a cognition construct record in the 5204 batch.",
+  "candidate_id": "anzsrc-520401", "candidate_label": "Cognition", "decision": "included",
+  "reason": "ANZSRC 2020 FoR code 520401 is a substantive research field under Cognitive and computational psychology; the target is a subfield identity, not a cognition construct.",
+  "target_entity_id": "cognition",
   "status": "retrieved", "publishable": false, "provenance": "reference_system"
 }

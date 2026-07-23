@@ -1,0 +1,13 @@
+{
+  "id": "learning-motivation-and-emotion",
+  "record_type": "entity",
+  "entity_type": "subfield",
+  "name": "Learning, motivation and emotion",
+  "aliases": [],
+  "status": "retrieved",
+  "publishable": false,
+  "provenance": "reference_system",
+  "source_ids": ["abs-anzsrc-2020-for-data-cube"],
+  "tags": [],
+  "notes": "Preserves the compound ANZSRC statistical field; it is not decomposed into unsupported equivalence relations."
+}

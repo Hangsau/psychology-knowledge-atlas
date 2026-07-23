@@ -1,6 +1,7 @@
 {
   "id": "anzsrc-2020-for-520406", "record_type": "coverage", "reference_system_id": "anzsrc-2020-for-psychology-fields",
-  "candidate_id": "anzsrc-520406", "candidate_label": "Sensory processes, perception and performance", "decision": "pending",
-  "reason": "Recorded from the complete ANZSRC field inventory; the compound statistical category requires adjudication in the 5204 batch.",
+  "candidate_id": "anzsrc-520406", "candidate_label": "Sensory processes, perception and performance", "decision": "included",
+  "reason": "ANZSRC 2020 FoR code 520406 is a substantive compound statistical field; the source grouping is preserved without asserting equivalence among its components.",
+  "target_entity_id": "sensory-processes-perception-and-performance",
   "status": "retrieved", "publishable": false, "provenance": "reference_system"
 }

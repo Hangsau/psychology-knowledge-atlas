@@ -18,7 +18,7 @@
 
 ## 即時階段
 
-P1 已開始。APA CoA postdoctoral specialty practice areas 與 ANZSRC 2020 FoR Division 52 groups 已完成；ANZSRC field-level 36/36 已登錄，5201–5203 已裁決，5204–5205 尚有 11 項 pending。下一 gate 是依序清空這些 pending，再加入全球／多地域及 Indigenous-psychology 參考軸。在明確宣告 coverage axes 前不進入 P2／P3 claims。
+P1 已開始。APA CoA postdoctoral specialty practice areas 與 ANZSRC 2020 FoR Division 52 groups 已完成；ANZSRC field-level 36/36 已登錄，5201–5204 已裁決，5205 尚有 5 項 pending。下一 gate 是清空這些 pending，再加入全球／多地域及 Indigenous-psychology 參考軸。在明確宣告 coverage axes 前不進入 P2／P3 claims。
 
 ## 已核准後續工作軸（排隊中，尚未開工）
 
@@ -26,7 +26,7 @@ P1 已開始。APA CoA postdoctoral specialty practice areas 與 ANZSRC 2020 FoR
 
 ### Gate 順序
 
-1. 完成目前 P1：ANZSRC 5204、5205，接著建立 global / multi-region 參考系統與 Indigenous psychology 專屬軸。
+1. 完成目前 P1：ANZSRC 5205，接著建立 global / multi-region 參考系統與 Indigenous psychology 專屬軸。
 2. 建立 P1-E 命名現象的 schema 與 bounded candidate universe。
 3. 在 P2-E 建立命名效應來源庫與證據路由。
 4. 在 P3-M 驗證跨層機制 claim 與 relationship evidence contract。

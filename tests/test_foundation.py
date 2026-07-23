@@ -315,7 +315,7 @@ class FoundationTests(unittest.TestCase):
         self.assertFalse(fields["resolved"])
         self.assertEqual(
             fields["decision_counts"],
-            {"included": 17, "merged": 2, "excluded": 6, "pending": 11},
+            {"included": 23, "merged": 2, "excluded": 6, "pending": 5},
         )
         decisions = {item["candidate_id"]: item for item in fields["decisions"]}
         self.assertEqual(decisions["anzsrc-520103"]["target_entity_id"], "forensic-psychology")
@@ -346,6 +346,20 @@ class FoundationTests(unittest.TestCase):
         self.assertNotEqual(decisions["anzsrc-520304"]["target_entity_id"], "clinical-health-psychology")
         self.assertEqual(decisions["anzsrc-520399"]["decision"], "excluded")
         self.assertNotIn("target_entity_id", decisions["anzsrc-520399"])
+
+    def test_anzsrc_5204_batch_is_resolved_as_research_fields(self) -> None:
+        build(self.work)
+        report = json.loads((self.work / "views/generated/coverage-report.json").read_text(encoding="utf-8"))
+        fields = next(item for item in report["reference_systems"] if item["id"] == "anzsrc-2020-for-psychology-fields")
+        decisions = {item["candidate_id"]: item for item in fields["decisions"]}
+        substantive = [decisions[f"anzsrc-52040{number}"] for number in range(1, 7)]
+        self.assertTrue(all(item["decision"] == "included" for item in substantive))
+        self.assertTrue(all("target_entity_id" in item for item in substantive))
+        cognition = json.loads((self.work / "catalog/entities/cognition.json").read_text(encoding="utf-8"))
+        self.assertEqual(cognition["entity_type"], "subfield")
+        self.assertIn("not a claim", cognition["notes"])
+        self.assertEqual(decisions["anzsrc-520499"]["decision"], "excluded")
+        self.assertNotIn("target_entity_id", decisions["anzsrc-520499"])
 
 
 if __name__ == "__main__":
