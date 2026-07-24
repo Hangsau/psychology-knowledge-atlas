@@ -1,0 +1,14 @@
+{
+  "id": "c-anchoring-manylabs-replication",
+  "record_type": "claim",
+  "subject_id": "anchoring-bias",
+  "statement": "In the Many Labs 1 replication project (Klein et al., 2014), anchoring was one of the very large effects observed across the 36 samples.",
+  "claim_type": "finding",
+  "scope_note": "Multi-site direct replication finding: 13 effects across 36 samples, N = 6,344. Table 2 reports the four anchoring tasks at median d approximately 1.17-2.42, all p < .001, replicating consistently. The claim records that anchoring replicated as a large effect in this project; it does not establish the underlying cognitive mechanism, nor generalise beyond the Jacowitz-Kahneman anchoring paradigm that was tested.",
+  "evidence_ids": [
+    "ev-anchoring-manylabs-replication"
+  ],
+  "status": "verified",
+  "publishable": true,
+  "provenance": "source_derived"
+}

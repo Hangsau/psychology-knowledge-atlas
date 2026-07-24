@@ -1,0 +1,13 @@
+{
+  "id": "ev-anchoring-manylabs-replication",
+  "record_type": "evidence",
+  "claim_id": "c-anchoring-manylabs-replication",
+  "source_id": "klein-etal-2014-many-labs",
+  "locator": "Results, 'Variation Across Samples and Settings' subsection, p. 149",
+  "evidence_level": "fulltext_direct",
+  "summary": "In the Variation section the authors report that effect-size heterogeneity concentrated among the very large effects, explicitly naming anchoring first. Table 2 corroborates this: all four anchoring tasks (babies born, Mt. Everest, Chicago, distance to NYC) replicated with median d approximately 1.17-2.42, all p < .001, and a credibility of 1.00.",
+  "short_quote": "heterogeneity of effect sizes was largely observed among the very large effects – anchoring, allowed-forbidden, and relations between implicit and explicit attitudes",
+  "status": "verified",
+  "publishable": true,
+  "provenance": "source_derived"
+}

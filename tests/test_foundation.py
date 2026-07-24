@@ -645,6 +645,32 @@ class FoundationTests(unittest.TestCase):
         self.assertEqual(nuhfer["access_status"], "open_fulltext")
         self.assertEqual(validate_repository(self.work), [])
 
+    def test_first_research_tier_verified_claim(self) -> None:
+        # first RESEARCH-tier claim (not popular framing) promoted through the gate
+        # via an openly readable multi-lab replication full text.
+        claim = json.loads(
+            (self.work / "knowledge/claims/c-anchoring-manylabs-replication.json").read_text(encoding="utf-8")
+        )
+        self.assertEqual(claim["subject_id"], "anchoring-bias")
+        self.assertEqual(claim["claim_type"], "finding")
+        self.assertEqual(claim["status"], "verified")
+        self.assertTrue(claim["publishable"])
+        self.assertEqual(claim["evidence_ids"], ["ev-anchoring-manylabs-replication"])
+        evidence = json.loads(
+            (self.work / "knowledge/evidence/ev-anchoring-manylabs-replication.json").read_text(encoding="utf-8")
+        )
+        self.assertEqual(evidence["claim_id"], "c-anchoring-manylabs-replication")
+        self.assertEqual(evidence["source_id"], "klein-etal-2014-many-labs")
+        self.assertEqual(evidence["evidence_level"], "fulltext_direct")
+        self.assertTrue(evidence["publishable"])
+        self.assertTrue(evidence["short_quote"].strip())
+        source = json.loads(
+            (self.work / "library/sources/klein-etal-2014-many-labs.json").read_text(encoding="utf-8")
+        )
+        self.assertEqual(source["access_status"], "open_fulltext")
+        self.assertEqual(source["identifiers"]["doi"], "10.1027/1864-9335/a000178")
+        self.assertEqual(validate_repository(self.work), [])
+
 
 if __name__ == "__main__":
     multiprocessing.freeze_support()

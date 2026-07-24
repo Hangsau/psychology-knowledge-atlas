@@ -1,0 +1,14 @@
+{
+  "id": "klein-etal-2014-many-labs",
+  "record_type": "source",
+  "title": "Investigating Variation in Replicability: A \"Many Labs\" Replication Project",
+  "identifiers": {"doi": "10.1027/1864-9335/a000178"},
+  "access_status": "open_fulltext",
+  "status": "retrieved",
+  "publishable": true,
+  "provenance": "source_derived",
+  "authors": ["Richard A. Klein", "Kate A. Ratliff", "Michelangelo Vianello", "Reginald B. Adams Jr.", "et al."],
+  "issued": "2014",
+  "url": "https://econtent.hogrefe.com/doi/10.1027/1864-9335/a000178",
+  "version_note": "Social Psychology 45(3):142-152, 2014. Distributed under the Hogrefe OpenMind License (open access). Full text read this session from the openly hosted PDF (stanford.edu/~knutson/jdm/klein14.pdf); the abstract, Table 2 and the 'Variation Across Samples and Settings' section were read directly, so linked evidence is fulltext_direct and publishable."
+}
