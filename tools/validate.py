@@ -258,8 +258,11 @@ def validate_repository(root: Path = ROOT) -> list[str]:
         for evidence_id in data.get("evidence_ids", []):
             if evidence_id not in evidence:
                 errors.append(f"{record.path}: orphan evidence_id {evidence_id!r}")
-        if data.get("publishable") and (data.get("status") != "verified" or not data.get("evidence_ids")):
-            errors.append(f"{record.path}: publishable claim requires verified status and evidence")
+        if data.get("publishable"):
+            if data.get("status") != "verified" or not data.get("evidence_ids"):
+                errors.append(f"{record.path}: publishable claim requires verified status and evidence")
+            elif not any(evidence[eid].data.get("publishable") for eid in data.get("evidence_ids", []) if eid in evidence):
+                errors.append(f"{record.path}: publishable claim requires at least one publishable evidence record")
     for record in evidence.values():
         data = record.data
         claim = claims.get(data.get("claim_id"))
@@ -272,6 +275,8 @@ def validate_repository(root: Path = ROOT) -> list[str]:
             errors.append(f"{record.path}: source access cannot support publishable evidence")
         if data.get("publishable") and data.get("evidence_level") in {"metadata_only", "abstract_only"}:
             errors.append(f"{record.path}: metadata/abstract cannot be publishable evidence")
+        if data.get("publishable") and not (isinstance(data.get("short_quote"), str) and data.get("short_quote", "").strip()):
+            errors.append(f"{record.path}: publishable evidence requires a verbatim short_quote proving the full text was read")
         if claim is not None and record.data.get("id") not in claim.data.get("evidence_ids", []):
             errors.append(f"{record.path}: claim does not backlink this evidence")
     for record in by_type["relation"].values():

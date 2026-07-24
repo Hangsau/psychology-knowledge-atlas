@@ -30,6 +30,17 @@
 - 維基百科只能當 `discovery_seed`（候選清單）與 `popular_language_inventory`（通俗說法）兩種角色；它是三手資料，不得作 canonical taxonomy，也不得支撐 research／critique 主張的證據。證據一律取一手研究、meta-analysis 或 replication 專案（Many Labs、Reproducibility Project）；找候選優先用教科書／手冊、課綱與專業機構分類法（ANZSRC／APA CoA／IAAP），避免反射式抓維基造成覆蓋偏誤。
 - 新增／改 schema 時同步 tests、HANDOFF、MAP。
 
+## 發布／驗證閘門
+
+每筆 claim 依 `claim_type` 有不同的 verified 條件；未達條件一律 `status` 非 `verified` 且 `publishable:false`。
+
+- **popular（`definition`）**：verified＝通俗來源（維基等）確實這樣描述；升級後仍只主張「大眾/媒體這樣說」，永遠不等於效應為真。
+- **research（`finding`）／`attribution`／`mechanism`**：verified＝讀過一手全文，evidence 指向具體結果的 locator＋逐字 `short_quote`，`evidence_level` 為 `fulltext_direct`／`fulltext_indirect`，source `access_status` 屬可讀（非 metadata/abstract/paywalled/unavailable）。
+- **critique**：verified＝讀過該批評／未複製全文，同樣要 locator＋`short_quote`。
+- **爭議效應「效應為真」的主張**：在取得 meta-analysis 或 replication 證據前，不得建立，更不得 publishable。
+
+Validator 強制此閘門：publishable evidence 必須有非空逐字 `short_quote`（證明讀過全文）；publishable claim 必須 `verified` 且至少連結一筆 publishable evidence。個別 claim 可 publishable 不代表 atlas 層 `evidence_release`；後者是獨立頂層閘門，仍為 false。
+
 ## Legacy 邊界
 
 舊庫只可匯入 identity、vocabulary 與 regression-test seeds，且必須同時標為 `legacy_seed`、`unverified`、`publishable:false`。禁止搬入舊綜述文字、emoji confidence 或舊 evidence verdict。

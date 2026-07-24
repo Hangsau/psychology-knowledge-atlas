@@ -218,6 +218,38 @@ class FoundationTests(unittest.TestCase):
         self.assertTrue(any("cannot support publishable" in error for error in errors))
         self.assertTrue(any("metadata/abstract" in error for error in errors))
 
+    def test_publish_gate_requires_readable_fulltext_with_quote(self) -> None:
+        source = {
+            "id": "open-source", "record_type": "source", "title": "Open", "identifiers": {},
+            "access_status": "open_fulltext", "status": "retrieved", "publishable": True,
+            "provenance": "manual"
+        }
+        claim = {
+            "id": "gate-claim", "record_type": "claim", "subject_id": "cbt",
+            "statement": "A single testable statement", "claim_type": "attribution",
+            "evidence_ids": ["gate-evidence"], "status": "verified", "publishable": True,
+            "provenance": "manual"
+        }
+        evidence = {
+            "id": "gate-evidence", "record_type": "evidence", "claim_id": "gate-claim",
+            "source_id": "open-source", "locator": "p. 12", "evidence_level": "fulltext_direct",
+            "short_quote": "the authors state the mechanism explicitly", "summary": "read in full",
+            "status": "verified", "publishable": True, "provenance": "manual"
+        }
+        self.write_json("library/sources/open-source.json", source)
+        self.write_json("knowledge/claims/gate-claim.json", claim)
+        self.write_json("knowledge/evidence/gate-evidence.json", evidence)
+        # A fully-formed chain with a verbatim quote passes the gate.
+        self.assertEqual(validate_repository(self.work), [])
+        # Removing the quote breaks publishable evidence: no proof the full text was read.
+        evidence_no_quote = {key: value for key, value in evidence.items() if key != "short_quote"}
+        self.write_json("knowledge/evidence/gate-evidence.json", evidence_no_quote)
+        self.assertTrue(any("verbatim short_quote" in error for error in validate_repository(self.work)))
+        # Demoting the evidence to non-publishable metadata leaves the claim without publishable support.
+        metadata_evidence = evidence_no_quote | {"publishable": False, "evidence_level": "metadata_only"}
+        self.write_json("knowledge/evidence/gate-evidence.json", metadata_evidence)
+        self.assertTrue(any("at least one publishable evidence" in error for error in validate_repository(self.work)))
+
     def test_legacy_migration_is_identity_only(self) -> None:
         migrated = migrate_legacy_identity({"id": "seed", "name": "Seed", "entity_type": "school"})
         self.assertEqual(migrated["status"], "unverified")
