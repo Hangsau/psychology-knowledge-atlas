@@ -52,6 +52,7 @@ validation:
   - publish/verification gate defined and codified: per-claim_type verified conditions written into CLAUDE.md (popular stays documented framing, research/attribution/mechanism/critique require fulltext + locator + verbatim short_quote); Wikipedia confined to discovery_seed + popular framing in CLAUDE.md and MAP
   - validator strengthened: publishable evidence now requires a non-empty verbatim short_quote, and a publishable claim now requires at least one linked publishable evidence record (closes the metadata-backed-publish loophole)
   - 34 tests PASS (added test_publish_gate_requires_readable_fulltext_with_quote)
+  - clean GitHub clone at d5a5311 + validator + 34 tests PASS
 next_gate: produce the FIRST worked promotion through the codified gate. Pick one pilot claim whose primary source is genuinely open-access and readable this session (best candidate: c-bw-research, an attribution/mechanism claim about what Wilson & Kelling 1982 PROPOSED, verifiable by reading the open Atlantic essay without asserting the effect is real; fallback: c-dk-research via the university-hosted Kruger-Dunning 1999 PDF if license permits). Actually read the full text, then upgrade end-to-end: source access_status readable, evidence_level fulltext_direct + a verbatim short_quote + specific locator, claim status verified + publishable:true, evidence publishable:true. Keep atlas-level evidence_release false. If the full text cannot actually be read this session, STOP and report — do not fake a quote or a read.
 ```
 
