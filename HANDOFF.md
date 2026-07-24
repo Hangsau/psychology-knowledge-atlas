@@ -48,6 +48,7 @@ validation:
   - P2-E: every claim status retrieved, publishable:false, provenance source_derived, with a scope_note bounding overreach; every evidence evidence_level metadata_only, publishable:false, bidirectionally linked to its claim
   - P2-E: access_status recorded honestly (paywalled_unread / publicly_readable_license_unclear / open_fulltext); no full text was read this session, so no fulltext evidence is asserted and nothing is publishable or verified
   - 33 foundation and P1/P1-E/P2-E system tests PASS (added test_p2e_pilot_evidence_routing_is_identity_only)
+  - clean GitHub clone at 982ce96 + validator + 33 tests PASS
 next_gate: define and codify the publish/verification gate before promoting any pilot claim. Concretely: (1) decide what counts as verified for a research claim (fulltext read + locator to the specific result, evidence_level fulltext_direct/indirect, access_status readable) versus for a popular claim (which stays a documented popular framing, not a truth claim); (2) obtain at least one readable full text for one pilot and upgrade that single claim end-to-end (source access_status readable, evidence_level fulltext_*, claim status verified, publishable:true) as the first worked example through the gate the validator already enforces; (3) only then generalize. Do NOT mark any claim publishable or verified until a full text is actually read and a specific locator recorded.
 ```
 
