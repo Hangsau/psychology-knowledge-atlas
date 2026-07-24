@@ -8,7 +8,7 @@
   "evidence_ids": [
     "ev-dk-popular"
   ],
-  "status": "retrieved",
-  "publishable": false,
+  "status": "verified",
+  "publishable": true,
   "provenance": "source_derived"
 }

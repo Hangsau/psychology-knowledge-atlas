@@ -3,10 +3,11 @@
   "record_type": "evidence",
   "claim_id": "c-dk-popular",
   "source_id": "wikipedia-dunning-kruger-effect",
-  "locator": "Encyclopedia article, lead section",
-  "evidence_level": "metadata_only",
-  "summary": "Encyclopedia summary of the common popular description of the effect.",
-  "status": "retrieved",
-  "publishable": false,
+  "locator": "Lead section, opening definition sentence",
+  "evidence_level": "fulltext_direct",
+  "summary": "The article's own lead defines the effect as low-ability people giving overly positive self-assessments, matching the popular characterization the claim records. The lead separately notes the popular oversimplification, supporting the scope_note.",
+  "short_quote": "The Dunning–Kruger effect is a cognitive bias that describes the systematic tendency of people with low ability in a specific area to give overly positive assessments of this ability.",
+  "status": "verified",
+  "publishable": true,
   "provenance": "source_derived"
 }

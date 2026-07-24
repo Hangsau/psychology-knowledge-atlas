@@ -1,0 +1,13 @@
+{
+  "id": "ev-dk-critique-noise",
+  "record_type": "evidence",
+  "claim_id": "c-dk-critique-noise",
+  "source_id": "nuhfer-etal-2017-numeracy",
+  "locator": "Abstract",
+  "evidence_level": "abstract_only",
+  "summary": "Abstract-level record of the random-noise and graphical-convention critique. The full text was not read this session, so this evidence cannot support a publishable claim.",
+  "short_quote": "Much of the current consensus about peoples' inability to self-assess accurately comes from interpreting normative data presented in the Kruger-Dunning type graphical format or closely related (y - x) vs. (x) graphical conventions.",
+  "status": "retrieved",
+  "publishable": false,
+  "provenance": "source_derived"
+}

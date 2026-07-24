@@ -1,0 +1,14 @@
+{
+  "id": "c-dk-critique-noise",
+  "record_type": "claim",
+  "subject_id": "dunning-kruger-effect",
+  "statement": "Nuhfer and colleagues (2017) argued that the classic Dunning-Kruger self-assessment pattern is substantially an artefact of random noise and a graphical convention rather than a genuine metacognitive deficit.",
+  "claim_type": "critique",
+  "scope_note": "Records a documented open-access critique. Only the abstract was read this session, so the claim is not verified or publishable and a full-text read is pending.",
+  "evidence_ids": [
+    "ev-dk-critique-noise"
+  ],
+  "status": "retrieved",
+  "publishable": false,
+  "provenance": "source_derived"
+}

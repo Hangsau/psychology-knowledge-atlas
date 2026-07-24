@@ -593,28 +593,31 @@ class FoundationTests(unittest.TestCase):
         self.assertEqual(broken["name_zh"], "破窗效應")
         self.assertIn("contested", broken["notes"])
 
-    def test_p2e_pilot_evidence_routing_is_identity_only(self) -> None:
+    def test_p2e_pilot_evidence_routing_and_first_promotion(self) -> None:
         pilots = {
             "misattribution-of-arousal": "moa",
             "dunning-kruger-effect": "dk",
             "broken-windows-effect": "bw",
         }
+        published = {"c-dk-popular"}
         for subject, slug in pilots.items():
-            claim_ids = {f"c-{slug}-{kind}" for kind in ("popular", "research", "critique")}
-            self.assertEqual(len(claim_ids), 3)
-            for claim_id in claim_ids:
+            for kind in ("popular", "research", "critique"):
+                claim_id = f"c-{slug}-{kind}"
                 claim = json.loads(
                     (self.work / f"knowledge/claims/{claim_id}.json").read_text(encoding="utf-8")
                 )
                 self.assertEqual(claim["subject_id"], subject)
-                self.assertFalse(claim["publishable"])
-                self.assertNotEqual(claim["status"], "verified")
-                evidence_id = f"ev-{slug}-{claim_id.rsplit('-', 1)[1]}"
+                evidence_id = f"ev-{slug}-{kind}"
                 self.assertEqual(claim["evidence_ids"], [evidence_id])
                 evidence = json.loads(
                     (self.work / f"knowledge/evidence/{evidence_id}.json").read_text(encoding="utf-8")
                 )
                 self.assertEqual(evidence["claim_id"], claim_id)
+                if claim_id in published:
+                    continue
+                # every claim except the single worked example stays unpublished and metadata-only
+                self.assertFalse(claim["publishable"])
+                self.assertNotEqual(claim["status"], "verified")
                 self.assertFalse(evidence["publishable"])
                 self.assertEqual(evidence["evidence_level"], "metadata_only")
         # popular, research and critique are distinct claim records, not one blended verdict
@@ -624,6 +627,22 @@ class FoundationTests(unittest.TestCase):
         self.assertNotEqual(popular["statement"], research["statement"])
         self.assertNotEqual(research["statement"], critique["statement"])
         self.assertEqual(critique["claim_type"], "critique")
+        # first worked promotion through the gate: readable open source + verbatim quote -> publishable
+        dk_popular = json.loads((self.work / "knowledge/claims/c-dk-popular.json").read_text(encoding="utf-8"))
+        self.assertEqual(dk_popular["status"], "verified")
+        self.assertTrue(dk_popular["publishable"])
+        dk_evidence = json.loads((self.work / "knowledge/evidence/ev-dk-popular.json").read_text(encoding="utf-8"))
+        self.assertTrue(dk_evidence["publishable"])
+        self.assertEqual(dk_evidence["evidence_level"], "fulltext_direct")
+        self.assertTrue(dk_evidence["short_quote"].strip())
+        # the no-fulltext case is handled honestly: open-access source, but body unread -> abstract-only, unpublished
+        noise = json.loads((self.work / "knowledge/claims/c-dk-critique-noise.json").read_text(encoding="utf-8"))
+        self.assertFalse(noise["publishable"])
+        noise_evidence = json.loads((self.work / "knowledge/evidence/ev-dk-critique-noise.json").read_text(encoding="utf-8"))
+        self.assertEqual(noise_evidence["evidence_level"], "abstract_only")
+        self.assertFalse(noise_evidence["publishable"])
+        nuhfer = json.loads((self.work / "library/sources/nuhfer-etal-2017-numeracy.json").read_text(encoding="utf-8"))
+        self.assertEqual(nuhfer["access_status"], "open_fulltext")
         self.assertEqual(validate_repository(self.work), [])
 
 

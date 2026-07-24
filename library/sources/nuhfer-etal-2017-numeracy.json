@@ -1,0 +1,14 @@
+{
+  "id": "nuhfer-etal-2017-numeracy",
+  "record_type": "source",
+  "title": "How Random Noise and a Graphical Convention Subverted Behavioral Scientists' Explanations of Self-Assessment Data: Numeracy Underlies Better Alternatives",
+  "identifiers": {"doi": "10.5038/1936-4660.10.1.4"},
+  "access_status": "open_fulltext",
+  "status": "retrieved",
+  "publishable": false,
+  "provenance": "source_derived",
+  "authors": ["Edward Nuhfer", "Steven Fleisher", "Christopher Cogan", "Karl Wirth", "Eric Gaze"],
+  "issued": "2017",
+  "url": "https://digitalcommons.usf.edu/numeracy/vol10/iss1/art4/",
+  "version_note": "Numeracy 10(1), article 4. Open access under CC BY-NC 4.0, so access_status is open_fulltext. This session only the abstract was read; the PDF body returned 403 to the fetch tool, so linked evidence stays abstract_only and unpublished until the full text is read."
+}

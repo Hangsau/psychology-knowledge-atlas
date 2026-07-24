@@ -41,6 +41,22 @@
 
 Validator 強制此閘門：publishable evidence 必須有非空逐字 `short_quote`（證明讀過全文）；publishable claim 必須 `verified` 且至少連結一筆 publishable evidence。個別 claim 可 publishable 不代表 atlas 層 `evidence_release`；後者是獨立頂層閘門，仍為 false。
 
+## 來源優先序與三層結構
+
+「不是每個效應都找得到全文」不會產生垃圾，而是自然落進三層。每個 claim/evidence 都明確屬於其中一層，沒有模糊地帶：
+
+1. **已驗證發布層**：讀過全文、有 locator＋逐字 `short_quote`、source 可讀 → `publishable:true`。
+2. **誠實引用／待辦層**：來源已登錄、有 DOI/URL，但只讀到 abstract 或全文取不到（403、付費牆）→ `evidence_level` 為 `abstract_only`/`metadata_only`，`publishable:false`。這是可查的引用索引與待讀佇列，不是垃圾；付費原文可以永遠停在 `metadata_only`。
+3. **候選層**：只有實體或 discovery_seed，還沒有 claim/evidence。
+
+**找證據的優先序**（強者通常也免費，故先找）：
+
+- 先找開放的 replication／meta-analysis（Many Labs、Reproducibility Project、Registered Reports、PsyArXiv、開放期刊）——它們對「效應是否為真」證據力最強，且多半開放全文。
+- 次找教科書／手冊／專業機構分類法（APA、IAAP、ANZSRC）作候選與框架。
+- 付費原始論文最後找；取不到全文就停在第 2 層當引用索引，不偽造 body 讀取、不升 publishable。
+
+登錄 source 時 `access_status` 記真實取得狀態（`open_fulltext` 是授權層級，不代表這個 session 真的讀了 body）；是否讀過 body 由 evidence 的 `evidence_level`＋`short_quote` 決定。
+
 ## Legacy 邊界
 
 舊庫只可匯入 identity、vocabulary 與 regression-test seeds，且必須同時標為 `legacy_seed`、`unverified`、`publishable:false`。禁止搬入舊綜述文字、emoji confidence 或舊 evidence verdict。
