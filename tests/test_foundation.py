@@ -561,6 +561,39 @@ class FoundationTests(unittest.TestCase):
         self.assertEqual(broken["name_zh"], "破窗效應")
         self.assertIn("contested", broken["notes"])
 
+    def test_p2e_pilot_evidence_routing_is_identity_only(self) -> None:
+        pilots = {
+            "misattribution-of-arousal": "moa",
+            "dunning-kruger-effect": "dk",
+            "broken-windows-effect": "bw",
+        }
+        for subject, slug in pilots.items():
+            claim_ids = {f"c-{slug}-{kind}" for kind in ("popular", "research", "critique")}
+            self.assertEqual(len(claim_ids), 3)
+            for claim_id in claim_ids:
+                claim = json.loads(
+                    (self.work / f"knowledge/claims/{claim_id}.json").read_text(encoding="utf-8")
+                )
+                self.assertEqual(claim["subject_id"], subject)
+                self.assertFalse(claim["publishable"])
+                self.assertNotEqual(claim["status"], "verified")
+                evidence_id = f"ev-{slug}-{claim_id.rsplit('-', 1)[1]}"
+                self.assertEqual(claim["evidence_ids"], [evidence_id])
+                evidence = json.loads(
+                    (self.work / f"knowledge/evidence/{evidence_id}.json").read_text(encoding="utf-8")
+                )
+                self.assertEqual(evidence["claim_id"], claim_id)
+                self.assertFalse(evidence["publishable"])
+                self.assertEqual(evidence["evidence_level"], "metadata_only")
+        # popular, research and critique are distinct claim records, not one blended verdict
+        popular = json.loads((self.work / "knowledge/claims/c-bw-popular.json").read_text(encoding="utf-8"))
+        research = json.loads((self.work / "knowledge/claims/c-bw-research.json").read_text(encoding="utf-8"))
+        critique = json.loads((self.work / "knowledge/claims/c-bw-critique.json").read_text(encoding="utf-8"))
+        self.assertNotEqual(popular["statement"], research["statement"])
+        self.assertNotEqual(research["statement"], critique["statement"])
+        self.assertEqual(critique["claim_type"], "critique")
+        self.assertEqual(validate_repository(self.work), [])
+
 
 if __name__ == "__main__":
     multiprocessing.freeze_support()

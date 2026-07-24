@@ -1,0 +1,14 @@
+{
+  "id": "c-bw-popular",
+  "record_type": "claim",
+  "subject_id": "broken-windows-effect",
+  "statement": "In popular accounts, the broken windows effect is described as visible signs of disorder such as broken windows causing increases in serious crime.",
+  "claim_type": "definition",
+  "scope_note": "Popular-language framing of a contested criminological claim.",
+  "evidence_ids": [
+    "ev-bw-popular"
+  ],
+  "status": "retrieved",
+  "publishable": false,
+  "provenance": "source_derived"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "c-moa-critique",
+  "record_type": "claim",
+  "subject_id": "misattribution-of-arousal",
+  "statement": "Kenrick, Cialdini and Linder (1979) reported failures to replicate the misattribution interpretation and offered a reinforcement-based alternative account.",
+  "claim_type": "critique",
+  "scope_note": "Records the existence of a documented critique, not adjudication of who is correct.",
+  "evidence_ids": [
+    "ev-moa-critique"
+  ],
+  "status": "retrieved",
+  "publishable": false,
+  "provenance": "source_derived"
+}

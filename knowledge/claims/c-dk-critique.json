@@ -1,0 +1,14 @@
+{
+  "id": "c-dk-critique",
+  "record_type": "claim",
+  "subject_id": "dunning-kruger-effect",
+  "statement": "Gignac and Zajenkowski (2020) argued that the classic Dunning-Kruger pattern can arise as a statistical artefact of measurement error and regression toward the mean.",
+  "claim_type": "critique",
+  "scope_note": "Records a documented methodological critique, not a verdict on the effect.",
+  "evidence_ids": [
+    "ev-dk-critique"
+  ],
+  "status": "retrieved",
+  "publishable": false,
+  "provenance": "source_derived"
+}

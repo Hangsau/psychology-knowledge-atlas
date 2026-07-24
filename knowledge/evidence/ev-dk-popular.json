@@ -1,0 +1,12 @@
+{
+  "id": "ev-dk-popular",
+  "record_type": "evidence",
+  "claim_id": "c-dk-popular",
+  "source_id": "wikipedia-dunning-kruger-effect",
+  "locator": "Encyclopedia article, lead section",
+  "evidence_level": "metadata_only",
+  "summary": "Encyclopedia summary of the common popular description of the effect.",
+  "status": "retrieved",
+  "publishable": false,
+  "provenance": "source_derived"
+}

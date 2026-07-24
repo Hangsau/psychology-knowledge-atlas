@@ -1,0 +1,14 @@
+{
+  "id": "c-moa-popular",
+  "record_type": "claim",
+  "subject_id": "misattribution-of-arousal",
+  "statement": "In popular accounts, physiological arousal from a frightening setting such as a high suspension bridge is described as being misread as romantic attraction toward a person met there.",
+  "claim_type": "definition",
+  "scope_note": "Popular-language framing of the named effect, not an evidence verdict.",
+  "evidence_ids": [
+    "ev-moa-popular"
+  ],
+  "status": "retrieved",
+  "publishable": false,
+  "provenance": "source_derived"
+}

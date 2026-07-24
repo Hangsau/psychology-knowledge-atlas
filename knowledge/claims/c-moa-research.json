@@ -1,0 +1,14 @@
+{
+  "id": "c-moa-research",
+  "record_type": "claim",
+  "subject_id": "misattribution-of-arousal",
+  "statement": "Dutton and Aron (1974) reported that men who crossed a high arousing suspension bridge showed more sexual imagery and higher callback rates to a female interviewer than men on a low stable bridge.",
+  "claim_type": "finding",
+  "scope_note": "Single primary study on a male sample; effect size, replicability and causal interpretation are not established here.",
+  "evidence_ids": [
+    "ev-moa-research"
+  ],
+  "status": "retrieved",
+  "publishable": false,
+  "provenance": "source_derived"
+}

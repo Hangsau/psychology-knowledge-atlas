@@ -1,0 +1,20 @@
+{
+  "id": "dutton-aron-1974-bridge",
+  "record_type": "source",
+  "title": "Some evidence for heightened sexual attraction under conditions of high anxiety",
+  "identifiers": {
+    "doi": "10.1037/h0037031",
+    "pmid": "4455773"
+  },
+  "access_status": "paywalled_unread",
+  "status": "retrieved",
+  "publishable": false,
+  "provenance": "source_derived",
+  "authors": [
+    "Donald G. Dutton",
+    "Arthur P. Aron"
+  ],
+  "issued": "1974",
+  "url": "https://doi.org/10.1037/h0037031",
+  "version_note": "Journal of Personality and Social Psychology 30(4), 510-517. Identifiers confirmed via search; full text not read this session, so access is paywalled_unread and no fulltext evidence is asserted."
+}

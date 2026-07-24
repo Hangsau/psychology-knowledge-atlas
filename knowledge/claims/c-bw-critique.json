@@ -1,0 +1,14 @@
+{
+  "id": "c-bw-critique",
+  "record_type": "claim",
+  "subject_id": "broken-windows-effect",
+  "statement": "Harcourt and Ludwig (2006) reported that reanalysis of relocation data did not support a causal link from disorder to serious crime.",
+  "claim_type": "critique",
+  "scope_note": "Records a documented empirical critique of the broken windows causal claim.",
+  "evidence_ids": [
+    "ev-bw-critique"
+  ],
+  "status": "retrieved",
+  "publishable": false,
+  "provenance": "source_derived"
+}

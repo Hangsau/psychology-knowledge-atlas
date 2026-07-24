@@ -1,0 +1,14 @@
+{
+  "id": "c-dk-research",
+  "record_type": "claim",
+  "subject_id": "dunning-kruger-effect",
+  "statement": "Kruger and Dunning (1999) reported that participants in the bottom quartile of test performance overestimated their percentile rank.",
+  "claim_type": "finding",
+  "scope_note": "Original study on US undergraduates; generalization and effect magnitude are not established here.",
+  "evidence_ids": [
+    "ev-dk-research"
+  ],
+  "status": "retrieved",
+  "publishable": false,
+  "provenance": "source_derived"
+}

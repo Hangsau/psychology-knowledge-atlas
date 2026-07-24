@@ -1,0 +1,18 @@
+{
+  "id": "wikipedia-dunning-kruger-effect",
+  "record_type": "source",
+  "title": "Dunning-Kruger effect",
+  "identifiers": {
+    "wikipedia": "Dunning-Kruger_effect"
+  },
+  "access_status": "open_fulltext",
+  "status": "retrieved",
+  "publishable": false,
+  "provenance": "reference_system",
+  "authors": [
+    "Wikipedia contributors"
+  ],
+  "issued": "2026",
+  "url": "https://en.wikipedia.org/wiki/Dunning%E2%80%93Kruger_effect",
+  "version_note": "Encyclopedia article used as a popular-language source for how the effect is commonly described. An encyclopedia summary is not evidence that the popular framing is accurate."
+}

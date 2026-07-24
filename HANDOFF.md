@@ -3,7 +3,7 @@
 ## ACTIVE WORK
 
 ```yaml
-phase: P1-E
+phase: P2-E
 status: validated
 started_at: 2026-07-22
 targets:
@@ -12,6 +12,7 @@ targets:
   - explicit roles for all existing reference systems
   - first named-phenomenon candidate universe (cognitive-bias discovery seed)
   - P2-E pilot phenomena outside cognitive biases registered (misattribution of arousal, broken windows)
+  - P2-E evidence source routing for the three pilots: popular / research / critique claims per pilot, each with a source and metadata-only evidence, all publishable:false
 validation:
   - canonical validator baseline PASS
   - 32 foundation and P1/P1-E system tests PASS
@@ -42,9 +43,20 @@ validation:
   - clean GitHub clone at 7e2c41f + validator + 20 tests PASS
   - clean GitHub clone at 6cc662d + validator + 21 tests PASS
   - clean GitHub clone at cd3d1f6 + validator + 22 tests PASS
-remote: https://github.com/Hangsau/psychology-knowledge-atlas
-next_gate: begin P2-E evidence source routing for the three registered pilots (dunning-kruger-effect, misattribution-of-arousal, broken-windows-effect); register source records by evidence type (primary study, systematic review/meta-analysis, replication, critique/boundary condition, textbook summary) with honest access_status, and separate popular claim from research claim; do NOT mark any claim publishable or verified until the evidence gate is defined and passed
+  - P2-E: 7 new source records registered from search-confirmed identifiers only; where no DOI was confirmed (kruger-dunning-1999, gignac-zajenkowski-2020, wilson-kelling-1982, harcourt-ludwig-2006) identifiers left empty rather than guessed
+  - P2-E: 9 claims + 9 evidence records for the three pilots; each pilot has exactly one popular (definition), one research (finding or mechanism), and one critique claim as distinct atomic records, not one blended verdict
+  - P2-E: every claim status retrieved, publishable:false, provenance source_derived, with a scope_note bounding overreach; every evidence evidence_level metadata_only, publishable:false, bidirectionally linked to its claim
+  - P2-E: access_status recorded honestly (paywalled_unread / publicly_readable_license_unclear / open_fulltext); no full text was read this session, so no fulltext evidence is asserted and nothing is publishable or verified
+  - 33 foundation and P1/P1-E/P2-E system tests PASS (added test_p2e_pilot_evidence_routing_is_identity_only)
+next_gate: define and codify the publish/verification gate before promoting any pilot claim. Concretely: (1) decide what counts as verified for a research claim (fulltext read + locator to the specific result, evidence_level fulltext_direct/indirect, access_status readable) versus for a popular claim (which stays a documented popular framing, not a truth claim); (2) obtain at least one readable full text for one pilot and upgrade that single claim end-to-end (source access_status readable, evidence_level fulltext_*, claim status verified, publishable:true) as the first worked example through the gate the validator already enforces; (3) only then generalize. Do NOT mark any claim publishable or verified until a full text is actually read and a specific locator recorded.
 ```
+
+## P2-E progress
+
+- P2-E routes evidence for the three pilots (`misattribution-of-arousal` 吊橋效應, `dunning-kruger-effect` 達克效應, `broken-windows-effect` 破窗效應) into three distinct atomic claims each: a `popular` claim (`claim_type: definition`) recording how the effect is described in popular language, a `research` claim (`finding`, or `mechanism` for broken windows) tied to the primary source, and a `critique` claim (`critique`) tied to a documented non-replication or methodological objection. Popular, research and critique are separate records so a popular framing can never masquerade as a research verdict.
+- Every P2-E claim carries a `scope_note` that bounds overreach (single study, US undergraduate sample, contested criminological claim, statistical-artefact objection, etc.), status `retrieved`, `publishable:false`, provenance `source_derived`. Every claim links exactly one evidence record, and each evidence record backlinks its claim (validator enforces the backlink).
+- Seven new sources were registered from search-confirmed identifiers only: `dutton-aron-1974-bridge` (DOI + PMID), `kenrick-cialdini-linder-1979` (DOI), `kruger-dunning-1999`, `gignac-zajenkowski-2020`, `wilson-kelling-1982-broken-windows`, `harcourt-ludwig-2006`, and `wikipedia-dunning-kruger-effect`. Where no DOI was confirmed, `identifiers` is left empty rather than guessed. Popular claims reuse the existing Wikipedia article sources for the bridge and broken-windows effects.
+- No full text was read this session: all evidence is `evidence_level: metadata_only`, all sources carry honest `access_status` (`paywalled_unread`, `publicly_readable_license_unclear`, or `open_fulltext`), and nothing is `publishable` or `verified`. The validator's publish gate (verified + readable fulltext evidence) is intact and untriggered.
 
 ## P1 progress
 

@@ -1,0 +1,14 @@
+{
+  "id": "c-dk-popular",
+  "record_type": "claim",
+  "subject_id": "dunning-kruger-effect",
+  "statement": "In popular accounts, the Dunning-Kruger effect is described as low-ability people systematically overestimating their own competence.",
+  "claim_type": "definition",
+  "scope_note": "Popular-language framing that is frequently oversimplified relative to the original data.",
+  "evidence_ids": [
+    "ev-dk-popular"
+  ],
+  "status": "retrieved",
+  "publishable": false,
+  "provenance": "source_derived"
+}

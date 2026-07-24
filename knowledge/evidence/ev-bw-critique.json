@@ -1,0 +1,12 @@
+{
+  "id": "ev-bw-critique",
+  "record_type": "evidence",
+  "claim_id": "c-bw-critique",
+  "source_id": "harcourt-ludwig-2006",
+  "locator": "University of Chicago Law Review 73(1), 271-320",
+  "evidence_level": "metadata_only",
+  "summary": "Metadata-level record of a documented empirical critique.",
+  "status": "retrieved",
+  "publishable": false,
+  "provenance": "source_derived"
+}

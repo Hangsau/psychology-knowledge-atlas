@@ -1,0 +1,14 @@
+{
+  "id": "c-bw-research",
+  "record_type": "claim",
+  "subject_id": "broken-windows-effect",
+  "statement": "Wilson and Kelling (1982) proposed that untended disorderly cues signal an absence of social control and thereby invite further disorder and crime.",
+  "claim_type": "mechanism",
+  "scope_note": "Theoretical proposal in a magazine essay, not an empirical demonstration of the causal chain.",
+  "evidence_ids": [
+    "ev-bw-research"
+  ],
+  "status": "retrieved",
+  "publishable": false,
+  "provenance": "source_derived"
+}
