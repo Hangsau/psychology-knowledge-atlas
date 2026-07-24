@@ -1,0 +1,18 @@
+{
+  "id": "wikipedia-list-of-cognitive-biases",
+  "record_type": "source",
+  "title": "List of cognitive biases",
+  "identifiers": {
+    "wikipedia": "List_of_cognitive_biases"
+  },
+  "access_status": "open_fulltext",
+  "status": "retrieved",
+  "publishable": false,
+  "provenance": "reference_system",
+  "authors": [
+    "Wikipedia contributors"
+  ],
+  "issued": "2026",
+  "url": "https://en.wikipedia.org/wiki/List_of_cognitive_biases",
+  "version_note": "Community-maintained inventory retrieved 2026-07-24. Used only as a discovery seed for named cognitive biases; a list entry is not evidence that a bias is real, replicable, or causally established."
+}

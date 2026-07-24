@@ -1,0 +1,20 @@
+{
+  "id": "optimism-bias",
+  "record_type": "entity",
+  "entity_type": "phenomenon",
+  "name": "Optimism bias",
+  "aliases": [],
+  "name_zh": "樂觀偏誤",
+  "phenomenon_kind": "bias",
+  "domain_entity_ids": [
+    "cognition"
+  ],
+  "status": "retrieved",
+  "publishable": false,
+  "provenance": "reference_system",
+  "source_ids": [
+    "wikipedia-list-of-cognitive-biases"
+  ],
+  "tags": [],
+  "notes": "Named identity registered from the cognitive-bias discovery seed. phenomenon_kind classifies the label only; it does not assert the effect is real, replicable, or causally established. No evidence claim exists yet."
+}

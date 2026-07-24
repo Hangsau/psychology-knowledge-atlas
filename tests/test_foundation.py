@@ -510,6 +510,29 @@ class FoundationTests(unittest.TestCase):
         self.assertEqual(decisions["anzsrc-4599"]["decision"], "excluded")
         self.assertNotIn("target_entity_id", decisions["anzsrc-4599"])
 
+    def test_cognitive_bias_discovery_seed_slice_is_bounded_and_resolved(self) -> None:
+        build(self.work)
+        report = json.loads((self.work / "views/generated/coverage-report.json").read_text(encoding="utf-8"))
+        slice_ = next(item for item in report["reference_systems"] if item["id"] == "wikipedia-cognitive-biases-core")
+        self.assertEqual(slice_["candidate_count"], 23)
+        self.assertEqual(slice_["decision_count"], 23)
+        self.assertTrue(slice_["complete"])
+        self.assertTrue(slice_["resolved"])
+        self.assertEqual(
+            slice_["decision_counts"],
+            {"included": 23, "merged": 0, "excluded": 0, "pending": 0},
+        )
+        decisions = {item["candidate_id"]: item for item in slice_["decisions"]}
+        self.assertEqual(decisions["wcb-dunning-kruger-effect"]["target_entity_id"], "dunning-kruger-effect")
+        phenomenon = json.loads(
+            (self.work / "catalog/entities/dunning-kruger-effect.json").read_text(encoding="utf-8")
+        )
+        self.assertEqual(phenomenon["entity_type"], "phenomenon")
+        self.assertEqual(phenomenon["phenomenon_kind"], "effect")
+        self.assertEqual(phenomenon["name_zh"], "達克效應")
+        self.assertFalse(phenomenon["publishable"])
+        self.assertIn("cognition", phenomenon["domain_entity_ids"])
+
 
 if __name__ == "__main__":
     multiprocessing.freeze_support()

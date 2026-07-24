@@ -1,0 +1,42 @@
+{
+  "id": "wikipedia-cognitive-biases-core",
+  "record_type": "reference_system",
+  "title": "Wikipedia list of cognitive biases — core bounded batch",
+  "authority": "Wikipedia (community-maintained)",
+  "scope": "A deliberately bounded first batch of 23 widely taught, textbook-canonical cognitive biases drawn from Wikipedia's List of cognitive biases as retrieved 2026-07-24. This is NOT the exhaustive ~210-entry list; it is a discovery seed. Coverage completeness for this record means every declared candidate is adjudicated, not that the cognitive-bias universe is exhausted. Registration records a named identity only and asserts nothing about the reality, replicability, or causal evidence of any effect.",
+  "system_role": "discovery_seed",
+  "version": "retrieved-2026-07-24",
+  "retrieved_at": "2026-07-24",
+  "source_ids": [
+    "wikipedia-list-of-cognitive-biases"
+  ],
+  "candidate_ids": [
+    "wcb-confirmation-bias",
+    "wcb-anchoring-bias",
+    "wcb-availability-heuristic",
+    "wcb-representativeness-heuristic",
+    "wcb-dunning-kruger-effect",
+    "wcb-hindsight-bias",
+    "wcb-framing-effect",
+    "wcb-halo-effect",
+    "wcb-fundamental-attribution-error",
+    "wcb-self-serving-bias",
+    "wcb-sunk-cost-effect",
+    "wcb-negativity-bias",
+    "wcb-optimism-bias",
+    "wcb-ingroup-bias",
+    "wcb-actor-observer-bias",
+    "wcb-recency-effect",
+    "wcb-primacy-effect",
+    "wcb-illusory-correlation",
+    "wcb-gamblers-fallacy",
+    "wcb-bandwagon-effect",
+    "wcb-status-quo-bias",
+    "wcb-loss-aversion",
+    "wcb-mere-exposure-effect"
+  ],
+  "status": "retrieved",
+  "publishable": false,
+  "provenance": "reference_system",
+  "notes": "First named-phenomenon slice (P1-E). A discovery seed can only produce candidates; it cannot support an evidence verdict. Additional biases from the full source remain unregistered and are planned as later batches."
+}

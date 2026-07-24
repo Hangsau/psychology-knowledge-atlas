@@ -1,0 +1,22 @@
+{
+  "id": "actor-observer-bias",
+  "record_type": "entity",
+  "entity_type": "phenomenon",
+  "name": "Actor–observer bias",
+  "aliases": [
+    "Actor-observer asymmetry"
+  ],
+  "name_zh": "行動者—觀察者偏誤",
+  "phenomenon_kind": "bias",
+  "domain_entity_ids": [
+    "social-psychology"
+  ],
+  "status": "retrieved",
+  "publishable": false,
+  "provenance": "reference_system",
+  "source_ids": [
+    "wikipedia-list-of-cognitive-biases"
+  ],
+  "tags": [],
+  "notes": "Named identity registered from the cognitive-bias discovery seed. phenomenon_kind classifies the label only; it does not assert the effect is real, replicable, or causally established. No evidence claim exists yet."
+}

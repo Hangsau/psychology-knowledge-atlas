@@ -1,0 +1,13 @@
+{
+  "id": "wikipedia-cognitive-biases-core-confirmation-bias",
+  "record_type": "coverage",
+  "reference_system_id": "wikipedia-cognitive-biases-core",
+  "candidate_id": "wcb-confirmation-bias",
+  "candidate_label": "Confirmation bias",
+  "decision": "included",
+  "reason": "Included as a distinct named cognitive-bias identity in the bounded discovery-seed batch; no existing entity represents this phenomenon, so a new phenomenon identity is created without any evidence claim.",
+  "target_entity_id": "confirmation-bias",
+  "status": "retrieved",
+  "publishable": false,
+  "provenance": "reference_system"
+}

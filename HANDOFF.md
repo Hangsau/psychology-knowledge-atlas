@@ -10,9 +10,10 @@ targets:
   - phenomenon entity contract
   - controlled phenomenon_kind and reference-system system_role vocabularies
   - explicit roles for all existing reference systems
+  - first named-phenomenon candidate universe (cognitive-bias discovery seed)
 validation:
   - canonical validator baseline PASS
-  - 30 foundation and P1/P1-E system tests PASS
+  - 31 foundation and P1/P1-E system tests PASS
   - git diff whitespace gate PASS
   - APA CoA C-5 P snapshot: 11/11 candidates adjudicated
   - ANZSRC 2020 FoR Division 52 group slice: 6/6 candidates adjudicated
@@ -30,17 +31,21 @@ validation:
   - corrected ABS 2025 labels: 4517 Pacific Peoples society and community; 4518 Pacific Peoples sciences
   - phenomenon contract: controlled kind, optional Chinese label, and non-empty resolvable domain_entity_ids
   - reference-system role contract: canonical taxonomy, specialist index, discovery seed, or popular-language inventory
+  - wikipedia-cognitive-biases-core discovery seed: 23/23 candidates registered, resolved and included as phenomenon identities; complete:true, resolved:true, pending 0
+  - cognitive-bias slice is a bounded discovery seed, NOT the exhaustive ~210-entry source list; complete here means every DECLARED candidate is adjudicated, not that the cognitive-bias universe is exhausted
+  - no evidence claims created: every phenomenon is status retrieved, publishable:false, provenance reference_system; identity-only registration
   - entity-types vocabulary now matches validator and includes context_domain plus phenomenon
   - clean GitHub clone at 5faead9 + validator + 19 tests PASS
   - clean GitHub clone at 7e2c41f + validator + 20 tests PASS
   - clean GitHub clone at 6cc662d + validator + 21 tests PASS
   - clean GitHub clone at cd3d1f6 + validator + 22 tests PASS
 remote: https://github.com/Hangsau/psychology-knowledge-atlas
-next_gate: register a bounded named-phenomenon candidate universe with explicit system_role and coverage decisions; do not create evidence claims yet
+next_gate: extend the named-phenomenon discovery seeds with the P2-E pilot phenomena that fall outside cognitive biases (misattribution-of-arousal / dutton-aron bridge effect, broken-windows effect) as their own bounded slices with explicit system_role; still identity-only, no evidence claims yet
 ```
 
 ## P1 progress
 
+- `wikipedia-cognitive-biases-core` is the first named-phenomenon slice and the first `discovery_seed`. It registers 23 widely taught cognitive biases (confirmation bias, anchoring, availability/representativeness heuristics, Dunning–Kruger, framing, halo, fundamental attribution error, loss aversion, etc.) as `phenomenon` entities with a controlled `phenomenon_kind`, a resolvable `domain_entity_ids` host, and a Chinese label. All 23 are `included`; there are no merges because no prior entity represented a phenomenon. This is deliberately bounded: the source page has ~210 loosely structured entries, so `complete:true` means every declared candidate is adjudicated, not that the cognitive-bias universe is exhausted. A discovery seed can only produce candidates; it cannot support an evidence verdict, and every record stays `publishable:false`.
 - `apa-coa-postdoctoral-specialty-practice-areas` is the first completed reference-system slice: 11/11 official candidates are recorded and mapped to non-publishable `subfield` identities.
 - Its scope is deliberately narrow: United States health-service psychology postdoctoral specialty accreditation. It is not evidence for a global or exhaustive psychology taxonomy.
 - `anzsrc-2020-for-psychology-groups` is the second completed slice: 6/6 group-level candidates under Division 52 are adjudicated. Five substantive groups are included; residual code 5299 `Other psychology` is recorded but excluded as a non-coherent entity.
