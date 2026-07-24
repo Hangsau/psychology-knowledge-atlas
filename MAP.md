@@ -47,3 +47,4 @@ tests/                   邊界、schema、參照、併發、安全測試
 - `phenomenon` 只登錄命名身份與分類角色；`phenomenon_kind: effect` 不表示效應存在、可重複或已有因果證據。`name_zh` 是譯名，不是獨立 identity。
 - `system_role` 決定 reference system 的知識權重；discovery seed 與 popular-language inventory 只能產生候選，不能直接支持 evidence verdict。
 - P2-E 每個命名效應拆成 `popular`／`research`／`critique` 三筆獨立 atomic claim；popular framing 不得冒充 research verdict。`metadata_only` 證據與未讀全文的 source 一律 `publishable:false`，validator 的發布閘門（verified + 可讀全文證據）尚未觸發。
+- 維基百科只准當 `discovery_seed`（候選清單）與 popular 通俗說法來源，是三手資料；不得當 canonical taxonomy 或 research／critique 證據。候選改用教科書／手冊、課綱、專業機構分類法（ANZSRC／APA CoA／IAAP），證據改用一手研究／meta-analysis／replication 專案，避免反射式抓維基的覆蓋偏誤。

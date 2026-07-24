@@ -27,6 +27,7 @@
 - `publishable:true` 必須有合格 evidence 與 locator，並通過發布閘門。
 - generated views 不手改；刪除後必須能由 canonical data 重生。
 - 未授權全文放在 repo 外或 `.private-sources/`，不得 commit。
+- 維基百科只能當 `discovery_seed`（候選清單）與 `popular_language_inventory`（通俗說法）兩種角色；它是三手資料，不得作 canonical taxonomy，也不得支撐 research／critique 主張的證據。證據一律取一手研究、meta-analysis 或 replication 專案（Many Labs、Reproducibility Project）；找候選優先用教科書／手冊、課綱與專業機構分類法（ANZSRC／APA CoA／IAAP），避免反射式抓維基造成覆蓋偏誤。
 - 新增／改 schema 時同步 tests、HANDOFF、MAP。
 
 ## Legacy 邊界
