@@ -1,0 +1,13 @@
+{
+  "id": "named-effects-routing-pilot-broken-windows-effect",
+  "record_type": "coverage",
+  "reference_system_id": "named-effects-routing-pilot",
+  "candidate_id": "nep-broken-windows-effect",
+  "candidate_label": "Broken windows effect",
+  "decision": "included",
+  "reason": "Included as a distinct named field-effect identity for the evidence-routing pilot; the effect is contested but the identity is real. A new phenomenon identity is created without any evidence claim.",
+  "target_entity_id": "broken-windows-effect",
+  "status": "retrieved",
+  "publishable": false,
+  "provenance": "reference_system"
+}

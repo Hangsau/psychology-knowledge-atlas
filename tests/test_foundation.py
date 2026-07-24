@@ -533,6 +533,34 @@ class FoundationTests(unittest.TestCase):
         self.assertFalse(phenomenon["publishable"])
         self.assertIn("cognition", phenomenon["domain_entity_ids"])
 
+    def test_named_effect_routing_pilot_is_bounded_and_resolved(self) -> None:
+        build(self.work)
+        report = json.loads((self.work / "views/generated/coverage-report.json").read_text(encoding="utf-8"))
+        pilot = next(item for item in report["reference_systems"] if item["id"] == "named-effects-routing-pilot")
+        self.assertEqual(pilot["candidate_count"], 2)
+        self.assertEqual(pilot["decision_count"], 2)
+        self.assertTrue(pilot["complete"])
+        self.assertTrue(pilot["resolved"])
+        self.assertEqual(
+            pilot["decision_counts"],
+            {"included": 2, "merged": 0, "excluded": 0, "pending": 0},
+        )
+        decisions = {item["candidate_id"]: item for item in pilot["decisions"]}
+        self.assertEqual(decisions["nep-misattribution-of-arousal"]["target_entity_id"], "misattribution-of-arousal")
+        self.assertEqual(decisions["nep-broken-windows-effect"]["target_entity_id"], "broken-windows-effect")
+        bridge = json.loads(
+            (self.work / "catalog/entities/misattribution-of-arousal.json").read_text(encoding="utf-8")
+        )
+        self.assertEqual(bridge["entity_type"], "phenomenon")
+        self.assertEqual(bridge["phenomenon_kind"], "effect")
+        self.assertEqual(bridge["name_zh"], "吊橋效應")
+        self.assertFalse(bridge["publishable"])
+        broken = json.loads(
+            (self.work / "catalog/entities/broken-windows-effect.json").read_text(encoding="utf-8")
+        )
+        self.assertEqual(broken["name_zh"], "破窗效應")
+        self.assertIn("contested", broken["notes"])
+
 
 if __name__ == "__main__":
     multiprocessing.freeze_support()

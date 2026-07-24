@@ -1,0 +1,24 @@
+{
+  "id": "misattribution-of-arousal",
+  "record_type": "entity",
+  "entity_type": "phenomenon",
+  "name": "Misattribution of arousal",
+  "aliases": [
+    "Dutton–Aron bridge experiment",
+    "Suspension bridge effect"
+  ],
+  "name_zh": "吊橋效應",
+  "phenomenon_kind": "effect",
+  "domain_entity_ids": [
+    "social-psychology",
+    "learning-motivation-and-emotion"
+  ],
+  "status": "retrieved",
+  "publishable": false,
+  "provenance": "reference_system",
+  "source_ids": [
+    "wikipedia-misattribution-of-arousal"
+  ],
+  "tags": [],
+  "notes": "Named identity registered from a discovery seed. phenomenon_kind classifies the label only; it does not assert the effect is real, replicable, or causally established. No evidence claim exists yet."
+}

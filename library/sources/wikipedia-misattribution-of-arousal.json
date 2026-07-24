@@ -1,0 +1,18 @@
+{
+  "id": "wikipedia-misattribution-of-arousal",
+  "record_type": "source",
+  "title": "Misattribution of arousal",
+  "identifiers": {
+    "wikipedia": "Misattribution_of_arousal"
+  },
+  "access_status": "open_fulltext",
+  "status": "retrieved",
+  "publishable": false,
+  "provenance": "reference_system",
+  "authors": [
+    "Wikipedia contributors"
+  ],
+  "issued": "2026",
+  "url": "https://en.wikipedia.org/wiki/Misattribution_of_arousal",
+  "version_note": "Encyclopedia article retrieved 2026-07-24 as a discovery seed for the named effect (Dutton-Aron suspension-bridge experiment). A list/article entry is not evidence that the effect is real, replicable, or causally established."
+}

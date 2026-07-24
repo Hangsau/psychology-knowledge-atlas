@@ -1,0 +1,18 @@
+{
+  "id": "wikipedia-broken-windows-theory",
+  "record_type": "source",
+  "title": "Broken windows theory",
+  "identifiers": {
+    "wikipedia": "Broken_windows_theory"
+  },
+  "access_status": "open_fulltext",
+  "status": "retrieved",
+  "publishable": false,
+  "provenance": "reference_system",
+  "authors": [
+    "Wikipedia contributors"
+  ],
+  "issued": "2026",
+  "url": "https://en.wikipedia.org/wiki/Broken_windows_theory",
+  "version_note": "Encyclopedia article retrieved 2026-07-24 as a discovery seed for the named effect (Wilson and Kelling, 1982). The effect is contested in the literature; registration is identity-only and asserts nothing about its validity."
+}

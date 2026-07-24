@@ -11,9 +11,10 @@ targets:
   - controlled phenomenon_kind and reference-system system_role vocabularies
   - explicit roles for all existing reference systems
   - first named-phenomenon candidate universe (cognitive-bias discovery seed)
+  - P2-E pilot phenomena outside cognitive biases registered (misattribution of arousal, broken windows)
 validation:
   - canonical validator baseline PASS
-  - 31 foundation and P1/P1-E system tests PASS
+  - 32 foundation and P1/P1-E system tests PASS
   - git diff whitespace gate PASS
   - APA CoA C-5 P snapshot: 11/11 candidates adjudicated
   - ANZSRC 2020 FoR Division 52 group slice: 6/6 candidates adjudicated
@@ -33,6 +34,8 @@ validation:
   - reference-system role contract: canonical taxonomy, specialist index, discovery seed, or popular-language inventory
   - wikipedia-cognitive-biases-core discovery seed: 23/23 candidates registered, resolved and included as phenomenon identities; complete:true, resolved:true, pending 0
   - cognitive-bias slice is a bounded discovery seed, NOT the exhaustive ~210-entry source list; complete here means every DECLARED candidate is adjudicated, not that the cognitive-bias universe is exhausted
+  - named-effects-routing-pilot discovery seed: 2/2 candidates (misattribution of arousal 吊橋效應, broken windows 破窗效應) registered, resolved and included; complete:true, resolved:true, pending 0
+  - three P2-E routing pilots now all have identities: Dunning-Kruger (under the cognitive-bias seed), misattribution of arousal, and broken windows
   - no evidence claims created: every phenomenon is status retrieved, publishable:false, provenance reference_system; identity-only registration
   - entity-types vocabulary now matches validator and includes context_domain plus phenomenon
   - clean GitHub clone at 5faead9 + validator + 19 tests PASS
@@ -40,11 +43,12 @@ validation:
   - clean GitHub clone at 6cc662d + validator + 21 tests PASS
   - clean GitHub clone at cd3d1f6 + validator + 22 tests PASS
 remote: https://github.com/Hangsau/psychology-knowledge-atlas
-next_gate: extend the named-phenomenon discovery seeds with the P2-E pilot phenomena that fall outside cognitive biases (misattribution-of-arousal / dutton-aron bridge effect, broken-windows effect) as their own bounded slices with explicit system_role; still identity-only, no evidence claims yet
+next_gate: begin P2-E evidence source routing for the three registered pilots (dunning-kruger-effect, misattribution-of-arousal, broken-windows-effect); register source records by evidence type (primary study, systematic review/meta-analysis, replication, critique/boundary condition, textbook summary) with honest access_status, and separate popular claim from research claim; do NOT mark any claim publishable or verified until the evidence gate is defined and passed
 ```
 
 ## P1 progress
 
+- `named-effects-routing-pilot` is the second named-phenomenon slice: a deliberately bounded two-item `discovery_seed` pairing chosen by PLAN P2-E to test evidence routing across different evidence types. It registers `misattribution-of-arousal` (吊橋效應, Dutton–Aron bridge experiment; a lab social-psychology emotion effect) and `broken-windows-effect` (破窗效應, Wilson & Kelling 1982; a contested field criminology/social-order effect). Both are `included` identity-only, `publishable:false`. With the already-registered Dunning–Kruger effect, all three P2-E routing pilots now have identities. The broken-windows note explicitly records that the effect is contested, so identity registration cannot be mistaken for validity.
 - `wikipedia-cognitive-biases-core` is the first named-phenomenon slice and the first `discovery_seed`. It registers 23 widely taught cognitive biases (confirmation bias, anchoring, availability/representativeness heuristics, Dunning–Kruger, framing, halo, fundamental attribution error, loss aversion, etc.) as `phenomenon` entities with a controlled `phenomenon_kind`, a resolvable `domain_entity_ids` host, and a Chinese label. All 23 are `included`; there are no merges because no prior entity represented a phenomenon. This is deliberately bounded: the source page has ~210 loosely structured entries, so `complete:true` means every declared candidate is adjudicated, not that the cognitive-bias universe is exhausted. A discovery seed can only produce candidates; it cannot support an evidence verdict, and every record stays `publishable:false`.
 - `apa-coa-postdoctoral-specialty-practice-areas` is the first completed reference-system slice: 11/11 official candidates are recorded and mapped to non-publishable `subfield` identities.
 - Its scope is deliberately narrow: United States health-service psychology postdoctoral specialty accreditation. It is not evidence for a global or exhaustive psychology taxonomy.

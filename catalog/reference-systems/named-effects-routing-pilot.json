@@ -1,0 +1,22 @@
+{
+  "id": "named-effects-routing-pilot",
+  "record_type": "reference_system",
+  "title": "Named-effect routing pilot (beyond cognitive biases)",
+  "authority": "Atlas curation (PLAN P2-E pilot pairing)",
+  "scope": "A deliberately bounded two-item pilot pairing selected by PLAN P2-E to test evidence routing across different evidence types: a laboratory social-psychology emotion effect (misattribution of arousal) and a contested field criminology/social-order effect (broken windows). It is NOT a taxonomy or an exhaustive list of non-cognitive-bias effects; the Dunning-Kruger effect, the third named pilot, is already registered under the cognitive-bias discovery seed. Registration records named identities only and asserts nothing about reality, replicability, or causal evidence.",
+  "system_role": "discovery_seed",
+  "version": "retrieved-2026-07-24",
+  "retrieved_at": "2026-07-24",
+  "source_ids": [
+    "wikipedia-misattribution-of-arousal",
+    "wikipedia-broken-windows-theory"
+  ],
+  "candidate_ids": [
+    "nep-misattribution-of-arousal",
+    "nep-broken-windows-effect"
+  ],
+  "status": "retrieved",
+  "publishable": false,
+  "provenance": "reference_system",
+  "notes": "Second named-phenomenon slice (P1-E). A discovery seed can only produce candidates; it cannot support an evidence verdict. These two pilots plus the already-registered Dunning-Kruger effect are the P2-E source-routing pilots."
+}
