@@ -1,0 +1,14 @@
+{
+  "claim_type": "critique",
+  "evidence_ids": [
+    "ev-structuralism-s3-wundt-rejects-unaided-self-observation"
+  ],
+  "id": "c-structuralism-s3-wundt-rejects-unaided-self-observation",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "claim",
+  "scope_note": "Wundt's objection targets direct, unaided self-observation as an exact scientific method; it is not a rejection of every report about conscious experience.",
+  "statement": "Wundt rejected unaided self-observation as a method for exact characterization of mental facts.",
+  "status": "verified",
+  "subject_id": "structuralism"
+}

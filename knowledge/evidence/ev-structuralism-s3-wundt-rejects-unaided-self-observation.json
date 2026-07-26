@@ -1,0 +1,13 @@
+{
+  "claim_id": "c-structuralism-s3-wundt-rejects-unaided-self-observation",
+  "evidence_level": "fulltext_direct",
+  "id": "ev-structuralism-s3-wundt-rejects-unaided-self-observation",
+  "locator": "Introduction, section 1, p. 7, paragraph beginning 'The only form of introspection'",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "evidence",
+  "short_quote": "self-observation which thinks it can arrive directly, without further assistance, at an exact characterisation of mental facts",
+  "source_id": "wundt-1902-1904-principles-introduction",
+  "status": "verified",
+  "summary": "Wundt identifies unaided direct self-observation as the form of introspection that experimental psychology should exclude."
+}

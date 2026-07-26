@@ -1,0 +1,13 @@
+{
+  "claim_id": "c-structuralism-s3-wundt-objective-conditions",
+  "evidence_level": "fulltext_direct",
+  "id": "ev-structuralism-s3-wundt-objective-conditions",
+  "locator": "Introduction, section 1, p. 7, paragraph beginning 'The aim of the experimental procedure'",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "evidence",
+  "short_quote": "it brings consciousness under accurately adjustable objective conditions",
+  "source_id": "wundt-1902-1904-principles-introduction",
+  "status": "verified",
+  "summary": "Wundt states the experimental control condition that is meant to replace inaccurate unaided inner perception."
+}

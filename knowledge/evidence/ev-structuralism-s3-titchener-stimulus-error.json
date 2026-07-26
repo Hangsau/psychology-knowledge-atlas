@@ -1,0 +1,13 @@
+{
+  "claim_id": "c-structuralism-s3-titchener-stimulus-error",
+  "evidence_level": "fulltext_direct",
+  "id": "ev-structuralism-s3-titchener-stimulus-error",
+  "locator": "The Stimulus Error section, pp. 488-489",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "evidence",
+  "short_quote": "when he attends not to 'sensation' but to 'stimulus'",
+  "source_id": "titchener-1912-schema-introspection",
+  "status": "verified",
+  "summary": "Titchener defines the typical stimulus error as substituting attention to the stimulus for description of sensation."
+}

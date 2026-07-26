@@ -779,6 +779,43 @@ class FoundationTests(unittest.TestCase):
         self.assertFalse(queued_evidence["publishable"])
         self.assertEqual(validate_repository(self.work), [])
 
+    def test_structuralism_s3_introspection_methods_are_not_conflated(self) -> None:
+        claim_ids = {
+            "c-structuralism-s3-wundt-rejects-unaided-self-observation",
+            "c-structuralism-s3-wundt-objective-conditions",
+            "c-structuralism-s3-titchener-standard-conditions",
+            "c-structuralism-s3-titchener-stimulus-error",
+        }
+        for claim_id in claim_ids:
+            claim = json.loads(
+                (self.work / f"knowledge/claims/{claim_id}.json").read_text(encoding="utf-8")
+            )
+            self.assertEqual(claim["subject_id"], "structuralism")
+            self.assertEqual(claim["status"], "verified")
+            self.assertTrue(claim["publishable"])
+            evidence = json.loads(
+                (self.work / f"knowledge/evidence/{claim['evidence_ids'][0]}.json").read_text(encoding="utf-8")
+            )
+            self.assertEqual(evidence["evidence_level"], "fulltext_direct")
+            self.assertTrue(evidence["publishable"])
+            self.assertLessEqual(len(evidence["short_quote"].split()), 25)
+
+        wundt_limit = json.loads(
+            (
+                self.work
+                / "knowledge/claims/c-structuralism-s3-wundt-rejects-unaided-self-observation.json"
+            ).read_text(encoding="utf-8")
+        )
+        self.assertIn("unaided", wundt_limit["statement"])
+        stimulus_error = json.loads(
+            (self.work / "knowledge/claims/c-structuralism-s3-titchener-stimulus-error.json").read_text(
+                encoding="utf-8"
+            )
+        )
+        self.assertIn("stimulus", stimulus_error["statement"])
+        self.assertIn("sensation", stimulus_error["statement"])
+        self.assertEqual(validate_repository(self.work), [])
+
 
 if __name__ == "__main__":
     multiprocessing.freeze_support()
