@@ -1,0 +1,14 @@
+{
+  "claim_type": "definition",
+  "evidence_ids": [
+    "ev-structuralism-s4-wundt-clearness-compound"
+  ],
+  "id": "c-structuralism-s4-wundt-clearness-compound",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "claim",
+  "scope_note": "This records Wundt's classification in Outlines section 5; it is deliberately separated from Titchener's later structural classification.",
+  "statement": "Wundt did not classify clearness as a determinant of psychical elements.",
+  "status": "verified",
+  "subject_id": "structuralism"
+}

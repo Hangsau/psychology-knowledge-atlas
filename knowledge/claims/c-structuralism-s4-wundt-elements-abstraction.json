@@ -1,0 +1,14 @@
+{
+  "claim_type": "definition",
+  "evidence_ids": [
+    "ev-structuralism-s4-wundt-elements-abstraction"
+  ],
+  "id": "c-structuralism-s4-wundt-elements-abstraction",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "claim",
+  "scope_note": "This states Wundt's analytic status for psychical elements; it does not claim that elements occur independently in experience.",
+  "statement": "Wundt treated psychical elements as abstractions from composite experience.",
+  "status": "verified",
+  "subject_id": "structuralism"
+}

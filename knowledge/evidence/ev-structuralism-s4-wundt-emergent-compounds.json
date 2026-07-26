@@ -1,0 +1,13 @@
+{
+  "claim_id": "c-structuralism-s4-wundt-emergent-compounds",
+  "evidence_level": "fulltext_direct",
+  "id": "ev-structuralism-s4-wundt-emergent-compounds",
+  "locator": "Section 8.2, Definition and Classification of Psychical Compounds",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "evidence",
+  "short_quote": "new attributes, peculiar to the compounds themselves, always arise as a result of the combination of these elements",
+  "source_id": "wundt-1897-outlines-psychology",
+  "status": "verified",
+  "summary": "Wundt states that a psychical compound has attributes produced by combination rather than merely repeating its elements' attributes."
+}

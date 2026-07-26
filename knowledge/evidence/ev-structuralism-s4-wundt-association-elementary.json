@@ -1,0 +1,13 @@
+{
+  "claim_id": "c-structuralism-s4-wundt-association-elementary",
+  "evidence_level": "fulltext_direct",
+  "id": "ev-structuralism-s4-wundt-association-elementary",
+  "locator": "Section 16.3, Associations, pp. 226-227",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "evidence",
+  "short_quote": "the only way to find out character of elementary association is to subject its complex products to a psychological analysis",
+  "source_id": "wundt-1897-outlines-psychology",
+  "status": "verified",
+  "summary": "Wundt says elementary association must be recovered through analysis because actual associations appear in more complex forms."
+}

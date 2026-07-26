@@ -816,6 +816,46 @@ class FoundationTests(unittest.TestCase):
         self.assertIn("sensation", stimulus_error["statement"])
         self.assertEqual(validate_repository(self.work), [])
 
+    def test_structuralism_s4_element_and_combination_models_stay_distinct(self) -> None:
+        claim_ids = {
+            "c-structuralism-s4-wundt-elements-abstraction",
+            "c-structuralism-s4-wundt-clearness-compound",
+            "c-structuralism-s4-wundt-emergent-compounds",
+            "c-structuralism-s4-wundt-consciousness-synthesis",
+            "c-structuralism-s4-wundt-association-elementary",
+            "c-structuralism-s4-wundt-active-apperception",
+            "c-structuralism-s4-titchener-two-element-classes",
+            "c-structuralism-s4-titchener-clearness-attribute",
+        }
+        for claim_id in claim_ids:
+            claim = json.loads(
+                (self.work / f"knowledge/claims/{claim_id}.json").read_text(encoding="utf-8")
+            )
+            self.assertEqual(claim["subject_id"], "structuralism")
+            self.assertEqual(claim["status"], "verified")
+            self.assertTrue(claim["publishable"])
+            self.assertEqual(len(claim["evidence_ids"]), 1)
+            evidence = json.loads(
+                (self.work / f"knowledge/evidence/{claim['evidence_ids'][0]}.json").read_text(encoding="utf-8")
+            )
+            self.assertEqual(evidence["evidence_level"], "fulltext_direct")
+            self.assertTrue(evidence["publishable"])
+            self.assertLessEqual(len(evidence["short_quote"].split()), 25)
+
+        wundt = json.loads(
+            (self.work / "knowledge/claims/c-structuralism-s4-wundt-clearness-compound.json").read_text(
+                encoding="utf-8"
+            )
+        )
+        titchener = json.loads(
+            (self.work / "knowledge/claims/c-structuralism-s4-titchener-clearness-attribute.json").read_text(
+                encoding="utf-8"
+            )
+        )
+        self.assertIn("did not classify", wundt["statement"])
+        self.assertIn("classified clearness", titchener["statement"])
+        self.assertEqual(validate_repository(self.work), [])
+
 
 if __name__ == "__main__":
     multiprocessing.freeze_support()

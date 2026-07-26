@@ -1,0 +1,13 @@
+{
+  "claim_id": "c-structuralism-s4-wundt-active-apperception",
+  "evidence_level": "fulltext_direct",
+  "id": "ev-structuralism-s4-wundt-active-apperception",
+  "locator": "Section 15.9, Consciousness and Attention, p. 219",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "evidence",
+  "short_quote": "often recognized as a voluntary process or even as a selective process",
+  "source_id": "wundt-1897-outlines-psychology",
+  "status": "verified",
+  "summary": "Wundt connects active apperception with internal volition and selection among competing contents."
+}

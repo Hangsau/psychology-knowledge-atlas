@@ -1,0 +1,13 @@
+{
+  "claim_id": "c-structuralism-s4-titchener-clearness-attribute",
+  "evidence_level": "fulltext_direct",
+  "id": "ev-structuralism-s4-titchener-clearness-attribute",
+  "locator": "The Postulates of a Structural Psychology, p. 462",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "evidence",
+  "short_quote": "the sense element (sensation or idea) of quality, intensity, duration, clearness, and (in some cases) extent",
+  "source_id": "titchener-1898-postulates-structural-psychology",
+  "status": "verified",
+  "summary": "Titchener includes clearness in his attribute list for the sense element, explicitly after disputing Wundt's exclusion."
+}

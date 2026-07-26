@@ -25,7 +25,9 @@ completed_items:
   - S2 historiography queue：Leahey 1981 的 publisher abstract 已讀並登錄；因未讀 article body，claim/evidence 僅 retrieved/abstract_only/publishable:false，不把摘要冒充全文史學證據
   - S3 introspection-method-boundary：完成 4 筆 verified/publishable 原子 claims；Wundt 一手文本分開「排除無輔助的直接自我觀察」與「客觀可調條件下的可靠 introspection」，Titchener 1901 定義標準條件下的 introspection，1912 定義 stimulus error 為注意 stimulus 而非 sensation
   - S3 sources：titchener-1901-experimental-psychology-manual 公版掃描與 titchener-1912-schema-introspection 公開 HTML 的相關 body/locator 已實讀；暫存全文未入 repo
-next_action: 處理 S4 elements-association-consciousness-claims；把 sensation、feeling、association／apperception 與 consciousness structure 拆成可裁決原子主張，避免把 Wundt 與 Titchener 的元素論混成同一模型
+  - S4 elements-association-consciousness-claims：完成 8 筆 verified/publishable 原子 claims；Wundt 的 element-as-abstraction、clearness 屬 compound interconnection、compound-specific attributes、consciousness synthesis、elementary association 與 active apperception 分別建檔；Titchener 的 sensations/affections 二分與 clearness-as-sense-attribute 分開建檔
+  - S4 sources：新增 wundt-1897-outlines-psychology，直接實讀 §5、§8、§15、§16；Titchener 1898 沿用先前實讀全文。Wundt/Titchener 對 clearness 的相反分類已由專用測試鎖定，不再合併成單一元素論
+next_action: 處理 S5 primary-bibliography；登錄 structuralism pilot 所需的關鍵一手著作身份、版本與翻譯邊界，不把後世重印或譯本年份誤寫成原著年份
 exit_gate: S1-S7 7/7 已裁決；publishable claims 全部有 readable fulltext + locator + short_quote；relations 有 evidence；legacy prose/verdict 零匯入；validator、完整 unittest、diff-check PASS
 stop_rule: 任一來源無法讀取就留在 citation/queue 層並繼續同題其他來源；不得用搜尋 snippet 補全文；七題完成後停止本 pilot，不自行擴張
 ```
