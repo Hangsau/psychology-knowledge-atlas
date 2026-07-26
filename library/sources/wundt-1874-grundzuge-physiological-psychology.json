@@ -1,0 +1,19 @@
+{
+  "access_status": "public_domain_fulltext",
+  "authors": [
+    "Wilhelm Wundt"
+  ],
+  "id": "wundt-1874-grundzuge-physiological-psychology",
+  "identifiers": {
+    "hdl": "21.11116/0000-0001-907B-2",
+    "internet_archive": "grundzgedephysi00goog"
+  },
+  "issued": "1874",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "source",
+  "status": "retrieved",
+  "title": "Grundzüge der physiologischen Psychologie",
+  "url": "https://wellcomecollection.org/works/evzg663y/items",
+  "version_note": "First German edition, Leipzig: Wilhelm Engelmann, 1874. The Wellcome public-domain digital item and its title-page metadata were inspected on 2026-07-27; the edition identity was cross-checked against the Max Planck publication record and its persistent handle. No copy of the full text is stored in this repository."
+}

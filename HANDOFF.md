@@ -27,7 +27,9 @@ completed_items:
   - S3 sources：titchener-1901-experimental-psychology-manual 公版掃描與 titchener-1912-schema-introspection 公開 HTML 的相關 body/locator 已實讀；暫存全文未入 repo
   - S4 elements-association-consciousness-claims：完成 8 筆 verified/publishable 原子 claims；Wundt 的 element-as-abstraction、clearness 屬 compound interconnection、compound-specific attributes、consciousness synthesis、elementary association 與 active apperception 分別建檔；Titchener 的 sensations/affections 二分與 clearness-as-sense-attribute 分開建檔
   - S4 sources：新增 wundt-1897-outlines-psychology，直接實讀 §5、§8、§15、§16；Titchener 1898 沿用先前實讀全文。Wundt/Titchener 對 clearness 的相反分類已由專用測試鎖定，不再合併成單一元素論
-next_action: 處理 S5 primary-bibliography；登錄 structuralism pilot 所需的關鍵一手著作身份、版本與翻譯邊界，不把後世重印或譯本年份誤寫成原著年份
+  - S5 primary-bibliography：完成 8 筆 verified/publishable bibliographic claims；分開 Wundt《Grundzüge》1874 原著、1902 第五德文版與 1904 Titchener 英譯，《Grundriss》1896 原著與 1897 Judd 英譯，Titchener《An Outline》1896，以及《Experimental Psychology》的 1901–1905 出版跨度與兩卷四分冊結構
+  - S5 sources：新增 wundt-1874-grundzuge-physiological-psychology、wundt-1896-grundriss-psychologie、nature-1896-wundt-grundriss-notice、titchener-1896-outline-psychology、titchener-1901-1905-experimental-psychology-series。WorldCat《Grundriss》只讀 metadata，故原書 source 保持 metadata_only/publishable:false；1896 書目 claim 改由完整實讀的同年 Nature notice 支撐。專用測試鎖定 1874／1902／1904 三個年份角色與此 metadata 邊界
+next_action: 處理 S6 critiques-and-decline；分開同時代方法批評、後來史學對衰退的解釋與「被功能主義／行為主義取代」等常見簡化，找不到全文的批評只進 queue 層
 exit_gate: S1-S7 7/7 已裁決；publishable claims 全部有 readable fulltext + locator + short_quote；relations 有 evidence；legacy prose/verdict 零匯入；validator、完整 unittest、diff-check PASS
 stop_rule: 任一來源無法讀取就留在 citation/queue 層並繼續同題其他來源；不得用搜尋 snippet 補全文；七題完成後停止本 pilot，不自行擴張
 ```

@@ -1,0 +1,14 @@
+{
+  "claim_type": "bibliographic",
+  "evidence_ids": [
+    "ev-structuralism-s5-wundt-outlines-judd-1897"
+  ],
+  "id": "c-structuralism-s5-wundt-outlines-judd-1897",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "claim",
+  "scope_note": "This identifies the English translation used in this pilot and does not replace the 1896 date of the German original.",
+  "statement": "Charles Hubbard Judd's English translation Outlines of Psychology was published in 1897.",
+  "status": "verified",
+  "subject_id": "structuralism"
+}

@@ -1,0 +1,14 @@
+{
+  "claim_type": "bibliographic",
+  "evidence_ids": [
+    "ev-structuralism-s5-wundt-principles-original-1874"
+  ],
+  "id": "c-structuralism-s5-wundt-principles-original-1874",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "claim",
+  "scope_note": "This identifies the first German edition; it does not assign the content of later expanded editions to the 1874 text.",
+  "statement": "Wundt's Grundzüge der physiologischen Psychologie was first published by Wilhelm Engelmann in Leipzig in 1874.",
+  "status": "verified",
+  "subject_id": "structuralism"
+}

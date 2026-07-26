@@ -1,0 +1,13 @@
+{
+  "claim_id": "c-structuralism-s5-wundt-grundriss-original-1896",
+  "evidence_level": "fulltext_direct",
+  "id": "ev-structuralism-s5-wundt-grundriss-original-1896",
+  "locator": "Contemporary Nature book notice, bibliographic line beneath the review text",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "evidence",
+  "short_quote": "Grundriss der Psychologie. By Wilhelm Wundt. Pp. xvi + 392. (Leipzig: Wm. Engelmann, 1896.)",
+  "source_id": "nature-1896-wundt-grundriss-notice",
+  "status": "verified",
+  "summary": "The contemporary notice directly identifies the German title, author, Leipzig publisher and 1896 date."
+}

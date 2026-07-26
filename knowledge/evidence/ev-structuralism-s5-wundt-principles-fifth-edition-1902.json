@@ -1,0 +1,13 @@
+{
+  "claim_id": "c-structuralism-s5-wundt-principles-fifth-edition-1902",
+  "evidence_level": "fulltext_direct",
+  "id": "ev-structuralism-s5-wundt-principles-fifth-edition-1902",
+  "locator": "English edition title page and York transcription header",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "evidence",
+  "short_quote": "Translated from the Fifth German Edition (1902) by Edward Bradford Titchener",
+  "source_id": "wundt-1902-1904-principles-introduction",
+  "status": "verified",
+  "summary": "The English edition identifies its German base text as Wundt's fifth edition of 1902."
+}

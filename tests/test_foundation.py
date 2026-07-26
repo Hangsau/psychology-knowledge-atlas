@@ -856,6 +856,66 @@ class FoundationTests(unittest.TestCase):
         self.assertIn("classified clearness", titchener["statement"])
         self.assertEqual(validate_repository(self.work), [])
 
+    def test_structuralism_s5_primary_bibliography_preserves_version_boundaries(self) -> None:
+        claim_ids = {
+            "c-structuralism-s5-wundt-principles-original-1874",
+            "c-structuralism-s5-wundt-principles-fifth-edition-1902",
+            "c-structuralism-s5-wundt-principles-english-1904",
+            "c-structuralism-s5-wundt-grundriss-original-1896",
+            "c-structuralism-s5-wundt-outlines-judd-1897",
+            "c-structuralism-s5-titchener-outline-1896",
+            "c-structuralism-s5-titchener-experimental-series-1901-1905",
+            "c-structuralism-s5-titchener-experimental-series-four-parts",
+        }
+        for claim_id in claim_ids:
+            claim = json.loads(
+                (self.work / f"knowledge/claims/{claim_id}.json").read_text(encoding="utf-8")
+            )
+            self.assertEqual(claim["subject_id"], "structuralism")
+            self.assertEqual(claim["claim_type"], "bibliographic")
+            self.assertEqual(claim["status"], "verified")
+            self.assertTrue(claim["publishable"])
+            evidence = json.loads(
+                (self.work / f"knowledge/evidence/{claim['evidence_ids'][0]}.json").read_text(encoding="utf-8")
+            )
+            self.assertEqual(evidence["evidence_level"], "fulltext_direct")
+            self.assertTrue(evidence["publishable"])
+            self.assertLessEqual(len(evidence["short_quote"].split()), 25)
+
+        original = json.loads(
+            (self.work / "knowledge/claims/c-structuralism-s5-wundt-principles-original-1874.json").read_text(
+                encoding="utf-8"
+            )
+        )
+        fifth = json.loads(
+            (
+                self.work
+                / "knowledge/claims/c-structuralism-s5-wundt-principles-fifth-edition-1902.json"
+            ).read_text(encoding="utf-8")
+        )
+        english = json.loads(
+            (self.work / "knowledge/claims/c-structuralism-s5-wundt-principles-english-1904.json").read_text(
+                encoding="utf-8"
+            )
+        )
+        self.assertIn("1874", original["statement"])
+        self.assertIn("1902", fifth["statement"])
+        self.assertIn("1904", english["statement"])
+        grundriss_source = json.loads(
+            (self.work / "library/sources/wundt-1896-grundriss-psychologie.json").read_text(
+                encoding="utf-8"
+            )
+        )
+        self.assertEqual(grundriss_source["access_status"], "metadata_only")
+        self.assertFalse(grundriss_source["publishable"])
+        grundriss_evidence = json.loads(
+            (self.work / "knowledge/evidence/ev-structuralism-s5-wundt-grundriss-original-1896.json").read_text(
+                encoding="utf-8"
+            )
+        )
+        self.assertEqual(grundriss_evidence["source_id"], "nature-1896-wundt-grundriss-notice")
+        self.assertEqual(validate_repository(self.work), [])
+
 
 if __name__ == "__main__":
     multiprocessing.freeze_support()

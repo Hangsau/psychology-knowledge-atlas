@@ -1,0 +1,16 @@
+{
+  "access_status": "publicly_readable_license_unclear",
+  "authors": [],
+  "id": "nature-1896-wundt-grundriss-notice",
+  "identifiers": {
+    "doi": "10.1038/053604a0"
+  },
+  "issued": "1896-04-30",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "source",
+  "status": "retrieved",
+  "title": "Grundriss der Psychologie",
+  "url": "https://www.nature.com/articles/053604a0",
+  "version_note": "Contemporary book notice in Nature 53, p. 604, published 1896-04-30. The complete notice and its bibliographic line were read on 2026-07-27. It directly confirms the book's title, author, pagination, Leipzig publisher and 1896 publication year."
+}

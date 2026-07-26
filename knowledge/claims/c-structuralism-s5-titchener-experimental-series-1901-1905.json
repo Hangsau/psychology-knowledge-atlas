@@ -1,0 +1,14 @@
+{
+  "claim_type": "bibliographic",
+  "evidence_ids": [
+    "ev-structuralism-s5-titchener-experimental-series-1901-1905"
+  ],
+  "id": "c-structuralism-s5-titchener-experimental-series-1901-1905",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "claim",
+  "scope_note": "This records only the publication span of the complete manual series; its physical organization is stated in a separate claim, and the S3 quotation came specifically from Volume I, Part I (1901).",
+  "statement": "Titchener's Experimental Psychology manual series was published from 1901 to 1905.",
+  "status": "verified",
+  "subject_id": "structuralism"
+}

@@ -1,0 +1,14 @@
+{
+  "claim_type": "bibliographic",
+  "evidence_ids": [
+    "ev-structuralism-s5-wundt-principles-fifth-edition-1902"
+  ],
+  "id": "c-structuralism-s5-wundt-principles-fifth-edition-1902",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "claim",
+  "scope_note": "This identifies the German base edition of the English text used in this pilot; it is not the first German edition.",
+  "statement": "Titchener's English Principles of Physiological Psychology was translated from Wundt's fifth German edition of 1902.",
+  "status": "verified",
+  "subject_id": "structuralism"
+}

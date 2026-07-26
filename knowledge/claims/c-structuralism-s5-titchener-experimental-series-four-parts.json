@@ -1,0 +1,14 @@
+{
+  "claim_type": "bibliographic",
+  "evidence_ids": [
+    "ev-structuralism-s5-titchener-experimental-series-four-parts"
+  ],
+  "id": "c-structuralism-s5-titchener-experimental-series-four-parts",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "claim",
+  "scope_note": "This records the physical organization of the complete series, not the publication date or the identity of any single part.",
+  "statement": "Titchener's complete Experimental Psychology manual was organized as two volumes in four parts.",
+  "status": "verified",
+  "subject_id": "structuralism"
+}

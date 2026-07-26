@@ -1,0 +1,18 @@
+{
+  "access_status": "metadata_only",
+  "authors": [
+    "Wilhelm Wundt"
+  ],
+  "id": "wundt-1896-grundriss-psychologie",
+  "identifiers": {
+    "oclc": "8787069"
+  },
+  "issued": "1896",
+  "provenance": "source_derived",
+  "publishable": false,
+  "record_type": "source",
+  "status": "retrieved",
+  "title": "Grundriss der Psychologie",
+  "url": "https://search.worldcat.org/title/8787069",
+  "version_note": "First German edition, Leipzig: Wilhelm Engelmann, 1896. The WorldCat edition record was read on 2026-07-27, but the book body was not read from this URL, so this source remains metadata_only and unpublished. Its bibliographic identity is independently supported by the fully read contemporary Nature notice. This record is distinct from Charles Hubbard Judd's 1897 English translation."
+}

@@ -1,0 +1,14 @@
+{
+  "claim_type": "bibliographic",
+  "evidence_ids": [
+    "ev-structuralism-s5-titchener-outline-1896"
+  ],
+  "id": "c-structuralism-s5-titchener-outline-1896",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "claim",
+  "scope_note": "This identifies the 1896 Macmillan edition; later revised editions must be registered separately if used as evidence.",
+  "statement": "Titchener's An Outline of Psychology was published by Macmillan in 1896.",
+  "status": "verified",
+  "subject_id": "structuralism"
+}

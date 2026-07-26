@@ -1,0 +1,13 @@
+{
+  "claim_id": "c-structuralism-s5-wundt-principles-english-1904",
+  "evidence_level": "fulltext_direct",
+  "id": "ev-structuralism-s5-wundt-principles-english-1904",
+  "locator": "English edition title page and publication line",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "evidence",
+  "short_quote": "London: Swan Sonnenschein and Co., Ltd., 1904",
+  "source_id": "wundt-1902-1904-principles-introduction",
+  "status": "verified",
+  "summary": "The English edition's publication line fixes 1904 as the translation's publication year."
+}
