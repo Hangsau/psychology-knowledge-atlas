@@ -5,7 +5,7 @@
 ```yaml
 phase: P3-S
 unit: structuralism-seven-question-pilot
-status: in_progress
+status: validated
 base_commit: 27a6bfb2b300a157c0c1b886d9a42231e058a0ea
 started_at: 2026-07-26
 target_entity: structuralism
@@ -31,8 +31,11 @@ completed_items:
   - S5 sources：新增 wundt-1874-grundzuge-physiological-psychology、wundt-1896-grundriss-psychologie、nature-1896-wundt-grundriss-notice、titchener-1896-outline-psychology、titchener-1901-1905-experimental-psychology-series。WorldCat《Grundriss》只讀 metadata，故原書 source 保持 metadata_only/publishable:false；1896 書目 claim 改由完整實讀的同年 Nature notice 支撐。專用測試鎖定 1874／1902／1904 三個年份角色與此 metadata 邊界
   - S6 critiques-and-decline：完成 5 筆 verified/publishable 原子 claims；Angell 1907 對 operations/contents 的功能主義對比與其「補充而非必然摧毀」的方法立場分開建檔；Watson 1913 的排除內省與術語不一致批評分開建檔；Springer 公開 publisher overview 只用來證明 Beenfeldt 2013 反對「過度依賴內省」單因解釋的史學反論存在，不冒充已讀專書全文或最終因果裁決
   - S6 sources：新增 angell-1907-province-functional-psychology、watson-1913-behaviorist-views、springer-2013-beenfeldt-book-overview。前兩者一手全文已實讀；第三筆明確限定為公開 publisher overview。專用測試鎖定同時代批評、互補立場與現代反論不得合併成「功能主義／行為主義單因取代」敘事
-next_action: 處理 S7 evidenced-legacy-relations；只建立有獨立 evidence 支撐的 legacy relations，完成後跑全套 exit gate 並停止本 pilot
-exit_gate: S1-S7 7/7 已裁決；publishable claims 全部有 readable fulltext + locator + short_quote；relations 有 evidence；legacy prose/verdict 零匯入；validator、完整 unittest、diff-check PASS
+  - S7 evidenced-legacy-relations：完成 3 筆 verified/publishable relations；structuralism influenced functionalism 僅限 Angell 所述「由對比衍生」的一種 functional problem，behaviorism opposed structuralism 僅限 Watson 1913 的方法與方案批評，Titchener influenced SEP 僅限創辦 predecessor 與組織延續，不把人物制度遺產冒充結構主義理論延續
+  - S7 legacy/institution boundary：functionalism、behaviorism 只以 legacy_seed/unverified/publishable:false 身份種子加入，零舊 prose/verdict；Titchener person 與 SEP institution 由新來源登錄。新增 relation 發布閘門，publishable relation 必須 verified 且至少有一筆 publishable evidence
+  - P3-S structuralism exit：S1-S7 7/7 已裁決；所有 publishable claims/evidence/relations 通過全文與引用閘門；legacy prose/verdict 零匯入；validator、完整 unittest、diff-check PASS
+next_action: P3-S 下一個 bounded target 是 psychoanalysis；開始前建立其固定問題清單與 S1 identity-time-scope，不沿用舊庫 prose/verdict
+exit_gate: satisfied — structuralism S1-S7 7/7 adjudicated; publishable claims have readable fulltext + locator + short_quote; relations are evidence-backed; legacy prose/verdict zero-import; validator, full unittest and diff-check PASS
 stop_rule: 任一來源無法讀取就留在 citation/queue 層並繼續同題其他來源；不得用搜尋 snippet 補全文；七題完成後停止本 pilot，不自行擴張
 ```
 

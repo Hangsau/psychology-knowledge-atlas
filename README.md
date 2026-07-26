@@ -21,4 +21,4 @@ python tools\validate.py
 python -m unittest discover -s tests -v
 ```
 
-目前階段是 `P3-S` 學派 pilot。P1 coverage、P1-E 命名現象 universe 與 P2-E 證據路由均已通過明確退出門檻；P2-E 只驗證路由與發布安全，不要求無限研究效應。第一個學派 target 是 `structuralism`，以七個固定問題建立來源、原子 claim、evidence 與 relation，完成 7/7 後才進入 `psychoanalysis`。Atlas 層仍為 `evidence_release:false`。
+目前階段是 `P3-S` 學派 pilot。P1 coverage、P1-E 命名現象 universe、P2-E 證據路由與第一個學派 target `structuralism` 均已通過明確退出門檻；結構主義的七個固定問題已完成 7/7，且關係具獨立 evidence。下一個 bounded target 是 `psychoanalysis`，開始前先固定問題清單，不沿用舊庫 prose 或 verdict。Atlas 層仍為 `evidence_release:false`。

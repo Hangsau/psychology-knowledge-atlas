@@ -287,8 +287,15 @@ def validate_repository(root: Path = ROOT) -> list[str]:
         for evidence_id in data.get("evidence_ids", []):
             if evidence_id not in evidence:
                 errors.append(f"{record.path}: orphan evidence_id {evidence_id!r}")
-        if data.get("publishable") and not data.get("evidence_ids"):
-            errors.append(f"{record.path}: publishable relation requires evidence")
+        if data.get("publishable"):
+            if data.get("status") != "verified" or not data.get("evidence_ids"):
+                errors.append(f"{record.path}: publishable relation requires verified status and evidence")
+            elif not any(
+                evidence[eid].data.get("publishable")
+                for eid in data.get("evidence_ids", [])
+                if eid in evidence
+            ):
+                errors.append(f"{record.path}: publishable relation requires at least one publishable evidence record")
 
     reference_systems = by_type["reference_system"]
     coverage_by_system: dict[str, dict[str, Record]] = {}

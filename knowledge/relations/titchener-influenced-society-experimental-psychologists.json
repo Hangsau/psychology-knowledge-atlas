@@ -1,0 +1,15 @@
+{
+  "evidence_ids": [
+    "ev-structuralism-s7-titchener-founded-experimentalists",
+    "ev-structuralism-s7-experimentalists-reorganized-sep"
+  ],
+  "id": "titchener-influenced-society-experimental-psychologists",
+  "object_id": "society-of-experimental-psychologists",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "relation",
+  "relation_type": "influenced",
+  "scope_note": "This is a person-to-institution founding and continuity relation. It deliberately does not assert that the present society preserves Titchener's structuralist doctrines.",
+  "status": "verified",
+  "subject_id": "edward-bradford-titchener"
+}

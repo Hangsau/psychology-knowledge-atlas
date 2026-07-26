@@ -1,0 +1,15 @@
+{
+  "aliases": [
+    "functional psychology"
+  ],
+  "entity_type": "school",
+  "id": "functionalism",
+  "name": "功能主義心理學",
+  "notes": "Identity-only discovery seed from psychology-schools for the structuralism relation pilot; no legacy prose or verdict imported.",
+  "provenance": "legacy_seed",
+  "publishable": false,
+  "record_type": "entity",
+  "source_ids": [],
+  "status": "unverified",
+  "tags": []
+}

@@ -1,0 +1,15 @@
+{
+  "evidence_ids": [
+    "ev-structuralism-s6-watson-rejects-introspection",
+    "ev-structuralism-s6-watson-terminology-disagreement"
+  ],
+  "id": "behaviorism-opposed-structuralism",
+  "object_id": "structuralism",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "relation",
+  "relation_type": "opposed",
+  "scope_note": "The opposition is methodological and programmatic in Watson's 1913 manifesto. Watson explicitly said his quarrel was not with structural psychology alone, so this is not an exclusive target or single-cause decline claim.",
+  "status": "verified",
+  "subject_id": "behaviorism"
+}

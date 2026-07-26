@@ -1,0 +1,14 @@
+{
+  "claim_type": "chronology",
+  "evidence_ids": [
+    "ev-structuralism-s7-titchener-founded-experimentalists"
+  ],
+  "id": "c-structuralism-s7-titchener-founded-experimentalists",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "claim",
+  "scope_note": "This is an institutional founding claim about Titchener, not a claim that the later society retained structuralist theory.",
+  "statement": "The Society of Experimental Psychologists states that Titchener founded the Society of Experimentalists in 1904.",
+  "status": "verified",
+  "subject_id": "edward-bradford-titchener"
+}

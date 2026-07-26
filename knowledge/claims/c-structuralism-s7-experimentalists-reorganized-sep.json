@@ -1,0 +1,14 @@
+{
+  "claim_type": "chronology",
+  "evidence_ids": [
+    "ev-structuralism-s7-experimentalists-reorganized-sep"
+  ],
+  "id": "c-structuralism-s7-experimentalists-reorganized-sep",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "claim",
+  "scope_note": "This establishes organizational continuity after Titchener's death, not continuity of every membership rule, research program, or structuralist doctrine.",
+  "statement": "The Society of Experimentalists was reorganized into the Society of Experimental Psychologists after Titchener's death in 1927.",
+  "status": "verified",
+  "subject_id": "society-of-experimental-psychologists"
+}

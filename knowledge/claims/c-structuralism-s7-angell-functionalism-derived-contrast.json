@@ -1,0 +1,14 @@
+{
+  "claim_type": "attribution",
+  "evidence_ids": [
+    "ev-structuralism-s7-angell-functionalism-derived-contrast"
+  ],
+  "id": "c-structuralism-s7-angell-functionalism-derived-contrast",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "claim",
+  "scope_note": "Angell identifies this as the first of three forms of the functional problem. The claim supports a bounded contrastive influence, not wholesale derivation, succession, or displacement.",
+  "statement": "Angell said one conception of functional psychology derived most immediately from contrast with structural psychology.",
+  "status": "verified",
+  "subject_id": "structuralism"
+}

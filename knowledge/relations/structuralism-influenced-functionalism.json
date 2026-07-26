@@ -1,0 +1,14 @@
+{
+  "evidence_ids": [
+    "ev-structuralism-s7-angell-functionalism-derived-contrast"
+  ],
+  "id": "structuralism-influenced-functionalism",
+  "object_id": "functionalism",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "relation",
+  "relation_type": "influenced",
+  "scope_note": "Influence is limited to Angell's first conception of the functional problem deriving through contrast. It does not mean functionalism was wholly caused by, succeeded, or defeated structuralism.",
+  "status": "verified",
+  "subject_id": "structuralism"
+}

@@ -1,0 +1,17 @@
+{
+  "aliases": [
+    "SEP"
+  ],
+  "entity_type": "institution",
+  "id": "society-of-experimental-psychologists",
+  "name": "Society of Experimental Psychologists",
+  "notes": "Institution identity registered from its official history page for the Titchener legacy relation.",
+  "provenance": "source_derived",
+  "publishable": false,
+  "record_type": "entity",
+  "source_ids": [
+    "society-experimental-psychologists-history"
+  ],
+  "status": "retrieved",
+  "tags": []
+}

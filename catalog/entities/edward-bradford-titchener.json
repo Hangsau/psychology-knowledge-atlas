@@ -1,0 +1,18 @@
+{
+  "aliases": [
+    "E. B. Titchener"
+  ],
+  "entity_type": "person",
+  "id": "edward-bradford-titchener",
+  "name": "Edward Bradford Titchener",
+  "notes": "Person identity added only to express a source-backed institutional legacy relation; it is not an identity merge with structuralism.",
+  "provenance": "source_derived",
+  "publishable": false,
+  "record_type": "entity",
+  "source_ids": [
+    "titchener-1898-postulates-structural-psychology",
+    "society-experimental-psychologists-history"
+  ],
+  "status": "retrieved",
+  "tags": []
+}

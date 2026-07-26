@@ -250,6 +250,42 @@ class FoundationTests(unittest.TestCase):
         self.write_json("knowledge/evidence/gate-evidence.json", metadata_evidence)
         self.assertTrue(any("at least one publishable evidence" in error for error in validate_repository(self.work)))
 
+    def test_publishable_relation_requires_verified_publishable_evidence(self) -> None:
+        source = {
+            "id": "relation-gate-source", "record_type": "source", "title": "Open", "identifiers": {},
+            "access_status": "open_fulltext", "status": "retrieved", "publishable": True,
+            "provenance": "manual"
+        }
+        claim = {
+            "id": "relation-gate-claim", "record_type": "claim", "subject_id": "cbt",
+            "statement": "A single supporting statement", "claim_type": "attribution",
+            "evidence_ids": ["relation-gate-evidence"], "status": "verified", "publishable": True,
+            "provenance": "manual"
+        }
+        evidence = {
+            "id": "relation-gate-evidence", "record_type": "evidence", "claim_id": "relation-gate-claim",
+            "source_id": "relation-gate-source", "locator": "p. 1", "evidence_level": "fulltext_direct",
+            "short_quote": "directly supports the bounded relation", "summary": "read in full",
+            "status": "verified", "publishable": True, "provenance": "manual"
+        }
+        relation = {
+            "id": "relation-gate", "record_type": "relation", "subject_id": "cbt",
+            "object_id": "psychoanalysis", "relation_type": "compares_with",
+            "evidence_ids": ["relation-gate-evidence"], "status": "verified", "publishable": True,
+            "provenance": "manual"
+        }
+        self.write_json("library/sources/relation-gate-source.json", source)
+        self.write_json("knowledge/claims/relation-gate-claim.json", claim)
+        self.write_json("knowledge/evidence/relation-gate-evidence.json", evidence)
+        self.write_json("knowledge/relations/relation-gate.json", relation)
+        self.assertEqual(validate_repository(self.work), [])
+        evidence["publishable"] = False
+        self.write_json("knowledge/evidence/relation-gate-evidence.json", evidence)
+        errors = validate_repository(self.work)
+        self.assertTrue(any("publishable claim requires at least one" in error for error in errors))
+        self.assertTrue(any("publishable relation requires at least one" in error for error in errors))
+
+
     def test_legacy_migration_is_identity_only(self) -> None:
         migrated = migrate_legacy_identity({"id": "seed", "name": "Seed", "entity_type": "school"})
         self.assertEqual(migrated["status"], "unverified")
@@ -959,6 +995,70 @@ class FoundationTests(unittest.TestCase):
         self.assertIn("excluded introspection", watson["statement"])
         self.assertIn("associationist", modern["statement"])
         self.assertIn("publisher overview", modern["scope_note"])
+        self.assertEqual(validate_repository(self.work), [])
+
+    def test_structuralism_s7_legacy_relations_are_evidence_backed_and_bounded(self) -> None:
+        expected = {
+            "structuralism-influenced-functionalism": (
+                "structuralism",
+                "functionalism",
+                "influenced",
+                {"ev-structuralism-s7-angell-functionalism-derived-contrast"},
+            ),
+            "behaviorism-opposed-structuralism": (
+                "behaviorism",
+                "structuralism",
+                "opposed",
+                {
+                    "ev-structuralism-s6-watson-rejects-introspection",
+                    "ev-structuralism-s6-watson-terminology-disagreement",
+                },
+            ),
+            "titchener-influenced-society-experimental-psychologists": (
+                "edward-bradford-titchener",
+                "society-of-experimental-psychologists",
+                "influenced",
+                {
+                    "ev-structuralism-s7-titchener-founded-experimentalists",
+                    "ev-structuralism-s7-experimentalists-reorganized-sep",
+                },
+            ),
+        }
+        for relation_id, (subject_id, object_id, relation_type, evidence_ids) in expected.items():
+            relation = json.loads(
+                (self.work / f"knowledge/relations/{relation_id}.json").read_text(encoding="utf-8")
+            )
+            self.assertEqual(relation["subject_id"], subject_id)
+            self.assertEqual(relation["object_id"], object_id)
+            self.assertEqual(relation["relation_type"], relation_type)
+            self.assertEqual(set(relation["evidence_ids"]), evidence_ids)
+            self.assertEqual(relation["status"], "verified")
+            self.assertTrue(relation["publishable"])
+            for evidence_id in evidence_ids:
+                evidence = json.loads(
+                    (self.work / f"knowledge/evidence/{evidence_id}.json").read_text(encoding="utf-8")
+                )
+                self.assertEqual(evidence["evidence_level"], "fulltext_direct")
+                self.assertTrue(evidence["publishable"])
+                self.assertLessEqual(len(evidence["short_quote"].split()), 25)
+
+        for entity_id in ("functionalism", "behaviorism"):
+            entity = json.loads(
+                (self.work / f"catalog/entities/{entity_id}.json").read_text(encoding="utf-8")
+            )
+            self.assertEqual(entity["provenance"], "legacy_seed")
+            self.assertEqual(entity["status"], "unverified")
+            self.assertFalse(entity["publishable"])
+            self.assertIn("no legacy prose or verdict", entity["notes"])
+
+        institutional = json.loads(
+            (
+                self.work
+                / "knowledge/relations/titchener-influenced-society-experimental-psychologists.json"
+            ).read_text(encoding="utf-8")
+        )
+        self.assertIn("person-to-institution", institutional["scope_note"])
+        self.assertIn("does not assert", institutional["scope_note"])
         self.assertEqual(validate_repository(self.work), [])
 
 
