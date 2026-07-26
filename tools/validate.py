@@ -29,7 +29,7 @@ COMMON = {"id", "record_type", "status", "publishable", "provenance"}
 ALLOWED = {
     "entity": COMMON | {"entity_type", "name", "aliases", "name_zh", "phenomenon_kind", "domain_entity_ids", "source_ids", "tags", "notes"},
     "source": COMMON | {"title", "identifiers", "access_status", "authors", "issued", "url", "version_note"},
-    "claim": COMMON | {"subject_id", "statement", "claim_type", "evidence_ids", "scope_note"},
+    "claim": COMMON | {"subject_id", "statement", "statement_zh", "claim_type", "evidence_ids", "scope_note"},
     "evidence": COMMON | {"claim_id", "source_id", "locator", "evidence_level", "summary", "short_quote"},
     "relation": COMMON | {"subject_id", "object_id", "relation_type", "evidence_ids", "scope_note"},
     "reference_system": COMMON | {"title", "authority", "scope", "system_role", "version", "retrieved_at", "source_ids", "candidate_ids", "notes"},
@@ -180,6 +180,10 @@ def _validate_shape(record: Record, errors: list[str]) -> None:
             errors.append(f"{path}: statement is required")
         elif any(marker in statement for marker in ("；", ";", "以及同時", "並且還")):
             errors.append(f"{path}: likely compound claim; split into atomic claims")
+        if "statement_zh" in data and (
+            not isinstance(data["statement_zh"], str) or not data["statement_zh"].strip()
+        ):
+            errors.append(f"{path}: statement_zh must be a non-empty string")
     elif record_type == "reference_system":
         for field in ("title", "authority", "scope", "version", "retrieved_at"):
             if not isinstance(data.get(field), str) or not data.get(field, "").strip():

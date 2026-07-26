@@ -9,6 +9,7 @@
   "record_type": "claim",
   "scope_note": "This identifies the German base edition of the English text used in this pilot; it is not the first German edition.",
   "statement": "Titchener's English Principles of Physiological Psychology was translated from Wundt's fifth German edition of 1902.",
+  "statement_zh": "Titchener 的英譯本《Principles of Physiological Psychology》譯自 Wundt 於 1902 年出版的德文第五版。",
   "status": "verified",
   "subject_id": "structuralism"
 }

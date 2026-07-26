@@ -9,6 +9,7 @@
   "record_type": "claim",
   "scope_note": "This records Titchener's 1912 methodological rule for descriptive introspection; it does not endorse the rule as valid for contemporary psychological measurement.",
   "statement": "Titchener's stimulus error occurred when an observer attended to the stimulus instead of the sensation.",
+  "statement_zh": "依 Titchener 的定義，觀察者注意刺激物而非感覺時，就犯了刺激錯誤。",
   "status": "verified",
   "subject_id": "structuralism"
 }

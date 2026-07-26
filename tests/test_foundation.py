@@ -8,12 +8,13 @@ import time
 import unittest
 import uuid
 from pathlib import Path
+from unittest import mock
 
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "tools"))
 
-from build_views import build
+from build_views import MAX_PROFILE_SPEC_BYTES, _atomic_write_text, build
 from store import LockTimeoutError, atomic_write_json, record_lock
 from validate import MAX_RECORD_BYTES, migrate_legacy_identity, validate_repository
 
@@ -45,6 +46,14 @@ def _write_record(root: str, record_id: str, result: multiprocessing.Queue) -> N
     }
     atomic_write_json(Path(root), Path("catalog/entities") / f"{record_id}.json", record)
     result.put(record_id)
+
+
+def _build_views_process(root: str, result: multiprocessing.Queue) -> None:
+    try:
+        build(Path(root))
+        result.put("ok")
+    except Exception as exc:  # pragma: no cover - failure details are returned to the parent
+        result.put(f"{type(exc).__name__}: {exc}")
 
 
 class FoundationTests(unittest.TestCase):
@@ -330,10 +339,124 @@ class FoundationTests(unittest.TestCase):
     def test_generated_view_is_reproducible(self) -> None:
         build(self.work)
         first = {path.name: path.read_bytes() for path in sorted((self.work / "views/generated").glob("*.json"))}
+        first_markdown = {
+            path.name: path.read_bytes() for path in sorted((self.work / "views/generated").glob("*.md"))
+        }
         shutil.rmtree(self.work / "views/generated")
         build(self.work)
         second = {path.name: path.read_bytes() for path in sorted((self.work / "views/generated").glob("*.json"))}
+        second_markdown = {
+            path.name: path.read_bytes() for path in sorted((self.work / "views/generated").glob("*.md"))
+        }
         self.assertEqual(first, second)
+        self.assertEqual(first_markdown, second_markdown)
+
+    def test_structuralism_reader_profile_exposes_only_publishable_evidence(self) -> None:
+        build(self.work)
+        markdown = (self.work / "views/generated/structuralism.md").read_text(encoding="utf-8")
+        dossier = json.loads((self.work / "views/generated/structuralism.json").read_text(encoding="utf-8"))
+        claims = [claim for section in dossier["sections"] for claim in section["claims"]]
+        self.assertEqual(len(dossier["sections"]), 7)
+        self.assertEqual(len(claims), 34)
+        self.assertEqual(len(dossier["relations"]), 3)
+        self.assertTrue(all(claim["status"] == "verified" and claim["publishable"] for claim in claims))
+        self.assertTrue(all(claim["statement_zh"].strip() for claim in claims))
+        self.assertTrue(
+            all(
+                item["status"] == "verified" and item["publishable"] and item["short_quote"].strip()
+                for claim in claims
+                for item in claim["evidence"]
+            )
+        )
+        self.assertNotIn("c-structuralism-s2-leahey-historiography", markdown)
+        self.assertNotIn("c-structuralism-s2-leahey-historiography", json.dumps(dossier))
+        self.assertIn("# 結構主義心理學", markdown)
+        self.assertIn("## 關係與後續影響", markdown)
+
+    def test_reader_profile_rejects_empty_duplicate_and_missing_references(self) -> None:
+        bad_spec = self.work / "views/specs/bad.json"
+        bad_spec.parent.mkdir(parents=True, exist_ok=True)
+        cases = [
+            {
+                "id": "bad",
+                "entity_id": "structuralism",
+                "language": "zh-Hant",
+                "sections": [],
+                "relation_ids": [],
+            },
+            {
+                "id": "bad",
+                "entity_id": "structuralism",
+                "language": "zh-Hant",
+                "sections": [
+                    {
+                        "id": "duplicate",
+                        "title": "Duplicate",
+                        "claim_ids": ["c-structuralism-s1-definition", "c-structuralism-s1-definition"],
+                    }
+                ],
+                "relation_ids": [],
+            },
+            {
+                "id": "bad",
+                "entity_id": "structuralism",
+                "language": "zh-Hant",
+                "sections": [{"id": "missing", "title": "Missing", "claim_ids": ["missing-claim"]}],
+                "relation_ids": [],
+            },
+        ]
+        for case in cases:
+            with self.subTest(case=case["sections"]):
+                bad_spec.write_text(json.dumps(case), encoding="utf-8")
+                with self.assertRaises(ValueError):
+                    build(self.work)
+
+        bad_spec.write_text("", encoding="utf-8")
+        with self.assertRaisesRegex(ValueError, "empty profile spec"):
+            build(self.work)
+        bad_spec.write_text("{", encoding="utf-8")
+        with self.assertRaises(json.JSONDecodeError):
+            build(self.work)
+        bad_spec.write_text("x" * (MAX_PROFILE_SPEC_BYTES + 1), encoding="utf-8")
+        with self.assertRaisesRegex(ValueError, "profile spec exceeds"):
+            build(self.work)
+
+    def test_generated_view_atomic_write_preserves_previous_output(self) -> None:
+        target = self.work / "views/generated/atomic.md"
+        target.parent.mkdir(parents=True, exist_ok=True)
+        target.write_text("previous\n", encoding="utf-8")
+        with mock.patch("build_views.os.replace", side_effect=OSError("interrupted")):
+            with self.assertRaises(OSError):
+                _atomic_write_text(target, "replacement\n")
+        self.assertEqual(target.read_text(encoding="utf-8"), "previous\n")
+        self.assertEqual(list(target.parent.glob(".atomic.md.*.tmp")), [])
+
+    def test_generated_views_can_be_built_concurrently(self) -> None:
+        result: multiprocessing.Queue = multiprocessing.Queue()
+        processes = [multiprocessing.Process(target=_build_views_process, args=(str(self.work), result)) for _ in range(2)]
+        for process in processes:
+            process.start()
+        for process in processes:
+            process.join(timeout=15)
+            self.assertEqual(process.exitcode, 0)
+        self.assertEqual({result.get(timeout=1), result.get(timeout=1)}, {"ok"})
+        dossier = json.loads((self.work / "views/generated/structuralism.json").read_text(encoding="utf-8"))
+        self.assertEqual(dossier["id"], "structuralism")
+        self.assertEqual(len(dossier["sections"]), 7)
+
+    def test_claim_translation_field_is_optional_but_rejects_empty_values(self) -> None:
+        untranslated = self.valid_entity("translation-host")
+        self.write_json("catalog/entities/translation-host.json", untranslated)
+        claim = {
+            "id": "translation-claim", "record_type": "claim", "subject_id": "translation-host",
+            "statement": "A valid untranslated claim", "claim_type": "definition", "evidence_ids": [],
+            "status": "retrieved", "publishable": False, "provenance": "manual"
+        }
+        self.write_json("knowledge/claims/translation-claim.json", claim)
+        self.assertEqual(validate_repository(self.work), [])
+        claim["statement_zh"] = ""
+        self.write_json("knowledge/claims/translation-claim.json", claim)
+        self.assertTrue(any("statement_zh must be" in error for error in validate_repository(self.work)))
 
     def test_private_and_publication_files_are_ignored(self) -> None:
         ignore = (ROOT / ".gitignore").read_text(encoding="utf-8")

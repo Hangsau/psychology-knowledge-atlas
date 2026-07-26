@@ -9,6 +9,7 @@
   "record_type": "claim",
   "scope_note": "The readable evidence is Springer's publisher overview, not Beenfeldt's paywalled book body. It verifies the existence and content of a modern historiographical counterargument, not the final truth of that causal account.",
   "statement": "Springer's public overview reports Beenfeldt's argument that Titchener's system did not collapse from overreliance on introspection but from associationist theoretical assumptions.",
+  "statement_zh": "Springer 的公開簡介指出，Beenfeldt 主張 Titchener 體系的崩解並非源於過度依賴內省，而是源於聯想主義的理論假設。",
   "status": "verified",
   "subject_id": "structuralism"
 }

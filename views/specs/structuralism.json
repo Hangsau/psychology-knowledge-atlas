@@ -1,0 +1,88 @@
+{
+  "entity_id": "structuralism",
+  "id": "structuralism",
+  "language": "zh-Hant",
+  "relation_ids": [
+    "structuralism-influenced-functionalism",
+    "behaviorism-opposed-structuralism",
+    "titchener-influenced-society-experimental-psychologists"
+  ],
+  "sections": [
+    {
+      "claim_ids": [
+        "c-structuralism-s1-definition",
+        "c-structuralism-s1-chronology-1898",
+        "c-structuralism-s1-scope-boundary"
+      ],
+      "id": "identity-time-scope",
+      "title": "定位、時間與範圍"
+    },
+    {
+      "claim_ids": [
+        "c-structuralism-s2-apa-attribution",
+        "c-structuralism-s2-wundt-program",
+        "c-structuralism-s2-titchener-priority"
+      ],
+      "id": "wundt-titchener",
+      "title": "Wundt 與 Titchener 的歸屬差異"
+    },
+    {
+      "claim_ids": [
+        "c-structuralism-s3-wundt-rejects-unaided-self-observation",
+        "c-structuralism-s3-wundt-objective-conditions",
+        "c-structuralism-s3-titchener-standard-conditions",
+        "c-structuralism-s3-titchener-stimulus-error"
+      ],
+      "id": "method",
+      "title": "內省與實驗方法"
+    },
+    {
+      "claim_ids": [
+        "c-structuralism-s4-wundt-elements-abstraction",
+        "c-structuralism-s4-wundt-clearness-compound",
+        "c-structuralism-s4-wundt-emergent-compounds",
+        "c-structuralism-s4-wundt-consciousness-synthesis",
+        "c-structuralism-s4-wundt-association-elementary",
+        "c-structuralism-s4-wundt-active-apperception",
+        "c-structuralism-s4-titchener-two-element-classes",
+        "c-structuralism-s4-titchener-clearness-attribute"
+      ],
+      "id": "core-claims",
+      "title": "心理元素、聯結與意識結構"
+    },
+    {
+      "claim_ids": [
+        "c-structuralism-s5-wundt-principles-original-1874",
+        "c-structuralism-s5-wundt-principles-fifth-edition-1902",
+        "c-structuralism-s5-wundt-principles-english-1904",
+        "c-structuralism-s5-wundt-grundriss-original-1896",
+        "c-structuralism-s5-wundt-outlines-judd-1897",
+        "c-structuralism-s5-titchener-outline-1896",
+        "c-structuralism-s5-titchener-experimental-series-1901-1905",
+        "c-structuralism-s5-titchener-experimental-series-four-parts"
+      ],
+      "id": "bibliography",
+      "title": "重要著作與版本"
+    },
+    {
+      "claim_ids": [
+        "c-structuralism-s6-angell-operations-contents",
+        "c-structuralism-s6-angell-complementarity",
+        "c-structuralism-s6-watson-rejects-introspection",
+        "c-structuralism-s6-watson-terminology-disagreement",
+        "c-structuralism-s6-beenfeldt-causal-counterclaim"
+      ],
+      "id": "critiques-decline",
+      "title": "主要批評與衰退敘事"
+    },
+    {
+      "claim_ids": [
+        "c-structuralism-s7-angell-functionalism-derived-contrast",
+        "c-structuralism-s7-titchener-founded-experimentalists",
+        "c-structuralism-s7-experimentalists-reorganized-sep"
+      ],
+      "id": "legacy",
+      "title": "後續影響與制度遺產"
+    }
+  ]
+}

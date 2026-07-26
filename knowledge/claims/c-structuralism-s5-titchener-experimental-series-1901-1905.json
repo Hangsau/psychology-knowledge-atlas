@@ -9,6 +9,7 @@
   "record_type": "claim",
   "scope_note": "This records only the publication span of the complete manual series; its physical organization is stated in a separate claim, and the S3 quotation came specifically from Volume I, Part I (1901).",
   "statement": "Titchener's Experimental Psychology manual series was published from 1901 to 1905.",
+  "statement_zh": "Titchener 的《Experimental Psychology》實驗手冊系列出版於 1901 至 1905 年。",
   "status": "verified",
   "subject_id": "structuralism"
 }

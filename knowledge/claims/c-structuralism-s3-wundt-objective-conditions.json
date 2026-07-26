@@ -9,6 +9,7 @@
   "record_type": "claim",
   "scope_note": "This defines the control condition Wundt set for reliable introspection in experimental psychology; it does not establish that every experiment meeting that description produced reliable results.",
   "statement": "Wundt required reliable introspection to place consciousness under adjustable objective conditions.",
+  "statement_zh": "Wundt 要求可靠的內省必須把意識置於可調整的客觀條件之下。",
   "status": "verified",
   "subject_id": "structuralism"
 }

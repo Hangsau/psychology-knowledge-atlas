@@ -9,6 +9,7 @@
   "record_type": "claim",
   "scope_note": "This identifies the first German edition; it does not assign the content of later expanded editions to the 1874 text.",
   "statement": "Wundt's Grundzüge der physiologischen Psychologie was first published by Wilhelm Engelmann in Leipzig in 1874.",
+  "statement_zh": "Wundt 的《Grundzüge der physiologischen Psychologie》初版於 1874 年在萊比錫由 Wilhelm Engelmann 出版。",
   "status": "verified",
   "subject_id": "structuralism"
 }

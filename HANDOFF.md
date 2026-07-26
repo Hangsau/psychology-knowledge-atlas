@@ -34,6 +34,8 @@ completed_items:
   - S7 evidenced-legacy-relations：完成 3 筆 verified/publishable relations；structuralism influenced functionalism 僅限 Angell 所述「由對比衍生」的一種 functional problem，behaviorism opposed structuralism 僅限 Watson 1913 的方法與方案批評，Titchener influenced SEP 僅限創辦 predecessor 與組織延續，不把人物制度遺產冒充結構主義理論延續
   - S7 legacy/institution boundary：functionalism、behaviorism 只以 legacy_seed/unverified/publishable:false 身份種子加入，零舊 prose/verdict；Titchener person 與 SEP institution 由新來源登錄。新增 relation 發布閘門，publishable relation 必須 verified 且至少有一筆 publishable evidence
   - P3-S structuralism exit：S1-S7 7/7 已裁決；所有 publishable claims/evidence/relations 通過全文與引用閘門；legacy prose/verdict 零匯入；validator、完整 unittest、diff-check PASS
+  - Thin P4 reader preview：34 筆 verified/publishable structuralism claims 均新增繁中原子表述；views/specs/structuralism.json 只保存七章排序與 canonical IDs；tools/build_views.py 可重生 views/generated/structuralism.md 與 JSON dossier，唯一未發布 Leahey 史學待辦不進輸出
+  - Reader safety：profile spec 的空檔、過大、破損 JSON、重複／遺失 ID 均拒絕；生成採 atomic replace，並由中斷保留、雙程序並行、byte-identical 重生與未發布內容不洩漏測試鎖定
 next_action: P3-S 下一個 bounded target 是 psychoanalysis；開始前建立其固定問題清單與 S1 identity-time-scope，不沿用舊庫 prose/verdict
 exit_gate: satisfied — structuralism S1-S7 7/7 adjudicated; publishable claims have readable fulltext + locator + short_quote; relations are evidence-backed; legacy prose/verdict zero-import; validator, full unittest and diff-check PASS
 stop_rule: 任一來源無法讀取就留在 citation/queue 層並繼續同題其他來源；不得用搜尋 snippet 補全文；七題完成後停止本 pilot，不自行擴張

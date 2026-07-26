@@ -20,6 +20,8 @@
 
 P1、P1-E 與 P2-E 已完成並有可執行退出門檻。當前進入 `P3-S` 學派 pilot，第一個 bounded target 是 `structuralism`；本階段建立來源、原子 claim、evidence 與 relation，不回填舊庫綜述文字。
 
+`structuralism` 已完成 S1-S7 退出門檻，並額外完成一個不改變 gate 順序的薄型 P4 reader preview：繁中原子敘述保存在 claims，view manifest 只保存章節與 IDs，生成器只輸出 verified/publishable 內容。下一個 P3-S target 仍是 `psychoanalysis`；完整 P4 views 仍待四個 pilots 後進行。
+
 ## 已完成 gate
 
 ### P2-E exit gate（完成）
