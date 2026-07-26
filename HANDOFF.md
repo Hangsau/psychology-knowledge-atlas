@@ -21,7 +21,9 @@ candidate_questions:
 completed_items:
   - S1 identity-time-scope：完成 3 筆 verified/publishable 原子 claims；APA Dictionary sense 1 定義心理學專義、sense 1/2 建立跨學科 structuralism 排除邊界、Titchener 1898 一手全文建立命名方案時間錨點
   - S1 sources：apa-dictionary-structuralism、titchener-1898-postulates-structural-psychology；兩者全文均於 2026-07-26 實讀，未保存全文
-next_action: 處理 S2 wundt-titchener-attribution-boundary；先找可讀的 Wundt 一手文本與現代史學來源，分開「Wundt 的實驗心理學」和「Titchener 命名／系統化的 structural psychology」
+  - S2 wundt-titchener-attribution-boundary：完成 3 筆 verified/publishable attribution claims；APA Dictionary 明確把較強、較直接影響歸於 Titchener，Wundt 1902/1904 一手文本以 experimental psychology 自述其方法方案，Titchener 1898 一手文本把 structural analysis 列為當務之急
+  - S2 historiography queue：Leahey 1981 的 publisher abstract 已讀並登錄；因未讀 article body，claim/evidence 僅 retrieved/abstract_only/publishable:false，不把摘要冒充全文史學證據
+next_action: 處理 S3 introspection-method-boundary；以 Wundt 的 experimental self-observation 條件和 Titchener 的 trained introspection／stimulus-error 規則分拆方法定義與限制
 exit_gate: S1-S7 7/7 已裁決；publishable claims 全部有 readable fulltext + locator + short_quote；relations 有 evidence；legacy prose/verdict 零匯入；validator、完整 unittest、diff-check PASS
 stop_rule: 任一來源無法讀取就留在 citation/queue 層並繼續同題其他來源；不得用搜尋 snippet 補全文；七題完成後停止本 pilot，不自行擴張
 ```

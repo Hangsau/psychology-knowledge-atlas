@@ -1,0 +1,14 @@
+{
+  "claim_type": "attribution",
+  "evidence_ids": [
+    "ev-structuralism-s2-titchener-priority"
+  ],
+  "id": "c-structuralism-s2-titchener-priority",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "claim",
+  "scope_note": "This records Titchener's stated programmatic priority in 1898; it does not claim that his system lacked functional questions altogether.",
+  "statement": "Titchener presented structural analysis as psychology's immediate programmatic priority.",
+  "status": "verified",
+  "subject_id": "structuralism"
+}

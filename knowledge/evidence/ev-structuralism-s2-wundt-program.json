@@ -1,0 +1,13 @@
+{
+  "claim_id": "c-structuralism-s2-wundt-program",
+  "evidence_level": "fulltext_direct",
+  "id": "ev-structuralism-s2-wundt-program",
+  "locator": "Introduction, section 1, p. 3, paragraph beginning 'In so far as physiological psychology receives assistance'",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "evidence",
+  "short_quote": "physiological psychology receives assistance from physiology in the elaboration of experimental methods, it may be termed experimental psychology",
+  "source_id": "wundt-1902-1904-principles-introduction",
+  "status": "verified",
+  "summary": "Wundt's introduction identifies the method-oriented aspect of physiological psychology with experimental psychology."
+}

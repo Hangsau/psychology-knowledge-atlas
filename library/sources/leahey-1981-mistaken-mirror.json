@@ -1,0 +1,18 @@
+{
+  "access_status": "abstract_only",
+  "authors": [
+    "Thomas H. Leahey"
+  ],
+  "id": "leahey-1981-mistaken-mirror",
+  "identifiers": {
+    "doi": "10.1002/1520-6696(198104)17:2<273::AID-JHBS2300170216>3.0.CO;2-G"
+  },
+  "issued": "1981",
+  "provenance": "source_derived",
+  "publishable": false,
+  "record_type": "source",
+  "status": "retrieved",
+  "title": "The Mistaken Mirror: On Wundt's and Titchener's Psychologies",
+  "url": "https://onlinelibrary.wiley.com/doi/abs/10.1002/1520-6696%28198104%2917%3A2%3C273%3A%3AAID-JHBS2300170216%3E3.0.CO%3B2-G",
+  "version_note": "Journal of the History of the Behavioral Sciences 17(2), pp. 273-282. Bibliographic metadata and the publisher-hosted abstract were read on 2026-07-27; the article body was not read, so this source remains abstract_only and cannot support a publishable historiographical claim."
+}

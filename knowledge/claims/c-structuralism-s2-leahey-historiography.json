@@ -1,0 +1,14 @@
+{
+  "claim_type": "attribution",
+  "evidence_ids": [
+    "ev-structuralism-s2-leahey-historiography"
+  ],
+  "id": "c-structuralism-s2-leahey-historiography",
+  "provenance": "source_derived",
+  "publishable": false,
+  "record_type": "claim",
+  "scope_note": "Only Leahey's publisher-hosted abstract was read. The claim records that article's stated historiographical thesis and remains queued until the article body is read.",
+  "statement": "Leahey's 1981 comparison argues that Titchener's structuralism was not a faithful copy of Wundt's psychology.",
+  "status": "retrieved",
+  "subject_id": "structuralism"
+}

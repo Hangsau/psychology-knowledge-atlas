@@ -741,6 +741,44 @@ class FoundationTests(unittest.TestCase):
         self.assertIn("not a claim", chronology["scope_note"])
         self.assertEqual(validate_repository(self.work), [])
 
+    def test_structuralism_s2_wundt_titchener_boundary_is_layered(self) -> None:
+        published = {
+            "c-structuralism-s2-apa-attribution",
+            "c-structuralism-s2-wundt-program",
+            "c-structuralism-s2-titchener-priority",
+        }
+        for claim_id in published:
+            claim = json.loads(
+                (self.work / f"knowledge/claims/{claim_id}.json").read_text(encoding="utf-8")
+            )
+            self.assertEqual(claim["subject_id"], "structuralism")
+            self.assertEqual(claim["claim_type"], "attribution")
+            self.assertEqual(claim["status"], "verified")
+            self.assertTrue(claim["publishable"])
+            evidence = json.loads(
+                (self.work / f"knowledge/evidence/{claim['evidence_ids'][0]}.json").read_text(encoding="utf-8")
+            )
+            self.assertEqual(evidence["evidence_level"], "fulltext_direct")
+            self.assertTrue(evidence["publishable"])
+            self.assertTrue(evidence["short_quote"].strip())
+            self.assertLessEqual(len(evidence["short_quote"].split()), 25)
+
+        queued = json.loads(
+            (self.work / "knowledge/claims/c-structuralism-s2-leahey-historiography.json").read_text(
+                encoding="utf-8"
+            )
+        )
+        self.assertEqual(queued["status"], "retrieved")
+        self.assertFalse(queued["publishable"])
+        queued_evidence = json.loads(
+            (self.work / "knowledge/evidence/ev-structuralism-s2-leahey-historiography.json").read_text(
+                encoding="utf-8"
+            )
+        )
+        self.assertEqual(queued_evidence["evidence_level"], "abstract_only")
+        self.assertFalse(queued_evidence["publishable"])
+        self.assertEqual(validate_repository(self.work), [])
+
 
 if __name__ == "__main__":
     multiprocessing.freeze_support()
