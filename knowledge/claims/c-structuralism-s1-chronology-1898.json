@@ -1,0 +1,14 @@
+{
+  "claim_type": "chronology",
+  "evidence_ids": [
+    "ev-structuralism-s1-chronology-1898-titchener"
+  ],
+  "id": "c-structuralism-s1-chronology-1898",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "claim",
+  "scope_note": "This is a documentary time anchor for Titchener's named program, not a claim that all ideas later grouped under structuralism began in 1898.",
+  "statement": "By 1898, Edward Bradford Titchener was explicitly advocating a program he called structural psychology.",
+  "status": "verified",
+  "subject_id": "structuralism"
+}

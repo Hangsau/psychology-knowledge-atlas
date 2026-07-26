@@ -18,11 +18,39 @@
 
 ## 即時階段
 
-P1 核心 coverage axes 已完成。P1-E 的 `phenomenon`、`phenomenon_kind` 與 reference-system `system_role` 合約也已建立並通過測試；下一 gate 是登錄有明確邊界與角色的命名效應／偏誤／現象 candidate universe，尚不建立 evidence claims。
+P1、P1-E 與 P2-E 已完成並有可執行退出門檻。當前進入 `P3-S` 學派 pilot，第一個 bounded target 是 `structuralism`；本階段建立來源、原子 claim、evidence 與 relation，不回填舊庫綜述文字。
 
-## 已核准後續工作軸（排隊中，尚未開工）
+## 已完成 gate
 
-以下內容已納入 roadmap，但不改變目前 P1 的 active checkpoint，也不得因為已排程而提前建立 claim。
+### P2-E exit gate（完成）
+
+P2-E 的目的，是驗證命名效應的資料路由與發布安全，不是無限累積效應研究。以下條件全部通過即結束：
+
+1. 吊橋效應、達克效應、破窗效應三個 bounded pilots 均有 popular／research／critique 三條互相分離的 claim + evidence 路由。
+2. 至少一筆 popular claim 以實讀全文、locator 與逐字短引文通過發布閘門。
+3. 至少一筆 research finding 以開放全文通過相同閘門。
+4. 至少一筆取不到全文的來源誠實停在 abstract／metadata 待辦層。
+5. validator、完整測試與專用 `test_p2e_exit_gate_is_satisfied` 全部通過。
+
+上述門檻已由達克效應通俗 claim、Many Labs 1 錨定 finding 與 Nuhfer 待辦案例滿足。其餘效應仍可日後依內容需求研究，但不再阻擋 P3。
+
+## P3-S：學派 pilot
+
+第一個 target 是 `structuralism`。完成條件不是篇幅，而是以下七個固定問題全部有明確裁決；可驗證者建立原子 claim + evidence，證據不足者必須維持 retrieved／disputed／unverified 並寫明缺口：
+
+1. 學派名稱、時間與範圍邊界。
+2. Wundt 與 Titchener 的歸屬差異，避免把兩者簡化為同一套 structuralism。
+3. introspection／experimental self-observation 的方法定義與限制。
+4. 心理元素、聯結與意識結構的核心主張。
+5. 關鍵一手著作的書目身份與版本。
+6. 主要批評、衰退敘事及其證據邊界。
+7. 對後續心理學的影響；影響 claim 必須有 evidence-backed relation，不靠相似性推定。
+
+退出門檻：七題 7/7 均有裁決、所有參照可解析、publishable claim 全部通過全文閘門、沒有把 legacy prose 或 verdict 匯入、validator 與完整測試通過。完成後才進入 `psychoanalysis`，不在單一問題上無限擴張。
+
+## 已核准後續工作軸
+
+以下內容已納入 roadmap；P1-E/P2-E 已完成，P3-M 與 P4-E/M 仍須遵守 gate 順序。
 
 ### Gate 順序
 

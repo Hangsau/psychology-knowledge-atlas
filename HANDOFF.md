@@ -3,6 +3,32 @@
 ## ACTIVE WORK
 
 ```yaml
+phase: P3-S
+unit: structuralism-seven-question-pilot
+status: in_progress
+base_commit: 27a6bfb2b300a157c0c1b886d9a42231e058a0ea
+started_at: 2026-07-26
+target_entity: structuralism
+objective: 以來源、原子 claim、evidence 與 relation 完成第一個學派 pilot；不匯入 legacy prose 或 verdict
+candidate_questions:
+  - S1 identity-time-scope
+  - S2 wundt-titchener-attribution-boundary
+  - S3 introspection-method-boundary
+  - S4 elements-association-consciousness-claims
+  - S5 primary-bibliography
+  - S6 critiques-and-decline
+  - S7 evidenced-legacy-relations
+completed_items:
+  - S1 identity-time-scope：完成 3 筆 verified/publishable 原子 claims；APA Dictionary sense 1 定義心理學專義、sense 1/2 建立跨學科 structuralism 排除邊界、Titchener 1898 一手全文建立命名方案時間錨點
+  - S1 sources：apa-dictionary-structuralism、titchener-1898-postulates-structural-psychology；兩者全文均於 2026-07-26 實讀，未保存全文
+next_action: 處理 S2 wundt-titchener-attribution-boundary；先找可讀的 Wundt 一手文本與現代史學來源，分開「Wundt 的實驗心理學」和「Titchener 命名／系統化的 structural psychology」
+exit_gate: S1-S7 7/7 已裁決；publishable claims 全部有 readable fulltext + locator + short_quote；relations 有 evidence；legacy prose/verdict 零匯入；validator、完整 unittest、diff-check PASS
+stop_rule: 任一來源無法讀取就留在 citation/queue 層並繼續同題其他來源；不得用搜尋 snippet 補全文；七題完成後停止本 pilot，不自行擴張
+```
+
+## P2-E COMPLETION RECORD
+
+```yaml
 phase: P2-E
 status: validated
 started_at: 2026-07-22
@@ -62,7 +88,8 @@ validation:
   - FIRST research-tier verified claim done: c-anchoring-manylabs-replication (claim_type finding, subject anchoring-bias) promoted through the gate from an openly readable multi-lab replication. Source klein-etal-2014-many-labs (Many Labs 1, Klein et al. 2014, Social Psychology 45(3):142-152, DOI 10.1027/1864-9335/a000178, Hogrefe OpenMind open-access license) full text was read this session: Hogrefe returned 403, but the openly hosted PDF (stanford.edu/~knutson/jdm/klein14.pdf) was fetched and its body extracted with pypdf; abstract, Table 2 and the 'Variation Across Samples and Settings' section were read directly
   - ev-anchoring-manylabs-replication is fulltext_direct with a verbatim short_quote naming anchoring among the "very large effects", locator "Results, 'Variation Across Samples and Settings' subsection, p. 149"; claim scope_note bounds it to a replication finding (Table 2 d approx 1.17-2.42, all p<.001), not a mechanism claim
   - 35 tests PASS (added test_first_research_tier_verified_claim)
-next_gate: broaden the verified layer beyond the first two worked examples. Options in priority order: (a) promote c-dk-research or c-bw-research (mechanism/finding) if their primary sources are genuinely readable — note c-bw-research is about what Wilson & Kelling 1982 PROPOSED (readable open Atlantic essay), not that broken windows is real; (b) build a second anchoring or misattribution finding from another open replication; (c) attempt the Nuhfer full text again via an alternate open host to promote c-dk-critique-noise. For any contested effect, an "effect is real" claim still needs meta-analysis/replication evidence, not a single primary study. Keep atlas-level evidence_release false. If no full text can actually be read, STOP and register in the honest citation/queue layer — never fake a quote or a read.
+exit_gate: satisfied — three pilot routes complete; popular and research fulltext publication paths exercised; honest no-fulltext queue path exercised; dedicated executable test added
+next_gate: P3-S structuralism seven-question pilot; begin with S1 identity-time-scope
 ```
 
 ## P2-E progress

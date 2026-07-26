@@ -671,6 +671,76 @@ class FoundationTests(unittest.TestCase):
         self.assertEqual(source["identifiers"]["doi"], "10.1027/1864-9335/a000178")
         self.assertEqual(validate_repository(self.work), [])
 
+    def test_p2e_exit_gate_is_satisfied(self) -> None:
+        """P2-E ends after representative routes work; it is not an endless effect queue."""
+        pilot_slugs = ("moa", "dk", "bw")
+        for slug in pilot_slugs:
+            for route in ("popular", "research", "critique"):
+                claim_id = f"c-{slug}-{route}"
+                evidence_id = f"ev-{slug}-{route}"
+                claim = json.loads(
+                    (self.work / f"knowledge/claims/{claim_id}.json").read_text(encoding="utf-8")
+                )
+                evidence = json.loads(
+                    (self.work / f"knowledge/evidence/{evidence_id}.json").read_text(encoding="utf-8")
+                )
+                self.assertEqual(claim["evidence_ids"], [evidence_id])
+                self.assertEqual(evidence["claim_id"], claim_id)
+
+        popular = json.loads(
+            (self.work / "knowledge/claims/c-dk-popular.json").read_text(encoding="utf-8")
+        )
+        research = json.loads(
+            (self.work / "knowledge/claims/c-anchoring-manylabs-replication.json").read_text(encoding="utf-8")
+        )
+        queued = json.loads(
+            (self.work / "knowledge/evidence/ev-dk-critique-noise.json").read_text(encoding="utf-8")
+        )
+        self.assertEqual(popular["claim_type"], "definition")
+        self.assertEqual(popular["status"], "verified")
+        self.assertTrue(popular["publishable"])
+        self.assertEqual(research["claim_type"], "finding")
+        self.assertEqual(research["status"], "verified")
+        self.assertTrue(research["publishable"])
+        self.assertEqual(queued["evidence_level"], "abstract_only")
+        self.assertFalse(queued["publishable"])
+        self.assertEqual(validate_repository(self.work), [])
+
+    def test_structuralism_s1_identity_time_scope_is_bounded(self) -> None:
+        expected = {
+            "c-structuralism-s1-definition": "definition",
+            "c-structuralism-s1-scope-boundary": "scope",
+            "c-structuralism-s1-chronology-1898": "chronology",
+        }
+        for claim_id, claim_type in expected.items():
+            claim = json.loads(
+                (self.work / f"knowledge/claims/{claim_id}.json").read_text(encoding="utf-8")
+            )
+            self.assertEqual(claim["subject_id"], "structuralism")
+            self.assertEqual(claim["claim_type"], claim_type)
+            self.assertEqual(claim["status"], "verified")
+            self.assertTrue(claim["publishable"])
+            self.assertEqual(len(claim["evidence_ids"]), 1)
+            evidence_id = claim["evidence_ids"][0]
+            evidence = json.loads(
+                (self.work / f"knowledge/evidence/{evidence_id}.json").read_text(encoding="utf-8")
+            )
+            self.assertEqual(evidence["claim_id"], claim_id)
+            self.assertIn(evidence["evidence_level"], {"fulltext_direct", "fulltext_indirect"})
+            self.assertTrue(evidence["publishable"])
+            self.assertLessEqual(len(evidence["short_quote"].split()), 25)
+
+        scope = json.loads(
+            (self.work / "knowledge/claims/c-structuralism-s1-scope-boundary.json").read_text(encoding="utf-8")
+        )
+        self.assertIn("linguistics", scope["statement"])
+        chronology = json.loads(
+            (self.work / "knowledge/claims/c-structuralism-s1-chronology-1898.json").read_text(encoding="utf-8")
+        )
+        self.assertIn("1898", chronology["statement"])
+        self.assertIn("not a claim", chronology["scope_note"])
+        self.assertEqual(validate_repository(self.work), [])
+
 
 if __name__ == "__main__":
     multiprocessing.freeze_support()

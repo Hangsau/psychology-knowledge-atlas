@@ -21,4 +21,4 @@ python tools\validate.py
 python -m unittest discover -s tests -v
 ```
 
-目前階段是 P1 universe：foundation 已驗收；APA CoA 美國專業領域切片完成 11/11，ANZSRC 2020 澳紐研究領域 group-level 完成 6/6，field-level 36/36 已完整登錄，其中 5201、5202 已裁決，合計 21 項 resolved、15 項仍 pending。`complete` 只表示來源內無漏登，`resolved` 才表示無 pending；這些範圍都不是全球心理學全集。尚須完成 ANZSRC fields、全球／多地域與 Indigenous-psychology 軸，也尚未開始四類 pilot 的實質 claims 研究或發布 evidence-verified 內容。
+目前階段是 `P3-S` 學派 pilot。P1 coverage、P1-E 命名現象 universe 與 P2-E 證據路由均已通過明確退出門檻；P2-E 只驗證路由與發布安全，不要求無限研究效應。第一個學派 target 是 `structuralism`，以七個固定問題建立來源、原子 claim、evidence 與 relation，完成 7/7 後才進入 `psychoanalysis`。Atlas 層仍為 `evidence_release:false`。
