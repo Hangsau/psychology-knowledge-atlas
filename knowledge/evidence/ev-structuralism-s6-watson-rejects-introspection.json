@@ -1,0 +1,13 @@
+{
+  "claim_id": "c-structuralism-s6-watson-rejects-introspection",
+  "evidence_level": "fulltext_direct",
+  "id": "ev-structuralism-s6-watson-rejects-introspection",
+  "locator": "Opening programmatic paragraph, Psychological Review 20, p. 158",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "evidence",
+  "short_quote": "Introspection forms no essential part of its methods",
+  "source_id": "watson-1913-behaviorist-views",
+  "status": "verified",
+  "summary": "Watson's opening definition of behaviorist psychology explicitly removes introspection from its essential methods."
+}

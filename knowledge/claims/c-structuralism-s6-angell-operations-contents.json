@@ -1,0 +1,14 @@
+{
+  "claim_type": "critique",
+  "evidence_ids": [
+    "ev-structuralism-s6-angell-operations-contents"
+  ],
+  "id": "c-structuralism-s6-angell-operations-contents",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "claim",
+  "scope_note": "This records Angell's 1907 contrast between functional and structural programs; it does not show that one program immediately displaced the other.",
+  "statement": "Angell contrasted functional psychology's study of conscious operations under actual life conditions with structural psychology's analysis of elementary and complex contents.",
+  "status": "verified",
+  "subject_id": "structuralism"
+}

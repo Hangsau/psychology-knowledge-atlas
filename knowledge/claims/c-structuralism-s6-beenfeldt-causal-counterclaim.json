@@ -1,0 +1,14 @@
+{
+  "claim_type": "attribution",
+  "evidence_ids": [
+    "ev-structuralism-s6-beenfeldt-causal-counterclaim"
+  ],
+  "id": "c-structuralism-s6-beenfeldt-causal-counterclaim",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "claim",
+  "scope_note": "The readable evidence is Springer's publisher overview, not Beenfeldt's paywalled book body. It verifies the existence and content of a modern historiographical counterargument, not the final truth of that causal account.",
+  "statement": "Springer's public overview reports Beenfeldt's argument that Titchener's system did not collapse from overreliance on introspection but from associationist theoretical assumptions.",
+  "status": "verified",
+  "subject_id": "structuralism"
+}

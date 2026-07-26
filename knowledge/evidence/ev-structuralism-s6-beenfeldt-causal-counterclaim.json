@@ -1,0 +1,13 @@
+{
+  "claim_id": "c-structuralism-s6-beenfeldt-causal-counterclaim",
+  "evidence_level": "fulltext_direct",
+  "id": "ev-structuralism-s6-beenfeldt-causal-counterclaim",
+  "locator": "Public publisher page, About this book, second paragraph",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "evidence",
+  "short_quote": "Arguing against the view that Titchener's system was undone by an overreliance on introspection",
+  "source_id": "springer-2013-beenfeldt-book-overview",
+  "status": "verified",
+  "summary": "Springer's overview says Beenfeldt rejects an introspection-overreliance explanation and instead emphasizes inherited associationist assumptions."
+}

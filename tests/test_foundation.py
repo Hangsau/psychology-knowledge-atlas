@@ -916,6 +916,51 @@ class FoundationTests(unittest.TestCase):
         self.assertEqual(grundriss_evidence["source_id"], "nature-1896-wundt-grundriss-notice")
         self.assertEqual(validate_repository(self.work), [])
 
+    def test_structuralism_s6_critiques_do_not_become_a_single_cause_verdict(self) -> None:
+        claim_ids = {
+            "c-structuralism-s6-angell-operations-contents",
+            "c-structuralism-s6-angell-complementarity",
+            "c-structuralism-s6-watson-rejects-introspection",
+            "c-structuralism-s6-watson-terminology-disagreement",
+            "c-structuralism-s6-beenfeldt-causal-counterclaim",
+        }
+        for claim_id in claim_ids:
+            claim = json.loads(
+                (self.work / f"knowledge/claims/{claim_id}.json").read_text(encoding="utf-8")
+            )
+            self.assertEqual(claim["subject_id"], "structuralism")
+            self.assertEqual(claim["status"], "verified")
+            self.assertTrue(claim["publishable"])
+            self.assertIn("not", claim["scope_note"])
+            evidence = json.loads(
+                (self.work / f"knowledge/evidence/{claim['evidence_ids'][0]}.json").read_text(encoding="utf-8")
+            )
+            self.assertEqual(evidence["claim_id"], claim_id)
+            self.assertEqual(evidence["evidence_level"], "fulltext_direct")
+            self.assertTrue(evidence["publishable"])
+            self.assertLessEqual(len(evidence["short_quote"].split()), 25)
+
+        angell = json.loads(
+            (self.work / "knowledge/claims/c-structuralism-s6-angell-complementarity.json").read_text(
+                encoding="utf-8"
+            )
+        )
+        watson = json.loads(
+            (self.work / "knowledge/claims/c-structuralism-s6-watson-rejects-introspection.json").read_text(
+                encoding="utf-8"
+            )
+        )
+        modern = json.loads(
+            (self.work / "knowledge/claims/c-structuralism-s6-beenfeldt-causal-counterclaim.json").read_text(
+                encoding="utf-8"
+            )
+        )
+        self.assertIn("complement", angell["statement"])
+        self.assertIn("excluded introspection", watson["statement"])
+        self.assertIn("associationist", modern["statement"])
+        self.assertIn("publisher overview", modern["scope_note"])
+        self.assertEqual(validate_repository(self.work), [])
+
 
 if __name__ == "__main__":
     multiprocessing.freeze_support()
