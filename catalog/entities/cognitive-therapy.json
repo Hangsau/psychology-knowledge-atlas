@@ -1,0 +1,13 @@
+{
+  "aliases": ["Beckian cognitive therapy"],
+  "entity_type": "therapy",
+  "id": "cognitive-therapy",
+  "name": "Cognitive Therapy",
+  "notes": "Source-derived endpoint for Beck's named therapy. It is related to but not declared identical with the whole CBT family.",
+  "provenance": "source_derived",
+  "publishable": false,
+  "record_type": "entity",
+  "source_ids": ["beck-fleming-2021-brief-history"],
+  "status": "retrieved",
+  "tags": []
+}

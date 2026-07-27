@@ -1,0 +1,14 @@
+{
+  "access_status": "open_fulltext",
+  "authors": ["Pim Cuijpers", "Ioana A. Cristea", "Eirini Karyotaki", "Mirjam Reijnders", "Marcus J. H. Huibers"],
+  "id": "cuijpers-etal-2016-cbt-meta-update",
+  "identifiers": {"doi": "10.1002/wps.20346", "pmcid": "PMC5032489"},
+  "issued": "2016",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "source",
+  "status": "retrieved",
+  "title": "How effective are cognitive behavior therapies for major depression and anxiety disorders? A meta-analytic update of the evidence",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5032489/",
+  "version_note": "The open full-text meta-analysis was read on 2026-07-27. Results are restricted to MDD, GAD, panic disorder, and social anxiety disorder, their stated controls, and short-term outcomes."
+}

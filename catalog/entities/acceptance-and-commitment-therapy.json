@@ -1,0 +1,13 @@
+{
+  "aliases": ["ACT"],
+  "entity_type": "therapy",
+  "id": "acceptance-and-commitment-therapy",
+  "name": "Acceptance and Commitment Therapy",
+  "notes": "Source-derived endpoint for Hayes's contextual behavioral therapy and third-wave account; no claim that all third-wave therapies share one model.",
+  "provenance": "source_derived",
+  "publishable": false,
+  "record_type": "entity",
+  "source_ids": ["hayes-2004-third-wave"],
+  "status": "retrieved",
+  "tags": []
+}

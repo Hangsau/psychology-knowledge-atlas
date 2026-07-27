@@ -1,0 +1,83 @@
+{
+  "entity_id": "cbt",
+  "id": "cbt",
+  "language": "zh-Hant",
+  "relation_ids": [
+    "cognitive-therapy-influenced-cbt",
+    "rational-emotive-behavior-therapy-compares-with-cbt",
+    "cbt-influenced-acceptance-and-commitment-therapy"
+  ],
+  "sections": [
+    {
+      "claim_ids": [
+        "c-cbt-s1-talking-therapy-thinking-acting",
+        "c-cbt-s1-protocol-plurality",
+        "c-cbt-s1-delivery-formats"
+      ],
+      "id": "identity-time-scope",
+      "title": "定位、範圍與交付形式"
+    },
+    {
+      "claim_ids": [
+        "c-cbt-s2-beck-psychoanalytic-start",
+        "c-cbt-s2-negative-beliefs-turn",
+        "c-cbt-s2-named-cognitive-therapy",
+        "c-cbt-s2-gradual-integration-1970s"
+      ],
+      "id": "historical-convergence",
+      "title": "認知治療與行為治療的歷史合流"
+    },
+    {
+      "claim_ids": [
+        "c-cbt-s3-perception-mediates-response",
+        "c-cbt-s3-automatic-thoughts-definition",
+        "c-cbt-s3-beliefs-information-processing",
+        "c-cbt-s3-socratic-evaluation"
+      ],
+      "id": "cognitive-model",
+      "title": "認知模型、自動思考與信念"
+    },
+    {
+      "claim_ids": [
+        "c-cbt-s4-behavior-change-avoidance",
+        "c-cbt-s4-thought-record-evidence",
+        "c-cbt-s4-behavioral-experiment-prediction",
+        "c-cbt-s4-experiment-exposure-boundary"
+      ],
+      "id": "methods",
+      "title": "行為改變、思考紀錄與行為實驗"
+    },
+    {
+      "claim_ids": [
+        "c-cbt-s5-thinking-depression-1963",
+        "c-cbt-s5-cognitive-therapy-behavior-1970",
+        "c-cbt-s5-emotional-disorders-1976",
+        "c-cbt-s5-depression-manual-1979",
+        "c-cbt-s5-depression-second-edition-2024"
+      ],
+      "id": "bibliography",
+      "title": "關鍵著作、版本與時間線"
+    },
+    {
+      "claim_ids": [
+        "c-cbt-s6-four-disorder-scope",
+        "c-cbt-s6-mdd-pooled-effect",
+        "c-cbt-s6-control-group-boundary",
+        "c-cbt-s6-trial-quality-limitation",
+        "c-cbt-s6-short-term-boundary"
+      ],
+      "id": "efficacy-limits",
+      "title": "療效證據、控制組與研究限制"
+    },
+    {
+      "claim_ids": [
+        "c-cbt-s7-rebt-1950s-origin",
+        "c-cbt-s7-second-wave-description",
+        "c-cbt-s7-act-contextual-rft",
+        "c-cbt-s7-third-wave-continuity"
+      ],
+      "id": "branches-legacy",
+      "title": "REBT、第二波與第三波關係"
+    }
+  ]
+}

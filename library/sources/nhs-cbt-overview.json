@@ -1,0 +1,13 @@
+{
+  "access_status": "publicly_readable_license_unclear",
+  "authors": ["National Health Service"],
+  "id": "nhs-cbt-overview",
+  "identifiers": {},
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "source",
+  "status": "retrieved",
+  "title": "Cognitive behavioural therapy (CBT)",
+  "url": "https://www.nhs.uk/tests-and-treatments/cognitive-behavioural-therapy-cbt/",
+  "version_note": "The current NHS overview was read in full on 2026-07-27. It supports a public-service description of CBT, delivery formats, and example activities, not a universal protocol or efficacy verdict."
+}

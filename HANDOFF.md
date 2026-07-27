@@ -4,40 +4,34 @@
 
 ```yaml
 phase: P3-S
-unit: psychoanalysis-seven-question-pilot
+unit: cbt-seven-question-pilot
 status: validated
-base_commit: a6bec8cf607a5dd84b9cb587ae317d59c59e69b5
+base_commit: e74df44a6e55c8d378326bef63f89e124cfdfafd
 started_at: 2026-07-27
-target_entity: psychoanalysis
-objective: 以來源、原子 claim、evidence 與 relation 完成第二個學派 pilot；不匯入 legacy prose 或 verdict
+target_entity: cbt
+objective: 以來源、原子 claim、evidence 與 relation 完成第三個學派 pilot；不匯入 legacy prose 或 verdict
 candidate_questions:
   - S1 identity-time-scope
-  - S2 breuer-freud-origin-attribution-boundary
-  - S3 free-association-interpretation-resistance-transference-method-boundary
-  - S4 unconscious-repression-model-revision-claims
+  - S2 cognitive-therapy-behavior-therapy-historical-convergence
+  - S3 cognitive-model-automatic-thoughts-beliefs
+  - S4 behavior-change-thought-records-behavioral-experiments
   - S5 primary-bibliography-editions-translations
-  - S6 efficacy-empirical-critique-historiography-boundary
-  - S7 branches-psychodynamic-legacy-relations
+  - S6 diagnosis-control-quality-followup-evidence-boundary
+  - S7 rebt-second-wave-third-wave-relations
 completed_items:
-  - 固定 S1-S7 問題清單；區分起源歸屬、方法、模型版本、書目、證據批評與分支遺產
-  - S1 identity-time-scope：完成 5 筆 verified/publishable 原子 claims；一筆 IPA 當代「臨床治療／心智經驗研究」雙重範圍、Freud 1923 三分定義拆為三筆、Freud 1896 術語時間錨點一筆
-  - S1 sources：ipa-what-is-psychoanalysis、freud-1923-two-encyclopaedia-articles、freud-1896-heredity-aetiology-neuroses；三者相關全文均於 2026-07-27 實讀，未保存全文
-  - S1 reader preview：views/specs/psychoanalysis.json 只含完成的五筆 canonical claims；可重生繁中 Markdown 與 JSON dossier，未完成 S2-S7 不以空白敘事補寫
-  - S2 breuer-freud-origin-attribution-boundary：完成 7 筆 verified/publishable 原子 claims；1895 共同宣洩法、共同文本內的詮釋分歧、Freud 對 Breuer 的發現歸功、催眠前提、放棄催眠、以病人聯想取代，以及 Breuer 自述未參與 1895 後發展均分開建檔
-  - S2 sources：breuer-freud-1895-studies-hysteria 與 freud-1904-psychoanalytic-procedure 全文於 2026-07-27 實讀；前者保留共同／個別序言的說話者，後者明列為 Freud 的回顧，不冒充中立第三方史學裁決
-  - S2 reader preview：新增「Breuer–Freud 起源與歸屬邊界」七筆內容；不把宣洩前史倒稱完整精神分析，S3 才細分自由聯想、詮釋、阻抗與移情規則
-  - S3 free-association-interpretation-resistance-transference-method-boundary：完成 6 筆 verified/publishable 原子 claims；自由聯想報告規則、阻抗推論、詮釋材料範圍、移情非分析專有、正負移情與「僅部分移情構成阻抗」分別建檔
-  - S3 sources：freud-1904-psychoanalytic-procedure 與新增 freud-1912-dynamics-transference 全文實讀；所有定義均限定為 Freud 特定年代的技術陳述，不外推成所有後世流派規則或獨立療效驗證
-  - S4 unconscious-repression-model-revision-claims：完成 6 筆 verified/publishable 原子 claims；1912 描述性無意識與系統性 The Unconscious、1915 壓抑定義、1923 無意識不等於被壓抑、自我由本我改變而來及本我／自我／超我三分均分開建檔
-  - S4 model boundary：freud-1912-note-unconscious、freud-1915-unconscious、freud-1923-ego-id 三份全文實讀；測試鎖定早期 conscious vocabulary 不得與 1923 structural differentiation 當成可互換同義詞
-  - S5 primary-bibliography-editions-translations：完成 8 筆 verified/publishable 書目 claims；1895 共同著作、1900《夢的解析》初版／八版序列／1953 SE 分卷、1905 與 1925《性學三論》版本、1923《自我與本我》德文初版及 1927 首英譯分開建檔
-  - S5 version boundary：新增 5 筆 Freud Edition 原版／work inventory sources；明確拒絕把 1925《性學三論》內容整體回填為 1905 原說，也不把《夢的解析》任一單卷或任一版當作無版本文本
-  - S6 efficacy-empirical-critique-historiography-boundary：完成 5 筆 verified/publishable claims；TADS 的介入範圍、完全緩解 null result、延後出現的部分緩解差異，以及 Popper 的劃界問題與預先反駁準則分開建檔
-  - S6 evidence boundary：TADS 只支持特定抗治療性憂鬱樣本中的長期精神分析取向心理治療，不代表整個精神分析；Cochrane STPP review 僅讀公開摘要，保留 retrieved/abstract_only/publishable:false 並排除 reader
-  - S7 branches-psychodynamic-legacy-relations：完成 4 筆 verified/publishable claims 與 4 筆 evidence-backed relations；Jung／Adler 離開後的學派用 contrasts_with，不誤標持續內部分支；客體關係保留 branch_of；心理動力治療保留 influenced
-  - S7 endpoint boundary：4 個新 endpoint entities 均由來源建立、維持 retrieved/publishable:false；relation 可發布不代表 endpoint 的整體內容已完成裁決
-next_action: psychoanalysis pilot 已關閉；下一個 bounded target 是 cbt，需先固定其七題再建立 claims/evidence/relations
-exit_gate: complete — psychoanalysis S1-S7 7/7 adjudicated; references resolve; publishable claims and relations use readable direct evidence; legacy prose/verdict import remains zero; validator and full tests pass
+  - 固定 S1-S7 問題清單；區分 CBT 家族範圍、歷史合流、認知模型、技術、版本、療效邊界與後續取向
+  - S1-S7 共完成 29 筆 verified/publishable 原子 claims 與 29 筆 fulltext_direct evidence；每筆有繁中敘述、locator、25 字內逐字短引文與 scope_note
+  - S1：分開 NHS 公共定義、protocol plurality 與 guided self-help／個別／團體 delivery formats，不把 CBT 寫成單一固定腳本
+  - S2：保留 Beck 的精神分析起點、負向信念轉向、Cognitive Therapy 命名與 1970 年代逐步合流；參與者史與兒少史回顧均保留來源角色
+  - S3：分開 perception-mediated response、automatic thoughts、belief-driven processing 與 gentle Socratic evaluation；不把所有困難思考宣判為錯誤
+  - S4：分開行為改變、thought record、between-session behavioral experiment，並以 CT-PTSD 來源鎖定 cognition-testing 與 habituation 的技術邊界
+  - S5：1963、1970、1976、1979 與 2024 書目節點分開；2024 第二版 85% 新材料不得回填為 1979 第一版內容
+  - S6：Cuijpers et al. 2016 的 144 trials、MDD pooled effect、control-group dependence、17.4% 全品質與 short-term-only 限制各自建檔；不外推所有診斷或長期結果
+  - S7：REBT、第二波、ACT/RFT 與第三波 continuity 分開；建立 cognitive-therapy influenced CBT、REBT compares_with CBT、CBT influenced ACT 三筆 evidence-backed relations，零 alias/equivalence
+  - reader preview：views/specs/cbt.json 生成七節、29 claims、3 relations 的繁中 Markdown 與 JSON dossier；generated output 可刪除重生
+  - tests：新增三項 CBT regression；完整 suite 現為 60 tests，另沿用空／部分／超大輸入、atomic write 與 concurrent build 系統測試
+next_action: cbt pilot 已關閉；下一個 bounded target 是 indigenous-psychology，開始前先固定其七題與文化／知識主權邊界
+exit_gate: complete — CBT S1-S7 7/7 adjudicated; 29 claims and 3 relations resolve and use readable direct evidence; legacy prose/verdict import remains zero; validator, reader build and full tests pass
 stop_rule: 任一來源無法讀取就留在 citation/queue 層並繼續同題其他來源；不得用搜尋 snippet 補全文；七題完成後停止本 pilot，不自行擴張
 ```
 

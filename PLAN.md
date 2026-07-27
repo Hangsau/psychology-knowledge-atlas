@@ -18,9 +18,9 @@
 
 ## 即時階段
 
-P1、P1-E 與 P2-E 已完成並有可執行退出門檻。當前位於 `P3-S` 學派 pilots；`structuralism` 與 `psychoanalysis` 已完成，下一個 bounded target 是 `cbt`。本階段建立來源、原子 claim、evidence 與 relation，不回填舊庫綜述文字。
+P1、P1-E 與 P2-E 已完成並有可執行退出門檻。當前位於 `P3-S` 學派 pilots；`structuralism`、`psychoanalysis` 與 `cbt` 已完成，下一個 bounded target 是 `indigenous-psychology`。本階段建立來源、原子 claim、evidence 與 relation，不回填舊庫綜述文字。
 
-`structuralism` 與 `psychoanalysis` 均已完成 S1-S7 退出門檻，並各有一個不改變 gate 順序的薄型 P4 reader preview。下一個 bounded target 是 `cbt`；完整 P4 views 仍待四個 pilots 後進行。
+`structuralism`、`psychoanalysis` 與 `cbt` 均已完成 S1-S7 退出門檻，並各有一個不改變 gate 順序的薄型 P4 reader preview。下一個 bounded target 是 `indigenous-psychology`；完整 P4 views 仍待四個 pilots 後進行。
 
 ## 已完成 gate
 
@@ -61,6 +61,18 @@ P2-E 的目的，是驗證命名效應的資料路由與發布安全，不是無
 7. 後續學派、心理動力取向與跨領域遺產；每一筆影響或分支關係都必須有 evidence-backed relation。
 
 退出門檻沿用 structuralism pilot：七題 7/7 裁決、publishable records 通過全文閘門、legacy prose/verdict 零匯入、validator 與完整測試通過；之後才進入 `cbt`。
+
+### CBT 固定七題（完成）
+
+1. 身分、範圍與交付形式：保留 protocol plurality，不把 CBT 寫成單一固定腳本。
+2. 認知治療與行為治療的歷史合流：區分 Beck 參與者史、認知治療命名與 1970 年代逐步整合。
+3. 認知模型、自動思考、信念與蘇格拉底式評估；模型陳述不冒充所有 CBT 的已證實共同機制。
+4. 行為改變、思考紀錄、行為實驗與暴露的功能邊界。
+5. 1963、1970、1976、1979 與 2024 關鍵書目及版本差異；新版本內容不得回填舊版。
+6. 診斷範圍、控制組、研究品質與追蹤期對療效估計的限制。
+7. REBT、第二波與第三波／ACT 的關係；相鄰取向保留獨立 identity，關係必須有 evidence。
+
+退出門檻已滿足：七題 7/7、29 筆 publishable claims、3 筆 evidence-backed relations、七節 reader preview、legacy prose/verdict 零匯入、validator 與完整測試通過。下一個 bounded target 是 `indigenous-psychology`。
 
 ## 已核准後續工作軸
 

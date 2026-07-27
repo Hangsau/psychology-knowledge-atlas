@@ -1,0 +1,13 @@
+{
+  "aliases": ["REBT", "rational emotive behaviour therapy"],
+  "entity_type": "therapy",
+  "id": "rational-emotive-behavior-therapy",
+  "name": "Rational Emotive Behavior Therapy",
+  "notes": "Source-derived endpoint for Ellis's therapy; no identity equivalence with Beckian cognitive therapy or the whole CBT family is asserted.",
+  "provenance": "source_derived",
+  "publishable": false,
+  "record_type": "entity",
+  "source_ids": ["king-etal-2024-rebt-review"],
+  "status": "retrieved",
+  "tags": []
+}

@@ -1270,6 +1270,78 @@ class FoundationTests(unittest.TestCase):
             self.assertTrue(entity["source_ids"])
         self.assertEqual(validate_repository(self.work), [])
 
+    def test_cbt_s1_to_s7_records_are_publishable_and_bounded(self) -> None:
+        expected_counts = {1: 3, 2: 4, 3: 4, 4: 4, 5: 5, 6: 5, 7: 4}
+        for section, expected_count in expected_counts.items():
+            claims = sorted((self.work / "knowledge/claims").glob(f"c-cbt-s{section}-*.json"))
+            self.assertEqual(len(claims), expected_count)
+            for path in claims:
+                claim = json.loads(path.read_text(encoding="utf-8"))
+                self.assertEqual(claim["subject_id"], "cbt")
+                self.assertEqual(claim["status"], "verified")
+                self.assertTrue(claim["publishable"])
+                self.assertTrue(claim["scope_note"])
+                self.assertTrue(claim["statement_zh"])
+                for evidence_id in claim["evidence_ids"]:
+                    evidence = json.loads(
+                        (self.work / f"knowledge/evidence/{evidence_id}.json").read_text(encoding="utf-8")
+                    )
+                    self.assertEqual(evidence["evidence_level"], "fulltext_direct")
+                    self.assertTrue(evidence["publishable"])
+                    self.assertLessEqual(len(evidence["short_quote"].split()), 25)
+
+        history = json.loads(
+            (self.work / "knowledge/claims/c-cbt-s2-gradual-integration-1970s.json").read_text(encoding="utf-8")
+        )
+        self.assertIn("gradual", history["statement"])
+        experiment = json.loads(
+            (self.work / "knowledge/claims/c-cbt-s4-experiment-exposure-boundary.json").read_text(encoding="utf-8")
+        )
+        self.assertIn("testing a cognition", experiment["statement"])
+        edition = json.loads(
+            (self.work / "knowledge/claims/c-cbt-s5-depression-second-edition-2024.json").read_text(encoding="utf-8")
+        )
+        self.assertIn("must not be backdated", edition["scope_note"])
+        short_term = json.loads(
+            (self.work / "knowledge/claims/c-cbt-s6-short-term-boundary.json").read_text(encoding="utf-8")
+        )
+        self.assertIn("Long-term", short_term["scope_note"])
+        self.assertEqual(validate_repository(self.work), [])
+
+    def test_cbt_reader_profile_contains_all_seven_sections(self) -> None:
+        build(self.work)
+        markdown = (self.work / "views/generated/cbt.md").read_text(encoding="utf-8")
+        dossier = json.loads((self.work / "views/generated/cbt.json").read_text(encoding="utf-8"))
+        claims = [claim for section in dossier["sections"] for claim in section["claims"]]
+        self.assertEqual(len(dossier["sections"]), 7)
+        self.assertEqual(len(claims), 29)
+        self.assertEqual(len(dossier["relations"]), 3)
+        self.assertTrue(all(claim["status"] == "verified" and claim["publishable"] for claim in claims))
+        self.assertIn("# 認知行為治療", markdown)
+        self.assertIn("## 療效證據、控制組與研究限制", markdown)
+        self.assertIn("## 關係與後續影響", markdown)
+
+    def test_cbt_s7_relations_preserve_distinct_identities(self) -> None:
+        expected = {
+            "cognitive-therapy-influenced-cbt": ("cognitive-therapy", "cbt", "influenced"),
+            "rational-emotive-behavior-therapy-compares-with-cbt": (
+                "rational-emotive-behavior-therapy", "cbt", "compares_with"
+            ),
+            "cbt-influenced-acceptance-and-commitment-therapy": (
+                "cbt", "acceptance-and-commitment-therapy", "influenced"
+            ),
+        }
+        for relation_id, values in expected.items():
+            relation = json.loads(
+                (self.work / f"knowledge/relations/{relation_id}.json").read_text(encoding="utf-8")
+            )
+            self.assertEqual(
+                (relation["subject_id"], relation["object_id"], relation["relation_type"]), values
+            )
+            self.assertTrue(relation["publishable"])
+            self.assertNotEqual(relation["relation_type"], "alias_of")
+        self.assertEqual(validate_repository(self.work), [])
+
     def test_structuralism_s3_introspection_methods_are_not_conflated(self) -> None:
         claim_ids = {
             "c-structuralism-s3-wundt-rejects-unaided-self-observation",

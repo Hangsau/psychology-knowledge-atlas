@@ -1,0 +1,14 @@
+{
+  "access_status": "open_fulltext",
+  "authors": ["Hannah Murray", "Sharif El-Leithy"],
+  "id": "murray-etal-2021-behavioural-experiments",
+  "identifiers": {"doi": "10.1159/000511921", "pmcid": "PMC7611432", "pmid": "34334983"},
+  "issued": "2021",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "source",
+  "status": "retrieved",
+  "title": "Behavioural Experiments in Cognitive Therapy for Posttraumatic Stress Disorder: Why, When, and How?",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7611432/",
+  "version_note": "The open full-text clinical article was read on 2026-07-27. Its technique claims are restricted to CT-PTSD and do not define every CBT protocol."
+}
