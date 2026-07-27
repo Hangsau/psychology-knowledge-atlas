@@ -1,0 +1,15 @@
+{
+  "claim_type": "bibliographic",
+  "evidence_ids": [
+    "ev-psychoanalysis-s5-three-essays-1905"
+  ],
+  "id": "c-psychoanalysis-s5-three-essays-1905",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "claim",
+  "scope_note": "This identifies the compact 1905 first edition and does not treat later additions as if they were present from the outset.",
+  "statement": "The first edition of Freud's Drei Abhandlungen zur Sexualtheorie was published by Franz Deuticke in 1905.",
+  "statement_zh": "Freud《性學三論》的德文初版由 Franz Deuticke 於 1905 年出版。",
+  "status": "verified",
+  "subject_id": "psychoanalysis"
+}

@@ -1,0 +1,15 @@
+{
+  "claim_type": "bibliographic",
+  "evidence_ids": [
+    "ev-psychoanalysis-s5-dream-interpretation-1900"
+  ],
+  "id": "c-psychoanalysis-s5-dream-interpretation-1900",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "claim",
+  "scope_note": "This records the bibliographic title-year of the first German edition, not the date of every idea later added to the book.",
+  "statement": "The first German edition of Freud's Die Traumdeutung was issued by Franz Deuticke in 1900.",
+  "statement_zh": "Freud《夢的解析》的德文初版由 Franz Deuticke 於 1900 年出版。",
+  "status": "verified",
+  "subject_id": "psychoanalysis"
+}

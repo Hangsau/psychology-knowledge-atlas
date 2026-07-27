@@ -1,0 +1,13 @@
+{
+  "claim_id": "c-psychoanalysis-s5-dream-interpretation-editions",
+  "evidence_level": "fulltext_direct",
+  "id": "ev-psychoanalysis-s5-dream-interpretation-editions",
+  "locator": "Freud Edition Die Traumdeutung work inventory, Historical Manifestations",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "evidence",
+  "short_quote": "1900 Die Traumdeutung Erstveröffentlichung ... 1930 Die Traumdeutung 8., veränderte Auflage",
+  "source_id": "freud-edition-dream-interpretation",
+  "status": "verified",
+  "summary": "The inventory separately lists eight numbered German editions and labels several as expanded or altered."
+}

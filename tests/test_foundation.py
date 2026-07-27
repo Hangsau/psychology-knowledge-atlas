@@ -994,12 +994,14 @@ class FoundationTests(unittest.TestCase):
         self.assertIn("## Breuer–Freud 起源與歸屬邊界", markdown)
         self.assertIn("## 自由聯想、詮釋、阻抗與移情", markdown)
         self.assertIn("## 無意識、壓抑與模型修訂", markdown)
-        self.assertEqual(len(dossier["sections"]), 4)
+        self.assertIn("關鍵著作、版本與翻譯", markdown)
+        self.assertEqual(len(dossier["sections"]), 5)
         self.assertEqual(len(dossier["sections"][0]["claims"]), 5)
         self.assertEqual(len(dossier["sections"][1]["claims"]), 7)
         self.assertEqual(len(dossier["sections"][2]["claims"]), 6)
         self.assertEqual(len(dossier["sections"][3]["claims"]), 6)
-        self.assertEqual(len(dossier["sources"]), 9)
+        self.assertEqual(len(dossier["sections"][4]["claims"]), 8)
+        self.assertEqual(len(dossier["sources"]), 14)
         self.assertEqual(dossier["relations"], [])
 
     def test_psychoanalysis_s2_breuer_freud_origin_boundary_is_layered(self) -> None:
@@ -1125,6 +1127,47 @@ class FoundationTests(unittest.TestCase):
             )
         )
         self.assertIn("must not be merged", structural["scope_note"])
+        self.assertEqual(validate_repository(self.work), [])
+
+    def test_psychoanalysis_s5_bibliography_preserves_version_identity(self) -> None:
+        claim_ids = {
+            "c-psychoanalysis-s5-studies-hysteria-1895",
+            "c-psychoanalysis-s5-dream-interpretation-1900",
+            "c-psychoanalysis-s5-dream-interpretation-editions",
+            "c-psychoanalysis-s5-dream-standard-edition-split",
+            "c-psychoanalysis-s5-three-essays-1905",
+            "c-psychoanalysis-s5-three-essays-sixth-1925",
+            "c-psychoanalysis-s5-ego-id-1923",
+            "c-psychoanalysis-s5-ego-id-english-1927",
+        }
+        for claim_id in claim_ids:
+            claim = json.loads(
+                (self.work / f"knowledge/claims/{claim_id}.json").read_text(encoding="utf-8")
+            )
+            self.assertEqual(claim["claim_type"], "bibliographic")
+            self.assertEqual(claim["status"], "verified")
+            self.assertTrue(claim["publishable"])
+            evidence = json.loads(
+                (self.work / f"knowledge/evidence/{claim['evidence_ids'][0]}.json").read_text(
+                    encoding="utf-8"
+                )
+            )
+            self.assertEqual(evidence["evidence_level"], "fulltext_direct")
+            self.assertLessEqual(len(evidence["short_quote"].split()), 25)
+
+        first = json.loads(
+            (self.work / "knowledge/claims/c-psychoanalysis-s5-three-essays-1905.json").read_text(
+                encoding="utf-8"
+            )
+        )
+        sixth = json.loads(
+            (self.work / "knowledge/claims/c-psychoanalysis-s5-three-essays-sixth-1925.json").read_text(
+                encoding="utf-8"
+            )
+        )
+        self.assertIn("1905", first["statement"])
+        self.assertIn("1925", sixth["statement"])
+        self.assertIn("not be backdated", sixth["scope_note"])
         self.assertEqual(validate_repository(self.work), [])
 
     def test_structuralism_s3_introspection_methods_are_not_conflated(self) -> None:

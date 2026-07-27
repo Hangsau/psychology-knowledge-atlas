@@ -1,0 +1,15 @@
+{
+  "claim_type": "bibliographic",
+  "evidence_ids": [
+    "ev-psychoanalysis-s5-three-essays-sixth-1925"
+  ],
+  "id": "c-psychoanalysis-s5-three-essays-sixth-1925",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "claim",
+  "scope_note": "The 1925 sixth reviewed edition is a distinct manifestation and should not be backdated wholesale to the 1905 first edition.",
+  "statement": "A sixth reviewed German edition of Drei Abhandlungen zur Sexualtheorie appeared in December 1925.",
+  "statement_zh": "《性學三論》的德文第六改訂版於 1925 年 12 月出版。",
+  "status": "verified",
+  "subject_id": "psychoanalysis"
+}

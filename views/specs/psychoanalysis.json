@@ -51,6 +51,20 @@
       ],
       "id": "core-models",
       "title": "無意識、壓抑與模型修訂"
+    },
+    {
+      "claim_ids": [
+        "c-psychoanalysis-s5-studies-hysteria-1895",
+        "c-psychoanalysis-s5-dream-interpretation-1900",
+        "c-psychoanalysis-s5-dream-interpretation-editions",
+        "c-psychoanalysis-s5-dream-standard-edition-split",
+        "c-psychoanalysis-s5-three-essays-1905",
+        "c-psychoanalysis-s5-three-essays-sixth-1925",
+        "c-psychoanalysis-s5-ego-id-1923",
+        "c-psychoanalysis-s5-ego-id-english-1927"
+      ],
+      "id": "bibliography",
+      "title": "關鍵著作、版本與翻譯"
     }
   ]
 }

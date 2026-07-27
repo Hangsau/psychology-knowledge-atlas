@@ -1,0 +1,15 @@
+{
+  "claim_type": "bibliographic",
+  "evidence_ids": [
+    "ev-psychoanalysis-s5-dream-standard-edition-split"
+  ],
+  "id": "c-psychoanalysis-s5-dream-standard-edition-split",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "claim",
+  "scope_note": "This identifies the 1953 Strachey Standard Edition manifestation used by many English citations and prevents volume IV or V alone from masquerading as the complete translation.",
+  "statement": "James Strachey's 1953 Standard Edition translation of The Interpretation of Dreams is divided between volumes IV and V.",
+  "statement_zh": "James Strachey 於 1953 年編譯的 Standard Edition《夢的解析》分置於第四與第五卷。",
+  "status": "verified",
+  "subject_id": "psychoanalysis"
+}

@@ -1,0 +1,13 @@
+{
+  "claim_id": "c-psychoanalysis-s5-ego-id-english-1927",
+  "evidence_level": "fulltext_direct",
+  "id": "ev-psychoanalysis-s5-ego-id-english-1927",
+  "locator": "Freud Edition Das Ich und das Es work inventory, Historical Translations",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "evidence",
+  "short_quote": "1923-003/1927.en The Ego and the Id — 1. englische Übersetzung von Joan Riviere",
+  "source_id": "freud-edition-ego-id-versions",
+  "status": "verified",
+  "summary": "The translation inventory identifies year, English title, translator and first-translation status."
+}

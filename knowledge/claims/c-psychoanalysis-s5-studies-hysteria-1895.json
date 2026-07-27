@@ -1,0 +1,15 @@
+{
+  "claim_type": "bibliographic",
+  "evidence_ids": [
+    "ev-psychoanalysis-s5-studies-hysteria-1895"
+  ],
+  "id": "c-psychoanalysis-s5-studies-hysteria-1895",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "claim",
+  "scope_note": "This identifies the 1895 joint book as a predecessor text and preserves both authorship and the cathartic-method vocabulary established in S2.",
+  "statement": "Josef Breuer and Sigmund Freud jointly published Studies on Hysteria in 1895.",
+  "statement_zh": "Josef Breuer 與 Sigmund Freud 在 1895 年共同出版《歇斯底里研究》。",
+  "status": "verified",
+  "subject_id": "psychoanalysis"
+}

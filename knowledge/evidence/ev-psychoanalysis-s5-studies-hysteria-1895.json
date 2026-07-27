@@ -1,0 +1,13 @@
+{
+  "claim_id": "c-psychoanalysis-s5-studies-hysteria-1895",
+  "evidence_level": "fulltext_direct",
+  "id": "ev-psychoanalysis-s5-studies-hysteria-1895",
+  "locator": "Studies on Hysteria, jointly signed Preface to the First Edition, April 1895, PDF p. 1",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "evidence",
+  "short_quote": "J. BREUER, S. FREUD — April 1895",
+  "source_id": "breuer-freud-1895-studies-hysteria",
+  "status": "verified",
+  "summary": "The first-edition preface supplies joint authorship and date within the complete text."
+}

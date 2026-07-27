@@ -1,0 +1,13 @@
+{
+  "claim_id": "c-psychoanalysis-s5-dream-interpretation-1900",
+  "evidence_level": "fulltext_direct",
+  "id": "ev-psychoanalysis-s5-dream-interpretation-1900",
+  "locator": "Die Traumdeutung, first-edition manifestation and bibliographic record, 1900",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "evidence",
+  "short_quote": "Quellentitel Die Traumdeutung — Verlag Franz Deuticke — Veröffentlichungsjahr 1900",
+  "source_id": "freud-1900-dream-interpretation",
+  "status": "verified",
+  "summary": "The complete first-edition record identifies title, publisher, place and 1900 publication year."
+}

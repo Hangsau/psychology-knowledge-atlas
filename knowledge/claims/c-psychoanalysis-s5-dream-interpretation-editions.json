@@ -1,0 +1,15 @@
+{
+  "claim_type": "bibliographic",
+  "evidence_ids": [
+    "ev-psychoanalysis-s5-dream-interpretation-editions"
+  ],
+  "id": "c-psychoanalysis-s5-dream-interpretation-editions",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "claim",
+  "scope_note": "The work inventory shows that citing Die Traumdeutung without an edition can conceal textual growth; this claim does not enumerate every line-level change.",
+  "statement": "The Freud Edition records eight German editions of Die Traumdeutung from the 1900 first edition through the altered eighth edition of 1930.",
+  "statement_zh": "Freud Edition 記錄《夢的解析》從 1900 年初版到 1930 年改訂第八版，共有八個德文版本。",
+  "status": "verified",
+  "subject_id": "psychoanalysis"
+}

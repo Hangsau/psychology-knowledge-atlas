@@ -1,0 +1,15 @@
+{
+  "claim_type": "bibliographic",
+  "evidence_ids": [
+    "ev-psychoanalysis-s5-ego-id-1923"
+  ],
+  "id": "c-psychoanalysis-s5-ego-id-1923",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "claim",
+  "scope_note": "This dates the German first publication that introduced the S4 structural differentiation in book form.",
+  "statement": "Freud's Das Ich und das Es first appeared in German in 1923.",
+  "statement_zh": "Freud《自我與本我》的德文初版出版於 1923 年。",
+  "status": "verified",
+  "subject_id": "psychoanalysis"
+}

@@ -1,0 +1,15 @@
+{
+  "claim_type": "bibliographic",
+  "evidence_ids": [
+    "ev-psychoanalysis-s5-ego-id-english-1927"
+  ],
+  "id": "c-psychoanalysis-s5-ego-id-english-1927",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "claim",
+  "scope_note": "This identifies Joan Riviere's first English translation; later Standard Edition wording is a separate translation state.",
+  "statement": "Joan Riviere's The Ego and the Id was the first English translation and appeared in 1927.",
+  "statement_zh": "Joan Riviere 譯《The Ego and the Id》是第一個英譯本，出版於 1927 年。",
+  "status": "verified",
+  "subject_id": "psychoanalysis"
+}

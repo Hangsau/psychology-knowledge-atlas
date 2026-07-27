@@ -30,8 +30,10 @@ completed_items:
   - S3 sources：freud-1904-psychoanalytic-procedure 與新增 freud-1912-dynamics-transference 全文實讀；所有定義均限定為 Freud 特定年代的技術陳述，不外推成所有後世流派規則或獨立療效驗證
   - S4 unconscious-repression-model-revision-claims：完成 6 筆 verified/publishable 原子 claims；1912 描述性無意識與系統性 The Unconscious、1915 壓抑定義、1923 無意識不等於被壓抑、自我由本我改變而來及本我／自我／超我三分均分開建檔
   - S4 model boundary：freud-1912-note-unconscious、freud-1915-unconscious、freud-1923-ego-id 三份全文實讀；測試鎖定早期 conscious vocabulary 不得與 1923 structural differentiation 當成可互換同義詞
-next_action: 完成 S5 primary-bibliography-editions-translations；關鍵著作逐筆保留原版、英譯與修訂版本身份
-exit_gate: pending — psychoanalysis S1-S4 complete; S5-S7 remain
+  - S5 primary-bibliography-editions-translations：完成 8 筆 verified/publishable 書目 claims；1895 共同著作、1900《夢的解析》初版／八版序列／1953 SE 分卷、1905 與 1925《性學三論》版本、1923《自我與本我》德文初版及 1927 首英譯分開建檔
+  - S5 version boundary：新增 5 筆 Freud Edition 原版／work inventory sources；明確拒絕把 1925《性學三論》內容整體回填為 1905 原說，也不把《夢的解析》任一單卷或任一版當作無版本文本
+next_action: 完成 S6 efficacy-empirical-critique-historiography-boundary；至少一份開放全文臨床研究、一份哲學批評與一份誠實待辦層
+exit_gate: pending — psychoanalysis S1-S5 complete; S6-S7 remain
 stop_rule: 任一來源無法讀取就留在 citation/queue 層並繼續同題其他來源；不得用搜尋 snippet 補全文；七題完成後停止本 pilot，不自行擴張
 ```
 

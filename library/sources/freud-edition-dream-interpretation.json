@@ -1,0 +1,15 @@
+{
+  "access_status": "publicly_readable_license_unclear",
+  "authors": [
+    "Sigmund Freud Edition"
+  ],
+  "id": "freud-edition-dream-interpretation",
+  "identifiers": {},
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "source",
+  "status": "retrieved",
+  "title": "Die Traumdeutung: work and manifestation record",
+  "url": "https://www.freudedition.net/en/traumdeutung",
+  "version_note": "Freud Edition work-level inventory for Die Traumdeutung, including German manifestations from 1900 through 1930 and translation records. The complete public record and linked 1900 manifestation were read on 2026-07-27; the source is used for version identity, not for a substantive dream-theory claim."
+}
