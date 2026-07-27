@@ -23,8 +23,11 @@ completed_items:
   - S1 identity-time-scope：完成 5 筆 verified/publishable 原子 claims；一筆 IPA 當代「臨床治療／心智經驗研究」雙重範圍、Freud 1923 三分定義拆為三筆、Freud 1896 術語時間錨點一筆
   - S1 sources：ipa-what-is-psychoanalysis、freud-1923-two-encyclopaedia-articles、freud-1896-heredity-aetiology-neuroses；三者相關全文均於 2026-07-27 實讀，未保存全文
   - S1 reader preview：views/specs/psychoanalysis.json 只含完成的五筆 canonical claims；可重生繁中 Markdown 與 JSON dossier，未完成 S2-S7 不以空白敘事補寫
-next_action: 完成 S2 breuer-freud-origin-attribution-boundary；分開 Breuer 的催眠／宣洩程序、Freud 的技術轉變與後來 psychoanalysis 名稱，不把前史直接回稱為完整精神分析
-exit_gate: pending — psychoanalysis S1 complete; S2-S7 remain
+  - S2 breuer-freud-origin-attribution-boundary：完成 7 筆 verified/publishable 原子 claims；1895 共同宣洩法、共同文本內的詮釋分歧、Freud 對 Breuer 的發現歸功、催眠前提、放棄催眠、以病人聯想取代，以及 Breuer 自述未參與 1895 後發展均分開建檔
+  - S2 sources：breuer-freud-1895-studies-hysteria 與 freud-1904-psychoanalytic-procedure 全文於 2026-07-27 實讀；前者保留共同／個別序言的說話者，後者明列為 Freud 的回顧，不冒充中立第三方史學裁決
+  - S2 reader preview：新增「Breuer–Freud 起源與歸屬邊界」七筆內容；不把宣洩前史倒稱完整精神分析，S3 才細分自由聯想、詮釋、阻抗與移情規則
+next_action: 完成 S3 free-association-interpretation-resistance-transference-method-boundary；定義各技術及說話者／年代，不把 1904 方法概述擴張成所有後世流派的共同規則
+exit_gate: pending — psychoanalysis S1-S2 complete; S3-S7 remain
 stop_rule: 任一來源無法讀取就留在 citation/queue 層並繼續同題其他來源；不得用搜尋 snippet 補全文；七題完成後停止本 pilot，不自行擴張
 ```
 

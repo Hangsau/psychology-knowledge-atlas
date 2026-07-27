@@ -1,0 +1,15 @@
+{
+  "claim_type": "attribution",
+  "evidence_ids": [
+    "ev-psychoanalysis-s2-breuer-post1895-boundary"
+  ],
+  "id": "c-psychoanalysis-s2-breuer-post1895-boundary",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "claim",
+  "scope_note": "This is Breuer's own 1908 statement about his role after the 1895 book. It bounds later-development attribution without erasing his earlier cathartic contribution.",
+  "statement": "In the 1908 second-edition preface, Breuer stated that he had taken no active part in the subject's important development after the 1895 book.",
+  "statement_zh": "Breuer 在 1908 年第二版序言中表示，1895 年後他沒有積極參與這一主題的重要發展。",
+  "status": "verified",
+  "subject_id": "psychoanalysis"
+}

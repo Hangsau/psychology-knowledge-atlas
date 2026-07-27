@@ -1,0 +1,15 @@
+{
+  "claim_type": "attribution",
+  "evidence_ids": [
+    "ev-psychoanalysis-s2-associations-replaced-hypnosis"
+  ],
+  "id": "c-psychoanalysis-s2-associations-replaced-hypnosis",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "claim",
+  "scope_note": "This identifies the replacement named in Freud's 1904 procedural account. S3 separately defines the rule for eliciting and interpreting associations.",
+  "statement": "Freud's 1904 procedural account identified patients' involuntary associations as his substitute for the material formerly obtained through hypnosis.",
+  "statement_zh": "Freud 1904 年的程序說明，把病人的非自願聯想列為取代催眠所得材料的方法。",
+  "status": "verified",
+  "subject_id": "psychoanalysis"
+}

@@ -1,0 +1,15 @@
+{
+  "claim_type": "chronology",
+  "evidence_ids": [
+    "ev-psychoanalysis-s2-freud-abandoned-hypnosis"
+  ],
+  "id": "c-psychoanalysis-s2-freud-abandoned-hypnosis",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "claim",
+  "scope_note": "This marks a technical transition in Freud's own 1904 retrospective account; it does not assign a single exact date to a gradual change in practice.",
+  "statement": "By Freud's 1904 account, his modification of Breuer's cathartic method included giving up hypnosis.",
+  "statement_zh": "依 Freud 1904 年的說明，他對 Breuer 宣洩法所作的改變包括放棄催眠。",
+  "status": "verified",
+  "subject_id": "psychoanalysis"
+}

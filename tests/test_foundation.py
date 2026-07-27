@@ -981,7 +981,7 @@ class FoundationTests(unittest.TestCase):
         self.assertIn("not an efficacy finding", therapeutic["scope_note"])
         self.assertEqual(validate_repository(self.work), [])
 
-    def test_psychoanalysis_reader_profile_exposes_completed_s1(self) -> None:
+    def test_psychoanalysis_reader_profile_exposes_completed_sections(self) -> None:
         build(self.work)
         markdown = (self.work / "views/generated/psychoanalysis.md").read_text(encoding="utf-8")
         dossier = json.loads(
@@ -991,10 +991,61 @@ class FoundationTests(unittest.TestCase):
         self.assertIn("## 定位、時間與範圍", markdown)
         self.assertIn("國際精神分析學會目前", markdown)
         self.assertIn("1896", markdown)
-        self.assertEqual(len(dossier["sections"]), 1)
+        self.assertIn("## Breuer–Freud 起源與歸屬邊界", markdown)
+        self.assertEqual(len(dossier["sections"]), 2)
         self.assertEqual(len(dossier["sections"][0]["claims"]), 5)
-        self.assertEqual(len(dossier["sources"]), 3)
+        self.assertEqual(len(dossier["sections"][1]["claims"]), 7)
+        self.assertEqual(len(dossier["sources"]), 5)
         self.assertEqual(dossier["relations"], [])
+
+    def test_psychoanalysis_s2_breuer_freud_origin_boundary_is_layered(self) -> None:
+        expected = {
+            "c-psychoanalysis-s2-joint-cathartic-method": "attribution",
+            "c-psychoanalysis-s2-joint-interpretive-disagreement": "scope",
+            "c-psychoanalysis-s2-breuer-cathartic-credit": "attribution",
+            "c-psychoanalysis-s2-cathartic-hypnosis-prerequisite": "definition",
+            "c-psychoanalysis-s2-freud-abandoned-hypnosis": "chronology",
+            "c-psychoanalysis-s2-associations-replaced-hypnosis": "attribution",
+            "c-psychoanalysis-s2-breuer-post1895-boundary": "attribution",
+        }
+        for claim_id, claim_type in expected.items():
+            claim = json.loads(
+                (self.work / f"knowledge/claims/{claim_id}.json").read_text(encoding="utf-8")
+            )
+            self.assertEqual(claim["subject_id"], "psychoanalysis")
+            self.assertEqual(claim["claim_type"], claim_type)
+            self.assertEqual(claim["status"], "verified")
+            self.assertTrue(claim["publishable"])
+            self.assertTrue(claim["statement_zh"].strip())
+            evidence = json.loads(
+                (self.work / f"knowledge/evidence/{claim['evidence_ids'][0]}.json").read_text(
+                    encoding="utf-8"
+                )
+            )
+            self.assertEqual(evidence["claim_id"], claim_id)
+            self.assertEqual(evidence["evidence_level"], "fulltext_direct")
+            self.assertTrue(evidence["publishable"])
+            self.assertLessEqual(len(evidence["short_quote"].split()), 25)
+
+        joint = json.loads(
+            (self.work / "knowledge/claims/c-psychoanalysis-s2-joint-cathartic-method.json").read_text(
+                encoding="utf-8"
+            )
+        )
+        self.assertIn("silently relabelled", joint["scope_note"])
+        breuer = json.loads(
+            (self.work / "knowledge/claims/c-psychoanalysis-s2-breuer-cathartic-credit.json").read_text(
+                encoding="utf-8"
+            )
+        )
+        self.assertIn("does not attribute", breuer["scope_note"])
+        build(self.work)
+        dossier = json.loads(
+            (self.work / "views/generated/psychoanalysis.json").read_text(encoding="utf-8")
+        )
+        self.assertEqual(len(dossier["sections"]), 2)
+        self.assertEqual(len(dossier["sections"][1]["claims"]), 7)
+        self.assertEqual(validate_repository(self.work), [])
 
     def test_structuralism_s3_introspection_methods_are_not_conflated(self) -> None:
         claim_ids = {

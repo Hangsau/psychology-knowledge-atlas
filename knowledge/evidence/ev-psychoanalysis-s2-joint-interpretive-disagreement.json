@@ -1,0 +1,13 @@
+{
+  "claim_id": "c-psychoanalysis-s2-joint-interpretive-disagreement",
+  "evidence_level": "fulltext_direct",
+  "id": "ev-psychoanalysis-s2-joint-interpretive-disagreement",
+  "locator": "Studies on Hysteria, Preface to the First Edition, April 1895, SE II p. xxix (PDF p. 1)",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "evidence",
+  "short_quote": "agreed upon the facts and their basic reading of them, but who are not invariably at one in their interpretations and conjectures",
+  "source_id": "breuer-freud-1895-studies-hysteria",
+  "status": "verified",
+  "summary": "The authors explicitly distinguish shared observations from divergent interpretations inside the joint volume."
+}

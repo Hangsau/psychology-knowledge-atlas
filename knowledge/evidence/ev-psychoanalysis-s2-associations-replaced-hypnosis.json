@@ -1,0 +1,13 @@
+{
+  "claim_id": "c-psychoanalysis-s2-associations-replaced-hypnosis",
+  "evidence_level": "fulltext_direct",
+  "id": "ev-psychoanalysis-s2-associations-replaced-hypnosis",
+  "locator": "Freud's Psycho-Analytic Procedure (1904), associations as substitute, SE VII p. 251 (PDF p. 2)",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "evidence",
+  "short_quote": "Freud found such a substitute—and a completely satisfactory one—in the 'associations' of his patients",
+  "source_id": "freud-1904-psychoanalytic-procedure",
+  "status": "verified",
+  "summary": "The account identifies involuntary patient associations as the replacement for material no longer obtained through hypnosis."
+}

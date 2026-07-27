@@ -1,0 +1,13 @@
+{
+  "claim_id": "c-psychoanalysis-s2-breuer-post1895-boundary",
+  "evidence_level": "fulltext_direct",
+  "id": "ev-psychoanalysis-s2-breuer-post1895-boundary",
+  "locator": "Studies on Hysteria, Breuer's Preface to the Second Edition, 1908, SE II p. xxx (PDF p. 2)",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "evidence",
+  "short_quote": "I have had no active dealings with the subject; I have had no part in its important development",
+  "source_id": "breuer-freud-1895-studies-hysteria",
+  "status": "verified",
+  "summary": "Breuer's separate 1908 preface disclaims participation in the post-1895 development while leaving his earlier contributions intact."
+}

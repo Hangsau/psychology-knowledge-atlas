@@ -1,0 +1,15 @@
+{
+  "claim_type": "attribution",
+  "evidence_ids": [
+    "ev-psychoanalysis-s2-joint-cathartic-method"
+  ],
+  "id": "c-psychoanalysis-s2-joint-cathartic-method",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "claim",
+  "scope_note": "The joint book is a predecessor source. Calling its technique cathartic prevents the 1895 work from being silently relabelled as the fully developed later psychoanalytic method.",
+  "statement": "Breuer and Freud's jointly signed 1895 preface presented their therapeutic technique as the cathartic method.",
+  "statement_zh": "Breuer 與 Freud 在 1895 年共同署名的序言中，把書內的治療技術稱為「宣洩法」。",
+  "status": "verified",
+  "subject_id": "psychoanalysis"
+}

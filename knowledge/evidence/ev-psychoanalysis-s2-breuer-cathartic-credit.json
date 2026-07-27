@@ -1,0 +1,13 @@
+{
+  "claim_id": "c-psychoanalysis-s2-breuer-cathartic-credit",
+  "evidence_level": "fulltext_direct",
+  "id": "ev-psychoanalysis-s2-breuer-cathartic-credit",
+  "locator": "Freud's Psycho-Analytic Procedure (1904), opening paragraph, SE VII p. 249 (PDF p. 1)",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "evidence",
+  "short_quote": "This cathartic therapy was a discovery of Breuer's",
+  "source_id": "freud-1904-psychoanalytic-procedure",
+  "status": "verified",
+  "summary": "Freud explicitly credits Breuer with the predecessor therapy while calling psychoanalysis its outgrowth."
+}

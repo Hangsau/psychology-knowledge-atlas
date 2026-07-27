@@ -1,0 +1,15 @@
+{
+  "claim_type": "scope",
+  "evidence_ids": [
+    "ev-psychoanalysis-s2-joint-interpretive-disagreement"
+  ],
+  "id": "c-psychoanalysis-s2-joint-interpretive-disagreement",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "claim",
+  "scope_note": "This establishes an explicit disagreement boundary inside the joint work; it does not by itself adjudicate which author's later interpretation was better supported.",
+  "statement": "In their 1895 preface, Breuer and Freud said that they agreed on the facts and their basic reading but sometimes differed in interpretation and conjecture.",
+  "statement_zh": "Breuer 與 Freud 在 1895 年序言中表示：兩人同意事實及基本理解，但在詮釋與推測上有時並不一致。",
+  "status": "verified",
+  "subject_id": "psychoanalysis"
+}

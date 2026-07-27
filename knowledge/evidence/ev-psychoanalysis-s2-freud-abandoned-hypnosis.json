@@ -1,0 +1,13 @@
+{
+  "claim_id": "c-psychoanalysis-s2-freud-abandoned-hypnosis",
+  "evidence_level": "fulltext_direct",
+  "id": "ev-psychoanalysis-s2-freud-abandoned-hypnosis",
+  "locator": "Freud's Psycho-Analytic Procedure (1904), technical changes, SE VII p. 250 (PDF pp. 1-2)",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "evidence",
+  "short_quote": "Freud went a step further and gave up hypnosis as well",
+  "source_id": "freud-1904-psychoanalytic-procedure",
+  "status": "verified",
+  "summary": "Freud's account marks abandonment of hypnosis as a further technical change beyond the cathartic method."
+}

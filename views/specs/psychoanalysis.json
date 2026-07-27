@@ -14,6 +14,19 @@
       ],
       "id": "identity-time-scope",
       "title": "定位、時間與範圍"
+    },
+    {
+      "claim_ids": [
+        "c-psychoanalysis-s2-joint-cathartic-method",
+        "c-psychoanalysis-s2-joint-interpretive-disagreement",
+        "c-psychoanalysis-s2-breuer-cathartic-credit",
+        "c-psychoanalysis-s2-cathartic-hypnosis-prerequisite",
+        "c-psychoanalysis-s2-freud-abandoned-hypnosis",
+        "c-psychoanalysis-s2-associations-replaced-hypnosis",
+        "c-psychoanalysis-s2-breuer-post1895-boundary"
+      ],
+      "id": "breuer-freud-origin",
+      "title": "Breuer–Freud 起源與歸屬邊界"
     }
   ]
 }

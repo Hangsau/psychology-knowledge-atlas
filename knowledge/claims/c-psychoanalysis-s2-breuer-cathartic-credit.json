@@ -1,0 +1,15 @@
+{
+  "claim_type": "attribution",
+  "evidence_ids": [
+    "ev-psychoanalysis-s2-breuer-cathartic-credit"
+  ],
+  "id": "c-psychoanalysis-s2-breuer-cathartic-credit",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "claim",
+  "scope_note": "This reports Freud's 1904 attribution of the cathartic therapy to Breuer; it does not attribute Freud's later psychoanalytic system wholesale to Breuer.",
+  "statement": "Freud's 1904 account credited the discovery of cathartic therapy to Josef Breuer and described psychoanalysis as an outgrowth of that method.",
+  "statement_zh": "Freud 在 1904 年的說明中，把宣洩療法的發現歸功於 Josef Breuer，並把精神分析描述為由該方法發展而來。",
+  "status": "verified",
+  "subject_id": "psychoanalysis"
+}

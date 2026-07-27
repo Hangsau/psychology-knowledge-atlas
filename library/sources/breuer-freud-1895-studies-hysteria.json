@@ -1,0 +1,17 @@
+{
+  "access_status": "publicly_readable_license_unclear",
+  "authors": [
+    "Josef Breuer",
+    "Sigmund Freud"
+  ],
+  "id": "breuer-freud-1895-studies-hysteria",
+  "identifiers": {},
+  "issued": "1895",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "source",
+  "status": "retrieved",
+  "title": "Studies on Hysteria",
+  "url": "https://www.lutecium.org/ftp/Freud/pdf/1908_studies_on_hysteria.pdf",
+  "version_note": "Complete English Standard Edition text of the 1893-1895 work, including the joint April 1895 first-edition preface and the separate 1908 second-edition prefaces. The 203-page public PDF was read on 2026-07-27; no copy is stored in this repository and no redistribution license is asserted."
+}

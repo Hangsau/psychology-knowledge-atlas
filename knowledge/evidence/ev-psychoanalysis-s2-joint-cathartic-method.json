@@ -1,0 +1,13 @@
+{
+  "claim_id": "c-psychoanalysis-s2-joint-cathartic-method",
+  "evidence_level": "fulltext_direct",
+  "id": "ev-psychoanalysis-s2-joint-cathartic-method",
+  "locator": "Studies on Hysteria, Preface to the First Edition, April 1895, SE II p. xxix (PDF p. 1)",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "evidence",
+  "short_quote": "in a final chapter on therapeutics the technique of the 'cathartic method' is propounded",
+  "source_id": "breuer-freud-1895-studies-hysteria",
+  "status": "verified",
+  "summary": "The joint first-edition preface names the book's therapeutic technique as the cathartic method."
+}

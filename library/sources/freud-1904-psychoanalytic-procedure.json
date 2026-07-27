@@ -1,0 +1,16 @@
+{
+  "access_status": "publicly_readable_license_unclear",
+  "authors": [
+    "Sigmund Freud"
+  ],
+  "id": "freud-1904-psychoanalytic-procedure",
+  "identifiers": {},
+  "issued": "1904",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "source",
+  "status": "retrieved",
+  "title": "Freud's Psycho-Analytic Procedure",
+  "url": "https://www.lutecium.org/ftp/Freud/pdf/1904_freud_psycho_analytic_procedure.pdf",
+  "version_note": "Complete English text of Freud's 1904 account, collected in Standard Edition VII, pp. 249-254. The five-page public PDF was read on 2026-07-27; no copy is stored in this repository and no redistribution license is asserted."
+}

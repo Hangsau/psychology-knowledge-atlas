@@ -1,0 +1,13 @@
+{
+  "claim_id": "c-psychoanalysis-s2-cathartic-hypnosis-prerequisite",
+  "evidence_level": "fulltext_direct",
+  "id": "ev-psychoanalysis-s2-cathartic-hypnosis-prerequisite",
+  "locator": "Freud's Psycho-Analytic Procedure (1904), cathartic-method description, SE VII p. 249 (PDF p. 1)",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "evidence",
+  "short_quote": "The cathartic method of treatment presupposed that the patient could be hypnotized",
+  "source_id": "freud-1904-psychoanalytic-procedure",
+  "status": "verified",
+  "summary": "The procedural history makes hypnotizability a prerequisite of the predecessor cathartic method."
+}
