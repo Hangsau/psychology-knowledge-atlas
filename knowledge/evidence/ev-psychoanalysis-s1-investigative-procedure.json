@@ -1,0 +1,13 @@
+{
+  "claim_id": "c-psychoanalysis-s1-investigative-procedure",
+  "evidence_level": "fulltext_direct",
+  "id": "ev-psychoanalysis-s1-investigative-procedure",
+  "locator": "Two Encyclopaedia Articles, (A) Psycho-Analysis, opening definition, SE XVIII p. 235 (PDF p. 1)",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "evidence",
+  "short_quote": "a procedure for the investigation of mental processes which are almost inaccessible in any other way",
+  "source_id": "freud-1923-two-encyclopaedia-articles",
+  "status": "verified",
+  "summary": "The first numbered component of Freud's definition identifies psychoanalysis as an investigative procedure."
+}

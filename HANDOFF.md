@@ -4,40 +4,27 @@
 
 ```yaml
 phase: P3-S
-unit: structuralism-seven-question-pilot
-status: validated
-base_commit: 27a6bfb2b300a157c0c1b886d9a42231e058a0ea
-started_at: 2026-07-26
-target_entity: structuralism
-objective: 以來源、原子 claim、evidence 與 relation 完成第一個學派 pilot；不匯入 legacy prose 或 verdict
+unit: psychoanalysis-seven-question-pilot
+status: in_progress
+base_commit: a6bec8cf607a5dd84b9cb587ae317d59c59e69b5
+started_at: 2026-07-27
+target_entity: psychoanalysis
+objective: 以來源、原子 claim、evidence 與 relation 完成第二個學派 pilot；不匯入 legacy prose 或 verdict
 candidate_questions:
   - S1 identity-time-scope
-  - S2 wundt-titchener-attribution-boundary
-  - S3 introspection-method-boundary
-  - S4 elements-association-consciousness-claims
-  - S5 primary-bibliography
-  - S6 critiques-and-decline
-  - S7 evidenced-legacy-relations
+  - S2 breuer-freud-origin-attribution-boundary
+  - S3 free-association-interpretation-resistance-transference-method-boundary
+  - S4 unconscious-repression-model-revision-claims
+  - S5 primary-bibliography-editions-translations
+  - S6 efficacy-empirical-critique-historiography-boundary
+  - S7 branches-psychodynamic-legacy-relations
 completed_items:
-  - S1 identity-time-scope：完成 3 筆 verified/publishable 原子 claims；APA Dictionary sense 1 定義心理學專義、sense 1/2 建立跨學科 structuralism 排除邊界、Titchener 1898 一手全文建立命名方案時間錨點
-  - S1 sources：apa-dictionary-structuralism、titchener-1898-postulates-structural-psychology；兩者全文均於 2026-07-26 實讀，未保存全文
-  - S2 wundt-titchener-attribution-boundary：完成 3 筆 verified/publishable attribution claims；APA Dictionary 明確把較強、較直接影響歸於 Titchener，Wundt 1902/1904 一手文本以 experimental psychology 自述其方法方案，Titchener 1898 一手文本把 structural analysis 列為當務之急
-  - S2 historiography queue：Leahey 1981 的 publisher abstract 已讀並登錄；因未讀 article body，claim/evidence 僅 retrieved/abstract_only/publishable:false，不把摘要冒充全文史學證據
-  - S3 introspection-method-boundary：完成 4 筆 verified/publishable 原子 claims；Wundt 一手文本分開「排除無輔助的直接自我觀察」與「客觀可調條件下的可靠 introspection」，Titchener 1901 定義標準條件下的 introspection，1912 定義 stimulus error 為注意 stimulus 而非 sensation
-  - S3 sources：titchener-1901-experimental-psychology-manual 公版掃描與 titchener-1912-schema-introspection 公開 HTML 的相關 body/locator 已實讀；暫存全文未入 repo
-  - S4 elements-association-consciousness-claims：完成 8 筆 verified/publishable 原子 claims；Wundt 的 element-as-abstraction、clearness 屬 compound interconnection、compound-specific attributes、consciousness synthesis、elementary association 與 active apperception 分別建檔；Titchener 的 sensations/affections 二分與 clearness-as-sense-attribute 分開建檔
-  - S4 sources：新增 wundt-1897-outlines-psychology，直接實讀 §5、§8、§15、§16；Titchener 1898 沿用先前實讀全文。Wundt/Titchener 對 clearness 的相反分類已由專用測試鎖定，不再合併成單一元素論
-  - S5 primary-bibliography：完成 8 筆 verified/publishable bibliographic claims；分開 Wundt《Grundzüge》1874 原著、1902 第五德文版與 1904 Titchener 英譯，《Grundriss》1896 原著與 1897 Judd 英譯，Titchener《An Outline》1896，以及《Experimental Psychology》的 1901–1905 出版跨度與兩卷四分冊結構
-  - S5 sources：新增 wundt-1874-grundzuge-physiological-psychology、wundt-1896-grundriss-psychologie、nature-1896-wundt-grundriss-notice、titchener-1896-outline-psychology、titchener-1901-1905-experimental-psychology-series。WorldCat《Grundriss》只讀 metadata，故原書 source 保持 metadata_only/publishable:false；1896 書目 claim 改由完整實讀的同年 Nature notice 支撐。專用測試鎖定 1874／1902／1904 三個年份角色與此 metadata 邊界
-  - S6 critiques-and-decline：完成 5 筆 verified/publishable 原子 claims；Angell 1907 對 operations/contents 的功能主義對比與其「補充而非必然摧毀」的方法立場分開建檔；Watson 1913 的排除內省與術語不一致批評分開建檔；Springer 公開 publisher overview 只用來證明 Beenfeldt 2013 反對「過度依賴內省」單因解釋的史學反論存在，不冒充已讀專書全文或最終因果裁決
-  - S6 sources：新增 angell-1907-province-functional-psychology、watson-1913-behaviorist-views、springer-2013-beenfeldt-book-overview。前兩者一手全文已實讀；第三筆明確限定為公開 publisher overview。專用測試鎖定同時代批評、互補立場與現代反論不得合併成「功能主義／行為主義單因取代」敘事
-  - S7 evidenced-legacy-relations：完成 3 筆 verified/publishable relations；structuralism influenced functionalism 僅限 Angell 所述「由對比衍生」的一種 functional problem，behaviorism opposed structuralism 僅限 Watson 1913 的方法與方案批評，Titchener influenced SEP 僅限創辦 predecessor 與組織延續，不把人物制度遺產冒充結構主義理論延續
-  - S7 legacy/institution boundary：functionalism、behaviorism 只以 legacy_seed/unverified/publishable:false 身份種子加入，零舊 prose/verdict；Titchener person 與 SEP institution 由新來源登錄。新增 relation 發布閘門，publishable relation 必須 verified 且至少有一筆 publishable evidence
-  - P3-S structuralism exit：S1-S7 7/7 已裁決；所有 publishable claims/evidence/relations 通過全文與引用閘門；legacy prose/verdict 零匯入；validator、完整 unittest、diff-check PASS
-  - Thin P4 reader preview：34 筆 verified/publishable structuralism claims 均新增繁中原子表述；views/specs/structuralism.json 只保存七章排序與 canonical IDs；tools/build_views.py 可重生 views/generated/structuralism.md 與 JSON dossier，唯一未發布 Leahey 史學待辦不進輸出
-  - Reader safety：profile spec 的空檔、過大、破損 JSON、重複／遺失 ID 均拒絕；生成採 atomic replace，並由中斷保留、雙程序並行、byte-identical 重生與未發布內容不洩漏測試鎖定
-next_action: P3-S 下一個 bounded target 是 psychoanalysis；開始前建立其固定問題清單與 S1 identity-time-scope，不沿用舊庫 prose/verdict
-exit_gate: satisfied — structuralism S1-S7 7/7 adjudicated; publishable claims have readable fulltext + locator + short_quote; relations are evidence-backed; legacy prose/verdict zero-import; validator, full unittest and diff-check PASS
+  - 固定 S1-S7 問題清單；區分起源歸屬、方法、模型版本、書目、證據批評與分支遺產
+  - S1 identity-time-scope：完成 5 筆 verified/publishable 原子 claims；一筆 IPA 當代「臨床治療／心智經驗研究」雙重範圍、Freud 1923 三分定義拆為三筆、Freud 1896 術語時間錨點一筆
+  - S1 sources：ipa-what-is-psychoanalysis、freud-1923-two-encyclopaedia-articles、freud-1896-heredity-aetiology-neuroses；三者相關全文均於 2026-07-27 實讀，未保存全文
+  - S1 reader preview：views/specs/psychoanalysis.json 只含完成的五筆 canonical claims；可重生繁中 Markdown 與 JSON dossier，未完成 S2-S7 不以空白敘事補寫
+next_action: 完成 S2 breuer-freud-origin-attribution-boundary；分開 Breuer 的催眠／宣洩程序、Freud 的技術轉變與後來 psychoanalysis 名稱，不把前史直接回稱為完整精神分析
+exit_gate: pending — psychoanalysis S1 complete; S2-S7 remain
 stop_rule: 任一來源無法讀取就留在 citation/queue 層並繼續同題其他來源；不得用搜尋 snippet 補全文；七題完成後停止本 pilot，不自行擴張
 ```
 

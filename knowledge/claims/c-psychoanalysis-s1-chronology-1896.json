@@ -1,0 +1,15 @@
+{
+  "claim_type": "chronology",
+  "evidence_ids": [
+    "ev-psychoanalysis-s1-chronology-1896"
+  ],
+  "id": "c-psychoanalysis-s1-chronology-1896",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "claim",
+  "scope_note": "This is a terminology time anchor: it does not claim that every component of later psychoanalysis already existed in 1896 or that Breuer used Freud's later system.",
+  "statement": "Freud's 1896 article used the term psycho-analytic method for his use of Josef Breuer's probing procedure.",
+  "statement_zh": "Freud 在 1896 年的文章中，以「精神分析方法」稱呼自己對 Josef Breuer 探查程序的運用。",
+  "status": "verified",
+  "subject_id": "psychoanalysis"
+}

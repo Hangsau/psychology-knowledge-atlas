@@ -1,0 +1,16 @@
+{
+  "access_status": "publicly_readable_license_unclear",
+  "authors": [
+    "Sigmund Freud"
+  ],
+  "id": "freud-1923-two-encyclopaedia-articles",
+  "identifiers": {},
+  "issued": "1923",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "source",
+  "status": "retrieved",
+  "title": "Two Encyclopaedia Articles: (A) Psycho-Analysis",
+  "url": "https://www.lutecium.org/ftp/Freud/pdf/1923_two_encyclopaedia_articles.pdf",
+  "version_note": "English text of Freud's 1923 article, conventionally dated 1923 [1922] and collected in Standard Edition XVIII, pp. 235-254. The complete 17-page public PDF containing both encyclopaedia articles was read on 2026-07-27; no copy is stored in this repository and no redistribution license is asserted."
+}

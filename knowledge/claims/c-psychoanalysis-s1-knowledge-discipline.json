@@ -1,0 +1,15 @@
+{
+  "claim_type": "definition",
+  "evidence_ids": [
+    "ev-psychoanalysis-s1-knowledge-discipline"
+  ],
+  "id": "c-psychoanalysis-s1-knowledge-discipline",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "claim",
+  "scope_note": "This records the third component of Freud's own historical definition; calling it a discipline does not adjudicate the later scientific status of its claims.",
+  "statement": "Freud's third 1923 sense of psychoanalysis was a growing body of psychological information intended to form a new scientific discipline.",
+  "statement_zh": "Freud 在 1923 年所列的第三層意義，是逐步累積並形成新科學學科的一套心理學知識。",
+  "status": "verified",
+  "subject_id": "psychoanalysis"
+}

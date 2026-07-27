@@ -1,0 +1,15 @@
+{
+  "claim_type": "scope",
+  "evidence_ids": [
+    "ev-psychoanalysis-s1-contemporary-dual-scope"
+  ],
+  "id": "c-psychoanalysis-s1-contemporary-dual-scope",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "claim",
+  "scope_note": "This records the IPA's contemporary institutional description. It does not establish the truth of psychoanalytic theory or the efficacy of psychoanalytic treatment.",
+  "statement": "The International Psychoanalytical Association currently describes psychoanalysis as both a clinical treatment method and an experiential study of the mind.",
+  "statement_zh": "國際精神分析學會目前把精神分析同時表述為臨床治療方法與對心智的經驗性研究。",
+  "status": "verified",
+  "subject_id": "psychoanalysis"
+}

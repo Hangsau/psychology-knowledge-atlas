@@ -1,0 +1,19 @@
+{
+  "entity_id": "psychoanalysis",
+  "id": "psychoanalysis",
+  "language": "zh-Hant",
+  "relation_ids": [],
+  "sections": [
+    {
+      "claim_ids": [
+        "c-psychoanalysis-s1-contemporary-dual-scope",
+        "c-psychoanalysis-s1-investigative-procedure",
+        "c-psychoanalysis-s1-therapeutic-method",
+        "c-psychoanalysis-s1-knowledge-discipline",
+        "c-psychoanalysis-s1-chronology-1896"
+      ],
+      "id": "identity-time-scope",
+      "title": "定位、時間與範圍"
+    }
+  ]
+}

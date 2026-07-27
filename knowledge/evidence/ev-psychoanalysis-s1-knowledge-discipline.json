@@ -1,0 +1,13 @@
+{
+  "claim_id": "c-psychoanalysis-s1-knowledge-discipline",
+  "evidence_level": "fulltext_direct",
+  "id": "ev-psychoanalysis-s1-knowledge-discipline",
+  "locator": "Two Encyclopaedia Articles, (A) Psycho-Analysis, opening definition, SE XVIII p. 235 (PDF p. 1)",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "evidence",
+  "short_quote": "a collection of psychological information obtained along those lines, which is gradually being accumulated into a new scientific discipline",
+  "source_id": "freud-1923-two-encyclopaedia-articles",
+  "status": "verified",
+  "summary": "The third numbered component describes an accumulating knowledge corpus with disciplinary ambitions."
+}

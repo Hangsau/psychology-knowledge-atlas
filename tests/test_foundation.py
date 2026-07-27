@@ -938,6 +938,64 @@ class FoundationTests(unittest.TestCase):
         self.assertFalse(queued_evidence["publishable"])
         self.assertEqual(validate_repository(self.work), [])
 
+    def test_psychoanalysis_s1_identity_time_scope_is_bounded(self) -> None:
+        expected = {
+            "c-psychoanalysis-s1-contemporary-dual-scope": "scope",
+            "c-psychoanalysis-s1-investigative-procedure": "definition",
+            "c-psychoanalysis-s1-therapeutic-method": "definition",
+            "c-psychoanalysis-s1-knowledge-discipline": "definition",
+            "c-psychoanalysis-s1-chronology-1896": "chronology",
+        }
+        for claim_id, claim_type in expected.items():
+            claim = json.loads(
+                (self.work / f"knowledge/claims/{claim_id}.json").read_text(encoding="utf-8")
+            )
+            self.assertEqual(claim["subject_id"], "psychoanalysis")
+            self.assertEqual(claim["claim_type"], claim_type)
+            self.assertEqual(claim["status"], "verified")
+            self.assertTrue(claim["publishable"])
+            self.assertTrue(claim["statement_zh"].strip())
+            self.assertEqual(len(claim["evidence_ids"]), 1)
+            evidence = json.loads(
+                (self.work / f"knowledge/evidence/{claim['evidence_ids'][0]}.json").read_text(
+                    encoding="utf-8"
+                )
+            )
+            self.assertEqual(evidence["claim_id"], claim_id)
+            self.assertEqual(evidence["evidence_level"], "fulltext_direct")
+            self.assertTrue(evidence["publishable"])
+            self.assertLessEqual(len(evidence["short_quote"].split()), 25)
+
+        chronology = json.loads(
+            (self.work / "knowledge/claims/c-psychoanalysis-s1-chronology-1896.json").read_text(
+                encoding="utf-8"
+            )
+        )
+        self.assertIn("1896", chronology["statement"])
+        self.assertIn("terminology time anchor", chronology["scope_note"])
+        therapeutic = json.loads(
+            (self.work / "knowledge/claims/c-psychoanalysis-s1-therapeutic-method.json").read_text(
+                encoding="utf-8"
+            )
+        )
+        self.assertIn("not an efficacy finding", therapeutic["scope_note"])
+        self.assertEqual(validate_repository(self.work), [])
+
+    def test_psychoanalysis_reader_profile_exposes_completed_s1(self) -> None:
+        build(self.work)
+        markdown = (self.work / "views/generated/psychoanalysis.md").read_text(encoding="utf-8")
+        dossier = json.loads(
+            (self.work / "views/generated/psychoanalysis.json").read_text(encoding="utf-8")
+        )
+        self.assertIn("# 精神分析", markdown)
+        self.assertIn("## 定位、時間與範圍", markdown)
+        self.assertIn("國際精神分析學會目前", markdown)
+        self.assertIn("1896", markdown)
+        self.assertEqual(len(dossier["sections"]), 1)
+        self.assertEqual(len(dossier["sections"][0]["claims"]), 5)
+        self.assertEqual(len(dossier["sources"]), 3)
+        self.assertEqual(dossier["relations"], [])
+
     def test_structuralism_s3_introspection_methods_are_not_conflated(self) -> None:
         claim_ids = {
             "c-structuralism-s3-wundt-rejects-unaided-self-observation",

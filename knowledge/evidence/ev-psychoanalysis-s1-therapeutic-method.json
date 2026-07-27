@@ -1,0 +1,13 @@
+{
+  "claim_id": "c-psychoanalysis-s1-therapeutic-method",
+  "evidence_level": "fulltext_direct",
+  "id": "ev-psychoanalysis-s1-therapeutic-method",
+  "locator": "Two Encyclopaedia Articles, (A) Psycho-Analysis, opening definition, SE XVIII p. 235 (PDF p. 1)",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "evidence",
+  "short_quote": "a method (based upon that investigation) for the treatment of neurotic disorders",
+  "source_id": "freud-1923-two-encyclopaedia-articles",
+  "status": "verified",
+  "summary": "The second numbered component defines a treatment method and makes it dependent on the investigative procedure."
+}

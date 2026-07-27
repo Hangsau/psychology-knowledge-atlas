@@ -18,9 +18,9 @@
 
 ## 即時階段
 
-P1、P1-E 與 P2-E 已完成並有可執行退出門檻。當前進入 `P3-S` 學派 pilot，第一個 bounded target 是 `structuralism`；本階段建立來源、原子 claim、evidence 與 relation，不回填舊庫綜述文字。
+P1、P1-E 與 P2-E 已完成並有可執行退出門檻。當前位於 `P3-S` 學派 pilots；第一個 target `structuralism` 已完成，第二個 bounded target 是 `psychoanalysis`。本階段建立來源、原子 claim、evidence 與 relation，不回填舊庫綜述文字。
 
-`structuralism` 已完成 S1-S7 退出門檻，並額外完成一個不改變 gate 順序的薄型 P4 reader preview：繁中原子敘述保存在 claims，view manifest 只保存章節與 IDs，生成器只輸出 verified/publishable 內容。下一個 P3-S target 仍是 `psychoanalysis`；完整 P4 views 仍待四個 pilots 後進行。
+`structuralism` 已完成 S1-S7 退出門檻，並額外完成一個不改變 gate 順序的薄型 P4 reader preview。當前 bounded target 是 `psychoanalysis`；其七題已固定，S1 identity-time-scope 已完成並有可重生的繁中 reader preview。完整 P4 views 仍待四個 pilots 後進行。
 
 ## 已完成 gate
 
@@ -49,6 +49,18 @@ P2-E 的目的，是驗證命名效應的資料路由與發布安全，不是無
 7. 對後續心理學的影響；影響 claim 必須有 evidence-backed relation，不靠相似性推定。
 
 退出門檻：七題 7/7 均有裁決、所有參照可解析、publishable claim 全部通過全文閘門、沒有把 legacy prose 或 verdict 匯入、validator 與完整測試通過。完成後才進入 `psychoanalysis`，不在單一問題上無限擴張。
+
+### Psychoanalysis 固定七題
+
+1. 名稱、時間與範圍：分開研究程序、治療方法、知識／理論體系與當代機構用法。
+2. Breuer–Freud 起源與歸屬邊界：不把催眠／宣洩法直接等同後來的精神分析。
+3. 自由聯想、詮釋、阻抗與移情的方法定義及技術邊界。
+4. 無意識、壓抑與心理模型的核心主張及版本變化；不把不同年代模型壓成單一教義。
+5. 關鍵一手著作的書目身份、版本、翻譯與文本時間線。
+6. 療效研究、經驗批評與史學爭議的證據邊界；理論主張、臨床結果與通俗批評分層裁決。
+7. 後續學派、心理動力取向與跨領域遺產；每一筆影響或分支關係都必須有 evidence-backed relation。
+
+退出門檻沿用 structuralism pilot：七題 7/7 裁決、publishable records 通過全文閘門、legacy prose/verdict 零匯入、validator 與完整測試通過；之後才進入 `cbt`。
 
 ## 已核准後續工作軸
 
