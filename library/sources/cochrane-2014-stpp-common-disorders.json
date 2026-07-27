@@ -1,0 +1,28 @@
+{
+  "access_status": "abstract_only",
+  "authors": [
+    "Allan A. Abbass",
+    "Steve R. Kisely",
+    "Joel M. Town",
+    "Falk Leichsenring",
+    "Ellen Driessen",
+    "Simone De Maat",
+    "Andrew Gerber",
+    "Jack Dekker",
+    "Sven Rabung",
+    "Svetlana Rusalovska",
+    "Eileen Crowe"
+  ],
+  "id": "cochrane-2014-stpp-common-disorders",
+  "identifiers": {
+    "doi": "10.1002/14651858.CD004687.pub4"
+  },
+  "issued": "2014",
+  "provenance": "source_derived",
+  "publishable": false,
+  "record_type": "source",
+  "status": "retrieved",
+  "title": "Short-term psychodynamic psychotherapies for common mental disorders",
+  "url": "https://www.cochrane.org/evidence/CD004687_short-term-psychodynamic-psychotherapies-common-mental-disorders",
+  "version_note": "The complete public abstract and plain-language summary were read on 2026-07-27, but the review body was not. It remains an abstract-only queue record and cannot support a publishable synthesis claim."
+}

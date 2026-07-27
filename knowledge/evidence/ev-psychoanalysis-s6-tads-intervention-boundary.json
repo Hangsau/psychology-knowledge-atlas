@@ -1,0 +1,13 @@
+{
+  "claim_id": "c-psychoanalysis-s6-tads-intervention-boundary",
+  "evidence_level": "fulltext_direct",
+  "id": "ev-psychoanalysis-s6-tads-intervention-boundary",
+  "locator": "Abstract; Methods, Study design and participants; The treatment",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "evidence",
+  "short_quote": "long-term psychoanalytic psychotherapy (LTPP) as an adjunct to treatment-as-usual",
+  "source_id": "fonagy-etal-2015-tads",
+  "status": "verified",
+  "summary": "The trial randomized 129 patients to an 18-month LTPP course plus usual care or usual care alone."
+}

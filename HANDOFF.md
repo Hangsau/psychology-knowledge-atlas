@@ -32,8 +32,10 @@ completed_items:
   - S4 model boundary：freud-1912-note-unconscious、freud-1915-unconscious、freud-1923-ego-id 三份全文實讀；測試鎖定早期 conscious vocabulary 不得與 1923 structural differentiation 當成可互換同義詞
   - S5 primary-bibliography-editions-translations：完成 8 筆 verified/publishable 書目 claims；1895 共同著作、1900《夢的解析》初版／八版序列／1953 SE 分卷、1905 與 1925《性學三論》版本、1923《自我與本我》德文初版及 1927 首英譯分開建檔
   - S5 version boundary：新增 5 筆 Freud Edition 原版／work inventory sources；明確拒絕把 1925《性學三論》內容整體回填為 1905 原說，也不把《夢的解析》任一單卷或任一版當作無版本文本
-next_action: 完成 S6 efficacy-empirical-critique-historiography-boundary；至少一份開放全文臨床研究、一份哲學批評與一份誠實待辦層
-exit_gate: pending — psychoanalysis S1-S5 complete; S6-S7 remain
+  - S6 efficacy-empirical-critique-historiography-boundary：完成 5 筆 verified/publishable claims；TADS 的介入範圍、完全緩解 null result、延後出現的部分緩解差異，以及 Popper 的劃界問題與預先反駁準則分開建檔
+  - S6 evidence boundary：TADS 只支持特定抗治療性憂鬱樣本中的長期精神分析取向心理治療，不代表整個精神分析；Cochrane STPP review 僅讀公開摘要，保留 retrieved/abstract_only/publishable:false 並排除 reader
+next_action: 完成 S7 branches-psychodynamic-legacy-relations，建立有證據的分支／影響關係後跑 pilot 退出門檻
+exit_gate: pending — psychoanalysis S1-S6 complete; S7 remains
 stop_rule: 任一來源無法讀取就留在 citation/queue 層並繼續同題其他來源；不得用搜尋 snippet 補全文；七題完成後停止本 pilot，不自行擴張
 ```
 

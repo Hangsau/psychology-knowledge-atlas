@@ -1,0 +1,27 @@
+{
+  "access_status": "open_fulltext",
+  "authors": [
+    "Peter Fonagy",
+    "Felicitas Rost",
+    "Jo-anne Carlyle",
+    "Susan McPherson",
+    "Rachel Thomas",
+    "Pasco Fearon",
+    "David Goldberg",
+    "Robert Taylor"
+  ],
+  "id": "fonagy-etal-2015-tads",
+  "identifiers": {
+    "doi": "10.1002/wps.20267",
+    "pmcid": "PMC4592654",
+    "pmid": "26407787"
+  },
+  "issued": "2015",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "source",
+  "status": "verified",
+  "title": "Pragmatic randomized controlled trial of long-term psychoanalytic psychotherapy for treatment-resistant depression: the Tavistock Adult Depression Study",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4592654/",
+  "version_note": "Open full article and UCL repository manuscript were read on 2026-07-27. The trial concerns one manualized, once-weekly psychoanalytic psychotherapy added to treatment as usual for a specific treatment-resistant-depression sample; it is not a trial of every psychoanalytic theory or practice."
+}

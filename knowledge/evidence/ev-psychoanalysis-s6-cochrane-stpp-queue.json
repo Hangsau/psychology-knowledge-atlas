@@ -1,0 +1,13 @@
+{
+  "claim_id": "c-psychoanalysis-s6-cochrane-stpp-queue",
+  "evidence_level": "abstract_only",
+  "id": "ev-psychoanalysis-s6-cochrane-stpp-queue",
+  "locator": "Public abstract, Authors' conclusions",
+  "provenance": "source_derived",
+  "publishable": false,
+  "record_type": "evidence",
+  "short_quote": "given the limited data, loss of significance in some measures at long-term follow-up and heterogeneity between studies",
+  "source_id": "cochrane-2014-stpp-common-disorders",
+  "status": "retrieved",
+  "summary": "The public abstract emphasizes both promising results and limitations; without the review body it remains non-publishable evidence."
+}

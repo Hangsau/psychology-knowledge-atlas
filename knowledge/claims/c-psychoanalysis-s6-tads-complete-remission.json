@@ -1,0 +1,15 @@
+{
+  "claim_type": "finding",
+  "evidence_ids": [
+    "ev-psychoanalysis-s6-tads-complete-remission"
+  ],
+  "id": "c-psychoanalysis-s6-tads-complete-remission",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "claim",
+  "scope_note": "This null result concerns the trial's categorical complete-remission outcome at 18 and 42 months. It neither proves equivalence nor licenses a verdict about other diagnoses, treatments, outcomes, or psychoanalytic theories.",
+  "statement": "In TADS, complete remission was not significantly different between LTPP plus usual care and usual care alone either at treatment end or at 42 months.",
+  "statement_zh": "在 TADS 中，長期精神分析取向心理治療加常規治療與單獨常規治療，在療程結束及第 42 個月的完全緩解率都沒有顯著差異。",
+  "status": "verified",
+  "subject_id": "psychoanalysis"
+}

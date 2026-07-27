@@ -995,13 +995,15 @@ class FoundationTests(unittest.TestCase):
         self.assertIn("## 自由聯想、詮釋、阻抗與移情", markdown)
         self.assertIn("## 無意識、壓抑與模型修訂", markdown)
         self.assertIn("關鍵著作、版本與翻譯", markdown)
-        self.assertEqual(len(dossier["sections"]), 5)
+        self.assertIn("臨床證據、科學批評與適用邊界", markdown)
+        self.assertEqual(len(dossier["sections"]), 6)
         self.assertEqual(len(dossier["sections"][0]["claims"]), 5)
         self.assertEqual(len(dossier["sections"][1]["claims"]), 7)
         self.assertEqual(len(dossier["sections"][2]["claims"]), 6)
         self.assertEqual(len(dossier["sections"][3]["claims"]), 6)
         self.assertEqual(len(dossier["sections"][4]["claims"]), 8)
-        self.assertEqual(len(dossier["sources"]), 14)
+        self.assertEqual(len(dossier["sections"][5]["claims"]), 5)
+        self.assertEqual(len(dossier["sources"]), 16)
         self.assertEqual(dossier["relations"], [])
 
     def test_psychoanalysis_s2_breuer_freud_origin_boundary_is_layered(self) -> None:
@@ -1168,6 +1170,54 @@ class FoundationTests(unittest.TestCase):
         self.assertIn("1905", first["statement"])
         self.assertIn("1925", sixth["statement"])
         self.assertIn("not be backdated", sixth["scope_note"])
+        self.assertEqual(validate_repository(self.work), [])
+
+    def test_psychoanalysis_s6_separates_trial_critique_and_queued_abstract(self) -> None:
+        build(self.work)
+        published_ids = {
+            "c-psychoanalysis-s6-tads-intervention-boundary",
+            "c-psychoanalysis-s6-tads-complete-remission",
+            "c-psychoanalysis-s6-tads-partial-remission-followup",
+            "c-psychoanalysis-s6-popper-demarcation-not-truth",
+            "c-psychoanalysis-s6-popper-refutation-criteria",
+        }
+        for claim_id in published_ids:
+            claim = json.loads(
+                (self.work / f"knowledge/claims/{claim_id}.json").read_text(encoding="utf-8")
+            )
+            self.assertEqual(claim["status"], "verified")
+            self.assertTrue(claim["publishable"])
+            evidence = json.loads(
+                (self.work / f"knowledge/evidence/{claim['evidence_ids'][0]}.json").read_text(
+                    encoding="utf-8"
+                )
+            )
+            self.assertEqual(evidence["evidence_level"], "fulltext_direct")
+            self.assertLessEqual(len(evidence["short_quote"].split()), 25)
+
+        queue = json.loads(
+            (self.work / "knowledge/claims/c-psychoanalysis-s6-cochrane-stpp-queue.json").read_text(
+                encoding="utf-8"
+            )
+        )
+        queue_evidence = json.loads(
+            (self.work / "knowledge/evidence/ev-psychoanalysis-s6-cochrane-stpp-queue.json").read_text(
+                encoding="utf-8"
+            )
+        )
+        self.assertEqual(queue["status"], "retrieved")
+        self.assertFalse(queue["publishable"])
+        self.assertEqual(queue_evidence["evidence_level"], "abstract_only")
+        self.assertFalse(queue_evidence["publishable"])
+
+        dossier = json.loads(
+            (self.work / "views/generated/psychoanalysis.json").read_text(encoding="utf-8")
+        )
+        reader_claim_ids = {
+            claim["id"] for section in dossier["sections"] for claim in section["claims"]
+        }
+        self.assertTrue(published_ids <= reader_claim_ids)
+        self.assertNotIn(queue["id"], reader_claim_ids)
         self.assertEqual(validate_repository(self.work), [])
 
     def test_structuralism_s3_introspection_methods_are_not_conflated(self) -> None:

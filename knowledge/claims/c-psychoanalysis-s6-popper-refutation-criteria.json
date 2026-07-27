@@ -1,0 +1,15 @@
+{
+  "claim_type": "critique",
+  "evidence_ids": [
+    "ev-psychoanalysis-s6-popper-refutation-criteria"
+  ],
+  "id": "c-psychoanalysis-s6-popper-refutation-criteria",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "claim",
+  "scope_note": "This is Popper's falsifiability-based demarcation criticism. Recording it does not settle later disputes about whether particular psychoanalytic hypotheses can be operationalized and tested.",
+  "statement": "Popper argued that apparent clinical confirmations were insufficient unless analysts specified in advance which observations would count as refutations.",
+  "statement_zh": "Popper 主張，若分析者沒有事先說明哪些觀察結果構成反駁，臨床上的表面確認就不足以成為真正的檢驗。",
+  "status": "verified",
+  "subject_id": "psychoanalysis"
+}

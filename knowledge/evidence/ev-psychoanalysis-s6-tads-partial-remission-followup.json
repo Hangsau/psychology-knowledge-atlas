@@ -1,0 +1,13 @@
+{
+  "claim_id": "c-psychoanalysis-s6-tads-partial-remission-followup",
+  "evidence_level": "fulltext_direct",
+  "id": "ev-psychoanalysis-s6-tads-partial-remission-followup",
+  "locator": "Results, Evaluation, partial-remission paragraph and Table 2",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "evidence",
+  "short_quote": "significant differences emerged during follow-up",
+  "source_id": "fonagy-etal-2015-tads",
+  "status": "verified",
+  "summary": "Partial remission was nonsignificant at 18 months (32.1% vs 23.9%, p=0.37), then significant at 24, 30, and 42 months."
+}

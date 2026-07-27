@@ -1,0 +1,15 @@
+{
+  "claim_type": "critique",
+  "evidence_ids": [
+    "ev-psychoanalysis-s6-popper-demarcation-not-truth"
+  ],
+  "id": "c-psychoanalysis-s6-popper-demarcation-not-truth",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "claim",
+  "scope_note": "This records Popper's own retrospective framing of his demarcation problem. It is a philosophical criticism of scientific status, not itself a clinical outcome study or an uncontested conclusion that every psychoanalytic proposition is false.",
+  "statement": "Popper framed his objection to psychoanalysis as a question of scientific status rather than, at that stage, a claim about its truth, exactness, or measurability.",
+  "statement_zh": "Popper 把對精神分析的異議框定為科學地位的劃界問題，而非在那個階段直接宣稱其內容為假、不精確或不可測量。",
+  "status": "verified",
+  "subject_id": "psychoanalysis"
+}

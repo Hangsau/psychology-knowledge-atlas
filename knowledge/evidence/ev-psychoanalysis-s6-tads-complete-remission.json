@@ -1,0 +1,13 @@
+{
+  "claim_id": "c-psychoanalysis-s6-tads-complete-remission",
+  "evidence_level": "fulltext_direct",
+  "id": "ev-psychoanalysis-s6-tads-complete-remission",
+  "locator": "Results, Evaluation, complete-remission paragraph",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "evidence",
+  "short_quote": "Complete remission ... was infrequent in both groups at the end of treatment",
+  "source_id": "fonagy-etal-2015-tads",
+  "status": "verified",
+  "summary": "Complete remission was 9.4% versus 6.5% at treatment end (p=0.59) and 14.9% versus 4.4% at 42 months (p=0.09)."
+}

@@ -1,0 +1,13 @@
+{
+  "claim_id": "c-psychoanalysis-s6-popper-demarcation-not-truth",
+  "evidence_level": "fulltext_direct",
+  "id": "ev-psychoanalysis-s6-popper-demarcation-not-truth",
+  "locator": "Chapter 1, section I, PDF pp. 1-2",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "evidence",
+  "short_quote": "what worried me was neither the problem of truth ... nor the problem of exactness or measurability",
+  "source_id": "popper-1963-science-conjectures",
+  "status": "verified",
+  "summary": "Popper explicitly distinguished his concern about scientific status from truth, exactness, and measurability."
+}

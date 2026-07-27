@@ -1,0 +1,15 @@
+{
+  "claim_type": "finding",
+  "evidence_ids": [
+    "ev-psychoanalysis-s6-tads-partial-remission-followup"
+  ],
+  "id": "c-psychoanalysis-s6-tads-partial-remission-followup",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "claim",
+  "scope_note": "The later differences are partial-remission results from this single pragmatic trial. More than 25% of primary-outcome data were missing at 42 months, and the result must not be generalized to all psychodynamic therapies or all patients.",
+  "statement": "TADS found no significant partial-remission difference at treatment end, but reported significantly higher partial remission for the LTPP group at 24, 30, and 42 months.",
+  "statement_zh": "TADS 在療程結束時未發現部分緩解率有顯著差異，但在第 24、30、42 個月回報長期精神分析取向心理治療組的部分緩解率顯著較高。",
+  "status": "verified",
+  "subject_id": "psychoanalysis"
+}

@@ -65,6 +65,17 @@
       ],
       "id": "bibliography",
       "title": "關鍵著作、版本與翻譯"
+    },
+    {
+      "claim_ids": [
+        "c-psychoanalysis-s6-tads-intervention-boundary",
+        "c-psychoanalysis-s6-tads-complete-remission",
+        "c-psychoanalysis-s6-tads-partial-remission-followup",
+        "c-psychoanalysis-s6-popper-demarcation-not-truth",
+        "c-psychoanalysis-s6-popper-refutation-criteria"
+      ],
+      "id": "evidence-critique",
+      "title": "臨床證據、科學批評與適用邊界"
     }
   ]
 }

@@ -1,0 +1,15 @@
+{
+  "claim_type": "finding",
+  "evidence_ids": [
+    "ev-psychoanalysis-s6-cochrane-stpp-queue"
+  ],
+  "id": "c-psychoanalysis-s6-cochrane-stpp-queue",
+  "provenance": "source_derived",
+  "publishable": false,
+  "record_type": "claim",
+  "scope_note": "Queue only. This concerns short-term individual psychodynamic psychotherapy of 40 hours or fewer across heterogeneous common mental disorders, not classical psychoanalysis. The public abstract was read, but the review body was not, so this claim is deliberately excluded from the reader.",
+  "statement": "The Cochrane abstract reports promising but tentative STPP results because data were limited, some long-term measures lost significance, and studies were heterogeneous.",
+  "statement_zh": "Cochrane 摘要把短期心理動力治療的結果描述為有希望但仍屬暫定，理由包括資料有限、部分長期指標不再顯著，以及研究異質性。",
+  "status": "retrieved",
+  "subject_id": "psychoanalysis"
+}
