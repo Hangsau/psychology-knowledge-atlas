@@ -1,0 +1,15 @@
+{
+  "claim_type": "definition",
+  "evidence_ids": [
+    "ev-psychoanalysis-s4-unconscious-descriptive"
+  ],
+  "id": "c-psychoanalysis-s4-unconscious-descriptive",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "claim",
+  "scope_note": "This is Freud's descriptive 1912 definition, not a claim that the indirect signs he accepted uniquely establish his wider theory.",
+  "statement": "Freud's descriptive 1912 sense called a conception unconscious when a person was unaware of it but accepted its existence from other signs.",
+  "statement_zh": "在 Freud 1912 年的描述性用法中，若人未察覺某表象、但依其他跡象承認其存在，便稱它為無意識。",
+  "status": "verified",
+  "subject_id": "psychoanalysis"
+}

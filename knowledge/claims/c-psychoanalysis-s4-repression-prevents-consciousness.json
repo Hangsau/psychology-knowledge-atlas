@@ -1,0 +1,15 @@
+{
+  "claim_type": "mechanism",
+  "evidence_ids": [
+    "ev-psychoanalysis-s4-repression-prevents-consciousness"
+  ],
+  "id": "c-psychoanalysis-s4-repression-prevents-consciousness",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "claim",
+  "scope_note": "This is Freud's 1915 theoretical definition of repression. Recording it does not independently demonstrate that the proposed mechanism occurs.",
+  "statement": "Freud's 1915 account defined repression as preventing an instinct-representing idea from becoming conscious rather than abolishing or destroying it.",
+  "statement_zh": "Freud 在 1915 年把壓抑界定為阻止代表本能的表象進入意識，而不是將它消除或摧毀。",
+  "status": "verified",
+  "subject_id": "psychoanalysis"
+}

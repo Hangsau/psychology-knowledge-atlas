@@ -28,8 +28,10 @@ completed_items:
   - S2 reader preview：新增「Breuer–Freud 起源與歸屬邊界」七筆內容；不把宣洩前史倒稱完整精神分析，S3 才細分自由聯想、詮釋、阻抗與移情規則
   - S3 free-association-interpretation-resistance-transference-method-boundary：完成 6 筆 verified/publishable 原子 claims；自由聯想報告規則、阻抗推論、詮釋材料範圍、移情非分析專有、正負移情與「僅部分移情構成阻抗」分別建檔
   - S3 sources：freud-1904-psychoanalytic-procedure 與新增 freud-1912-dynamics-transference 全文實讀；所有定義均限定為 Freud 特定年代的技術陳述，不外推成所有後世流派規則或獨立療效驗證
-next_action: 完成 S4 unconscious-repression-model-revision-claims；明確分開 1912/1915 topographical vocabulary 與 1923 structural model
-exit_gate: pending — psychoanalysis S1-S3 complete; S4-S7 remain
+  - S4 unconscious-repression-model-revision-claims：完成 6 筆 verified/publishable 原子 claims；1912 描述性無意識與系統性 The Unconscious、1915 壓抑定義、1923 無意識不等於被壓抑、自我由本我改變而來及本我／自我／超我三分均分開建檔
+  - S4 model boundary：freud-1912-note-unconscious、freud-1915-unconscious、freud-1923-ego-id 三份全文實讀；測試鎖定早期 conscious vocabulary 不得與 1923 structural differentiation 當成可互換同義詞
+next_action: 完成 S5 primary-bibliography-editions-translations；關鍵著作逐筆保留原版、英譯與修訂版本身份
+exit_gate: pending — psychoanalysis S1-S4 complete; S5-S7 remain
 stop_rule: 任一來源無法讀取就留在 citation/queue 層並繼續同題其他來源；不得用搜尋 snippet 補全文；七題完成後停止本 pilot，不自行擴張
 ```
 

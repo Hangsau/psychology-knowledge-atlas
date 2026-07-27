@@ -1,0 +1,13 @@
+{
+  "claim_id": "c-psychoanalysis-s4-repression-prevents-consciousness",
+  "evidence_level": "fulltext_direct",
+  "id": "ev-psychoanalysis-s4-repression-prevents-consciousness",
+  "locator": "Das Unbewusste (1915), fair-copy manuscript, opening paragraph",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "evidence",
+  "short_quote": "nicht darin, eine den Trieb repräsentierende Vorstellung aufzuheben, zu vernichten, sondern sie vom Bewußtwerden abzuhalten",
+  "source_id": "freud-1915-unconscious",
+  "status": "verified",
+  "summary": "Freud contrasts destroying an ideational representative with preventing it from becoming conscious."
+}

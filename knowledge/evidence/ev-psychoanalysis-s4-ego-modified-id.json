@@ -1,0 +1,13 @@
+{
+  "claim_id": "c-psychoanalysis-s4-ego-modified-id",
+  "evidence_level": "fulltext_direct",
+  "id": "ev-psychoanalysis-s4-ego-modified-id",
+  "locator": "The Ego and the Id (1923), chapter II, SE XIX p. 25 (PDF p. 9)",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "evidence",
+  "short_quote": "the ego is that part of the id which has been modified by the direct influence of the external world",
+  "source_id": "freud-1923-ego-id",
+  "status": "verified",
+  "summary": "The sentence defines the ego's relation to the id and external perception within the 1923 model."
+}

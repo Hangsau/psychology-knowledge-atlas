@@ -1,0 +1,16 @@
+{
+  "access_status": "publicly_readable_license_unclear",
+  "authors": [
+    "Sigmund Freud"
+  ],
+  "id": "freud-1915-unconscious",
+  "identifiers": {},
+  "issued": "1915",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "source",
+  "status": "retrieved",
+  "title": "Das Unbewusste",
+  "url": "https://www.freudedition.net/werke/das-unbewusste/reinschrift",
+  "version_note": "Freud's 1915 German fair-copy manuscript in the digital historical-critical Freud Edition. The complete manuscript, including its opening formulation of repression and the unconscious, was read on 2026-07-27; the claim preserves the German wording and no copy is stored here."
+}

@@ -993,11 +993,13 @@ class FoundationTests(unittest.TestCase):
         self.assertIn("1896", markdown)
         self.assertIn("## Breuer–Freud 起源與歸屬邊界", markdown)
         self.assertIn("## 自由聯想、詮釋、阻抗與移情", markdown)
-        self.assertEqual(len(dossier["sections"]), 3)
+        self.assertIn("## 無意識、壓抑與模型修訂", markdown)
+        self.assertEqual(len(dossier["sections"]), 4)
         self.assertEqual(len(dossier["sections"][0]["claims"]), 5)
         self.assertEqual(len(dossier["sections"][1]["claims"]), 7)
         self.assertEqual(len(dossier["sections"][2]["claims"]), 6)
-        self.assertEqual(len(dossier["sources"]), 6)
+        self.assertEqual(len(dossier["sections"][3]["claims"]), 6)
+        self.assertEqual(len(dossier["sources"]), 9)
         self.assertEqual(dossier["relations"], [])
 
     def test_psychoanalysis_s2_breuer_freud_origin_boundary_is_layered(self) -> None:
@@ -1085,6 +1087,44 @@ class FoundationTests(unittest.TestCase):
             )
         )
         self.assertIn("not classify every form", transference["scope_note"])
+        self.assertEqual(validate_repository(self.work), [])
+
+    def test_psychoanalysis_s4_topographic_and_structural_models_stay_distinct(self) -> None:
+        claim_ids = {
+            "c-psychoanalysis-s4-unconscious-descriptive",
+            "c-psychoanalysis-s4-unconscious-system",
+            "c-psychoanalysis-s4-repression-prevents-consciousness",
+            "c-psychoanalysis-s4-unconscious-repressed-boundary",
+            "c-psychoanalysis-s4-ego-modified-id",
+            "c-psychoanalysis-s4-structural-three-part-model",
+        }
+        for claim_id in claim_ids:
+            claim = json.loads(
+                (self.work / f"knowledge/claims/{claim_id}.json").read_text(encoding="utf-8")
+            )
+            self.assertEqual(claim["subject_id"], "psychoanalysis")
+            self.assertEqual(claim["status"], "verified")
+            self.assertTrue(claim["publishable"])
+            evidence = json.loads(
+                (self.work / f"knowledge/evidence/{claim['evidence_ids'][0]}.json").read_text(
+                    encoding="utf-8"
+                )
+            )
+            self.assertEqual(evidence["evidence_level"], "fulltext_direct")
+            self.assertLessEqual(len(evidence["short_quote"].split()), 25)
+
+        boundary = json.loads(
+            (self.work / "knowledge/claims/c-psychoanalysis-s4-unconscious-repressed-boundary.json").read_text(
+                encoding="utf-8"
+            )
+        )
+        self.assertIn("proper subset", boundary["statement"])
+        structural = json.loads(
+            (self.work / "knowledge/claims/c-psychoanalysis-s4-structural-three-part-model.json").read_text(
+                encoding="utf-8"
+            )
+        )
+        self.assertIn("must not be merged", structural["scope_note"])
         self.assertEqual(validate_repository(self.work), [])
 
     def test_structuralism_s3_introspection_methods_are_not_conflated(self) -> None:

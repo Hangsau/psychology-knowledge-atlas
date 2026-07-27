@@ -1,0 +1,15 @@
+{
+  "claim_type": "scope",
+  "evidence_ids": [
+    "ev-psychoanalysis-s4-unconscious-repressed-boundary"
+  ],
+  "id": "c-psychoanalysis-s4-unconscious-repressed-boundary",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "claim",
+  "scope_note": "This 1923 correction prevents unconscious and repressed from being used as synonyms and prepares the shift beyond a purely topographical vocabulary.",
+  "statement": "Freud stated in 1923 that the repressed formed a proper subset of the unconscious.",
+  "statement_zh": "Freud 在 1923 年指出，被壓抑者只是無意識範圍中的一個真子集。",
+  "status": "verified",
+  "subject_id": "psychoanalysis"
+}

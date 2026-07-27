@@ -1,0 +1,15 @@
+{
+  "claim_type": "definition",
+  "evidence_ids": [
+    "ev-psychoanalysis-s4-unconscious-system"
+  ],
+  "id": "c-psychoanalysis-s4-unconscious-system",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "claim",
+  "scope_note": "This records Freud's third, systematic sense of the term in 1912 and keeps it distinct from merely being currently outside awareness.",
+  "statement": "Freud's third 1912 sense used the capitalized Unconscious for a system of psychical activity, not merely a temporary property of an idea.",
+  "statement_zh": "Freud 在 1912 年列出的第三層意義，以大寫的「無意識」指稱一套心理活動系統，而不只是念頭暫未被察覺的屬性。",
+  "status": "verified",
+  "subject_id": "psychoanalysis"
+}

@@ -1,0 +1,13 @@
+{
+  "claim_id": "c-psychoanalysis-s4-unconscious-descriptive",
+  "evidence_level": "fulltext_direct",
+  "id": "ev-psychoanalysis-s4-unconscious-descriptive",
+  "locator": "A Note on the Unconscious in Psycho-Analysis (1912), descriptive definition, Proceedings XXVI p. 313",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "evidence",
+  "short_quote": "one of which we are not aware, but the existence of which we are nevertheless ready to admit",
+  "source_id": "freud-1912-note-unconscious",
+  "status": "verified",
+  "summary": "Freud defines the descriptive unconscious by lack of awareness plus indirect grounds for positing the conception."
+}

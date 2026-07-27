@@ -39,6 +39,18 @@
       ],
       "id": "method",
       "title": "自由聯想、詮釋、阻抗與移情"
+    },
+    {
+      "claim_ids": [
+        "c-psychoanalysis-s4-unconscious-descriptive",
+        "c-psychoanalysis-s4-unconscious-system",
+        "c-psychoanalysis-s4-repression-prevents-consciousness",
+        "c-psychoanalysis-s4-unconscious-repressed-boundary",
+        "c-psychoanalysis-s4-ego-modified-id",
+        "c-psychoanalysis-s4-structural-three-part-model"
+      ],
+      "id": "core-models",
+      "title": "無意識、壓抑與模型修訂"
     }
   ]
 }

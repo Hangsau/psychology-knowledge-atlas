@@ -1,0 +1,13 @@
+{
+  "claim_id": "c-psychoanalysis-s4-structural-three-part-model",
+  "evidence_level": "fulltext_direct",
+  "id": "ev-psychoanalysis-s4-structural-three-part-model",
+  "locator": "The Ego and the Id (1923), chapter IV opening, SE XIX p. 40 (PDF p. 18)",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "evidence",
+  "short_quote": "the differentiation we have made of the mind into an id, an ego, and a super-ego",
+  "source_id": "freud-1923-ego-id",
+  "status": "verified",
+  "summary": "Freud names the three-part differentiation and states that its purpose is to clarify dynamic relations."
+}
