@@ -1,0 +1,13 @@
+{
+  "id": "sikolohiyang-pilipino",
+  "record_type": "entity",
+  "entity_type": "tradition",
+  "name": "Sikolohiyang Pilipino",
+  "aliases": ["Filipino psychology", "菲律賓本土心理學"],
+  "status": "retrieved",
+  "publishable": false,
+  "provenance": "source_derived",
+  "source_ids": ["kim-yang-hwang-2006-indigenous-cultural-psychology"],
+  "tags": [],
+  "notes": "A Filipino intellectual and research movement rooted in Filipino perspective, language, concepts and methods. It remains a distinct local tradition rather than an alias for every indigenous psychology."
+}

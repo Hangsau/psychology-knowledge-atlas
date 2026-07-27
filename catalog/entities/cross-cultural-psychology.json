@@ -1,0 +1,13 @@
+{
+  "id": "cross-cultural-psychology",
+  "record_type": "entity",
+  "entity_type": "subfield",
+  "name": "Cross-cultural psychology",
+  "aliases": ["跨文化心理學"],
+  "status": "retrieved",
+  "publishable": false,
+  "provenance": "source_derived",
+  "source_ids": ["kim-yang-hwang-2006-indigenous-cultural-psychology"],
+  "tags": [],
+  "notes": "A distinct comparative tradition. The 2006 source discusses indigenous psychology as related to, but not simply interchangeable with, cross-cultural psychology."
+}

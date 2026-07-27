@@ -16,6 +16,7 @@
 - 若工作已列入 `PLAN.md`／`HANDOFF.md`，或已在對話中核准，使用者說「開始／繼續」後直接執行，不重跑 `plan-check`。
 - 只有使用者明確要求、出現未核准的重大跨階段擴張，或涉及高風險／不可逆操作時，才執行完整 `plan-check`。
 - 已排入後續 roadmap 不等於立即開工；必須遵守 `PLAN.md` 的 gate 順序。
+- bounded gate 完成且 validator、完整測試與 diff checks 通過後，commit 是「完成」的一部分：直接建立本機 checkpoint commit，不另行詢問；push 仍須使用者明確要求。
 
 ## 強制規則
 

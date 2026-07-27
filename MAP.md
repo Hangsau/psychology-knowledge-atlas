@@ -15,8 +15,10 @@ knowledge/controversies/ 爭議與競爭性解釋
 vocabularies/            多軸受控詞彙
 crosswalks/              D1–D13 與跨 repo 合約
 views/generated/         可刪除、可重生輸出（Git ignore）
+views/comparisons/       跨 profile 呈現規格；只列 canonical input IDs 與顯示邊界
 tools/validate.py        canonical integrity validator
 tools/store.py           原子寫入與同實體鎖
+tools/build_views.py     由 canonical records 原子重生 indexes 與 reader profiles
 tests/                   邊界、schema、參照、併發、安全測試
 ```
 
@@ -33,6 +35,7 @@ tests/                   邊界、schema、參照、併發、安全測試
 | 新增跨層機制（後續） | `PLAN.md` 的 P3-M；先驗證 relationship evidence linkage，每一跨層跳接都必須可追溯到 claim 與 source |
 | 對接宗教庫 | `crosswalks/d1-d13.json`；第一階段不改 religions-history |
 | 產文章／索引 | 只從 canonical records 生成到 `views/generated/` |
+| 產跨 pilot 比較 | `views/comparisons/` spec + `tools/build_views.py`；只比較一致結構指標，不把 sections 當語義等價 |
 
 ## 3. 踩雷點
 
@@ -48,3 +51,7 @@ tests/                   邊界、schema、參照、併發、安全測試
 - `system_role` 決定 reference system 的知識權重；discovery seed 與 popular-language inventory 只能產生候選，不能直接支持 evidence verdict。
 - P2-E 每個命名效應拆成 `popular`／`research`／`critique` 三筆獨立 atomic claim；popular framing 不得冒充 research verdict。`metadata_only` 證據與未讀全文的 source 一律 `publishable:false`，validator 的發布閘門（verified + 可讀全文證據）尚未觸發。
 - 維基百科只准當 `discovery_seed`（候選清單）與 popular 通俗說法來源，是三手資料；不得當 canonical taxonomy 或 research／critique 證據。候選改用教科書／手冊、課綱、專業機構分類法（ANZSRC／APA CoA／IAAP），證據改用一手研究／meta-analysis／replication 專案，避免反射式抓維基的覆蓋偏誤。
+- `indigenous psychology` 有大小寫、地域與語境多義：plural indigenous psychologies 方法論傳統不自動等同「研究 Indigenous Peoples」，華語「本土心理學」也不是無條件 equivalence。每筆 claim 必須寫明所採來源用法與地域範圍。
+- Indigenous research 的公開／可重用性不能只靠 FAIR 或一般 open-data 假設判定；涉及 Indigenous data、knowledge 或 community 時，須同時保留 self-determination、leadership、benefit、accountability、CARE 與當地 protocol 邊界。
+- ANZSRC Division 45 records 仍是 `context_domain`；P3-S Indigenous psychology pilot 不得把它們升格成 psychology `subfield`，也不得把 Aboriginal and Torres Strait Islander、Māori、Pacific Peoples 或其他民族合成單一文化。
+- P4 comparison spec 只能列 profile IDs 與呈現邊界；claims、evidence、sources、relations 和統計都必須在 build 時直接由 canonical records 解參照，禁止把計數或摘要手寫成第二套真相。

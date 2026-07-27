@@ -14,7 +14,13 @@ from unittest import mock
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "tools"))
 
-from build_views import MAX_PROFILE_SPEC_BYTES, _atomic_write_text, build
+from build_views import (
+    MAX_COMPARISON_SPEC_BYTES,
+    MAX_PROFILE_SPEC_BYTES,
+    _atomic_write_text,
+    _build_comparison_view,
+    build,
+)
 from store import LockTimeoutError, atomic_write_json, record_lock
 from validate import MAX_RECORD_BYTES, migrate_legacy_identity, validate_repository
 
@@ -420,6 +426,89 @@ class FoundationTests(unittest.TestCase):
         bad_spec.write_text("x" * (MAX_PROFILE_SPEC_BYTES + 1), encoding="utf-8")
         with self.assertRaisesRegex(ValueError, "profile spec exceeds"):
             build(self.work)
+
+    def test_p3_school_pilot_comparison_is_canonical_derived(self) -> None:
+        build(self.work)
+        output = self.work / "views/generated/p3-school-pilots-comparison.json"
+        dossier = json.loads(output.read_text(encoding="utf-8"))
+        profiles = dossier["profiles"]
+        self.assertEqual(
+            [profile["profile_id"] for profile in profiles],
+            ["structuralism", "psychoanalysis", "cbt", "indigenous-psychology"],
+        )
+        self.assertEqual([profile["section_count"] for profile in profiles], [7, 7, 7, 7])
+        self.assertEqual([profile["claim_count"] for profile in profiles], [34, 41, 29, 26])
+        self.assertEqual([profile["evidence_count"] for profile in profiles], [34, 41, 29, 26])
+        self.assertEqual([profile["relation_count"] for profile in profiles], [3, 4, 3, 2])
+        self.assertTrue(all(profile["source_count"] > 0 for profile in profiles))
+        markdown = (
+            self.work / "views/generated/p3-school-pilots-comparison.md"
+        ).read_text(encoding="utf-8")
+        self.assertIn("數量不代表品質、重要性或章節語義等價", markdown)
+        self.assertIn("| 本土心理學 | 7 | 26 | 26 | 3 | 2 |", markdown)
+
+    def test_p3_school_pilot_comparison_rejects_bad_specs_and_inputs(self) -> None:
+        bad_spec = self.work / "views/comparisons/bad.json"
+        bad_spec.parent.mkdir(parents=True, exist_ok=True)
+        base = {
+            "id": "bad",
+            "title": "Bad",
+            "language": "zh-Hant",
+            "profile_ids": ["structuralism", "psychoanalysis", "cbt", "indigenous-psychology"],
+            "scope_note": "Boundary",
+        }
+        cases = [
+            base | {"profile_ids": []},
+            base | {"profile_ids": ["structuralism"] * 4},
+            base
+            | {
+                "profile_ids": [
+                    "structuralism",
+                    "psychoanalysis",
+                    "cbt",
+                    "missing-profile",
+                ]
+            },
+            base
+            | {
+                "profile_ids": [
+                    "structuralism",
+                    "psychoanalysis",
+                    "cbt",
+                    "../escape",
+                ]
+            },
+            base | {"unknown": True},
+        ]
+        for case in cases:
+            with self.subTest(case=case):
+                bad_spec.write_text(json.dumps(case), encoding="utf-8")
+                with self.assertRaises(ValueError):
+                    _build_comparison_view(self.work, bad_spec)
+
+        bad_spec.write_text("", encoding="utf-8")
+        with self.assertRaisesRegex(ValueError, "empty comparison spec"):
+            _build_comparison_view(self.work, bad_spec)
+        bad_spec.write_text("{", encoding="utf-8")
+        with self.assertRaises(json.JSONDecodeError):
+            _build_comparison_view(self.work, bad_spec)
+        bad_spec.write_text("x" * (MAX_COMPARISON_SPEC_BYTES + 1), encoding="utf-8")
+        with self.assertRaisesRegex(ValueError, "comparison spec exceeds"):
+            _build_comparison_view(self.work, bad_spec)
+
+        good_spec = self.work / "views/comparisons/p3-school-pilots-comparison.json"
+        claim_path = self.work / "knowledge/claims/c-cbt-s1-protocol-plurality.json"
+        claim = json.loads(claim_path.read_text(encoding="utf-8"))
+        claim["publishable"] = False
+        claim_path.write_text(json.dumps(claim), encoding="utf-8")
+        with self.assertRaisesRegex(ValueError, "comparison profile claim"):
+            _build_comparison_view(self.work, good_spec)
+
+        claim["publishable"] = True
+        claim["subject_id"] = "missing-entity"
+        claim_path.write_text(json.dumps(claim), encoding="utf-8")
+        with self.assertRaisesRegex(ValueError, "missing entity"):
+            _build_comparison_view(self.work, good_spec)
 
     def test_generated_view_atomic_write_preserves_previous_output(self) -> None:
         target = self.work / "views/generated/atomic.md"
@@ -1337,6 +1426,120 @@ class FoundationTests(unittest.TestCase):
             )
             self.assertEqual(
                 (relation["subject_id"], relation["object_id"], relation["relation_type"]), values
+            )
+            self.assertTrue(relation["publishable"])
+            self.assertNotEqual(relation["relation_type"], "alias_of")
+        self.assertEqual(validate_repository(self.work), [])
+
+    def test_indigenous_psychology_s1_to_s7_are_publishable_and_bounded(self) -> None:
+        expected_counts = {1: 3, 2: 3, 3: 3, 4: 5, 5: 3, 6: 6, 7: 3}
+        for section, expected_count in expected_counts.items():
+            claims = sorted(
+                (self.work / "knowledge/claims").glob(
+                    f"c-indigenous-psychology-s{section}-*.json"
+                )
+            )
+            self.assertEqual(len(claims), expected_count)
+            for path in claims:
+                claim = json.loads(path.read_text(encoding="utf-8"))
+                self.assertEqual(claim["subject_id"], "indigenous-psychology")
+                self.assertEqual(claim["status"], "verified")
+                self.assertTrue(claim["publishable"])
+                self.assertTrue(claim["scope_note"])
+                self.assertTrue(claim["statement_zh"])
+                for evidence_id in claim["evidence_ids"]:
+                    evidence = json.loads(
+                        (self.work / f"knowledge/evidence/{evidence_id}.json").read_text(
+                            encoding="utf-8"
+                        )
+                    )
+                    self.assertEqual(evidence["evidence_level"], "fulltext_direct")
+                    self.assertTrue(evidence["publishable"])
+                    self.assertLessEqual(len(evidence["short_quote"].split()), 25)
+
+        scope = json.loads(
+            (
+                self.work
+                / "knowledge/claims/c-indigenous-psychology-s1-not-native-peoples-synonym.json"
+            ).read_text(encoding="utf-8")
+        )
+        self.assertIn("must not be collapsed", scope["scope_note"])
+        transfer = json.loads(
+            (
+                self.work
+                / "knowledge/claims/c-indigenous-psychology-s4-no-automatic-transfer.json"
+            ).read_text(encoding="utf-8")
+        )
+        self.assertIn("does not license", transfer["scope_note"])
+        care = json.loads(
+            (
+                self.work
+                / "knowledge/claims/c-indigenous-psychology-s6-care-complements-fair.json"
+            ).read_text(encoding="utf-8")
+        )
+        self.assertIn("FAIR data alone is insufficient", care["scope_note"])
+        self.assertEqual(validate_repository(self.work), [])
+
+    def test_indigenous_psychology_reader_profile_has_seven_sections(self) -> None:
+        build(self.work)
+        markdown = (self.work / "views/generated/indigenous-psychology.md").read_text(
+            encoding="utf-8"
+        )
+        dossier = json.loads(
+            (self.work / "views/generated/indigenous-psychology.json").read_text(
+                encoding="utf-8"
+            )
+        )
+        claims = [claim for section in dossier["sections"] for claim in section["claims"]]
+        self.assertEqual(len(dossier["sections"]), 7)
+        self.assertEqual(len(claims), 26)
+        self.assertEqual(len(dossier["relations"]), 2)
+        self.assertIn("# 本土心理學", markdown)
+        self.assertIn("## 研究倫理、利益與資料／知識主權", markdown)
+        self.assertIn("## 關係與後續影響", markdown)
+
+    def test_indigenous_psychology_preserves_people_context_and_relation_boundaries(self) -> None:
+        entity = json.loads(
+            (self.work / "catalog/entities/indigenous-psychology.json").read_text(
+                encoding="utf-8"
+            )
+        )
+        self.assertIn("polysemous", entity["notes"])
+        self.assertNotEqual(entity["provenance"], "legacy_seed")
+
+        for entity_id in (
+            "aboriginal-and-torres-strait-islander-health-and-wellbeing",
+            "maori-health-and-wellbeing",
+            "pacific-peoples-health-and-wellbeing",
+        ):
+            context = json.loads(
+                (self.work / f"catalog/entities/{entity_id}.json").read_text(
+                    encoding="utf-8"
+                )
+            )
+            self.assertEqual(context["entity_type"], "context_domain")
+
+        expected = {
+            "indigenous-psychology-branch-of-cross-cultural-psychology": (
+                "indigenous-psychology",
+                "cross-cultural-psychology",
+                "branch_of",
+            ),
+            "sikolohiyang-pilipino-branch-of-indigenous-psychology": (
+                "sikolohiyang-pilipino",
+                "indigenous-psychology",
+                "branch_of",
+            ),
+        }
+        for relation_id, values in expected.items():
+            relation = json.loads(
+                (self.work / f"knowledge/relations/{relation_id}.json").read_text(
+                    encoding="utf-8"
+                )
+            )
+            self.assertEqual(
+                (relation["subject_id"], relation["object_id"], relation["relation_type"]),
+                values,
             )
             self.assertTrue(relation["publishable"])
             self.assertNotEqual(relation["relation_type"], "alias_of")

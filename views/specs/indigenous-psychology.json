@@ -1,0 +1,79 @@
+{
+  "entity_id": "indigenous-psychology",
+  "id": "indigenous-psychology",
+  "language": "zh-Hant",
+  "relation_ids": [
+    "indigenous-psychology-branch-of-cross-cultural-psychology",
+    "sikolohiyang-pilipino-branch-of-indigenous-psychology"
+  ],
+  "sections": [
+    {
+      "claim_ids": [
+        "c-indigenous-psychology-s1-emerging-field",
+        "c-indigenous-psychology-s1-contextual-universals",
+        "c-indigenous-psychology-s1-not-native-peoples-synonym"
+      ],
+      "id": "name-region-scope",
+      "title": "名稱、地域與範圍邊界"
+    },
+    {
+      "claim_ids": [
+        "c-indigenous-psychology-s2-late-1960s-worldwide-calls",
+        "c-indigenous-psychology-s2-sikolohiyang-early-1970s",
+        "c-indigenous-psychology-s2-santiago-1975-fieldwork"
+      ],
+      "id": "plural-histories",
+      "title": "多重歷史與地方運動"
+    },
+    {
+      "claim_ids": [
+        "c-indigenous-psychology-s3-knowledge-in-context",
+        "c-indigenous-psychology-s3-culturally-derived-frames",
+        "c-indigenous-psychology-s3-self-relations-environment"
+      ],
+      "id": "worldview-context",
+      "title": "世界觀、自我、關係與環境脈絡"
+    },
+    {
+      "claim_ids": [
+        "c-indigenous-psychology-s4-method-pluralism",
+        "c-indigenous-psychology-s4-indigenization-from-without",
+        "c-indigenous-psychology-s4-indigenization-from-within",
+        "c-indigenous-psychology-s4-participant-language-relationship",
+        "c-indigenous-psychology-s4-no-automatic-transfer"
+      ],
+      "id": "epistemology-methods",
+      "title": "知識論、方法、語言與研究關係"
+    },
+    {
+      "claim_ids": [
+        "c-indigenous-psychology-s5-kim-berry-1993-volume",
+        "c-indigenous-psychology-s5-kim-2000-article",
+        "c-indigenous-psychology-s5-2006-edited-volume"
+      ],
+      "id": "bibliography",
+      "title": "關鍵著作與版本時間線"
+    },
+    {
+      "claim_ids": [
+        "c-indigenous-psychology-s6-aiatsis-research-scope",
+        "c-indigenous-psychology-s6-aiatsis-four-principles",
+        "c-indigenous-psychology-s6-right-to-engagement",
+        "c-indigenous-psychology-s6-research-benefit",
+        "c-indigenous-psychology-s6-care-four-principles",
+        "c-indigenous-psychology-s6-care-complements-fair"
+      ],
+      "id": "ethics-sovereignty",
+      "title": "研究倫理、利益與資料／知識主權"
+    },
+    {
+      "claim_ids": [
+        "c-indigenous-psychology-s7-cross-cultural-diversity-role",
+        "c-indigenous-psychology-s7-cross-cultural-branch",
+        "c-indigenous-psychology-s7-sikolohiyang-filipino-perspective"
+      ],
+      "id": "relations",
+      "title": "跨文化心理學與地方傳統的關係"
+    }
+  ]
+}

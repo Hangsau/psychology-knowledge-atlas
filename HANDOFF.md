@@ -3,36 +3,75 @@
 ## ACTIVE WORK
 
 ```yaml
-phase: P3-S
-unit: cbt-seven-question-pilot
+phase: P4
+unit: p3-school-pilots-comparison-view
 status: validated
-base_commit: e74df44a6e55c8d378326bef63f89e124cfdfafd
+base_commit: 926b297
 started_at: 2026-07-27
-target_entity: cbt
-objective: 以來源、原子 claim、evidence 與 relation 完成第三個學派 pilot；不匯入 legacy prose 或 verdict
-candidate_questions:
-  - S1 identity-time-scope
-  - S2 cognitive-therapy-behavior-therapy-historical-convergence
-  - S3 cognitive-model-automatic-thoughts-beliefs
-  - S4 behavior-change-thought-records-behavioral-experiments
-  - S5 primary-bibliography-editions-translations
-  - S6 diagnosis-control-quality-followup-evidence-boundary
-  - S7 rebt-second-wave-third-wave-relations
+reader_question: 四個 P3-S pilots 目前各有多少已驗證／可發布的 claims、evidence、sources、relations 與章節覆蓋，讀者應從哪裡進入
+canonical_inputs:
+  - views/specs/structuralism.json
+  - views/specs/psychoanalysis.json
+  - views/specs/cbt.json
+  - views/specs/indigenous-psychology.json
+  - catalog/entities
+  - knowledge/claims
+  - knowledge/evidence
+  - knowledge/relations
+  - library/sources
+output: views/generated/p3-school-pilots-comparison.{json,md}
+boundaries:
+  - 只彙整 verified/publishable records；不新增或推論心理學主張
+  - 比較一致的結構指標，保留每個 profile 自己的 section titles；不同 sections 不宣稱語義等價
+  - generated output 可刪除重生，不成為 canonical input
+exit_gate: exact four unique profiles; all references resolve; deterministic atomic build; empty duplicate missing and unpublished inputs rejected; validator and full tests pass
 completed_items:
-  - 固定 S1-S7 問題清單；區分 CBT 家族範圍、歷史合流、認知模型、技術、版本、療效邊界與後續取向
-  - S1-S7 共完成 29 筆 verified/publishable 原子 claims 與 29 筆 fulltext_direct evidence；每筆有繁中敘述、locator、25 字內逐字短引文與 scope_note
-  - S1：分開 NHS 公共定義、protocol plurality 與 guided self-help／個別／團體 delivery formats，不把 CBT 寫成單一固定腳本
-  - S2：保留 Beck 的精神分析起點、負向信念轉向、Cognitive Therapy 命名與 1970 年代逐步合流；參與者史與兒少史回顧均保留來源角色
-  - S3：分開 perception-mediated response、automatic thoughts、belief-driven processing 與 gentle Socratic evaluation；不把所有困難思考宣判為錯誤
-  - S4：分開行為改變、thought record、between-session behavioral experiment，並以 CT-PTSD 來源鎖定 cognition-testing 與 habituation 的技術邊界
-  - S5：1963、1970、1976、1979 與 2024 書目節點分開；2024 第二版 85% 新材料不得回填為 1979 第一版內容
-  - S6：Cuijpers et al. 2016 的 144 trials、MDD pooled effect、control-group dependence、17.4% 全品質與 short-term-only 限制各自建檔；不外推所有診斷或長期結果
-  - S7：REBT、第二波、ACT/RFT 與第三波 continuity 分開；建立 cognitive-therapy influenced CBT、REBT compares_with CBT、CBT influenced ACT 三筆 evidence-backed relations，零 alias/equivalence
-  - reader preview：views/specs/cbt.json 生成七節、29 claims、3 relations 的繁中 Markdown 與 JSON dossier；generated output 可刪除重生
-  - tests：新增三項 CBT regression；完整 suite 現為 60 tests，另沿用空／部分／超大輸入、atomic write 與 concurrent build 系統測試
-next_action: cbt pilot 已關閉；下一個 bounded target 是 indigenous-psychology，開始前先固定其七題與文化／知識主權邊界
-exit_gate: complete — CBT S1-S7 7/7 adjudicated; 29 claims and 3 relations resolve and use readable direct evidence; legacy prose/verdict import remains zero; validator, reader build and full tests pass
-stop_rule: 任一來源無法讀取就留在 citation/queue 層並繼續同題其他來源；不得用搜尋 snippet 補全文；七題完成後停止本 pilot，不自行擴張
+  - 固定 reader question、四份 profile inputs、generated outputs 與 non-equivalence boundary
+  - 新增 views/comparisons/p3-school-pilots-comparison.json；spec 只保存 profile IDs 與呈現範圍
+  - build_views 直接由 canonical entities/claims/evidence/sources/relations 解參照，輸出每個 pilot 的 sections、claim/evidence/source/relation counts 與 claim-type distribution
+  - 比較輸出固定警告：數量不代表品質、重要性或章節語義等價
+  - malformed/empty/oversized spec、非四筆、重複、不安全或缺失 profile、unpublished claim、missing entity endpoint 均有拒絕測試
+  - 既有 reproducible、concurrent 與 atomic-write tests 現在也涵蓋 comparison output
+  - validator PASS；comparison build PASS；完整 suite 65 tests PASS；MAP freshness 本專案 OK；git diff --check PASS
+next_action: P4-V1 已關閉；下一個 bounded P4 view 可考慮 canonical chronology timeline，開始前先固定 event granularity、日期不確定性與版本邊界
+```
+
+## P3-S COMPLETION RECORD
+
+```yaml
+phase: P3-S
+unit: indigenous-psychology-seven-question-pilot
+status: validated
+base_commit: 926b297
+started_at: 2026-07-27
+target_entity: indigenous-psychology
+objective: 以來源、原子 claim、evidence 與 relation 完成第四個學派 pilot；明確保護文化差異、Indigenous leadership 與資料／知識主權邊界
+candidate_questions:
+  - S1 name-region-scope-polysemy
+  - S2 plural-histories-and-local-movements
+  - S3 worldview-self-relations-community-context
+  - S4 epistemology-methods-language-research-relationship
+  - S5 primary-bibliography-organizations-versions
+  - S6 coloniality-ethics-data-knowledge-sovereignty
+  - S7 cross-cultural-cultural-local-tradition-relations
+completed_items:
+  - 固定 S1-S7 問題清單；區分 indigenous psychologies 方法論傳統、特定 Indigenous Peoples 與華語「本土心理學」的多義性
+  - baseline：validator PASS；60 tests PASS；工作樹起始無重疊改動
+  - 來源策略：2006 Indigenous and Cultural Psychology 全文處理概念／歷史／方法；AIATSIS Code 處理研究倫理；CARE 原始論文處理資料主權
+  - S1-S7 共完成 26 筆 verified/publishable 原子 claims 與 26 筆 fulltext_direct evidence；每筆有繁中敘述、locator、25 字內短引文與 scope_note
+  - S1：明確分開 plural indigenous psychologies 方法論傳統與針對特定 Indigenous Peoples 的研究；華語「本土心理學」保留多義警告
+  - S2：保留 1960 年代末多地運動、1970 年代初 Sikolohiyang Pilipino 與 Santiago 1975 fieldwork 三個不同尺度，不建立單一起源神話
+  - S3：分開 contextual universals、文化衍生參照框架與 self／relations／environment 分析面向；文化概念不因命名即獲驗證
+  - S4：分開 indigenization from without／from within，保留方法多元、參與者語言／福祉／研究關係及不可直接跨文化移植邊界
+  - S5：1993 volume、2000 article、2006 edited volume 三筆書目身份分開；後期綜整不回填早期文本
+  - S6：以 AIATSIS 固定 self-determination、leadership、benefit、accountability；以 CARE 固定 Collective Benefit、Authority to Control、Responsibility、Ethics 及 FAIR 不充分邊界
+  - S7：新增 cross-cultural-psychology 與 sikolohiyang-pilipino identities；建立兩筆 evidence-backed branch_of relations，零 alias/equivalence
+  - reader preview：views/specs/indigenous-psychology.json 生成七節、26 claims、2 relations 的繁中 Markdown 與 JSON dossier
+  - tests：新增三項 Indigenous psychology regression；完整 suite 63 tests PASS；validator、reader build、git diff --check PASS
+  - MAP freshness：本專案原先唯一 drift 是 MAP 未明列既有 build_views.py；本次已補入結構導航；全 workspace 仍有其他專案既存 drift，不屬本任務
+next_action: P3-S 四個 bounded pilots 已關閉；下一 gate 是 P4 views，開始前先固定第一個跨 pilot view 的讀者問題、輸入集合與退出門檻
+exit_gate: complete — Indigenous psychology S1-S7 7/7 adjudicated; 26 claims and 2 relations use readable direct evidence; cultural, people, context-domain and data-sovereignty boundaries have executable tests; legacy prose/verdict import remains zero; validator, reader build and 63 tests pass
+stop_rule: 不把 indigenous psychologies 自動等同「研究 Indigenous Peoples」；不把各民族合成單一文化；任一來源無法讀取就留在 citation/queue 層；不得用搜尋 snippet 補全文
 ```
 
 ## P2-E COMPLETION RECORD

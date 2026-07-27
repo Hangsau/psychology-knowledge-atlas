@@ -3,11 +3,11 @@
   "record_type": "entity",
   "entity_type": "paradigm",
   "name": "本土心理學",
-  "aliases": ["indigenous psychologies"],
-  "status": "unverified",
+  "aliases": ["indigenous psychologies", "Indigenous psychology"],
+  "status": "retrieved",
   "publishable": false,
-  "provenance": "legacy_seed",
-  "source_ids": [],
+  "provenance": "source_derived",
+  "source_ids": ["kim-yang-hwang-2006-indigenous-cultural-psychology"],
   "tags": [],
-  "notes": "Identity-only discovery seed. The unfinished legacy section-3a work was not imported."
+  "notes": "The Chinese label 本土心理學 is retained as the project-facing name but is polysemous. In this pilot, indigenous psychologies denotes a plural contextual research approach and is not automatically equivalent to psychology about Indigenous Peoples. The unfinished legacy section-3a prose and verdicts were not imported."
 }

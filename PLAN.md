@@ -18,9 +18,25 @@
 
 ## 即時階段
 
-P1、P1-E 與 P2-E 已完成並有可執行退出門檻。當前位於 `P3-S` 學派 pilots；`structuralism`、`psychoanalysis` 與 `cbt` 已完成，下一個 bounded target 是 `indigenous-psychology`。本階段建立來源、原子 claim、evidence 與 relation，不回填舊庫綜述文字。
+P1、P1-E、P2-E 與 `P3-S` 均已完成並有可執行退出門檻。四個學派 pilots：`structuralism`、`psychoanalysis`、`cbt`、`indigenous-psychology` 已全部完成。下一 gate 是 P4 views；開始前須先固定第一個跨 pilot view 的讀者問題、canonical input 集合與退出門檻。
 
-`structuralism`、`psychoanalysis` 與 `cbt` 均已完成 S1-S7 退出門檻，並各有一個不改變 gate 順序的薄型 P4 reader preview。下一個 bounded target 是 `indigenous-psychology`；完整 P4 views 仍待四個 pilots 後進行。
+四個 P3-S pilots 均已完成 S1-S7 退出門檻，並各有一個不改變 gate 順序的薄型 P4 reader preview。完整 P4 views 現在可依新的 bounded gate 開始，但不得把 generated output 變成第二套 canonical truth。
+
+## P4-V1：四個學派 pilot 可發布覆蓋比較（完成）
+
+讀者問題：`structuralism`、`psychoanalysis`、`cbt`、`indigenous-psychology` 目前各有多少已驗證／可發布的 claims、evidence、sources、relations 與章節覆蓋，讀者應從哪一節進入？
+
+固定輸入是四份 `views/specs/*.json` reader profiles 及其直接參照的 canonical entities、claims、evidence、relations、sources。輸出是 `views/generated/p3-school-pilots-comparison.{json,md}`。此 view 只比較一致的結構指標與列出各 profile 自己的 section titles；不同 pilots 的七題不宣稱語義等價，也不從數量推論品質高低或學派重要性。
+
+退出門檻：
+
+1. spec 必須恰含四個唯一 profile IDs，且全部可解析。
+2. 每個納入的 claim、evidence 與 relation 必須 verified/publishable；source 參照全部可解析。
+3. JSON 與 Markdown 可由 canonical inputs 決定性、原子地重生；generated output 不作下一輪輸入。
+4. 空 profile list、重複 ID、缺 profile、未發布 claim/relation 與 malformed spec 均有可執行拒絕測試。
+5. validator、完整 unittest、concurrent/atomic/reproducible build 與 `git diff --check` 通過後停止；不在本 gate 建立跨學派實質比較 claim。
+
+退出門檻已滿足：四份 profile 精確解析；comparison 直接由 canonical records 產生；空、重複、缺失、不安全、未發布與 orphan endpoint 輸入均有拒絕測試；deterministic、concurrent、atomic build 通過。輸出固定保留「數量不等於品質／重要性／語義等價」警告。
 
 ## 已完成 gate
 
@@ -73,6 +89,18 @@ P2-E 的目的，是驗證命名效應的資料路由與發布安全，不是無
 7. REBT、第二波與第三波／ACT 的關係；相鄰取向保留獨立 identity，關係必須有 evidence。
 
 退出門檻已滿足：七題 7/7、29 筆 publishable claims、3 筆 evidence-backed relations、七節 reader preview、legacy prose/verdict 零匯入、validator 與完整測試通過。下一個 bounded target 是 `indigenous-psychology`。
+
+### Indigenous psychology 固定七題（完成）
+
+1. 名稱、地域與範圍：區分 indigenous psychologies 方法論傳統、特定 Indigenous Peoples 的心理學，以及華語「本土心理學」的多義用法；三者不得自動視為同義。
+2. 歷史與制度形成：保留 1960 年代末以降的多地在地化運動與 Sikolohiyang Pilipino 等地方路徑，不建立單一起源神話。
+3. 世界觀、自我、關係與社群：心理現象須放回家庭、社會、文化、生態與歷史脈絡；文化構念不得直接翻譯成既有西方構念。
+4. 知識論與研究方法：區分 indigenization from without／from within，保留方法多元、參與者語言、研究關係與跨文化不可直接移植的邊界。
+5. 關鍵著作、組織與版本：分開 1993 奠基選集、2000 理論論文、2006 綜合卷及其書目身份，不以後來表述回填早期文本。
+6. 殖民性、測量效度、研究倫理與資料／知識主權：以 Indigenous-led 準則固定 self-determination、leadership、benefit、accountability 與 CARE 邊界。
+7. 與 cross-cultural、cultural psychology 及地方傳統的關係：相鄰取向保留獨立 identity；branch／comparison 關係必須有全文 evidence，不建立無證據 alias 或 equivalence。
+
+退出門檻已滿足：七題 7/7、26 筆 publishable claims、2 筆 evidence-backed relations、七節 reader preview、context domains 未冒充 psychology subfields、legacy prose/verdict 零匯入、validator、reader build 與 63 tests 通過。P3-S 四個 bounded pilots 已關閉。
 
 ## 已核准後續工作軸
 

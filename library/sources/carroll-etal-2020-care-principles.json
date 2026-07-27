@@ -1,0 +1,14 @@
+{
+  "id": "carroll-etal-2020-care-principles",
+  "record_type": "source",
+  "title": "The CARE Principles for Indigenous Data Governance",
+  "identifiers": {"doi": "10.5334/dsj-2020-043"},
+  "access_status": "open_fulltext",
+  "status": "retrieved",
+  "publishable": true,
+  "provenance": "source_derived",
+  "authors": ["Stephanie Russo Carroll", "Ibrahim Garba", "Oscar L. Figueroa-Rodriguez", "Jarita Holbrook", "Raymond Lovett", "Simeon Materechera", "Mark Parsons", "Kay Raseroka", "Desi Rodriguez-Lonebear", "Robyn Rowe", "Rodrigo Sara", "Jennifer D. Walker", "Jane Anderson", "Maui Hudson"],
+  "issued": "2020",
+  "url": "https://doi.org/10.5334/dsj-2020-043",
+  "version_note": "Peer-reviewed CC BY 4.0 practice paper in Data Science Journal 19:43, read in full on 2026-07-27. The DOI landing page is the final publication; an early typesetting PDF circulating at GIDA contains a pre-publication article-number placeholder."
+}

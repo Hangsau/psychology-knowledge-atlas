@@ -21,6 +21,8 @@ python tools\validate.py
 python -m unittest discover -s tests -v
 ```
 
-目前階段是 `P3-S` 學派 pilot。P1 coverage、P1-E 命名現象 universe、P2-E 證據路由與第一個學派 target `structuralism` 均已通過明確退出門檻；結構主義的七個固定問題已完成 7/7，且關係具獨立 evidence。下一個 bounded target 是 `psychoanalysis`，開始前先固定問題清單，不沿用舊庫 prose 或 verdict。Atlas 層仍為 `evidence_release:false`。
+P1 coverage、P1-E 命名現象 universe、P2-E 證據路由與 P3-S 四個學派 pilots 均已通過明確退出門檻。`structuralism`、`psychoanalysis`、`cbt`、`indigenous-psychology` 各完成七個固定問題，publishable claims 均有全文 locator 與短引文，關係均有獨立 evidence。下一 gate 是 P4 views；Atlas 層仍為 `evidence_release:false`。
 
-第一個薄型 P4 讀者預覽亦已完成：執行 `python tools\build_views.py` 會由 34 筆 verified/publishable structuralism claims 生成 `views/generated/structuralism.md` 與同內容的 JSON dossier。頁面不收錄未發布待辦 claim，且 generated output 仍可刪除重建，不是第二套 canonical truth。
+四個薄型 reader previews 亦已完成：執行 `python tools\build_views.py` 會為四個 pilots 生成 Markdown 與同內容的 JSON dossiers。頁面只收錄 verified/publishable records；generated output 可刪除重建，不是第二套 canonical truth。
+
+第一個跨 pilot P4 view 也已完成：`views/comparisons/p3-school-pilots-comparison.json` 只列四份 profile IDs 與呈現邊界，builder 會直接從 canonical records 重生 `p3-school-pilots-comparison.{md,json}`。它比較發布覆蓋與結構計數，不把章節名稱視為同義，也不以數量推論品質或學派重要性。
