@@ -996,15 +996,17 @@ class FoundationTests(unittest.TestCase):
         self.assertIn("## 無意識、壓抑與模型修訂", markdown)
         self.assertIn("關鍵著作、版本與翻譯", markdown)
         self.assertIn("臨床證據、科學批評與適用邊界", markdown)
-        self.assertEqual(len(dossier["sections"]), 6)
+        self.assertIn("分流、分支與心理動力遺產", markdown)
+        self.assertEqual(len(dossier["sections"]), 7)
         self.assertEqual(len(dossier["sections"][0]["claims"]), 5)
         self.assertEqual(len(dossier["sections"][1]["claims"]), 7)
         self.assertEqual(len(dossier["sections"][2]["claims"]), 6)
         self.assertEqual(len(dossier["sections"][3]["claims"]), 6)
         self.assertEqual(len(dossier["sections"][4]["claims"]), 8)
         self.assertEqual(len(dossier["sections"][5]["claims"]), 5)
-        self.assertEqual(len(dossier["sources"]), 16)
-        self.assertEqual(dossier["relations"], [])
+        self.assertEqual(len(dossier["sections"][6]["claims"]), 4)
+        self.assertEqual(len(dossier["relations"]), 4)
+        self.assertEqual(len(dossier["sources"]), 20)
 
     def test_psychoanalysis_s2_breuer_freud_origin_boundary_is_layered(self) -> None:
         expected = {
@@ -1051,7 +1053,7 @@ class FoundationTests(unittest.TestCase):
         dossier = json.loads(
             (self.work / "views/generated/psychoanalysis.json").read_text(encoding="utf-8")
         )
-        self.assertEqual(len(dossier["sections"]), 2)
+        self.assertEqual(len(dossier["sections"]), 7)
         self.assertEqual(len(dossier["sections"][1]["claims"]), 7)
         self.assertEqual(validate_repository(self.work), [])
 
@@ -1218,6 +1220,54 @@ class FoundationTests(unittest.TestCase):
         }
         self.assertTrue(published_ids <= reader_claim_ids)
         self.assertNotIn(queue["id"], reader_claim_ids)
+        self.assertEqual(validate_repository(self.work), [])
+
+    def test_psychoanalysis_s7_branch_and_legacy_relations_are_bounded(self) -> None:
+        expected = {
+            "analytical-psychology-contrasts-with-psychoanalysis": (
+                "analytical-psychology", "psychoanalysis", "contrasts_with"
+            ),
+            "individual-psychology-contrasts-with-psychoanalysis": (
+                "individual-psychology", "psychoanalysis", "contrasts_with"
+            ),
+            "object-relations-theory-branch-of-psychoanalysis": (
+                "object-relations-theory", "psychoanalysis", "branch_of"
+            ),
+            "psychoanalysis-influenced-psychodynamic-psychotherapy": (
+                "psychoanalysis", "psychodynamic-psychotherapy", "influenced"
+            ),
+        }
+        for relation_id, (subject_id, object_id, relation_type) in expected.items():
+            relation = json.loads(
+                (self.work / f"knowledge/relations/{relation_id}.json").read_text(encoding="utf-8")
+            )
+            self.assertEqual(relation["subject_id"], subject_id)
+            self.assertEqual(relation["object_id"], object_id)
+            self.assertEqual(relation["relation_type"], relation_type)
+            self.assertEqual(relation["status"], "verified")
+            self.assertTrue(relation["publishable"])
+            self.assertTrue(relation["scope_note"])
+            for evidence_id in relation["evidence_ids"]:
+                evidence = json.loads(
+                    (self.work / f"knowledge/evidence/{evidence_id}.json").read_text(encoding="utf-8")
+                )
+                self.assertEqual(evidence["evidence_level"], "fulltext_direct")
+                self.assertTrue(evidence["publishable"])
+                self.assertLessEqual(len(evidence["short_quote"].split()), 25)
+
+        for entity_id in (
+            "analytical-psychology",
+            "individual-psychology",
+            "object-relations-theory",
+            "psychodynamic-psychotherapy",
+        ):
+            entity = json.loads(
+                (self.work / f"catalog/entities/{entity_id}.json").read_text(encoding="utf-8")
+            )
+            self.assertEqual(entity["provenance"], "source_derived")
+            self.assertEqual(entity["status"], "retrieved")
+            self.assertFalse(entity["publishable"])
+            self.assertTrue(entity["source_ids"])
         self.assertEqual(validate_repository(self.work), [])
 
     def test_structuralism_s3_introspection_methods_are_not_conflated(self) -> None:

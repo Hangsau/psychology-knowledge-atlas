@@ -1,0 +1,14 @@
+{
+  "evidence_ids": [
+    "ev-psychoanalysis-s7-object-relations-branch"
+  ],
+  "id": "object-relations-theory-branch-of-psychoanalysis",
+  "object_id": "psychoanalysis",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "relation",
+  "relation_type": "branch_of",
+  "scope_note": "The branch relation follows the source's explicit classification. It does not collapse the diverse British object-relations traditions into a single doctrine.",
+  "status": "verified",
+  "subject_id": "object-relations-theory"
+}

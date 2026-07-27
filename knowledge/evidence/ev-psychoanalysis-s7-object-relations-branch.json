@@ -1,0 +1,13 @@
+{
+  "claim_id": "c-psychoanalysis-s7-object-relations-branch",
+  "evidence_level": "fulltext_direct",
+  "id": "ev-psychoanalysis-s7-object-relations-branch",
+  "locator": "Ronald Fairbairn profile, opening paragraph",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "evidence",
+  "short_quote": "important innovations and developments in that branch of psychoanalytic theory",
+  "source_id": "bps-ronald-fairbairn",
+  "status": "verified",
+  "summary": "The society profile directly classifies object relations as a branch of psychoanalytic theory."
+}

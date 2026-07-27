@@ -1,0 +1,13 @@
+{
+  "claim_id": "c-psychoanalysis-s7-psychodynamic-lineage",
+  "evidence_level": "fulltext_direct",
+  "id": "ev-psychoanalysis-s7-psychodynamic-lineage",
+  "locator": "What is psychoanalytic / psychodynamic psychotherapy?, first paragraph",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "evidence",
+  "short_quote": "draws on theories and practices of analytical psychology and psychoanalysis",
+  "source_id": "tewv-psychodynamic-psychotherapy",
+  "status": "verified",
+  "summary": "The NHS service page explicitly describes psychodynamic psychotherapy as drawing on both traditions."
+}

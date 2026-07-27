@@ -1,0 +1,17 @@
+{
+  "aliases": [
+    "object relations"
+  ],
+  "entity_type": "theory",
+  "id": "object-relations-theory",
+  "name": "Object Relations Theory",
+  "notes": "Source-derived endpoint for the British Psychoanalytical Society's explicit branch classification; no claim of a single unified object-relations doctrine is made.",
+  "provenance": "source_derived",
+  "publishable": false,
+  "record_type": "entity",
+  "source_ids": [
+    "bps-ronald-fairbairn"
+  ],
+  "status": "retrieved",
+  "tags": []
+}

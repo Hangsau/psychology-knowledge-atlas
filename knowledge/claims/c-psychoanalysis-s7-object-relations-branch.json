@@ -1,0 +1,15 @@
+{
+  "claim_type": "attribution",
+  "evidence_ids": [
+    "ev-psychoanalysis-s7-object-relations-branch"
+  ],
+  "id": "c-psychoanalysis-s7-object-relations-branch",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "claim",
+  "scope_note": "The source explicitly calls object relations a branch of psychoanalytic theory while discussing Fairbairn. This does not imply that all object-relations theorists share one model or that the branch merely repeats Freud.",
+  "statement": "The British Psychoanalytical Society describes object relations as a branch of psychoanalytic theory in which Fairbairn made important developments.",
+  "statement_zh": "英國精神分析學會把客體關係描述為精神分析理論的一個分支，並指出 Fairbairn 在其中作出重要發展。",
+  "status": "verified",
+  "subject_id": "object-relations-theory"
+}

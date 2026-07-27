@@ -1,0 +1,14 @@
+{
+  "evidence_ids": [
+    "ev-psychoanalysis-s7-psychodynamic-lineage"
+  ],
+  "id": "psychoanalysis-influenced-psychodynamic-psychotherapy",
+  "object_id": "psychodynamic-psychotherapy",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "relation",
+  "relation_type": "influenced",
+  "scope_note": "Influence means the NHS description says the therapy draws on psychoanalytic theory and practice. It does not assert identity, exclusive ancestry, or efficacy.",
+  "status": "verified",
+  "subject_id": "psychoanalysis"
+}

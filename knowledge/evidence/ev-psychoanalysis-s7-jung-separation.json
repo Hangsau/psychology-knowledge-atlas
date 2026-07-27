@@ -1,0 +1,13 @@
+{
+  "claim_id": "c-psychoanalysis-s7-jung-separation",
+  "evidence_level": "fulltext_direct",
+  "id": "ev-psychoanalysis-s7-jung-separation",
+  "locator": "Introduction, PDF p. 1, lines 2-4",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "evidence",
+  "short_quote": "Jung broke ties with Freud in 1912 and developed his own psychodynamic approach",
+  "source_id": "roesler-2025-analytical-psychology",
+  "status": "verified",
+  "summary": "The paper dates the break and says Jung's subsequent approach was later named Analytical Psychology."
+}

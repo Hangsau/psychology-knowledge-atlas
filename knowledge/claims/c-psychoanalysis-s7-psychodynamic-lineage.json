@@ -1,0 +1,15 @@
+{
+  "claim_type": "attribution",
+  "evidence_ids": [
+    "ev-psychoanalysis-s7-psychodynamic-lineage"
+  ],
+  "id": "c-psychoanalysis-s7-psychodynamic-lineage",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "claim",
+  "scope_note": "This is a contemporary NHS service description of theoretical and practice lineage. It does not make psychodynamic psychotherapy identical to classical psychoanalysis and does not by itself establish efficacy.",
+  "statement": "An NHS Foundation Trust describes psychodynamic psychotherapy as drawing on theories and practices of both analytical psychology and psychoanalysis.",
+  "statement_zh": "一家 NHS 基金會信託把心理動力治療描述為取材自分析心理學與精神分析的理論及實務。",
+  "status": "verified",
+  "subject_id": "psychodynamic-psychotherapy"
+}

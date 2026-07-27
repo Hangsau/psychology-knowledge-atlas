@@ -1,0 +1,14 @@
+{
+  "evidence_ids": [
+    "ev-psychoanalysis-s7-jung-separation"
+  ],
+  "id": "analytical-psychology-contrasts-with-psychoanalysis",
+  "object_id": "psychoanalysis",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "relation",
+  "relation_type": "contrasts_with",
+  "scope_note": "Contrast is limited to the documented Freud-Jung break and Jung's development of a separately named approach. It does not assert total conceptual opposition or a continuing branch relation.",
+  "status": "verified",
+  "subject_id": "analytical-psychology"
+}

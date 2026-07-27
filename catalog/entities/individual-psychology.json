@@ -1,0 +1,17 @@
+{
+  "aliases": [
+    "Adlerian psychology"
+  ],
+  "entity_type": "school",
+  "id": "individual-psychology",
+  "name": "Individual Psychology",
+  "notes": "Source-derived endpoint for Adler's post-break school; the record does not treat it as a continuing internal branch of Freudian psychoanalysis.",
+  "provenance": "source_derived",
+  "publishable": false,
+  "record_type": "entity",
+  "source_ids": [
+    "nasap-alfred-adler"
+  ],
+  "status": "retrieved",
+  "tags": []
+}

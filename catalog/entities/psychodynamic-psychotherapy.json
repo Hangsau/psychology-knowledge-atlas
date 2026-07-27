@@ -1,0 +1,17 @@
+{
+  "aliases": [
+    "psychodynamic therapy"
+  ],
+  "entity_type": "therapy",
+  "id": "psychodynamic-psychotherapy",
+  "name": "Psychodynamic Psychotherapy",
+  "notes": "Source-derived therapy endpoint used to express a theoretical and practice lineage, not identity with classical psychoanalysis or proof of clinical efficacy.",
+  "provenance": "source_derived",
+  "publishable": false,
+  "record_type": "entity",
+  "source_ids": [
+    "tewv-psychodynamic-psychotherapy"
+  ],
+  "status": "retrieved",
+  "tags": []
+}

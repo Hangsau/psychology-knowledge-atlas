@@ -1,0 +1,13 @@
+{
+  "claim_id": "c-psychoanalysis-s7-adler-separation",
+  "evidence_level": "fulltext_direct",
+  "id": "ev-psychoanalysis-s7-adler-separation",
+  "locator": "What is an Adlerian?, first paragraph",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "evidence",
+  "short_quote": "After Adler broke from Freud's group, he labeled his theory, Individual Psychology",
+  "source_id": "nasap-alfred-adler",
+  "status": "verified",
+  "summary": "The official society profile identifies the disagreement, departure, and subsequent naming of Adler's theory."
+}

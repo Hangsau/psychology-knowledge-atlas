@@ -1,0 +1,18 @@
+{
+  "aliases": [
+    "Jungian psychology",
+    "Jungian psychotherapy"
+  ],
+  "entity_type": "school",
+  "id": "analytical-psychology",
+  "name": "Analytical Psychology",
+  "notes": "Source-derived endpoint for a bounded separation relation with psychoanalysis; no legacy prose or verdict was imported.",
+  "provenance": "source_derived",
+  "publishable": false,
+  "record_type": "entity",
+  "source_ids": [
+    "roesler-2025-analytical-psychology"
+  ],
+  "status": "retrieved",
+  "tags": []
+}

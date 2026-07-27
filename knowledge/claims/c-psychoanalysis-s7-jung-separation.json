@@ -1,0 +1,15 @@
+{
+  "claim_type": "chronology",
+  "evidence_ids": [
+    "ev-psychoanalysis-s7-jung-separation"
+  ],
+  "id": "c-psychoanalysis-s7-jung-separation",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "claim",
+  "scope_note": "The source describes a collaboration, a 1912 break, and a separately named approach. The relation is therefore contrast/separation, not a claim that analytical psychology remains a branch of psychoanalysis or rejects every psychoanalytic idea.",
+  "statement": "After collaborating with Freud, Jung broke ties in 1912 and developed the approach later called Analytical Psychology.",
+  "statement_zh": "Jung 與 Freud 合作若干年後於 1912 年決裂，並發展出後來稱為分析心理學的取向。",
+  "status": "verified",
+  "subject_id": "analytical-psychology"
+}

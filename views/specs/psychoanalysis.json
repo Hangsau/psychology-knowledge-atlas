@@ -2,7 +2,12 @@
   "entity_id": "psychoanalysis",
   "id": "psychoanalysis",
   "language": "zh-Hant",
-  "relation_ids": [],
+  "relation_ids": [
+    "analytical-psychology-contrasts-with-psychoanalysis",
+    "individual-psychology-contrasts-with-psychoanalysis",
+    "object-relations-theory-branch-of-psychoanalysis",
+    "psychoanalysis-influenced-psychodynamic-psychotherapy"
+  ],
   "sections": [
     {
       "claim_ids": [
@@ -76,6 +81,16 @@
       ],
       "id": "evidence-critique",
       "title": "臨床證據、科學批評與適用邊界"
+    },
+    {
+      "claim_ids": [
+        "c-psychoanalysis-s7-jung-separation",
+        "c-psychoanalysis-s7-adler-separation",
+        "c-psychoanalysis-s7-object-relations-branch",
+        "c-psychoanalysis-s7-psychodynamic-lineage"
+      ],
+      "id": "branches-legacy",
+      "title": "分流、分支與心理動力遺產"
     }
   ]
 }

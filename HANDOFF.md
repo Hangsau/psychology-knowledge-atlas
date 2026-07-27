@@ -5,7 +5,7 @@
 ```yaml
 phase: P3-S
 unit: psychoanalysis-seven-question-pilot
-status: in_progress
+status: validated
 base_commit: a6bec8cf607a5dd84b9cb587ae317d59c59e69b5
 started_at: 2026-07-27
 target_entity: psychoanalysis
@@ -34,8 +34,10 @@ completed_items:
   - S5 version boundary：新增 5 筆 Freud Edition 原版／work inventory sources；明確拒絕把 1925《性學三論》內容整體回填為 1905 原說，也不把《夢的解析》任一單卷或任一版當作無版本文本
   - S6 efficacy-empirical-critique-historiography-boundary：完成 5 筆 verified/publishable claims；TADS 的介入範圍、完全緩解 null result、延後出現的部分緩解差異，以及 Popper 的劃界問題與預先反駁準則分開建檔
   - S6 evidence boundary：TADS 只支持特定抗治療性憂鬱樣本中的長期精神分析取向心理治療，不代表整個精神分析；Cochrane STPP review 僅讀公開摘要，保留 retrieved/abstract_only/publishable:false 並排除 reader
-next_action: 完成 S7 branches-psychodynamic-legacy-relations，建立有證據的分支／影響關係後跑 pilot 退出門檻
-exit_gate: pending — psychoanalysis S1-S6 complete; S7 remains
+  - S7 branches-psychodynamic-legacy-relations：完成 4 筆 verified/publishable claims 與 4 筆 evidence-backed relations；Jung／Adler 離開後的學派用 contrasts_with，不誤標持續內部分支；客體關係保留 branch_of；心理動力治療保留 influenced
+  - S7 endpoint boundary：4 個新 endpoint entities 均由來源建立、維持 retrieved/publishable:false；relation 可發布不代表 endpoint 的整體內容已完成裁決
+next_action: psychoanalysis pilot 已關閉；下一個 bounded target 是 cbt，需先固定其七題再建立 claims/evidence/relations
+exit_gate: complete — psychoanalysis S1-S7 7/7 adjudicated; references resolve; publishable claims and relations use readable direct evidence; legacy prose/verdict import remains zero; validator and full tests pass
 stop_rule: 任一來源無法讀取就留在 citation/queue 層並繼續同題其他來源；不得用搜尋 snippet 補全文；七題完成後停止本 pilot，不自行擴張
 ```
 
