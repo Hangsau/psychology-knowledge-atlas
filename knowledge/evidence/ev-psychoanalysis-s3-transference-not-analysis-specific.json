@@ -1,0 +1,13 @@
+{
+  "claim_id": "c-psychoanalysis-s3-transference-not-analysis-specific",
+  "evidence_level": "fulltext_direct",
+  "id": "ev-psychoanalysis-s3-transference-not-analysis-specific",
+  "locator": "The Dynamics of Transference (1912), discussion of non-analytic institutions, SE XII p. 101 (PDF pp. 2-3)",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "evidence",
+  "short_quote": "These characteristics of transference are therefore to be attributed not to psycho-analysis but to neurosis itself",
+  "source_id": "freud-1912-dynamics-transference",
+  "status": "verified",
+  "summary": "Freud cites intense transference outside analysis to deny that the method uniquely generates the phenomenon."
+}

@@ -992,10 +992,12 @@ class FoundationTests(unittest.TestCase):
         self.assertIn("國際精神分析學會目前", markdown)
         self.assertIn("1896", markdown)
         self.assertIn("## Breuer–Freud 起源與歸屬邊界", markdown)
-        self.assertEqual(len(dossier["sections"]), 2)
+        self.assertIn("## 自由聯想、詮釋、阻抗與移情", markdown)
+        self.assertEqual(len(dossier["sections"]), 3)
         self.assertEqual(len(dossier["sections"][0]["claims"]), 5)
         self.assertEqual(len(dossier["sections"][1]["claims"]), 7)
-        self.assertEqual(len(dossier["sources"]), 5)
+        self.assertEqual(len(dossier["sections"][2]["claims"]), 6)
+        self.assertEqual(len(dossier["sources"]), 6)
         self.assertEqual(dossier["relations"], [])
 
     def test_psychoanalysis_s2_breuer_freud_origin_boundary_is_layered(self) -> None:
@@ -1045,6 +1047,44 @@ class FoundationTests(unittest.TestCase):
         )
         self.assertEqual(len(dossier["sections"]), 2)
         self.assertEqual(len(dossier["sections"][1]["claims"]), 7)
+        self.assertEqual(validate_repository(self.work), [])
+
+    def test_psychoanalysis_s3_method_terms_keep_their_boundaries(self) -> None:
+        claim_ids = {
+            "c-psychoanalysis-s3-free-association-rule",
+            "c-psychoanalysis-s3-resistance-inference",
+            "c-psychoanalysis-s3-interpretation-scope",
+            "c-psychoanalysis-s3-transference-not-analysis-specific",
+            "c-psychoanalysis-s3-positive-negative-transference",
+            "c-psychoanalysis-s3-transference-resistance-boundary",
+        }
+        for claim_id in claim_ids:
+            claim = json.loads(
+                (self.work / f"knowledge/claims/{claim_id}.json").read_text(encoding="utf-8")
+            )
+            self.assertEqual(claim["subject_id"], "psychoanalysis")
+            self.assertEqual(claim["status"], "verified")
+            self.assertTrue(claim["publishable"])
+            evidence = json.loads(
+                (self.work / f"knowledge/evidence/{claim['evidence_ids'][0]}.json").read_text(
+                    encoding="utf-8"
+                )
+            )
+            self.assertEqual(evidence["evidence_level"], "fulltext_direct")
+            self.assertLessEqual(len(evidence["short_quote"].split()), 25)
+
+        resistance = json.loads(
+            (self.work / "knowledge/claims/c-psychoanalysis-s3-resistance-inference.json").read_text(
+                encoding="utf-8"
+            )
+        )
+        self.assertIn("not independent empirical validation", resistance["scope_note"])
+        transference = json.loads(
+            (self.work / "knowledge/claims/c-psychoanalysis-s3-transference-resistance-boundary.json").read_text(
+                encoding="utf-8"
+            )
+        )
+        self.assertIn("not classify every form", transference["scope_note"])
         self.assertEqual(validate_repository(self.work), [])
 
     def test_structuralism_s3_introspection_methods_are_not_conflated(self) -> None:

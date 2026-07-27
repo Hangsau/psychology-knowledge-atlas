@@ -1,0 +1,16 @@
+{
+  "access_status": "publicly_readable_license_unclear",
+  "authors": [
+    "Sigmund Freud"
+  ],
+  "id": "freud-1912-dynamics-transference",
+  "identifiers": {},
+  "issued": "1912",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "source",
+  "status": "retrieved",
+  "title": "The Dynamics of Transference",
+  "url": "https://www.lutecium.org/ftp/Freud/pdf/1912_dynamics_of_transference.pdf",
+  "version_note": "Complete English Standard Edition text of Freud's 1912 paper, SE XII, pp. 97-108. The seven-page public PDF and the Freud Edition manifestation record were read on 2026-07-27; no copy is stored in this repository and no redistribution license is asserted."
+}

@@ -1,0 +1,13 @@
+{
+  "claim_id": "c-psychoanalysis-s3-free-association-rule",
+  "evidence_level": "fulltext_direct",
+  "id": "ev-psychoanalysis-s3-free-association-rule",
+  "locator": "Freud's Psycho-Analytic Procedure (1904), patient instruction, SE VII p. 251 (PDF p. 2)",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "evidence",
+  "short_quote": "include in it whatever comes into their heads, even if they think it unimportant or irrelevant or nonsensical",
+  "source_id": "freud-1904-psychoanalytic-procedure",
+  "status": "verified",
+  "summary": "Freud's reporting instruction suspends relevance and coherence filters and separately bars omission for embarrassment or distress."
+}

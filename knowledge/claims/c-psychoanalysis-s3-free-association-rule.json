@@ -1,0 +1,15 @@
+{
+  "claim_type": "definition",
+  "evidence_ids": [
+    "ev-psychoanalysis-s3-free-association-rule"
+  ],
+  "id": "c-psychoanalysis-s3-free-association-rule",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "claim",
+  "scope_note": "This records Freud's 1904 reporting rule. It does not claim that later psychoanalytic schools preserved the technique without modification.",
+  "statement": "Freud's 1904 procedure instructed patients to report whatever came to mind, including material they judged irrelevant, nonsensical, embarrassing, or distressing.",
+  "statement_zh": "Freud 1904 年的程序要求病人說出所有浮現的念頭，包括自己認為無關、荒謬、尷尬或令人痛苦的內容。",
+  "status": "verified",
+  "subject_id": "psychoanalysis"
+}

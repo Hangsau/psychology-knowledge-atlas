@@ -1,0 +1,13 @@
+{
+  "claim_id": "c-psychoanalysis-s3-interpretation-scope",
+  "evidence_level": "fulltext_direct",
+  "id": "ev-psychoanalysis-s3-interpretation-scope",
+  "locator": "Freud's Psycho-Analytic Procedure (1904), interpretation materials, SE VII p. 252 (PDF p. 3)",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "evidence",
+  "short_quote": "applied not only to the patient's ideas but also to his dreams",
+  "source_id": "freud-1904-psychoanalytic-procedure",
+  "status": "verified",
+  "summary": "The surrounding full passage extends interpretation from associations to dreams, symptomatic acts, and everyday slips."
+}

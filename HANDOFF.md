@@ -26,8 +26,10 @@ completed_items:
   - S2 breuer-freud-origin-attribution-boundary：完成 7 筆 verified/publishable 原子 claims；1895 共同宣洩法、共同文本內的詮釋分歧、Freud 對 Breuer 的發現歸功、催眠前提、放棄催眠、以病人聯想取代，以及 Breuer 自述未參與 1895 後發展均分開建檔
   - S2 sources：breuer-freud-1895-studies-hysteria 與 freud-1904-psychoanalytic-procedure 全文於 2026-07-27 實讀；前者保留共同／個別序言的說話者，後者明列為 Freud 的回顧，不冒充中立第三方史學裁決
   - S2 reader preview：新增「Breuer–Freud 起源與歸屬邊界」七筆內容；不把宣洩前史倒稱完整精神分析，S3 才細分自由聯想、詮釋、阻抗與移情規則
-next_action: 完成 S3 free-association-interpretation-resistance-transference-method-boundary；定義各技術及說話者／年代，不把 1904 方法概述擴張成所有後世流派的共同規則
-exit_gate: pending — psychoanalysis S1-S2 complete; S3-S7 remain
+  - S3 free-association-interpretation-resistance-transference-method-boundary：完成 6 筆 verified/publishable 原子 claims；自由聯想報告規則、阻抗推論、詮釋材料範圍、移情非分析專有、正負移情與「僅部分移情構成阻抗」分別建檔
+  - S3 sources：freud-1904-psychoanalytic-procedure 與新增 freud-1912-dynamics-transference 全文實讀；所有定義均限定為 Freud 特定年代的技術陳述，不外推成所有後世流派規則或獨立療效驗證
+next_action: 完成 S4 unconscious-repression-model-revision-claims；明確分開 1912/1915 topographical vocabulary 與 1923 structural model
+exit_gate: pending — psychoanalysis S1-S3 complete; S4-S7 remain
 stop_rule: 任一來源無法讀取就留在 citation/queue 層並繼續同題其他來源；不得用搜尋 snippet 補全文；七題完成後停止本 pilot，不自行擴張
 ```
 

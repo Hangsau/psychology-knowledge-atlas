@@ -1,0 +1,13 @@
+{
+  "claim_id": "c-psychoanalysis-s3-positive-negative-transference",
+  "evidence_level": "fulltext_direct",
+  "id": "ev-psychoanalysis-s3-positive-negative-transference",
+  "locator": "The Dynamics of Transference (1912), positive/negative distinction, SE XII p. 105 (PDF p. 5)",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "evidence",
+  "short_quote": "distinguish a 'positive' transference from a 'negative' one, the transference of affectionate feelings from that of hostile ones",
+  "source_id": "freud-1912-dynamics-transference",
+  "status": "verified",
+  "summary": "Freud defines the two categories by affectionate versus hostile feeling."
+}

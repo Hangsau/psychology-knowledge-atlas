@@ -27,6 +27,18 @@
       ],
       "id": "breuer-freud-origin",
       "title": "Breuer–Freud 起源與歸屬邊界"
+    },
+    {
+      "claim_ids": [
+        "c-psychoanalysis-s3-free-association-rule",
+        "c-psychoanalysis-s3-resistance-inference",
+        "c-psychoanalysis-s3-interpretation-scope",
+        "c-psychoanalysis-s3-transference-not-analysis-specific",
+        "c-psychoanalysis-s3-positive-negative-transference",
+        "c-psychoanalysis-s3-transference-resistance-boundary"
+      ],
+      "id": "method",
+      "title": "自由聯想、詮釋、阻抗與移情"
     }
   ]
 }

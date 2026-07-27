@@ -1,0 +1,15 @@
+{
+  "claim_type": "scope",
+  "evidence_ids": [
+    "ev-psychoanalysis-s3-transference-resistance-boundary"
+  ],
+  "id": "c-psychoanalysis-s3-transference-resistance-boundary",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "claim",
+  "scope_note": "Freud did not classify every form of transference as resistance; his 1912 restriction is retained rather than collapsed into a blanket equation.",
+  "statement": "Freud restricted transference's role as resistance to negative transference and positive transference involving repressed erotic impulses.",
+  "statement_zh": "Freud 把作為阻抗的移情限定為負向移情，以及涉及被壓抑色情衝動的正向移情。",
+  "status": "verified",
+  "subject_id": "psychoanalysis"
+}

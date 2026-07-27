@@ -1,0 +1,13 @@
+{
+  "claim_id": "c-psychoanalysis-s3-resistance-inference",
+  "evidence_level": "fulltext_direct",
+  "id": "ev-psychoanalysis-s3-resistance-inference",
+  "locator": "Freud's Psycho-Analytic Procedure (1904), memory gaps and resistance, SE VII p. 252 (PDF pp. 2-3)",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "evidence",
+  "short_quote": "The psychical forces which have brought about this repression can also be detected, according to him, in the 'resistance'",
+  "source_id": "freud-1904-psychoanalytic-procedure",
+  "status": "verified",
+  "summary": "The procedural account links resistance to the forces hypothesized to have produced repression."
+}
