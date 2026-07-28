@@ -1,5 +1,6 @@
 {
   "claim_id": "c-psychoanalysis-s7-psychodynamic-lineage",
+  "relation_ids": ["psychoanalysis-influenced-psychodynamic-psychotherapy"],
   "evidence_level": "fulltext_direct",
   "id": "ev-psychoanalysis-s7-psychodynamic-lineage",
   "locator": "What is psychoanalytic / psychodynamic psychotherapy?, first paragraph",

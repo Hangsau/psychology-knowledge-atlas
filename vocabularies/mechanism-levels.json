@@ -1,0 +1,16 @@
+{
+  "axis": "mechanism_level",
+  "id": "mechanism-levels",
+  "terms": [
+    {"id": "physical", "label_zh": "物理"},
+    {"id": "chemical_molecular", "label_zh": "化學／分子"},
+    {"id": "cellular", "label_zh": "細胞"},
+    {"id": "neural_circuit", "label_zh": "神經迴路"},
+    {"id": "physiological_system", "label_zh": "生理系統"},
+    {"id": "cognitive_affective", "label_zh": "認知／情感"},
+    {"id": "behavioral", "label_zh": "行為"},
+    {"id": "interpersonal_social", "label_zh": "人際／社會"},
+    {"id": "cultural_institutional", "label_zh": "文化／制度"}
+  ],
+  "version": "0.1.0"
+}

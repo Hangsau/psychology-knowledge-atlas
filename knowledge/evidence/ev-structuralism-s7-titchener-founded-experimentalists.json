@@ -1,5 +1,6 @@
 {
   "claim_id": "c-structuralism-s7-titchener-founded-experimentalists",
+  "relation_ids": ["titchener-influenced-society-experimental-psychologists"],
   "evidence_level": "fulltext_direct",
   "id": "ev-structuralism-s7-titchener-founded-experimentalists",
   "locator": "Official site, About Us, opening sentence",

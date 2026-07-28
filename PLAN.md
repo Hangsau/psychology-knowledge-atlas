@@ -148,6 +148,14 @@ P2-E 的目的，是驗證命名效應的資料路由與發布安全，不是無
 - 關係只能表達有來源支持的機制或關聯，不把跨層敘事寫成單一路徑的還原論；先修正並驗證 relationship 的 evidence linkage，再建立資料。
 - 首個建議 pilot 為「光照 → 晝夜節律／褪黑激素 → 睡眠與認知情緒 → 行為 → 社會作息」，用來測試多層 claim、邊界條件與不同證據類型。
 
+#### P3-M0：層級與 relation evidence 合約（完成）
+
+- 九個受控層級已固定為 physical、chemical/molecular、cellular、neural circuit、physiological system、cognitive/affective、behavioral、interpersonal/social、cultural/institutional。
+- `mechanism_level` 只允許用於明確的 construct／event／finding／model mechanism nodes；不套用到學派、人物或 broad subfield。
+- `mechanism_link` 必須跨不同層級，且每筆 relation evidence 必須由 evidence-side `relation_ids` 雙向回鏈。
+- 既有 12 筆 relations、17 筆被引用 evidence 已完成 backlink migration；單向、孤兒、未標層級及同層輸入均有拒絕測試。
+- Validator 與完整 70-test suite 通過後，才允許建立第一個光照 pilot 資料。
+
 ### P4-E/M：衍生視圖
 
 - Named Effect Card：名稱、別名、popular claim、證據摘要、複現／爭議、邊界條件與相關機制。

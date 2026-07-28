@@ -1,5 +1,6 @@
 {
   "claim_id": "c-structuralism-s6-watson-terminology-disagreement",
+  "relation_ids": ["behaviorism-opposed-structuralism"],
   "evidence_level": "fulltext_direct",
   "id": "ev-structuralism-s6-watson-terminology-disagreement",
   "locator": "Critique of introspective terminology and sensation analysis, Psychological Review 20, pp. 164-165",

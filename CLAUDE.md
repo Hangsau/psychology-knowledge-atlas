@@ -23,6 +23,7 @@
 - LLM 不得作 `source_id`，也不得自行把 claim 判為已證實。
 - 每個 record 一個 JSON 檔；禁止多 agent 共寫巨大 JSONL。
 - 所有 ID、tag、relation、claim、evidence 參照必須可解析。
+- Relation 與 evidence 必須雙向回鏈；`mechanism_link` 的兩端必須是不同受控 `mechanism_level` 的 mechanism nodes，每一跳均須有直接 evidence。
 - 來源取得狀態與證據品質分開；metadata／snippet 不能冒充讀過全文。
 - 具體事實必須是單一可裁決 claim；複合 claim 拆分。
 - `publishable:true` 必須有合格 evidence 與 locator，並通過發布閘門。

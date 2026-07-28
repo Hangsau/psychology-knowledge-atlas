@@ -10,7 +10,7 @@
     "record_type": {"const": "relation"},
     "subject_id": {"type": "string"},
     "object_id": {"type": "string"},
-    "relation_type": {"enum": ["alias_of", "parent_of", "branch_of", "influenced", "opposed", "explains", "contextualizes", "compares_with", "contrasts_with", "empirical_research_on", "clinical_application", "appropriation_risk", "not_applicable"]},
+    "relation_type": {"enum": ["alias_of", "parent_of", "branch_of", "influenced", "opposed", "explains", "contextualizes", "compares_with", "contrasts_with", "empirical_research_on", "clinical_application", "appropriation_risk", "mechanism_link", "not_applicable"]},
     "evidence_ids": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
     "status": {"enum": ["unverified", "retrieved", "verified", "disputed", "excluded"]},
     "publishable": {"type": "boolean"},

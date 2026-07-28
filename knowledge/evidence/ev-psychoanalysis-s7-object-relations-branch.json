@@ -1,5 +1,6 @@
 {
   "claim_id": "c-psychoanalysis-s7-object-relations-branch",
+  "relation_ids": ["object-relations-theory-branch-of-psychoanalysis"],
   "evidence_level": "fulltext_direct",
   "id": "ev-psychoanalysis-s7-object-relations-branch",
   "locator": "Ronald Fairbairn profile, opening paragraph",

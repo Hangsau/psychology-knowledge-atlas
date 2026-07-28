@@ -21,7 +21,7 @@ python tools\validate.py
 python -m unittest discover -s tests -v
 ```
 
-P1 coverage、P1-E 命名現象 universe、P2-E 證據路由與 P3-S 四個學派 pilots 均已通過明確退出門檻。`structuralism`、`psychoanalysis`、`cbt`、`indigenous-psychology` 各完成七個固定問題，publishable claims 均有全文 locator 與短引文，關係均有獨立 evidence。P4 已完成 coverage comparison 與 bounded chronology；Atlas 層仍為 `evidence_release:false`。
+P1 coverage、P1-E 命名現象 universe、P2-E 證據路由與 P3-S 四個學派 pilots 均已通過明確退出門檻。`structuralism`、`psychoanalysis`、`cbt`、`indigenous-psychology` 各完成七個固定問題，publishable claims 均有全文 locator 與短引文，關係均有獨立 evidence。P4 已完成 coverage comparison 與 bounded chronology；P3-M0 已固定九層 mechanism vocabulary 與 relation–evidence 雙向合約。Atlas 層仍為 `evidence_release:false`。
 
 四個薄型 reader previews 亦已完成：執行 `python tools\build_views.py` 會為四個 pilots 生成 Markdown 與同內容的 JSON dossiers。頁面只收錄 verified/publishable records；generated output 可刪除重建，不是第二套 canonical truth。
 

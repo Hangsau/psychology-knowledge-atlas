@@ -281,6 +281,7 @@ class FoundationTests(unittest.TestCase):
         }
         evidence = {
             "id": "relation-gate-evidence", "record_type": "evidence", "claim_id": "relation-gate-claim",
+            "relation_ids": ["relation-gate"],
             "source_id": "relation-gate-source", "locator": "p. 1", "evidence_level": "fulltext_direct",
             "short_quote": "directly supports the bounded relation", "summary": "read in full",
             "status": "verified", "publishable": True, "provenance": "manual"
@@ -301,6 +302,106 @@ class FoundationTests(unittest.TestCase):
         errors = validate_repository(self.work)
         self.assertTrue(any("publishable claim requires at least one" in error for error in errors))
         self.assertTrue(any("publishable relation requires at least one" in error for error in errors))
+
+    def test_relation_evidence_links_are_bidirectional(self) -> None:
+        for relation_path in (self.work / "knowledge/relations").glob("*.json"):
+            relation = json.loads(relation_path.read_text(encoding="utf-8"))
+            for evidence_id in relation["evidence_ids"]:
+                evidence = json.loads(
+                    (self.work / f"knowledge/evidence/{evidence_id}.json").read_text(encoding="utf-8")
+                )
+                self.assertIn(relation["id"], evidence["relation_ids"])
+
+        relation_path = self.work / "knowledge/relations/behaviorism-opposed-structuralism.json"
+        relation = json.loads(relation_path.read_text(encoding="utf-8"))
+        evidence_id = relation["evidence_ids"][0]
+        evidence_path = self.work / f"knowledge/evidence/{evidence_id}.json"
+        evidence = json.loads(evidence_path.read_text(encoding="utf-8"))
+        evidence["relation_ids"] = []
+        evidence_path.write_text(json.dumps(evidence), encoding="utf-8")
+        self.assertTrue(
+            any("does not backlink this relation" in error for error in validate_repository(self.work))
+        )
+
+        evidence["relation_ids"] = [relation["id"], "missing-relation"]
+        evidence_path.write_text(json.dumps(evidence), encoding="utf-8")
+        self.assertTrue(any("orphan relation_id" in error for error in validate_repository(self.work)))
+
+        evidence["relation_ids"] = [relation["id"]]
+        evidence_path.write_text(json.dumps(evidence), encoding="utf-8")
+        relation["evidence_ids"].remove(evidence_id)
+        relation_path.write_text(json.dumps(relation), encoding="utf-8")
+        self.assertTrue(
+            any("does not backlink this evidence" in error for error in validate_repository(self.work))
+        )
+
+    def test_mechanism_levels_and_cross_level_links_are_controlled(self) -> None:
+        vocabulary = json.loads(
+            (self.work / "vocabularies/mechanism-levels.json").read_text(encoding="utf-8")
+        )
+        self.assertEqual(
+            [term["id"] for term in vocabulary["terms"]],
+            [
+                "physical",
+                "chemical_molecular",
+                "cellular",
+                "neural_circuit",
+                "physiological_system",
+                "cognitive_affective",
+                "behavioral",
+                "interpersonal_social",
+                "cultural_institutional",
+            ],
+        )
+        physical = self.valid_entity("physical-node") | {
+            "entity_type": "event",
+            "mechanism_level": "physical",
+        }
+        physiological = self.valid_entity("physiological-node") | {
+            "entity_type": "construct",
+            "mechanism_level": "physiological_system",
+        }
+        source = {
+            "id": "mechanism-source", "record_type": "source", "title": "Open mechanism study",
+            "identifiers": {}, "access_status": "open_fulltext", "status": "retrieved",
+            "publishable": True, "provenance": "manual"
+        }
+        claim = {
+            "id": "mechanism-claim", "record_type": "claim", "subject_id": "physical-node",
+            "statement": "A bounded cross-level mechanism statement", "claim_type": "mechanism",
+            "evidence_ids": ["mechanism-evidence"], "status": "verified", "publishable": True,
+            "provenance": "manual"
+        }
+        evidence = {
+            "id": "mechanism-evidence", "record_type": "evidence", "claim_id": "mechanism-claim",
+            "relation_ids": ["mechanism-relation"], "source_id": "mechanism-source",
+            "locator": "Results, p. 1", "evidence_level": "fulltext_direct",
+            "short_quote": "directly supports one cross-level hop", "status": "verified",
+            "publishable": True, "provenance": "manual"
+        }
+        relation = {
+            "id": "mechanism-relation", "record_type": "relation", "subject_id": "physical-node",
+            "object_id": "physiological-node", "relation_type": "mechanism_link",
+            "evidence_ids": ["mechanism-evidence"], "status": "verified", "publishable": True,
+            "provenance": "manual"
+        }
+        self.write_json("catalog/entities/physical-node.json", physical)
+        self.write_json("catalog/entities/physiological-node.json", physiological)
+        self.write_json("library/sources/mechanism-source.json", source)
+        self.write_json("knowledge/claims/mechanism-claim.json", claim)
+        self.write_json("knowledge/evidence/mechanism-evidence.json", evidence)
+        self.write_json("knowledge/relations/mechanism-relation.json", relation)
+        self.assertEqual(validate_repository(self.work), [])
+
+        physiological.pop("mechanism_level")
+        self.write_json("catalog/entities/physiological-node.json", physiological)
+        self.assertTrue(any("object requires mechanism_level" in error for error in validate_repository(self.work)))
+        physiological["mechanism_level"] = "physical"
+        self.write_json("catalog/entities/physiological-node.json", physiological)
+        self.assertTrue(any("distinct mechanism levels" in error for error in validate_repository(self.work)))
+        physical["entity_type"] = "school"
+        self.write_json("catalog/entities/physical-node.json", physical)
+        self.assertTrue(any("mechanism-node entity type" in error for error in validate_repository(self.work)))
 
 
     def test_legacy_migration_is_identity_only(self) -> None:

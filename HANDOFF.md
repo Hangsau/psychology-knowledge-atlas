@@ -3,36 +3,35 @@
 ## ACTIVE WORK
 
 ```yaml
-phase: P4
-unit: p3-school-pilots-chronology-view
+phase: P3-M0
+unit: mechanism-level-and-relation-evidence-contract
 status: validated
-base_commit: 701232c
+base_commit: 6eb6aae
 started_at: 2026-07-28
-reader_question: 四個 P3-S pilots 各有哪些已驗證的形成時間錨點，如何在不製造單一起源或虛假日期精度下依時間閱讀
-canonical_inputs:
-  - knowledge/claims/c-psychoanalysis-s1-chronology-1896.json
-  - knowledge/claims/c-structuralism-s1-chronology-1898.json
-  - knowledge/claims/c-indigenous-psychology-s2-late-1960s-worldwide-calls.json
-  - knowledge/claims/c-cbt-s2-gradual-integration-1970s.json
+objective: 在建立跨層資料前，先固定九層 mechanism_level vocabulary 與可雙向驗證的 relation–evidence linkage contract
+affected_contracts:
+  - schemas/entity.schema.json
+  - schemas/relation.schema.json
+  - schemas/evidence.schema.json
+  - vocabularies/mechanism-levels.json
+  - tools/validate.py
+  - knowledge/relations
   - knowledge/evidence
-  - library/sources
-output: views/generated/p3-school-pilots-chronology.{json,md}
 boundaries:
-  - 一筆原子 chronology claim 等於一個 event；只收錄四筆既有 verified/publishable formation anchors
-  - exact year 與 decade range 分開；1960 年代末及 1970 年代中後期不得壓成單一年份
-  - chronology anchor 不等於學派創立日期；版本與書目時間線不在本 gate
-  - generated output 可刪除重生，不成為 canonical input
-exit_gate: exact four unique chronology claims; structured precision and ranges validate; verified evidence resolves; deterministic atomic build; malformed empty duplicate missing unpublished and over-precise inputs rejected; full tests pass
+  - mechanism_level 只分類可明確定位的 mechanism nodes，不把學派、人物或 broad subfield 強塞進層級
+  - relation evidence 必須雙向連結；既有 claim evidence 可同時支撐 relation，但不得只有 relation 單向引用
+  - mechanism_link 只表達來源直接支持的單一跳接；不得從多篇來源拼成未驗證的完整因果鏈
+  - 本 gate 先修合約與既有資料；新光照資料要等合約 validator 與完整 tests 通過後才建立
+exit_gate: nine controlled levels; every relation evidence link bidirectional; mechanism_link endpoints levelled; malformed orphan one-way and non-levelled inputs rejected; validator and full tests pass
 completed_items:
-  - baseline validator PASS；完整 suite 65 tests PASS；git diff --check PASS
-  - claim schema 與 validator 新增 optional time_anchor；year/year_range/decade 與 qualifier 組合均受控，舊 claims 不需 migration
-  - 四筆 chronology claims 已標註 canonical anchors：1896、1898、1960 年代末、1970 年代中後期
-  - 新增 views/chronologies/p3-school-pilots-chronology.json；spec 只列四筆 claim IDs 與呈現邊界
-  - build_views 直接解參照 canonical claim/entity/evidence/source，依 start/end/claim ID 決定性排序並原子輸出 JSON/Markdown
-  - 輸出固定警告 chronology anchor 不等於學派創立日期；scope_note 與全文短引文逐 event 呈現
-  - malformed/empty/oversized spec、非四筆、重複、不安全、缺失、unpublished、missing anchor、錯誤 range 與虛假 precision 均有拒絕測試
-  - validator PASS；全量 view rebuild PASS；完整 suite 68 tests PASS（含 deterministic、concurrent、atomic）；git diff --check PASS
-next_action: P4-V2 已關閉；下一個 bounded gate 開始前先固定讀者問題、canonical inputs、退出門檻及其在 P3-M／P4-E/M gate 順序中的位置
+  - baseline clean at main@6eb6aae；relation inventory 12 records；all currently reuse claim evidence without evidence-side relation backlinks
+  - 新增九層 vocabularies/mechanism-levels.json；entity schema 與 validator 僅允許 mechanism nodes 使用受控 mechanism_level
+  - relation schema 新增 mechanism_link；validator 要求兩端均有不同 mechanism_level
+  - evidence schema 新增 optional relation_ids；relation→evidence 與 evidence→relation 現在強制雙向一致
+  - 既有 12 relations 所引用的 17 evidence records 已全部補回鏈，未改其 claim、quote、locator 或 verdict
+  - regression tests 覆蓋 canonical backlink inventory、單向缺失、orphan relation、反向缺失、九層精確集合、缺 endpoint level、同層 link 與錯誤 entity type
+  - validator PASS；完整 suite 70 tests PASS；既有 P3/P4 reader/build/concurrency tests 無退化
+next_action: P3-M0 已關閉；啟動 P3-M1 bounded light/circadian slice，先以可讀全文的一手人體研究建立最少兩個直接跨層 hops
 ```
 
 ## P3-S COMPLETION RECORD

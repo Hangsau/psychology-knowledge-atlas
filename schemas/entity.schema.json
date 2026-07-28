@@ -13,6 +13,7 @@
     "aliases": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
     "name_zh": {"type": "string", "minLength": 1},
     "phenomenon_kind": {"enum": ["effect", "bias", "illusion", "paradox", "heuristic", "law", "syndrome", "popular_label"]},
+    "mechanism_level": {"enum": ["physical", "chemical_molecular", "cellular", "neural_circuit", "physiological_system", "cognitive_affective", "behavioral", "interpersonal_social", "cultural_institutional"]},
     "domain_entity_ids": {
       "type": "array",
       "items": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"},

@@ -33,7 +33,7 @@ tests/                   邊界、schema、參照、併發、安全測試
 | 新增主張／證據 | claim + evidence schema；locator 與 source access gate |
 | 新增命名效應 | `schemas/entity.schema.json` 的 `phenomenon` contract + `vocabularies/phenomenon-kinds.json`；必須有受控 kind 與可解析 `domain_entity_ids`，名稱本身不得建立 claim |
 | 新增命名現象參考系 | `schemas/reference-system.schema.json` + `vocabularies/reference-system-roles.json`；先判定 canonical taxonomy / specialist index / discovery seed / popular-language inventory |
-| 新增跨層機制（後續） | `PLAN.md` 的 P3-M；先驗證 relationship evidence linkage，每一跨層跳接都必須可追溯到 claim 與 source |
+| 新增跨層機制 | `vocabularies/mechanism-levels.json` + mechanism node entities + `mechanism_link`；每一跳必須有 claim、evidence、source 且 relation/evidence 雙向回鏈 |
 | 對接宗教庫 | `crosswalks/d1-d13.json`；第一階段不改 religions-history |
 | 產文章／索引 | 只從 canonical records 生成到 `views/generated/` |
 | 產跨 pilot 比較 | `views/comparisons/` spec + `tools/build_views.py`；只比較一致結構指標，不把 sections 當語義等價 |
@@ -58,3 +58,4 @@ tests/                   邊界、schema、參照、併發、安全測試
 - ANZSRC Division 45 records 仍是 `context_domain`；P3-S Indigenous psychology pilot 不得把它們升格成 psychology `subfield`，也不得把 Aboriginal and Torres Strait Islander、Māori、Pacific Peoples 或其他民族合成單一文化。
 - P4 comparison spec 只能列 profile IDs 與呈現邊界；claims、evidence、sources、relations 和統計都必須在 build 時直接由 canonical records 解參照，禁止把計數或摘要手寫成第二套真相。
 - P4 chronology spec 只能列 chronology claim IDs；日期範圍與精度屬 canonical claim 的 `time_anchor`。`year` 不得帶模糊 qualifier，`decade` 必須保存完整十年範圍；時間錨點不得改寫成學派創立日期。
+- P3-M mechanism levels 是描述尺度，不是單一路徑的本體階級。只有 `construct`、`event`、`finding`、`model` mechanism nodes 可標層級；`mechanism_link` 必須跨不同層，且 evidence 的 `relation_ids` 與 relation 的 `evidence_ids` 必須雙向一致。

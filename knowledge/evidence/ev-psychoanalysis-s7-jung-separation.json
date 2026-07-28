@@ -1,5 +1,6 @@
 {
   "claim_id": "c-psychoanalysis-s7-jung-separation",
+  "relation_ids": ["analytical-psychology-contrasts-with-psychoanalysis"],
   "evidence_level": "fulltext_direct",
   "id": "ev-psychoanalysis-s7-jung-separation",
   "locator": "Introduction, PDF p. 1, lines 2-4",

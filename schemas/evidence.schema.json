@@ -9,6 +9,7 @@
     "id": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"},
     "record_type": {"const": "evidence"},
     "claim_id": {"type": "string"},
+    "relation_ids": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
     "source_id": {"type": "string"},
     "locator": {"type": "string", "minLength": 1},
     "evidence_level": {"enum": ["fulltext_direct", "fulltext_indirect", "abstract_only", "metadata_only"]},

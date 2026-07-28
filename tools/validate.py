@@ -23,16 +23,18 @@ PHENOMENON_KINDS = {"effect", "bias", "illusion", "paradox", "heuristic", "law",
 SYSTEM_ROLES = {"canonical_taxonomy", "specialist_index", "discovery_seed", "popular_language_inventory"}
 ACCESS_STATUSES = {"open_fulltext", "public_domain_fulltext", "repository_manuscript", "preprint", "publicly_readable_license_unclear", "privately_observed_unredistributable", "abstract_only", "metadata_only", "paywalled_unread", "unavailable"}
 EVIDENCE_LEVELS = {"fulltext_direct", "fulltext_indirect", "abstract_only", "metadata_only"}
-RELATION_TYPES = {"alias_of", "parent_of", "branch_of", "influenced", "opposed", "explains", "contextualizes", "compares_with", "contrasts_with", "empirical_research_on", "clinical_application", "appropriation_risk", "not_applicable"}
+RELATION_TYPES = {"alias_of", "parent_of", "branch_of", "influenced", "opposed", "explains", "contextualizes", "compares_with", "contrasts_with", "empirical_research_on", "clinical_application", "appropriation_risk", "mechanism_link", "not_applicable"}
+MECHANISM_LEVELS = {"physical", "chemical_molecular", "cellular", "neural_circuit", "physiological_system", "cognitive_affective", "behavioral", "interpersonal_social", "cultural_institutional"}
+MECHANISM_ENTITY_TYPES = {"construct", "event", "finding", "model"}
 TIME_PRECISIONS = {"year", "year_range", "decade"}
 TIME_QUALIFIERS = {"none", "early", "mid", "late", "mid_to_late"}
 
 COMMON = {"id", "record_type", "status", "publishable", "provenance"}
 ALLOWED = {
-    "entity": COMMON | {"entity_type", "name", "aliases", "name_zh", "phenomenon_kind", "domain_entity_ids", "source_ids", "tags", "notes"},
+    "entity": COMMON | {"entity_type", "name", "aliases", "name_zh", "phenomenon_kind", "domain_entity_ids", "mechanism_level", "source_ids", "tags", "notes"},
     "source": COMMON | {"title", "identifiers", "access_status", "authors", "issued", "url", "version_note"},
     "claim": COMMON | {"subject_id", "statement", "statement_zh", "claim_type", "time_anchor", "evidence_ids", "scope_note"},
-    "evidence": COMMON | {"claim_id", "source_id", "locator", "evidence_level", "summary", "short_quote"},
+    "evidence": COMMON | {"claim_id", "relation_ids", "source_id", "locator", "evidence_level", "summary", "short_quote"},
     "relation": COMMON | {"subject_id", "object_id", "relation_type", "evidence_ids", "scope_note"},
     "reference_system": COMMON | {"title", "authority", "scope", "system_role", "version", "retrieved_at", "source_ids", "candidate_ids", "notes"},
     "coverage": COMMON | {"reference_system_id", "candidate_id", "candidate_label", "decision", "reason", "target_entity_id"},
@@ -167,6 +169,11 @@ def _validate_shape(record: Record, errors: list[str]) -> None:
                 errors.append(f"{path}: name_zh must be a non-empty string")
         elif any(field in data for field in ("phenomenon_kind", "domain_entity_ids", "name_zh")):
             errors.append(f"{path}: phenomenon-only fields require entity_type phenomenon")
+        if "mechanism_level" in data:
+            if data.get("mechanism_level") not in MECHANISM_LEVELS:
+                errors.append(f"{path}: invalid mechanism_level")
+            if data.get("entity_type") not in MECHANISM_ENTITY_TYPES:
+                errors.append(f"{path}: mechanism_level requires a mechanism-node entity type")
     elif record_type == "source" and data.get("access_status") not in ACCESS_STATUSES:
         errors.append(f"{path}: invalid access_status")
     elif record_type == "claim":
@@ -216,6 +223,13 @@ def _validate_shape(record: Record, errors: list[str]) -> None:
             errors.append(f"{path}: invalid evidence_level")
         if not isinstance(data.get("locator"), str) or not data.get("locator", "").strip():
             errors.append(f"{path}: evidence locator is required")
+        relation_ids = data.get("relation_ids", [])
+        if not isinstance(relation_ids, list):
+            errors.append(f"{path}: relation_ids must be an array")
+        elif any(not isinstance(relation_id, str) or not ID_RE.fullmatch(relation_id) for relation_id in relation_ids):
+            errors.append(f"{path}: invalid relation_id")
+        elif len(relation_ids) != len(set(relation_ids)):
+            errors.append(f"{path}: relation_ids must be unique")
     elif record_type == "relation" and data.get("relation_type") not in RELATION_TYPES:
         errors.append(f"{path}: invalid relation_type")
     elif record_type == "reference_system":
@@ -282,6 +296,7 @@ def validate_repository(root: Path = ROOT) -> list[str]:
 
     entities, sources = by_type["entity"], by_type["source"]
     claims, evidence = by_type["claim"], by_type["evidence"]
+    relations = by_type["relation"]
     for record in entities.values():
         for source_id in record.data.get("source_ids", []):
             if source_id not in sources:
@@ -317,7 +332,15 @@ def validate_repository(root: Path = ROOT) -> list[str]:
             errors.append(f"{record.path}: publishable evidence requires a verbatim short_quote proving the full text was read")
         if claim is not None and record.data.get("id") not in claim.data.get("evidence_ids", []):
             errors.append(f"{record.path}: claim does not backlink this evidence")
-    for record in by_type["relation"].values():
+        relation_ids = data.get("relation_ids", [])
+        if isinstance(relation_ids, list):
+            for relation_id in relation_ids:
+                relation = relations.get(relation_id)
+                if relation is None:
+                    errors.append(f"{record.path}: orphan relation_id {relation_id!r}")
+                elif data.get("id") not in relation.data.get("evidence_ids", []):
+                    errors.append(f"{record.path}: relation {relation_id!r} does not backlink this evidence")
+    for record in relations.values():
         data = record.data
         for field in ("subject_id", "object_id"):
             if data.get(field) not in entities:
@@ -325,6 +348,21 @@ def validate_repository(root: Path = ROOT) -> list[str]:
         for evidence_id in data.get("evidence_ids", []):
             if evidence_id not in evidence:
                 errors.append(f"{record.path}: orphan evidence_id {evidence_id!r}")
+            elif data.get("id") not in evidence[evidence_id].data.get("relation_ids", []):
+                errors.append(f"{record.path}: evidence {evidence_id!r} does not backlink this relation")
+        if data.get("relation_type") == "mechanism_link":
+            subject = entities.get(data.get("subject_id"))
+            object_ = entities.get(data.get("object_id"))
+            if subject is not None and subject.data.get("mechanism_level") not in MECHANISM_LEVELS:
+                errors.append(f"{record.path}: mechanism_link subject requires mechanism_level")
+            if object_ is not None and object_.data.get("mechanism_level") not in MECHANISM_LEVELS:
+                errors.append(f"{record.path}: mechanism_link object requires mechanism_level")
+            if (
+                subject is not None
+                and object_ is not None
+                and subject.data.get("mechanism_level") == object_.data.get("mechanism_level")
+            ):
+                errors.append(f"{record.path}: mechanism_link must cross distinct mechanism levels")
         if data.get("publishable"):
             if data.get("status") != "verified" or not data.get("evidence_ids"):
                 errors.append(f"{record.path}: publishable relation requires verified status and evidence")
@@ -385,6 +423,13 @@ def validate_repository(root: Path = ROOT) -> list[str]:
         term_ids = [term.get("id") for term in role_vocabulary.get("terms", []) if isinstance(term, dict)]
         if set(term_ids) != SYSTEM_ROLES:
             errors.append("reference-system-roles vocabulary must match validator system roles")
+    mechanism_vocabulary = _read_json(root / "vocabularies" / "mechanism-levels.json", errors)
+    if isinstance(mechanism_vocabulary, dict):
+        term_ids = [term.get("id") for term in mechanism_vocabulary.get("terms", []) if isinstance(term, dict)]
+        if len(term_ids) != len(set(term_ids)):
+            errors.append("mechanism-levels vocabulary has duplicate term ids")
+        if set(term_ids) != MECHANISM_LEVELS:
+            errors.append("mechanism-levels vocabulary must match validator mechanism levels")
     crosswalk = _read_json(root / "crosswalks" / "d1-d13.json", errors)
     if isinstance(crosswalk, dict):
         domain_ids = [item.get("id") for item in crosswalk.get("domains", []) if isinstance(item, dict)]
