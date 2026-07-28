@@ -29,7 +29,7 @@
     },
     "cultural_language_context": {
       "description": "Non-English, local, cultural or knowledge-sovereignty context where applicable",
-      "status": "searching"
+      "status": "covered"
     }
   },
   "searches": [
@@ -62,6 +62,15 @@
         "Alfred Adler school history Freud critique"
       ],
       "purpose": "Independent historical boundary and contemporary continuation"
+    },
+    {
+      "searched_at": "2026-07-28",
+      "system": "German-language national catalogues and scholarly transcription archives",
+      "queries": [
+        "Alfred Adler Über den nervösen Charakter 1912 digital full text",
+        "Alfred Adler Praxis und Theorie der Individualpsychologie 1920 digitalisiert"
+      ],
+      "purpose": "Original-language terminology and edition boundaries; no general German secondary-literature quota"
     }
   ],
   "items": [
@@ -195,13 +204,39 @@
         "pmcid": "PMC3375868"
       },
       "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3375868/",
-      "download_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC3375868/fullTextXML",
+      "download_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3375868/?report=xml",
       "access_status": "open_fulltext",
       "rights_note": "Open full text; tests a narrow birth-order-related application and must not be generalized to the whole school.",
-      "status": "failed",
-      "failure": {
-        "at": "2026-07-28T08:22:56+00:00",
-        "reason": "HTTP Error 404: Not Found"
+      "status": "retrieved",
+      "retrieval": {
+        "retrieved_at": "2026-07-28T08:33:30+00:00",
+        "sha256": "1def1836086f64995af46533b1f524bf267c5e40e87ffe875419b4447bd0ee41",
+        "bytes": 182488,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/individual-psychology/vazsonyi-2012-birth-order-latin-america.html"
+      }
+    },
+    {
+      "id": "adler-1912-ueber-nervoesen-charakter-de",
+      "title": "Über den nervösen Charakter: Grundzüge einer vergleichenden Individual-Psychologie und Psychotherapie",
+      "authors": [
+        "Alfred Adler"
+      ],
+      "issued": "1912",
+      "language": "de",
+      "slot": "cultural_language_context",
+      "source_kind": "original_language_primary_book_transcription",
+      "landing_url": "https://de.wikisource.org/wiki/Über_den_nervösen_Charakter",
+      "download_url": "https://de.wikisource.org/wiki/Über_den_nervösen_Charakter",
+      "access_status": "public_domain_fulltext",
+      "rights_note": "German Wikisource transcription of the 1912 J. F. Bergmann edition; page records report two proofreading passes against the scan. Preserve it as an original-language text and compare rather than silently replace the English translation.",
+      "status": "retrieved",
+      "retrieval": {
+        "retrieved_at": "2026-07-28T08:34:02+00:00",
+        "sha256": "7f3bcbfe3d6e0351be4cc51273320ae330b2981c17fc4e4eabc5de32a35804cf",
+        "bytes": 69192,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/individual-psychology/adler-1912-ueber-nervoesen-charakter-de.html"
       }
     },
     {
@@ -282,5 +317,5 @@
       "exclusion_reason": "Public URL does not erase the document's explicit subscriber-use restriction; seek a public-domain 1927 edition instead."
     }
   ],
-  "status": "retrieving"
+  "status": "audited"
 }

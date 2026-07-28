@@ -23,10 +23,10 @@ completed_items:
   - 固定48項及1..48順序，並標記學派／傳統／理論／治療／領域／模型類型
   - 建立48份 source packs、source-pack schema、初始化器、下載器與稽核器
   - source-pack audit PASS；路徑逃逸與 MIME signature regression tests PASS
-  - individual-psychology 已建立原典、歷史、理論、批判、實證、文化與當代延續來源清單
-  - 已下載並雜湊驗證多筆個體心理學來源；正式數量以 source pack 中 status=retrieved 為準
+  - individual-psychology pilot 已完成所有來源槽位初次系統搜尋並標為 audited
+  - individual-psychology 已下載並雜湊驗證10筆全文／正式網頁：兩本英文原典版本、一份1912德文原典校對轉錄、歷史／理論／批判／實證／文化及當代延續材料
   - 明示排除一份雖可公開連線、但文件內宣告僅限訂閱者個人使用的 Understanding Human Nature 數位版，待找公版替代
-next_action: 補齊 individual-psychology 的失敗正式端點與非英語來源，完成 pilot audit；之後依 research/targets.json 順序分批處理其餘47項，不建立正文
+next_action: individual-psychology pilot 已 audited；依 research/targets.json 順序分批處理其餘47項，不建立正文。非英語只在原始語言、地方傳統或翻譯／版本差異影響正確性時補，不設配額
 ```
 
 ## P3-S COMPLETION RECORD

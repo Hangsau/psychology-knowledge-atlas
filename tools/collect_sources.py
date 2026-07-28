@@ -8,6 +8,7 @@ import json
 import os
 import re
 import urllib.error
+import urllib.parse
 import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
@@ -31,6 +32,16 @@ EXTENSIONS = {
     "application/xml": ".xml",
     "text/xml": ".xml",
 }
+
+
+def safe_http_url(url: str) -> str:
+    """Percent-encode Unicode path/query content while preserving URL structure."""
+    parts = urllib.parse.urlsplit(url)
+    if parts.scheme not in {"http", "https"} or not parts.netloc:
+        raise ValueError("download_url must use HTTP(S)")
+    path = urllib.parse.quote(urllib.parse.unquote(parts.path), safe="/%:@")
+    query = urllib.parse.quote(urllib.parse.unquote(parts.query), safe="=&?/:@,+")
+    return urllib.parse.urlunsplit((parts.scheme, parts.netloc.encode("idna").decode("ascii"), path, query, ""))
 
 
 def media_type(header: str | None, prefix: bytes) -> str:
@@ -81,8 +92,9 @@ def retrieve(pack_path: Path, item_id: str, maximum: int) -> None:
     if item.get("access_status") not in ALLOWED_ACCESS:
         raise ValueError("access_status is not eligible for direct retrieval")
     url = item.get("download_url")
-    if not isinstance(url, str) or not url.startswith(("https://", "http://")):
+    if not isinstance(url, str):
         raise ValueError("download_url must use HTTP(S)")
+    url = safe_http_url(url)
 
     destination_dir = ROOT / ".private-sources" / target_id
     destination_dir.mkdir(parents=True, exist_ok=True)

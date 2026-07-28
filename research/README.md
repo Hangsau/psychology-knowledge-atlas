@@ -5,3 +5,5 @@
 `source-packs/` records searches, source-slot coverage and retrieval outcomes. Downloaded bodies live under the ignored `.private-sources/` directory. A downloaded body is not automatically read, verified, publishable or redistributable.
 
 The collector may retrieve public-domain, openly licensed, repository, preprint and publicly readable materials whose redistribution terms are unclear. It must not bypass authentication, paywalls, DRM or technical access controls.
+
+Non-English searching is value-driven, not a quota. It is required when the original language, a local tradition, or a translation/version boundary can change interpretation; otherwise a reliable English evidence base is sufficient.

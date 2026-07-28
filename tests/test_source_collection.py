@@ -30,6 +30,15 @@ class SourceCollectionTests(unittest.TestCase):
         self.assertEqual(collector.media_type("text/html", b"%PDF-1.7\n"), "application/pdf")
         self.assertEqual(collector.media_type("application/pdf", b"<!doctype html>"), "text/html")
 
+    def test_unicode_source_url_is_percent_encoded_without_changing_structure(self) -> None:
+        encoded = collector.safe_http_url("https://de.wikisource.org/wiki/Über_den_nervösen_Charakter")
+        self.assertEqual(
+            encoded,
+            "https://de.wikisource.org/wiki/%C3%9Cber_den_nerv%C3%B6sen_Charakter",
+        )
+        with self.assertRaises(ValueError):
+            collector.safe_http_url("file:///private/source.pdf")
+
     def test_audit_rejects_cache_escape(self) -> None:
         with tempfile.TemporaryDirectory() as temporary:
             work = Path(temporary)

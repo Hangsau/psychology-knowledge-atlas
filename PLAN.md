@@ -20,6 +20,8 @@
 
 每個目標在 `research/source-packs/` 有獨立來源包，按 history、primary works、theory/methods、independent critique、empirical status、current status 與 cultural/language context 搜尋；治療類另含 outcomes 與 safety/guidelines。可取得全文下載至 Git 忽略的 `.private-sources/`，並保存 URL、版本、取得狀態、權利註記、MIME、大小、時間與 SHA-256。公開可讀但授權不明資料可私人快取；禁止繞過登入、付費牆、DRM 或技術存取控制。
 
+非英語來源採價值門檻，不設篇數配額：只有原始語言、地方傳統或翻譯／版本差異會影響解讀時才必須補；英語資料已能可靠處理的實證問題不為形式另找外語文章。
+
 退出門檻：48項來源包皆完成明列搜尋協定與來源槽位裁決；所有選定且可直接取得檔案通過格式與雜湊驗證；失敗、重複、版本差異及無合格來源均明確記錄；未授權正文不進 Git；validator、source-pack audit、完整 tests 與 diff checks 通過。退出前不得把「已下載」寫成「已閱讀／已驗證」。
 
 舊 `psychology-schools` 保留為 legacy archive，不刪除、不改寫歷史。
