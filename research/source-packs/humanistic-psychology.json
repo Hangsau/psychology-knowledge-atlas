@@ -5,34 +5,191 @@
   "slots": {
     "identity_history": {
       "description": "Independent scholarly identity and historical placement",
-      "status": "not_searched"
+      "status": "covered"
     },
     "primary_works": {
       "description": "Primary works or first-generation programme statements",
-      "status": "not_searched"
+      "status": "covered"
     },
     "theory_methods": {
       "description": "Core concepts, methods and internal variants",
-      "status": "not_searched"
+      "status": "covered"
     },
     "independent_critique": {
       "description": "Independent historiography, criticism or boundary analysis",
-      "status": "not_searched"
+      "status": "covered"
     },
     "empirical_status": {
       "description": "Empirical tests, syntheses, replications or current assessment",
-      "status": "not_searched"
+      "status": "covered"
     },
     "current_status": {
       "description": "Contemporary continuation, institutions or present disciplinary status",
-      "status": "not_searched"
+      "status": "covered"
     },
     "cultural_language_context": {
       "description": "Non-English, local, cultural or knowledge-sovereignty context where applicable",
-      "status": "not_searched"
+      "status": "searched_no_qualifying_source"
     }
   },
-  "searches": [],
-  "items": [],
-  "status": "not_started"
+  "searches": [
+    {
+      "searched_at": "2026-07-28",
+      "system": "York University Classics / APA",
+      "queries": [
+        "Maslow 1943 theory human motivation full text",
+        "APA humanistic existential handbook",
+        "APA humanistic psychology history Division 32"
+      ],
+      "purpose": "Foundational programme, history and current institutional framing"
+    },
+    {
+      "searched_at": "2026-07-28",
+      "system": "PubMed Central / open journals",
+      "queries": [
+        "humanistic psychotherapy systematic review meta analysis",
+        "Maslow needs hierarchy contemporary review",
+        "supportive counselling Rogerian systematic review"
+      ],
+      "purpose": "Empirical assessment and critique"
+    },
+    {
+      "searched_at": "2026-07-28",
+      "system": "International and non-English databases",
+      "queries": [
+        "humanistic psychology cultural critique full text",
+        "psicologia humanista revisão sistemática"
+      ],
+      "purpose": "Cultural and language context; no qualifying tradition-wide source found in this pass"
+    }
+  ],
+  "items": [
+    {
+      "id": "maslow-1943-theory-human-motivation",
+      "title": "A Theory of Human Motivation",
+      "slot": "primary_works",
+      "source_kind": "primary_theory_article",
+      "landing_url": "https://psychclassics.yorku.ca/Maslow/motivation.htm",
+      "download_url": "https://psychclassics.yorku.ca/Maslow/motivation.htm",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Publicly readable source; cache privately unless an explicit open license or public-domain status is stated.",
+      "status": "retrieved",
+      "authors": [
+        "A. H. Maslow"
+      ],
+      "issued": "1943",
+      "retrieval": {
+        "retrieved_at": "2026-07-28T10:34:18+00:00",
+        "sha256": "e326e4db8bc5e73d1dfb3b0ef1338d42b2a693c8c34dac388e8f0d3062758b88",
+        "bytes": 64019,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/humanistic-psychology/maslow-1943-theory-human-motivation.html"
+      }
+    },
+    {
+      "id": "kenrick-etal-2010-renovating-pyramid-needs",
+      "title": "Renovating the Pyramid of Needs: Contemporary Extensions Built Upon Ancient Foundations",
+      "slot": "independent_critique",
+      "source_kind": "peer_reviewed_theoretical_revision",
+      "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3161123/",
+      "download_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3161123/",
+      "access_status": "open_fulltext",
+      "rights_note": "Open author manuscript via PubMed Central; critiques and revises one influential Maslovian model, not the whole tradition.",
+      "status": "retrieved",
+      "issued": "2010",
+      "retrieval": {
+        "retrieved_at": "2026-07-28T10:37:27+00:00",
+        "sha256": "a254f00e9f671016ff6f3e5ebe05c5119aca3f137f47fcc70ce3b221a1c72335",
+        "bytes": 364910,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/humanistic-psychology/kenrick-etal-2010-renovating-pyramid-needs.html"
+      }
+    },
+    {
+      "id": "schuenemann-etal-2025-humanistic-comparative-meta",
+      "title": "Allegiance and Treatment Quality as Moderators of the Comparative Effectiveness of Psychotherapy?",
+      "slot": "empirical_status",
+      "source_kind": "systematic_review_meta_analysis",
+      "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11960564/",
+      "download_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11960564/fullTextXML",
+      "access_status": "open_fulltext",
+      "rights_note": "CC BY 4.0 full text via PubMed Central; evaluates humanistic psychotherapy comparisons rather than humanistic psychology as a whole.",
+      "status": "retrieved",
+      "authors": [
+        "Olivia Schünemann",
+        "Alessa Jansen",
+        "Ulrike Willutzki",
+        "Nina Heinrichs"
+      ],
+      "issued": "2025",
+      "identifiers": {
+        "doi": "10.32872/cpe.9709",
+        "pmcid": "PMC11960564",
+        "pmid": "40177337"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-28T10:34:25+00:00",
+        "sha256": "ff6782248eb8c0686831dcb30dc07302637874d7a1e4102b8e7b58d2e767fee6",
+        "bytes": 134335,
+        "media_type": "application/xml",
+        "cache_key": ".private-sources/humanistic-psychology/schuenemann-etal-2025-humanistic-comparative-meta.xml"
+      }
+    },
+    {
+      "id": "pacja-2014-supportive-counselling-review",
+      "title": "The Effectiveness of Supportive Counselling, Based on Rogerian Principles",
+      "slot": "theory_methods",
+      "source_kind": "systematic_review",
+      "landing_url": "https://pacja.org.au/article/71152-the-effectiveness-of-supportive-counselling-based-on-rogerian-principles-a-systematic-review-of-recent-international-and-australian-research",
+      "download_url": "https://pacja.org.au/article/71152-the-effectiveness-of-supportive-counselling-based-on-rogerian-principles-a-systematic-review-of-recent-international-and-australian-research",
+      "access_status": "open_fulltext",
+      "rights_note": "Open journal article; its scope is supportive counselling based on Rogerian principles, not all humanistic approaches.",
+      "status": "retrieved",
+      "issued": "2014",
+      "retrieval": {
+        "retrieved_at": "2026-07-28T10:34:29+00:00",
+        "sha256": "a91b727ef802a5d252b855697cdff346c2eb55c0919785c706b6f47dd3c250df",
+        "bytes": 164813,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/humanistic-psychology/pacja-2014-supportive-counselling-review.html"
+      }
+    },
+    {
+      "id": "ahp-what-is-humanistic-psychology",
+      "title": "What Is Humanistic Psychology",
+      "slot": "identity_history",
+      "source_kind": "professional_organization_history",
+      "landing_url": "https://ahpweb.org/what-is-humanistic-psychology/",
+      "download_url": "https://ahpweb.org/what-is-humanistic-psychology/",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Official Association for Humanistic Psychology historical self-description; use for movement identity and self-understanding, not independent validation.",
+      "status": "retrieved",
+      "retrieval": {
+        "retrieved_at": "2026-07-28T10:37:31+00:00",
+        "sha256": "2e4de65fe739bdbc170fe5e00331fab7a0f009865b56b80e784373f994df8393",
+        "bytes": 336009,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/humanistic-psychology/ahp-what-is-humanistic-psychology.html"
+      }
+    },
+    {
+      "id": "ahp-new-vision",
+      "title": "Our New Vision",
+      "slot": "current_status",
+      "source_kind": "professional_organization_self_description",
+      "landing_url": "https://ahpweb.org/our-new-vision/",
+      "download_url": "https://ahpweb.org/our-new-vision/",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Official Association for Humanistic Psychology current mission statement; institutional self-description only.",
+      "status": "retrieved",
+      "retrieval": {
+        "retrieved_at": "2026-07-28T10:37:34+00:00",
+        "sha256": "1417bafbd7e1260ec5e97b6ab12caa4f2dcb011589bc67ca6bdd41d60097a143",
+        "bytes": 348224,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/humanistic-psychology/ahp-new-vision.html"
+      }
+    }
+  ],
+  "status": "audited"
 }

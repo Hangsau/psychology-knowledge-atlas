@@ -5,34 +5,222 @@
   "slots": {
     "identity_history": {
       "description": "Independent scholarly identity and historical placement",
-      "status": "not_searched"
+      "status": "covered"
     },
     "primary_works": {
       "description": "Primary works or first-generation programme statements",
-      "status": "not_searched"
+      "status": "covered"
     },
     "theory_methods": {
       "description": "Core concepts, methods and internal variants",
-      "status": "not_searched"
+      "status": "covered"
     },
     "independent_critique": {
       "description": "Independent historiography, criticism or boundary analysis",
-      "status": "not_searched"
+      "status": "covered"
     },
     "empirical_status": {
       "description": "Empirical tests, syntheses, replications or current assessment",
-      "status": "not_searched"
+      "status": "covered"
     },
     "current_status": {
       "description": "Contemporary continuation, institutions or present disciplinary status",
-      "status": "not_searched"
+      "status": "covered"
     },
     "cultural_language_context": {
       "description": "Non-English, local, cultural or knowledge-sovereignty context where applicable",
-      "status": "not_searched"
+      "status": "searched_no_qualifying_source"
     }
   },
-  "searches": [],
-  "items": [],
-  "status": "not_started"
+  "searches": [
+    {
+      "searched_at": "2026-07-28",
+      "system": "York University Classics in the History of Psychology",
+      "queries": [
+        "Watson 1913 behaviorist views",
+        "Watson McDougall 1929 battle of behaviorism",
+        "Chomsky review Skinner verbal behavior"
+      ],
+      "purpose": "Programme statements and major contemporary criticism"
+    },
+    {
+      "searched_at": "2026-07-28",
+      "system": "PubMed Central / Europe PMC",
+      "queries": [
+        "behaviorism history review",
+        "current diversification of behaviorism"
+      ],
+      "purpose": "Independent boundary analysis and contemporary variants"
+    },
+    {
+      "searched_at": "2026-07-28",
+      "system": "Professional organizations and primary-text archives",
+      "queries": [
+        "ABAI official current behavior analysis",
+        "Pavlov conditioned reflexes full text",
+        "Skinner Science and Human Behavior digital full text"
+      ],
+      "purpose": "Experimental roots, institutional continuation and access restrictions"
+    }
+  ],
+  "items": [
+    {
+      "id": "watson-1913-psychology-behaviorist-views",
+      "title": "Psychology as the Behaviorist Views It",
+      "slot": "primary_works",
+      "source_kind": "primary_journal_article",
+      "landing_url": "https://psychclassics.yorku.ca/Watson/views.htm",
+      "download_url": "https://psychclassics.yorku.ca/Watson/views.htm",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Publicly readable source; cache privately unless an explicit open license or public-domain status is stated.",
+      "status": "retrieved",
+      "authors": [
+        "John B. Watson"
+      ],
+      "issued": "1913",
+      "retrieval": {
+        "retrieved_at": "2026-07-28T10:28:42+00:00",
+        "sha256": "1006ed20b2b06b740f2aabe89a1972349ab92d62587f94a072008d91030dbef5",
+        "bytes": 50582,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/behaviorism/watson-1913-psychology-behaviorist-views.html"
+      }
+    },
+    {
+      "id": "watson-1929-battle-behaviorism",
+      "title": "The Battle of Behaviorism: Watson's First Paper",
+      "slot": "theory_methods",
+      "source_kind": "primary_debate_paper",
+      "landing_url": "https://psychclassics.yorku.ca/Watson/Battle/watson.htm",
+      "download_url": "https://psychclassics.yorku.ca/Watson/Battle/watson.htm",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Publicly readable source; cache privately unless an explicit open license or public-domain status is stated.",
+      "status": "retrieved",
+      "authors": [
+        "John B. Watson"
+      ],
+      "issued": "1929",
+      "retrieval": {
+        "retrieved_at": "2026-07-28T10:28:45+00:00",
+        "sha256": "e8b88b99c022c1f3e01f5d0f27d78af77267f352c04cf4f9e74e68c51707793d",
+        "bytes": 33253,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/behaviorism/watson-1929-battle-behaviorism.html"
+      }
+    },
+    {
+      "id": "pavlov-1927-conditioned-reflexes",
+      "title": "Conditioned Reflexes: An Investigation of the Physiological Activity of the Cerebral Cortex",
+      "slot": "identity_history",
+      "source_kind": "translated_primary_book",
+      "landing_url": "https://psychclassics.yorku.ca/Pavlov/",
+      "download_url": "https://psychclassics.yorku.ca/Pavlov/",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Publicly readable source; cache privately unless an explicit open license or public-domain status is stated.",
+      "status": "retrieved",
+      "authors": [
+        "Ivan P. Pavlov",
+        "G. V. Anrep (translator)"
+      ],
+      "issued": "1927",
+      "retrieval": {
+        "retrieved_at": "2026-07-28T10:28:47+00:00",
+        "sha256": "e5474ab57fc61265dbbc8445c5842b3642995eb973a3f743eb2df22ce9c7f5f4",
+        "bytes": 5875,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/behaviorism/pavlov-1927-conditioned-reflexes.html"
+      }
+    },
+    {
+      "id": "skinner-1950-theories-learning-necessary",
+      "title": "Are Theories of Learning Necessary?",
+      "slot": "theory_methods",
+      "source_kind": "primary_theory_article",
+      "landing_url": "https://psychclassics.yorku.ca/Skinner/Theories/",
+      "download_url": "https://psychclassics.yorku.ca/Skinner/Theories/",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Publicly readable source; cache privately unless an explicit open license or public-domain status is stated.",
+      "status": "retrieved",
+      "authors": [
+        "B. F. Skinner"
+      ],
+      "issued": "1950",
+      "retrieval": {
+        "retrieved_at": "2026-07-28T10:29:47+00:00",
+        "sha256": "3d8d8a4b9dda57d8fd77f638eb3bbbfa61748eeca47f3a173237caad4751d50e",
+        "bytes": 71807,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/behaviorism/skinner-1950-theories-learning-necessary.html"
+      }
+    },
+    {
+      "id": "moore-2001-behaviorism-debut-review",
+      "title": "Behaviorism Makes Its Debut: A Review of Lattal and Chase's Behavior Theory and Philosophy",
+      "slot": "independent_critique",
+      "source_kind": "peer_reviewed_book_review",
+      "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1193761/",
+      "download_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1193761/",
+      "access_status": "open_fulltext",
+      "rights_note": "Open full text via PubMed Central and Europe PMC.",
+      "status": "retrieved",
+      "issued": "2001",
+      "retrieval": {
+        "retrieved_at": "2026-07-28T10:31:49+00:00",
+        "sha256": "9a3c549c77645a408545fa1750ab582df68d56ba1abfcc7a57cf742c5ede8daf",
+        "bytes": 127098,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/behaviorism/moore-2001-behaviorism-debut-review.html"
+      }
+    },
+    {
+      "id": "kim-2019-current-diversification-behaviorism",
+      "title": "Current Diversification of Behaviorism",
+      "slot": "empirical_status",
+      "source_kind": "peer_reviewed_conceptual_review",
+      "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7198672/",
+      "download_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7198672/",
+      "access_status": "open_fulltext",
+      "rights_note": "Open full text via PubMed Central and Europe PMC; maps current variants rather than validating every behaviorist claim.",
+      "status": "retrieved",
+      "issued": "2019",
+      "retrieval": {
+        "retrieved_at": "2026-07-28T10:31:51+00:00",
+        "sha256": "b5d1538eabc0b654ab067ba0f2203ff5714fe765639689474d83bc134391a7d3",
+        "bytes": 195838,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/behaviorism/kim-2019-current-diversification-behaviorism.html"
+      }
+    },
+    {
+      "id": "abai-2026-about",
+      "title": "About Us",
+      "slot": "current_status",
+      "source_kind": "professional_organization_self_description",
+      "landing_url": "https://www.abainternational.org/about-us.aspx",
+      "download_url": "https://www.abainternational.org/about-us.aspx",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Official Association for Behavior Analysis International self-description; use only for present institutional scope.",
+      "status": "retrieved",
+      "issued": "retrieved 2026",
+      "retrieval": {
+        "retrieved_at": "2026-07-28T10:29:57+00:00",
+        "sha256": "c07cf57ce581120f0aadb27400dc413ea9f40563ae32ea0e68b6b2b1b894a1df",
+        "bytes": 43088,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/behaviorism/abai-2026-about.html"
+      }
+    },
+    {
+      "id": "skinner-science-human-behavior-personal-copy",
+      "title": "Science and Human Behavior (B. F. Skinner Foundation digital copy)",
+      "slot": "primary_works",
+      "source_kind": "candidate_primary_book_version",
+      "landing_url": "https://www.bfskinner.org/publications/books/",
+      "access_status": "privately_observed_unredistributable",
+      "rights_note": "The linked PDF states that transferring the electronic document violates copyright and limits it to individual use.",
+      "status": "excluded",
+      "exclusion_reason": "Do not retrieve or cache a copy whose embedded terms prohibit transfer; seek a qualifying edition or authorized user-supplied copy."
+    }
+  ],
+  "status": "audited"
 }

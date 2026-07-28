@@ -5,42 +5,187 @@
   "slots": {
     "identity_history": {
       "description": "Independent scholarly identity and historical placement",
-      "status": "not_searched"
+      "status": "searched_no_qualifying_source"
     },
     "primary_works": {
       "description": "Primary works or first-generation programme statements",
-      "status": "not_searched"
+      "status": "searched_no_qualifying_source"
     },
     "theory_methods": {
       "description": "Core concepts, methods and internal variants",
-      "status": "not_searched"
+      "status": "covered"
     },
     "independent_critique": {
       "description": "Independent historiography, criticism or boundary analysis",
-      "status": "not_searched"
+      "status": "covered"
     },
     "empirical_status": {
       "description": "Empirical tests, syntheses, replications or current assessment",
-      "status": "not_searched"
+      "status": "covered"
     },
     "current_status": {
       "description": "Contemporary continuation, institutions or present disciplinary status",
-      "status": "not_searched"
+      "status": "covered"
     },
     "clinical_outcomes": {
       "description": "Systematic reviews, meta-analyses or comparative outcome research",
-      "status": "not_searched"
+      "status": "covered"
     },
     "safety_guidelines": {
       "description": "Guidelines, limitations, adverse effects or contraindications",
-      "status": "not_searched"
+      "status": "covered"
     },
     "cultural_language_context": {
       "description": "Non-English, local, cultural or knowledge-sovereignty context where applicable",
-      "status": "not_searched"
+      "status": "searched_no_qualifying_source"
     }
   },
-  "searches": [],
-  "items": [],
-  "status": "not_started"
+  "searches": [
+    {
+      "searched_at": "2026-07-28",
+      "system": "Gestalt therapy institutes and EAGT",
+      "queries": [
+        "introduction to Gestalt therapy PDF",
+        "EAGT current organization research committee",
+        "EAGT code of ethics"
+      ],
+      "purpose": "Theory, practice, institutional continuity and safety standards"
+    },
+    {
+      "searched_at": "2026-07-28",
+      "system": "Gestalt Psychotherapy Research Database / journal sites",
+      "queries": [
+        "Gestalt Therapy Effectiveness systematic review 2019",
+        "Gestalt therapy trauma review"
+      ],
+      "purpose": "Independent outcome and limitation evidence"
+    },
+    {
+      "searched_at": "2026-07-28",
+      "system": "Historical full-text archives and library catalogues",
+      "queries": [
+        "Perls Hefferline Goodman Gestalt Therapy 1951 full text authorized"
+      ],
+      "purpose": "Foundational book access boundary; lending and personal-use copies excluded"
+    }
+  ],
+  "items": [
+    {
+      "id": "gestalt-institute-2011-introduction",
+      "title": "An Introduction to Gestalt Therapy",
+      "slot": "theory_methods",
+      "source_kind": "professional_training_overview",
+      "landing_url": "https://gestalttherapy.org/wp-content/uploads/2021/09/intro_to_gestalt_therapy_2_2011.pdf",
+      "download_url": "https://gestalttherapy.org/wp-content/uploads/2021/09/intro_to_gestalt_therapy_2_2011.pdf",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Publicly readable training-institute PDF; cache privately and treat as practitioner framing.",
+      "status": "retrieved",
+      "issued": "2011",
+      "retrieval": {
+        "retrieved_at": "2026-07-28T10:32:15+00:00",
+        "sha256": "34f9973ac6355aa61a685d0b2d40b12a642be9419738d6d76b931e613e8c732d",
+        "bytes": 2409020,
+        "media_type": "application/pdf",
+        "cache_key": ".private-sources/gestalt-therapy/gestalt-institute-2011-introduction.pdf"
+      }
+    },
+    {
+      "id": "raffagnino-2019-gestalt-effectiveness-review",
+      "title": "Gestalt Therapy Effectiveness: A Systematic Review of Empirical Evidence",
+      "slot": "clinical_outcomes",
+      "source_kind": "systematic_review",
+      "landing_url": "https://gestaltresearch.org/gprdb/gestalt-therapy-effectiveness-systematic-review-empirical-evidence",
+      "download_url": "https://gestaltresearch.org/sites/default/files/2022-05/Gestalt_Therapy_Effectiveness_A_Systematic_Review.pdf",
+      "access_status": "open_fulltext",
+      "rights_note": "Downloadable systematic-review PDF; the review itself describes a small and heterogeneous evidence base.",
+      "status": "retrieved",
+      "authors": [
+        "Rosalba Raffagnino"
+      ],
+      "issued": "2019",
+      "identifiers": {
+        "doi": "10.4236/jss.2019.76005"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-28T10:32:19+00:00",
+        "sha256": "017a1d11ead786d9d1a27c8de81572babe50f0b5974c0d8dfad6fa565295f465",
+        "bytes": 659621,
+        "media_type": "application/pdf",
+        "cache_key": ".private-sources/gestalt-therapy/raffagnino-2019-gestalt-effectiveness-review.pdf"
+      }
+    },
+    {
+      "id": "eagt-home",
+      "title": "European Association for Gestalt Therapy",
+      "slot": "current_status",
+      "source_kind": "professional_organization_self_description",
+      "landing_url": "https://eagt.org/home/",
+      "download_url": "https://eagt.org/home/",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Official EAGT self-description; use for current organizational scope only.",
+      "status": "retrieved",
+      "retrieval": {
+        "retrieved_at": "2026-07-28T10:32:24+00:00",
+        "sha256": "120532008a1795a98509cb47b66b138dbd4e9027b4bd18a012e224be35f2e7e7",
+        "bytes": 78544,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/gestalt-therapy/eagt-home.html"
+      }
+    },
+    {
+      "id": "eagt-research-committee",
+      "title": "EAGT Research Committee",
+      "slot": "empirical_status",
+      "source_kind": "professional_research_programme",
+      "landing_url": "https://eagt.org/home/home/gt-menu/what-is-eagt-2/research-committee/",
+      "download_url": "https://eagt.org/home/home/gt-menu/what-is-eagt-2/research-committee/",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Official EAGT research-committee description; documents research activity, not an efficacy verdict.",
+      "status": "retrieved",
+      "retrieval": {
+        "retrieved_at": "2026-07-28T10:32:28+00:00",
+        "sha256": "c33e873c1a992382778e68be0b64cbdf9c0234d3ac778db84dec913b2c5a6d63",
+        "bytes": 77329,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/gestalt-therapy/eagt-research-committee.html"
+      }
+    },
+    {
+      "id": "eagt-codes-of-ethics",
+      "title": "Codes of Ethics",
+      "slot": "safety_guidelines",
+      "source_kind": "professional_ethics_guideline",
+      "landing_url": "https://eagt.org/home/home/gt-menu/what-is-eagt/codes-of-ethics/",
+      "download_url": "https://eagt.org/home/home/gt-menu/what-is-eagt/codes-of-ethics/",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Official EAGT ethics page; jurisdictional and professional scope remain European and organization-specific.",
+      "status": "retrieved",
+      "retrieval": {
+        "retrieved_at": "2026-07-28T10:32:31+00:00",
+        "sha256": "a92ada0d8fdea194a9adb472c42fa5fc6d99f645a15f0f11632ad4fa491d30f8",
+        "bytes": 68840,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/gestalt-therapy/eagt-codes-of-ethics.html"
+      }
+    },
+    {
+      "id": "raffagnino-2019-database-record",
+      "title": "Gestalt Therapy Effectiveness database record",
+      "slot": "independent_critique",
+      "source_kind": "specialist_bibliographic_record",
+      "landing_url": "https://gestaltresearch.org/gprdb/gestalt-therapy-effectiveness-systematic-review-empirical-evidence",
+      "download_url": "https://gestaltresearch.org/gprdb/gestalt-therapy-effectiveness-systematic-review-empirical-evidence",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Specialist research database record; kept separately from the article body for provenance and indexing, not as independent outcome evidence.",
+      "status": "retrieved",
+      "retrieval": {
+        "retrieved_at": "2026-07-28T10:32:34+00:00",
+        "sha256": "135cec890ea3a6285362e4d2cbbfc5cd497d1e7deed06526d949b7047be33f9e",
+        "bytes": 46544,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/gestalt-therapy/raffagnino-2019-database-record.html"
+      }
+    }
+  ],
+  "status": "audited"
 }

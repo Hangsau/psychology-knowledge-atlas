@@ -5,34 +5,193 @@
   "slots": {
     "identity_history": {
       "description": "Independent scholarly identity and historical placement",
-      "status": "not_searched"
+      "status": "covered"
     },
     "primary_works": {
       "description": "Primary works or first-generation programme statements",
-      "status": "not_searched"
+      "status": "covered"
     },
     "theory_methods": {
       "description": "Core concepts, methods and internal variants",
-      "status": "not_searched"
+      "status": "covered"
     },
     "independent_critique": {
       "description": "Independent historiography, criticism or boundary analysis",
-      "status": "not_searched"
+      "status": "searched_no_qualifying_source"
     },
     "empirical_status": {
       "description": "Empirical tests, syntheses, replications or current assessment",
-      "status": "not_searched"
+      "status": "covered"
     },
     "current_status": {
       "description": "Contemporary continuation, institutions or present disciplinary status",
-      "status": "not_searched"
+      "status": "covered"
     },
     "cultural_language_context": {
       "description": "Non-English, local, cultural or knowledge-sovereignty context where applicable",
-      "status": "not_searched"
+      "status": "searched_no_qualifying_source"
     }
   },
-  "searches": [],
-  "items": [],
-  "status": "not_started"
+  "searches": [
+    {
+      "searched_at": "2026-07-28",
+      "system": "Project Gutenberg / York University Classics",
+      "queries": [
+        "Kohler Gestalt Psychology 1929 full text",
+        "Wertheimer 1923 laws organization perceptual forms",
+        "Kohler Gestalt Psychology Today 1959"
+      ],
+      "purpose": "Foundational texts and mature programme statements"
+    },
+    {
+      "searched_at": "2026-07-28",
+      "system": "National Academy of Sciences / scholarly repositories",
+      "queries": [
+        "Wolfgang Kohler biographical memoir",
+        "Gestalt perceptual grouping empirical model open access"
+      ],
+      "purpose": "Independent history and present empirical descendants"
+    },
+    {
+      "searched_at": "2026-07-28",
+      "system": "Society for Gestalt Theory and its Applications",
+      "queries": [
+        "GTA about Gestalt theory current"
+      ],
+      "purpose": "Current institutional continuation"
+    }
+  ],
+  "items": [
+    {
+      "id": "kohler-1929-gestalt-psychology",
+      "title": "Gestalt Psychology",
+      "slot": "primary_works",
+      "source_kind": "primary_book",
+      "landing_url": "https://www.gutenberg.org/ebooks/79014",
+      "download_url": "https://www.gutenberg.org/cache/epub/79014/pg79014-images.html",
+      "access_status": "public_domain_fulltext",
+      "rights_note": "Project Gutenberg public-domain transcription of the 1929 Liveright edition; preserve this edition identity.",
+      "status": "retrieved",
+      "authors": [
+        "Wolfgang Köhler"
+      ],
+      "issued": "1929; Project Gutenberg 2026",
+      "retrieval": {
+        "retrieved_at": "2026-07-28T10:31:57+00:00",
+        "sha256": "f2851f43570ce60f1543c6fe27a12dac64fb0e6a9ce40da210dd8ffe969ca2ce",
+        "bytes": 784835,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/gestalt-psychology/kohler-1929-gestalt-psychology.html"
+      }
+    },
+    {
+      "id": "wertheimer-1923-laws-organization-perceptual-forms",
+      "title": "Laws of Organization in Perceptual Forms",
+      "slot": "primary_works",
+      "source_kind": "translated_primary_article",
+      "landing_url": "https://psychclassics.yorku.ca/Wertheimer/Forms/forms",
+      "download_url": "https://psychclassics.yorku.ca/Wertheimer/Forms/forms",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Publicly readable source; cache privately unless an explicit open license or public-domain status is stated.",
+      "status": "retrieved",
+      "authors": [
+        "Max Wertheimer"
+      ],
+      "issued": "1923/1938",
+      "retrieval": {
+        "retrieved_at": "2026-07-28T10:31:59+00:00",
+        "sha256": "1b30d1fad93ac7073308be2e895e3dc2068be29fd9077711fbe135a77fb3ca11",
+        "bytes": 36025,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/gestalt-psychology/wertheimer-1923-laws-organization-perceptual-forms.html"
+      }
+    },
+    {
+      "id": "kohler-1959-gestalt-psychology-today",
+      "title": "Gestalt Psychology Today",
+      "slot": "theory_methods",
+      "source_kind": "primary_retrospective_address",
+      "landing_url": "https://psychclassics.yorku.ca/Kohler/today.htm",
+      "download_url": "https://psychclassics.yorku.ca/Kohler/today.htm",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Publicly readable source; cache privately unless an explicit open license or public-domain status is stated.",
+      "status": "retrieved",
+      "authors": [
+        "Wolfgang Köhler"
+      ],
+      "issued": "1959",
+      "retrieval": {
+        "retrieved_at": "2026-07-28T10:32:02+00:00",
+        "sha256": "a9afe9898b99206ef6b5e216f0e0cd7403036ccaec41a47d01c27f4a37d2de94",
+        "bytes": 39849,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/gestalt-psychology/kohler-1959-gestalt-psychology-today.html"
+      }
+    },
+    {
+      "id": "neisser-2002-wolfgang-kohler-memoir",
+      "title": "Wolfgang Köhler: Biographical Memoir",
+      "slot": "identity_history",
+      "source_kind": "scholarly_biographical_memoir",
+      "landing_url": "https://www.nationalacademies.org/read/10470/chapter/11",
+      "download_url": "https://www.nationalacademies.org/read/10470/chapter/11",
+      "access_status": "open_fulltext",
+      "rights_note": "Official National Academy of Sciences biographical memoir PDF.",
+      "status": "retrieved",
+      "authors": [
+        "Ulric Neisser"
+      ],
+      "issued": "2002",
+      "retrieval": {
+        "retrieved_at": "2026-07-28T10:34:12+00:00",
+        "sha256": "fd63d8bce61244f28599037782e3ad535ab2216b79856e1f8ba78dcbcec8003a",
+        "bytes": 432534,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/gestalt-psychology/neisser-2002-wolfgang-kohler-memoir.html"
+      }
+    },
+    {
+      "id": "wagemans-etal-2012-century-gestalt-part-two",
+      "title": "A Century of Gestalt Psychology in Visual Perception II: Conceptual and Theoretical Foundations",
+      "slot": "empirical_status",
+      "source_kind": "peer_reviewed_review",
+      "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3728284/",
+      "download_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3728284/",
+      "access_status": "open_fulltext",
+      "rights_note": "Open full text via PubMed Central and Europe PMC; evaluates visual-perception research descendants, not the whole historical school.",
+      "status": "retrieved",
+      "issued": "2012",
+      "identifiers": {
+        "doi": "10.1037/a0029334",
+        "pmcid": "PMC3728284",
+        "pmid": "22845750"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-28T10:34:15+00:00",
+        "sha256": "f24f36c7292cefc3a4c95dac51b9af530a753d9a81cc69c1d0c6852d5628458b",
+        "bytes": 502798,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/gestalt-psychology/wagemans-etal-2012-century-gestalt-part-two.html"
+      }
+    },
+    {
+      "id": "gta-about-current",
+      "title": "About the Society for Gestalt Theory and its Applications",
+      "slot": "current_status",
+      "source_kind": "professional_organization_self_description",
+      "landing_url": "https://en.gestalttheory.net/index.php?page=about-gta",
+      "download_url": "https://en.gestalttheory.net/index.php?page=about-gta",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Official scientific association self-description; institutional continuation must not be equated with universal disciplinary acceptance.",
+      "status": "retrieved",
+      "retrieval": {
+        "retrieved_at": "2026-07-28T10:32:12+00:00",
+        "sha256": "974a4429d66a9438bfee923717048c8e733dc7e27a9523c27fb15f0dd7d4996d",
+        "bytes": 12861,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/gestalt-psychology/gta-about-current.html"
+      }
+    }
+  ],
+  "status": "audited"
 }

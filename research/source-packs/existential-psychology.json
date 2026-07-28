@@ -5,34 +5,167 @@
   "slots": {
     "identity_history": {
       "description": "Independent scholarly identity and historical placement",
-      "status": "not_searched"
+      "status": "covered"
     },
     "primary_works": {
       "description": "Primary works or first-generation programme statements",
-      "status": "not_searched"
+      "status": "searched_no_qualifying_source"
     },
     "theory_methods": {
       "description": "Core concepts, methods and internal variants",
-      "status": "not_searched"
+      "status": "searched_no_qualifying_source"
     },
     "independent_critique": {
       "description": "Independent historiography, criticism or boundary analysis",
-      "status": "not_searched"
+      "status": "covered"
     },
     "empirical_status": {
       "description": "Empirical tests, syntheses, replications or current assessment",
-      "status": "not_searched"
+      "status": "covered"
     },
     "current_status": {
       "description": "Contemporary continuation, institutions or present disciplinary status",
-      "status": "not_searched"
+      "status": "covered"
     },
     "cultural_language_context": {
       "description": "Non-English, local, cultural or knowledge-sovereignty context where applicable",
-      "status": "not_searched"
+      "status": "covered"
     }
   },
-  "searches": [],
-  "items": [],
-  "status": "not_started"
+  "searches": [
+    {
+      "searched_at": "2026-07-28",
+      "system": "PubMed / university repositories",
+      "queries": [
+        "existential therapies meta-analysis Vos Craig Cooper full text",
+        "existential therapy systematic review open access"
+      ],
+      "purpose": "Empirical synthesis and scope limits"
+    },
+    {
+      "searched_at": "2026-07-28",
+      "system": "APA / professional societies",
+      "queries": [
+        "APA handbook humanistic existential psychology",
+        "International Society Science Existential Psychology current"
+      ],
+      "purpose": "Identity, research domains and current continuation"
+    },
+    {
+      "searched_at": "2026-07-28",
+      "system": "Portuguese-language BVS-PePSIC and primary-work catalogues",
+      "queries": [
+        "psicoterapia humanista fenomenológica existencial revisão sistemática",
+        "Frankl May existential psychology primary full text authorized"
+      ],
+      "purpose": "Non-English context and primary-work access boundary"
+    }
+  ],
+  "items": [
+    {
+      "id": "vos-craig-cooper-2015-existential-meta-analysis",
+      "title": "Existential Therapies: A Meta-Analysis of Their Effects on Psychological Outcomes",
+      "slot": "empirical_status",
+      "source_kind": "systematic_review_meta_analysis",
+      "landing_url": "https://pubmed.ncbi.nlm.nih.gov/25045907/",
+      "download_url": "https://clinica.ispa.pt/sites/default/files/22._vos_et_al_2015.pdf",
+      "access_status": "repository_manuscript",
+      "rights_note": "Public university-hosted PDF; preserve journal-version metadata and repository-copy provenance.",
+      "status": "retrieved",
+      "authors": [
+        "Joël Vos",
+        "Meghan Craig",
+        "Mick Cooper"
+      ],
+      "issued": "2015",
+      "identifiers": {
+        "doi": "10.1037/a0037167",
+        "pmid": "25045907"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-28T10:34:36+00:00",
+        "sha256": "4b346c50dd7ae06f28f84da7cf4af5d059a66d27fe962d356a2a082cd24e6662",
+        "bytes": 332853,
+        "media_type": "application/pdf",
+        "cache_key": ".private-sources/existential-psychology/vos-craig-cooper-2015-existential-meta-analysis.pdf"
+      }
+    },
+    {
+      "id": "existential-therapy-chronic-pain-2025",
+      "title": "Existential Therapy for Treating Chronic Pain: A Scoping Review",
+      "slot": "independent_critique",
+      "source_kind": "scoping_review",
+      "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12637014/",
+      "download_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12637014/fullTextXML",
+      "access_status": "open_fulltext",
+      "rights_note": "Open full text via PubMed Central; narrow chronic-pain scope and scoping-review design.",
+      "status": "retrieved",
+      "issued": "2025",
+      "retrieval": {
+        "retrieved_at": "2026-07-28T10:34:41+00:00",
+        "sha256": "d2ef3b7f10f23b178aa65d214ed411309db88cf8c34cb9e2408c532dc79a12de",
+        "bytes": 111497,
+        "media_type": "application/xml",
+        "cache_key": ".private-sources/existential-psychology/existential-therapy-chronic-pain-2025.xml"
+      }
+    },
+    {
+      "id": "issep-home",
+      "title": "International Society for the Science of Existential Psychology",
+      "slot": "current_status",
+      "source_kind": "professional_organization_self_description",
+      "landing_url": "https://www.issep.org/",
+      "download_url": "https://www.issep.org/",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Official society self-description; documents active research community, not consensus on particular theories.",
+      "status": "retrieved",
+      "issued": "retrieved 2026",
+      "retrieval": {
+        "retrieved_at": "2026-07-28T10:34:43+00:00",
+        "sha256": "244d5f8fff8f7309f4d78a0b7d2c2c5309d54f44a339c626509b17ae56aa28ff",
+        "bytes": 462689,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/existential-psychology/issep-home.html"
+      }
+    },
+    {
+      "id": "ahp-existential-currents-history",
+      "title": "What Is Humanistic Psychology: Historical Review and Existential Currents",
+      "slot": "identity_history",
+      "source_kind": "professional_organization_history",
+      "landing_url": "https://ahpweb.org/what-is-humanistic-psychology/",
+      "download_url": "https://ahpweb.org/what-is-humanistic-psychology/",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Official Association for Humanistic Psychology history discussing Rollo May and European existential and phenomenological currents; self-description, not independent validation.",
+      "status": "retrieved",
+      "retrieval": {
+        "retrieved_at": "2026-07-28T10:37:38+00:00",
+        "sha256": "3e9e9fcd074188dfb644a549ea1e2807fe4c35bb165d0e6e9e77dcab073321b1",
+        "bytes": 336012,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/existential-psychology/ahp-existential-currents-history.html"
+      }
+    },
+    {
+      "id": "pepsic-2024-humanistic-phenomenological-existential-review",
+      "title": "Humanistic, Phenomenological and Existential Psychotherapy: Qualitative Systematic Literature Review",
+      "slot": "cultural_language_context",
+      "source_kind": "systematic_qualitative_review",
+      "landing_url": "https://pepsic.bvsalud.org/scielo.php?lng=pt&nrm=iso&pid=S2359-07692024000300604&script=sci_arttext",
+      "download_url": "https://pepsic.bvsalud.org/scielo.php?lng=pt&nrm=iso&pid=S2359-07692024000300604&script=sci_arttext",
+      "access_status": "open_fulltext",
+      "rights_note": "Portuguese-language open journal full text; preserves a Latin American methodological perspective and does not stand in for all cultures.",
+      "status": "retrieved",
+      "issued": "2024",
+      "language": "pt",
+      "retrieval": {
+        "retrieved_at": "2026-07-28T10:34:50+00:00",
+        "sha256": "fd951d84952bfd59f3a57e0106b5548d9a0ecdee4c476c7b88377f40210ae486",
+        "bytes": 110202,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/existential-psychology/pepsic-2024-humanistic-phenomenological-existential-review.html"
+      }
+    }
+  ],
+  "status": "audited"
 }

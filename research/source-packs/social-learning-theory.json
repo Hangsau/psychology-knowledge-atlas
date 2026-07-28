@@ -5,34 +5,247 @@
   "slots": {
     "identity_history": {
       "description": "Independent scholarly identity and historical placement",
-      "status": "not_searched"
+      "status": "covered"
     },
     "primary_works": {
       "description": "Primary works or first-generation programme statements",
-      "status": "not_searched"
+      "status": "covered"
     },
     "theory_methods": {
       "description": "Core concepts, methods and internal variants",
-      "status": "not_searched"
+      "status": "covered"
     },
     "independent_critique": {
       "description": "Independent historiography, criticism or boundary analysis",
-      "status": "not_searched"
+      "status": "covered"
     },
     "empirical_status": {
       "description": "Empirical tests, syntheses, replications or current assessment",
-      "status": "not_searched"
+      "status": "covered"
     },
     "current_status": {
       "description": "Contemporary continuation, institutions or present disciplinary status",
-      "status": "not_searched"
+      "status": "covered"
     },
     "cultural_language_context": {
       "description": "Non-English, local, cultural or knowledge-sovereignty context where applicable",
-      "status": "not_searched"
+      "status": "searched_no_qualifying_source"
     }
   },
-  "searches": [],
-  "items": [],
-  "status": "not_started"
+  "searches": [
+    {
+      "searched_at": "2026-07-28",
+      "system": "York University Classics / university repositories",
+      "queries": [
+        "Bandura Ross Ross 1961 transmission aggression full text",
+        "Bandura 1991 social cognitive self regulation PDF"
+      ],
+      "purpose": "Foundational experiment and later theory boundary"
+    },
+    {
+      "searched_at": "2026-07-28",
+      "system": "PubMed Central / Europe PMC",
+      "queries": [
+        "observational learning radical behavioristic viewpoint",
+        "observational learning interbehavioral",
+        "social versus nonsocial learning meta-analysis",
+        "motor observational learning systematic review"
+      ],
+      "purpose": "Competing explanations and empirical syntheses"
+    },
+    {
+      "searched_at": "2026-07-28",
+      "system": "Stanford institutional pages",
+      "queries": [
+        "Albert Bandura official profile social learning social cognitive theory"
+      ],
+      "purpose": "Historical identity and current legacy"
+    }
+  ],
+  "items": [
+    {
+      "id": "bandura-ross-ross-1961-transmission-aggression",
+      "title": "Transmission of Aggression Through Imitation of Aggressive Models",
+      "slot": "primary_works",
+      "source_kind": "primary_experiment",
+      "landing_url": "https://psychclassics.yorku.ca/Bandura/bobo.htm",
+      "download_url": "https://psychclassics.yorku.ca/Bandura/bobo.htm",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Publicly readable source; cache privately unless an explicit open license or public-domain status is stated.",
+      "status": "retrieved",
+      "authors": [
+        "Albert Bandura",
+        "Dorothea Ross",
+        "Sheila A. Ross"
+      ],
+      "issued": "1961",
+      "identifiers": {
+        "doi": "10.1037/h0045925"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-28T10:29:59+00:00",
+        "sha256": "e43172d5291446e1b9f1ce1547f84589fef1322d8d1632f01e62bc7dd1d5b058",
+        "bytes": 38459,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/social-learning-theory/bandura-ross-ross-1961-transmission-aggression.html"
+      }
+    },
+    {
+      "id": "bandura-1991-social-cognitive-self-regulation",
+      "title": "Social Cognitive Theory of Self-Regulation",
+      "slot": "theory_methods",
+      "source_kind": "primary_theory_article",
+      "landing_url": "https://ssrlsig.org/wp-content/uploads/2018/02/bandura-1991-soc-cog-theory.pdf",
+      "download_url": "https://ssrlsig.org/wp-content/uploads/2018/02/bandura-1991-soc-cog-theory.pdf",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Publicly readable source; cache privately unless an explicit open license or public-domain status is stated.",
+      "status": "retrieved",
+      "authors": [
+        "Albert Bandura"
+      ],
+      "issued": "1991",
+      "identifiers": {
+        "doi": "10.1016/0749-5978(91)90022-L"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-28T10:30:02+00:00",
+        "sha256": "ad5865866235247af60cefe512c84fa53b11841214fc3945651fe51ef5d44f80",
+        "bytes": 2811975,
+        "media_type": "application/pdf",
+        "cache_key": ".private-sources/social-learning-theory/bandura-1991-social-cognitive-self-regulation.pdf"
+      }
+    },
+    {
+      "id": "deguchi-1984-observational-learning-radical-behavioristic",
+      "title": "Observational Learning from a Radical-Behavioristic Viewpoint",
+      "slot": "independent_critique",
+      "source_kind": "peer_reviewed_theoretical_critique",
+      "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2741741/",
+      "download_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2741741/?page=-1",
+      "access_status": "open_fulltext",
+      "rights_note": "Public full text through PubMed Central; presents a competing radical-behavioristic account of Bandura's distinguishing features.",
+      "status": "retrieved",
+      "authors": [
+        "Hikaru Deguchi"
+      ],
+      "issued": "1984",
+      "identifiers": {
+        "doi": "10.1007/BF03391892",
+        "pmcid": "PMC2741741",
+        "pmid": "22478602"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-28T10:31:54+00:00",
+        "sha256": "14d58c937bc88e7ad32182342f6b50f4c089aacbcaaa5108ce9071dfdc54dac6",
+        "bytes": 121409,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/social-learning-theory/deguchi-1984-observational-learning-radical-behavioristic.html"
+      }
+    },
+    {
+      "id": "fryling-johnston-hayes-2011-observational-learning",
+      "title": "Understanding Observational Learning: An Interbehavioral Approach",
+      "slot": "identity_history",
+      "source_kind": "peer_reviewed_theoretical_review",
+      "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3139552/",
+      "download_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3139552/?report=xml",
+      "access_status": "open_fulltext",
+      "rights_note": "Alternate retrievable representation retained only if its body differs; audit hashes prevent treating duplicate bodies as independent evidence.",
+      "status": "retrieved",
+      "authors": [
+        "Mitch J. Fryling",
+        "Chris Johnston",
+        "Linda J. Hayes"
+      ],
+      "issued": "2011",
+      "identifiers": {
+        "doi": "10.1007/BF03393102",
+        "pmcid": "PMC3139552",
+        "pmid": "22532764"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-28T10:30:08+00:00",
+        "sha256": "5d7e3b8b61f93f471ca7bdefac232662106ba13c79b1ff8826a2f01eb83f6b0e",
+        "bytes": 194882,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/social-learning-theory/fryling-johnston-hayes-2011-observational-learning.html"
+      }
+    },
+    {
+      "id": "renzini-etal-2022-social-nonsocial-learning-meta-analysis",
+      "title": "Learning Under Social Versus Nonsocial Uncertainty: A Meta-Analytic Approach",
+      "slot": "empirical_status",
+      "source_kind": "systematic_review_meta_analysis",
+      "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9374892/",
+      "download_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9374892/fullTextXML",
+      "access_status": "open_fulltext",
+      "rights_note": "Open full text via PubMed Central and Europe PMC; broader comparative learning research, not a direct test of every Bandura proposition.",
+      "status": "retrieved",
+      "authors": [
+        "Mario Martinez-Saito",
+        "Elena Gorina"
+      ],
+      "issued": "2022",
+      "identifiers": {
+        "doi": "10.1002/hbm.25948",
+        "pmcid": "PMC9374892",
+        "pmid": "35620870"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-28T10:30:12+00:00",
+        "sha256": "b666aab18bc3c163ca549290ce3733982f86b41db4e139c07dfc61eca9073610",
+        "bytes": 313510,
+        "media_type": "application/xml",
+        "cache_key": ".private-sources/social-learning-theory/renzini-etal-2022-social-nonsocial-learning-meta-analysis.xml"
+      }
+    },
+    {
+      "id": "mccullagh-etal-2022-motor-observational-learning",
+      "title": "Use of Observational Learning to Promote Motor Skill Learning in Physical Education: A Systematic Review",
+      "slot": "empirical_status",
+      "source_kind": "systematic_review",
+      "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9407861/",
+      "download_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9407861/fullTextXML",
+      "access_status": "open_fulltext",
+      "rights_note": "Open full text via PubMed Central and Europe PMC; limited to motor-skill observational learning.",
+      "status": "retrieved",
+      "authors": [
+        "Yankun Han",
+        "Syed Kamaruzaman Bin Syed Ali",
+        "Lifu Ji"
+      ],
+      "issued": "2022",
+      "identifiers": {
+        "doi": "10.3390/ijerph191610109",
+        "pmcid": "PMC9407861",
+        "pmid": "36011744"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-28T10:30:16+00:00",
+        "sha256": "e179514e42c0cb0f8e4a91698f7f638a35d589855e2ff1d0e52fcb1f9e9251f3",
+        "bytes": 177428,
+        "media_type": "application/xml",
+        "cache_key": ".private-sources/social-learning-theory/mccullagh-etal-2022-motor-observational-learning.xml"
+      }
+    },
+    {
+      "id": "stanford-casbs-bandura-profile",
+      "title": "Albert Bandura",
+      "slot": "current_status",
+      "source_kind": "official_institutional_profile",
+      "landing_url": "https://casbs.stanford.edu/people/albert-bandura",
+      "download_url": "https://casbs.stanford.edu/people/albert-bandura",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Official Stanford CASBS profile; documents scholarly identity and legacy, not empirical validity.",
+      "status": "retrieved",
+      "retrieval": {
+        "retrieved_at": "2026-07-28T10:30:19+00:00",
+        "sha256": "7f2da3cad92c4c612c0fae39e17b1fb5958d88a4a484c275e84cc3d93624dd9d",
+        "bytes": 39935,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/social-learning-theory/stanford-casbs-bandura-profile.html"
+      }
+    }
+  ],
+  "status": "audited"
 }
