@@ -6,10 +6,10 @@
 phase: P2-SC
 unit: forty-eight-target-source-corpus
 status: in_progress
-base_commit: 6f2aeb3
+base_commit: 2e1704e
 started_at: 2026-07-28
 objective: 先為原版48項研究目標完成可恢復、可稽核的來源蒐集，再開始閱讀、建立主張或撰寫內容
-active_target: individual-psychology
+active_target: psychoanalysis
 canonical_inputs:
   - research/targets.json
   - research/source-packs/*.json
@@ -26,7 +26,10 @@ completed_items:
   - individual-psychology pilot 已完成所有來源槽位初次系統搜尋並標為 audited
   - individual-psychology 已下載並雜湊驗證10筆全文／正式網頁：兩本英文原典版本、一份1912德文原典校對轉錄、歷史／理論／批判／實證／文化及當代延續材料
   - 明示排除一份雖可公開連線、但文件內宣告僅限訂閱者個人使用的 Understanding Human Nature 數位版，待找公版替代
-next_action: individual-psychology pilot 已 audited；依 research/targets.json 順序分批處理其餘47項，不建立正文。非英語只在原始語言、地方傳統或翻譯／版本差異影響正確性時補，不設配額
+  - structuralism 已 audited：8筆全文／正式網頁，涵蓋Wundt德文原典與英譯、Titchener原典、方法、批判、歷史轉折及機構延續邊界
+  - functionalism 已 audited：8筆全文／正式網頁，涵蓋James兩卷、Dewey、Angell、Calkins、早期實驗、歷史轉折及APA當代學科定義
+  - 目前3/48來源包 audited；跨包重複的Angell與Watson正文以相同SHA-256辨識，不當成不同來源正文灌水
+next_action: 依 research/targets.json 順序處理 psychoanalysis，再分批處理其餘44項，不建立正文。非英語只在原始語言、地方傳統或翻譯／版本差異影響正確性時補，不設配額
 ```
 
 ## P3-S COMPLETION RECORD

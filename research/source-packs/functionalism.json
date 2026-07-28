@@ -5,34 +5,248 @@
   "slots": {
     "identity_history": {
       "description": "Independent scholarly identity and historical placement",
-      "status": "not_searched"
+      "status": "covered"
     },
     "primary_works": {
       "description": "Primary works or first-generation programme statements",
-      "status": "not_searched"
+      "status": "covered"
     },
     "theory_methods": {
       "description": "Core concepts, methods and internal variants",
-      "status": "not_searched"
+      "status": "covered"
     },
     "independent_critique": {
       "description": "Independent historiography, criticism or boundary analysis",
-      "status": "not_searched"
+      "status": "covered"
     },
     "empirical_status": {
       "description": "Empirical tests, syntheses, replications or current assessment",
-      "status": "not_searched"
+      "status": "covered"
     },
     "current_status": {
       "description": "Contemporary continuation, institutions or present disciplinary status",
-      "status": "not_searched"
+      "status": "covered"
     },
     "cultural_language_context": {
       "description": "Non-English, local, cultural or knowledge-sovereignty context where applicable",
-      "status": "not_searched"
+      "status": "searched_no_qualifying_source"
     }
   },
-  "searches": [],
-  "items": [],
-  "status": "not_started"
+  "searches": [
+    {
+      "searched_at": "2026-07-28",
+      "system": "Project Gutenberg / York University Classics",
+      "queries": [
+        "William James Principles Psychology full text",
+        "Dewey reflex arc psychology",
+        "Angell province functional psychology",
+        "Calkins reconciliation structural functional psychology"
+      ],
+      "purpose": "Primary programme texts and internal differences"
+    },
+    {
+      "searched_at": "2026-07-28",
+      "system": "Journal and institutional repositories",
+      "queries": [
+        "John Dewey early Chicago functionalism",
+        "William James functionalism history scholarly open access",
+        "William James Society legacy"
+      ],
+      "purpose": "Historical placement and later intellectual continuation"
+    },
+    {
+      "searched_at": "2026-07-28",
+      "system": "Non-English catalogues and searches",
+      "queries": [
+        "Funktionalismus Psychologie James Dewey Primärquelle Übersetzung"
+      ],
+      "purpose": "Value check only; the programme's primary publication language is English and no non-English source adds an original-language or local-tradition boundary"
+    }
+  ],
+  "items": [
+    {
+      "id": "james-1890-principles-psychology-volume-1",
+      "title": "The Principles of Psychology, Volume 1",
+      "authors": [
+        "William James"
+      ],
+      "issued": "1890",
+      "slot": "primary_works",
+      "source_kind": "primary_book",
+      "identifiers": {
+        "gutenberg": "57628"
+      },
+      "landing_url": "https://www.gutenberg.org/ebooks/57628",
+      "download_url": "https://www.gutenberg.org/cache/epub/57628/pg57628-images.html",
+      "access_status": "public_domain_fulltext",
+      "rights_note": "Project Gutenberg public-domain transcription; volume identity retained.",
+      "status": "retrieved",
+      "retrieval": {
+        "retrieved_at": "2026-07-28T08:57:07+00:00",
+        "sha256": "a9011dceca31e44d44211e38be4ec9948a6b5fdee810f932abbdb7bc63614a18",
+        "bytes": 2102808,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/functionalism/james-1890-principles-psychology-volume-1.html"
+      }
+    },
+    {
+      "id": "james-1890-principles-psychology-volume-2",
+      "title": "The Principles of Psychology, Volume 2",
+      "authors": [
+        "William James"
+      ],
+      "issued": "1890",
+      "slot": "primary_works",
+      "source_kind": "primary_book",
+      "identifiers": {
+        "gutenberg": "57634"
+      },
+      "landing_url": "https://www.gutenberg.org/ebooks/57634",
+      "download_url": "https://www.gutenberg.org/cache/epub/57634/pg57634-images.html",
+      "access_status": "public_domain_fulltext",
+      "rights_note": "Project Gutenberg public-domain transcription; volume identity retained.",
+      "status": "retrieved",
+      "retrieval": {
+        "retrieved_at": "2026-07-28T08:57:12+00:00",
+        "sha256": "2943501fdbfb14a45f7ac799e16700abd999b335d91449e94abe07612fabf1e7",
+        "bytes": 2074110,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/functionalism/james-1890-principles-psychology-volume-2.html"
+      }
+    },
+    {
+      "id": "dewey-1896-reflex-arc-concept",
+      "title": "The Reflex Arc Concept in Psychology",
+      "authors": [
+        "John Dewey"
+      ],
+      "issued": "1896",
+      "slot": "theory_methods",
+      "source_kind": "primary_journal_article",
+      "landing_url": "https://psychclassics.yorku.ca/Dewey/reflex.htm",
+      "download_url": "https://psychclassics.yorku.ca/Dewey/reflex.htm",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "York University scholarly transcription of the Psychological Review article; private cache only.",
+      "status": "retrieved",
+      "retrieval": {
+        "retrieved_at": "2026-07-28T08:57:14+00:00",
+        "sha256": "eecdecc625b4b1e271e0ca90308f12aacb4edbc6ad822cca67ac8c8d569de2ce",
+        "bytes": 33841,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/functionalism/dewey-1896-reflex-arc-concept.html"
+      }
+    },
+    {
+      "id": "angell-1907-province-functional-psychology",
+      "title": "The Province of Functional Psychology",
+      "authors": [
+        "James Rowland Angell"
+      ],
+      "issued": "1907",
+      "slot": "identity_history",
+      "source_kind": "primary_presidential_address",
+      "landing_url": "https://psychclassics.yorku.ca/Angell/functional.htm",
+      "download_url": "https://psychclassics.yorku.ca/Angell/functional.htm",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Primary systematizing address; distinguishes several meanings of functional psychology rather than defining one uniform doctrine.",
+      "status": "retrieved",
+      "retrieval": {
+        "retrieved_at": "2026-07-28T08:57:17+00:00",
+        "sha256": "7830d5d69f1e4c2c935049f73676755dce619b76f62b565f0095fc7e28b95799",
+        "bytes": 74609,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/functionalism/angell-1907-province-functional-psychology.html"
+      }
+    },
+    {
+      "id": "angell-moore-1896-reaction-time-attention-habit",
+      "title": "Reaction-Time: A Study in Attention and Habit",
+      "authors": [
+        "James Rowland Angell",
+        "Addison W. Moore"
+      ],
+      "issued": "1896",
+      "slot": "empirical_status",
+      "source_kind": "primary_empirical_article",
+      "landing_url": "https://psychclassics.yorku.ca/Angell/reaction-time.htm",
+      "download_url": "https://psychclassics.yorku.ca/Angell/reaction-time.htm",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Early empirical study associated with Chicago functionalism; it exemplifies programme practice and does not validate all functionalist doctrine.",
+      "status": "retrieved",
+      "retrieval": {
+        "retrieved_at": "2026-07-28T08:57:20+00:00",
+        "sha256": "5822608bf04cde28e5402f2e0e10fe9759dce1f49290a27e08e612fca1563edd",
+        "bytes": 42299,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/functionalism/angell-moore-1896-reaction-time-attention-habit.html"
+      }
+    },
+    {
+      "id": "calkins-1906-reconciliation-structural-functional",
+      "title": "A Reconciliation Between Structural and Functional Psychology",
+      "authors": [
+        "Mary Whiton Calkins"
+      ],
+      "issued": "1906",
+      "slot": "independent_critique",
+      "source_kind": "contemporary_boundary_analysis",
+      "landing_url": "https://psychclassics.yorku.ca/Calkins/reconciliation.htm",
+      "download_url": "https://psychclassics.yorku.ca/Calkins/reconciliation.htm",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Contemporary analysis that argues the procedures can supplement one another; prevents a simplistic winner-versus-loser narrative.",
+      "status": "retrieved",
+      "retrieval": {
+        "retrieved_at": "2026-07-28T08:57:22+00:00",
+        "sha256": "bb9e41511f2ed70751f65856d0f6fe1610b103242d699aa98c2fdb80eb5f49b9",
+        "bytes": 51609,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/functionalism/calkins-1906-reconciliation-structural-functional.html"
+      }
+    },
+    {
+      "id": "watson-1913-psychology-behaviorist-views",
+      "title": "Psychology as the Behaviorist Views It",
+      "authors": [
+        "John B. Watson"
+      ],
+      "issued": "1913",
+      "slot": "identity_history",
+      "source_kind": "historical_transition_primary_article",
+      "landing_url": "https://psychclassics.yorku.ca/Watson/views.htm",
+      "download_url": "https://psychclassics.yorku.ca/Watson/views.htm",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Documents a later programme that rejected consciousness-centered psychology; use as transition evidence, not proof that functionalism simply became behaviorism.",
+      "status": "retrieved",
+      "retrieval": {
+        "retrieved_at": "2026-07-28T08:57:25+00:00",
+        "sha256": "1006ed20b2b06b740f2aabe89a1972349ab92d62587f94a072008d91030dbef5",
+        "bytes": 50582,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/functionalism/watson-1913-psychology-behaviorist-views.html"
+      }
+    },
+    {
+      "id": "apa-dictionary-functionalism",
+      "title": "Functionalism",
+      "authors": [
+        "American Psychological Association"
+      ],
+      "issued": "2018",
+      "slot": "current_status",
+      "source_kind": "current_professional_dictionary",
+      "landing_url": "https://dictionary.apa.org/functionalism",
+      "download_url": "https://dictionary.apa.org/functionalism",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Current APA Dictionary entry used to document present disciplinary reference usage and historical framing; it is not evidence that functionalism remains an active organized school.",
+      "status": "retrieved",
+      "retrieval": {
+        "retrieved_at": "2026-07-28T08:59:23+00:00",
+        "sha256": "c24074f1d98f1ddc20c6697d4471574880827afa042d6736b277ffd45c66a1d4",
+        "bytes": 13979,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/functionalism/apa-dictionary-functionalism.html"
+      }
+    }
+  ],
+  "status": "audited"
 }

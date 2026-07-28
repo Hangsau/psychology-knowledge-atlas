@@ -5,34 +5,247 @@
   "slots": {
     "identity_history": {
       "description": "Independent scholarly identity and historical placement",
-      "status": "not_searched"
+      "status": "covered"
     },
     "primary_works": {
       "description": "Primary works or first-generation programme statements",
-      "status": "not_searched"
+      "status": "covered"
     },
     "theory_methods": {
       "description": "Core concepts, methods and internal variants",
-      "status": "not_searched"
+      "status": "covered"
     },
     "independent_critique": {
       "description": "Independent historiography, criticism or boundary analysis",
-      "status": "not_searched"
+      "status": "covered"
     },
     "empirical_status": {
       "description": "Empirical tests, syntheses, replications or current assessment",
-      "status": "not_searched"
+      "status": "covered"
     },
     "current_status": {
       "description": "Contemporary continuation, institutions or present disciplinary status",
-      "status": "not_searched"
+      "status": "covered"
     },
     "cultural_language_context": {
       "description": "Non-English, local, cultural or knowledge-sovereignty context where applicable",
-      "status": "not_searched"
+      "status": "covered"
     }
   },
-  "searches": [],
-  "items": [],
-  "status": "not_started"
+  "searches": [
+    {
+      "searched_at": "2026-07-28",
+      "system": "Internet Archive / Wikimedia Commons / Library of Congress",
+      "queries": [
+        "Wundt Principles of Physiological Psychology 1904 full text",
+        "Wundt Grundzüge 1874 digital",
+        "Titchener Outline of Psychology 1896 PDF"
+      ],
+      "purpose": "Primary books, scans and edition boundaries"
+    },
+    {
+      "searched_at": "2026-07-28",
+      "system": "York University Classics in the History of Psychology",
+      "queries": [
+        "Titchener Postulates Structural Psychology",
+        "Titchener Structural and Functional Psychology",
+        "Angell functional psychology",
+        "Watson behaviorist views"
+      ],
+      "purpose": "Programme statements, contemporary criticism and school transition"
+    },
+    {
+      "searched_at": "2026-07-28",
+      "system": "Professional organizations and institutional repositories",
+      "queries": [
+        "Society of Experimental Psychologists Titchener history",
+        "Titchener textbook psychology full text"
+      ],
+      "purpose": "Experimental practice and institutional continuation without equating continuation with structuralism"
+    }
+  ],
+  "items": [
+    {
+      "id": "wundt-1874-grundzuege-de",
+      "title": "Grundzüge der physiologischen Psychologie",
+      "authors": [
+        "Wilhelm Wundt"
+      ],
+      "issued": "1874",
+      "language": "de",
+      "slot": "cultural_language_context",
+      "source_kind": "original_language_primary_book",
+      "landing_url": "https://archive.org/details/b21905393",
+      "download_url": "https://archive.org/download/b21905393/b21905393.pdf",
+      "access_status": "public_domain_fulltext",
+      "rights_note": "Royal College of Physicians of Edinburgh scan via Internet Archive; retain as the 1874 German edition rather than merging it with later editions or the 1904 English translation.",
+      "status": "retrieved",
+      "retrieval": {
+        "retrieved_at": "2026-07-28T08:55:26+00:00",
+        "sha256": "7c4dbe6648a1747ec3b38cd2aeaba089aaad8c5c50386aa338e8bec2c675b5f5",
+        "bytes": 64661516,
+        "media_type": "application/pdf",
+        "cache_key": ".private-sources/structuralism/wundt-1874-grundzuege-de.pdf"
+      }
+    },
+    {
+      "id": "wundt-1904-principles-physiological-psychology-en",
+      "title": "Principles of Physiological Psychology",
+      "authors": [
+        "Wilhelm Wundt",
+        "Edward Bradford Titchener (translator)"
+      ],
+      "issued": "1904",
+      "language": "en",
+      "slot": "primary_works",
+      "source_kind": "translated_primary_book",
+      "landing_url": "https://commons.wikimedia.org/wiki/File:Principles_of_physiological_psychology_(IA_principlesofphys00wundiala).pdf",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Principles_of_physiological_psychology_%28IA_principlesofphys00wundiala%29.pdf",
+      "access_status": "public_domain_fulltext",
+      "rights_note": "Public-domain scan of the English translation; this is not the 1874 German first edition.",
+      "status": "retrieved",
+      "retrieval": {
+        "retrieved_at": "2026-07-28T08:55:29+00:00",
+        "sha256": "d23385feef99c8f92edf466e2fadfd468bc9d4f4708e65520427c5517079c90f",
+        "bytes": 23233396,
+        "media_type": "application/pdf",
+        "cache_key": ".private-sources/structuralism/wundt-1904-principles-physiological-psychology-en.pdf"
+      }
+    },
+    {
+      "id": "titchener-1896-outline-psychology",
+      "title": "An Outline of Psychology",
+      "authors": [
+        "Edward Bradford Titchener"
+      ],
+      "issued": "1896",
+      "slot": "primary_works",
+      "source_kind": "primary_book",
+      "landing_url": "https://www.loc.gov/item/09024178/",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/f/f5/An_outline_of_psychology_%28IA_outlineofpsychol01titc%29.pdf",
+      "access_status": "public_domain_fulltext",
+      "rights_note": "1896 public-domain edition; do not substitute the expanded 1907 edition silently.",
+      "status": "retrieved",
+      "retrieval": {
+        "retrieved_at": "2026-07-28T08:55:33+00:00",
+        "sha256": "6b72631cbe264d67a4638da6d7b5324cea6fd0ea416037b471eaef737e21d8da",
+        "bytes": 14876515,
+        "media_type": "application/pdf",
+        "cache_key": ".private-sources/structuralism/titchener-1896-outline-psychology.pdf"
+      }
+    },
+    {
+      "id": "titchener-1898-postulates-structural-psychology",
+      "title": "The Postulates of a Structural Psychology",
+      "authors": [
+        "Edward Bradford Titchener"
+      ],
+      "issued": "1898",
+      "slot": "theory_methods",
+      "source_kind": "primary_journal_article",
+      "identifiers": {
+        "doi": "10.2307/2177110"
+      },
+      "landing_url": "https://psychclassics.yorku.ca/Titchener/structuralism.htm",
+      "download_url": "https://psychclassics.yorku.ca/Titchener/structuralism.htm",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "York University scholarly transcription of the 1898 Philosophical Review article; private cache only.",
+      "status": "retrieved",
+      "retrieval": {
+        "retrieved_at": "2026-07-28T08:55:35+00:00",
+        "sha256": "15b3c2eebd89df9aaf6fe1c49356a097a232ce225425aef4a9980bb82e71fe96",
+        "bytes": 45277,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/structuralism/titchener-1898-postulates-structural-psychology.html"
+      }
+    },
+    {
+      "id": "titchener-1910-textbook-psychology",
+      "title": "A Text-book of Psychology",
+      "authors": [
+        "Edward Bradford Titchener"
+      ],
+      "issued": "1910",
+      "slot": "empirical_status",
+      "source_kind": "primary_textbook_experimental_programme",
+      "landing_url": "https://commons.wikimedia.org/wiki/File:A_text-book_of_psychology_(IA_cu31924012541540).pdf",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/e/e9/A_text-book_of_psychology_%28IA_cu31924012541540%29.pdf",
+      "access_status": "public_domain_fulltext",
+      "rights_note": "Public-domain Cornell scan mirrored by Wikimedia Commons; records the mature programme and experimental material, not a modern validation of the school.",
+      "status": "retrieved",
+      "retrieval": {
+        "retrieved_at": "2026-07-28T08:56:55+00:00",
+        "sha256": "0b3e32f2aba88e75d3852216d4c28c897a901605bad2255268a1ae13b58910dd",
+        "bytes": 12746185,
+        "media_type": "application/pdf",
+        "cache_key": ".private-sources/structuralism/titchener-1910-textbook-psychology.pdf"
+      }
+    },
+    {
+      "id": "angell-1907-province-functional-psychology",
+      "title": "The Province of Functional Psychology",
+      "authors": [
+        "James Rowland Angell"
+      ],
+      "issued": "1907",
+      "slot": "independent_critique",
+      "source_kind": "contemporary_rival_school_address",
+      "landing_url": "https://psychclassics.yorku.ca/Angell/functional.htm",
+      "download_url": "https://psychclassics.yorku.ca/Angell/functional.htm",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Contemporary functionalist criticism and overlap analysis; not a neutral retrospective history.",
+      "status": "retrieved",
+      "retrieval": {
+        "retrieved_at": "2026-07-28T08:55:41+00:00",
+        "sha256": "7830d5d69f1e4c2c935049f73676755dce619b76f62b565f0095fc7e28b95799",
+        "bytes": 74609,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/structuralism/angell-1907-province-functional-psychology.html"
+      }
+    },
+    {
+      "id": "watson-1913-psychology-behaviorist-views",
+      "title": "Psychology as the Behaviorist Views It",
+      "authors": [
+        "John B. Watson"
+      ],
+      "issued": "1913",
+      "slot": "identity_history",
+      "source_kind": "historical_transition_primary_article",
+      "landing_url": "https://psychclassics.yorku.ca/Watson/views.htm",
+      "download_url": "https://psychclassics.yorku.ca/Watson/views.htm",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Primary behaviorist manifesto used to document a later rejection of introspective psychology; it does not by itself establish a single cause of structuralism's decline.",
+      "status": "retrieved",
+      "retrieval": {
+        "retrieved_at": "2026-07-28T08:55:44+00:00",
+        "sha256": "1006ed20b2b06b740f2aabe89a1972349ab92d62587f94a072008d91030dbef5",
+        "bytes": 50582,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/structuralism/watson-1913-psychology-behaviorist-views.html"
+      }
+    },
+    {
+      "id": "sep-current-about-titchener-continuation",
+      "title": "About the Society of Experimental Psychologists",
+      "authors": [
+        "Society of Experimental Psychologists"
+      ],
+      "slot": "current_status",
+      "source_kind": "official_institutional_history",
+      "landing_url": "https://www.sepsych.org/about/",
+      "download_url": "https://www.sepsych.org/about/",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Official self-description. It supports institutional continuity from Titchener's Experimentalists, not continuity of structuralism as a current school.",
+      "status": "retrieved",
+      "retrieval": {
+        "retrieved_at": "2026-07-28T08:55:48+00:00",
+        "sha256": "5edb39ffa2dfe0b444067ccdfd2a1ca6bcca8dce3e3032ff83baff3a9db77bfb",
+        "bytes": 74141,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/structuralism/sep-current-about-titchener-continuation.html"
+      }
+    }
+  ],
+  "status": "audited"
 }
