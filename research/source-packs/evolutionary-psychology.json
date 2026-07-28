@@ -5,34 +5,199 @@
   "slots": {
     "identity_history": {
       "description": "Independent scholarly identity and historical placement",
-      "status": "not_searched"
+      "status": "covered"
     },
     "primary_works": {
       "description": "Primary works or first-generation programme statements",
-      "status": "not_searched"
+      "status": "covered"
     },
     "theory_methods": {
       "description": "Core concepts, methods and internal variants",
-      "status": "not_searched"
+      "status": "covered"
     },
     "independent_critique": {
       "description": "Independent historiography, criticism or boundary analysis",
-      "status": "not_searched"
+      "status": "covered"
     },
     "empirical_status": {
       "description": "Empirical tests, syntheses, replications or current assessment",
-      "status": "not_searched"
+      "status": "covered"
     },
     "current_status": {
       "description": "Contemporary continuation, institutions or present disciplinary status",
-      "status": "not_searched"
+      "status": "covered"
     },
     "cultural_language_context": {
       "description": "Non-English, local, cultural or knowledge-sovereignty context where applicable",
-      "status": "not_searched"
+      "status": "covered"
     }
   },
-  "searches": [],
-  "items": [],
-  "status": "not_started"
+  "searches": [
+    {
+      "searched_at": "2026-07-28",
+      "system": "University of Texas / PubMed Central / HBES / Frontiers / Springer",
+      "queries": [
+        "evolutionary psychology new paradigm Buss 1995 full text",
+        "evolutionary psychology modularity critique",
+        "evolutionary psychology culture cross cultural evidence",
+        "evolutionary psychology preregistered replication"
+      ],
+      "purpose": "Full-text discovery across history, primary sources, theory, critique, evidence, current status, safety and cultural context as applicable"
+    }
+  ],
+  "items": [
+    {
+      "id": "buss-1995-new-paradigm",
+      "title": "Evolutionary Psychology: A New Paradigm for Psychological Science",
+      "slot": "primary_works",
+      "source_kind": "primary_programme_article",
+      "landing_url": "https://labs.la.utexas.edu/buss/files/2015/10/Buss-1995-EP-a-new-paradigm.pdf",
+      "download_url": "https://labs.la.utexas.edu/buss/files/2015/10/Buss-1995-EP-a-new-paradigm.pdf",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Author-lab copy of a foundational programme article; cache privately because redistribution rights are unclear.",
+      "status": "retrieved",
+      "authors": [
+        "David M. Buss"
+      ],
+      "issued": "1995",
+      "retrieval": {
+        "retrieved_at": "2026-07-28T11:09:24+00:00",
+        "sha256": "d0f4414e602ec6f9796b7cb4810e44920e7895d69cb5c83013fad6699af72256",
+        "bytes": 3009308,
+        "media_type": "application/pdf",
+        "cache_key": ".private-sources/evolutionary-psychology/buss-1995-new-paradigm.pdf"
+      }
+    },
+    {
+      "id": "darwin-in-mind-2011",
+      "title": "Darwin in Mind: New Opportunities for Evolutionary Psychology",
+      "slot": "identity_history",
+      "source_kind": "scholarly_review",
+      "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3139638/",
+      "download_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3139638/",
+      "access_status": "open_fulltext",
+      "rights_note": "Open scholarly review that reconstructs field development while arguing for revisions; not a neutral institutional history.",
+      "status": "retrieved",
+      "issued": "2011",
+      "identifiers": {
+        "pmcid": "PMC3139638"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-28T11:09:27+00:00",
+        "sha256": "0caa498f883ea9f297ceb25c926bd1516d1ed661dd95e0cc7e755b590240a489",
+        "bytes": 246999,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/evolutionary-psychology/darwin-in-mind-2011.html"
+      }
+    },
+    {
+      "id": "pietraszewski-wertz-2022-abandon-modularity",
+      "title": "Why Evolutionary Psychology Should Abandon Modularity",
+      "slot": "theory_methods",
+      "source_kind": "peer_reviewed_theoretical_critique",
+      "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8902029/",
+      "download_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8902029/",
+      "access_status": "open_fulltext",
+      "rights_note": "Open theoretical critique of modularity claims within evolutionary psychology; it does not reject evolutionary explanation generally.",
+      "status": "retrieved",
+      "issued": "2022",
+      "identifiers": {
+        "pmcid": "PMC8902029",
+        "doi": "10.1177/1745691621997113"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-28T11:09:30+00:00",
+        "sha256": "aded64f5b1373ce7a33500527be8280f356d3bda445774e403f7e5519152be1f",
+        "bytes": 357040,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/evolutionary-psychology/pietraszewski-wertz-2022-abandon-modularity.html"
+      }
+    },
+    {
+      "id": "hbes-about",
+      "title": "About the Human Behavior and Evolution Society",
+      "slot": "current_status",
+      "source_kind": "professional_association_self_description",
+      "landing_url": "https://www.hbes.com/about/",
+      "download_url": "https://www.hbes.com/about/",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Official interdisciplinary society self-description; HBES is broader than evolutionary psychology.",
+      "status": "retrieved",
+      "retrieval": {
+        "retrieved_at": "2026-07-28T11:09:34+00:00",
+        "sha256": "f36be03ef2183b794b1d26fbb617fec6b672ccc1295a9ddad6b761b75e4cf9d2",
+        "bytes": 114251,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/evolutionary-psychology/hbes-about.html"
+      }
+    },
+    {
+      "id": "sznycer-replications-2020-pride-shame",
+      "title": "Do Pride and Shame Track the Evaluative Psychology of Audiences? Preregistered Replications of Sznycer et al.",
+      "slot": "empirical_status",
+      "source_kind": "preregistered_replication",
+      "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7277259/",
+      "download_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7277259/",
+      "access_status": "open_fulltext",
+      "rights_note": "Open preregistered replications of a specific evolutionary-functional account of shame and pride; results do not generalize to the entire programme.",
+      "status": "retrieved",
+      "issued": "2020",
+      "identifiers": {
+        "pmcid": "PMC7277259",
+        "doi": "10.1098/rsos.191438"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-28T11:20:46+00:00",
+        "sha256": "ed37c939d40ca9d36b980bf51f44f4f48f75ba30387850f187117ecc6cea65ce",
+        "bytes": 204111,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/evolutionary-psychology/sznycer-replications-2020-pride-shame.html"
+      }
+    },
+    {
+      "id": "burke-2020-rapprochement-cultural-psychology",
+      "title": "The Epistemology of Evolutionary Psychology Offers a Rapprochement to Cultural Psychology",
+      "slot": "cultural_language_context",
+      "source_kind": "peer_reviewed_theoretical_article",
+      "landing_url": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2020.579578/full",
+      "download_url": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2020.579578/full",
+      "access_status": "open_fulltext",
+      "rights_note": "Open argument for integration with cultural psychology; an epistemic proposal, not evidence that cross-cultural disputes are settled.",
+      "status": "retrieved",
+      "issued": "2020",
+      "identifiers": {
+        "doi": "10.3389/fpsyg.2020.579578"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-28T11:09:39+00:00",
+        "sha256": "11654be9e6b2ad1888e929f8de9b4215ad92c22cf7544de749d9cc32456e923d",
+        "bytes": 813619,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/evolutionary-psychology/burke-2020-rapprochement-cultural-psychology.html"
+      }
+    },
+    {
+      "id": "cross-cultural-love-mate-preferences-2025",
+      "title": "Cross-cultural Data on Romantic Love and Mate Preferences from 117,293 Participants Across 175 Countries",
+      "slot": "independent_critique",
+      "source_kind": "cross_cultural_dataset_article",
+      "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12219412/",
+      "download_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12219412/",
+      "access_status": "open_fulltext",
+      "rights_note": "Open large cross-cultural dataset; useful for testing universality and variation, not blanket confirmation of evolutionary-psychology claims.",
+      "status": "retrieved",
+      "issued": "2025",
+      "identifiers": {
+        "pmcid": "PMC12219412"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-28T11:09:42+00:00",
+        "sha256": "ddc232e5f0ef3f52b0d5e35dd6fe9b4a2626052ede885af4e36323ce57fa3553",
+        "bytes": 326060,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/evolutionary-psychology/cross-cultural-love-mate-preferences-2025.html"
+      }
+    }
+  ],
+  "status": "audited"
 }

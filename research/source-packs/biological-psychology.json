@@ -5,34 +5,179 @@
   "slots": {
     "identity_history": {
       "description": "Independent scholarly identity and historical placement",
-      "status": "not_searched"
+      "status": "covered"
     },
     "primary_works": {
       "description": "Primary works or first-generation programme statements",
-      "status": "not_searched"
+      "status": "covered"
     },
     "theory_methods": {
       "description": "Core concepts, methods and internal variants",
-      "status": "not_searched"
+      "status": "covered"
     },
     "independent_critique": {
       "description": "Independent historiography, criticism or boundary analysis",
-      "status": "not_searched"
+      "status": "covered"
     },
     "empirical_status": {
       "description": "Empirical tests, syntheses, replications or current assessment",
-      "status": "not_searched"
+      "status": "covered"
     },
     "current_status": {
       "description": "Contemporary continuation, institutions or present disciplinary status",
-      "status": "not_searched"
+      "status": "covered"
     },
     "cultural_language_context": {
       "description": "Non-English, local, cultural or knowledge-sovereignty context where applicable",
-      "status": "not_searched"
+      "status": "searched_no_qualifying_source"
     }
   },
-  "searches": [],
-  "items": [],
-  "status": "not_started"
+  "searches": [
+    {
+      "searched_at": "2026-07-28",
+      "system": "NCBI Bookshelf / Open Textbook Library / Society for Neuroscience / open journals",
+      "queries": [
+        "biological psychology open textbook",
+        "nervous system behavior history neuroscience",
+        "biological reductionism psychology critique",
+        "brain behavior associations review"
+      ],
+      "purpose": "Full-text discovery across history, primary sources, theory, critique, evidence, current status, safety and cultural context as applicable"
+    }
+  ],
+  "items": [
+    {
+      "id": "ncbi-nervous-system-and-behavior",
+      "title": "The Nervous System and Behavior",
+      "slot": "identity_history",
+      "source_kind": "scholarly_book_chapter",
+      "landing_url": "https://www.ncbi.nlm.nih.gov/books/NBK217810/",
+      "download_url": "https://www.ncbi.nlm.nih.gov/books/NBK217810/",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Publicly readable NCBI Bookshelf chapter; historical framing of brain-behavior science, not a complete history of biological psychology.",
+      "status": "retrieved",
+      "retrieval": {
+        "retrieved_at": "2026-07-28T11:09:22+00:00",
+        "sha256": "689e2a3f9d03524fcfe2817568678569fad9f565649c9dbd8e292424593bf57e",
+        "bytes": 188743,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/biological-psychology/ncbi-nervous-system-and-behavior.html"
+      }
+    },
+    {
+      "id": "open-textbook-biological-psychology",
+      "title": "Biological Psychology, Revised Edition",
+      "slot": "theory_methods",
+      "source_kind": "open_textbook",
+      "landing_url": "https://open.umn.edu/opentextbooks/textbooks/biological-psychology",
+      "download_url": "https://rotel.pressbooks.pub/biologicalpsychology/open/download?type=pdf",
+      "access_status": "open_fulltext",
+      "rights_note": "CC BY-NC-SA 4.0 complete revised textbook PDF; used for current field scope and methods, not primary empirical claims.",
+      "status": "retrieved",
+      "authors": [
+        "Michael J. Hove",
+        "Steven A. Martinez"
+      ],
+      "issued": "2024",
+      "retrieval": {
+        "retrieved_at": "2026-07-28T11:27:57+00:00",
+        "sha256": "02692ae58a5e3e187fb40a2a75ccd0a374529d9855d666cb13bd6696bd4acb1f",
+        "bytes": 27691382,
+        "media_type": "application/pdf",
+        "cache_key": ".private-sources/biological-psychology/open-textbook-biological-psychology.pdf"
+      }
+    },
+    {
+      "id": "miller-2010-mistreating-psychology",
+      "title": "Mistreating Psychology in the Decades of the Brain",
+      "slot": "independent_critique",
+      "source_kind": "peer_reviewed_critique",
+      "landing_url": "https://www.psychiatry.wisc.edu/courses/Nitschke/seminar/miller%20perspectives%20psych%20science%202010.pdf",
+      "download_url": "https://www.psychiatry.wisc.edu/courses/Nitschke/seminar/miller%20perspectives%20psych%20science%202010.pdf",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Publicly readable scholarly critique of biological reductionism; does not reject biological methods as such.",
+      "status": "retrieved",
+      "authors": [
+        "Gregory A. Miller"
+      ],
+      "issued": "2010",
+      "identifiers": {
+        "doi": "10.1177/1745691610388774"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-28T11:09:30+00:00",
+        "sha256": "50a3d54e737c0bdf428eda71d4b8d4e54ddcb00ae88bbaa6a3f681f6252aecd6",
+        "bytes": 621580,
+        "media_type": "application/pdf",
+        "cache_key": ".private-sources/biological-psychology/miller-2010-mistreating-psychology.pdf"
+      }
+    },
+    {
+      "id": "barrett-etal-2023-revisiting-brain-behavior-assumptions",
+      "title": "Improving the Study of Brain-Behavior Relationships by Revisiting Basic Assumptions",
+      "slot": "empirical_status",
+      "source_kind": "peer_reviewed_review",
+      "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10012342/",
+      "download_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10012342/",
+      "access_status": "open_fulltext",
+      "rights_note": "Open review of empirical and conceptual limits in brain-behavior inference; directly tests assumptions rather than reducing psychology to neuroimaging.",
+      "status": "retrieved",
+      "issued": "2023",
+      "identifiers": {
+        "pmcid": "PMC10012342",
+        "doi": "10.1016/j.neubiorev.2022.105038"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-28T11:20:46+00:00",
+        "sha256": "b1fd57a76e22d5354cf7c29b4f7428119b03edd40f758e7f3876d3518ccbd8db",
+        "bytes": 284942,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/biological-psychology/barrett-etal-2023-revisiting-brain-behavior-assumptions.html"
+      }
+    },
+    {
+      "id": "society-neuroscience-about",
+      "title": "About the Society for Neuroscience",
+      "slot": "current_status",
+      "source_kind": "professional_association_self_description",
+      "landing_url": "https://www.sfn.org/en/About",
+      "download_url": "https://www.sfn.org/en/About",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Official neuroscience society description; used only as evidence for the adjacent institutional brain-science ecosystem, not equivalence with biological psychology.",
+      "status": "retrieved",
+      "retrieval": {
+        "retrieved_at": "2026-07-28T11:09:36+00:00",
+        "sha256": "5adc9309c99f34d636a52db4d0a37833a40698e8546b113200a9babf0acefb30",
+        "bytes": 116374,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/biological-psychology/society-neuroscience-about.html"
+      }
+    },
+    {
+      "id": "hebb-1949-organization-behavior",
+      "title": "The Organization of Behavior: A Neuropsychological Theory",
+      "slot": "primary_works",
+      "source_kind": "foundational_primary_book",
+      "landing_url": "https://pure.mpg.de/view/item_2346268_3",
+      "download_url": "https://pure.mpg.de/rest/items/item_2346268_3/component/file_2346267/content",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Publicly downloadable publisher version from the Max Planck repository; cache privately because redistribution terms remain unclear.",
+      "status": "retrieved",
+      "authors": [
+        "D. O. Hebb"
+      ],
+      "issued": "1949",
+      "identifiers": {
+        "handle": "11858/00-001M-0000-002B-9E2D-6"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-28T11:28:23+00:00",
+        "sha256": "d4930e5fe699d98b1c82793740386d329a0b824bc33ec80c4d6694717df00f8c",
+        "bytes": 11226123,
+        "media_type": "application/pdf",
+        "cache_key": ".private-sources/biological-psychology/hebb-1949-organization-behavior.pdf"
+      }
+    }
+  ],
+  "status": "audited"
 }

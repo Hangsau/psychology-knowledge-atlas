@@ -5,34 +5,204 @@
   "slots": {
     "identity_history": {
       "description": "Independent scholarly identity and historical placement",
-      "status": "not_searched"
+      "status": "covered"
     },
     "primary_works": {
       "description": "Primary works or first-generation programme statements",
-      "status": "not_searched"
+      "status": "covered"
     },
     "theory_methods": {
       "description": "Core concepts, methods and internal variants",
-      "status": "not_searched"
+      "status": "covered"
     },
     "independent_critique": {
       "description": "Independent historiography, criticism or boundary analysis",
-      "status": "not_searched"
+      "status": "covered"
     },
     "empirical_status": {
       "description": "Empirical tests, syntheses, replications or current assessment",
-      "status": "not_searched"
+      "status": "covered"
     },
     "current_status": {
       "description": "Contemporary continuation, institutions or present disciplinary status",
-      "status": "not_searched"
+      "status": "covered"
     },
     "cultural_language_context": {
       "description": "Non-English, local, cultural or knowledge-sovereignty context where applicable",
-      "status": "not_searched"
+      "status": "covered"
     }
   },
-  "searches": [],
-  "items": [],
-  "status": "not_started"
+  "searches": [
+    {
+      "searched_at": "2026-07-28",
+      "system": "York Classics / Trends in Cognitive Sciences / Cognitive Science Society / PubMed Central / Acta Psychologica Sinica / Nature",
+      "queries": [
+        "cognitive revolution historical perspective full text",
+        "cognitive psychology replication crisis",
+        "Cognitive Science Society history mission",
+        "interactive frameworks cognitive science review"
+      ],
+      "purpose": "Full-text discovery across history, primary sources, theory, critique, evidence, current status, safety and cultural context as applicable"
+    }
+  ],
+  "items": [
+    {
+      "id": "miller-2003-cognitive-revolution",
+      "title": "The Cognitive Revolution: A Historical Perspective",
+      "slot": "identity_history",
+      "source_kind": "historical_review",
+      "landing_url": "https://www.ds3web.it/neuropsychol/Cognition/tcs_miller.pdf",
+      "download_url": "https://www.cs.princeton.edu/~rit/geo/Miller.pdf",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Publicly readable author article; first-person historical reflection requires comparison with independent historiography.",
+      "status": "retrieved",
+      "authors": [
+        "George A. Miller"
+      ],
+      "issued": "2003",
+      "identifiers": {
+        "doi": "10.1016/S1364-6613(03)00029-9"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-28T11:20:46+00:00",
+        "sha256": "9fd8bd4e96ab810f0c3da00b0eaa9d1a457dc2bf0081705f84d9db4131174411",
+        "bytes": 78295,
+        "media_type": "application/pdf",
+        "cache_key": ".private-sources/cognitive-psychology/miller-2003-cognitive-revolution.pdf"
+      }
+    },
+    {
+      "id": "miller-1956-magical-number-seven",
+      "title": "The Magical Number Seven, Plus or Minus Two",
+      "slot": "primary_works",
+      "source_kind": "primary_empirical_article",
+      "landing_url": "https://psychclassics.yorku.ca/Miller/",
+      "download_url": "https://psychclassics.yorku.ca/Miller/",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Publicly readable classic text; cache privately because the page states no open redistribution license.",
+      "status": "retrieved",
+      "authors": [
+        "George A. Miller"
+      ],
+      "issued": "1956",
+      "identifiers": {
+        "doi": "10.1037/h0043158"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-28T11:09:24+00:00",
+        "sha256": "9c499c6e433db670a95bc825392f90efdff267acd5e976e6c1cd05c421d21e92",
+        "bytes": 55477,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/cognitive-psychology/miller-1956-magical-number-seven.html"
+      }
+    },
+    {
+      "id": "butz-etal-2023-interactive-frameworks",
+      "title": "Cognitive Science Progresses Toward Interactive Frameworks",
+      "slot": "theory_methods",
+      "source_kind": "peer_reviewed_review",
+      "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10123086/",
+      "download_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10123086/",
+      "access_status": "open_fulltext",
+      "rights_note": "Open full text; presents interactive frameworks in cognitive science, an interdisciplinary domain broader than cognitive psychology.",
+      "status": "retrieved",
+      "issued": "2023",
+      "identifiers": {
+        "pmcid": "PMC10123086"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-28T11:09:27+00:00",
+        "sha256": "d3a5f2e47685a0bd8ba2d7b18e8f10a3264f779f6407c219e7d534d61e1edadc",
+        "bytes": 387758,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/cognitive-psychology/butz-etal-2023-interactive-frameworks.html"
+      }
+    },
+    {
+      "id": "nature-2023-replication-positive-changes",
+      "title": "The Replication Crisis Has Led to Positive Structural, Procedural, and Community Changes",
+      "slot": "independent_critique",
+      "source_kind": "peer_reviewed_commentary",
+      "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11290608/",
+      "download_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11290608/",
+      "access_status": "open_fulltext",
+      "rights_note": "Open article about reforms following the replication crisis; relevant to cognitive research practice but not exclusive to cognitive psychology.",
+      "status": "retrieved",
+      "issued": "2023",
+      "identifiers": {
+        "pmcid": "PMC11290608"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-28T11:20:49+00:00",
+        "sha256": "f25d9a83c53b05ee3e573cde70c7ef579f3b05eed3ce93638bf6bd868caf45da",
+        "bytes": 381327,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/cognitive-psychology/nature-2023-replication-positive-changes.html"
+      }
+    },
+    {
+      "id": "cognitive-science-society-about",
+      "title": "About the Cognitive Science Society",
+      "slot": "current_status",
+      "source_kind": "professional_association_self_description",
+      "landing_url": "https://cognitivesciencesociety.org/about/",
+      "download_url": "https://cognitivesciencesociety.org/about/",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Official society history and mission; cognitive science is broader than the cognitive-psychology subfield.",
+      "status": "retrieved",
+      "retrieval": {
+        "retrieved_at": "2026-07-28T11:09:38+00:00",
+        "sha256": "03fb0dad22886ea9368068941b229ecf24e388eb23ab7a8f4c9f9d4ef5fbcccd",
+        "bytes": 366880,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/cognitive-psychology/cognitive-science-society-about.html"
+      }
+    },
+    {
+      "id": "acta-psychologica-sinica-2016-replication-crisis",
+      "title": "The Replication Crisis in Psychological Research",
+      "slot": "cultural_language_context",
+      "source_kind": "chinese_scholarly_review",
+      "landing_url": "https://journal.psych.ac.cn/xlkxjz/EN/10.3724/SP.J.1042.2016.01504",
+      "download_url": "https://journal.psych.ac.cn/xlkxjz/EN/10.3724/SP.J.1042.2016.01504",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Chinese journal source with an English interface; use for Chinese scholarly reception of reproducibility debates, not as a stand-in for all cultural contexts.",
+      "status": "retrieved",
+      "issued": "2016",
+      "identifiers": {
+        "doi": "10.3724/SP.J.1042.2016.01504"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-28T11:09:42+00:00",
+        "sha256": "3264ca1d6d04eaebc2e5109e5990f805241412a884ab220565cc18fa70068b18",
+        "bytes": 48794,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/cognitive-psychology/acta-psychologica-sinica-2016-replication-crisis.html"
+      }
+    },
+    {
+      "id": "zwaan-etal-2018-making-replication-mainstream",
+      "title": "Making Replication Mainstream",
+      "slot": "empirical_status",
+      "source_kind": "methodological_review",
+      "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6099602/",
+      "download_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6099602/",
+      "access_status": "open_fulltext",
+      "rights_note": "Open methods article; assesses replication reform across psychology with direct relevance to cognitive research, not the empirical status of every cognitive construct.",
+      "status": "retrieved",
+      "issued": "2018",
+      "identifiers": {
+        "pmcid": "PMC6099602",
+        "doi": "10.1017/S0140525X17001972"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-28T11:09:44+00:00",
+        "sha256": "285b01d1269ffab1eddbf44af20dde9e141a873e5cfc02a90948e092dd690b6a",
+        "bytes": 214093,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/cognitive-psychology/zwaan-etal-2018-making-replication-mainstream.html"
+      }
+    }
+  ],
+  "status": "audited"
 }

@@ -6,10 +6,10 @@
 phase: P2-SC
 unit: forty-eight-target-source-corpus
 status: in_progress
-base_commit: 982dcff
+base_commit: 593551e
 started_at: 2026-07-28
 objective: 先為原版48項研究目標完成可恢復、可稽核的來源蒐集，再開始閱讀、建立主張或撰寫內容
-active_target: person-centered-therapy
+active_target: dbt
 canonical_inputs:
   - research/targets.json
   - research/source-packs/*.json
@@ -35,7 +35,12 @@ completed_items:
   - 學派與治療分支保持分離：Gestalt心理學的知覺研究不冒充Gestalt治療療效；社會學習理論與後期社會認知理論保留版本邊界；存在治療的窄範圍meta-analysis不升格為整個存在心理學的驗證
   - 移除3筆APA Incapsula防機器人空殼並以AHP正式歷史／現況頁替代；修正錯誤PMC識別與書目資料；Skinner Foundation明示個人使用、不得轉傳的數位本列為excluded且不快取
   - 目前15/48來源包 audited、累計101筆實際正文／正式網頁；跨包相同正文依SHA-256辨識，不當成不同來源正文灌水
-next_action: 依 research/targets.json 順序從 person-centered-therapy 開始，繼續採較大批次處理其餘33項，不建立正文。非英語只在原始語言、地方傳統或翻譯／版本差異影響正確性時補，不設配額
+  - 第三個大批次完成5包 audited、36筆實際正文／正式網頁：person-centered-therapy 7、cognitive-psychology 7、cbt 9、biological-psychology 6、evolutionary-psychology 7
+  - 下載後辨識並移除2份3 KB防機器人假頁面，替換4個403／TLS失敗端點；另把生物心理學的書目／目錄頁升級成27.7 MB開放教科書全文與11.2 MB Hebb 1949原典全文
+  - 個人中心治療補入西語歷史研究；CBT補入文化調適meta-analysis與自助式網路CBT惡化風險研究；不以一般醫療的person-centred care冒充person-centred therapy
+  - 認知心理學與跨領域cognitive science、生物心理學與neuroscience、演化心理學與廣義human behavior and evolution均保留範圍邊界
+  - 目前20/48來源包 audited、累計137筆實際正文／正式網頁；本批36筆逐一通過大小、MIME、SHA-256、假頁面與批內重複檢查
+next_action: 依 research/targets.json 順序從 dbt 開始，繼續採較大批次處理其餘28項，不建立正文。非英語只在原始語言、地方傳統或翻譯／版本差異影響正確性時補，不設配額
 ```
 
 ## P3-S COMPLETION RECORD

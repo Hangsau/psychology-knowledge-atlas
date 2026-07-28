@@ -5,42 +5,248 @@
   "slots": {
     "identity_history": {
       "description": "Independent scholarly identity and historical placement",
-      "status": "not_searched"
+      "status": "covered"
     },
     "primary_works": {
       "description": "Primary works or first-generation programme statements",
-      "status": "not_searched"
+      "status": "covered"
     },
     "theory_methods": {
       "description": "Core concepts, methods and internal variants",
-      "status": "not_searched"
+      "status": "covered"
     },
     "independent_critique": {
       "description": "Independent historiography, criticism or boundary analysis",
-      "status": "not_searched"
+      "status": "covered"
     },
     "empirical_status": {
       "description": "Empirical tests, syntheses, replications or current assessment",
-      "status": "not_searched"
+      "status": "covered"
     },
     "current_status": {
       "description": "Contemporary continuation, institutions or present disciplinary status",
-      "status": "not_searched"
+      "status": "covered"
     },
     "clinical_outcomes": {
       "description": "Systematic reviews, meta-analyses or comparative outcome research",
-      "status": "not_searched"
+      "status": "covered"
     },
     "safety_guidelines": {
       "description": "Guidelines, limitations, adverse effects or contraindications",
-      "status": "not_searched"
+      "status": "covered"
     },
     "cultural_language_context": {
       "description": "Non-English, local, cultural or knowledge-sovereignty context where applicable",
-      "status": "not_searched"
+      "status": "covered"
     }
   },
-  "searches": [],
-  "items": [],
-  "status": "not_started"
+  "searches": [
+    {
+      "searched_at": "2026-07-28",
+      "system": "JAMA archives / Beck Institute / PubMed Central",
+      "queries": [
+        "Aaron Beck Thinking and Depression 1963 full text",
+        "CBT meta-analysis efficacy bias",
+        "CBT adverse effects meta-analysis",
+        "culturally adapted CBT meta-analysis"
+      ],
+      "purpose": "Full-text discovery across history, primary sources, theory, critique, evidence, current status, safety and cultural context as applicable"
+    }
+  ],
+  "items": [
+    {
+      "id": "beck-institute-history-cbt",
+      "title": "History of Cognitive Behavior Therapy",
+      "slot": "identity_history",
+      "source_kind": "founder_institute_history",
+      "landing_url": "https://cares.beckinstitute.org/about-cbt/history-of-cbt/",
+      "download_url": "https://cares.beckinstitute.org/about-cbt/history-of-cbt/",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Founder institute self-history; use for chronology and self-description, not independent evaluation.",
+      "status": "retrieved",
+      "retrieval": {
+        "retrieved_at": "2026-07-28T11:09:20+00:00",
+        "sha256": "ab8c7c8494fb0c1b05c5b3ef1135d3ee5989ecc8ff1747bc67aa0956e79ef400",
+        "bytes": 68119,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/cbt/beck-institute-history-cbt.html"
+      }
+    },
+    {
+      "id": "beck-1963-thinking-depression",
+      "title": "Thinking and Depression: I. Idiosyncratic Content and Cognitive Distortions",
+      "slot": "primary_works",
+      "source_kind": "primary_empirical_theory_article",
+      "landing_url": "https://essex-behavioural-therapy.co.uk/documents/client/Aaron%20T.%20Beck%20Article%2C%201963.pdf",
+      "download_url": "https://essex-behavioural-therapy.co.uk/documents/client/Aaron%20T.%20Beck%20Article%2C%201963.pdf",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Publicly readable copy of Beck's primary paper; cache privately because redistribution rights are unclear.",
+      "status": "retrieved",
+      "authors": [
+        "Aaron T. Beck"
+      ],
+      "issued": "1963",
+      "identifiers": {
+        "doi": "10.1001/archpsyc.1963.01720160014002",
+        "pmid": "14045261"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-28T11:09:25+00:00",
+        "sha256": "8e55e6b2c1d72d2d7526fef01456077219ce1883f4b68b7644b9fa47ab9ebc7b",
+        "bytes": 2260534,
+        "media_type": "application/pdf",
+        "cache_key": ".private-sources/cbt/beck-1963-thinking-depression.pdf"
+      }
+    },
+    {
+      "id": "beck-institute-understanding-cbt",
+      "title": "Understanding Cognitive Behavior Therapy",
+      "slot": "theory_methods",
+      "source_kind": "founder_institute_method_description",
+      "landing_url": "https://beckinstitute.org/about/understanding-cbt/",
+      "download_url": "https://beckinstitute.org/about/understanding-cbt/",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Founder institute method description; useful for the contemporary Beckian model, not an independent effectiveness source.",
+      "status": "retrieved",
+      "retrieval": {
+        "retrieved_at": "2026-07-28T11:09:28+00:00",
+        "sha256": "e66d7cd69c69142312ad6fdf395d4b9541cab277bfff7b43a745d091e2d51182",
+        "bytes": 262389,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/cbt/beck-institute-understanding-cbt.html"
+      }
+    },
+    {
+      "id": "cuijpers-etal-2016-cbt-bias-update",
+      "title": "How Effective Are Cognitive Behavior Therapies for Major Depression and Anxiety Disorders?",
+      "slot": "independent_critique",
+      "source_kind": "meta_analysis_bias_adjustment",
+      "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5032489/",
+      "download_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5032489/",
+      "access_status": "open_fulltext",
+      "rights_note": "Open meta-analytic update examining publication bias, trial quality and control-group effects; limited to depression and anxiety.",
+      "status": "retrieved",
+      "issued": "2016",
+      "identifiers": {
+        "pmcid": "PMC5032489"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-28T11:09:31+00:00",
+        "sha256": "8b18215784c35e05548fb74ee4b7114719ee73113c7a6acb30099a752d363257",
+        "bytes": 378053,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/cbt/cuijpers-etal-2016-cbt-bias-update.html"
+      }
+    },
+    {
+      "id": "hofmann-etal-2012-cbt-meta-reviews",
+      "title": "The Efficacy of Cognitive Behavioral Therapy: A Review of Meta-analyses",
+      "slot": "empirical_status",
+      "source_kind": "review_of_meta_analyses",
+      "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3584580/",
+      "download_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3584580/",
+      "access_status": "open_fulltext",
+      "rights_note": "Open review of meta-analyses across disorders; heterogeneous conditions and comparisons require condition-specific interpretation.",
+      "status": "retrieved",
+      "issued": "2012",
+      "identifiers": {
+        "pmcid": "PMC3584580",
+        "doi": "10.1007/s10608-012-9476-1"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-28T11:09:34+00:00",
+        "sha256": "088646899d38303874dc0c0e2cc76d9c65ec08bf86910edfe73a7998d82ea5a0",
+        "bytes": 271712,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/cbt/hofmann-etal-2012-cbt-meta-reviews.html"
+      }
+    },
+    {
+      "id": "beck-institute-about",
+      "title": "About Beck Institute for Cognitive Behavior Therapy",
+      "slot": "current_status",
+      "source_kind": "founder_institute_self_description",
+      "landing_url": "https://beckinstitute.org/about/",
+      "download_url": "https://beckinstitute.org/about/",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Official current institutional self-description; evidence of continuation and training activity only.",
+      "status": "retrieved",
+      "retrieval": {
+        "retrieved_at": "2026-07-28T11:09:37+00:00",
+        "sha256": "7f5f65e60506b1c94432e85b29ae6a130a49a1332364c6dcd9940726a7474d94",
+        "bytes": 270818,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/cbt/beck-institute-about.html"
+      }
+    },
+    {
+      "id": "fordham-etal-2021-cbt-meta-review",
+      "title": "The Evidence for Cognitive Behavioural Therapy in Any Condition, Population or Context",
+      "slot": "clinical_outcomes",
+      "source_kind": "systematic_meta_review",
+      "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7856415/",
+      "download_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7856415/",
+      "access_status": "open_fulltext",
+      "rights_note": "Open panoramic meta-review; umbrella-level conclusions do not replace disorder- and comparator-specific appraisal.",
+      "status": "retrieved",
+      "issued": "2021",
+      "identifiers": {
+        "pmcid": "PMC7856415",
+        "doi": "10.1017/S0033291720005292"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-28T11:09:40+00:00",
+        "sha256": "696bba12aa310907f9e42a00c7c47badf8a07780a089a5779d994e7f962dbeb3",
+        "bytes": 159930,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/cbt/fordham-etal-2021-cbt-meta-review.html"
+      }
+    },
+    {
+      "id": "karyotaki-etal-2018-self-guided-icbt-harm",
+      "title": "Is Self-guided Internet-based Cognitive Behavioural Therapy Harmful?",
+      "slot": "safety_guidelines",
+      "source_kind": "individual_participant_data_meta_analysis",
+      "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6190066/",
+      "download_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6190066/",
+      "access_status": "open_fulltext",
+      "rights_note": "Open IPD meta-analysis of deterioration in self-guided internet CBT; its safety findings are not automatically transferable to therapist-delivered CBT.",
+      "status": "retrieved",
+      "issued": "2018",
+      "identifiers": {
+        "pmcid": "PMC6190066",
+        "doi": "10.1017/S0033291718000648"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-28T11:09:42+00:00",
+        "sha256": "d1f48479b8c68decec8a8371e76834fc264eac850fc0c3d668f5bcdf6c2323da",
+        "bytes": 254316,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/cbt/karyotaki-etal-2018-self-guided-icbt-harm.html"
+      }
+    },
+    {
+      "id": "meta-2026-culturally-adapted-cbt",
+      "title": "The Effectiveness and Outcomes of Culturally Adapted Cognitive Behavioral Therapy Across Common Mental Health Conditions",
+      "slot": "cultural_language_context",
+      "source_kind": "systematic_review_meta_analysis",
+      "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13023538/",
+      "download_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13023538/",
+      "access_status": "open_fulltext",
+      "rights_note": "Open recent meta-analysis of culturally adapted CBT; applicability depends on population, condition and adaptation strategy.",
+      "status": "retrieved",
+      "issued": "2026",
+      "identifiers": {
+        "pmcid": "PMC13023538"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-28T11:09:45+00:00",
+        "sha256": "e84a84bf16865009485cbdf1d7a10b9a4031a41d8bf43a7566e40054ef51ebbf",
+        "bytes": 311834,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/cbt/meta-2026-culturally-adapted-cbt.html"
+      }
+    }
+  ],
+  "status": "audited"
 }

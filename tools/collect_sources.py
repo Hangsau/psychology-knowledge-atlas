@@ -99,7 +99,17 @@ def retrieve(pack_path: Path, item_id: str, maximum: int) -> None:
     destination_dir = ROOT / ".private-sources" / target_id
     destination_dir.mkdir(parents=True, exist_ok=True)
     partial = destination_dir / f"{item_id}.part"
-    request = urllib.request.Request(url, headers={"User-Agent": "psychology-knowledge-atlas/1.0"})
+    request = urllib.request.Request(
+        url,
+        headers={
+            "User-Agent": (
+                "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                "AppleWebKit/537.36 (KHTML, like Gecko) "
+                "Chrome/124.0 Safari/537.36 psychology-knowledge-atlas/1.0"
+            ),
+            "Accept": "text/html,application/xhtml+xml,application/pdf,application/epub+zip;q=0.9,*/*;q=0.8",
+        },
+    )
     try:
         with urllib.request.urlopen(request, timeout=60) as response:
             digest, size, prefix = stream_copy(response, partial, maximum)

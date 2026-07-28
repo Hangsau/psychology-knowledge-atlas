@@ -5,42 +5,209 @@
   "slots": {
     "identity_history": {
       "description": "Independent scholarly identity and historical placement",
-      "status": "not_searched"
+      "status": "covered"
     },
     "primary_works": {
       "description": "Primary works or first-generation programme statements",
-      "status": "not_searched"
+      "status": "covered"
     },
     "theory_methods": {
       "description": "Core concepts, methods and internal variants",
-      "status": "not_searched"
+      "status": "covered"
     },
     "independent_critique": {
       "description": "Independent historiography, criticism or boundary analysis",
-      "status": "not_searched"
+      "status": "covered"
     },
     "empirical_status": {
       "description": "Empirical tests, syntheses, replications or current assessment",
-      "status": "not_searched"
+      "status": "searched_no_qualifying_source"
     },
     "current_status": {
       "description": "Contemporary continuation, institutions or present disciplinary status",
-      "status": "not_searched"
+      "status": "covered"
     },
     "clinical_outcomes": {
       "description": "Systematic reviews, meta-analyses or comparative outcome research",
-      "status": "not_searched"
+      "status": "covered"
     },
     "safety_guidelines": {
       "description": "Guidelines, limitations, adverse effects or contraindications",
-      "status": "not_searched"
+      "status": "covered"
     },
     "cultural_language_context": {
       "description": "Non-English, local, cultural or knowledge-sovereignty context where applicable",
-      "status": "not_searched"
+      "status": "searched_no_qualifying_source"
     }
   },
-  "searches": [],
-  "items": [],
-  "status": "not_started"
+  "searches": [
+    {
+      "searched_at": "2026-07-28",
+      "system": "Psycotherapy journal archives / PCE World / PACJA / PubMed Central / Wiley",
+      "queries": [
+        "Carl Rogers necessary sufficient conditions full text",
+        "person-centred therapy systematic review",
+        "person-centred experiential psychotherapy association statutes",
+        "psychotherapy negative effects systematic review"
+      ],
+      "purpose": "Full-text discovery across history, primary sources, theory, critique, evidence, current status, safety and cultural context as applicable"
+    }
+  ],
+  "items": [
+    {
+      "id": "lietaer-1997-evolucion-rogeriana",
+      "title": "La evolución histórica del paradigma de Carl Rogers y la terapia centrada en el cliente",
+      "slot": "identity_history",
+      "source_kind": "peer_reviewed_historical_review",
+      "landing_url": "https://revistas.uned.es/index.php/rdp/article/view/35286",
+      "download_url": "https://dialnet.unirioja.es/descarga/articulo/2969939.pdf",
+      "access_status": "open_fulltext",
+      "rights_note": "Open Spanish-language historical review; directly traces the move from non-directive to experiential practice and adds language-relevant evidence.",
+      "status": "retrieved",
+      "authors": [
+        "Germain Lietaer"
+      ],
+      "issued": "1997",
+      "identifiers": {
+        "doi": "10.33898/rdp.v8i32.700"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-28T11:20:47+00:00",
+        "sha256": "54e702d2d5c30268f20e8da6c7c2a82a91e44cf28d1b72521b755337c711381e",
+        "bytes": 47387,
+        "media_type": "application/pdf",
+        "cache_key": ".private-sources/person-centered-therapy/lietaer-1997-evolucion-rogeriana.pdf"
+      }
+    },
+    {
+      "id": "rogers-1957-necessary-sufficient",
+      "title": "The Necessary and Sufficient Conditions of Therapeutic Personality Change",
+      "slot": "primary_works",
+      "source_kind": "primary_theory_article",
+      "landing_url": "https://counsellingtutor.com/wp-content/uploads/2019/03/Carl-Rogers-The-Necessary-and-Sufficient-Conditions-of-Therapeutic-Personality-Chang-1-2.pdf",
+      "download_url": "https://counsellingtutor.com/wp-content/uploads/2019/03/Carl-Rogers-The-Necessary-and-Sufficient-Conditions-of-Therapeutic-Personality-Chang-1-2.pdf",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Publicly readable copy of Rogers's primary article; cache privately because redistribution rights are unclear.",
+      "status": "retrieved",
+      "authors": [
+        "Carl R. Rogers"
+      ],
+      "issued": "1957",
+      "identifiers": {
+        "doi": "10.1037/h0045357"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-28T11:09:23+00:00",
+        "sha256": "b9e40e5460015831e61303d759223817500e076694ef06ef44e9f06124689f90",
+        "bytes": 87353,
+        "media_type": "application/pdf",
+        "cache_key": ".private-sources/person-centered-therapy/rogers-1957-necessary-sufficient.pdf"
+      }
+    },
+    {
+      "id": "pce-world-statutes",
+      "title": "Statutes of the World Association for Person Centered and Experiential Psychotherapy and Counseling",
+      "slot": "theory_methods",
+      "source_kind": "professional_association_constitution",
+      "landing_url": "https://www.pce-world.org/images/stories/statutes_wapcepc.pdf",
+      "download_url": "https://www.pce-world.org/images/stories/statutes_wapcepc.pdf",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Official association statutes; use to delimit included person-centred and experiential branches, not to establish efficacy.",
+      "status": "retrieved",
+      "retrieval": {
+        "retrieved_at": "2026-07-28T11:09:27+00:00",
+        "sha256": "85fd463152e2b9ecf9a2c26f9b02d5e4e973a51eacf8172041e0225f6a09fa87",
+        "bytes": 151991,
+        "media_type": "application/pdf",
+        "cache_key": ".private-sources/person-centered-therapy/pce-world-statutes.pdf"
+      }
+    },
+    {
+      "id": "schuenemann-etal-2025-humanistic-comparative-meta-pct",
+      "title": "Allegiance and Treatment Quality as Moderators of the Comparative Effectiveness of Psychotherapy?",
+      "slot": "independent_critique",
+      "source_kind": "systematic_review_meta_analysis",
+      "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11960564/",
+      "download_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11960564/",
+      "access_status": "open_fulltext",
+      "rights_note": "Open full text; comparative humanistic psychotherapy evidence is broader than person-centred therapy and must not be generalized without qualification.",
+      "status": "retrieved",
+      "issued": "2025",
+      "identifiers": {
+        "doi": "10.32872/cpe.9709",
+        "pmcid": "PMC11960564"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-28T11:09:30+00:00",
+        "sha256": "7c9098dde6201c8c959ef78d8c592a990a771ee0fb166973c21e725ecb162c9e",
+        "bytes": 228631,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/person-centered-therapy/schuenemann-etal-2025-humanistic-comparative-meta-pct.html"
+      }
+    },
+    {
+      "id": "pacja-2014-rogerian-supportive-review",
+      "title": "The Effectiveness of Supportive Counselling, Based on Rogerian Principles",
+      "slot": "clinical_outcomes",
+      "source_kind": "systematic_review",
+      "landing_url": "https://pacja.org.au/article/71152-the-effectiveness-of-supportive-counselling-based-on-rogerian-principles-a-systematic-review-of-recent-international-and-australian-research",
+      "download_url": "https://pacja.org.au/article/71152-the-effectiveness-of-supportive-counselling-based-on-rogerian-principles-a-systematic-review-of-recent-international-and-australian-research",
+      "access_status": "open_fulltext",
+      "rights_note": "Open journal article; supportive counselling based on Rogerian principles is related to but not coextensive with person-centred therapy.",
+      "status": "retrieved",
+      "issued": "2014",
+      "identifiers": {
+        "doi": "10.59158/001c.71152"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-28T11:09:34+00:00",
+        "sha256": "a91b727ef802a5d252b855697cdff346c2eb55c0919785c706b6f47dd3c250df",
+        "bytes": 164813,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/person-centered-therapy/pacja-2014-rogerian-supportive-review.html"
+      }
+    },
+    {
+      "id": "pce-world-home",
+      "title": "World Association for Person Centered and Experiential Psychotherapy and Counseling",
+      "slot": "current_status",
+      "source_kind": "professional_association_self_description",
+      "landing_url": "https://www.pce-world.org/",
+      "download_url": "https://www.pce-world.org/",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Official current institutional self-description; evidence of organized continuation only.",
+      "status": "retrieved",
+      "retrieval": {
+        "retrieved_at": "2026-07-28T11:09:38+00:00",
+        "sha256": "1573377098c62f430e51a2d4e01cb377df393dcf546c68ff9d0787ba10774c71",
+        "bytes": 198720,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/person-centered-therapy/pce-world-home.html"
+      }
+    },
+    {
+      "id": "herzog-etal-2019-negative-effects-instruments",
+      "title": "Assessing the Unwanted: A Systematic Review of Instruments Used to Assess Negative Effects of Psychotherapy",
+      "slot": "safety_guidelines",
+      "source_kind": "systematic_review",
+      "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6908878/",
+      "download_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6908878/",
+      "access_status": "open_fulltext",
+      "rights_note": "Open systematic review of harm-measurement instruments across psychotherapy; safety context is not specific to person-centred therapy.",
+      "status": "retrieved",
+      "issued": "2019",
+      "identifiers": {
+        "pmcid": "PMC6908878",
+        "doi": "10.1002/cpp.2341"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-28T11:20:50+00:00",
+        "sha256": "9eee055b90f33119722d2f3a3e50e14e23dc324ba20aef74063b0a7839bc9c00",
+        "bytes": 237394,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/person-centered-therapy/herzog-etal-2019-negative-effects-instruments.html"
+      }
+    }
+  ],
+  "status": "audited"
 }
