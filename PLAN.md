@@ -169,3 +169,10 @@ P2-E 的目的，是驗證命名效應的資料路由與發布安全，不是無
 - Named Effect Card：名稱、別名、popular claim、證據摘要、複現／爭議、邊界條件與相關機制。
 - Popular Claim vs Evidence：把常見說法與文獻實際支持程度並列。
 - Mechanism Ladder：由物理／化學／生物層連到認知、行為與社會層，且每一跳都可追溯到 claim 與 source。
+
+#### P4-M1：夜間亮光 bounded Mechanism Ladder（完成）
+
+- `views/mechanisms/light-circadian-first-slice.json` 只列 P3-M1 的三筆 relation IDs；所有 nodes、claims、evidence、sources、levels 與文字均在 build 時由 canonical records 解參照。
+- 輸出固定保留兩條共享 physical source node 的分叉 hops，不得重排成 light→melatonin→phase。
+- `compares_with` non-proxy relation 在獨立 boundary 區呈現，不計入 mechanism hops。
+- 空、重複、缺失、不安全、未發布與錯誤 relation-type 組合均被拒絕；JSON／Markdown 決定性、原子、並行可重生，完整 73-test suite 通過。

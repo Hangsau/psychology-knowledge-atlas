@@ -17,10 +17,12 @@ sys.path.insert(0, str(ROOT / "tools"))
 from build_views import (
     MAX_CHRONOLOGY_SPEC_BYTES,
     MAX_COMPARISON_SPEC_BYTES,
+    MAX_MECHANISM_SPEC_BYTES,
     MAX_PROFILE_SPEC_BYTES,
     _atomic_write_text,
     _build_chronology_view,
     _build_comparison_view,
+    _build_mechanism_view,
     build,
 )
 from store import LockTimeoutError, atomic_write_json, record_lock
@@ -478,6 +480,89 @@ class FoundationTests(unittest.TestCase):
         self.assertEqual(source["identifiers"]["doi"], "10.1113/JP275501")
         self.assertEqual(source["identifiers"]["pmcid"], "PMC5983136")
         self.assertEqual(validate_repository(self.work), [])
+
+    def test_p4m1_mechanism_view_preserves_branch_and_non_proxy_boundary(self) -> None:
+        build(self.work)
+        dossier = json.loads(
+            (self.work / "views/generated/light-circadian-first-slice.json").read_text(
+                encoding="utf-8"
+            )
+        )
+        self.assertEqual(
+            [node["mechanism_level"] for node in dossier["nodes"]],
+            ["physical", "chemical_molecular", "physiological_system"],
+        )
+        self.assertEqual(len(dossier["hops"]), 2)
+        self.assertEqual(len(dossier["boundaries"]), 1)
+        self.assertEqual(
+            {hop["subject"]["id"] for hop in dossier["hops"]},
+            {"nocturnal-bright-light-exposure"},
+        )
+        self.assertEqual(
+            {hop["object"]["id"] for hop in dossier["hops"]},
+            {"human-circadian-phase-delay-response", "nocturnal-melatonin-suppression"},
+        )
+        self.assertTrue(
+            all(
+                hop["relation"]["relation_type"] == "mechanism_link"
+                and hop["evidence"][0]["claim"]["publishable"] is True
+                and hop["evidence"][0]["short_quote"]
+                for hop in dossier["hops"]
+            )
+        )
+        self.assertEqual(
+            dossier["boundaries"][0]["relation"]["relation_type"], "compares_with"
+        )
+        markdown = (self.work / "views/generated/light-circadian-first-slice.md").read_text(
+            encoding="utf-8"
+        )
+        self.assertIn("不是 light→melatonin→phase 的串行中介鏈", markdown)
+        self.assertIn("Non-proxy 邊界", markdown)
+
+    def test_p4m1_mechanism_view_rejects_bad_specs_and_unsafe_inputs(self) -> None:
+        bad_spec = self.work / "views/mechanisms/bad.json"
+        bad_spec.parent.mkdir(parents=True, exist_ok=True)
+        relation_ids = [
+            "nocturnal-light-mechanism-link-melatonin-suppression",
+            "nocturnal-light-mechanism-link-circadian-phase-delay",
+            "circadian-phase-delay-compares-with-melatonin-suppression",
+        ]
+        base = {
+            "id": "bad",
+            "title": "Bad",
+            "language": "zh-Hant",
+            "relation_ids": relation_ids,
+            "scope_note": "Boundary",
+        }
+        cases = [
+            base | {"relation_ids": []},
+            base | {"relation_ids": [relation_ids[0]] * 3},
+            base | {"relation_ids": relation_ids[:2] + ["missing-relation"]},
+            base | {"relation_ids": relation_ids[:2] + ["../escape"]},
+            base | {"unknown": True},
+        ]
+        for case in cases:
+            with self.subTest(case=case):
+                bad_spec.write_text(json.dumps(case), encoding="utf-8")
+                with self.assertRaises(ValueError):
+                    _build_mechanism_view(self.work, bad_spec)
+        bad_spec.write_text("", encoding="utf-8")
+        with self.assertRaisesRegex(ValueError, "empty mechanism spec"):
+            _build_mechanism_view(self.work, bad_spec)
+        bad_spec.write_text("{", encoding="utf-8")
+        with self.assertRaises(json.JSONDecodeError):
+            _build_mechanism_view(self.work, bad_spec)
+        bad_spec.write_text("x" * (MAX_MECHANISM_SPEC_BYTES + 1), encoding="utf-8")
+        with self.assertRaisesRegex(ValueError, "mechanism spec exceeds"):
+            _build_mechanism_view(self.work, bad_spec)
+
+        good_spec = self.work / "views/mechanisms/light-circadian-first-slice.json"
+        relation_path = self.work / "knowledge/relations/nocturnal-light-mechanism-link-circadian-phase-delay.json"
+        relation = json.loads(relation_path.read_text(encoding="utf-8"))
+        relation["publishable"] = False
+        relation_path.write_text(json.dumps(relation), encoding="utf-8")
+        with self.assertRaisesRegex(ValueError, "not verified and publishable"):
+            _build_mechanism_view(self.work, good_spec)
 
 
     def test_legacy_migration_is_identity_only(self) -> None:

@@ -16,7 +16,24 @@ ROOT = Path(__file__).resolve().parents[1]
 MAX_PROFILE_SPEC_BYTES = 2 * 1024 * 1024
 MAX_COMPARISON_SPEC_BYTES = 2 * 1024 * 1024
 MAX_CHRONOLOGY_SPEC_BYTES = 2 * 1024 * 1024
+MAX_MECHANISM_SPEC_BYTES = 2 * 1024 * 1024
 SAFE_SPEC_ID = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
+MECHANISM_LEVEL_ORDER = {
+    level: index
+    for index, level in enumerate(
+        (
+            "physical",
+            "chemical_molecular",
+            "cellular",
+            "neural_circuit",
+            "physiological_system",
+            "cognitive_affective",
+            "behavioral",
+            "interpersonal_social",
+            "cultural_institutional",
+        )
+    )
+}
 
 
 def _load_directory(directory: Path) -> dict[str, dict[str, Any]]:
@@ -516,6 +533,159 @@ def _build_chronology_view(root: Path, spec_path: Path) -> tuple[Path, Path]:
     return json_output, markdown_output
 
 
+def _validate_mechanism_spec(spec: dict[str, Any], path: Path) -> None:
+    allowed = {"id", "title", "language", "relation_ids", "scope_note"}
+    unknown = set(spec).difference(allowed)
+    if unknown:
+        raise ValueError(f"{path}: unknown mechanism fields {sorted(unknown)}")
+    for field in ("id", "title", "language", "scope_note"):
+        if not isinstance(spec.get(field), str) or not spec[field].strip():
+            raise ValueError(f"{path}: {field} must be a non-empty string")
+    if not SAFE_SPEC_ID.fullmatch(spec["id"]):
+        raise ValueError(f"{path}: id must be a safe slug")
+    relation_ids = spec.get("relation_ids")
+    if not isinstance(relation_ids, list) or len(relation_ids) != 3:
+        raise ValueError(f"{path}: relation_ids must contain exactly three entries")
+    if len(relation_ids) != len(set(relation_ids)):
+        raise ValueError(f"{path}: relation_ids must be unique")
+    for relation_id in relation_ids:
+        if not isinstance(relation_id, str) or not SAFE_SPEC_ID.fullmatch(relation_id):
+            raise ValueError(f"{path}: invalid relation id {relation_id!r}")
+
+
+def _build_mechanism_view(root: Path, spec_path: Path) -> tuple[Path, Path]:
+    if spec_path.stat().st_size == 0:
+        raise ValueError(f"{spec_path}: empty mechanism spec")
+    if spec_path.stat().st_size > MAX_MECHANISM_SPEC_BYTES:
+        raise ValueError(f"{spec_path}: mechanism spec exceeds {MAX_MECHANISM_SPEC_BYTES} bytes")
+    spec = json.loads(spec_path.read_text(encoding="utf-8"))
+    if not isinstance(spec, dict):
+        raise ValueError(f"{spec_path}: mechanism spec must be an object")
+    _validate_mechanism_spec(spec, spec_path)
+
+    entities = _load_directory(root / "catalog" / "entities")
+    claims = _load_directory(root / "knowledge" / "claims")
+    evidence = _load_directory(root / "knowledge" / "evidence")
+    sources = _load_directory(root / "library" / "sources")
+    relations = _load_directory(root / "knowledge" / "relations")
+    edges = []
+    node_ids: set[str] = set()
+    for relation_id in spec["relation_ids"]:
+        if relation_id not in relations:
+            raise ValueError(f"mechanism view references missing relation {relation_id!r}")
+        relation = relations[relation_id]
+        if relation.get("status") != "verified" or relation.get("publishable") is not True:
+            raise ValueError(f"mechanism view relation {relation_id!r} is not verified and publishable")
+        subject_id, object_id = relation.get("subject_id"), relation.get("object_id")
+        if subject_id not in entities or object_id not in entities:
+            raise ValueError(f"mechanism view relation {relation_id!r} has a missing endpoint")
+        subject, object_ = entities[subject_id], entities[object_id]
+        node_ids.update((subject_id, object_id))
+        edge_evidence = []
+        for evidence_id in relation["evidence_ids"]:
+            if evidence_id not in evidence:
+                raise ValueError(f"mechanism view relation {relation_id!r} has missing evidence {evidence_id!r}")
+            item = evidence[evidence_id]
+            if item.get("status") != "verified" or item.get("publishable") is not True:
+                continue
+            if relation_id not in item.get("relation_ids", []):
+                raise ValueError(f"mechanism evidence {evidence_id!r} does not backlink relation {relation_id!r}")
+            claim_id, source_id = item.get("claim_id"), item.get("source_id")
+            if claim_id not in claims or source_id not in sources:
+                raise ValueError(f"mechanism evidence {evidence_id!r} has a missing claim or source")
+            claim = claims[claim_id]
+            if claim.get("status") != "verified" or claim.get("publishable") is not True:
+                raise ValueError(f"mechanism evidence {evidence_id!r} references an unpublished claim")
+            edge_evidence.append(item | {"claim": claim, "source": sources[source_id]})
+        if not edge_evidence:
+            raise ValueError(f"mechanism view relation {relation_id!r} has no publishable evidence")
+        edges.append(
+            {
+                "relation": relation,
+                "subject": subject,
+                "object": object_,
+                "evidence": edge_evidence,
+            }
+        )
+
+    hops = [edge for edge in edges if edge["relation"]["relation_type"] == "mechanism_link"]
+    boundaries = [edge for edge in edges if edge["relation"]["relation_type"] == "compares_with"]
+    if len(hops) != 2 or len(boundaries) != 1:
+        raise ValueError("mechanism view requires exactly two mechanism_link hops and one compares_with boundary")
+    if len({edge["subject"]["id"] for edge in hops}) != 1:
+        raise ValueError("mechanism view hops must preserve one shared source node")
+    hop_targets = {edge["object"]["id"] for edge in hops}
+    boundary_endpoints = {boundaries[0]["subject"]["id"], boundaries[0]["object"]["id"]}
+    if hop_targets != boundary_endpoints:
+        raise ValueError("mechanism view boundary must connect the two hop targets")
+
+    nodes = [entities[node_id] for node_id in node_ids]
+    nodes.sort(key=lambda node: (MECHANISM_LEVEL_ORDER.get(node.get("mechanism_level"), 999), node["id"]))
+    hops.sort(key=lambda edge: (MECHANISM_LEVEL_ORDER[edge["object"]["mechanism_level"]], edge["relation"]["id"]))
+    dossier = {
+        "id": spec["id"],
+        "title": spec["title"],
+        "language": spec["language"],
+        "scope_note": spec["scope_note"],
+        "nodes": nodes,
+        "hops": hops,
+        "boundaries": boundaries,
+    }
+    lines = [
+        f"# {spec['title']}",
+        "",
+        "> 此 view 由 canonical mechanism nodes、claims、evidence、sources 與 relations 重生。兩條箭頭是分叉的直接實驗 hops，不是 light→melatonin→phase 的串行中介鏈。",
+        "",
+        spec["scope_note"],
+        "",
+        "## 直接跨層 hops",
+        "",
+    ]
+    for edge in hops:
+        lines.extend(
+            [
+                f"### `{edge['subject']['mechanism_level']}` → `{edge['object']['mechanism_level']}`",
+                "",
+                f"{edge['subject']['name']} → {edge['object']['name']}",
+                "",
+                f"- Relation：`{edge['relation']['id']}`",
+                f"- 關係限制：{edge['relation'].get('scope_note', '未另列')}",
+            ]
+        )
+        for item in edge["evidence"]:
+            claim = item["claim"]
+            source = item["source"]
+            source_label = f"[{source['title']}]({source['url']})" if source.get("url") else source["title"]
+            lines.extend(
+                [
+                    f"- 主張：{claim.get('statement_zh', claim['statement'])}",
+                    f"- 主張限制：{claim.get('scope_note', '未另列')}",
+                    f"- 證據：{source_label}；{item['locator']}",
+                    f"  > {item['short_quote']}",
+                    "",
+                ]
+            )
+    lines.extend(["## Non-proxy 邊界", ""])
+    for edge in boundaries:
+        for item in edge["evidence"]:
+            claim = item["claim"]
+            lines.extend(
+                [
+                    f"- {claim.get('statement_zh', claim['statement'])}",
+                    f"- Relation：`{edge['relation']['id']}`（`compares_with`，不是 mechanism hop）",
+                    f"- 限制：{claim.get('scope_note', '未另列')}",
+                    "",
+                ]
+            )
+
+    output_dir = root / "views" / "generated"
+    json_output = output_dir / f"{spec['id']}.json"
+    markdown_output = output_dir / f"{spec['id']}.md"
+    _atomic_write_text(json_output, _json_payload(dossier))
+    _atomic_write_text(markdown_output, "\n".join(lines))
+    return json_output, markdown_output
+
+
 def _build_unlocked(root: Path) -> Path:
     entities = []
     for path in sorted((root / "catalog" / "entities").glob("*.json")):
@@ -565,6 +735,8 @@ def _build_unlocked(root: Path) -> Path:
         _build_comparison_view(root, spec_path)
     for spec_path in sorted((root / "views" / "chronologies").glob("*.json")):
         _build_chronology_view(root, spec_path)
+    for spec_path in sorted((root / "views" / "mechanisms").glob("*.json")):
+        _build_mechanism_view(root, spec_path)
     return output
 
 

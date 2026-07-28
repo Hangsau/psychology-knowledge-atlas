@@ -28,3 +28,5 @@ P1 coverage、P1-E 命名現象 universe、P2-E 證據路由與 P3-S 四個學�
 第一個跨 pilot P4 view 也已完成：`views/comparisons/p3-school-pilots-comparison.json` 只列四份 profile IDs 與呈現邊界，builder 會直接從 canonical records 重生 `p3-school-pilots-comparison.{md,json}`。它比較發布覆蓋與結構計數，不把章節名稱視為同義，也不以數量推論品質或學派重要性。
 
 第二個 P4 view 是 `views/chronologies/p3-school-pilots-chronology.json`：它由四筆 canonical chronology claims 重生形成時間錨點，明確區分確切年份與 decade-level 範圍。輸出不把時間錨點當成學派創立日期，也不從文字猜測更精確的年份。
+
+第一個 Mechanism Ladder view 是 `views/mechanisms/light-circadian-first-slice.json`。它把夜間亮光呈現為分叉到褪黑激素抑制與晝夜節律相位延遲的兩條直接人體實驗 hops，並把「兩個結果不可互當 proxy」放在獨立 boundary；不建立未測量的串行中介鏈。

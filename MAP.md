@@ -17,6 +17,7 @@ crosswalks/              D1–D13 與跨 repo 合約
 views/generated/         可刪除、可重生輸出（Git ignore）
 views/comparisons/       跨 profile 呈現規格；只列 canonical input IDs 與顯示邊界
 views/chronologies/      bounded 時間線規格；只列 chronology claim IDs 與顯示邊界
+views/mechanisms/        bounded mechanism view 規格；只列 evidence-backed relation IDs
 tools/validate.py        canonical integrity validator
 tools/store.py           原子寫入與同實體鎖
 tools/build_views.py     由 canonical records 原子重生 indexes 與 reader profiles
@@ -38,6 +39,7 @@ tests/                   邊界、schema、參照、併發、安全測試
 | 產文章／索引 | 只從 canonical records 生成到 `views/generated/` |
 | 產跨 pilot 比較 | `views/comparisons/` spec + `tools/build_views.py`；只比較一致結構指標，不把 sections 當語義等價 |
 | 產 bounded 時間線 | chronology claim 的 optional `time_anchor` + `views/chronologies/`；保留日期 precision／qualifier，不從 prose 猜日期 |
+| 產 Mechanism Ladder | `views/mechanisms/` + `tools/build_views.py`；hops 與 non-proxy boundaries 分開，禁止把分叉改畫成無證據串行鏈 |
 
 ## 3. 踩雷點
 

@@ -1,0 +1,11 @@
+{
+  "id": "light-circadian-first-slice",
+  "language": "zh-Hant",
+  "relation_ids": [
+    "nocturnal-light-mechanism-link-melatonin-suppression",
+    "nocturnal-light-mechanism-link-circadian-phase-delay",
+    "circadian-phase-delay-compares-with-melatonin-suppression"
+  ],
+  "scope_note": "本 view 只呈現 Rahman et al. (2018) 人體夜間光照資料支持的兩條直接分叉：亮光→褪黑激素抑制、亮光→相位延遲。它不補入未量測的細胞／神經迴路，不延伸至睡眠、認知、行為或社會作息。",
+  "title": "夜間亮光的第一個跨層機制 slice"
+}

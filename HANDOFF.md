@@ -3,31 +3,31 @@
 ## ACTIVE WORK
 
 ```yaml
-phase: P3-M1
-unit: light-circadian-first-cross-level-slice
+phase: P4-M1
+unit: light-circadian-first-mechanism-view
 status: validated
-base_commit: 1cb39f7
+base_commit: 6f2aeb3
 started_at: 2026-07-28
-objective: 以可讀全文的一手人體研究建立第一個 bounded light/circadian slice，至少包含兩個各自有直接證據的跨層 hops
-target_chain:
-  - nocturnal-light-exposure (physical)
-  - human-circadian-phase-response (physiological_system)
-  - nocturnal-melatonin-suppression (chemical_molecular)
+reader_question: 夜間亮光在這個 bounded 人體實驗 slice 中直接連到哪些跨層反應，哪些結果不能互當 proxy
+canonical_inputs:
+  - nocturnal-light-mechanism-link-circadian-phase-delay
+  - nocturnal-light-mechanism-link-melatonin-suppression
+  - circadian-phase-delay-compares-with-melatonin-suppression
 boundaries:
-  - 只記研究直接操弄與量測的結果；不把人類生理結果外推成所有物種或所有光照條件
-  - circadian phase shift 與 melatonin suppression 分成兩筆 atomic claims／relations，不宣稱彼此必然中介
-  - 不在本 slice 建立睡眠、認知情緒、行為或社會作息 hops
-  - 來源若只能讀 abstract 或 snippet，一律停在 citation queue，不升 verified/publishable
-exit_gate: at least two direct cross-level hops from readable primary human full text; atomic claims; bidirectional evidence links; scope boundaries; validator and full tests pass
+  - view 只解參照 canonical records，不手寫新機制敘述、計數或日期
+  - 兩條 mechanism_link 顯示為同一 physical node 的分叉，不畫成 light→melatonin→phase 的虛假串行鏈
+  - compares_with 只列為 non-proxy boundary，不混入 mechanism hops
+  - generated JSON/Markdown 可刪除重建，不成為 canonical input
+exit_gate: exact two mechanism hops plus one boundary; all records verified/publishable and backlinks resolve; branch shape preserved; malformed empty duplicate missing unpublished and wrong-type inputs rejected; deterministic atomic concurrent build and full tests pass
 completed_items:
-  - P3-M0 committed/pushed at 1cb39f7；validator and 70 tests PASS
-  - 全文來源：Rahman et al. 2018, DOI 10.1113/JP275501, PMID 29707782, PMCID PMC5983136；protocol/abstract results/key points/discussion 已讀
-  - 建立 physical 夜間亮光、physiological_system 相位延遲、chemical_molecular 褪黑激素抑制三個 mechanism nodes
-  - 建立兩條 verified/publishable mechanism_link；各有獨立 mechanism claim、fulltext_direct evidence、locator、短引文及雙向 relation backlink
-  - 建立一筆 non-proxy finding 與 compares_with relation，明確阻止把 melatonin suppression 當 phase resetting proxy 或中介
-  - 所有 statements 均限於受測夜間模式與健康年輕成人；未外推 daytime、其他 spectrum、clinical populations、sleep、cognition、behavior 或 social schedule
-  - validator PASS；P3-M1 專用 regression PASS；完整 suite 71 tests PASS
-next_action: P3-M1 已關閉；可進 P4-M1 bounded mechanism ladder view，只呈現這兩條 direct hops 與 non-proxy boundary，不擴寫新科學 claims
+  - P3-M1 committed/pushed at 6f2aeb3；validator and 71 tests PASS
+  - 新增 views/mechanisms/light-circadian-first-slice.json；spec 僅列兩筆 mechanism_link 與一筆 compares_with relation IDs
+  - build_views 新增 bounded mechanism builder；直接解參照 nodes/levels/claims/evidence/sources/relations，不複製 canonical facts
+  - builder 強制 exactly two mechanism hops + one boundary、共享 source node、boundary 連接兩個 hop targets，保留分叉結構
+  - Markdown/JSON 固定警告不是 light→melatonin→phase 串行中介鏈；non-proxy relation 獨立於 hops
+  - malformed/empty/oversized spec、非三筆、重複、不安全、缺失、unpublished 與錯誤 edge composition 均有拒絕路徑
+  - validator PASS；全量 view rebuild PASS；專用 tests PASS；完整 suite 73 tests PASS（含 deterministic、atomic、concurrent）
+next_action: P4-M1 已關閉；下一個 bounded gate 可選擇延伸 light→sleep（需新一手全文證據），或先做 P4-E Named Effect Card；不得把 roadmap 當成自動授權的無界擴張
 ```
 
 ## P3-S COMPLETION RECORD
