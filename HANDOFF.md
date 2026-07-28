@@ -6,10 +6,10 @@
 phase: P2-SC
 unit: forty-eight-target-source-corpus
 status: in_progress
-base_commit: 2e1704e
+base_commit: e4da1c8
 started_at: 2026-07-28
 objective: 先為原版48項研究目標完成可恢復、可稽核的來源蒐集，再開始閱讀、建立主張或撰寫內容
-active_target: psychoanalysis
+active_target: behaviorism
 canonical_inputs:
   - research/targets.json
   - research/source-packs/*.json
@@ -28,8 +28,11 @@ completed_items:
   - 明示排除一份雖可公開連線、但文件內宣告僅限訂閱者個人使用的 Understanding Human Nature 數位版，待找公版替代
   - structuralism 已 audited：8筆全文／正式網頁，涵蓋Wundt德文原典與英譯、Titchener原典、方法、批判、歷史轉折及機構延續邊界
   - functionalism 已 audited：8筆全文／正式網頁，涵蓋James兩卷、Dewey、Angell、Calkins、早期實驗、歷史轉折及APA當代學科定義
-  - 目前3/48來源包 audited；跨包重複的Angell與Watson正文以相同SHA-256辨識，不當成不同來源正文灌水
-next_action: 依 research/targets.json 順序處理 psychoanalysis，再分批處理其餘44項，不建立正文。非英語只在原始語言、地方傳統或翻譯／版本差異影響正確性時補，不設配額
+  - 精神分析傳統批次新增6包 audited、38筆實際正文／正式網頁：psychoanalysis 7、analytical-psychology 7、neo-freudian 6、object-relations 6、ego-psychology 6、self-psychology 6
+  - 六包均分開原典／方法、歷史、批判、實證與當代機構角色；寬泛的psychodynamic療效研究不冒充特定分支理論驗證
+  - 移除NYPL回傳的212-byte防機器人空頁並以International Erich Fromm Society正式頁替代；兩筆403全文端點亦以可讀全文替代，沒有保留摘要充數
+  - 目前9/48來源包 audited；跨包相同正文依SHA-256辨識，不當成不同來源正文灌水
+next_action: 依 research/targets.json 順序從 behaviorism 開始，採較大批次處理其餘39項，不建立正文。非英語只在原始語言、地方傳統或翻譯／版本差異影響正確性時補，不設配額
 ```
 
 ## P3-S COMPLETION RECORD

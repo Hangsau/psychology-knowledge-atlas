@@ -5,34 +5,191 @@
   "slots": {
     "identity_history": {
       "description": "Independent scholarly identity and historical placement",
-      "status": "not_searched"
+      "status": "covered"
     },
     "primary_works": {
       "description": "Primary works or first-generation programme statements",
-      "status": "not_searched"
+      "status": "covered"
     },
     "theory_methods": {
       "description": "Core concepts, methods and internal variants",
-      "status": "not_searched"
+      "status": "covered"
     },
     "independent_critique": {
       "description": "Independent historiography, criticism or boundary analysis",
-      "status": "not_searched"
+      "status": "covered"
     },
     "empirical_status": {
       "description": "Empirical tests, syntheses, replications or current assessment",
-      "status": "not_searched"
+      "status": "covered"
     },
     "current_status": {
       "description": "Contemporary continuation, institutions or present disciplinary status",
-      "status": "not_searched"
+      "status": "covered"
     },
     "cultural_language_context": {
       "description": "Non-English, local, cultural or knowledge-sovereignty context where applicable",
-      "status": "not_searched"
+      "status": "searched_no_qualifying_source"
     }
   },
-  "searches": [],
-  "items": [],
-  "status": "not_started"
+  "searches": [
+    {
+      "searched_at": "2026-07-28",
+      "system": "Melanie Klein Trust / PMC",
+      "queries": [
+        "Melanie Klein object relations primary full text",
+        "internal objects reading history"
+      ],
+      "purpose": "Primary works and identity"
+    },
+    {
+      "searched_at": "2026-07-28",
+      "system": "Institutional repositories / PMC",
+      "queries": [
+        "Winnicott transitional objects full text",
+        "object relations empirical assessment"
+      ],
+      "purpose": "Theory, later extension and empirical status"
+    },
+    {
+      "searched_at": "2026-07-28",
+      "system": "Professional organizations",
+      "queries": [
+        "Melanie Klein Trust current archive"
+      ],
+      "purpose": "Contemporary continuation"
+    }
+  ],
+  "items": [
+    {
+      "id": "klein-1946-schizoid-mechanisms",
+      "title": "Notes on Some Schizoid Mechanisms",
+      "authors": [
+        "Melanie Klein"
+      ],
+      "slot": "primary_works",
+      "source_kind": "primary_article",
+      "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3330415/",
+      "download_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3330415/",
+      "access_status": "open_fulltext",
+      "rights_note": "Publicly readable source; private cache only.",
+      "status": "retrieved",
+      "retrieval": {
+        "retrieved_at": "2026-07-28T09:24:18+00:00",
+        "sha256": "e7acd67f9b8f3a0158471f473f0daeecadb0707de834069afaab214d06192cc1",
+        "bytes": 21207,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/object-relations/klein-1946-schizoid-mechanisms.html"
+      }
+    },
+    {
+      "id": "winnicott-transitional-objects",
+      "title": "Transitional Objects and Transitional Phenomena",
+      "authors": [
+        "D. W. Winnicott"
+      ],
+      "slot": "theory_methods",
+      "source_kind": "primary_book_chapter",
+      "landing_url": "https://web.mit.edu/allanmc/www/winnicott1.pdf",
+      "download_url": "https://web.mit.edu/allanmc/www/winnicott1.pdf",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Publicly readable source; private cache only.",
+      "status": "retrieved",
+      "retrieval": {
+        "retrieved_at": "2026-07-28T09:24:20+00:00",
+        "sha256": "a77ace7d5681622924f7d3ce68c2172624b11da49c7a1d5345f7c27c0d436276",
+        "bytes": 308326,
+        "media_type": "application/pdf",
+        "cache_key": ".private-sources/object-relations/winnicott-transitional-objects.pdf"
+      }
+    },
+    {
+      "id": "klein-trust-internal-objects-reading-list",
+      "title": "Reading List: Internal Objects",
+      "authors": [
+        "Melanie Klein Trust"
+      ],
+      "slot": "identity_history",
+      "source_kind": "official_scholarly_bibliography",
+      "landing_url": "https://melanie-klein-trust.org.uk/resources/reading-list-internal-objects/",
+      "download_url": "https://melanie-klein-trust.org.uk/resources/reading-list-internal-objects/",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Publicly readable source; private cache only.",
+      "status": "retrieved",
+      "retrieval": {
+        "retrieved_at": "2026-07-28T09:24:24+00:00",
+        "sha256": "c4cb4152d6c624981e1402f0e70fd7f3f5e26c018ddd31658cb22b83d0a9c292",
+        "bytes": 84320,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/object-relations/klein-trust-internal-objects-reading-list.html"
+      }
+    },
+    {
+      "id": "cacciatore-etal-2020-transitional-grief",
+      "title": "Transitional Objects of Grief",
+      "authors": [
+        "Joanne Cacciatore",
+        "et al."
+      ],
+      "slot": "independent_critique",
+      "source_kind": "later_conceptual_extension",
+      "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7351592/",
+      "download_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7351592/",
+      "access_status": "open_fulltext",
+      "rights_note": "Later application of Winnicott's construct; not evidence for the whole object-relations framework.",
+      "status": "retrieved",
+      "retrieval": {
+        "retrieved_at": "2026-07-28T09:24:27+00:00",
+        "sha256": "11bb59e4361e6410d8b8ff925bd3ffc6c6df15b143029da0d915fe5f2d49b22f",
+        "bytes": 197171,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/object-relations/cacciatore-etal-2020-transitional-grief.html"
+      }
+    },
+    {
+      "id": "knekt-etal-2013-quality-object-relations",
+      "title": "Quality of Object Relations Modifies the Effectiveness of Short- and Long-Term Psychotherapy",
+      "authors": [
+        "Paul Knekt",
+        "et al."
+      ],
+      "slot": "empirical_status",
+      "source_kind": "empirical_article",
+      "landing_url": "https://file.scirp.org/pdf/OJPsych_2013090215464252.pdf",
+      "download_url": "https://file.scirp.org/pdf/OJPsych_2013090215464252.pdf",
+      "access_status": "open_fulltext",
+      "rights_note": "Publicly readable source; private cache only.",
+      "status": "retrieved",
+      "retrieval": {
+        "retrieved_at": "2026-07-28T09:24:30+00:00",
+        "sha256": "8503f352293084db19259afb504f6a911186cd17ffb1a47acb9a953c04d15a5f",
+        "bytes": 253403,
+        "media_type": "application/pdf",
+        "cache_key": ".private-sources/object-relations/knekt-etal-2013-quality-object-relations.pdf"
+      }
+    },
+    {
+      "id": "melanie-klein-digital-archive",
+      "title": "The Melanie Klein Archive",
+      "authors": [
+        "Melanie Klein Trust",
+        "Wellcome Collection"
+      ],
+      "slot": "current_status",
+      "source_kind": "official_digital_archive",
+      "landing_url": "https://melaniekleintrust.org.uk/the-melanie-klein-archive/",
+      "download_url": "https://melaniekleintrust.org.uk/the-melanie-klein-archive/",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Publicly readable source; private cache only.",
+      "status": "retrieved",
+      "retrieval": {
+        "retrieved_at": "2026-07-28T09:24:34+00:00",
+        "sha256": "ded5cc40a2b6c383751cb1af7649a57fe36e0702db03c4b1ce00dd8701a63968",
+        "bytes": 88608,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/object-relations/melanie-klein-digital-archive.html"
+      }
+    }
+  ],
+  "status": "audited"
 }

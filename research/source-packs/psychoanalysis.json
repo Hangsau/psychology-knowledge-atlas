@@ -5,34 +5,212 @@
   "slots": {
     "identity_history": {
       "description": "Independent scholarly identity and historical placement",
-      "status": "not_searched"
+      "status": "covered"
     },
     "primary_works": {
       "description": "Primary works or first-generation programme statements",
-      "status": "not_searched"
+      "status": "covered"
     },
     "theory_methods": {
       "description": "Core concepts, methods and internal variants",
-      "status": "not_searched"
+      "status": "covered"
     },
     "independent_critique": {
       "description": "Independent historiography, criticism or boundary analysis",
-      "status": "not_searched"
+      "status": "covered"
     },
     "empirical_status": {
       "description": "Empirical tests, syntheses, replications or current assessment",
-      "status": "not_searched"
+      "status": "covered"
     },
     "current_status": {
       "description": "Contemporary continuation, institutions or present disciplinary status",
-      "status": "not_searched"
+      "status": "covered"
     },
     "cultural_language_context": {
       "description": "Non-English, local, cultural or knowledge-sovereignty context where applicable",
-      "status": "not_searched"
+      "status": "covered"
     }
   },
-  "searches": [],
-  "items": [],
-  "status": "not_started"
+  "searches": [
+    {
+      "searched_at": "2026-07-28",
+      "system": "Project Gutenberg / Freud Museum / Internet repositories",
+      "queries": [
+        "Freud German and English primary texts full text",
+        "history and definition of psychoanalysis"
+      ],
+      "purpose": "Primary works, editions and identity"
+    },
+    {
+      "searched_at": "2026-07-28",
+      "system": "PMC / Cambridge Core",
+      "queries": [
+        "psychoanalysis philosophical critique full text",
+        "psychodynamic psychotherapy umbrella review"
+      ],
+      "purpose": "Independent critique and empirical status"
+    },
+    {
+      "searched_at": "2026-07-28",
+      "system": "International Psychoanalytical Association",
+      "queries": [
+        "IPA about psychoanalysis current"
+      ],
+      "purpose": "Present institutional status"
+    }
+  ],
+  "items": [
+    {
+      "id": "freud-40739-die-traumdeutung-de",
+      "title": "Die Traumdeutung",
+      "authors": [
+        "Sigmund Freud"
+      ],
+      "slot": "cultural_language_context",
+      "source_kind": "original_language_primary_book",
+      "landing_url": "https://www.gutenberg.org/cache/epub/40739/pg40739-images.html",
+      "download_url": "https://www.gutenberg.org/cache/epub/40739/pg40739-images.html",
+      "access_status": "public_domain_fulltext",
+      "rights_note": "German public-domain transcription; do not merge silently with later editions or translations.",
+      "status": "retrieved",
+      "retrieval": {
+        "retrieved_at": "2026-07-28T09:22:54+00:00",
+        "sha256": "3bf69139aa8dd087eb004fc87f3295303620a961259fe13dfd624c740286eb33",
+        "bytes": 1787438,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/psychoanalysis/freud-40739-die-traumdeutung-de.html"
+      }
+    },
+    {
+      "id": "freud-66048-interpretation-dreams-en",
+      "title": "The Interpretation of Dreams",
+      "authors": [
+        "Sigmund Freud",
+        "A. A. Brill (translator)"
+      ],
+      "slot": "primary_works",
+      "source_kind": "translated_primary_book",
+      "landing_url": "https://www.gutenberg.org/cache/epub/66048/pg66048-images.html",
+      "download_url": "https://www.gutenberg.org/cache/epub/66048/pg66048-images.html",
+      "access_status": "public_domain_fulltext",
+      "rights_note": "1913 English translation in a public-domain transcription; edition identity retained.",
+      "status": "retrieved",
+      "retrieval": {
+        "retrieved_at": "2026-07-28T09:22:58+00:00",
+        "sha256": "f91ca1a0400b72818a9cdf99072424133025d03db3dbec0e6f4ae41c14097aab",
+        "bytes": 1486596,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/psychoanalysis/freud-66048-interpretation-dreams-en.html"
+      }
+    },
+    {
+      "id": "freud-38219-general-introduction",
+      "title": "A General Introduction to Psychoanalysis",
+      "authors": [
+        "Sigmund Freud",
+        "G. Stanley Hall (translator)"
+      ],
+      "slot": "theory_methods",
+      "source_kind": "translated_primary_lectures",
+      "landing_url": "https://www.gutenberg.org/cache/epub/38219/pg38219-images.html",
+      "download_url": "https://www.gutenberg.org/cache/epub/38219/pg38219-images.html",
+      "access_status": "public_domain_fulltext",
+      "rights_note": "Publicly readable source; private cache only.",
+      "status": "retrieved",
+      "retrieval": {
+        "retrieved_at": "2026-07-28T09:23:02+00:00",
+        "sha256": "637d9faeccdeea6620faec483ac8a4dc48b2c1d21e32c8a0542d0a0a15a0fe74",
+        "bytes": 1057831,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/psychoanalysis/freud-38219-general-introduction.html"
+      }
+    },
+    {
+      "id": "freud-museum-what-is-psychoanalysis",
+      "title": "What is psychoanalysis?",
+      "authors": [
+        "Freud Museum London"
+      ],
+      "slot": "identity_history",
+      "source_kind": "institutional_history",
+      "landing_url": "https://www.freud.org.uk/learn/discover-sigmund-freud/what-is-psychoanalysis/",
+      "download_url": "https://www.freud.org.uk/learn/discover-sigmund-freud/what-is-psychoanalysis/",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Publicly readable source; private cache only.",
+      "status": "retrieved",
+      "retrieval": {
+        "retrieved_at": "2026-07-28T09:23:06+00:00",
+        "sha256": "edaa558b572a6224cb7a4c0570e06897556dfe81fdb570a61a5466c27d6598ba",
+        "bytes": 83730,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/psychoanalysis/freud-museum-what-is-psychoanalysis.html"
+      }
+    },
+    {
+      "id": "farrell-1981-philosophical-critique",
+      "title": "Psychoanalysis: a philosophical critique",
+      "authors": [
+        "B. A. Farrell"
+      ],
+      "slot": "independent_critique",
+      "source_kind": "independent_critical_article",
+      "landing_url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/3138B17D5FB3B0994C410A3D9D2AA48B/S0033291700025812a.pdf/psychoanalysis-a-philosophical-critique1.pdf",
+      "download_url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/3138B17D5FB3B0994C410A3D9D2AA48B/S0033291700025812a.pdf/psychoanalysis-a-philosophical-critique1.pdf",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Publicly readable source; private cache only.",
+      "status": "retrieved",
+      "retrieval": {
+        "retrieved_at": "2026-07-28T09:23:09+00:00",
+        "sha256": "6816c83adfd75b0372a36d274771bce7c5771f6747de7e7d7c529543a5c9359e",
+        "bytes": 392256,
+        "media_type": "application/pdf",
+        "cache_key": ".private-sources/psychoanalysis/farrell-1981-philosophical-critique.pdf"
+      }
+    },
+    {
+      "id": "leichsenring-etal-2023-pdt-umbrella",
+      "title": "The status of psychodynamic psychotherapy as an empirically supported treatment for common mental disorders",
+      "authors": [
+        "Falk Leichsenring",
+        "et al."
+      ],
+      "slot": "empirical_status",
+      "source_kind": "umbrella_review",
+      "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10168167/",
+      "download_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10168167/",
+      "access_status": "open_fulltext",
+      "rights_note": "Open PMC full text; evaluates psychodynamic psychotherapy, not every metapsychological proposition of psychoanalysis.",
+      "status": "retrieved",
+      "retrieval": {
+        "retrieved_at": "2026-07-28T09:23:12+00:00",
+        "sha256": "d1fa298fb6b89e563f05c0e8b3173f8371fc9e0c07044e6b61cce21195c21cb3",
+        "bytes": 340069,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/psychoanalysis/leichsenring-etal-2023-pdt-umbrella.html"
+      }
+    },
+    {
+      "id": "ipa-about-psychoanalysis",
+      "title": "About Psychoanalysis",
+      "authors": [
+        "International Psychoanalytical Association"
+      ],
+      "slot": "current_status",
+      "source_kind": "official_professional_document",
+      "landing_url": "https://www.ipa.world/IPA/IPA_Docs/About%20Psychoanalysis.pdf",
+      "download_url": "https://www.ipa.world/IPA/IPA_Docs/About%20Psychoanalysis.pdf",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Publicly readable source; private cache only.",
+      "status": "retrieved",
+      "retrieval": {
+        "retrieved_at": "2026-07-28T09:23:16+00:00",
+        "sha256": "4884d0469708ed2cf7d55dfe8d8bd80fa2623c15fded926c58bf87872880c3bc",
+        "bytes": 170595,
+        "media_type": "application/pdf",
+        "cache_key": ".private-sources/psychoanalysis/ipa-about-psychoanalysis.pdf"
+      }
+    }
+  ],
+  "status": "audited"
 }

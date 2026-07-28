@@ -5,34 +5,191 @@
   "slots": {
     "identity_history": {
       "description": "Independent scholarly identity and historical placement",
-      "status": "not_searched"
+      "status": "covered"
     },
     "primary_works": {
       "description": "Primary works or first-generation programme statements",
-      "status": "not_searched"
+      "status": "covered"
     },
     "theory_methods": {
       "description": "Core concepts, methods and internal variants",
-      "status": "not_searched"
+      "status": "covered"
     },
     "independent_critique": {
       "description": "Independent historiography, criticism or boundary analysis",
-      "status": "not_searched"
+      "status": "covered"
     },
     "empirical_status": {
       "description": "Empirical tests, syntheses, replications or current assessment",
-      "status": "not_searched"
+      "status": "covered"
     },
     "current_status": {
       "description": "Contemporary continuation, institutions or present disciplinary status",
-      "status": "not_searched"
+      "status": "covered"
     },
     "cultural_language_context": {
       "description": "Non-English, local, cultural or knowledge-sovereignty context where applicable",
-      "status": "not_searched"
+      "status": "searched_no_qualifying_source"
     }
   },
-  "searches": [],
-  "items": [],
-  "status": "not_started"
+  "searches": [
+    {
+      "searched_at": "2026-07-28",
+      "system": "University repositories / psychoanalytic institutes",
+      "queries": [
+        "Freud Ego and Id full text",
+        "Anna Freud defense mechanisms full text",
+        "ego psychology overview"
+      ],
+      "purpose": "Primary works, theory and current teaching"
+    },
+    {
+      "searched_at": "2026-07-28",
+      "system": "PMC / open journals",
+      "queries": [
+        "defense mechanisms empirical review",
+        "ego psychology relational critique"
+      ],
+      "purpose": "Empirical and independent assessment"
+    },
+    {
+      "searched_at": "2026-07-28",
+      "system": "Non-English searches",
+      "queries": [
+        "Ich-Psychologie Hartmann original language full text"
+      ],
+      "purpose": "Original-language value check"
+    }
+  ],
+  "items": [
+    {
+      "id": "freud-1923-ego-and-id",
+      "title": "The Ego and the Id",
+      "authors": [
+        "Sigmund Freud",
+        "James Strachey (translator)"
+      ],
+      "slot": "primary_works",
+      "source_kind": "translated_primary_article",
+      "landing_url": "https://web-facstaff.sas.upenn.edu/~cavitch/pdf-library/Freud_SE_Ego_Id_complete.pdf",
+      "download_url": "https://web-facstaff.sas.upenn.edu/~cavitch/pdf-library/Freud_SE_Ego_Id_complete.pdf",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Publicly readable source; private cache only.",
+      "status": "retrieved",
+      "retrieval": {
+        "retrieved_at": "2026-07-28T09:24:38+00:00",
+        "sha256": "fdbccbd7f49208fdccd19d5dde003655e939eb390a4478c724b3ed2625918ccc",
+        "bytes": 1291529,
+        "media_type": "application/pdf",
+        "cache_key": ".private-sources/ego-psychology/freud-1923-ego-and-id.pdf"
+      }
+    },
+    {
+      "id": "anna-freud-ego-mechanisms-defence",
+      "title": "The Ego and the Mechanisms of Defence",
+      "authors": [
+        "Anna Freud"
+      ],
+      "slot": "theory_methods",
+      "source_kind": "primary_book",
+      "landing_url": "https://psptraining.com/wp-content/uploads/Freud-A.-1936-1993.The-ego-and-the-mechanisms-of-defence.-London-Karnac-Books.pdf",
+      "download_url": "https://psptraining.com/wp-content/uploads/Freud-A.-1936-1993.The-ego-and-the-mechanisms-of-defence.-London-Karnac-Books.pdf",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Publicly readable source; private cache only.",
+      "status": "retrieved",
+      "retrieval": {
+        "retrieved_at": "2026-07-28T09:24:40+00:00",
+        "sha256": "ea3e01fffe7b2eb04f9e3c9bc926b51d847f59a8a0d5daafe153fecaeec124a7",
+        "bytes": 5834701,
+        "media_type": "application/pdf",
+        "cache_key": ".private-sources/ego-psychology/anna-freud-ego-mechanisms-defence.pdf"
+      }
+    },
+    {
+      "id": "eagle-2020-metapsychology-ego-psychology",
+      "title": "The Critique of Metapsychology and Its Relation to Ego Psychology",
+      "authors": [
+        "Morris N. Eagle"
+      ],
+      "slot": "identity_history",
+      "source_kind": "historical_transition_article",
+      "landing_url": "https://www.psychomedia.it/rapaport-klein/Eagle-2020.pdf",
+      "download_url": "https://www.psychomedia.it/rapaport-klein/Eagle-2020.pdf",
+      "access_status": "open_fulltext",
+      "rights_note": "Publicly readable source; private cache only.",
+      "status": "retrieved",
+      "retrieval": {
+        "retrieved_at": "2026-07-28T09:25:39+00:00",
+        "sha256": "fd32f77cb11e3da60372b3d0b3296b31d7c7f7bb0fcee72118f0feabf953570b",
+        "bytes": 362137,
+        "media_type": "application/pdf",
+        "cache_key": ".private-sources/ego-psychology/eagle-2020-metapsychology-ego-psychology.pdf"
+      }
+    },
+    {
+      "id": "solms-2018-neurobiological-underpinnings",
+      "title": "The Neurobiological Underpinnings of Psychoanalytic Theory and Therapy",
+      "authors": [
+        "Mark Solms"
+      ],
+      "slot": "independent_critique",
+      "source_kind": "scientific_boundary_review",
+      "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6288296/",
+      "download_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6288296/",
+      "access_status": "open_fulltext",
+      "rights_note": "Publicly readable source; private cache only.",
+      "status": "retrieved",
+      "retrieval": {
+        "retrieved_at": "2026-07-28T09:25:41+00:00",
+        "sha256": "1c8bcf8537bc51d99466daffd27578192c81116919b931bfe516190d11f0aaaf",
+        "bytes": 227929,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/ego-psychology/solms-2018-neurobiological-underpinnings.html"
+      }
+    },
+    {
+      "id": "lingiardi-etal-2025-defense-review",
+      "title": "Revisiting Defense Mechanisms in Contemporary Clinical Practice",
+      "authors": [
+        "Vittorio Lingiardi",
+        "et al."
+      ],
+      "slot": "empirical_status",
+      "source_kind": "contemporary_review",
+      "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12878825/",
+      "download_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12878825/",
+      "access_status": "open_fulltext",
+      "rights_note": "Publicly readable source; private cache only.",
+      "status": "retrieved",
+      "retrieval": {
+        "retrieved_at": "2026-07-28T09:25:44+00:00",
+        "sha256": "40c789d750a97c85b7c612bf16a9672796b18296490c07f8afb15b4a0d3277b6",
+        "bytes": 166360,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/ego-psychology/lingiardi-etal-2025-defense-review.html"
+      }
+    },
+    {
+      "id": "bpsi-ego-psychology-overview",
+      "title": "Ego Psychology",
+      "authors": [
+        "Boston Psychoanalytic Society and Institute"
+      ],
+      "slot": "current_status",
+      "source_kind": "official_training_overview",
+      "landing_url": "https://bpsi.org/wp-content/uploads/2018/08/Ego-Psychology_Linked.pdf",
+      "download_url": "https://bpsi.org/wp-content/uploads/2018/08/Ego-Psychology_Linked.pdf",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Publicly readable source; private cache only.",
+      "status": "retrieved",
+      "retrieval": {
+        "retrieved_at": "2026-07-28T09:25:47+00:00",
+        "sha256": "d36bb312e66a8195c273a0186b38d749425d317546c8f6f4cb5a043db5a97b6c",
+        "bytes": 162247,
+        "media_type": "application/pdf",
+        "cache_key": ".private-sources/ego-psychology/bpsi-ego-psychology-overview.pdf"
+      }
+    }
+  ],
+  "status": "audited"
 }

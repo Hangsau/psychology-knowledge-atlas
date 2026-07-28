@@ -5,34 +5,211 @@
   "slots": {
     "identity_history": {
       "description": "Independent scholarly identity and historical placement",
-      "status": "not_searched"
+      "status": "covered"
     },
     "primary_works": {
       "description": "Primary works or first-generation programme statements",
-      "status": "not_searched"
+      "status": "covered"
     },
     "theory_methods": {
       "description": "Core concepts, methods and internal variants",
-      "status": "not_searched"
+      "status": "covered"
     },
     "independent_critique": {
       "description": "Independent historiography, criticism or boundary analysis",
-      "status": "not_searched"
+      "status": "covered"
     },
     "empirical_status": {
       "description": "Empirical tests, syntheses, replications or current assessment",
-      "status": "not_searched"
+      "status": "covered"
     },
     "current_status": {
       "description": "Contemporary continuation, institutions or present disciplinary status",
-      "status": "not_searched"
+      "status": "covered"
     },
     "cultural_language_context": {
       "description": "Non-English, local, cultural or knowledge-sovereignty context where applicable",
-      "status": "not_searched"
+      "status": "covered"
     }
   },
-  "searches": [],
-  "items": [],
-  "status": "not_started"
+  "searches": [
+    {
+      "searched_at": "2026-07-28",
+      "system": "Project Gutenberg / ETH Zurich",
+      "queries": [
+        "Jung analytical psychology primary works",
+        "C G Jung papers archive"
+      ],
+      "purpose": "Primary editions and historical identity"
+    },
+    {
+      "searched_at": "2026-07-28",
+      "system": "PMC / J-STAGE",
+      "queries": [
+        "Jungian psychotherapy empirical review",
+        "analytical psychology scientific critique"
+      ],
+      "purpose": "Empirical and critical assessment"
+    },
+    {
+      "searched_at": "2026-07-28",
+      "system": "International Association for Analytical Psychology",
+      "queries": [
+        "IAAP constitution analytical psychology"
+      ],
+      "purpose": "Current international continuation and languages"
+    }
+  ],
+  "items": [
+    {
+      "id": "jung-48225-collected-papers",
+      "title": "Collected Papers on Analytical Psychology",
+      "authors": [
+        "C. G. Jung",
+        "Constance E. Long (editor)"
+      ],
+      "slot": "primary_works",
+      "source_kind": "translated_primary_collection",
+      "landing_url": "https://www.gutenberg.org/cache/epub/48225/pg48225-images.html",
+      "download_url": "https://www.gutenberg.org/cache/epub/48225/pg48225-images.html",
+      "access_status": "public_domain_fulltext",
+      "rights_note": "Publicly readable source; private cache only.",
+      "status": "retrieved",
+      "retrieval": {
+        "retrieved_at": "2026-07-28T09:23:20+00:00",
+        "sha256": "945c15a1380bb663277d218415848f03a1017178ca7ce5edeaae7e6bedb13367",
+        "bytes": 1350359,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/analytical-psychology/jung-48225-collected-papers.html"
+      }
+    },
+    {
+      "id": "jung-65903-psychology-unconscious",
+      "title": "Psychology of the Unconscious",
+      "authors": [
+        "C. G. Jung",
+        "Beatrice M. Hinkle (translator)"
+      ],
+      "slot": "theory_methods",
+      "source_kind": "translated_primary_book",
+      "landing_url": "https://www.gutenberg.org/cache/epub/65903/pg65903-images.html",
+      "download_url": "https://www.gutenberg.org/cache/epub/65903/pg65903-images.html",
+      "access_status": "public_domain_fulltext",
+      "rights_note": "Early English version; not interchangeable with Jung's later revised Symbols of Transformation.",
+      "status": "retrieved",
+      "retrieval": {
+        "retrieved_at": "2026-07-28T09:23:24+00:00",
+        "sha256": "6489d15fe0a846e12db2399064b62ab281959d3fc150d168d9a4390279f7999a",
+        "bytes": 1492626,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/analytical-psychology/jung-65903-psychology-unconscious.html"
+      }
+    },
+    {
+      "id": "eth-jung-papers-collection",
+      "title": "C. G. Jung Papers Collection",
+      "authors": [
+        "ETH Zurich University Archives"
+      ],
+      "slot": "identity_history",
+      "source_kind": "official_archive_description",
+      "landing_url": "https://library.ethz.ch/en/collections-and-archives/archiving/eth-zurich-university-archives/c-g-jung-papers-collection.html",
+      "download_url": "https://library.ethz.ch/en/collections-and-archives/archiving/eth-zurich-university-archives/c-g-jung-papers-collection.html",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Publicly readable source; private cache only.",
+      "status": "retrieved",
+      "retrieval": {
+        "retrieved_at": "2026-07-28T09:23:28+00:00",
+        "sha256": "444d225546980ee1575eb81c7b0ffef640d7d9f9f872ad33bdcf6332a8065e8f",
+        "bytes": 59232,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/analytical-psychology/eth-jung-papers-collection.html"
+      }
+    },
+    {
+      "id": "hogenson-2013-psychology-with-psyche",
+      "title": "Jung's Psychology with the Psyche and the Behavioral Sciences",
+      "authors": [
+        "George B. Hogenson"
+      ],
+      "slot": "independent_critique",
+      "source_kind": "scholarly_boundary_analysis",
+      "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4217588/",
+      "download_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4217588/",
+      "access_status": "open_fulltext",
+      "rights_note": "Publicly readable source; private cache only.",
+      "status": "retrieved",
+      "retrieval": {
+        "retrieved_at": "2026-07-28T09:23:31+00:00",
+        "sha256": "fe34540f9102146a37a5b3dc0d8e0565c6baa901c1084ae425fb9c8d2c8e9d47",
+        "bytes": 152322,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/analytical-psychology/hogenson-2013-psychology-with-psyche.html"
+      }
+    },
+    {
+      "id": "roesler-2013-effectiveness-review",
+      "title": "Evidence for the Effectiveness of Jungian Psychotherapy",
+      "authors": [
+        "Christian Roesler"
+      ],
+      "slot": "empirical_status",
+      "source_kind": "empirical_review",
+      "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4217606/",
+      "download_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4217606/",
+      "access_status": "open_fulltext",
+      "rights_note": "Open review; study-design limitations must be retained during later appraisal.",
+      "status": "retrieved",
+      "retrieval": {
+        "retrieved_at": "2026-07-28T09:23:34+00:00",
+        "sha256": "3de46e3ab7993e6b4724fee8aa67587094a1081ee39c508f7cca14dd1cd8e13e",
+        "bytes": 148585,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/analytical-psychology/roesler-2013-effectiveness-review.html"
+      }
+    },
+    {
+      "id": "iaap-home-current",
+      "title": "International Association for Analytical Psychology",
+      "authors": [
+        "International Association for Analytical Psychology"
+      ],
+      "slot": "current_status",
+      "source_kind": "official_organization_page",
+      "landing_url": "https://iaap.org/",
+      "download_url": "https://iaap.org/",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Publicly readable source; private cache only.",
+      "status": "retrieved",
+      "retrieval": {
+        "retrieved_at": "2026-07-28T09:23:40+00:00",
+        "sha256": "15520a473c31b23b158d702d4c8698983ddfa9335725f97015d83eaa09721f91",
+        "bytes": 304616,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/analytical-psychology/iaap-home-current.html"
+      }
+    },
+    {
+      "id": "iaap-constitution-five-languages",
+      "title": "Constitution of the IAAP in the Five Official Languages",
+      "authors": [
+        "International Association for Analytical Psychology"
+      ],
+      "slot": "cultural_language_context",
+      "source_kind": "official_multilingual_document",
+      "landing_url": "https://iaap.org/wp-content/uploads/2019/06/03-The-Constitution-of-the-IAAP-in-the-five-official-languages.pdf",
+      "download_url": "https://iaap.org/wp-content/uploads/2019/06/03-The-Constitution-of-the-IAAP-in-the-five-official-languages.pdf",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Publicly readable source; private cache only.",
+      "status": "retrieved",
+      "retrieval": {
+        "retrieved_at": "2026-07-28T09:23:44+00:00",
+        "sha256": "676adae03df283db0810131c0c1cddd955ddd08f5904dae3ec5ab9970fc2fa0d",
+        "bytes": 1859412,
+        "media_type": "application/pdf",
+        "cache_key": ".private-sources/analytical-psychology/iaap-constitution-five-languages.pdf"
+      }
+    }
+  ],
+  "status": "audited"
 }

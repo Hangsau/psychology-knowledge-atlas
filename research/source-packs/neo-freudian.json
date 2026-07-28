@@ -5,34 +5,189 @@
   "slots": {
     "identity_history": {
       "description": "Independent scholarly identity and historical placement",
-      "status": "not_searched"
+      "status": "covered"
     },
     "primary_works": {
       "description": "Primary works or first-generation programme statements",
-      "status": "not_searched"
+      "status": "covered"
     },
     "theory_methods": {
       "description": "Core concepts, methods and internal variants",
-      "status": "not_searched"
+      "status": "covered"
     },
     "independent_critique": {
       "description": "Independent historiography, criticism or boundary analysis",
-      "status": "not_searched"
+      "status": "covered"
     },
     "empirical_status": {
       "description": "Empirical tests, syntheses, replications or current assessment",
-      "status": "not_searched"
+      "status": "searched_no_qualifying_source"
     },
     "current_status": {
       "description": "Contemporary continuation, institutions or present disciplinary status",
-      "status": "not_searched"
+      "status": "covered"
     },
     "cultural_language_context": {
       "description": "Non-English, local, cultural or knowledge-sovereignty context where applicable",
-      "status": "not_searched"
+      "status": "covered"
     }
   },
-  "searches": [],
-  "items": [],
-  "status": "not_started"
+  "searches": [
+    {
+      "searched_at": "2026-07-28",
+      "system": "Erich Fromm Archive / institutional archives",
+      "queries": [
+        "Fromm social character full text",
+        "neo-Freudian Horney Sullivan Fromm history"
+      ],
+      "purpose": "Primary theory and identity"
+    },
+    {
+      "searched_at": "2026-07-28",
+      "system": "Independent historical and critical searches",
+      "queries": [
+        "Fromm social character critique",
+        "neo-Freudian empirical research"
+      ],
+      "purpose": "Critique and empirical value check"
+    },
+    {
+      "searched_at": "2026-07-28",
+      "system": "Karen Horney institutions / non-English searches",
+      "queries": [
+        "Karen Horney Clinic history",
+        "neo-Freudian Chinese reception"
+      ],
+      "purpose": "Current and cultural continuation"
+    }
+  ],
+  "items": [
+    {
+      "id": "international-erich-fromm-society",
+      "title": "International Erich Fromm Society",
+      "authors": [
+        "International Erich Fromm Society"
+      ],
+      "slot": "identity_history",
+      "source_kind": "official_scholarly_society_page",
+      "landing_url": "https://fromm-gesellschaft.eu/en/",
+      "download_url": "https://fromm-gesellschaft.eu/en/",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Publicly readable source; private cache only.",
+      "status": "retrieved",
+      "retrieval": {
+        "retrieved_at": "2026-07-28T09:27:37+00:00",
+        "sha256": "9082f9a1ed92faa9864356a58c9734df4180f561cb8e64c768de17d5bc2e80ff",
+        "bytes": 1570792,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/neo-freudian/international-erich-fromm-society.html"
+      }
+    },
+    {
+      "id": "fromm-1942-character-social-process",
+      "title": "Character and the Social Process",
+      "authors": [
+        "Erich Fromm"
+      ],
+      "slot": "primary_works",
+      "source_kind": "primary_theoretical_text",
+      "landing_url": "https://www.marxists.org/reference/subject/philosophy/works/ge/fromm.htm",
+      "download_url": "https://www.marxists.org/reference/subject/philosophy/works/ge/fromm.htm",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Publicly readable source; private cache only.",
+      "status": "retrieved",
+      "retrieval": {
+        "retrieved_at": "2026-07-28T09:23:49+00:00",
+        "sha256": "b45012402353b9ebffb6ad72a1a8b90397b48c08e047af8adeaa83da54656a4a",
+        "bytes": 41078,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/neo-freudian/fromm-1942-character-social-process.html"
+      }
+    },
+    {
+      "id": "fromm-1944-social-origins-neurosis",
+      "title": "Individual and Social Origins of Neurosis",
+      "authors": [
+        "Erich Fromm"
+      ],
+      "slot": "theory_methods",
+      "source_kind": "primary_article",
+      "landing_url": "https://www.marxists.org/archive/fromm/works/1944/neurosis.htm",
+      "download_url": "https://www.marxists.org/archive/fromm/works/1944/neurosis.htm",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Publicly readable source; private cache only.",
+      "status": "retrieved",
+      "retrieval": {
+        "retrieved_at": "2026-07-28T09:23:52+00:00",
+        "sha256": "b8e5b05a5d59377e46a29d7371df78d16fa9fd0b86e2083e05e25490bb805b26",
+        "bytes": 19892,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/neo-freudian/fromm-1944-social-origins-neurosis.html"
+      }
+    },
+    {
+      "id": "ferguson-2016-fromm-revisited",
+      "title": "Between Marx and Freud: Erich Fromm Revisited",
+      "authors": [
+        "Iain Ferguson"
+      ],
+      "slot": "independent_critique",
+      "source_kind": "critical_retrospective",
+      "landing_url": "https://www.marxists.org/history/etol/newspape/isj2/2016/isj2-149/ferguson.html",
+      "download_url": "https://www.marxists.org/history/etol/newspape/isj2/2016/isj2-149/ferguson.html",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Publicly readable source; private cache only.",
+      "status": "retrieved",
+      "retrieval": {
+        "retrieved_at": "2026-07-28T09:23:55+00:00",
+        "sha256": "d8e826f8a00e0ba188802e72d5b24293e4026b85bb615dece6386c1d4ff6cbd4",
+        "bytes": 73636,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/neo-freudian/ferguson-2016-fromm-revisited.html"
+      }
+    },
+    {
+      "id": "karen-horney-clinic-about",
+      "title": "About Us",
+      "authors": [
+        "Karen Horney Clinic"
+      ],
+      "slot": "current_status",
+      "source_kind": "official_institutional_history",
+      "landing_url": "https://www.karenhorneyclinic.org/about-us/",
+      "download_url": "https://www.karenhorneyclinic.org/about-us/",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Publicly readable source; private cache only.",
+      "status": "retrieved",
+      "retrieval": {
+        "retrieved_at": "2026-07-28T09:24:01+00:00",
+        "sha256": "865909cd90fee23c0ca507c65f594a3be9e5c13feaf3cabdc171c447a695d746",
+        "bytes": 137287,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/neo-freudian/karen-horney-clinic-about.html"
+      }
+    },
+    {
+      "id": "cheng-2012-fromm-social-unconscious-zh",
+      "title": "述评弗洛姆的社会无意识理论",
+      "authors": [
+        "程爱爱"
+      ],
+      "slot": "cultural_language_context",
+      "source_kind": "chinese_reception_critique",
+      "landing_url": "https://fromm-online.org/wp-content/uploads/reception/Cheng_Aiai_2012.pdf",
+      "download_url": "https://fromm-online.org/wp-content/uploads/reception/Cheng_Aiai_2012.pdf",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Publicly readable source; private cache only.",
+      "status": "retrieved",
+      "retrieval": {
+        "retrieved_at": "2026-07-28T09:24:05+00:00",
+        "sha256": "8d640b72e60343a532fa9fb5802a9072ebd6ac724ec200662e230af60d05d187",
+        "bytes": 491150,
+        "media_type": "application/pdf",
+        "cache_key": ".private-sources/neo-freudian/cheng-2012-fromm-social-unconscious-zh.pdf"
+      }
+    }
+  ],
+  "status": "audited"
 }

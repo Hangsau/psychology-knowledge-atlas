@@ -5,34 +5,192 @@
   "slots": {
     "identity_history": {
       "description": "Independent scholarly identity and historical placement",
-      "status": "not_searched"
+      "status": "covered"
     },
     "primary_works": {
       "description": "Primary works or first-generation programme statements",
-      "status": "not_searched"
+      "status": "covered"
     },
     "theory_methods": {
       "description": "Core concepts, methods and internal variants",
-      "status": "not_searched"
+      "status": "covered"
     },
     "independent_critique": {
       "description": "Independent historiography, criticism or boundary analysis",
-      "status": "not_searched"
+      "status": "covered"
     },
     "empirical_status": {
       "description": "Empirical tests, syntheses, replications or current assessment",
-      "status": "not_searched"
+      "status": "covered"
     },
     "current_status": {
       "description": "Contemporary continuation, institutions or present disciplinary status",
-      "status": "not_searched"
+      "status": "covered"
     },
     "cultural_language_context": {
       "description": "Non-English, local, cultural or knowledge-sovereignty context where applicable",
-      "status": "not_searched"
+      "status": "searched_no_qualifying_source"
     }
   },
-  "searches": [],
-  "items": [],
-  "status": "not_started"
+  "searches": [
+    {
+      "searched_at": "2026-07-28",
+      "system": "Psychoanalytic archives / institutional repositories",
+      "queries": [
+        "Kohut introspection empathy full text",
+        "self psychology historical development"
+      ],
+      "purpose": "Primary method and identity"
+    },
+    {
+      "searched_at": "2026-07-28",
+      "system": "PMC",
+      "queries": [
+        "self psychology empirical comparison",
+        "Kohut self psychology critique"
+      ],
+      "purpose": "Theory, critique and empirical status"
+    },
+    {
+      "searched_at": "2026-07-28",
+      "system": "International Association for Psychoanalytic Self Psychology",
+      "queries": [
+        "IAPSP mission current"
+      ],
+      "purpose": "Present institutional continuation"
+    }
+  ],
+  "items": [
+    {
+      "id": "kohut-1982-introspection-empathy",
+      "title": "Introspection, Empathy, and the Semi-Circle of Mental Health",
+      "authors": [
+        "Heinz Kohut"
+      ],
+      "slot": "primary_works",
+      "source_kind": "primary_article",
+      "landing_url": "https://raw.githubusercontent.com/wiki/PeteMichaud/rademp/media/1982-kohut-introspection-empathy-and-the-semi-circle-mental-health.pdf",
+      "download_url": "https://raw.githubusercontent.com/wiki/PeteMichaud/rademp/media/1982-kohut-introspection-empathy-and-the-semi-circle-mental-health.pdf",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Publicly readable source; private cache only.",
+      "status": "retrieved",
+      "retrieval": {
+        "retrieved_at": "2026-07-28T09:25:51+00:00",
+        "sha256": "bdc3ee641282bc712d47c4f2425191b844ab6bcc933b0da8633c3ce060a5f7f5",
+        "bytes": 10201019,
+        "media_type": "application/pdf",
+        "cache_key": ".private-sources/self-psychology/kohut-1982-introspection-empathy.pdf"
+      }
+    },
+    {
+      "id": "willemsen-etal-2015-theoretical-pluralism",
+      "title": "Theoretical Pluralism in Psychoanalytic Case Studies",
+      "authors": [
+        "Jochem Willemsen",
+        "et al."
+      ],
+      "slot": "identity_history",
+      "source_kind": "empirical_historical_mapping",
+      "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4586353/",
+      "download_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4586353/",
+      "access_status": "open_fulltext",
+      "rights_note": "Publicly readable source; private cache only.",
+      "status": "retrieved",
+      "retrieval": {
+        "retrieved_at": "2026-07-28T09:26:29+00:00",
+        "sha256": "7fdbd28b958a3119a4c40d5fd6d2b348065103ca024309e82f642021770a34ef",
+        "bytes": 153586,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/self-psychology/willemsen-etal-2015-theoretical-pluralism.html"
+      }
+    },
+    {
+      "id": "baker-2008-narcissistic-patient",
+      "title": "Psychotherapy with a Narcissistic Patient Using Kohut's Self Psychology Model",
+      "authors": [
+        "Howard S. Baker",
+        "Margaret N. Baker"
+      ],
+      "slot": "theory_methods",
+      "source_kind": "clinical_theory_article",
+      "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2860525/",
+      "download_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2860525/",
+      "access_status": "open_fulltext",
+      "rights_note": "Publicly readable source; private cache only.",
+      "status": "retrieved",
+      "retrieval": {
+        "retrieved_at": "2026-07-28T09:25:56+00:00",
+        "sha256": "657e570cdcd7a0471e5013ee7cc5e03b1e2e847df07445674031dae616cd33ea",
+        "bytes": 135263,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/self-psychology/baker-2008-narcissistic-patient.html"
+      }
+    },
+    {
+      "id": "shahar-2021-psychoanalysis-dialectics",
+      "title": "Psychoanalysis and Interdisciplinarity Through the Lens of Dialectics",
+      "authors": [
+        "Golan Shahar",
+        "et al."
+      ],
+      "slot": "independent_critique",
+      "source_kind": "scholarly_boundary_analysis",
+      "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8295723/",
+      "download_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8295723/",
+      "access_status": "open_fulltext",
+      "rights_note": "Publicly readable source; private cache only.",
+      "status": "retrieved",
+      "retrieval": {
+        "retrieved_at": "2026-07-28T09:25:59+00:00",
+        "sha256": "7c5a08b62da0c05b96822581f284f12e45cf691b1748aecc718b4ff20f4ca5df",
+        "bytes": 240838,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/self-psychology/shahar-2021-psychoanalysis-dialectics.html"
+      }
+    },
+    {
+      "id": "bachar-etal-self-vs-cognitive",
+      "title": "Empirical Comparison of Self Psychology and Cognitive Orientation",
+      "authors": [
+        "Eytan Bachar",
+        "et al."
+      ],
+      "slot": "empirical_status",
+      "source_kind": "comparative_clinical_study",
+      "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3330539/",
+      "download_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3330539/",
+      "access_status": "open_fulltext",
+      "rights_note": "Direct comparison in eating disorders; does not validate all self-psychology constructs.",
+      "status": "retrieved",
+      "retrieval": {
+        "retrieved_at": "2026-07-28T09:26:02+00:00",
+        "sha256": "3c40f8da835f8594ba72d88dfa1e4c31e20f1bfa7bda3bad19a92059365e1997",
+        "bytes": 168074,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/self-psychology/bachar-etal-self-vs-cognitive.html"
+      }
+    },
+    {
+      "id": "iapsp-current-home",
+      "title": "International Association for Psychoanalytic Self Psychology",
+      "authors": [
+        "IAPSP"
+      ],
+      "slot": "current_status",
+      "source_kind": "official_organization_page",
+      "landing_url": "https://iapsp.com/",
+      "download_url": "https://iapsp.com/",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Publicly readable source; private cache only.",
+      "status": "retrieved",
+      "retrieval": {
+        "retrieved_at": "2026-07-28T09:26:07+00:00",
+        "sha256": "ff14ae06161d756844b20c53235b3f6a1f788f1618905f521aff77d5462a017b",
+        "bytes": 112452,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/self-psychology/iapsp-current-home.html"
+      }
+    }
+  ],
+  "status": "audited"
 }
