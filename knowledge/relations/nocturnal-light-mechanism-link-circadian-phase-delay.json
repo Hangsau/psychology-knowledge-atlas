@@ -1,0 +1,12 @@
+{
+  "evidence_ids": ["ev-light-nocturnal-phase-delay"],
+  "id": "nocturnal-light-mechanism-link-circadian-phase-delay",
+  "object_id": "human-circadian-phase-delay-response",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "relation",
+  "relation_type": "mechanism_link",
+  "scope_note": "A direct physical-to-physiological experimental hop for nocturnal bright light in controlled healthy-young-adult protocols; no intervening retinal, cellular or neural-circuit path is inferred by this edge.",
+  "status": "verified",
+  "subject_id": "nocturnal-bright-light-exposure"
+}

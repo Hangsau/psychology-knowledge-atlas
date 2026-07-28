@@ -1,0 +1,12 @@
+{
+  "evidence_ids": ["ev-light-phase-melatonin-not-proxy"],
+  "id": "circadian-phase-delay-compares-with-melatonin-suppression",
+  "object_id": "nocturnal-melatonin-suppression",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "relation",
+  "relation_type": "compares_with",
+  "scope_note": "Comparison records the study's decoupling result. It is not a mechanism_link and does not claim that the responses are universally independent.",
+  "status": "verified",
+  "subject_id": "human-circadian-phase-delay-response"
+}

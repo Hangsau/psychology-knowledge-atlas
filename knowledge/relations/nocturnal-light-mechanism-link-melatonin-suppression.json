@@ -1,0 +1,12 @@
+{
+  "evidence_ids": ["ev-light-nocturnal-melatonin-suppression"],
+  "id": "nocturnal-light-mechanism-link-melatonin-suppression",
+  "object_id": "nocturnal-melatonin-suppression",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "relation",
+  "relation_type": "mechanism_link",
+  "scope_note": "A direct physical-to-chemical/molecular experimental hop for acute nocturnal light response; it does not assert proportionality, downstream sleep effects or mediation of phase resetting.",
+  "status": "verified",
+  "subject_id": "nocturnal-bright-light-exposure"
+}

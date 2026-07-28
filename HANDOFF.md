@@ -3,35 +3,31 @@
 ## ACTIVE WORK
 
 ```yaml
-phase: P3-M0
-unit: mechanism-level-and-relation-evidence-contract
+phase: P3-M1
+unit: light-circadian-first-cross-level-slice
 status: validated
-base_commit: 6eb6aae
+base_commit: 1cb39f7
 started_at: 2026-07-28
-objective: 在建立跨層資料前，先固定九層 mechanism_level vocabulary 與可雙向驗證的 relation–evidence linkage contract
-affected_contracts:
-  - schemas/entity.schema.json
-  - schemas/relation.schema.json
-  - schemas/evidence.schema.json
-  - vocabularies/mechanism-levels.json
-  - tools/validate.py
-  - knowledge/relations
-  - knowledge/evidence
+objective: 以可讀全文的一手人體研究建立第一個 bounded light/circadian slice，至少包含兩個各自有直接證據的跨層 hops
+target_chain:
+  - nocturnal-light-exposure (physical)
+  - human-circadian-phase-response (physiological_system)
+  - nocturnal-melatonin-suppression (chemical_molecular)
 boundaries:
-  - mechanism_level 只分類可明確定位的 mechanism nodes，不把學派、人物或 broad subfield 強塞進層級
-  - relation evidence 必須雙向連結；既有 claim evidence 可同時支撐 relation，但不得只有 relation 單向引用
-  - mechanism_link 只表達來源直接支持的單一跳接；不得從多篇來源拼成未驗證的完整因果鏈
-  - 本 gate 先修合約與既有資料；新光照資料要等合約 validator 與完整 tests 通過後才建立
-exit_gate: nine controlled levels; every relation evidence link bidirectional; mechanism_link endpoints levelled; malformed orphan one-way and non-levelled inputs rejected; validator and full tests pass
+  - 只記研究直接操弄與量測的結果；不把人類生理結果外推成所有物種或所有光照條件
+  - circadian phase shift 與 melatonin suppression 分成兩筆 atomic claims／relations，不宣稱彼此必然中介
+  - 不在本 slice 建立睡眠、認知情緒、行為或社會作息 hops
+  - 來源若只能讀 abstract 或 snippet，一律停在 citation queue，不升 verified/publishable
+exit_gate: at least two direct cross-level hops from readable primary human full text; atomic claims; bidirectional evidence links; scope boundaries; validator and full tests pass
 completed_items:
-  - baseline clean at main@6eb6aae；relation inventory 12 records；all currently reuse claim evidence without evidence-side relation backlinks
-  - 新增九層 vocabularies/mechanism-levels.json；entity schema 與 validator 僅允許 mechanism nodes 使用受控 mechanism_level
-  - relation schema 新增 mechanism_link；validator 要求兩端均有不同 mechanism_level
-  - evidence schema 新增 optional relation_ids；relation→evidence 與 evidence→relation 現在強制雙向一致
-  - 既有 12 relations 所引用的 17 evidence records 已全部補回鏈，未改其 claim、quote、locator 或 verdict
-  - regression tests 覆蓋 canonical backlink inventory、單向缺失、orphan relation、反向缺失、九層精確集合、缺 endpoint level、同層 link 與錯誤 entity type
-  - validator PASS；完整 suite 70 tests PASS；既有 P3/P4 reader/build/concurrency tests 無退化
-next_action: P3-M0 已關閉；啟動 P3-M1 bounded light/circadian slice，先以可讀全文的一手人體研究建立最少兩個直接跨層 hops
+  - P3-M0 committed/pushed at 1cb39f7；validator and 70 tests PASS
+  - 全文來源：Rahman et al. 2018, DOI 10.1113/JP275501, PMID 29707782, PMCID PMC5983136；protocol/abstract results/key points/discussion 已讀
+  - 建立 physical 夜間亮光、physiological_system 相位延遲、chemical_molecular 褪黑激素抑制三個 mechanism nodes
+  - 建立兩條 verified/publishable mechanism_link；各有獨立 mechanism claim、fulltext_direct evidence、locator、短引文及雙向 relation backlink
+  - 建立一筆 non-proxy finding 與 compares_with relation，明確阻止把 melatonin suppression 當 phase resetting proxy 或中介
+  - 所有 statements 均限於受測夜間模式與健康年輕成人；未外推 daytime、其他 spectrum、clinical populations、sleep、cognition、behavior 或 social schedule
+  - validator PASS；P3-M1 專用 regression PASS；完整 suite 71 tests PASS
+next_action: P3-M1 已關閉；可進 P4-M1 bounded mechanism ladder view，只呈現這兩條 direct hops 與 non-proxy boundary，不擴寫新科學 claims
 ```
 
 ## P3-S COMPLETION RECORD

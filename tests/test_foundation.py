@@ -403,6 +403,82 @@ class FoundationTests(unittest.TestCase):
         self.write_json("catalog/entities/physical-node.json", physical)
         self.assertTrue(any("mechanism-node entity type" in error for error in validate_repository(self.work)))
 
+    def test_p3m1_light_circadian_slice_has_two_direct_hops_and_proxy_boundary(self) -> None:
+        entity_levels = {
+            "nocturnal-bright-light-exposure": "physical",
+            "human-circadian-phase-delay-response": "physiological_system",
+            "nocturnal-melatonin-suppression": "chemical_molecular",
+        }
+        for entity_id, level in entity_levels.items():
+            entity = json.loads(
+                (self.work / f"catalog/entities/{entity_id}.json").read_text(encoding="utf-8")
+            )
+            self.assertEqual(entity["mechanism_level"], level)
+            self.assertTrue(entity["publishable"])
+
+        expected_relations = {
+            "nocturnal-light-mechanism-link-circadian-phase-delay": (
+                "nocturnal-bright-light-exposure",
+                "human-circadian-phase-delay-response",
+                "mechanism_link",
+            ),
+            "nocturnal-light-mechanism-link-melatonin-suppression": (
+                "nocturnal-bright-light-exposure",
+                "nocturnal-melatonin-suppression",
+                "mechanism_link",
+            ),
+            "circadian-phase-delay-compares-with-melatonin-suppression": (
+                "human-circadian-phase-delay-response",
+                "nocturnal-melatonin-suppression",
+                "compares_with",
+            ),
+        }
+        for relation_id, expected in expected_relations.items():
+            relation = json.loads(
+                (self.work / f"knowledge/relations/{relation_id}.json").read_text(encoding="utf-8")
+            )
+            self.assertEqual(
+                (relation["subject_id"], relation["object_id"], relation["relation_type"]),
+                expected,
+            )
+            self.assertTrue(relation["publishable"])
+            self.assertEqual(len(relation["evidence_ids"]), 1)
+            evidence_id = relation["evidence_ids"][0]
+            evidence = json.loads(
+                (self.work / f"knowledge/evidence/{evidence_id}.json").read_text(encoding="utf-8")
+            )
+            self.assertIn(relation_id, evidence["relation_ids"])
+            self.assertEqual(evidence["source_id"], "rahman-etal-2018-light-decoupling")
+            self.assertEqual(evidence["evidence_level"], "fulltext_direct")
+            self.assertTrue(evidence["short_quote"])
+
+        mechanism_claims = [
+            json.loads(
+                (self.work / f"knowledge/claims/{claim_id}.json").read_text(encoding="utf-8")
+            )
+            for claim_id in (
+                "c-light-nocturnal-phase-delay",
+                "c-light-nocturnal-melatonin-suppression",
+            )
+        ]
+        self.assertTrue(all(claim["claim_type"] == "mechanism" for claim in mechanism_claims))
+        self.assertTrue(all("does not" in claim["scope_note"] or "not" in claim["scope_note"] for claim in mechanism_claims))
+        boundary = json.loads(
+            (self.work / "knowledge/claims/c-light-phase-melatonin-not-proxy.json").read_text(
+                encoding="utf-8"
+            )
+        )
+        self.assertIn("proxy", boundary["statement"])
+        self.assertIn("does not imply", boundary["scope_note"])
+        source = json.loads(
+            (self.work / "library/sources/rahman-etal-2018-light-decoupling.json").read_text(
+                encoding="utf-8"
+            )
+        )
+        self.assertEqual(source["identifiers"]["doi"], "10.1113/JP275501")
+        self.assertEqual(source["identifiers"]["pmcid"], "PMC5983136")
+        self.assertEqual(validate_repository(self.work), [])
+
 
     def test_legacy_migration_is_identity_only(self) -> None:
         migrated = migrate_legacy_identity({"id": "seed", "name": "Seed", "entity_type": "school"})

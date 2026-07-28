@@ -1,0 +1,14 @@
+{
+  "aliases": [],
+  "entity_type": "construct",
+  "id": "nocturnal-melatonin-suppression",
+  "mechanism_level": "chemical_molecular",
+  "name": "Nocturnal melatonin suppression",
+  "notes": "Acute reduction in measured melatonin during the cited nocturnal light protocols; not a proxy for circadian phase resetting.",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "entity",
+  "source_ids": ["rahman-etal-2018-light-decoupling"],
+  "status": "verified",
+  "tags": ["p3-m1", "melatonin", "circadian"]
+}

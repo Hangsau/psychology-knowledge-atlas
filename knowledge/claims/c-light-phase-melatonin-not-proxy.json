@@ -1,0 +1,13 @@
+{
+  "claim_type": "finding",
+  "evidence_ids": ["ev-light-phase-melatonin-not-proxy"],
+  "id": "c-light-phase-melatonin-not-proxy",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "claim",
+  "scope_note": "This conclusion is bounded to the continuous and intermittent nocturnal light patterns compared in the study. It does not imply that the two responses are unrelated under every light condition.",
+  "statement": "Under the tested light patterns, melatonin suppression could not serve as a proxy measure for circadian phase shifting.",
+  "statement_zh": "在受測光照模式下，褪黑激素抑制不能作為晝夜節律相位移動的代理指標。",
+  "status": "verified",
+  "subject_id": "human-circadian-phase-delay-response"
+}

@@ -1,0 +1,14 @@
+{
+  "claim_id": "c-light-nocturnal-melatonin-suppression",
+  "evidence_level": "fulltext_direct",
+  "id": "ev-light-nocturnal-melatonin-suppression",
+  "locator": "Abstract and Key points, intermittent bright-light stimulus result; full text read 2026-07-28",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "evidence",
+  "relation_ids": ["nocturnal-light-mechanism-link-melatonin-suppression"],
+  "short_quote": "Each and every bright light stimulus in an intermittent exposure pattern induced a similar degree of melatonin suppression",
+  "source_id": "rahman-etal-2018-light-decoupling",
+  "status": "verified",
+  "summary": "The directly measured acute hormonal response supports one physical-to-chemical/molecular hop."
+}

@@ -1,0 +1,14 @@
+{
+  "claim_id": "c-light-nocturnal-phase-delay",
+  "evidence_level": "fulltext_direct",
+  "id": "ev-light-nocturnal-phase-delay",
+  "locator": "Abstract, Results sentence reporting phase-delay comparison; full text read 2026-07-28",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "evidence",
+  "relation_ids": ["nocturnal-light-mechanism-link-circadian-phase-delay"],
+  "short_quote": "All light exposure groups had significantly greater phase-delay shifts than the dim-light control condition",
+  "source_id": "rahman-etal-2018-light-decoupling",
+  "status": "verified",
+  "summary": "The direct group comparison supports one physical-to-physiological hop without specifying an unmeasured intracellular pathway."
+}

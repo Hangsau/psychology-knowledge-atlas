@@ -1,0 +1,14 @@
+{
+  "claim_id": "c-light-phase-melatonin-not-proxy",
+  "evidence_level": "fulltext_direct",
+  "id": "ev-light-phase-melatonin-not-proxy",
+  "locator": "Abstract conclusion and Discussion functional-coupling conclusion; full text read 2026-07-28",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "evidence",
+  "relation_ids": ["circadian-phase-delay-compares-with-melatonin-suppression"],
+  "short_quote": "one cannot be used as a proxy measure of the other",
+  "source_id": "rahman-etal-2018-light-decoupling",
+  "status": "verified",
+  "summary": "The paper explicitly rejects treating the two measured responses as interchangeable proxies under the tested patterns."
+}

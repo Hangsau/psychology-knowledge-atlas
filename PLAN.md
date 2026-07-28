@@ -156,6 +156,14 @@ P2-E 的目的，是驗證命名效應的資料路由與發布安全，不是無
 - 既有 12 筆 relations、17 筆被引用 evidence 已完成 backlink migration；單向、孤兒、未標層級及同層輸入均有拒絕測試。
 - Validator 與完整 70-test suite 通過後，才允許建立第一個光照 pilot 資料。
 
+#### P3-M1：夜間亮光的第一個跨層 slice（完成）
+
+- 來源固定為 Rahman et al. (2018) 可讀全文的一手人體實驗（DOI `10.1113/JP275501`；PMCID `PMC5983136`）。
+- 建立三個 mechanism nodes：夜間亮光暴露（physical）、人類晝夜節律相位延遲反應（physiological system）、夜間褪黑激素抑制（chemical/molecular）。
+- 兩條 `mechanism_link` 分別記錄亮光對相位延遲與褪黑激素抑制的直接實驗結果；每條均有獨立 atomic claim、locator、短引文與雙向 evidence backlink。
+- 額外建立一筆 `compares_with` 邊界：在受測連續／間歇模式下，褪黑激素抑制不可作為相位移動的 proxy。它不是第三條 mechanism edge，也不主張兩反應在所有條件下無關。
+- 本 slice 不建立睡眠、認知情緒、行為或社會作息 hops；validator 與完整 71-test suite 通過。
+
 ### P4-E/M：衍生視圖
 
 - Named Effect Card：名稱、別名、popular claim、證據摘要、複現／爭議、邊界條件與相關機制。

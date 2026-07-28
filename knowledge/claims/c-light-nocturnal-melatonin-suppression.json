@@ -1,0 +1,13 @@
+{
+  "claim_type": "mechanism",
+  "evidence_ids": ["ev-light-nocturnal-melatonin-suppression"],
+  "id": "c-light-nocturnal-melatonin-suppression",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "claim",
+  "scope_note": "This records an acute hormonal response to the tested intermittent bright-light stimuli. It does not claim that suppression is proportional to exposure duration, identical across people, or a mediator or proxy for phase resetting.",
+  "statement": "In the tested intermittent nocturnal bright-light conditions, each bright-light stimulus induced melatonin suppression.",
+  "statement_zh": "在受測的間歇性夜間亮光條件下，每次亮光刺激都引發褪黑激素抑制。",
+  "status": "verified",
+  "subject_id": "nocturnal-bright-light-exposure"
+}

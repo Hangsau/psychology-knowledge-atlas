@@ -1,0 +1,27 @@
+{
+  "access_status": "open_fulltext",
+  "authors": [
+    "Shadab A. Rahman",
+    "Melissa A. St Hilaire",
+    "Claude Gronfier",
+    "Anne-Marie Chang",
+    "Nayantara Santhi",
+    "Charles A. Czeisler",
+    "Elizabeth B. Klerman",
+    "Steven W. Lockley"
+  ],
+  "id": "rahman-etal-2018-light-decoupling",
+  "identifiers": {
+    "doi": "10.1113/JP275501",
+    "pmcid": "PMC5983136",
+    "pmid": "29707782"
+  },
+  "issued": "2018",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "source",
+  "status": "retrieved",
+  "title": "Functional decoupling of melatonin suppression and circadian phase resetting in humans",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5983136/",
+  "version_note": "The Journal of Physiology 596(11):2147-2157. Open-access full text read via PMC on 2026-07-28, including protocol, abstract results, key points and discussion; linked evidence quotes only directly reported human light-exposure findings."
+}

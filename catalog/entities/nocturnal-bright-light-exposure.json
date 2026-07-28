@@ -1,0 +1,14 @@
+{
+  "aliases": [],
+  "entity_type": "event",
+  "id": "nocturnal-bright-light-exposure",
+  "mechanism_level": "physical",
+  "name": "Nocturnal bright-light exposure",
+  "notes": "A bounded experimental exposure node, not a claim that all nighttime light has equivalent intensity, duration, spectrum or timing effects.",
+  "provenance": "source_derived",
+  "publishable": true,
+  "record_type": "entity",
+  "source_ids": ["rahman-etal-2018-light-decoupling"],
+  "status": "verified",
+  "tags": ["p3-m1", "light", "circadian"]
+}
