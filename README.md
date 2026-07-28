@@ -14,6 +14,8 @@
 
 `catalog + library + knowledge + vocabularies + crosswalks` → validator → generated views/indexes。
 
+目前另有來源先行層：`research/targets.json` 固定48項研究目標，`research/source-packs/` 記錄系統性搜尋與下載清冊，全文放在 Git 忽略的 `.private-sources/`。它只代表已發現／已取得，不能直接成為 claim 或 evidence。
+
 ## 驗證
 
 ```powershell

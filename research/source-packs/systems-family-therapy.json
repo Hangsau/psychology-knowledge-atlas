@@ -1,0 +1,46 @@
+{
+  "target_id": "systems-family-therapy",
+  "target_type": "therapy_family",
+  "search_protocol_version": "1.0.0",
+  "slots": {
+    "identity_history": {
+      "description": "Independent scholarly identity and historical placement",
+      "status": "not_searched"
+    },
+    "primary_works": {
+      "description": "Primary works or first-generation programme statements",
+      "status": "not_searched"
+    },
+    "theory_methods": {
+      "description": "Core concepts, methods and internal variants",
+      "status": "not_searched"
+    },
+    "independent_critique": {
+      "description": "Independent historiography, criticism or boundary analysis",
+      "status": "not_searched"
+    },
+    "empirical_status": {
+      "description": "Empirical tests, syntheses, replications or current assessment",
+      "status": "not_searched"
+    },
+    "current_status": {
+      "description": "Contemporary continuation, institutions or present disciplinary status",
+      "status": "not_searched"
+    },
+    "clinical_outcomes": {
+      "description": "Systematic reviews, meta-analyses or comparative outcome research",
+      "status": "not_searched"
+    },
+    "safety_guidelines": {
+      "description": "Guidelines, limitations, adverse effects or contraindications",
+      "status": "not_searched"
+    },
+    "cultural_language_context": {
+      "description": "Non-English, local, cultural or knowledge-sovereignty context where applicable",
+      "status": "not_searched"
+    }
+  },
+  "searches": [],
+  "items": [],
+  "status": "not_started"
+}

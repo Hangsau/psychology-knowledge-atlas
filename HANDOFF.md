@@ -3,31 +3,30 @@
 ## ACTIVE WORK
 
 ```yaml
-phase: P4-M1
-unit: light-circadian-first-mechanism-view
-status: validated
+phase: P2-SC
+unit: forty-eight-target-source-corpus
+status: in_progress
 base_commit: 6f2aeb3
 started_at: 2026-07-28
-reader_question: 夜間亮光在這個 bounded 人體實驗 slice 中直接連到哪些跨層反應，哪些結果不能互當 proxy
+objective: 先為原版48項研究目標完成可恢復、可稽核的來源蒐集，再開始閱讀、建立主張或撰寫內容
+active_target: individual-psychology
 canonical_inputs:
-  - nocturnal-light-mechanism-link-circadian-phase-delay
-  - nocturnal-light-mechanism-link-melatonin-suppression
-  - circadian-phase-delay-compares-with-melatonin-suppression
+  - research/targets.json
+  - research/source-packs/*.json
 boundaries:
-  - view 只解參照 canonical records，不手寫新機制敘述、計數或日期
-  - 兩條 mechanism_link 顯示為同一 physical node 的分叉，不畫成 light→melatonin→phase 的虛假串行鏈
-  - compares_with 只列為 non-proxy boundary，不混入 mechanism hops
-  - generated JSON/Markdown 可刪除重建，不成為 canonical input
-exit_gate: exact two mechanism hops plus one boundary; all records verified/publishable and backlinks resolve; branch shape preserved; malformed empty duplicate missing unpublished and wrong-type inputs rejected; deterministic atomic concurrent build and full tests pass
+  - legacy repo 只提供48項 identity/order seed；不匯入舊文章、摘要或 verdict
+  - downloaded 不等於 read/verified/publishable
+  - 公開可讀但授權不明全文只進 .private-sources；PDF/EPUB 不進 Git
+  - 不繞過登入、付費牆、DRM 或技術存取控制
+exit_gate: all 48 packs have recorded searches and slot adjudication; selected retrievable bodies pass MIME/size/hash audit; failures and version boundaries are explicit; validator, full tests and diff checks pass
 completed_items:
-  - P3-M1 committed/pushed at 6f2aeb3；validator and 71 tests PASS
-  - 新增 views/mechanisms/light-circadian-first-slice.json；spec 僅列兩筆 mechanism_link 與一筆 compares_with relation IDs
-  - build_views 新增 bounded mechanism builder；直接解參照 nodes/levels/claims/evidence/sources/relations，不複製 canonical facts
-  - builder 強制 exactly two mechanism hops + one boundary、共享 source node、boundary 連接兩個 hop targets，保留分叉結構
-  - Markdown/JSON 固定警告不是 light→melatonin→phase 串行中介鏈；non-proxy relation 獨立於 hops
-  - malformed/empty/oversized spec、非三筆、重複、不安全、缺失、unpublished 與錯誤 edge composition 均有拒絕路徑
-  - validator PASS；全量 view rebuild PASS；專用 tests PASS；完整 suite 73 tests PASS（含 deterministic、atomic、concurrent）
-next_action: P4-M1 已關閉；下一個 bounded gate 可選擇延伸 light→sleep（需新一手全文證據），或先做 P4-E Named Effect Card；不得把 roadmap 當成自動授權的無界擴張
+  - 固定48項及1..48順序，並標記學派／傳統／理論／治療／領域／模型類型
+  - 建立48份 source packs、source-pack schema、初始化器、下載器與稽核器
+  - source-pack audit PASS；路徑逃逸與 MIME signature regression tests PASS
+  - individual-psychology 已建立原典、歷史、理論、批判、實證、文化與當代延續來源清單
+  - 已下載並雜湊驗證多筆個體心理學來源；正式數量以 source pack 中 status=retrieved 為準
+  - 明示排除一份雖可公開連線、但文件內宣告僅限訂閱者個人使用的 Understanding Human Nature 數位版，待找公版替代
+next_action: 補齊 individual-psychology 的失敗正式端點與非英語來源，完成 pilot audit；之後依 research/targets.json 順序分批處理其餘47項，不建立正文
 ```
 
 ## P3-S COMPLETION RECORD

@@ -14,9 +14,19 @@
 6. `P5 cross-project`：D1–D13、細標籤與 evidence-backed relations 對接 religions-history。
 7. `P6 expansion`：門檻通過後才擴展全庫。
 
+## P2-SC：48項來源先行蒐集（進行中）
+
+本階段依使用者核准，暫停新增正文與 claims，先完成固定48項研究目標的來源母體。`research/targets.json` 保留原版順序，但明確區分 school、tradition、paradigm、theory、therapy、subfield 與 model；舊庫只提供 identity/order seed，不提供文章、摘要或 verdict。
+
+每個目標在 `research/source-packs/` 有獨立來源包，按 history、primary works、theory/methods、independent critique、empirical status、current status 與 cultural/language context 搜尋；治療類另含 outcomes 與 safety/guidelines。可取得全文下載至 Git 忽略的 `.private-sources/`，並保存 URL、版本、取得狀態、權利註記、MIME、大小、時間與 SHA-256。公開可讀但授權不明資料可私人快取；禁止繞過登入、付費牆、DRM 或技術存取控制。
+
+退出門檻：48項來源包皆完成明列搜尋協定與來源槽位裁決；所有選定且可直接取得檔案通過格式與雜湊驗證；失敗、重複、版本差異及無合格來源均明確記錄；未授權正文不進 Git；validator、source-pack audit、完整 tests 與 diff checks 通過。退出前不得把「已下載」寫成「已閱讀／已驗證」。
+
 舊 `psychology-schools` 保留為 legacy archive，不刪除、不改寫歷史。
 
 ## 即時階段
+
+目前 active gate 是 P2-SC。48項母表及空來源包已建立；`individual-psychology` 正在作端到端蒐集與下載試跑。原 P4-M1 已完成，不再是 active work。
 
 P1、P1-E、P2-E 與 `P3-S` 均已完成並有可執行退出門檻。四個學派 pilots：`structuralism`、`psychoanalysis`、`cbt`、`indigenous-psychology` 已全部完成。P4-V1 coverage comparison 與 P4-V2 bounded chronology 均已完成；下一個 gate 開始前仍須固定讀者問題、canonical input 集合與退出門檻。
 

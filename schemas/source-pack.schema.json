@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Hangsau/psychology-knowledge-atlas/schemas/source-pack.schema.json",
+  "title": "Research target source pack",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["target_id", "target_type", "search_protocol_version", "slots", "searches", "items", "status"],
+  "properties": {
+    "target_id": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"},
+    "target_type": {"enum": ["school", "tradition", "paradigm", "theory", "therapy", "theory_therapy", "therapy_family", "subfield", "model"]},
+    "search_protocol_version": {"type": "string", "minLength": 1},
+    "slots": {"type": "object"},
+    "searches": {"type": "array"},
+    "items": {"type": "array"},
+    "status": {"enum": ["not_started", "discovering", "retrieving", "audited"]}
+  }
+}

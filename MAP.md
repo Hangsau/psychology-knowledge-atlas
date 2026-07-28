@@ -8,6 +8,9 @@ catalog/entities/        心理學實體與收錄裁決
 catalog/reference-systems/ 權威參考系與 coverage 母體
 catalog/coverage/          每個參考系候選的收錄／合併／排除／待裁決紀錄
 library/sources/         書目、版本、取得狀態
+research/targets.json    固定48項研究目標、順序與實體類型
+research/source-packs/   每項搜尋紀錄、來源槽位與下載清冊
+.private-sources/        Git ignore 的全文私人快取
 knowledge/claims/        原子主張
 knowledge/evidence/      claim ↔ source locator 證據
 knowledge/relations/     有方向、有依據的實體關係
@@ -21,6 +24,8 @@ views/mechanisms/        bounded mechanism view 規格；只列 evidence-backed 
 tools/validate.py        canonical integrity validator
 tools/store.py           原子寫入與同實體鎖
 tools/build_views.py     由 canonical records 原子重生 indexes 與 reader profiles
+tools/collect_sources.py 選定來源的受限下載、格式檢查與 SHA-256 紀錄
+tools/audit_source_packs.py 48項清單、槽位、路徑與檔案完整性稽核
 tests/                   邊界、schema、參照、併發、安全測試
 ```
 
@@ -31,6 +36,7 @@ tests/                   邊界、schema、參照、併發、安全測試
 | 新增實體 | `schemas/entity.schema.json` + `catalog/reference-systems/` |
 | 新增參考系 | `schemas/reference-system.schema.json` + `schemas/coverage.schema.json`；候選集合必須與裁決集合完全一致 |
 | 新增來源 | `schemas/source.schema.json`；取得狀態不等於證據品質 |
+| 蒐集48項來源 | `research/targets.json` + `research/source-packs/` + `schemas/source-pack.schema.json`；下載不等於已讀 |
 | 新增主張／證據 | claim + evidence schema；locator 與 source access gate |
 | 新增命名效應 | `schemas/entity.schema.json` 的 `phenomenon` contract + `vocabularies/phenomenon-kinds.json`；必須有受控 kind 與可解析 `domain_entity_ids`，名稱本身不得建立 claim |
 | 新增命名現象參考系 | `schemas/reference-system.schema.json` + `vocabularies/reference-system-roles.json`；先判定 canonical taxonomy / specialist index / discovery seed / popular-language inventory |
@@ -44,6 +50,8 @@ tests/                   邊界、schema、參照、併發、安全測試
 ## 3. 踩雷點
 
 - 舊 48 項不是封閉全集，也不是同一實體類型。
+- 48項在 P2-SC 是固定研究計畫，不是全球心理學全集；不得把 theory、therapy、subfield 或 model 全部改叫 school。
+- `.private-sources/` 只保存研究快取；公開網址不自動代表可散布，權利判定與內容正確性必須分欄記錄。
 - 舊文章、confidence emoji、`reviewed` 與 `corroborated` 不可繼承。
 - metadata、snippet、abstract 與全文證據必須區分。
 - 同一實體寫入必須取得 lock；禁止直接覆寫 canonical JSON。

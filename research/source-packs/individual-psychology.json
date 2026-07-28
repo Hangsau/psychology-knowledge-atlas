@@ -1,0 +1,286 @@
+{
+  "target_id": "individual-psychology",
+  "target_type": "school",
+  "search_protocol_version": "1.0.0",
+  "slots": {
+    "identity_history": {
+      "description": "Independent scholarly identity and historical placement",
+      "status": "covered"
+    },
+    "primary_works": {
+      "description": "Primary works or first-generation programme statements",
+      "status": "covered"
+    },
+    "theory_methods": {
+      "description": "Core concepts, methods and internal variants",
+      "status": "covered"
+    },
+    "independent_critique": {
+      "description": "Independent historiography, criticism or boundary analysis",
+      "status": "covered"
+    },
+    "empirical_status": {
+      "description": "Empirical tests, syntheses, replications or current assessment",
+      "status": "covered"
+    },
+    "current_status": {
+      "description": "Contemporary continuation, institutions or present disciplinary status",
+      "status": "covered"
+    },
+    "cultural_language_context": {
+      "description": "Non-English, local, cultural or knowledge-sovereignty context where applicable",
+      "status": "searching"
+    }
+  },
+  "searches": [
+    {
+      "searched_at": "2026-07-28",
+      "system": "Internet Archive / Open Library / Wikimedia Commons",
+      "queries": [
+        "Alfred Adler Individual Psychology full text",
+        "The Practice and Theory of Individual Psychology",
+        "The Neurotic Constitution Alfred Adler",
+        "Understanding Human Nature Alfred Adler"
+      ],
+      "purpose": "Primary works and edition/access boundaries"
+    },
+    {
+      "searched_at": "2026-07-28",
+      "system": "PubMed Central / Europe PMC",
+      "queries": [
+        "Adlerian individual psychology psychotherapy review",
+        "Adlerian birth order empirical",
+        "Brief Adlerian Psychodynamic Psychotherapy systematic review"
+      ],
+      "purpose": "Independent overview, empirical tests and treatment-outcome context"
+    },
+    {
+      "searched_at": "2026-07-28",
+      "system": "University and professional-organization sites",
+      "queries": [
+        "Individual Psychology history official organization",
+        "Alfred Adler school history Freud critique"
+      ],
+      "purpose": "Independent historical boundary and contemporary continuation"
+    }
+  ],
+  "items": [
+    {
+      "id": "adler-1921-neurotic-constitution",
+      "title": "The Neurotic Constitution: Outlines of a Comparative Individualistic Psychology and Psychotherapy",
+      "authors": [
+        "Alfred Adler"
+      ],
+      "issued": "1921",
+      "slot": "primary_works",
+      "source_kind": "primary_book",
+      "landing_url": "https://commons.wikimedia.org/wiki/File:The_neurotic_constitution;_outlines_of_a_comparative_individualistic_psychology_and_psychotherapy_(IA_neuroticconstitu00adleiala).pdf",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/1/11/The_neurotic_constitution%3B_outlines_of_a_comparative_individualistic_psychology_and_psychotherapy_%28IA_theneuroticconst00adle%29.pdf",
+      "access_status": "public_domain_fulltext",
+      "rights_note": "Wikimedia Commons marks the digitized 1921 edition as public domain; preserve edition identity separately from later Routledge editions.",
+      "status": "retrieved",
+      "retrieval": {
+        "retrieved_at": "2026-07-28T08:20:19+00:00",
+        "sha256": "3ad318e95a68a94ebdcad1e5869b11750fd106ede367d1a047bc03d2c7756ee5",
+        "bytes": 18979859,
+        "media_type": "application/pdf",
+        "cache_key": ".private-sources/individual-psychology/adler-1921-neurotic-constitution.pdf"
+      }
+    },
+    {
+      "id": "adler-1955-practice-theory-individual-psychology",
+      "title": "The Practice and Theory of Individual Psychology",
+      "authors": [
+        "Alfred Adler",
+        "Paul Radin (translator)"
+      ],
+      "issued": "1925; second revised edition 1929; 1955 reprint",
+      "slot": "primary_works",
+      "source_kind": "primary_book_reprint",
+      "landing_url": "https://archive.org/details/20200310thepracticeandtheoryofindividualpsychology",
+      "download_url": "https://archive.org/download/20200310thepracticeandtheoryofindividualpsychology/20200310_The%20Practice%20and%20Theory%20of%20Individual%20Psychology_text.pdf",
+      "access_status": "public_domain_fulltext",
+      "rights_note": "Internet Archive item marks this 1955 scan Public Domain Mark 1.0; retain its 1925/1929/1955 version chain rather than calling it the 1924 edition.",
+      "status": "retrieved",
+      "retrieval": {
+        "retrieved_at": "2026-07-28T08:22:50+00:00",
+        "sha256": "6b1c88143aede1602d3a59dc7bfa26e9f7e6f30e6a4839e58195a58300d450ce",
+        "bytes": 46349002,
+        "media_type": "application/pdf",
+        "cache_key": ".private-sources/individual-psychology/adler-1955-practice-theory-individual-psychology.pdf"
+      }
+    },
+    {
+      "id": "miller-2021-revitalizing-alfred-adler",
+      "title": "Revitalizing Alfred Adler: An Echo for Equality",
+      "authors": [
+        "Robin Miller"
+      ],
+      "issued": "2021",
+      "slot": "identity_history",
+      "source_kind": "peer_reviewed_overview",
+      "identifiers": {
+        "pmcid": "PMC7932831",
+        "pmid": "33688108"
+      },
+      "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7932831/",
+      "download_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7932831/fullTextXML",
+      "access_status": "open_fulltext",
+      "rights_note": "Public full text distributed through PubMed Central and Europe PMC; retain the article copyright statement from the body.",
+      "status": "retrieved",
+      "retrieval": {
+        "retrieved_at": "2026-07-28T08:20:30+00:00",
+        "sha256": "8a78d4d775d9788e2174dc03ea26832d7a079f3dfec792b8966753e4fd0efb7c",
+        "bytes": 103368,
+        "media_type": "application/xml",
+        "cache_key": ".private-sources/individual-psychology/miller-2021-revitalizing-alfred-adler.xml"
+      }
+    },
+    {
+      "id": "freud-1914-history-psychoanalytic-movement-adler",
+      "title": "On the History of the Psycho-Analytic Movement (Adler sections)",
+      "authors": [
+        "Sigmund Freud"
+      ],
+      "issued": "1914/1917",
+      "slot": "independent_critique",
+      "source_kind": "historical_primary_critique",
+      "landing_url": "https://psychclassics.yorku.ca/Freud/History/",
+      "download_url": "https://psychclassics.yorku.ca/Freud/History/",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Publicly readable York University transcription; cache privately and do not treat Freud's polemic as a neutral history.",
+      "status": "retrieved",
+      "retrieval": {
+        "retrieved_at": "2026-07-28T08:20:33+00:00",
+        "sha256": "6adca715841c3fd98b6b1b1bcc0cc841b2c8aecb878fd15704ba9090717d93ac",
+        "bytes": 132649,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/individual-psychology/freud-1914-history-psychoanalytic-movement-adler.html"
+      }
+    },
+    {
+      "id": "whiteman-mchale-soli-2011-sibling-theories",
+      "title": "Theoretical Perspectives on Sibling Relationships",
+      "authors": [
+        "Shawn D. Whiteman",
+        "Susan M. McHale",
+        "Anna Soli"
+      ],
+      "issued": "2011",
+      "slot": "theory_methods",
+      "source_kind": "peer_reviewed_theoretical_review",
+      "identifiers": {
+        "pmcid": "PMC3127252"
+      },
+      "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3127252/",
+      "download_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3127252/?report=xml",
+      "access_status": "open_fulltext",
+      "rights_note": "Public full text through PubMed Central and Europe PMC.",
+      "status": "retrieved",
+      "retrieval": {
+        "retrieved_at": "2026-07-28T08:22:53+00:00",
+        "sha256": "9bd46d8c66ef7f95659fc4474a8e6a90afdaa19c5f39ccdada6c70270b1caf03",
+        "bytes": 237323,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/individual-psychology/whiteman-mchale-soli-2011-sibling-theories.html"
+      }
+    },
+    {
+      "id": "vazsonyi-2012-birth-order-latin-america",
+      "title": "The Relationship of Birth Order and Gender with Academic Standing and Substance Use Among Youth in Latin America",
+      "issued": "2012",
+      "slot": "empirical_status",
+      "source_kind": "empirical_study",
+      "identifiers": {
+        "pmcid": "PMC3375868"
+      },
+      "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3375868/",
+      "download_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC3375868/fullTextXML",
+      "access_status": "open_fulltext",
+      "rights_note": "Open full text; tests a narrow birth-order-related application and must not be generalized to the whole school.",
+      "status": "failed",
+      "failure": {
+        "at": "2026-07-28T08:22:56+00:00",
+        "reason": "HTTP Error 404: Not Found"
+      }
+    },
+    {
+      "id": "systematic-review-2023-personality-disorder-treatments",
+      "title": "Effectiveness of outpatient and community treatments for people with a diagnosis of personality disorder: systematic review and meta-analysis",
+      "issued": "2023",
+      "slot": "empirical_status",
+      "source_kind": "systematic_review_meta_analysis",
+      "identifiers": {
+        "pmcid": "PMC9862782"
+      },
+      "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9862782/",
+      "download_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9862782/fullTextXML",
+      "access_status": "open_fulltext",
+      "rights_note": "Open full text; relevant because it independently evaluates a Sequential Brief Adlerian Psychodynamic Psychotherapy comparison, not because it validates all Individual Psychology claims.",
+      "status": "retrieved",
+      "retrieval": {
+        "retrieved_at": "2026-07-28T08:20:53+00:00",
+        "sha256": "3d3708e3d7d6c56274fa363d59088aa903e425b9da4c191e538b3cdffe104a11",
+        "bytes": 274856,
+        "media_type": "application/xml",
+        "cache_key": ".private-sources/individual-psychology/systematic-review-2023-personality-disorder-treatments.xml"
+      }
+    },
+    {
+      "id": "song-2025-hwa-byung-systematic-review",
+      "title": "Effectiveness of psychotherapy for Hwa-Byung: A systematic review of interventional studies",
+      "issued": "2025",
+      "slot": "cultural_language_context",
+      "source_kind": "systematic_review",
+      "identifiers": {
+        "pmcid": "PMC11813000"
+      },
+      "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11813000/",
+      "download_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11813000/fullTextXML",
+      "access_status": "open_fulltext",
+      "rights_note": "Open full text; narrow Korean cultural application involving Adlerian counseling, not evidence for the entire school.",
+      "status": "retrieved",
+      "retrieval": {
+        "retrieved_at": "2026-07-28T08:20:57+00:00",
+        "sha256": "4226547b57faadd74d5e719d5ea3350efaf3761f9e1b5aef658cd8cbc41a29ee",
+        "bytes": 114371,
+        "media_type": "application/xml",
+        "cache_key": ".private-sources/individual-psychology/song-2025-hwa-byung-systematic-review.xml"
+      }
+    },
+    {
+      "id": "iaip-history-individual-psychology",
+      "title": "History of the International Association of Individual Psychology",
+      "slot": "current_status",
+      "source_kind": "professional_organization_self_description",
+      "landing_url": "https://adler-iaip.net/history-2/",
+      "download_url": "https://adler-iaip.net/history-2/",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Official organization self-description; cache privately and use only for institutional continuity claims unless independently corroborated.",
+      "status": "retrieved",
+      "retrieval": {
+        "retrieved_at": "2026-07-28T08:21:02+00:00",
+        "sha256": "60d9cd50b0583e9c1e425b11f2da3a3ad736c59f55f44bfcaad375be108c845b",
+        "bytes": 165365,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/individual-psychology/iaip-history-individual-psychology.html"
+      }
+    },
+    {
+      "id": "adler-understanding-human-nature-stein-copy",
+      "title": "Understanding Human Nature (Stein digital version)",
+      "authors": [
+        "Alfred Adler"
+      ],
+      "issued": "1927; digital version 2011",
+      "slot": "primary_works",
+      "source_kind": "candidate_primary_book_version",
+      "landing_url": "https://adler.institute/wp-content/uploads/2019/01/Adler-understanding-human-nature.pdf",
+      "access_status": "privately_observed_unredistributable",
+      "rights_note": "The PDF itself states that it is copyrighted, for individual subscriber use, and may not be shared; do not retrieve without user-supplied authorization.",
+      "status": "excluded",
+      "exclusion_reason": "Public URL does not erase the document's explicit subscriber-use restriction; seek a public-domain 1927 edition instead."
+    }
+  ],
+  "status": "retrieving"
+}
