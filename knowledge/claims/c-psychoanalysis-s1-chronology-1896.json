@@ -11,5 +11,11 @@
   "statement": "Freud's 1896 article used the term psycho-analytic method for his use of Josef Breuer's probing procedure.",
   "statement_zh": "Freud 在 1896 年的文章中，以「精神分析方法」稱呼自己對 Josef Breuer 探查程序的運用。",
   "status": "verified",
-  "subject_id": "psychoanalysis"
+  "subject_id": "psychoanalysis",
+  "time_anchor": {
+    "start_year": 1896,
+    "end_year": 1896,
+    "precision": "year",
+    "qualifier": "none"
+  }
 }

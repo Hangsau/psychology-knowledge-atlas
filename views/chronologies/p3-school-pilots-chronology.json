@@ -1,0 +1,12 @@
+{
+  "claim_ids": [
+    "c-psychoanalysis-s1-chronology-1896",
+    "c-structuralism-s1-chronology-1898",
+    "c-indigenous-psychology-s2-late-1960s-worldwide-calls",
+    "c-cbt-s2-gradual-integration-1970s"
+  ],
+  "id": "p3-school-pilots-chronology",
+  "language": "zh-Hant",
+  "scope_note": "本 view 只比較可追溯的時間錨點：1896 與 1898 是確切年份；1960 年代末與 1970 年代中後期保留 decade-level 不確定性。它不建立四個學派的單一起源日期，也不納入出版版本時間線。",
+  "title": "四個 P3-S 學派的形成時間錨點"
+}

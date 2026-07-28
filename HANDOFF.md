@@ -4,36 +4,35 @@
 
 ```yaml
 phase: P4
-unit: p3-school-pilots-comparison-view
+unit: p3-school-pilots-chronology-view
 status: validated
-base_commit: 926b297
-started_at: 2026-07-27
-reader_question: 四個 P3-S pilots 目前各有多少已驗證／可發布的 claims、evidence、sources、relations 與章節覆蓋，讀者應從哪裡進入
+base_commit: 701232c
+started_at: 2026-07-28
+reader_question: 四個 P3-S pilots 各有哪些已驗證的形成時間錨點，如何在不製造單一起源或虛假日期精度下依時間閱讀
 canonical_inputs:
-  - views/specs/structuralism.json
-  - views/specs/psychoanalysis.json
-  - views/specs/cbt.json
-  - views/specs/indigenous-psychology.json
-  - catalog/entities
-  - knowledge/claims
+  - knowledge/claims/c-psychoanalysis-s1-chronology-1896.json
+  - knowledge/claims/c-structuralism-s1-chronology-1898.json
+  - knowledge/claims/c-indigenous-psychology-s2-late-1960s-worldwide-calls.json
+  - knowledge/claims/c-cbt-s2-gradual-integration-1970s.json
   - knowledge/evidence
-  - knowledge/relations
   - library/sources
-output: views/generated/p3-school-pilots-comparison.{json,md}
+output: views/generated/p3-school-pilots-chronology.{json,md}
 boundaries:
-  - 只彙整 verified/publishable records；不新增或推論心理學主張
-  - 比較一致的結構指標，保留每個 profile 自己的 section titles；不同 sections 不宣稱語義等價
+  - 一筆原子 chronology claim 等於一個 event；只收錄四筆既有 verified/publishable formation anchors
+  - exact year 與 decade range 分開；1960 年代末及 1970 年代中後期不得壓成單一年份
+  - chronology anchor 不等於學派創立日期；版本與書目時間線不在本 gate
   - generated output 可刪除重生，不成為 canonical input
-exit_gate: exact four unique profiles; all references resolve; deterministic atomic build; empty duplicate missing and unpublished inputs rejected; validator and full tests pass
+exit_gate: exact four unique chronology claims; structured precision and ranges validate; verified evidence resolves; deterministic atomic build; malformed empty duplicate missing unpublished and over-precise inputs rejected; full tests pass
 completed_items:
-  - 固定 reader question、四份 profile inputs、generated outputs 與 non-equivalence boundary
-  - 新增 views/comparisons/p3-school-pilots-comparison.json；spec 只保存 profile IDs 與呈現範圍
-  - build_views 直接由 canonical entities/claims/evidence/sources/relations 解參照，輸出每個 pilot 的 sections、claim/evidence/source/relation counts 與 claim-type distribution
-  - 比較輸出固定警告：數量不代表品質、重要性或章節語義等價
-  - malformed/empty/oversized spec、非四筆、重複、不安全或缺失 profile、unpublished claim、missing entity endpoint 均有拒絕測試
-  - 既有 reproducible、concurrent 與 atomic-write tests 現在也涵蓋 comparison output
-  - validator PASS；comparison build PASS；完整 suite 65 tests PASS；MAP freshness 本專案 OK；git diff --check PASS
-next_action: P4-V1 已關閉；下一個 bounded P4 view 可考慮 canonical chronology timeline，開始前先固定 event granularity、日期不確定性與版本邊界
+  - baseline validator PASS；完整 suite 65 tests PASS；git diff --check PASS
+  - claim schema 與 validator 新增 optional time_anchor；year/year_range/decade 與 qualifier 組合均受控，舊 claims 不需 migration
+  - 四筆 chronology claims 已標註 canonical anchors：1896、1898、1960 年代末、1970 年代中後期
+  - 新增 views/chronologies/p3-school-pilots-chronology.json；spec 只列四筆 claim IDs 與呈現邊界
+  - build_views 直接解參照 canonical claim/entity/evidence/source，依 start/end/claim ID 決定性排序並原子輸出 JSON/Markdown
+  - 輸出固定警告 chronology anchor 不等於學派創立日期；scope_note 與全文短引文逐 event 呈現
+  - malformed/empty/oversized spec、非四筆、重複、不安全、缺失、unpublished、missing anchor、錯誤 range 與虛假 precision 均有拒絕測試
+  - validator PASS；全量 view rebuild PASS；完整 suite 68 tests PASS（含 deterministic、concurrent、atomic）；git diff --check PASS
+next_action: P4-V2 已關閉；下一個 bounded gate 開始前先固定讀者問題、canonical inputs、退出門檻及其在 P3-M／P4-E/M gate 順序中的位置
 ```
 
 ## P3-S COMPLETION RECORD

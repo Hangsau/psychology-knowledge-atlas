@@ -24,12 +24,14 @@ SYSTEM_ROLES = {"canonical_taxonomy", "specialist_index", "discovery_seed", "pop
 ACCESS_STATUSES = {"open_fulltext", "public_domain_fulltext", "repository_manuscript", "preprint", "publicly_readable_license_unclear", "privately_observed_unredistributable", "abstract_only", "metadata_only", "paywalled_unread", "unavailable"}
 EVIDENCE_LEVELS = {"fulltext_direct", "fulltext_indirect", "abstract_only", "metadata_only"}
 RELATION_TYPES = {"alias_of", "parent_of", "branch_of", "influenced", "opposed", "explains", "contextualizes", "compares_with", "contrasts_with", "empirical_research_on", "clinical_application", "appropriation_risk", "not_applicable"}
+TIME_PRECISIONS = {"year", "year_range", "decade"}
+TIME_QUALIFIERS = {"none", "early", "mid", "late", "mid_to_late"}
 
 COMMON = {"id", "record_type", "status", "publishable", "provenance"}
 ALLOWED = {
     "entity": COMMON | {"entity_type", "name", "aliases", "name_zh", "phenomenon_kind", "domain_entity_ids", "source_ids", "tags", "notes"},
     "source": COMMON | {"title", "identifiers", "access_status", "authors", "issued", "url", "version_note"},
-    "claim": COMMON | {"subject_id", "statement", "statement_zh", "claim_type", "evidence_ids", "scope_note"},
+    "claim": COMMON | {"subject_id", "statement", "statement_zh", "claim_type", "time_anchor", "evidence_ids", "scope_note"},
     "evidence": COMMON | {"claim_id", "source_id", "locator", "evidence_level", "summary", "short_quote"},
     "relation": COMMON | {"subject_id", "object_id", "relation_type", "evidence_ids", "scope_note"},
     "reference_system": COMMON | {"title", "authority", "scope", "system_role", "version", "retrieved_at", "source_ids", "candidate_ids", "notes"},
@@ -167,13 +169,6 @@ def _validate_shape(record: Record, errors: list[str]) -> None:
             errors.append(f"{path}: phenomenon-only fields require entity_type phenomenon")
     elif record_type == "source" and data.get("access_status") not in ACCESS_STATUSES:
         errors.append(f"{path}: invalid access_status")
-    elif record_type == "evidence":
-        if data.get("evidence_level") not in EVIDENCE_LEVELS:
-            errors.append(f"{path}: invalid evidence_level")
-        if not isinstance(data.get("locator"), str) or not data.get("locator", "").strip():
-            errors.append(f"{path}: evidence locator is required")
-    elif record_type == "relation" and data.get("relation_type") not in RELATION_TYPES:
-        errors.append(f"{path}: invalid relation_type")
     elif record_type == "claim":
         statement = data.get("statement")
         if not isinstance(statement, str) or not statement.strip():
@@ -184,6 +179,45 @@ def _validate_shape(record: Record, errors: list[str]) -> None:
             not isinstance(data["statement_zh"], str) or not data["statement_zh"].strip()
         ):
             errors.append(f"{path}: statement_zh must be a non-empty string")
+        if "time_anchor" in data:
+            anchor = data["time_anchor"]
+            required_anchor_fields = {"start_year", "end_year", "precision", "qualifier"}
+            if not isinstance(anchor, dict) or set(anchor) != required_anchor_fields:
+                errors.append(f"{path}: time_anchor requires only start_year, end_year, precision and qualifier")
+            else:
+                start_year, end_year = anchor["start_year"], anchor["end_year"]
+                precision, qualifier = anchor["precision"], anchor["qualifier"]
+                if data.get("claim_type") != "chronology":
+                    errors.append(f"{path}: time_anchor requires claim_type chronology")
+                years_are_ints = (
+                    isinstance(start_year, int)
+                    and not isinstance(start_year, bool)
+                    and isinstance(end_year, int)
+                    and not isinstance(end_year, bool)
+                )
+                if not years_are_ints:
+                    errors.append(f"{path}: time_anchor years must be integers")
+                elif start_year > end_year:
+                    errors.append(f"{path}: time_anchor start_year must not exceed end_year")
+                if precision not in TIME_PRECISIONS:
+                    errors.append(f"{path}: invalid time_anchor precision")
+                if qualifier not in TIME_QUALIFIERS:
+                    errors.append(f"{path}: invalid time_anchor qualifier")
+                if years_are_ints and precision == "year" and (start_year != end_year or qualifier != "none"):
+                    errors.append(f"{path}: time_anchor year precision requires one exact year and qualifier none")
+                elif years_are_ints and precision == "year_range" and (start_year == end_year or qualifier != "none"):
+                    errors.append(f"{path}: time_anchor year_range precision requires distinct years and qualifier none")
+                elif years_are_ints and precision == "decade" and (
+                    start_year % 10 != 0 or end_year != start_year + 9
+                ):
+                    errors.append(f"{path}: time_anchor decade precision requires a complete ten-year range")
+    elif record_type == "evidence":
+        if data.get("evidence_level") not in EVIDENCE_LEVELS:
+            errors.append(f"{path}: invalid evidence_level")
+        if not isinstance(data.get("locator"), str) or not data.get("locator", "").strip():
+            errors.append(f"{path}: evidence locator is required")
+    elif record_type == "relation" and data.get("relation_type") not in RELATION_TYPES:
+        errors.append(f"{path}: invalid relation_type")
     elif record_type == "reference_system":
         for field in ("title", "authority", "scope", "version", "retrieved_at"):
             if not isinstance(data.get(field), str) or not data.get(field, "").strip():

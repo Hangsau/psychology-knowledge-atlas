@@ -16,6 +16,7 @@ vocabularies/            多軸受控詞彙
 crosswalks/              D1–D13 與跨 repo 合約
 views/generated/         可刪除、可重生輸出（Git ignore）
 views/comparisons/       跨 profile 呈現規格；只列 canonical input IDs 與顯示邊界
+views/chronologies/      bounded 時間線規格；只列 chronology claim IDs 與顯示邊界
 tools/validate.py        canonical integrity validator
 tools/store.py           原子寫入與同實體鎖
 tools/build_views.py     由 canonical records 原子重生 indexes 與 reader profiles
@@ -36,6 +37,7 @@ tests/                   邊界、schema、參照、併發、安全測試
 | 對接宗教庫 | `crosswalks/d1-d13.json`；第一階段不改 religions-history |
 | 產文章／索引 | 只從 canonical records 生成到 `views/generated/` |
 | 產跨 pilot 比較 | `views/comparisons/` spec + `tools/build_views.py`；只比較一致結構指標，不把 sections 當語義等價 |
+| 產 bounded 時間線 | chronology claim 的 optional `time_anchor` + `views/chronologies/`；保留日期 precision／qualifier，不從 prose 猜日期 |
 
 ## 3. 踩雷點
 
@@ -55,3 +57,4 @@ tests/                   邊界、schema、參照、併發、安全測試
 - Indigenous research 的公開／可重用性不能只靠 FAIR 或一般 open-data 假設判定；涉及 Indigenous data、knowledge 或 community 時，須同時保留 self-determination、leadership、benefit、accountability、CARE 與當地 protocol 邊界。
 - ANZSRC Division 45 records 仍是 `context_domain`；P3-S Indigenous psychology pilot 不得把它們升格成 psychology `subfield`，也不得把 Aboriginal and Torres Strait Islander、Māori、Pacific Peoples 或其他民族合成單一文化。
 - P4 comparison spec 只能列 profile IDs 與呈現邊界；claims、evidence、sources、relations 和統計都必須在 build 時直接由 canonical records 解參照，禁止把計數或摘要手寫成第二套真相。
+- P4 chronology spec 只能列 chronology claim IDs；日期範圍與精度屬 canonical claim 的 `time_anchor`。`year` 不得帶模糊 qualifier，`decade` 必須保存完整十年範圍；時間錨點不得改寫成學派創立日期。

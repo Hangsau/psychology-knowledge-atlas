@@ -21,8 +21,10 @@ python tools\validate.py
 python -m unittest discover -s tests -v
 ```
 
-P1 coverage、P1-E 命名現象 universe、P2-E 證據路由與 P3-S 四個學派 pilots 均已通過明確退出門檻。`structuralism`、`psychoanalysis`、`cbt`、`indigenous-psychology` 各完成七個固定問題，publishable claims 均有全文 locator 與短引文，關係均有獨立 evidence。下一 gate 是 P4 views；Atlas 層仍為 `evidence_release:false`。
+P1 coverage、P1-E 命名現象 universe、P2-E 證據路由與 P3-S 四個學派 pilots 均已通過明確退出門檻。`structuralism`、`psychoanalysis`、`cbt`、`indigenous-psychology` 各完成七個固定問題，publishable claims 均有全文 locator 與短引文，關係均有獨立 evidence。P4 已完成 coverage comparison 與 bounded chronology；Atlas 層仍為 `evidence_release:false`。
 
 四個薄型 reader previews 亦已完成：執行 `python tools\build_views.py` 會為四個 pilots 生成 Markdown 與同內容的 JSON dossiers。頁面只收錄 verified/publishable records；generated output 可刪除重建，不是第二套 canonical truth。
 
 第一個跨 pilot P4 view 也已完成：`views/comparisons/p3-school-pilots-comparison.json` 只列四份 profile IDs 與呈現邊界，builder 會直接從 canonical records 重生 `p3-school-pilots-comparison.{md,json}`。它比較發布覆蓋與結構計數，不把章節名稱視為同義，也不以數量推論品質或學派重要性。
+
+第二個 P4 view 是 `views/chronologies/p3-school-pilots-chronology.json`：它由四筆 canonical chronology claims 重生形成時間錨點，明確區分確切年份與 decade-level 範圍。輸出不把時間錨點當成學派創立日期，也不從文字猜測更精確的年份。

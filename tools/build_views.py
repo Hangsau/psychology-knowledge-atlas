@@ -15,6 +15,7 @@ from store import record_lock
 ROOT = Path(__file__).resolve().parents[1]
 MAX_PROFILE_SPEC_BYTES = 2 * 1024 * 1024
 MAX_COMPARISON_SPEC_BYTES = 2 * 1024 * 1024
+MAX_CHRONOLOGY_SPEC_BYTES = 2 * 1024 * 1024
 SAFE_SPEC_ID = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
 
 
@@ -371,6 +372,150 @@ def _build_comparison_view(root: Path, spec_path: Path) -> tuple[Path, Path]:
     return json_output, markdown_output
 
 
+def _validate_chronology_spec(spec: dict[str, Any], path: Path) -> None:
+    allowed = {"id", "title", "language", "claim_ids", "scope_note"}
+    unknown = set(spec).difference(allowed)
+    if unknown:
+        raise ValueError(f"{path}: unknown chronology fields {sorted(unknown)}")
+    for field in ("id", "title", "language", "scope_note"):
+        if not isinstance(spec.get(field), str) or not spec[field].strip():
+            raise ValueError(f"{path}: {field} must be a non-empty string")
+    if not SAFE_SPEC_ID.fullmatch(spec["id"]):
+        raise ValueError(f"{path}: id must be a safe slug")
+    claim_ids = spec.get("claim_ids")
+    if not isinstance(claim_ids, list) or len(claim_ids) != 4:
+        raise ValueError(f"{path}: claim_ids must contain exactly four entries")
+    if len(claim_ids) != len(set(claim_ids)):
+        raise ValueError(f"{path}: claim_ids must be unique")
+    for claim_id in claim_ids:
+        if not isinstance(claim_id, str) or not SAFE_SPEC_ID.fullmatch(claim_id):
+            raise ValueError(f"{path}: invalid claim id {claim_id!r}")
+
+
+def _format_time_anchor(anchor: dict[str, Any], language: str) -> str:
+    start_year, end_year = anchor["start_year"], anchor["end_year"]
+    precision, qualifier = anchor["precision"], anchor["qualifier"]
+    if precision == "year":
+        return f"{start_year} 年" if language == "zh-Hant" else str(start_year)
+    if precision == "year_range":
+        return f"{start_year}–{end_year} 年" if language == "zh-Hant" else f"{start_year}–{end_year}"
+    qualifier_labels = {
+        "none": "",
+        "early": "初",
+        "mid": "中期",
+        "late": "末",
+        "mid_to_late": "中後期",
+    }
+    if language == "zh-Hant":
+        return f"{start_year} 年代{qualifier_labels[qualifier]}"
+    english_qualifier = qualifier.replace("_to_", "-").replace("_", " ")
+    return f"{english_qualifier + ' ' if english_qualifier != 'none' else ''}{start_year}s"
+
+
+def _build_chronology_view(root: Path, spec_path: Path) -> tuple[Path, Path]:
+    if spec_path.stat().st_size == 0:
+        raise ValueError(f"{spec_path}: empty chronology spec")
+    if spec_path.stat().st_size > MAX_CHRONOLOGY_SPEC_BYTES:
+        raise ValueError(f"{spec_path}: chronology spec exceeds {MAX_CHRONOLOGY_SPEC_BYTES} bytes")
+    spec = json.loads(spec_path.read_text(encoding="utf-8"))
+    if not isinstance(spec, dict):
+        raise ValueError(f"{spec_path}: chronology spec must be an object")
+    _validate_chronology_spec(spec, spec_path)
+
+    entities = _load_directory(root / "catalog" / "entities")
+    claims = _load_directory(root / "knowledge" / "claims")
+    evidence = _load_directory(root / "knowledge" / "evidence")
+    sources = _load_directory(root / "library" / "sources")
+    events = []
+    seen_subjects: set[str] = set()
+    for claim_id in spec["claim_ids"]:
+        if claim_id not in claims:
+            raise ValueError(f"chronology references missing claim {claim_id!r}")
+        claim = claims[claim_id]
+        if claim.get("claim_type") != "chronology":
+            raise ValueError(f"chronology claim {claim_id!r} must have claim_type chronology")
+        if claim.get("status") != "verified" or claim.get("publishable") is not True:
+            raise ValueError(f"chronology claim {claim_id!r} is not verified and publishable")
+        anchor = claim.get("time_anchor")
+        if not isinstance(anchor, dict):
+            raise ValueError(f"chronology claim {claim_id!r} lacks structured time_anchor")
+        subject_id = claim.get("subject_id")
+        if subject_id in seen_subjects:
+            raise ValueError(f"chronology contains duplicate subject {subject_id!r}")
+        seen_subjects.add(subject_id)
+        if subject_id not in entities:
+            raise ValueError(f"chronology claim {claim_id!r} references missing entity {subject_id!r}")
+        event_evidence = []
+        for evidence_id in claim["evidence_ids"]:
+            if evidence_id not in evidence:
+                raise ValueError(f"chronology claim {claim_id!r} references missing evidence {evidence_id!r}")
+            item = evidence[evidence_id]
+            if item.get("status") != "verified" or item.get("publishable") is not True:
+                continue
+            source_id = item.get("source_id")
+            if source_id not in sources:
+                raise ValueError(f"chronology evidence {evidence_id!r} references missing source {source_id!r}")
+            event_evidence.append(item | {"source": sources[source_id]})
+        if not event_evidence:
+            raise ValueError(f"chronology claim {claim_id!r} has no publishable evidence")
+        events.append(
+            {
+                "claim": claim,
+                "entity": entities[subject_id],
+                "evidence": event_evidence,
+                "time_label": _format_time_anchor(anchor, spec["language"]),
+            }
+        )
+    events.sort(
+        key=lambda event: (
+            event["claim"]["time_anchor"]["start_year"],
+            event["claim"]["time_anchor"]["end_year"],
+            event["claim"]["id"],
+        )
+    )
+    dossier = {
+        "id": spec["id"],
+        "title": spec["title"],
+        "language": spec["language"],
+        "scope_note": spec["scope_note"],
+        "events": events,
+    }
+    lines = [
+        f"# {spec['title']}",
+        "",
+        "> 此時間線只呈現四筆已有全文證據的形成時間錨點；時間錨點不等於學派創立日期，也不表示不同事件具有相同歷史意義。",
+        "",
+        spec["scope_note"],
+        "",
+    ]
+    for event in events:
+        claim = event["claim"]
+        lines.extend(
+            [
+                f"## {event['time_label']}｜{event['entity']['name']}",
+                "",
+                claim.get("statement_zh", claim["statement"]),
+                "",
+                f"- Claim：`{claim['id']}`",
+                f"- 日期精度：`{claim['time_anchor']['precision']}` / `{claim['time_anchor']['qualifier']}`",
+                f"- 範圍限制：{claim.get('scope_note', '未另列')}",
+                "- 證據：",
+                "",
+            ]
+        )
+        for item in event["evidence"]:
+            source = item["source"]
+            source_label = f"[{source['title']}]({source['url']})" if source.get("url") else source["title"]
+            lines.extend([f"  - {source_label}；{item['locator']}", f"    > {item['short_quote']}", ""])
+
+    output_dir = root / "views" / "generated"
+    json_output = output_dir / f"{spec['id']}.json"
+    markdown_output = output_dir / f"{spec['id']}.md"
+    _atomic_write_text(json_output, _json_payload(dossier))
+    _atomic_write_text(markdown_output, "\n".join(lines))
+    return json_output, markdown_output
+
+
 def _build_unlocked(root: Path) -> Path:
     entities = []
     for path in sorted((root / "catalog" / "entities").glob("*.json")):
@@ -418,6 +563,8 @@ def _build_unlocked(root: Path) -> Path:
         _build_reader_profile(root, spec_path)
     for spec_path in sorted((root / "views" / "comparisons").glob("*.json")):
         _build_comparison_view(root, spec_path)
+    for spec_path in sorted((root / "views" / "chronologies").glob("*.json")):
+        _build_chronology_view(root, spec_path)
     return output
 
 

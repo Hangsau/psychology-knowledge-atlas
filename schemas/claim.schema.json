@@ -12,6 +12,17 @@
     "statement": {"type": "string", "minLength": 1},
     "statement_zh": {"type": "string", "minLength": 1},
     "claim_type": {"enum": ["identity", "chronology", "attribution", "definition", "mechanism", "finding", "bibliographic", "critique", "scope"]},
+    "time_anchor": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["start_year", "end_year", "precision", "qualifier"],
+      "properties": {
+        "start_year": {"type": "integer"},
+        "end_year": {"type": "integer"},
+        "precision": {"enum": ["year", "year_range", "decade"]},
+        "qualifier": {"enum": ["none", "early", "mid", "late", "mid_to_late"]}
+      }
+    },
     "evidence_ids": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
     "status": {"enum": ["unverified", "retrieved", "verified", "disputed", "excluded"]},
     "publishable": {"type": "boolean"},

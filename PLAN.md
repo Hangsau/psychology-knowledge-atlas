@@ -18,7 +18,7 @@
 
 ## 即時階段
 
-P1、P1-E、P2-E 與 `P3-S` 均已完成並有可執行退出門檻。四個學派 pilots：`structuralism`、`psychoanalysis`、`cbt`、`indigenous-psychology` 已全部完成。下一 gate 是 P4 views；開始前須先固定第一個跨 pilot view 的讀者問題、canonical input 集合與退出門檻。
+P1、P1-E、P2-E 與 `P3-S` 均已完成並有可執行退出門檻。四個學派 pilots：`structuralism`、`psychoanalysis`、`cbt`、`indigenous-psychology` 已全部完成。P4-V1 coverage comparison 與 P4-V2 bounded chronology 均已完成；下一個 gate 開始前仍須固定讀者問題、canonical input 集合與退出門檻。
 
 四個 P3-S pilots 均已完成 S1-S7 退出門檻，並各有一個不改變 gate 順序的薄型 P4 reader preview。完整 P4 views 現在可依新的 bounded gate 開始，但不得把 generated output 變成第二套 canonical truth。
 
@@ -37,6 +37,22 @@ P1、P1-E、P2-E 與 `P3-S` 均已完成並有可執行退出門檻。四個學�
 5. validator、完整 unittest、concurrent/atomic/reproducible build 與 `git diff --check` 通過後停止；不在本 gate 建立跨學派實質比較 claim。
 
 退出門檻已滿足：四份 profile 精確解析；comparison 直接由 canonical records 產生；空、重複、缺失、不安全、未發布與 orphan endpoint 輸入均有拒絕測試；deterministic、concurrent、atomic build 通過。輸出固定保留「數量不等於品質／重要性／語義等價」警告。
+
+## P4-V2：四個學派形成時間錨點（完成）
+
+讀者問題：四個 P3-S pilots 各有哪些已驗證的形成時間錨點，如何在不製造單一起源或虛假日期精度下依時間閱讀？
+
+固定輸入只有四筆既有 verified/publishable chronology claims：精神分析 1896 術語錨點、結構心理學 1898 綱領錨點、本土心理學 1960 年代末多地倡議，以及 CBT 1970 年代中後期逐步整合。每筆 claim 使用 optional `time_anchor` 保存 start/end、precision 與 qualifier；chronology spec 只列 claim IDs 與呈現邊界，不複製事件文字或日期。
+
+退出門檻：
+
+1. 一筆原子 chronology claim 等於一個 event，四筆 claim 與四個 subject 必須唯一。
+2. exact year 與 decade range 由 validator 區分；`late`、`mid_to_late` 不得壓成單一年份。
+3. 每個 event 必須 verified/publishable，且至少有一筆 verified/publishable full-text evidence 與可解析 source。
+4. 空、重複、缺失、不安全、未發布、無 anchor、錯誤 range 與虛假精度輸入均有拒絕測試。
+5. JSON／Markdown 可決定性、原子地重生；並行 build、完整 unittest、validator 與 `git diff --check` 通過。
+
+此 view 固定顯示「時間錨點不等於學派創立日期」；不納入 bibliographic 版本史，也不宣稱四個事件具有相同歷史意義。
 
 ## 已完成 gate
 

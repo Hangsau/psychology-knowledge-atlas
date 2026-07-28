@@ -15,9 +15,11 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "tools"))
 
 from build_views import (
+    MAX_CHRONOLOGY_SPEC_BYTES,
     MAX_COMPARISON_SPEC_BYTES,
     MAX_PROFILE_SPEC_BYTES,
     _atomic_write_text,
+    _build_chronology_view,
     _build_comparison_view,
     build,
 )
@@ -510,6 +512,117 @@ class FoundationTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "missing entity"):
             _build_comparison_view(self.work, good_spec)
 
+    def test_p3_school_pilot_chronology_is_canonical_derived(self) -> None:
+        build(self.work)
+        output = self.work / "views/generated/p3-school-pilots-chronology.json"
+        first_payload = output.read_bytes()
+        dossier = json.loads(first_payload)
+        events = dossier["events"]
+        self.assertEqual(
+            [event["claim"]["id"] for event in events],
+            [
+                "c-psychoanalysis-s1-chronology-1896",
+                "c-structuralism-s1-chronology-1898",
+                "c-indigenous-psychology-s2-late-1960s-worldwide-calls",
+                "c-cbt-s2-gradual-integration-1970s",
+            ],
+        )
+        self.assertEqual(
+            [event["time_label"] for event in events],
+            ["1896 年", "1898 年", "1960 年代末", "1970 年代中後期"],
+        )
+        self.assertTrue(
+            all(
+                event["claim"]["claim_type"] == "chronology"
+                and event["claim"]["status"] == "verified"
+                and event["claim"]["publishable"] is True
+                and event["evidence"]
+                for event in events
+            )
+        )
+        markdown = (self.work / "views/generated/p3-school-pilots-chronology.md").read_text(
+            encoding="utf-8"
+        )
+        self.assertIn("時間錨點不等於學派創立日期", markdown)
+        self.assertIn("`decade` / `mid_to_late`", markdown)
+        build(self.work)
+        self.assertEqual(output.read_bytes(), first_payload)
+
+    def test_p3_school_pilot_chronology_rejects_bad_specs_and_inputs(self) -> None:
+        bad_spec = self.work / "views/chronologies/bad.json"
+        bad_spec.parent.mkdir(parents=True, exist_ok=True)
+        claim_ids = [
+            "c-psychoanalysis-s1-chronology-1896",
+            "c-structuralism-s1-chronology-1898",
+            "c-indigenous-psychology-s2-late-1960s-worldwide-calls",
+            "c-cbt-s2-gradual-integration-1970s",
+        ]
+        base = {
+            "id": "bad",
+            "title": "Bad",
+            "language": "zh-Hant",
+            "claim_ids": claim_ids,
+            "scope_note": "Boundary",
+        }
+        cases = [
+            base | {"claim_ids": []},
+            base | {"claim_ids": [claim_ids[0]] * 4},
+            base | {"claim_ids": claim_ids[:3] + ["missing-claim"]},
+            base | {"claim_ids": claim_ids[:3] + ["../escape"]},
+            base | {"unknown": True},
+        ]
+        for case in cases:
+            with self.subTest(case=case):
+                bad_spec.write_text(json.dumps(case), encoding="utf-8")
+                with self.assertRaises(ValueError):
+                    _build_chronology_view(self.work, bad_spec)
+
+        bad_spec.write_text("", encoding="utf-8")
+        with self.assertRaisesRegex(ValueError, "empty chronology spec"):
+            _build_chronology_view(self.work, bad_spec)
+        bad_spec.write_text("{", encoding="utf-8")
+        with self.assertRaises(json.JSONDecodeError):
+            _build_chronology_view(self.work, bad_spec)
+        bad_spec.write_text("x" * (MAX_CHRONOLOGY_SPEC_BYTES + 1), encoding="utf-8")
+        with self.assertRaisesRegex(ValueError, "chronology spec exceeds"):
+            _build_chronology_view(self.work, bad_spec)
+
+        good_spec = self.work / "views/chronologies/p3-school-pilots-chronology.json"
+        claim_path = self.work / "knowledge/claims/c-cbt-s2-gradual-integration-1970s.json"
+        claim = json.loads(claim_path.read_text(encoding="utf-8"))
+        claim["publishable"] = False
+        claim_path.write_text(json.dumps(claim), encoding="utf-8")
+        with self.assertRaisesRegex(ValueError, "not verified and publishable"):
+            _build_chronology_view(self.work, good_spec)
+        claim["publishable"] = True
+        claim.pop("time_anchor")
+        claim_path.write_text(json.dumps(claim), encoding="utf-8")
+        with self.assertRaisesRegex(ValueError, "lacks structured time_anchor"):
+            _build_chronology_view(self.work, good_spec)
+
+    def test_time_anchor_contract_rejects_false_precision_and_malformed_ranges(self) -> None:
+        claim_path = self.work / "knowledge/claims/c-structuralism-s1-chronology-1898.json"
+        original = json.loads(claim_path.read_text(encoding="utf-8"))
+        malformed = [
+            {"start_year": 1898, "end_year": 1898, "precision": "year"},
+            {"start_year": 1899, "end_year": 1898, "precision": "year_range", "qualifier": "none"},
+            {"start_year": 1898, "end_year": 1899, "precision": "year", "qualifier": "none"},
+            {"start_year": 1961, "end_year": 1969, "precision": "decade", "qualifier": "late"},
+            {"start_year": True, "end_year": 1898, "precision": "year", "qualifier": "none"},
+        ]
+        for anchor in malformed:
+            with self.subTest(anchor=anchor):
+                claim = original | {"time_anchor": anchor}
+                claim_path.write_text(json.dumps(claim), encoding="utf-8")
+                self.assertTrue(
+                    any("time_anchor" in error for error in validate_repository(self.work))
+                )
+        claim = original | {"claim_type": "bibliographic"}
+        claim_path.write_text(json.dumps(claim), encoding="utf-8")
+        self.assertTrue(
+            any("time_anchor requires claim_type chronology" in error for error in validate_repository(self.work))
+        )
+
     def test_generated_view_atomic_write_preserves_previous_output(self) -> None:
         target = self.work / "views/generated/atomic.md"
         target.parent.mkdir(parents=True, exist_ok=True)
@@ -532,6 +645,10 @@ class FoundationTests(unittest.TestCase):
         dossier = json.loads((self.work / "views/generated/structuralism.json").read_text(encoding="utf-8"))
         self.assertEqual(dossier["id"], "structuralism")
         self.assertEqual(len(dossier["sections"]), 7)
+        chronology = json.loads(
+            (self.work / "views/generated/p3-school-pilots-chronology.json").read_text(encoding="utf-8")
+        )
+        self.assertEqual(len(chronology["events"]), 4)
 
     def test_claim_translation_field_is_optional_but_rejects_empty_values(self) -> None:
         untranslated = self.valid_entity("translation-host")
