@@ -5,42 +5,207 @@
   "slots": {
     "identity_history": {
       "description": "Independent scholarly identity and historical placement",
-      "status": "not_searched"
+      "status": "covered"
     },
     "primary_works": {
       "description": "Primary works or first-generation programme statements",
-      "status": "not_searched"
+      "status": "covered"
     },
     "theory_methods": {
       "description": "Core concepts, methods and internal variants",
-      "status": "not_searched"
+      "status": "covered"
     },
     "independent_critique": {
       "description": "Independent historiography, criticism or boundary analysis",
-      "status": "not_searched"
+      "status": "covered"
     },
     "empirical_status": {
       "description": "Empirical tests, syntheses, replications or current assessment",
-      "status": "not_searched"
+      "status": "covered"
     },
     "current_status": {
       "description": "Contemporary continuation, institutions or present disciplinary status",
-      "status": "not_searched"
+      "status": "covered"
     },
     "clinical_outcomes": {
       "description": "Systematic reviews, meta-analyses or comparative outcome research",
-      "status": "not_searched"
+      "status": "covered"
     },
     "safety_guidelines": {
       "description": "Guidelines, limitations, adverse effects or contraindications",
-      "status": "not_searched"
+      "status": "covered"
     },
     "cultural_language_context": {
       "description": "Non-English, local, cultural or knowledge-sovereignty context where applicable",
-      "status": "not_searched"
+      "status": "covered"
     }
   },
-  "searches": [],
-  "items": [],
-  "status": "not_started"
+  "searches": [
+    {
+      "searched_at": "2026-07-30",
+      "system": "PubMed Central / NICE / author-hosted primary paper",
+      "queries": [
+        "MBCT Teasdale 2000 full text",
+        "MBCT relapse meta-analysis",
+        "MBCT active control trial",
+        "MBCT adverse effects",
+        "culturally adapted MBCT trial"
+      ],
+      "purpose": "Full-text discovery across origin, first trial, theory, outcome evidence, guideline status, harm reporting and culturally responsive adaptation"
+    }
+  ],
+  "items": [
+    {
+      "id": "teasdale-etal-2000-mbct-relapse",
+      "title": "Prevention of relapse/recurrence in major depression by mindfulness-based cognitive therapy",
+      "slot": "primary_works",
+      "source_kind": "primary_randomized_trial",
+      "landing_url": "https://pubmed.ncbi.nlm.nih.gov/10965637/",
+      "download_url": "https://nalandacpp.org/pdfs/teasdale-2000-prevention-of-relapse.pdf",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Publicly readable author/education-hosted copy; cache privately because redistribution rights are unclear.",
+      "status": "retrieved",
+      "issued": "2000",
+      "identifiers": {
+        "doi": "10.1037/0022-006X.68.4.615",
+        "pmid": "10965637"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-29T23:25:29+00:00",
+        "sha256": "99d68b61fd92dddbfa0a9113de0beeaa76e19bed99ec57f5dafbdeec0dbb5b09",
+        "bytes": 1064118,
+        "media_type": "application/pdf",
+        "cache_key": ".private-sources/mbct/teasdale-etal-2000-mbct-relapse.pdf"
+      }
+    },
+    {
+      "id": "galante-etal-2013-mbct-systematic-review",
+      "title": "Effects of mindfulness-based cognitive therapy on mental disorders: a systematic review and meta-analysis of randomised controlled trials",
+      "slot": "identity_history",
+      "source_kind": "systematic_review_meta_analysis",
+      "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5030069/",
+      "download_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5030069/",
+      "access_status": "open_fulltext",
+      "rights_note": "Open review covering programme identity and outcomes; explicitly notes that included studies did not assess adverse effects.",
+      "status": "retrieved",
+      "issued": "2013",
+      "identifiers": {
+        "pmcid": "PMC5030069"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-29T23:25:30+00:00",
+        "sha256": "353c5f6886f223efce3e101ab1620472fd995512923db4c35b76f9ac7081cb82",
+        "bytes": 200817,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/mbct/galante-etal-2013-mbct-systematic-review.html"
+      }
+    },
+    {
+      "id": "shallcross-etal-2015-mbct-active-control",
+      "title": "Relapse Prevention in Major Depressive Disorder: Mindfulness-Based Cognitive Therapy Versus an Active Control Condition",
+      "slot": "empirical_status",
+      "source_kind": "primary_randomized_active_control_trial",
+      "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4571290/",
+      "download_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4571290/",
+      "access_status": "open_fulltext",
+      "rights_note": "Open active-control trial; structurally matched comparison should remain distinct from treatment-as-usual evidence.",
+      "status": "retrieved",
+      "issued": "2015",
+      "identifiers": {
+        "pmcid": "PMC4571290"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-29T23:25:31+00:00",
+        "sha256": "0a3927330ed460aca1bd28518f89cbe81076d81d6c1e0b4d055b15fbd56bd62b",
+        "bytes": 233697,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/mbct/shallcross-etal-2015-mbct-active-control.html"
+      }
+    },
+    {
+      "id": "goldberg-etal-2021-mbi-meta-review",
+      "title": "The empirical status of mindfulness-based interventions: A systematic review of 44 meta-analyses of randomized controlled trials",
+      "slot": "independent_critique",
+      "source_kind": "systematic_meta_review",
+      "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8364929/",
+      "download_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8364929/",
+      "access_status": "open_fulltext",
+      "rights_note": "Open cross-program meta-review; MBCT-specific findings must not be blended with MBSR or other mindfulness programmes.",
+      "status": "retrieved",
+      "issued": "2021",
+      "identifiers": {
+        "pmcid": "PMC8364929"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-29T23:25:32+00:00",
+        "sha256": "36943a7552c9511ae0e8dc7ef7443332ead6edc8e75eaf147dde6d93e3dbd05d",
+        "bytes": 393408,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/mbct/goldberg-etal-2021-mbi-meta-review.html"
+      }
+    },
+    {
+      "id": "baer-etal-2019-mindfulness-harm",
+      "title": "Doing no harm in mindfulness-based programs: Conceptual issues and empirical findings",
+      "slot": "safety_guidelines",
+      "source_kind": "harm_framework_review",
+      "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6575147/",
+      "download_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6575147/",
+      "access_status": "open_fulltext",
+      "rights_note": "Open harm framework covering MBCT and MBSR; distinguishes adverse events, sustained attributable harm and under-reporting.",
+      "status": "retrieved",
+      "issued": "2019",
+      "identifiers": {
+        "pmcid": "PMC6575147"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-29T23:25:33+00:00",
+        "sha256": "b399b068f0872815db3f96294aed2093e57f6cee0e0478fea485b8fb3da3990c",
+        "bytes": 307949,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/mbct/baer-etal-2019-mindfulness-harm.html"
+      }
+    },
+    {
+      "id": "goldberg-etal-2025-adapted-mbct-black-adults",
+      "title": "Improved Mindfulness Following Mindfulness-Based Cognitive Therapy: Results from a Pilot Randomized Controlled Trial with Trauma-Exposed Black Adults",
+      "slot": "cultural_language_context",
+      "source_kind": "culturally_responsive_pilot_trial",
+      "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12672844/",
+      "download_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12672844/",
+      "access_status": "open_fulltext",
+      "rights_note": "Open pilot of trauma-informed, culturally responsive adaptation; feasibility-scale evidence must not be generalized to standard MBCT.",
+      "status": "retrieved",
+      "issued": "2025",
+      "identifiers": {
+        "pmcid": "PMC12672844"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-29T23:25:34+00:00",
+        "sha256": "da549677e9a3591bbb369abfc51ff6fc1174f5e54b1903f094fc75769f7db2cb",
+        "bytes": 255726,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/mbct/goldberg-etal-2025-adapted-mbct-black-adults.html"
+      }
+    },
+    {
+      "id": "nice-ng222-depression-recommendations",
+      "title": "Depression in adults: treatment and management — Recommendations",
+      "slot": "current_status",
+      "source_kind": "clinical_guideline",
+      "landing_url": "https://www.nice.org.uk/guidance/ng222/chapter/Recommendations",
+      "download_url": "https://www.nice.org.uk/guidance/ng222/chapter/Recommendations",
+      "access_status": "open_fulltext",
+      "rights_note": "Current NICE guidance; use only for the populations and decision points explicitly stated.",
+      "status": "retrieved",
+      "retrieval": {
+        "retrieved_at": "2026-07-29T23:25:37+00:00",
+        "sha256": "7ce523e28ca12272c23e1a79fe12ae820a318112dc0bda99f67bad97b550fb49",
+        "bytes": 266198,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/mbct/nice-ng222-depression-recommendations.html"
+      }
+    }
+  ],
+  "status": "audited"
 }

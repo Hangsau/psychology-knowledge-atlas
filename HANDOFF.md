@@ -9,10 +9,13 @@ status: in_progress
 base_commit: 593551e
 started_at: 2026-07-28
 objective: 先為原版48項研究目標完成可恢復、可稽核的來源蒐集，再開始閱讀、建立主張或撰寫內容
-active_target: dbt
+active_target: constructivist-psychotherapy
 canonical_inputs:
   - research/targets.json
   - research/source-packs/*.json
+target_files:
+  - research/source-packs/constructivist-psychotherapy.json
+expected_result: 下一來源包的所有槽位完成搜尋與裁決；合格可讀正文完成私有快取、格式與雜湊稽核；不建立 claims 或 reader prose
 boundaries:
   - legacy repo 只提供48項 identity/order seed；不匯入舊文章、摘要或 verdict
   - downloaded 不等於 read/verified/publishable
@@ -40,7 +43,12 @@ completed_items:
   - 個人中心治療補入西語歷史研究；CBT補入文化調適meta-analysis與自助式網路CBT惡化風險研究；不以一般醫療的person-centred care冒充person-centred therapy
   - 認知心理學與跨領域cognitive science、生物心理學與neuroscience、演化心理學與廣義human behavior and evolution均保留範圍邊界
   - 目前20/48來源包 audited、累計137筆實際正文／正式網頁；本批36筆逐一通過大小、MIME、SHA-256、假頁面與批內重複檢查
-next_action: 依 research/targets.json 順序從 dbt 開始，繼續採較大批次處理其餘28項，不建立正文。非英語只在原始語言、地方傳統或翻譯／版本差異影響正確性時補，不設配額
+  - 第三波批次完成5包 audited、31筆實際正文／正式書目頁：dbt 6、act 6、mbct 7、mbsr 6、rebt 6；其中29個唯一 landing URLs，兩份跨包共用的 mindfulness meta-review／harm framework 不冒充獨立來源
+  - DBT 1991 與 MBSR 1982 原始研究的出版社全文未取得；前者改存 NCBI E-utilities 官方摘要 XML，後者存 PubMed 正式摘要頁，兩者均明示不算全文閱讀
+  - 移除一份 HTTP 成功但實際為 Google reCAPTCHA challenge 的 DBT 假頁面；替代 XML 的 PMID、題名、摘要與 DOI 已核對，其他 captcha 字樣只出現在正常頁面的表單腳本
+  - ACT 與 REBT 的安全／文化槽位搜尋後沒有找到足以通過本輪取得門檻的專屬來源，明記 searched_no_qualifying_source，不以一般 CBT／正念材料或搜尋摘要填補
+  - 目前25/48來源包 audited、累計168筆實際正文／正式書目頁；本批全部通過大小、MIME、SHA-256、私有快取路徑、假頁面檢查，canonical validator 與完整77 tests PASS
+next_action: 依 research/targets.json 順序從 constructivist-psychotherapy 開始，繼續採較大批次處理其餘23項，不建立正文。非英語只在原始語言、地方傳統或翻譯／版本差異影響正確性時補，不設配額
 ```
 
 ## P3-S COMPLETION RECORD

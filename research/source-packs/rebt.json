@@ -5,42 +5,178 @@
   "slots": {
     "identity_history": {
       "description": "Independent scholarly identity and historical placement",
-      "status": "not_searched"
+      "status": "covered"
     },
     "primary_works": {
       "description": "Primary works or first-generation programme statements",
-      "status": "not_searched"
+      "status": "covered"
     },
     "theory_methods": {
       "description": "Core concepts, methods and internal variants",
-      "status": "not_searched"
+      "status": "covered"
     },
     "independent_critique": {
       "description": "Independent historiography, criticism or boundary analysis",
-      "status": "not_searched"
+      "status": "covered"
     },
     "empirical_status": {
       "description": "Empirical tests, syntheses, replications or current assessment",
-      "status": "not_searched"
+      "status": "covered"
     },
     "current_status": {
       "description": "Contemporary continuation, institutions or present disciplinary status",
-      "status": "not_searched"
+      "status": "covered"
     },
     "clinical_outcomes": {
       "description": "Systematic reviews, meta-analyses or comparative outcome research",
-      "status": "not_searched"
+      "status": "covered"
     },
     "safety_guidelines": {
       "description": "Guidelines, limitations, adverse effects or contraindications",
-      "status": "not_searched"
+      "status": "searched_no_qualifying_source"
     },
     "cultural_language_context": {
       "description": "Non-English, local, cultural or knowledge-sovereignty context where applicable",
-      "status": "not_searched"
+      "status": "searched_no_qualifying_source"
     }
   },
-  "searches": [],
-  "items": [],
-  "status": "not_started"
+  "searches": [
+    {
+      "searched_at": "2026-07-30",
+      "system": "PubMed Central / ERIC / Albert Ellis Institute / publisher indexes",
+      "queries": [
+        "REBT origins constructs applications full text",
+        "Albert Ellis primary rational emotive therapy paper",
+        "REBT 50 years meta-analysis",
+        "REBT systematic review limitations",
+        "REBT adverse events guideline cultural adaptation"
+      ],
+      "purpose": "Full-text discovery across naming history, founder theory, later synthesis, contemporary institution, outcome evidence, safety and cultural context"
+    }
+  ],
+  "items": [
+    {
+      "id": "vernon-1999-rebt-origins",
+      "title": "Rational Emotive Behavior Therapy: Origins, Constructs, and Applications",
+      "slot": "identity_history",
+      "source_kind": "scholarly_overview",
+      "landing_url": "https://eric.ed.gov/?id=ED436712",
+      "download_url": "https://files.eric.ed.gov/fulltext/ED436712.pdf",
+      "access_status": "open_fulltext",
+      "rights_note": "ERIC full text; useful for historical naming and conceptual overview, not a primary outcome trial.",
+      "status": "retrieved",
+      "issued": "1999",
+      "identifiers": {
+        "eric": "ED436712"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-29T23:25:44+00:00",
+        "sha256": "7bb0a92bb3df486989cd74a8ca616d2a9b368bc8da51ee010b9b0da750d8b337",
+        "bytes": 299104,
+        "media_type": "application/pdf",
+        "cache_key": ".private-sources/rebt/vernon-1999-rebt-origins.pdf"
+      }
+    },
+    {
+      "id": "ellis-1977-ret-hypotheses",
+      "title": "Albert Ellis Bibliography — primary REBT works",
+      "slot": "primary_works",
+      "source_kind": "founder_institute_bibliography",
+      "landing_url": "https://albertellis.org/albert-ellis-bibliography-page-1/",
+      "download_url": "https://albertellis.org/albert-ellis-bibliography-page-1/",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Founder institute bibliography identifies early works and naming chronology; it is not the primary texts themselves and does not support substantive theory claims.",
+      "status": "retrieved",
+      "retrieval": {
+        "retrieved_at": "2026-07-29T23:27:16+00:00",
+        "sha256": "1d1311c46defc9b87cb0c29320664adf1359797dc0ce6322afa8951cbafd85d7",
+        "bytes": 82966,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/rebt/ellis-1977-ret-hypotheses.html"
+      }
+    },
+    {
+      "id": "david-etal-2018-rebt-fifty-years",
+      "title": "50 years of rational-emotive and cognitive-behavioral therapy: A systematic review and meta-analysis",
+      "slot": "theory_methods",
+      "source_kind": "systematic_review_meta_analysis",
+      "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5836900/",
+      "download_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5836900/",
+      "access_status": "open_fulltext",
+      "rights_note": "Open synthesis of naming, theory, proposed mechanisms and outcomes; author proximity and study heterogeneity require independent appraisal.",
+      "status": "retrieved",
+      "issued": "2018",
+      "identifiers": {
+        "pmcid": "PMC5836900",
+        "doi": "10.1002/jclp.22514",
+        "pmid": "28898411"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-29T23:25:45+00:00",
+        "sha256": "0ddf6e093fe306ddaa2799e66864fabc9d2ec2cb1cbb152d6dc6b8676843df45",
+        "bytes": 203095,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/rebt/david-etal-2018-rebt-fifty-years.html"
+      }
+    },
+    {
+      "id": "turner-etal-2024-rebt-interventions-review",
+      "title": "A systematic review of the nature and efficacy of Rational Emotive Behaviour Therapy interventions",
+      "slot": "independent_critique",
+      "source_kind": "systematic_review",
+      "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11232995/",
+      "download_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11232995/",
+      "access_status": "open_fulltext",
+      "rights_note": "Open recent review of intervention composition and efficacy; preserves variation in populations, outcomes and study quality.",
+      "status": "retrieved",
+      "issued": "2024",
+      "identifiers": {
+        "pmcid": "PMC11232995"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-29T23:25:46+00:00",
+        "sha256": "ca6916e7cc3892f517ee7ad0f73669602b44b331186562f1958636815b0db734",
+        "bytes": 328862,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/rebt/turner-etal-2024-rebt-interventions-review.html"
+      }
+    },
+    {
+      "id": "albert-ellis-institute-rebt-research",
+      "title": "Rational Emotive Behavior Therapy in the Context of Modern Psychological Research",
+      "slot": "current_status",
+      "source_kind": "founder_institute_research_summary",
+      "landing_url": "https://albertellis.org/rebt-therapy-in-the-context-of-modern-psychological-research/",
+      "download_url": "https://albertellis.org/rebt-therapy-in-the-context-of-modern-psychological-research/",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Founder institute's current research framing; evidence of continuation, not independent adjudication.",
+      "status": "retrieved",
+      "retrieval": {
+        "retrieved_at": "2026-07-29T23:25:47+00:00",
+        "sha256": "4281d3fbe612f7b90fe25ec93f24410bec72f4e771d1b469181677e71dff8276",
+        "bytes": 91575,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/rebt/albert-ellis-institute-rebt-research.html"
+      }
+    },
+    {
+      "id": "nice-depression-rebt-evidence-table",
+      "title": "Rational emotive behavioural therapy — new studies in the guideline update",
+      "slot": "clinical_outcomes",
+      "source_kind": "clinical_guideline_evidence_table",
+      "landing_url": "https://www.ncbi.nlm.nih.gov/books/NBK63762/",
+      "download_url": "https://www.ncbi.nlm.nih.gov/books/NBK63762/bin/app17b_et32.pdf",
+      "access_status": "open_fulltext",
+      "rights_note": "Public NICE guideline evidence table for a depression RCT comparing REBT, cognitive therapy and medication; narrow to that trial and indication.",
+      "status": "retrieved",
+      "retrieval": {
+        "retrieved_at": "2026-07-29T23:27:54+00:00",
+        "sha256": "af693d3f6dab523ff4d07eff4a1c5b26106d536ab2e39c47395dea89df9d91ef",
+        "bytes": 354030,
+        "media_type": "application/pdf",
+        "cache_key": ".private-sources/rebt/nice-depression-rebt-evidence-table.pdf"
+      }
+    }
+  ],
+  "status": "audited"
 }

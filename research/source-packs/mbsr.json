@@ -5,42 +5,191 @@
   "slots": {
     "identity_history": {
       "description": "Independent scholarly identity and historical placement",
-      "status": "not_searched"
+      "status": "covered"
     },
     "primary_works": {
       "description": "Primary works or first-generation programme statements",
-      "status": "not_searched"
+      "status": "covered"
     },
     "theory_methods": {
       "description": "Core concepts, methods and internal variants",
-      "status": "not_searched"
+      "status": "covered"
     },
     "independent_critique": {
       "description": "Independent historiography, criticism or boundary analysis",
-      "status": "not_searched"
+      "status": "covered"
     },
     "empirical_status": {
       "description": "Empirical tests, syntheses, replications or current assessment",
-      "status": "not_searched"
+      "status": "covered"
     },
     "current_status": {
       "description": "Contemporary continuation, institutions or present disciplinary status",
-      "status": "not_searched"
+      "status": "covered"
     },
     "clinical_outcomes": {
       "description": "Systematic reviews, meta-analyses or comparative outcome research",
-      "status": "not_searched"
+      "status": "covered"
     },
     "safety_guidelines": {
       "description": "Guidelines, limitations, adverse effects or contraindications",
-      "status": "not_searched"
+      "status": "covered"
     },
     "cultural_language_context": {
       "description": "Non-English, local, cultural or knowledge-sovereignty context where applicable",
-      "status": "not_searched"
+      "status": "covered"
     }
   },
-  "searches": [],
-  "items": [],
-  "status": "not_started"
+  "searches": [
+    {
+      "searched_at": "2026-07-30",
+      "system": "PubMed Central / publisher abstract / university programme pages",
+      "queries": [
+        "Kabat-Zinn 1982 MBSR primary paper",
+        "MBSR programme history",
+        "MBSR active control meta-analysis",
+        "MBSR adverse events",
+        "mindfulness programme cultural adaptation framework"
+      ],
+      "purpose": "Full-text discovery across programme origin, methods, empirical synthesis, active-control boundaries, present continuation, safety and cultural adaptation"
+    }
+  ],
+  "items": [
+    {
+      "id": "kabat-zinn-1982-chronic-pain-program",
+      "title": "An outpatient program in behavioral medicine for chronic pain patients based on the practice of mindfulness meditation",
+      "slot": "primary_works",
+      "source_kind": "first_generation_primary_programme_article",
+      "landing_url": "https://pubmed.ncbi.nlm.nih.gov/7042457/",
+      "download_url": "https://pubmed.ncbi.nlm.nih.gov/7042457/",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Official PubMed abstract and bibliographic record; ScienceDirect returned 403 and the article remains paywalled, so this does not count as a full-text read.",
+      "status": "retrieved",
+      "issued": "1982",
+      "identifiers": {
+        "doi": "10.1016/0163-8343(82)90026-3",
+        "pmid": "7042457"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-29T23:27:15+00:00",
+        "sha256": "41b06bf7c4cb7200606a35f37ac5fa184647366e4d8fda309c73d55ad4414314",
+        "bytes": 128746,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/mbsr/kabat-zinn-1982-chronic-pain-program.html"
+      }
+    },
+    {
+      "id": "goldberg-etal-2021-mbi-meta-review",
+      "title": "The empirical status of mindfulness-based interventions: A systematic review of 44 meta-analyses of randomized controlled trials",
+      "slot": "identity_history",
+      "source_kind": "systematic_meta_review",
+      "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8364929/",
+      "download_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8364929/",
+      "access_status": "open_fulltext",
+      "rights_note": "Open meta-review that identifies MBSR as a prototypical MBI; programme-specific findings remain separate from MBCT and other MBIs.",
+      "status": "retrieved",
+      "issued": "2021",
+      "identifiers": {
+        "pmcid": "PMC8364929"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-29T23:25:38+00:00",
+        "sha256": "7e94f4fe9405bdc22a066a449e8bee52f62d5505fc9fdea3553db14dcbb1de2f",
+        "bytes": 393408,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/mbsr/goldberg-etal-2021-mbi-meta-review.html"
+      }
+    },
+    {
+      "id": "goyal-etal-2014-meditation-meta-analysis",
+      "title": "Meditation Programs for Psychological Stress and Well-being: A Systematic Review and Meta-analysis",
+      "slot": "independent_critique",
+      "source_kind": "systematic_review_meta_analysis_active_controls",
+      "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4142584/",
+      "download_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4142584/",
+      "access_status": "open_fulltext",
+      "rights_note": "Open review emphasizing active-control comparisons and variable evidence strength; broader meditation programmes are not all MBSR.",
+      "status": "retrieved",
+      "issued": "2014",
+      "identifiers": {
+        "pmcid": "PMC4142584",
+        "doi": "10.1001/jamainternmed.2013.13018"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-29T23:25:39+00:00",
+        "sha256": "c2bd9c0b92b7888c5006832488f72f488d22210c2510b59b98dcdbf4615a300c",
+        "bytes": 304455,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/mbsr/goyal-etal-2014-meditation-meta-analysis.html"
+      }
+    },
+    {
+      "id": "chernik-etal-2016-mbsr-back-pain-trial",
+      "title": "Effects of Mindfulness-Based Stress Reduction vs Cognitive-Behavioral Therapy and Usual Care on Back Pain and Functional Limitations",
+      "slot": "empirical_status",
+      "source_kind": "primary_randomized_active_control_trial",
+      "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4914381/",
+      "download_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4914381/",
+      "access_status": "open_fulltext",
+      "rights_note": "Open chronic-low-back-pain RCT with active CBT comparator and explicit adverse-experience reporting; condition-specific.",
+      "status": "retrieved",
+      "issued": "2016",
+      "identifiers": {
+        "pmcid": "PMC4914381",
+        "doi": "10.1001/jama.2016.2323"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-29T23:25:40+00:00",
+        "sha256": "35d46960d2d59c5eab1280e4c3cf28efc3ad4b3f9d9616c3e45d0e3cddd12a72",
+        "bytes": 231492,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/mbsr/chernik-etal-2016-mbsr-back-pain-trial.html"
+      }
+    },
+    {
+      "id": "baer-etal-2019-mindfulness-harm",
+      "title": "Doing no harm in mindfulness-based programs: Conceptual issues and empirical findings",
+      "slot": "safety_guidelines",
+      "source_kind": "harm_framework_review",
+      "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6575147/",
+      "download_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6575147/",
+      "access_status": "open_fulltext",
+      "rights_note": "Open harm framework covering MBSR and MBCT; notes under-reporting and distinguishes difficult experiences from attributable sustained harm.",
+      "status": "retrieved",
+      "issued": "2019",
+      "identifiers": {
+        "pmcid": "PMC6575147"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-29T23:25:41+00:00",
+        "sha256": "35914df03a0cb83bad6a62c57740dfe673740c0a43437b40841df081a0fafa17",
+        "bytes": 307949,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/mbsr/baer-etal-2019-mindfulness-harm.html"
+      }
+    },
+    {
+      "id": "loucks-etal-2022-mbp-adaptation-framework",
+      "title": "Mindfulness-Based Programs: Why, When, and How to Adapt?",
+      "slot": "cultural_language_context",
+      "source_kind": "adaptation_framework",
+      "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8811951/",
+      "download_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8811951/",
+      "access_status": "open_fulltext",
+      "rights_note": "Open framework for population and context adaptation; does not itself establish efficacy for a particular cultural group.",
+      "status": "retrieved",
+      "issued": "2022",
+      "identifiers": {
+        "pmcid": "PMC8811951"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-29T23:25:42+00:00",
+        "sha256": "92fb39dd5fe842a34e6254ac5eb448eb68fd6ade72302150c64b2721f28b1c5b",
+        "bytes": 213425,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/mbsr/loucks-etal-2022-mbp-adaptation-framework.html"
+      }
+    }
+  ],
+  "status": "audited"
 }

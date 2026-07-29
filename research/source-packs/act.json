@@ -5,42 +5,185 @@
   "slots": {
     "identity_history": {
       "description": "Independent scholarly identity and historical placement",
-      "status": "not_searched"
+      "status": "covered"
     },
     "primary_works": {
       "description": "Primary works or first-generation programme statements",
-      "status": "not_searched"
+      "status": "covered"
     },
     "theory_methods": {
       "description": "Core concepts, methods and internal variants",
-      "status": "not_searched"
+      "status": "covered"
     },
     "independent_critique": {
       "description": "Independent historiography, criticism or boundary analysis",
-      "status": "not_searched"
+      "status": "covered"
     },
     "empirical_status": {
       "description": "Empirical tests, syntheses, replications or current assessment",
-      "status": "not_searched"
+      "status": "covered"
     },
     "current_status": {
       "description": "Contemporary continuation, institutions or present disciplinary status",
-      "status": "not_searched"
+      "status": "covered"
     },
     "clinical_outcomes": {
       "description": "Systematic reviews, meta-analyses or comparative outcome research",
-      "status": "not_searched"
+      "status": "covered"
     },
     "safety_guidelines": {
       "description": "Guidelines, limitations, adverse effects or contraindications",
-      "status": "not_searched"
+      "status": "searched_no_qualifying_source"
     },
     "cultural_language_context": {
       "description": "Non-English, local, cultural or knowledge-sovereignty context where applicable",
-      "status": "not_searched"
+      "status": "searched_no_qualifying_source"
     }
   },
-  "searches": [],
-  "items": [],
-  "status": "not_started"
+  "searches": [
+    {
+      "searched_at": "2026-07-30",
+      "system": "PubMed Central / Association for Contextual Behavioral Science / publisher indexes",
+      "queries": [
+        "ACT history Zettle Hayes 1986 full text",
+        "ACT psychological flexibility meta-analysis",
+        "ACT versus CBT limitations",
+        "ACT adverse events systematic review",
+        "ACT cultural adaptation review"
+      ],
+      "purpose": "Full-text discovery across first-generation evidence, model/processes, outcome syntheses, methodological boundaries, current institutional continuation, safety and cultural context"
+    }
+  ],
+  "items": [
+    {
+      "id": "zettle-hayes-1986-component-process",
+      "title": "Component and Process Analysis of Cognitive Therapy",
+      "slot": "primary_works",
+      "source_kind": "first_generation_primary_trial_record",
+      "landing_url": "https://contextualscience.org/publications/zettle_hayes_1986",
+      "download_url": "https://contextualscience.org/publications/zettle_hayes_1986",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Official ACBS publication record and abstract for the early comprehensive-distancing trial; not the later six-process ACT model.",
+      "status": "retrieved",
+      "issued": "1986",
+      "identifiers": {
+        "pmid": "3534025"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-29T23:25:21+00:00",
+        "sha256": "a9da8a01e6e6df41d5413f9249350483a3e1ae403b0f89b22e1dad0151c75b43",
+        "bytes": 62178,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/act/zettle-hayes-1986-component-process.html"
+      }
+    },
+    {
+      "id": "acbs-about-act",
+      "title": "About Acceptance and Commitment Therapy",
+      "slot": "current_status",
+      "source_kind": "professional_association_self_description",
+      "landing_url": "https://contextualscience.org/act",
+      "download_url": "https://contextualscience.org/act",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Professional association description; evidence of current framing and continuation, not independent efficacy evidence.",
+      "status": "retrieved",
+      "retrieval": {
+        "retrieved_at": "2026-07-29T23:25:22+00:00",
+        "sha256": "dad1e253953fd54cf7330c326043e7680cec8db2677adf3539320712b6c13198",
+        "bytes": 69460,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/act/acbs-about-act.html"
+      }
+    },
+    {
+      "id": "thompson-etal-2023-act-flexibility-meta",
+      "title": "The effect of acceptance and commitment therapy on the psychological flexibility and inflexibility of undergraduate students",
+      "slot": "theory_methods",
+      "source_kind": "systematic_review_process_meta_analysis",
+      "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10655902/",
+      "download_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10655902/",
+      "access_status": "open_fulltext",
+      "rights_note": "Open process-focused meta-analysis limited to undergraduates; does not establish a universal mechanism.",
+      "status": "retrieved",
+      "issued": "2023",
+      "identifiers": {
+        "pmcid": "PMC10655902",
+        "pmid": "37982074"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-29T23:25:23+00:00",
+        "sha256": "740d06550c481013a2b88294a82fa69f77aafb5ab0d291df993aa04d21e836b4",
+        "bytes": 277309,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/act/thompson-etal-2023-act-flexibility-meta.html"
+      }
+    },
+    {
+      "id": "bai-etal-2023-act-depression-meta",
+      "title": "Effect of acceptance and commitment therapy for depressive disorders: a meta-analysis",
+      "slot": "independent_critique",
+      "source_kind": "systematic_review_meta_analysis",
+      "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10486021/",
+      "download_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10486021/",
+      "access_status": "open_fulltext",
+      "rights_note": "Open disorder-specific synthesis; heterogeneity and control conditions bound conclusions.",
+      "status": "retrieved",
+      "issued": "2023",
+      "identifiers": {
+        "pmcid": "PMC10486021"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-29T23:25:24+00:00",
+        "sha256": "c3ecd6777fd2fd627648ec86411a019cc53f15b2ee7802211eab117c4960e72f",
+        "bytes": 188415,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/act/bai-etal-2023-act-depression-meta.html"
+      }
+    },
+    {
+      "id": "li-etal-2022-internet-act-processes",
+      "title": "The Effects of Internet-Based Acceptance and Commitment Therapy on Process Measures",
+      "slot": "empirical_status",
+      "source_kind": "systematic_review_meta_analysis",
+      "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9472046/",
+      "download_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9472046/",
+      "access_status": "open_fulltext",
+      "rights_note": "Open synthesis of internet ACT process measures; modality-specific and not interchangeable with therapist-delivered ACT.",
+      "status": "retrieved",
+      "issued": "2022",
+      "identifiers": {
+        "pmcid": "PMC9472046"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-29T23:25:26+00:00",
+        "sha256": "dc95e947e3b587f968cd837b1f4b931297a4988c17ef7f14411a0c3938cf256d",
+        "bytes": 240158,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/act/li-etal-2022-internet-act-processes.html"
+      }
+    },
+    {
+      "id": "han-etal-2022-internet-act-outcomes",
+      "title": "Efficacy of Internet-Based Acceptance and Commitment Therapy for Depressive Symptoms, Anxiety, Stress, Psychological Distress, and Quality of Life",
+      "slot": "clinical_outcomes",
+      "source_kind": "systematic_review_meta_analysis",
+      "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9789494/",
+      "download_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9789494/",
+      "access_status": "open_fulltext",
+      "rights_note": "Open outcome synthesis restricted to internet-delivered ACT; active- and passive-control results must remain separate.",
+      "status": "retrieved",
+      "issued": "2022",
+      "identifiers": {
+        "pmcid": "PMC9789494"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-29T23:25:27+00:00",
+        "sha256": "3144d7deb8903e536215f1a75364ff9553293dc09e107db0a00984b7590e0bc4",
+        "bytes": 235226,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/act/han-etal-2022-internet-act-outcomes.html"
+      }
+    }
+  ],
+  "status": "audited"
 }

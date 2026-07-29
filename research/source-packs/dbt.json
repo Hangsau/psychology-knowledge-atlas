@@ -5,42 +5,187 @@
   "slots": {
     "identity_history": {
       "description": "Independent scholarly identity and historical placement",
-      "status": "not_searched"
+      "status": "covered"
     },
     "primary_works": {
       "description": "Primary works or first-generation programme statements",
-      "status": "not_searched"
+      "status": "covered"
     },
     "theory_methods": {
       "description": "Core concepts, methods and internal variants",
-      "status": "not_searched"
+      "status": "covered"
     },
     "independent_critique": {
       "description": "Independent historiography, criticism or boundary analysis",
-      "status": "not_searched"
+      "status": "covered"
     },
     "empirical_status": {
       "description": "Empirical tests, syntheses, replications or current assessment",
-      "status": "not_searched"
+      "status": "covered"
     },
     "current_status": {
       "description": "Contemporary continuation, institutions or present disciplinary status",
-      "status": "not_searched"
+      "status": "covered"
     },
     "clinical_outcomes": {
       "description": "Systematic reviews, meta-analyses or comparative outcome research",
-      "status": "not_searched"
+      "status": "covered"
     },
     "safety_guidelines": {
       "description": "Guidelines, limitations, adverse effects or contraindications",
-      "status": "not_searched"
+      "status": "covered"
     },
     "cultural_language_context": {
       "description": "Non-English, local, cultural or knowledge-sovereignty context where applicable",
-      "status": "not_searched"
+      "status": "covered"
     }
   },
-  "searches": [],
-  "items": [],
-  "status": "not_started"
+  "searches": [
+    {
+      "searched_at": "2026-07-30",
+      "system": "PubMed Central / JAMA / NICE / PubMed / APA author copy",
+      "queries": [
+        "DBT history theory full text",
+        "Linehan 1991 randomized trial PDF",
+        "DBT meta-analysis limitations",
+        "DBT adverse effects",
+        "DBT cultural adaptation systematic review"
+      ],
+      "purpose": "Full-text discovery across programme history, primary trial, methods, independent outcome appraisal, current guidance, harm reporting and cultural adaptation"
+    }
+  ],
+  "items": [
+    {
+      "id": "swales-heard-williams-2000-dbt-overview",
+      "title": "Linehan's Dialectical Behaviour Therapy (DBT) for Borderline Personality Disorder: Overview and Adaptation",
+      "slot": "identity_history",
+      "source_kind": "independent_clinical_overview",
+      "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2963469/",
+      "download_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2963469/",
+      "access_status": "open_fulltext",
+      "rights_note": "Open clinical overview; useful for history and treatment structure, not a primary efficacy trial.",
+      "status": "retrieved",
+      "issued": "2000",
+      "identifiers": {
+        "pmcid": "PMC2963469"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-29T23:25:09+00:00",
+        "sha256": "2e738f50b13d9e2694c9c359a837587984075a061b3f8f2bad9240e0f31dc679",
+        "bytes": 134366,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/dbt/swales-heard-williams-2000-dbt-overview.html"
+      }
+    },
+    {
+      "id": "linehan-etal-1991-parasuicidal-trial",
+      "title": "Cognitive-Behavioral Treatment of Chronically Parasuicidal Borderline Patients",
+      "slot": "primary_works",
+      "source_kind": "primary_randomized_trial",
+      "landing_url": "https://pubmed.ncbi.nlm.nih.gov/1845222/",
+      "download_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=1845222&rettype=abstract&retmode=xml",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Official PubMed abstract and bibliographic record; JAMA PDF returned 403, so this does not count as a full-text read.",
+      "status": "retrieved",
+      "issued": "1991",
+      "identifiers": {
+        "doi": "10.1001/archpsyc.1991.01810360024003",
+        "pmid": "1845222"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-29T23:41:02+00:00",
+        "sha256": "a0fe20f4d9b6170201adbbe15f14d31bb7f9bd921ab0569a2bdc339157089bc3",
+        "bytes": 6578,
+        "media_type": "text/xml",
+        "cache_key": ".private-sources/dbt/linehan-etal-1991-parasuicidal-trial.xml"
+      }
+    },
+    {
+      "id": "kliem-etal-2010-dbt-meta-analysis",
+      "title": "Meta-Analysis and Systematic Review Assessing the Efficacy of Dialectical Behavior Therapy",
+      "slot": "independent_critique",
+      "source_kind": "systematic_review_meta_analysis",
+      "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6405261/",
+      "download_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6405261/",
+      "access_status": "open_fulltext",
+      "rights_note": "Open review that reports both outcome estimates and methodological weaknesses in early trials.",
+      "status": "retrieved",
+      "issued": "2010",
+      "identifiers": {
+        "pmcid": "PMC6405261",
+        "doi": "10.1016/j.beth.2010.06.005"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-29T23:25:11+00:00",
+        "sha256": "019c00437ed99dd0dfd42e60e1b2f3f50095d038f458cafcbe76607d8e8d343a",
+        "bytes": 191711,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/dbt/kliem-etal-2010-dbt-meta-analysis.html"
+      }
+    },
+    {
+      "id": "nice-cg78-bpd-recommendations",
+      "title": "Borderline personality disorder: recognition and management — Recommendations",
+      "slot": "current_status",
+      "source_kind": "clinical_guideline",
+      "landing_url": "https://www.nice.org.uk/guidance/cg78/chapter/Recommendations",
+      "download_url": "https://www.nice.org.uk/guidance/cg78/chapter/Recommendations",
+      "access_status": "open_fulltext",
+      "rights_note": "Current NICE recommendation page; DBT recommendation is bounded to women with BPD where recurrent self-harm reduction is a priority.",
+      "status": "retrieved",
+      "retrieval": {
+        "retrieved_at": "2026-07-29T23:25:12+00:00",
+        "sha256": "afff01854dc6b3886302a5c4c182dcce217115ef6e0cbbf31015d81bc645a2bb",
+        "bytes": 77423,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/dbt/nice-cg78-bpd-recommendations.html"
+      }
+    },
+    {
+      "id": "heatherington-etal-2025-dbt-negative-effects",
+      "title": "First do no harm: Client and staff experiences of negative effects from dialectical behaviour therapy",
+      "slot": "safety_guidelines",
+      "source_kind": "qualitative_harm_study",
+      "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12346252/",
+      "download_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12346252/",
+      "access_status": "open_fulltext",
+      "rights_note": "Open qualitative study of reported negative effects; not an incidence estimate or contraindication guideline.",
+      "status": "retrieved",
+      "issued": "2025",
+      "identifiers": {
+        "pmcid": "PMC12346252"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-29T23:25:13+00:00",
+        "sha256": "85bcd5ca4c7c1549f0dcc630cec9113a80cd48438dadd15af637a38c772a0e47",
+        "bytes": 245601,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/dbt/heatherington-etal-2025-dbt-negative-effects.html"
+      }
+    },
+    {
+      "id": "haft-etal-2022-cultural-dbt",
+      "title": "Cultural adaptations of dialectical behavior therapy: A systematic review",
+      "slot": "cultural_language_context",
+      "source_kind": "systematic_review_cultural_adaptation",
+      "landing_url": "https://pubmed.ncbi.nlm.nih.gov/35420839/",
+      "download_url": "https://www.pdbti.org/wp-content/uploads/2024/10/Cultural-Adaptations-of-Dialectical-Behavior-Therapy-A-Systematic-Review.pdf",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Public author/institute-hosted copy; cache privately. Review finds adaptation activity but insufficient evidence of superiority over unadapted DBT.",
+      "status": "retrieved",
+      "issued": "2022",
+      "identifiers": {
+        "doi": "10.1037/ccp0000730",
+        "pmid": "35420839"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-29T23:25:19+00:00",
+        "sha256": "7c2c417cd4844156b64136cb2c575ca4b751297be4d37e8bfef999408d03ab5b",
+        "bytes": 561574,
+        "media_type": "application/pdf",
+        "cache_key": ".private-sources/dbt/haft-etal-2022-cultural-dbt.pdf"
+      }
+    }
+  ],
+  "status": "audited"
 }
