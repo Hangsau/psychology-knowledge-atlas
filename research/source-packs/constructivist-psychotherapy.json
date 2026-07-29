@@ -5,42 +5,191 @@
   "slots": {
     "identity_history": {
       "description": "Independent scholarly identity and historical placement",
-      "status": "not_searched"
+      "status": "covered"
     },
     "primary_works": {
       "description": "Primary works or first-generation programme statements",
-      "status": "not_searched"
+      "status": "covered"
     },
     "theory_methods": {
       "description": "Core concepts, methods and internal variants",
-      "status": "not_searched"
+      "status": "covered"
     },
     "independent_critique": {
       "description": "Independent historiography, criticism or boundary analysis",
-      "status": "not_searched"
+      "status": "covered"
     },
     "empirical_status": {
       "description": "Empirical tests, syntheses, replications or current assessment",
-      "status": "not_searched"
+      "status": "covered"
     },
     "current_status": {
       "description": "Contemporary continuation, institutions or present disciplinary status",
-      "status": "not_searched"
+      "status": "covered"
     },
     "clinical_outcomes": {
       "description": "Systematic reviews, meta-analyses or comparative outcome research",
-      "status": "not_searched"
+      "status": "covered"
     },
     "safety_guidelines": {
       "description": "Guidelines, limitations, adverse effects or contraindications",
-      "status": "not_searched"
+      "status": "searched_no_qualifying_source"
     },
     "cultural_language_context": {
       "description": "Non-English, local, cultural or knowledge-sovereignty context where applicable",
-      "status": "not_searched"
+      "status": "searched_no_qualifying_source"
     }
   },
-  "searches": [],
-  "items": [],
-  "status": "not_started"
+  "searches": [
+    {
+      "searched_at": "2026-07-30",
+      "system": "ERIC / Open Library / PubMed Central / professional associations / publisher indexes",
+      "queries": [
+        "constructivist psychotherapy Neimeyer Mahoney history",
+        "constructivist psychotherapy appraisal full text",
+        "personal construct therapy randomized trial",
+        "constructivist psychotherapy systematic review outcomes",
+        "constructivist psychotherapy safety cultural adaptation"
+      ],
+      "purpose": "Distinguish the broad constructivist family from personal construct therapy and narrative/dialogical descendants while locating history, programme statements, methods, empirical outcomes, current continuation, safety and cultural boundaries"
+    }
+  ],
+  "items": [
+    {
+      "id": "neimeyer-1993-appraisal-constructivist-psychotherapies",
+      "title": "An Appraisal of Constructivist Psychotherapies",
+      "slot": "identity_history",
+      "source_kind": "foundational_review_record",
+      "landing_url": "https://eric.ed.gov/?id=EJ468235",
+      "download_url": "https://eric.ed.gov/?id=EJ468235",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "ERIC abstract and bibliographic record identifies four clinical lineages; article body is not open here, so this is not a full-text read.",
+      "status": "retrieved",
+      "issued": "1993",
+      "identifiers": {
+        "doi": "10.1037/0022-006X.61.2.221",
+        "eric": "EJ468235"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-29T23:50:23+00:00",
+        "sha256": "081969fec271dd86e63470b9fae1eaab142b43e209b1063279782284ab00be9a",
+        "bytes": 10798,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/constructivist-psychotherapy/neimeyer-1993-appraisal-constructivist-psychotherapies.html"
+      }
+    },
+    {
+      "id": "neimeyer-mahoney-1995-constructivism-book",
+      "title": "Constructivism in Psychotherapy",
+      "slot": "primary_works",
+      "source_kind": "foundational_edited_book_record",
+      "landing_url": "https://openlibrary.org/books/OL1099197M/Constructivism_in_psychotherapy",
+      "download_url": "https://openlibrary.org/books/OL1099197M/Constructivism_in_psychotherapy",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Open Library bibliographic page for the 1995 APA volume; borrow/preview status does not authorize caching the book body.",
+      "status": "retrieved",
+      "issued": "1995",
+      "identifiers": {
+        "isbn": "9781557982797",
+        "openlibrary": "OL1099197M",
+        "oclc": "31518985"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-29T23:50:27+00:00",
+        "sha256": "bc9d678cc0cb0f2a89aed4c36ed1ea8d9858f8274043c1f8e552ce6e26d936c2",
+        "bytes": 88529,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/constructivist-psychotherapy/neimeyer-mahoney-1995-constructivism-book.html"
+      }
+    },
+    {
+      "id": "paz-etal-2020-pct-fibromyalgia-protocol",
+      "title": "Personal Construct Therapy vs Cognitive Behavioral Therapy in the Treatment of Depression in Women with Fibromyalgia",
+      "slot": "theory_methods",
+      "source_kind": "primary_randomized_trial_protocol",
+      "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6987966/",
+      "download_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6987966/",
+      "access_status": "open_fulltext",
+      "rights_note": "Open protocol defining personal construct therapy, repertory-grid and implicative-dilemma methods; one constructivist lineage, not the whole family.",
+      "status": "retrieved",
+      "issued": "2020",
+      "identifiers": {
+        "pmcid": "PMC6987966",
+        "doi": "10.2147/NDT.S235161",
+        "pmid": "32021219",
+        "clinical_trial": "NCT02711020"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-29T23:50:28+00:00",
+        "sha256": "2a8a32d7cfa7a55631af1c100096d6454241207e6e60b8cdc890df54caf4a852",
+        "bytes": 209240,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/constructivist-psychotherapy/paz-etal-2020-pct-fibromyalgia-protocol.html"
+      }
+    },
+    {
+      "id": "aguilera-etal-2022-pct-fibromyalgia-rct",
+      "title": "Cognitive-Behavioral and Personal Construct Therapies for Depression in Women with Fibromyalgia: A Randomized Controlled Trial",
+      "slot": "clinical_outcomes",
+      "source_kind": "primary_randomized_active_comparator_trial",
+      "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8873601/",
+      "download_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8873601/",
+      "access_status": "open_fulltext",
+      "rights_note": "Open condition-specific RCT comparing modular PCT with CBT; no significant between-treatment difference and deterioration counts must remain explicit.",
+      "status": "retrieved",
+      "issued": "2022",
+      "identifiers": {
+        "pmcid": "PMC8873601",
+        "clinical_trial": "NCT02711020"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-29T23:50:28+00:00",
+        "sha256": "4cb6c913eb989c60909fa9d7781de4a398bb8aad3021d54d469d3d90dffe92e4",
+        "bytes": 224467,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/constructivist-psychotherapy/aguilera-etal-2022-pct-fibromyalgia-rct.html"
+      }
+    },
+    {
+      "id": "martinez-etal-2024-dialogical-narrative-review",
+      "title": "Psychotherapy focusing on dialogical and narrative perspectives: a systematic review from qualitative and mixed-methods studies",
+      "slot": "independent_critique",
+      "source_kind": "systematic_qualitative_mixed_methods_review",
+      "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11333309/",
+      "download_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11333309/",
+      "access_status": "open_fulltext",
+      "rights_note": "Open review of dialogical and narrative approaches that reference constructivist thinking; adjacent descendants must not stand for all constructivist psychotherapy.",
+      "status": "retrieved",
+      "issued": "2024",
+      "identifiers": {
+        "pmcid": "PMC11333309"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-29T23:50:30+00:00",
+        "sha256": "08c7c2a6ee20b8bfbbe602e3783d229efc229ab90919c5384a067eeacacf5b57",
+        "bytes": 311824,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/constructivist-psychotherapy/martinez-etal-2024-dialogical-narrative-review.html"
+      }
+    },
+    {
+      "id": "eacmp-current-network",
+      "title": "European Association for Constructivism and Meaning-Centered Practices",
+      "slot": "current_status",
+      "source_kind": "professional_network_self_description",
+      "landing_url": "https://www.constructivistassociation.com/",
+      "download_url": "https://www.constructivistassociation.com/",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Current association self-description and institutional-member list; evidence of continuation only, not independent theory or efficacy support.",
+      "status": "retrieved",
+      "retrieval": {
+        "retrieved_at": "2026-07-29T23:50:30+00:00",
+        "sha256": "7ec0fc613205ac56e29e23ffb98c19457ff196ee5f979a2a373b165ba23390c9",
+        "bytes": 200354,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/constructivist-psychotherapy/eacmp-current-network.html"
+      }
+    }
+  ],
+  "status": "audited"
 }
