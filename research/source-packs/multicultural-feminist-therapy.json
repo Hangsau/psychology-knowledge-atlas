@@ -5,42 +5,253 @@
   "slots": {
     "identity_history": {
       "description": "Independent scholarly identity and historical placement",
-      "status": "not_searched"
+      "status": "covered"
     },
     "primary_works": {
       "description": "Primary works or first-generation programme statements",
-      "status": "not_searched"
+      "status": "covered"
     },
     "theory_methods": {
       "description": "Core concepts, methods and internal variants",
-      "status": "not_searched"
+      "status": "covered"
     },
     "independent_critique": {
       "description": "Independent historiography, criticism or boundary analysis",
-      "status": "not_searched"
+      "status": "covered"
     },
     "empirical_status": {
       "description": "Empirical tests, syntheses, replications or current assessment",
-      "status": "not_searched"
+      "status": "covered"
     },
     "current_status": {
       "description": "Contemporary continuation, institutions or present disciplinary status",
-      "status": "not_searched"
+      "status": "covered"
     },
     "clinical_outcomes": {
       "description": "Systematic reviews, meta-analyses or comparative outcome research",
-      "status": "not_searched"
+      "status": "searched_no_qualifying_source"
     },
     "safety_guidelines": {
       "description": "Guidelines, limitations, adverse effects or contraindications",
-      "status": "not_searched"
+      "status": "covered"
     },
     "cultural_language_context": {
       "description": "Non-English, local, cultural or knowledge-sovereignty context where applicable",
-      "status": "not_searched"
+      "status": "covered"
     }
   },
-  "searches": [],
-  "items": [],
-  "status": "not_started"
+  "searches": [
+    {
+      "searched_at": "2026-07-30",
+      "system": "ERIC / APA / Wiley / Taylor & Francis / ScienceDirect / Feminist Therapy Network / NCBI-NLM / Indonesian journal and publisher indexes",
+      "queries": [
+        "multicultural feminist therapy history primary principles",
+        "feminist therapy effectiveness meta-analysis systematic review outcomes",
+        "feminist therapy ethics safety power overlapping relationships guideline",
+        "feminist therapy women of color intersectionality cultural limitations"
+      ],
+      "purpose": "Locate early programme material, multicultural and feminist integration, principles, critical intersectional boundaries, empirical reviews, current continuation and ethics while excluding generic therapy for women, women-only samples, relational-cultural therapy, empowerment interventions, gender-sensitive care and broad psychotherapy outcomes that do not evaluate feminist therapy"
+    }
+  ],
+  "items": [
+    {
+      "id": "rawlings-carter-1976-dimensions-feminist-therapy",
+      "title": "Dimensions of Feminist Therapy",
+      "slot": "identity_history",
+      "source_kind": "early_programme_review",
+      "landing_url": "https://eric.ed.gov/?id=ED119062",
+      "download_url": "https://files.eric.ed.gov/fulltext/ED119062.pdf",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "ERIC-hosted 1976 early review and bibliography describes feminist therapists as sharing principles while practising within multiple psychotherapy schools; it is historical programme evidence, not current consensus or outcome evidence.",
+      "status": "retrieved",
+      "issued": "1976",
+      "identifiers": {
+        "eric": "ED119062"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-30T05:06:01+00:00",
+        "sha256": "7c0a8f3149c4ce774c31b655c464ce3a19050f1dffca7dba60a69292616ee3d6",
+        "bytes": 381781,
+        "media_type": "application/pdf",
+        "cache_key": ".private-sources/multicultural-feminist-therapy/rawlings-carter-1976-dimensions-feminist-therapy.pdf"
+      }
+    },
+    {
+      "id": "brown-2018-feminist-therapy-book-record",
+      "title": "Feminist Therapy, Second Edition",
+      "slot": "primary_works",
+      "source_kind": "participant_book_library_record",
+      "landing_url": "https://www.apa.org/pubs/books/4317484",
+      "download_url": "https://openlibrary.org/books/OL27377424M/Feminist_Therapy",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Open Library edition record for Laura S. Brown's participant-authored APA second edition; the copyrighted book body is not cached or treated as read, and one author's synthesis does not define every feminist therapy variant.",
+      "status": "retrieved",
+      "issued": "2018",
+      "identifiers": {
+        "isbn": "9781433829116",
+        "lccn": "2018003564",
+        "openlibrary": "OL27377424M",
+        "doi": "10.1037/0000092-000"
+      },
+      "failure_note": "The APA publisher page returned a 212-byte Incapsula shell and the Library of Congress endpoint returned a 724-byte JavaScript shell; both were removed. The Open Library edition record was selected without bypassing either site control.",
+      "retrieval": {
+        "retrieved_at": "2026-07-30T05:10:10+00:00",
+        "sha256": "9d8bc2c16fce08cab0c8944c54c2b90dbbfac2fcdab702200de8ab43a13eed0d",
+        "bytes": 82851,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/multicultural-feminist-therapy/brown-2018-feminist-therapy-book-record.html"
+      }
+    },
+    {
+      "id": "worell-remer-2003-feminist-perspectives-chapter",
+      "title": "Feminist Perspectives in Therapy: Empowering Diverse Women",
+      "slot": "theory_methods",
+      "source_kind": "participant_book_sample_chapter",
+      "landing_url": "https://www.wiley.com/en-us/Feminist+Perspectives+in+Therapy%3A+Empowering+Diverse+Women%2C+2nd+Edition-p-9780471374367",
+      "download_url": "https://catalogimages.wiley.com/images/db/pdf/PS0471374369.01.pdf",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Publisher-hosted sample chapter from the second edition establishes the authors' integration of multicultural and feminist perspectives; only the supplied chapter is retrieved, not the whole copyrighted book.",
+      "status": "retrieved",
+      "issued": "2003",
+      "identifiers": {
+        "isbn": "9780471374367"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-30T05:06:03+00:00",
+        "sha256": "79043b4f8eb9b0fbac1e93157d8a646a15eb2495b78fa20bd6d4358c7625275a",
+        "bytes": 179570,
+        "media_type": "application/pdf",
+        "cache_key": ".private-sources/multicultural-feminist-therapy/worell-remer-2003-feminist-perspectives-chapter.pdf"
+      }
+    },
+    {
+      "id": "comas-diaz-1989-multicultural-perspective",
+      "title": "The Meaning of a Multicultural Perspective for Theory-Building in Feminist Therapy",
+      "slot": "independent_critique",
+      "source_kind": "intersectional_boundary_abstract_record",
+      "landing_url": "https://www.tandfonline.com/doi/abs/10.1300/J015v09n01_01",
+      "download_url": "https://search.crossref.org/search/works?q=10.1300%2FJ015v09n01_01&from_ui=yes",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Publisher abstract identifies barriers to including women of color, poor women and groups outside white middle-class theory-building; the article body is not treated as read.",
+      "status": "retrieved",
+      "issued": "1990",
+      "identifiers": {
+        "doi": "10.1300/J015v09n01_01"
+      },
+      "failure_note": "The Taylor & Francis abstract endpoint returned HTTP 403 to the collector; a Crossref search record was selected without bypassing access controls.",
+      "retrieval": {
+        "retrieved_at": "2026-07-30T05:08:41+00:00",
+        "sha256": "1cd36426ac9ad73143bb98a51edcb9d4c030c3ed11f4b2d790b81fdf6e81493c",
+        "bytes": 15682,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/multicultural-feminist-therapy/comas-diaz-1989-multicultural-perspective.html"
+      }
+    },
+    {
+      "id": "conlin-2017-feminist-therapy-review",
+      "title": "Feminist Therapy: A Brief Integrative Review of Theory, Empirical Support, and Call for New Directions",
+      "slot": "empirical_status",
+      "source_kind": "integrative_review_publisher_record",
+      "landing_url": "https://www.sciencedirect.com/science/article/pii/S0277539516303764",
+      "download_url": "https://search.crossref.org/search/works?q=10.1016%2Fj.wsif.2017.04.002&from_ui=yes",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Crossref bibliographic record for an integrative review that discusses empirical support for theory tenets; it is not a systematic treatment-outcome synthesis and the article body is not treated as read.",
+      "status": "retrieved",
+      "issued": "2017",
+      "identifiers": {
+        "doi": "10.1016/j.wsif.2017.04.002"
+      },
+      "failure_note": "An initial candidate DOI resolved to an unrelated article and was rejected. The ScienceDirect page returned HTTP 403 and the Crossref JSON media type is unsupported by the collector, so the correct Crossref HTML record for Sarah E. Conlin and DOI 10.1016/j.wsif.2017.04.002 was selected without bypassing access controls.",
+      "retrieval": {
+        "retrieved_at": "2026-07-30T05:10:12+00:00",
+        "sha256": "86e75cc0f230a4e60cc1251e1310ea6e4567b1b4e7ac4918134404761d4b677b",
+        "bytes": 15797,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/multicultural-feminist-therapy/conlin-2017-feminist-therapy-review.html"
+      }
+    },
+    {
+      "id": "apa-2018-girls-women-practice-guidelines",
+      "title": "APA Guidelines for Psychological Practice with Girls and Women",
+      "slot": "safety_guidelines",
+      "source_kind": "professional_practice_guideline",
+      "landing_url": "https://www.apa.org/about/policy/psychological-practice-girls-women",
+      "download_url": "https://www.apa.org/about/policy/psychological-practice-girls-women.pdf",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "APA professional practice guideline addresses gender, intersecting identities, bias, trauma, power and culturally responsive practice; it guides practice broadly and is not a feminist-therapy adverse-event review or a substitute for jurisdictional standards.",
+      "status": "retrieved",
+      "issued": "2018",
+      "retrieval": {
+        "retrieved_at": "2026-07-30T05:06:09+00:00",
+        "sha256": "18d7c33af7c1650363f4e705e401025612769388ab6f90bce065a5a716b9b1c3",
+        "bytes": 508761,
+        "media_type": "application/pdf",
+        "cache_key": ".private-sources/multicultural-feminist-therapy/apa-2018-girls-women-practice-guidelines.pdf"
+      }
+    },
+    {
+      "id": "fti-1999-feminist-therapy-code-ethics",
+      "title": "Feminist Therapy Code of Ethics (Revised 1999)",
+      "slot": "safety_guidelines",
+      "source_kind": "therapy_specific_ethics_code",
+      "landing_url": "https://www.ncbi.nlm.nih.gov/nlmcatalog/100949091",
+      "download_url": "https://www.eif.gov.cy/mlsi/dl/genderequality.nsf/All/4B9494A2D30173FFC225863000443B06/$file/Feminist%20Therapy%20Code%20of%20Ethics%20%20(Revised%2C%201999).pdf?OpenElement=",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Government-hosted reproduction of the Feminist Therapy Institute code, whose own notice permits complete reprinting with attribution; it covers diversity, power, overlapping relationships, accountability and social change but is not a clinical contraindication guideline.",
+      "status": "retrieved",
+      "issued": "1999 revision (copyright 2000)",
+      "identifiers": {
+        "nlm": "100949091"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-30T05:06:12+00:00",
+        "sha256": "dd18a61991e18a99cc05bc55141d84470201645c58297c77d394351cde5514c5",
+        "bytes": 59330,
+        "media_type": "application/pdf",
+        "cache_key": ".private-sources/multicultural-feminist-therapy/fti-1999-feminist-therapy-code-ethics.pdf"
+      }
+    },
+    {
+      "id": "oktarini-etal-2025-indonesia-review",
+      "title": "The Concept of Feminist Therapy Development as a Counseling Approach to Gender Injustice and Its Implementation in Indonesia: A Systematic Literature Review",
+      "slot": "cultural_language_context",
+      "source_kind": "regional_systematic_literature_review",
+      "landing_url": "https://ejournal.uinmybatusangkar.ac.id/ojs/index.php/agenda/article/view/15737",
+      "download_url": "https://ejournal.uinmybatusangkar.ac.id/ojs/index.php/agenda/article/view/15737",
+      "access_status": "open_fulltext",
+      "rights_note": "Indonesian journal review discusses feminist therapy development and local implementation; regional framing is retained and is not treated as evidence of effectiveness, cultural equivalence or applicability across Indonesia.",
+      "status": "retrieved",
+      "issued": "2025",
+      "identifiers": {
+        "doi": "10.31958/agenda.v7i1.15737"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-30T05:06:13+00:00",
+        "sha256": "f2cde9b211b4d84829c7a8b9b77ed87e5d228d71d99e9617bfd45eca363b2b01",
+        "bytes": 38044,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/multicultural-feminist-therapy/oktarini-etal-2025-indonesia-review.html"
+      }
+    },
+    {
+      "id": "feminist-therapy-network-current",
+      "title": "Feminist Therapy Network: About and Dual Relationships",
+      "slot": "current_status",
+      "source_kind": "current_practitioner_network_self_description",
+      "landing_url": "https://feministtherapynetwork.org/about/dual-relationships/",
+      "download_url": "https://feministtherapynetwork.org/about/dual-relationships/",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Current practitioner-network page preserves the former Feminist Therapy Institute's history and ethics discussion; network activity demonstrates continuation only, not credentialing authority or clinical effectiveness.",
+      "status": "retrieved",
+      "issued": "retrieved 2026",
+      "retrieval": {
+        "retrieved_at": "2026-07-30T05:06:16+00:00",
+        "sha256": "a4ef3d38e41977bea20d49d8b0af0b9f63661303dd1d7aaa06c6a66e15742ea3",
+        "bytes": 87283,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/multicultural-feminist-therapy/feminist-therapy-network-current.html"
+      }
+    }
+  ],
+  "status": "audited"
 }

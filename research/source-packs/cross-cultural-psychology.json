@@ -5,34 +5,244 @@
   "slots": {
     "identity_history": {
       "description": "Independent scholarly identity and historical placement",
-      "status": "not_searched"
+      "status": "covered"
     },
     "primary_works": {
       "description": "Primary works or first-generation programme statements",
-      "status": "not_searched"
+      "status": "covered"
     },
     "theory_methods": {
       "description": "Core concepts, methods and internal variants",
-      "status": "not_searched"
+      "status": "covered"
     },
     "independent_critique": {
       "description": "Independent historiography, criticism or boundary analysis",
-      "status": "not_searched"
+      "status": "covered"
     },
     "empirical_status": {
       "description": "Empirical tests, syntheses, replications or current assessment",
-      "status": "not_searched"
+      "status": "covered"
     },
     "current_status": {
       "description": "Contemporary continuation, institutions or present disciplinary status",
-      "status": "not_searched"
+      "status": "covered"
     },
     "cultural_language_context": {
       "description": "Non-English, local, cultural or knowledge-sovereignty context where applicable",
-      "status": "not_searched"
+      "status": "covered"
     }
   },
-  "searches": [],
-  "items": [],
-  "status": "not_started"
+  "searches": [
+    {
+      "searched_at": "2026-07-30",
+      "system": "IACCP / Open Library / International Test Commission / Harvard author repository / LSE Research Online / Online Readings in Psychology and Culture / publisher and citation indexes",
+      "queries": [
+        "cross-cultural psychology history IACCP JCCP 1970 1972",
+        "cross-cultural psychology primary comparative perception Segall Campbell Herskovits",
+        "cross-cultural psychology emic etic measurement equivalence test adaptation",
+        "cross-cultural psychology WEIRD critique decolonizing indigenous psychology",
+        "cross-cultural replication countries settings Many Labs 2"
+      ],
+      "purpose": "Locate field history, foundational comparison, participant definitions, methods for equivalence and adaptation, independent criticism of Western sampling and exported constructs, a large multi-country replication, current institutional continuation and knowledge-sovereignty constraints while excluding generic multinational sampling, country stereotypes, intercultural communication alone, cultural psychology or indigenous psychology treated as synonyms, and comparisons that do not establish construct and measurement comparability"
+    }
+  ],
+  "items": [
+    {
+      "id": "iaccp-history-jccp-1970-iaccp-1972",
+      "title": "Historical Factors and Emerging Developments",
+      "slot": "identity_history",
+      "source_kind": "professional_association_field_history",
+      "landing_url": "https://www.iaccp.org/historical-factors-and-emerging-developments/",
+      "download_url": "https://www.iaccp.org/historical-factors-and-emerging-developments/",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "IACCP's institutional history documents the Journal of Cross-Cultural Psychology's 1970 launch and the association's 1972 formation and Hong Kong congress; it is participant institutional history and not an independent history of every intellectual precursor.",
+      "status": "retrieved",
+      "issued": "current web history; events 1968-1972",
+      "retrieval": {
+        "retrieved_at": "2026-07-30T05:12:41+00:00",
+        "sha256": "4b641d0584145a3afd3560d8064515257c270b6440d26511728ea21393b50f94",
+        "bytes": 156710,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/cross-cultural-psychology/iaccp-history-jccp-1970-iaccp-1972.html"
+      }
+    },
+    {
+      "id": "segall-campbell-herskovits-1966-visual-perception",
+      "title": "The Influence of Culture on Visual Perception",
+      "slot": "primary_works",
+      "source_kind": "foundational_comparative_study_book_record",
+      "landing_url": "https://openlibrary.org/books/OL5914376M/The_influence_of_culture_on_visual_perception",
+      "download_url": "https://openlibrary.org/books/OL5914376M/The_influence_of_culture_on_visual_perception",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Open Library record for Segall, Campbell and Herskovits's 1966 comparative visual-perception study; only the catalogue record is cached, not the copyrighted book body, and its ecological hypotheses and sampled societies require historical rather than uncritical present-day interpretation.",
+      "status": "retrieved",
+      "issued": "1966",
+      "identifiers": {
+        "lccn": "64016721",
+        "oclc": "203673",
+        "openlibrary": "OL5914376M"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-30T05:12:44+00:00",
+        "sha256": "76b6cc6a34ca05a91eae87b3264c146c5f1fe35553b74a9ed6c67e44321a41fe",
+        "bytes": 90660,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/cross-cultural-psychology/segall-campbell-herskovits-1966-visual-perception.html"
+      }
+    },
+    {
+      "id": "berry-etal-2011-cross-cultural-psychology-record",
+      "title": "Cross-Cultural Psychology: Research and Applications, Third Edition",
+      "slot": "theory_methods",
+      "source_kind": "participant_textbook_library_record",
+      "landing_url": "https://openlibrary.org/books/OL25051802M/Cross-cultural_psychology",
+      "download_url": "https://openlibrary.org/books/OL25051802M/Cross-cultural_psychology",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Open Library edition record and contents for a field-defining participant textbook covering cultural, comparative and indigenous traditions, methodology, theory and applications; the copyrighted book body is not cached or treated as read.",
+      "status": "retrieved",
+      "issued": "2011",
+      "identifiers": {
+        "isbn": "9780521745208",
+        "lccn": "2010041959",
+        "oclc": "663441288",
+        "openlibrary": "OL25051802M"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-30T05:12:47+00:00",
+        "sha256": "30572fa305ab38c453109bedc85a5338262e68c14d334ed3cdb241418cd5c074",
+        "bytes": 83579,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/cross-cultural-psychology/berry-etal-2011-cross-cultural-psychology-record.html"
+      }
+    },
+    {
+      "id": "berry-2016-culture-behaviour-comparison",
+      "title": "Culture + Behaviour + Comparison = Cross-Cultural Psychology",
+      "slot": "theory_methods",
+      "source_kind": "participant_methodological_programme_record",
+      "landing_url": "https://scholarworks.gvsu.edu/iaccp_papers/231/",
+      "download_url": "https://scholarworks.gvsu.edu/iaccp_papers/231/",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "IACCP conference repository record and abstract for Berry's participant programme: begin with ethnographic setting selection, link context to behaviour, then compare to test covariation and possible universals. It is a normative methodological position, not proof that all studies in the field follow it.",
+      "status": "retrieved",
+      "issued": "2016",
+      "identifiers": {
+        "doi": "10.4087/HVIH1135"
+      },
+      "failure_note": "The repository PDF endpoint returned HTTP 403 to a browser fetch; the publicly readable abstract record was selected without bypassing the restriction, and the paper body is not treated as read.",
+      "retrieval": {
+        "retrieved_at": "2026-07-30T05:12:49+00:00",
+        "sha256": "bce60c901af90b23d6f373f9ec33347215937b0db306bac57b28fb28a92af87a",
+        "bytes": 30626,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/cross-cultural-psychology/berry-2016-culture-behaviour-comparison.html"
+      }
+    },
+    {
+      "id": "henrich-heine-norenzayan-2010-weird",
+      "title": "The Weirdest People in the World?",
+      "slot": "independent_critique",
+      "source_kind": "cross_population_evidence_review_abstract_record",
+      "landing_url": "https://hecc.ubc.ca/steve-heine-joe-henrich-and-ara-norenzayan-the-weirdest-people-in-the-world/",
+      "download_url": "https://hecc.ubc.ca/steve-heine-joe-henrich-and-ara-norenzayan-the-weirdest-people-in-the-world/",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "UBC research-centre page reproduces the authors' abstract for a broad comparative review arguing that WEIRD samples are often unusual and insufficient for species-wide claims; the article body is not treated as read, and the argument does not make all between-population contrasts culturally causal or methodologically valid.",
+      "status": "retrieved",
+      "issued": "2010",
+      "identifiers": {
+        "doi": "10.1017/S0140525X0999152X"
+      },
+      "failure_note": "The Harvard-hosted article PDF returned HTTP 403 to the collector; the UBC research-centre abstract record was selected without bypassing the restriction.",
+      "retrieval": {
+        "retrieved_at": "2026-07-30T05:13:37+00:00",
+        "sha256": "03bffbab888664123c3085e92c0d6ce4f82b583660a6d212b63e950515f76441",
+        "bytes": 51550,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/cross-cultural-psychology/henrich-heine-norenzayan-2010-weird.html"
+      }
+    },
+    {
+      "id": "keller-2025-decolonizing-psychology",
+      "title": "Decolonizing Psychology as a Scientific and Ethical Necessity",
+      "slot": "independent_critique",
+      "source_kind": "decolonial_critical_article_record",
+      "landing_url": "https://scholarworks.gvsu.edu/orpc/vol2/iss1/16/",
+      "download_url": "https://scholarworks.gvsu.edu/orpc/vol2/iss1/16/",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Repository page and abstract, marked CC BY-NC-ND 3.0 on the page, critique universalizing WEIRD developmental models and exporting interventions without demonstrated local validity; the article body is not treated as read, and this is a forceful argued critique rather than a systematic review of every cross-cultural programme.",
+      "status": "retrieved",
+      "issued": "2025",
+      "identifiers": {
+        "doi": "10.9707/2307-0919.1215"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-30T05:13:40+00:00",
+        "sha256": "07288989f212241e274a77698ab676df2bddb7ce1149485892acc58139aa82b6",
+        "bytes": 39049,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/cross-cultural-psychology/keller-2025-decolonizing-psychology.html"
+      }
+    },
+    {
+      "id": "klein-etal-2018-many-labs-2",
+      "title": "Many Labs 2: Investigating Variation in Replicability Across Samples and Settings",
+      "slot": "empirical_status",
+      "source_kind": "large_multicountry_registered_replication",
+      "landing_url": "https://eprints.lse.ac.uk/91159/",
+      "download_url": "https://researchonline.lse.ac.uk/id/eprint/91159/1/Kappes_Many-labs-2.pdf",
+      "access_status": "repository_manuscript",
+      "rights_note": "LSE repository accepted manuscript reports preregistered replications of 28 findings across 125 samples, 15,305 participants and 36 countries or territories; exploratory WEIRDness contrasts and cross-setting heterogeneity concern these effects and samples, not universal cultural invariance.",
+      "status": "retrieved",
+      "issued": "2018",
+      "identifiers": {
+        "doi": "10.1177/2515245918810225"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-30T05:13:44+00:00",
+        "sha256": "95c97d1df30d05b263da06fcff90688a766a2218ab86746bdd2ff42d4120e3b6",
+        "bytes": 4674416,
+        "media_type": "application/pdf",
+        "cache_key": ".private-sources/cross-cultural-psychology/klein-etal-2018-many-labs-2.pdf"
+      }
+    },
+    {
+      "id": "itc-2017-test-adaptation-guidelines",
+      "title": "The ITC Guidelines for Translating and Adapting Tests, Second Edition",
+      "slot": "cultural_language_context",
+      "source_kind": "international_test_adaptation_guideline",
+      "landing_url": "https://www.intestcom.org/page/14",
+      "download_url": "https://www.intestcom.org/files/guideline_test_adaptation_2ed.pdf",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "International Test Commission guideline sets preconditions, development, empirical confirmation, administration, scoring, interpretation and documentation requirements for adaptation across languages and cultures; following it supports but does not by itself prove construct equivalence, validity or fairness.",
+      "status": "retrieved",
+      "issued": "2017 published guideline (prepared 2005-2015)",
+      "retrieval": {
+        "retrieved_at": "2026-07-30T05:13:48+00:00",
+        "sha256": "fe039882fc1399243a9943e1da9d52a499d179b860ba3daab87860d0798b5e03",
+        "bytes": 939500,
+        "media_type": "application/pdf",
+        "cache_key": ".private-sources/cross-cultural-psychology/itc-2017-test-adaptation-guidelines.pdf"
+      }
+    },
+    {
+      "id": "iaccp-current-association",
+      "title": "International Association for Cross-Cultural Psychology: About Us",
+      "slot": "current_status",
+      "source_kind": "current_professional_association_self_description",
+      "landing_url": "https://www.iaccp.org/about-us",
+      "download_url": "https://www.iaccp.org/about-us",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Current IACCP self-description documents continuing membership, congresses, publications and IUPsyS affiliation; institutional continuation does not validate every theory, national comparison or article associated with the field.",
+      "status": "retrieved",
+      "issued": "retrieved 2026",
+      "retrieval": {
+        "retrieved_at": "2026-07-30T05:13:51+00:00",
+        "sha256": "fcb6054969544b8f84fb06620d75fbd3e9986c4b6ae81d7c505cfe28e91222e2",
+        "bytes": 349514,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/cross-cultural-psychology/iaccp-current-association.html"
+      }
+    }
+  ],
+  "status": "audited"
 }

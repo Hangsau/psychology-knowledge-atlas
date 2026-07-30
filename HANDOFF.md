@@ -9,12 +9,12 @@ status: in_progress
 base_commit: 593551e
 started_at: 2026-07-28
 objective: 先為原版48項研究目標完成可恢復、可稽核的來源蒐集，再開始閱讀、建立主張或撰寫內容
-active_target: multicultural-feminist-therapy
+active_target: systems-family-therapy
 canonical_inputs:
   - research/targets.json
   - research/source-packs/*.json
 target_files:
-  - research/source-packs/multicultural-feminist-therapy.json
+  - research/source-packs/systems-family-therapy.json
 expected_result: 下一來源包的所有槽位完成搜尋與裁決；合格可讀正文完成私有快取、格式與雜湊稽核；不建立 claims 或 reader prose
 boundaries:
   - legacy repo 只提供48項 identity/order seed；不匯入舊文章、摘要或 verdict
@@ -82,7 +82,14 @@ completed_items:
   - PubMed回傳reCAPTCHA頁，改用Europe PMC core XML；並由正式紀錄抓出候選Springer DOI錯誤，修正為APA DOI 10.1037/1093-4510.11.2.101，未繞過技術控制
   - 俄文重刊PDF可視閱讀但舊字型編碼造成自動抽字亂碼，已明記readability邊界；其餘取得物通過大小、MIME、SHA-256、題名、PDF文字、XML解析與假頁面檢查
   - 目前32/48來源包 audited、累計224筆實際正文／正式書目或摘要頁
-next_action: 依 research/targets.json 順序從 multicultural-feminist-therapy 開始，繼續採較大批次處理其餘16項，不建立正文。非英語只在原始語言、地方傳統或翻譯／版本差異影響正確性時補，不設配額
+  - multicultural-feminist-therapy 已 audited：9筆正文／正式書目或摘要頁，涵蓋1970年代早期綱領、Brown參與者原典書目、多元女性方法章、階級與族群交織批判、實證整合回顧、APA女性實務指南、Feminist Therapy Institute倫理規範、印尼系統文獻回顧及當代網絡延續
+  - 多元文化／女性主義治療視為異質 therapy family，不與一般女性心理治療、女性樣本、empowerment介入、relational-cultural therapy或泛稱gender-sensitive care等同；整個家族的專屬臨床結果統合搜尋後無合格來源，明記 searched_no_qualifying_source
+  - APA頁面回傳212-byte Incapsula空殼、Library of Congress端點回傳724-byte JavaScript殼、Taylor & Francis與ScienceDirect回傳403，均移除或改用Open Library／Crossref正式紀錄，並修正一筆原先指向無關文章的錯誤DOI，未繞過技術控制
+  - cross-cultural-psychology 已 audited：9筆正文／正式書目或摘要頁，涵蓋JCCP 1970與IACCP 1972領域史、1966跨文化視知覺奠基研究書目、領域教科書與方法綱領、WEIRD與去殖民批判、Many Labs 2跨36國／地區大型重複研究、ITC測驗調適準則及當代國際協會延續
+  - 跨國取樣不自動等於跨文化研究，翻譯不自動等於測量等值，群體平均不外推成個人或國家固定特質；cross-cultural psychology與cultural psychology、indigenous psychology及intercultural communication保留邊界
+  - Harvard全文端點回傳403後改存UBC正式作者摘要頁；Many Labs 2取得101頁LSE repository manuscript，ITC準則取得41頁PDF；正常IACCP頁面雖含表單reCAPTCHA設定字串，但正文與題名完整，不是challenge殼
+  - 目前34/48來源包 audited、累計242筆實際正文／正式書目或摘要頁；本批18筆均通過大小、MIME、SHA-256、題名／PDF文字與假頁面人工判讀
+next_action: 依 research/targets.json 順序從 systems-family-therapy 開始，繼續採每批2至3項處理其餘14項，不建立正文。非英語只在原始語言、地方傳統或翻譯／版本差異影響正確性時補，不設配額
 ```
 
 ## P3-S COMPLETION RECORD
