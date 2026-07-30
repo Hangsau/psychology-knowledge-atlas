@@ -5,42 +5,236 @@
   "slots": {
     "identity_history": {
       "description": "Independent scholarly identity and historical placement",
-      "status": "not_searched"
+      "status": "covered"
     },
     "primary_works": {
       "description": "Primary works or first-generation programme statements",
-      "status": "not_searched"
+      "status": "covered"
     },
     "theory_methods": {
       "description": "Core concepts, methods and internal variants",
-      "status": "not_searched"
+      "status": "covered"
     },
     "independent_critique": {
       "description": "Independent historiography, criticism or boundary analysis",
-      "status": "not_searched"
+      "status": "covered"
     },
     "empirical_status": {
       "description": "Empirical tests, syntheses, replications or current assessment",
-      "status": "not_searched"
+      "status": "covered"
     },
     "current_status": {
       "description": "Contemporary continuation, institutions or present disciplinary status",
-      "status": "not_searched"
+      "status": "covered"
     },
     "clinical_outcomes": {
       "description": "Systematic reviews, meta-analyses or comparative outcome research",
-      "status": "not_searched"
+      "status": "covered"
     },
     "safety_guidelines": {
       "description": "Guidelines, limitations, adverse effects or contraindications",
-      "status": "not_searched"
+      "status": "searched_no_qualifying_source"
     },
     "cultural_language_context": {
       "description": "Non-English, local, cultural or knowledge-sovereignty context where applicable",
-      "status": "not_searched"
+      "status": "searched_no_qualifying_source"
     }
   },
-  "searches": [],
-  "items": [],
-  "status": "not_started"
+  "searches": [
+    {
+      "searched_at": "2026-07-30",
+      "system": "Dulwich Centre / Open Library / ERIC / PubMed Central / Europe PMC / publisher and professional indexes",
+      "queries": [
+        "narrative therapy White Epston history primary work",
+        "narrative therapy externalising re-authoring methods",
+        "narrative therapy systematic review outcomes critique",
+        "narrative therapy adverse effects contraindications guideline",
+        "narrative therapy cultural adaptation Indigenous community"
+      ],
+      "purpose": "Locate origin, primary bibliography, methods, independent critique, empirical outcomes, current continuation, safety and cultural materials while separating White-Epston narrative therapy from narrative exposure therapy, narrative medicine and generic storytelling interventions"
+    }
+  ],
+  "items": [
+    {
+      "id": "dulwich-narrative-histories",
+      "title": "Histories",
+      "slot": "identity_history",
+      "source_kind": "originating_institution_history",
+      "landing_url": "https://dulwichcentre.com.au/courses/what-is-narrative-practice-a-free-course/lessons/histories/",
+      "download_url": "https://dulwichcentre.com.au/courses/what-is-narrative-practice-a-free-course/lessons/histories/",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Dulwich Centre account of Michael White, David Epston and other contributors; participant history, not independent historiography.",
+      "status": "retrieved",
+      "issued": "retrieved 2026",
+      "retrieval": {
+        "retrieved_at": "2026-07-30T00:08:03+00:00",
+        "sha256": "1bca4b64385fd0134c9370d4eb56731b9faa40a2cf05c9693bd272a8994b03a6",
+        "bytes": 181393,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/narrative-therapy/dulwich-narrative-histories.html"
+      }
+    },
+    {
+      "id": "white-epston-1990-narrative-means-record",
+      "title": "Narrative Means to Therapeutic Ends",
+      "slot": "primary_works",
+      "source_kind": "foundational_book_record",
+      "landing_url": "https://openlibrary.org/books/OL2220066M/Narrative_means_to_therapeutic_ends",
+      "download_url": "https://openlibrary.org/books/OL2220066M/Narrative_means_to_therapeutic_ends",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Open Library bibliographic page for the 1990 first edition; borrow/preview status does not authorize caching or treating the book body as read.",
+      "status": "retrieved",
+      "issued": "1990",
+      "identifiers": {
+        "isbn": "0393700984",
+        "openlibrary": "OL2220066M",
+        "lccn": "89048776",
+        "oclc": "20828023"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-30T00:08:07+00:00",
+        "sha256": "93fe032b07cd8bb85b57e8840b6e3d87eb9033346d640168f1dd746591c11651",
+        "bytes": 92597,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/narrative-therapy/white-epston-1990-narrative-means-record.html"
+      }
+    },
+    {
+      "id": "morgan-what-is-narrative-therapy-extract",
+      "title": "What is Narrative Therapy?",
+      "slot": "theory_methods",
+      "source_kind": "practitioner_book_extract",
+      "landing_url": "https://dulwichcentre.com.au/what-is-narrative-therapy/",
+      "download_url": "https://dulwichcentre.com.au/what-is-narrative-therapy/",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Authorized public extract presenting collaboration, externalization, stories, thin description and re-authoring; practitioner exposition rather than independent validation.",
+      "status": "retrieved",
+      "issued": "2000",
+      "retrieval": {
+        "retrieved_at": "2026-07-30T00:08:11+00:00",
+        "sha256": "cb94a683dfb718e51242fd1283455acc007616cdcb9ea3767449e7393f4cc1c3",
+        "bytes": 156783,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/narrative-therapy/morgan-what-is-narrative-therapy-extract.html"
+      }
+    },
+    {
+      "id": "etchison-kleist-2000-review-record",
+      "title": "Review of Narrative Therapy: Research and Utility",
+      "slot": "independent_critique",
+      "source_kind": "independent_review_record",
+      "landing_url": "https://eric.ed.gov/?id=EJ655044",
+      "download_url": "https://eric.ed.gov/?id=EJ655044",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "ERIC abstract and bibliographic record for an early independent research review; article body is not open here and is not counted as a full-text read.",
+      "status": "retrieved",
+      "issued": "2000",
+      "identifiers": {
+        "eric": "EJ655044",
+        "issn": "1066-4807"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-30T00:08:14+00:00",
+        "sha256": "6f2012a54718889a34d80bd443cbedc95d899957f71bd8b9ce734a73c0f059a7",
+        "bytes": 10378,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/narrative-therapy/etchison-kleist-2000-review-record.html"
+      }
+    },
+    {
+      "id": "mellado-etal-2024-dialogical-narrative-review",
+      "title": "Psychotherapy focusing on dialogical and narrative perspectives: a systematic review from qualitative and mixed-methods studies",
+      "slot": "empirical_status",
+      "source_kind": "systematic_qualitative_mixed_methods_review",
+      "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11333309/",
+      "download_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11333309/fullTextXML",
+      "access_status": "open_fulltext",
+      "rights_note": "Open systematic review of dialogical and narrative psychotherapies; its broader combined scope must not be treated as evidence for White-Epston narrative therapy alone.",
+      "status": "retrieved",
+      "issued": "2024",
+      "identifiers": {
+        "pmcid": "PMC11333309",
+        "pmid": "39165768",
+        "doi": "10.3389/fpsyg.2024.1308131"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-30T00:08:19+00:00",
+        "sha256": "852579c2e333490db83ebc48b288d751b540d993c817b0da0f9ff72db54311c5",
+        "bytes": 203323,
+        "media_type": "application/xml",
+        "cache_key": ".private-sources/narrative-therapy/mellado-etal-2024-dialogical-narrative-review.xml"
+      }
+    },
+    {
+      "id": "weber-etal-2022-eating-disorders-review",
+      "title": "A systematic review of narrative therapy treatment outcomes for eating disorders",
+      "slot": "clinical_outcomes",
+      "source_kind": "condition_specific_systematic_review",
+      "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9469550/",
+      "download_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9469550/fullTextXML",
+      "access_status": "open_fulltext",
+      "rights_note": "Open condition-specific review; limited standardized outcome evidence and predominance of case material must remain explicit and cannot establish general efficacy.",
+      "status": "retrieved",
+      "issued": "2022",
+      "identifiers": {
+        "pmcid": "PMC9469550",
+        "pmid": "36096908",
+        "doi": "10.1186/s40337-022-00636-4"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-30T00:08:23+00:00",
+        "sha256": "befc1d69b88e1302c0cca3559def5333fa4d5c8981a0d85009e6296d89e95c72",
+        "bytes": 102638,
+        "media_type": "application/xml",
+        "cache_key": ".private-sources/narrative-therapy/weber-etal-2022-eating-disorders-review.xml"
+      }
+    },
+    {
+      "id": "dulwich-about-narrative-approaches",
+      "title": "About narrative approaches",
+      "slot": "current_status",
+      "source_kind": "current_institution_self_description",
+      "landing_url": "https://dulwichcentre.com.au/about-narrative-approaches/",
+      "download_url": "https://dulwichcentre.com.au/about-narrative-approaches/",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Current Dulwich Centre self-description; evidence of institutional continuation and scope only, not independent efficacy support.",
+      "status": "retrieved",
+      "issued": "retrieved 2026",
+      "retrieval": {
+        "retrieved_at": "2026-07-30T00:08:27+00:00",
+        "sha256": "82a1e5f0fd40815f9b11d0daa3f00d95a16d82921c49b566b60cae799e86ef9c",
+        "bytes": 169548,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/narrative-therapy/dulwich-about-narrative-approaches.html"
+      }
+    },
+    {
+      "id": "wood-etal-2015-kalumburu-community-paper",
+      "title": "The stories we need to tell: Using online outsider-witness processes and digital storytelling in a remote Australian Aboriginal community",
+      "slot": "cultural_language_context",
+      "source_kind": "community_collaborative_practice_report",
+      "landing_url": "https://dulwichcentre.com.au/wp-content/uploads/2016/11/The-stories-we-need-to-tell-by-Clare-Wood-et-al.pdf",
+      "access_status": "privately_observed_unredistributable",
+      "rights_note": "Directly relevant community-collaborative report with Aboriginal co-authorship and cultural guidance, but the PDF states that no part may be stored or transmitted without permission.",
+      "status": "excluded",
+      "issued": "2015",
+      "exclusion_reason": "Do not retrieve or cache a document whose embedded rights statement expressly restricts storage and transmission; seek an openly licensed community-led alternative."
+    },
+    {
+      "id": "narrative-exposure-therapy-cultural-review",
+      "title": "Efficacy and cultural adaptations of narrative exposure therapy for trauma-related outcomes in refugees and asylum-seekers",
+      "slot": "cultural_language_context",
+      "source_kind": "scope_boundary_candidate",
+      "landing_url": "https://eprints.gla.ac.uk/224041/",
+      "access_status": "open_fulltext",
+      "rights_note": "Open cultural-adaptation review of Narrative Exposure Therapy (NET), a distinct trauma-focused intervention rather than White-Epston narrative therapy.",
+      "status": "excluded",
+      "issued": "2020",
+      "identifiers": {
+        "doi": "10.1016/j.jbct.2020.10.003"
+      },
+      "exclusion_reason": "Name overlap is insufficient: Narrative Exposure Therapy is a distinct treatment and cannot fill narrative therapy's cultural-context slot."
+    }
+  ],
+  "status": "audited"
 }

@@ -9,12 +9,12 @@ status: in_progress
 base_commit: 593551e
 started_at: 2026-07-28
 objective: 先為原版48項研究目標完成可恢復、可稽核的來源蒐集，再開始閱讀、建立主張或撰寫內容
-active_target: narrative-therapy
+active_target: sfbt
 canonical_inputs:
   - research/targets.json
   - research/source-packs/*.json
 target_files:
-  - research/source-packs/narrative-therapy.json
+  - research/source-packs/sfbt.json
 expected_result: 下一來源包的所有槽位完成搜尋與裁決；合格可讀正文完成私有快取、格式與雜湊稽核；不建立 claims 或 reader prose
 boundaries:
   - legacy repo 只提供48項 identity/order seed；不匯入舊文章、摘要或 verdict
@@ -52,7 +52,12 @@ completed_items:
   - 建構主義心理治療家族、personal construct therapy、敘事／對話取向保持範圍邊界；特定纖維肌痛女性樣本的主動比較試驗不升格為整個家族的療效結論
   - safety/guidelines 與 cultural/language context 已搜尋但本輪無合格專屬來源，明記 searched_no_qualifying_source；6筆快取均通過大小、MIME、SHA-256與假頁面檢查
   - 目前26/48來源包 audited、累計174筆實際正文／正式書目頁
-next_action: 依 research/targets.json 順序從 narrative-therapy 開始，繼續採較大批次處理其餘22項，不建立正文。非英語只在原始語言、地方傳統或翻譯／版本差異影響正確性時補，不設配額
+  - narrative-therapy 已 audited：7筆正文／正式書目頁，涵蓋Dulwich創始史、White與Epston 1990原典書目、方法說明、早期獨立批評、質性／混合研究綜整、飲食疾患結果回顧及當代機構延續
+  - White–Epston narrative therapy 與 narrative exposure therapy、narrative medicine、generic storytelling interventions 保持範圍邊界；療效回顧的特定診斷與研究設計限制不升格為一般療效結論
+  - 一份Aboriginal community協作實務報告因PDF內明文限制儲存／傳播而列為excluded且不快取；另一份文化調適回顧因研究的是不同的Narrative Exposure Therapy而排除
+  - safety/guidelines 與 cultural/language context 均完成搜尋但本輪無可快取的合格專屬來源；7筆取得物通過大小、MIME、SHA-256、題名與假頁面檢查
+  - 目前27/48來源包 audited、累計181筆實際正文／正式書目頁
+next_action: 依 research/targets.json 順序從 sfbt 開始，繼續採較大批次處理其餘21項，不建立正文。非英語只在原始語言、地方傳統或翻譯／版本差異影響正確性時補，不設配額
 ```
 
 ## P3-S COMPLETION RECORD
