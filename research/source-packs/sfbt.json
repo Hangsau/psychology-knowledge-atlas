@@ -5,42 +5,239 @@
   "slots": {
     "identity_history": {
       "description": "Independent scholarly identity and historical placement",
-      "status": "not_searched"
+      "status": "covered"
     },
     "primary_works": {
       "description": "Primary works or first-generation programme statements",
-      "status": "not_searched"
+      "status": "covered"
     },
     "theory_methods": {
       "description": "Core concepts, methods and internal variants",
-      "status": "not_searched"
+      "status": "covered"
     },
     "independent_critique": {
       "description": "Independent historiography, criticism or boundary analysis",
-      "status": "not_searched"
+      "status": "covered"
     },
     "empirical_status": {
       "description": "Empirical tests, syntheses, replications or current assessment",
-      "status": "not_searched"
+      "status": "covered"
     },
     "current_status": {
       "description": "Contemporary continuation, institutions or present disciplinary status",
-      "status": "not_searched"
+      "status": "covered"
     },
     "clinical_outcomes": {
       "description": "Systematic reviews, meta-analyses or comparative outcome research",
-      "status": "not_searched"
+      "status": "covered"
     },
     "safety_guidelines": {
       "description": "Guidelines, limitations, adverse effects or contraindications",
-      "status": "not_searched"
+      "status": "searched_no_qualifying_source"
     },
     "cultural_language_context": {
       "description": "Non-English, local, cultural or knowledge-sovereignty context where applicable",
-      "status": "not_searched"
+      "status": "covered"
     }
   },
-  "searches": [],
-  "items": [],
-  "status": "not_started"
+  "searches": [
+    {
+      "searched_at": "2026-07-30",
+      "system": "SFBTA / Journal of Solution Focused Practices / Open Library / PubMed / CRD-DARE / institutional repositories / publisher indexes",
+      "queries": [
+        "solution focused brief therapy de Shazer Berg history primary work",
+        "SFBT treatment manual solution building miracle question scaling",
+        "solution focused brief therapy meta-analysis umbrella review outcomes",
+        "solution focused brief therapy critical review limitations harms guideline",
+        "solution focused brief therapy Chinese literature cultural comparison"
+      ],
+      "purpose": "Locate origins, primary bibliography, current treatment definition, independent critique, outcome syntheses, current institutional continuation, safety reporting and cross-language evidence while separating SFBT from generic brief, strengths-based or solution-oriented interventions"
+    }
+  ],
+  "items": [
+    {
+      "id": "de-jong-2019-informal-sfbt-history",
+      "title": "A Brief, Informal History of SFBT as Told by Steve De Shazer and Insoo Kim Berg",
+      "slot": "identity_history",
+      "source_kind": "participant_history",
+      "landing_url": "https://journalsfp.org/article/75078-a-brief-informal-history-of-sfbt-as-told-by-steve-de-shazer-and-insoo-kim-berg",
+      "download_url": "https://journalsfp.org/article/75078-a-brief-informal-history-of-sfbt-as-told-by-steve-de-shazer-and-insoo-kim-berg.pdf",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Authorized repository PDF reconstructed from De Jong's notes and interview; explicitly an informal participant account, not rigorous independent historiography.",
+      "status": "retrieved",
+      "issued": "2019",
+      "identifiers": {
+        "doi": "10.59874/001c.75078"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-30T00:14:32+00:00",
+        "sha256": "fd7669d5176a73db040940b2ec19d9450ceb8d3bdca5d266dbe0fdfe63df0576",
+        "bytes": 131266,
+        "media_type": "application/pdf",
+        "cache_key": ".private-sources/sfbt/de-jong-2019-informal-sfbt-history.pdf"
+      }
+    },
+    {
+      "id": "de-shazer-1985-keys-record",
+      "title": "Keys to Solution in Brief Therapy",
+      "slot": "primary_works",
+      "source_kind": "foundational_book_record",
+      "landing_url": "https://openlibrary.org/books/OL2860024M/Keys_to_solution_in_brief_therapy",
+      "download_url": "https://openlibrary.org/books/OL2860024M/Keys_to_solution_in_brief_therapy",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Open Library bibliographic page for the 1985 first edition; preview status does not authorize caching or treating the book body as read.",
+      "status": "retrieved",
+      "issued": "1985",
+      "identifiers": {
+        "isbn": "0393700046",
+        "openlibrary": "OL2860024M",
+        "lccn": "84022781",
+        "oclc": "11289063"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-30T00:14:35+00:00",
+        "sha256": "66c69de63e122a0f8243aa30ccdf4f14d6af9bf98cf5d0641f46616e5fc44d5a",
+        "bytes": 86813,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/sfbt/de-shazer-1985-keys-record.html"
+      }
+    },
+    {
+      "id": "sfbta-2025-treatment-manual",
+      "title": "Solution Focused Therapy Treatment Manual for Working with Individuals, Third Edition",
+      "slot": "theory_methods",
+      "source_kind": "professional_association_treatment_manual",
+      "landing_url": "https://www.sfbta.org/Resources/sfbt-treatment-manuals",
+      "download_url": "https://www.sfbta.org/Solution%20Focused%20Therapy%20Treatment%20Manual%20for%20Working%20with%20Individuals%20-3rd%20Edition-%20final.pdf",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Current SFBTA manual defining framework, techniques and research use; association-authored practice standard, not independent efficacy evidence.",
+      "status": "retrieved",
+      "issued": "2025",
+      "retrieval": {
+        "retrieved_at": "2026-07-30T00:14:44+00:00",
+        "sha256": "239d738b3b3df254112124f38b419c06144f47049602a51a6755620e083a8c8c",
+        "bytes": 968241,
+        "media_type": "application/pdf",
+        "cache_key": ".private-sources/sfbt/sfbta-2025-treatment-manual.pdf"
+      }
+    },
+    {
+      "id": "crd-2008-sfbt-meta-analysis-critical-abstract",
+      "title": "Examining the effectiveness of solution-focused brief therapy: a meta-analysis",
+      "slot": "independent_critique",
+      "source_kind": "independent_critical_review_abstract",
+      "landing_url": "https://www.ncbi.nlm.nih.gov/books/NBK75038/?report=printable",
+      "download_url": "https://www.ncbi.nlm.nih.gov/books/NBK75038/?report=printable",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "NCBI Bookshelf mirror of a CRD-DARE critical abstract evaluating Kim's 2008 meta-analysis; it identifies single-reviewer bias, study quality and heterogeneity limitations without standing in for the reviewed article body.",
+      "status": "retrieved",
+      "issued": "2008",
+      "identifiers": {
+        "doi": "10.1177/1049731507307807",
+        "crd": "12008102819",
+        "bookshelf": "NBK75038"
+      },
+      "failure_note": "The newer CRD record was also screened but its direct host failed local TLS verification; this official NCBI Bookshelf DARE mirror was selected instead without disabling certificate checks.",
+      "retrieval": {
+        "retrieved_at": "2026-07-30T00:15:46+00:00",
+        "sha256": "52e1f69e3d8ee059c5a2de67309496eef0d2087d11c4f19ee340f647d9996cb7",
+        "bytes": 20257,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/sfbt/crd-2008-sfbt-meta-analysis-critical-abstract.html"
+      }
+    },
+    {
+      "id": "zak-pekala-2025-sfbt-umbrella-review",
+      "title": "Effectiveness of solution-focused brief therapy: An umbrella review of systematic reviews and meta-analyses",
+      "slot": "empirical_status",
+      "source_kind": "umbrella_review",
+      "landing_url": "https://pubmed.ncbi.nlm.nih.gov/39324877/",
+      "download_url": "https://pubmed.ncbi.nlm.nih.gov/39324877/",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "PubMed abstract and bibliographic record for an umbrella review of 25 systematic reviews; the publisher PDF returned HTTP 403 to the collector, so this is not a full-text read. High overlap and outcome-specific confidence remain boundaries, and absence of consistent harm evidence is not a dedicated safety guideline.",
+      "status": "retrieved",
+      "issued": "2025",
+      "identifiers": {
+        "doi": "10.1080/10503307.2024.2406540",
+        "pmid": "39324877"
+      },
+      "failure_note": "Open publisher full text was discoverable but its PDF endpoint returned HTTP 403 to the collector; PubMed's official abstract record was retained without bypassing access controls.",
+      "retrieval": {
+        "retrieved_at": "2026-07-30T00:16:34+00:00",
+        "sha256": "c22b7a52aea8140e406ed0d2249e2bf29dc7e1dc46dc24fb30f1c0de41842ccb",
+        "bytes": 116993,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/sfbt/zak-pekala-2025-sfbt-umbrella-review.html"
+      }
+    },
+    {
+      "id": "zhou-etal-2026-sfbt-cancer-meta-analysis",
+      "title": "Effectiveness of solution-focused brief therapy on cancer patients: a systematic review and meta-analysis",
+      "slot": "clinical_outcomes",
+      "source_kind": "systematic_review_meta_analysis",
+      "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12936997/",
+      "download_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12936997/fullTextXML",
+      "access_status": "open_fulltext",
+      "rights_note": "CC BY condition-specific meta-analysis of nursing interventions based on SFBT in cancer populations; low certainty, high heterogeneity and risk-of-bias findings prevent general efficacy conclusions.",
+      "status": "retrieved",
+      "issued": "2026",
+      "identifiers": {
+        "doi": "10.3389/fpsyg.2026.1741088",
+        "pmid": "41768169",
+        "pmcid": "PMC12936997"
+      },
+      "failure_note": "The broader 2024 UvA repository meta-analysis was preferred initially but timed out twice at the collector's fixed 60-second limit; this current open condition-specific review was selected without changing retrieval safeguards.",
+      "retrieval": {
+        "retrieved_at": "2026-07-30T00:19:35+00:00",
+        "sha256": "7af9786fba8def277724f7d2709c3e91605963ee3851d664fe8db016a3b4dec2",
+        "bytes": 150550,
+        "media_type": "application/xml",
+        "cache_key": ".private-sources/sfbt/zhou-etal-2026-sfbt-cancer-meta-analysis.xml"
+      }
+    },
+    {
+      "id": "froerer-etal-2025-iran-sfbt-meta-analysis",
+      "title": "Meta-Analysis of Solution-Focused Brief Therapy Research Conducted in Iran: Does Outcome Type, Intervention Modality, or Delivery Format Make a Difference?",
+      "slot": "cultural_language_context",
+      "source_kind": "regional_meta_analysis",
+      "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11683447/",
+      "download_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11683447/fullTextXML",
+      "access_status": "open_fulltext",
+      "rights_note": "CC BY Iran-focused meta-analysis. Regional study designs and outcomes cannot be generalized beyond the Iranian evidence base; its English-publication restriction also means it does not represent the Persian-language corpus.",
+      "status": "retrieved",
+      "issued": "2025",
+      "identifiers": {
+        "doi": "10.1111/jmft.12759",
+        "pmid": "39737612",
+        "pmcid": "PMC11683447"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-30T00:22:14+00:00",
+        "sha256": "3912cf37c39c98a8025ad3f163dc7c5479bad98732996f84002d31b8ac7dd296",
+        "bytes": 118128,
+        "media_type": "application/xml",
+        "cache_key": ".private-sources/sfbt/froerer-etal-2025-iran-sfbt-meta-analysis.xml"
+      }
+    },
+    {
+      "id": "sfbta-current-association",
+      "title": "Solution Focused Brief Therapy Association",
+      "slot": "current_status",
+      "source_kind": "professional_association_self_description",
+      "landing_url": "https://www.sfbta.org/",
+      "download_url": "https://www.sfbta.org/",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Current association self-description, manuals, research activity and events; evidence of institutional continuation only.",
+      "status": "retrieved",
+      "issued": "retrieved 2026",
+      "retrieval": {
+        "retrieved_at": "2026-07-30T00:19:40+00:00",
+        "sha256": "aafcdcd107bb6c4f85aa1dc9276f074777b24ff93c8dee08f950d1a5af700c5d",
+        "bytes": 112525,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/sfbt/sfbta-current-association.html"
+      }
+    }
+  ],
+  "status": "audited"
 }

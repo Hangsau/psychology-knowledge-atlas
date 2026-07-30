@@ -9,12 +9,12 @@ status: in_progress
 base_commit: 593551e
 started_at: 2026-07-28
 objective: 先為原版48項研究目標完成可恢復、可稽核的來源蒐集，再開始閱讀、建立主張或撰寫內容
-active_target: sfbt
+active_target: transactional-analysis
 canonical_inputs:
   - research/targets.json
   - research/source-packs/*.json
 target_files:
-  - research/source-packs/sfbt.json
+  - research/source-packs/transactional-analysis.json
 expected_result: 下一來源包的所有槽位完成搜尋與裁決；合格可讀正文完成私有快取、格式與雜湊稽核；不建立 claims 或 reader prose
 boundaries:
   - legacy repo 只提供48項 identity/order seed；不匯入舊文章、摘要或 verdict
@@ -57,7 +57,12 @@ completed_items:
   - 一份Aboriginal community協作實務報告因PDF內明文限制儲存／傳播而列為excluded且不快取；另一份文化調適回顧因研究的是不同的Narrative Exposure Therapy而排除
   - safety/guidelines 與 cultural/language context 均完成搜尋但本輪無可快取的合格專屬來源；7筆取得物通過大小、MIME、SHA-256、題名與假頁面檢查
   - 目前27/48來源包 audited、累計181筆實際正文／正式書目頁
-next_action: 依 research/targets.json 順序從 sfbt 開始，繼續採較大批次處理其餘21項，不建立正文。非英語只在原始語言、地方傳統或翻譯／版本差異影響正確性時補，不設配額
+  - sfbt 已 audited：8筆正文／正式書目頁，涵蓋參與者歷史、de Shazer 1985 原典書目、SFBTA 2025方法手冊、獨立批判摘要、umbrella review正式摘要、癌症臨床結果meta-analysis、伊朗區域meta-analysis及當代專業協會延續
+  - SFBT與generic brief therapy、strength-based practice及只借用solution-focused技巧的介入保持範圍邊界；癌症與伊朗特定證據不升格為普遍療效或跨文化適用結論
+  - 一個Deep Blue端點回傳1.9 KB Angular空殼而移除；另有出版社PDF 403、UvA全文兩次逾時及CRD主機TLS驗證失敗，均改用正式PubMed／Europe PMC／NCBI來源，沒有繞過存取或TLS防護
+  - safety/guidelines 已搜尋但無合格專屬來源；8筆取得物通過大小、MIME、SHA-256、題名、XML解析與假頁面檢查
+  - 目前28/48來源包 audited、累計189筆實際正文／正式書目頁
+next_action: 依 research/targets.json 順序從 transactional-analysis 開始，繼續採較大批次處理其餘20項，不建立正文。非英語只在原始語言、地方傳統或翻譯／版本差異影響正確性時補，不設配額
 ```
 
 ## P3-S COMPLETION RECORD
