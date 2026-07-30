@@ -5,34 +5,224 @@
   "slots": {
     "identity_history": {
       "description": "Independent scholarly identity and historical placement",
-      "status": "not_searched"
+      "status": "covered"
     },
     "primary_works": {
       "description": "Primary works or first-generation programme statements",
-      "status": "not_searched"
+      "status": "covered"
     },
     "theory_methods": {
       "description": "Core concepts, methods and internal variants",
-      "status": "not_searched"
+      "status": "covered"
     },
     "independent_critique": {
       "description": "Independent historiography, criticism or boundary analysis",
-      "status": "not_searched"
+      "status": "covered"
     },
     "empirical_status": {
       "description": "Empirical tests, syntheses, replications or current assessment",
-      "status": "not_searched"
+      "status": "covered"
     },
     "current_status": {
       "description": "Contemporary continuation, institutions or present disciplinary status",
-      "status": "not_searched"
+      "status": "covered"
     },
     "cultural_language_context": {
       "description": "Non-English, local, cultural or knowledge-sovereignty context where applicable",
-      "status": "not_searched"
+      "status": "covered"
     }
   },
-  "searches": [],
-  "items": [],
-  "status": "not_started"
+  "searches": [
+    {
+      "searched_at": "2026-07-30",
+      "system": "Stanford Encyclopedia of Philosophy / Open Library / Swarthmore College / Nature Reviews Psychology / University of Sao Paulo journals / Arden University / Taos Institute / publisher indexes",
+      "queries": [
+        "social constructionism history Berger Luckmann Gergen primary works",
+        "social constructionism psychology theory methods critique Hacking",
+        "social constructionism empirical research review social psychology context",
+        "construcionismo social psicologia Brasil revisão",
+        "social constructionism decolonial local knowledge South America"
+      ],
+      "purpose": "Locate foundational sociology-of-knowledge and psychology statements, independent conceptual boundary analysis, contemporary empirical applications, institutional continuation and Portuguese-language or decolonial research while excluding Piagetian social constructivism, constructivist psychotherapy, generic uses of 'constructed', and empirical findings about one socially constructed category misrepresented as tests of the whole metatheory"
+    }
+  ],
+  "items": [
+    {
+      "id": "mallon-2019-naturalistic-social-construction",
+      "title": "Naturalistic Approaches to Social Construction",
+      "slot": "identity_history",
+      "source_kind": "independent_scholarly_reference_entry",
+      "landing_url": "https://plato.stanford.edu/archives/fall2022/entries/social-construction-naturalistic/",
+      "download_url": "https://plato.stanford.edu/archives/fall2022/entries/social-construction-naturalistic/",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Ron Mallon's independently edited SEP entry maps distinct objects, agents and meanings of construction and naturalistic responses; it is a conceptual boundary source, not a history of every constructionist school or evidence for a single unified theory.",
+      "status": "retrieved",
+      "issued": "2019",
+      "retrieval": {
+        "retrieved_at": "2026-07-30T03:58:56+00:00",
+        "sha256": "f1fadedc7bc9f6ead8846f32d4f8654f0a4de6eb1a062a5a799379e791d31486",
+        "bytes": 83769,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/social-constructionism/mallon-2019-naturalistic-social-construction.html"
+      }
+    },
+    {
+      "id": "berger-luckmann-1966-reality-book-record",
+      "title": "The Social Construction of Reality: A Treatise in the Sociology of Knowledge",
+      "slot": "primary_works",
+      "source_kind": "foundational_book_record",
+      "landing_url": "https://openlibrary.org/books/OL5985228M/The_social_construction_of_reality",
+      "download_url": "https://openlibrary.org/books/OL5985228M/The_social_construction_of_reality",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Open Library record for the 1966 first Doubleday edition; preview or lending availability does not authorize caching or treating the copyrighted book body as read.",
+      "status": "retrieved",
+      "issued": "1966",
+      "identifiers": {
+        "lccn": "66014925",
+        "oclc": "2360263",
+        "openlibrary": "OL5985228M"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-30T03:58:57+00:00",
+        "sha256": "a9991927e0f3a2dd4e4190ef44383172b3136572972d4cfa1b4085de34bd422b",
+        "bytes": 109583,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/social-constructionism/berger-luckmann-1966-reality-book-record.html"
+      }
+    },
+    {
+      "id": "gergen-1985-social-constructionist-movement",
+      "title": "The Social Constructionist Movement in Modern Psychology",
+      "slot": "primary_works",
+      "source_kind": "foundational_article_author_repository_record",
+      "landing_url": "https://works.swarthmore.edu/fac-psychology/328/",
+      "download_url": "https://works.swarthmore.edu/fac-psychology/328/",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Official Swarthmore faculty repository record and abstract for Gergen's first-generation psychology statement; the linked legacy PDF endpoint returned HTTP 404 to the collector, so the article body is not treated as retrieved or read.",
+      "status": "retrieved",
+      "issued": "1985",
+      "identifiers": {
+        "doi": "10.1037/0003-066X.40.3.266",
+        "repository": "Swarthmore Faculty Works 328"
+      },
+      "failure_note": "The repository's 'Link to Full Text' points to a legacy Swarthmore PDF URL that returned HTTP 404 on 2026-07-30; the official record is retained without using an unauthorized mirror.",
+      "retrieval": {
+        "retrieved_at": "2026-07-30T03:58:58+00:00",
+        "sha256": "d5b8e4fa16da85f164f05e80103e7e2f3f5405afe89dc321ad89c7689d4cc74e",
+        "bytes": 31116,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/social-constructionism/gergen-1985-social-constructionist-movement.html"
+      }
+    },
+    {
+      "id": "rasera-japur-2005-constructionist-invitation",
+      "title": "Os sentidos da construção social: o convite construcionista para a psicologia",
+      "slot": "theory_methods",
+      "source_kind": "portuguese_language_conceptual_review",
+      "landing_url": "https://revistas.usp.br/paideia/en/article/view/6208",
+      "download_url": "https://www.scielo.br/j/paideia/a/hGPw8rKQXkBmJ6kqL9mg3qr/?format=pdf&lang=pt",
+      "access_status": "open_fulltext",
+      "rights_note": "SciELO marks this Portuguese-language review CC BY-NC 4.0; it describes plural origins, contributions, tensions and culturally situated knowledge practices and is conceptual synthesis rather than empirical validation.",
+      "status": "retrieved",
+      "issued": "2005",
+      "identifiers": {
+        "doi": "10.1590/S0103-863X2005000100005"
+      },
+      "failure_note": "The USP journal PDF endpoint timed out to the collector on 2026-07-30; the same DOI's official SciELO PDF endpoint was selected without bypassing access controls.",
+      "retrieval": {
+        "retrieved_at": "2026-07-30T04:00:13+00:00",
+        "sha256": "c206399f0b013d548a9bd86a27072253e6082b64c7daaf7dd24f76dba80f0c8c",
+        "bytes": 44128,
+        "media_type": "application/pdf",
+        "cache_key": ".private-sources/social-constructionism/rasera-japur-2005-constructionist-invitation.pdf"
+      }
+    },
+    {
+      "id": "hacking-1999-construction-of-what-book-record",
+      "title": "The Social Construction of What?",
+      "slot": "independent_critique",
+      "source_kind": "independent_critical_book_record",
+      "landing_url": "https://openlibrary.org/books/OL383644M/The_social_construction_of_what",
+      "download_url": "https://openlibrary.org/books/OL383644M/The_social_construction_of_what",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Open Library bibliographic record and publisher description for Hacking's independent differentiation of what construction claims target; no copyrighted book body is cached or treated as read.",
+      "status": "retrieved",
+      "issued": "1999",
+      "identifiers": {
+        "isbn": "067481200X",
+        "lccn": "98046140",
+        "oclc": "39936231",
+        "openlibrary": "OL383644M"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-30T03:59:21+00:00",
+        "sha256": "c77e1dcbc886b2e7284052f3fa54403381e3fc3006f18c18d97dd4b33f42bb7c",
+        "bytes": 87317,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/social-constructionism/hacking-1999-construction-of-what-book-record.html"
+      }
+    },
+    {
+      "id": "cikara-martinez-lewis-2022-context-frameworks",
+      "title": "Moving Beyond Social Categories by Incorporating Context in Social Psychological Theory",
+      "slot": "empirical_status",
+      "source_kind": "contemporary_perspective_author_copy",
+      "landing_url": "https://www.nature.com/articles/s44159-022-00079-3",
+      "download_url": "https://joeledmartinez.com/wp-content/uploads/2023/01/f4944-cikaraetal.2c2022-natrevpsy.pdf",
+      "access_status": "repository_manuscript",
+      "rights_note": "Author-hosted copy presents social constructionism as one of three frameworks informing examples of context-sensitive social-psychological research; it explicitly is not exhaustive and does not validate social constructionism as one testable unit.",
+      "status": "retrieved",
+      "issued": "2022",
+      "identifiers": {
+        "doi": "10.1038/s44159-022-00079-3"
+      },
+      "failure_note": "The Nature publisher endpoint returned a 3 KB 'Client Challenge' shell to the collector; that file was removed and an author-hosted PDF selected without solving or bypassing the challenge.",
+      "retrieval": {
+        "retrieved_at": "2026-07-30T04:00:24+00:00",
+        "sha256": "b59e78bbfa26785e506bcf7c7c3988f7503cfcbe13fbd51f1377ffa29abf3876",
+        "bytes": 2607628,
+        "media_type": "application/pdf",
+        "cache_key": ".private-sources/social-constructionism/cikara-martinez-lewis-2022-context-frameworks.pdf"
+      }
+    },
+    {
+      "id": "moura-2024-constructionist-decolonial-research",
+      "title": "Reconstructing Knowledge: A Constructionist-Decolonial Approach to Psychosocial Research in Peri-Urban Communities of South America",
+      "slot": "cultural_language_context",
+      "source_kind": "open_regional_empirical_study",
+      "landing_url": "https://cdn.arden.ac.uk/s3fs-public/2024-11/978-1-916565-27-2-Reconstructing-Knowledge-A-Constructionist-Decolonial-Approach-to-Psychosocial-Research-in-Peri-Urban-Communities-of-South-America.pdf",
+      "download_url": "https://cdn.arden.ac.uk/s3fs-public/2024-11/978-1-916565-27-2-Reconstructing-Knowledge-A-Constructionist-Decolonial-Approach-to-Psychosocial-Research-in-Peri-Urban-Communities-of-South-America.pdf",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Public Arden-hosted 2024 study by Eliana Perez Gonçalves de Moura combines intervention research, discursive idea-association maps and a constructionist-decolonial framing in one southern Brazilian peri-urban community; it supports a regional methodological example, not representation of all South American or Indigenous knowledge systems.",
+      "status": "retrieved",
+      "issued": "2024",
+      "retrieval": {
+        "retrieved_at": "2026-07-30T03:59:24+00:00",
+        "sha256": "6e7882fed52e3c74efa75707e96b508253d55f31b16d3cf852f14c5f9e355192",
+        "bytes": 183715,
+        "media_type": "application/pdf",
+        "cache_key": ".private-sources/social-constructionism/moura-2024-constructionist-decolonial-research.pdf"
+      }
+    },
+    {
+      "id": "taos-institute-current-home",
+      "title": "The Taos Institute: Creating Promising Futures Through Social Construction",
+      "slot": "current_status",
+      "source_kind": "current_institution_self_description",
+      "landing_url": "https://www.taosinstitute.net/",
+      "download_url": "https://www.taosinstitute.net/",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Current nonprofit institute self-description documents courses, publications, multilingual programming and practitioner activity; institutional continuation and global membership are not evidence of theoretical validity or population representativeness.",
+      "status": "retrieved",
+      "issued": "retrieved 2026",
+      "retrieval": {
+        "retrieved_at": "2026-07-30T03:59:26+00:00",
+        "sha256": "245cad0c81d11c46f29169abb54ea63106ee7ae2e4a215eea6da49d38767d529",
+        "bytes": 846951,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/social-constructionism/taos-institute-current-home.html"
+      }
+    }
+  ],
+  "status": "audited"
 }
