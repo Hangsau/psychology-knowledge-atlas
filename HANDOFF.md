@@ -9,12 +9,12 @@ status: in_progress
 base_commit: 593551e
 started_at: 2026-07-28
 objective: 先為原版48項研究目標完成可恢復、可稽核的來源蒐集，再開始閱讀、建立主張或撰寫內容
-active_target: reality-therapy
+active_target: social-constructionism
 canonical_inputs:
   - research/targets.json
   - research/source-packs/*.json
 target_files:
-  - research/source-packs/reality-therapy.json
+  - research/source-packs/social-constructionism.json
 expected_result: 下一來源包的所有槽位完成搜尋與裁決；合格可讀正文完成私有快取、格式與雜湊稽核；不建立 claims 或 reader prose
 boundaries:
   - legacy repo 只提供48項 identity/order seed；不匯入舊文章、摘要或 verdict
@@ -67,7 +67,12 @@ completed_items:
   - 1983建構效度出版社頁回傳403，改存Utah State正式論文摘要；PMC PDF端點回傳1.8 KB proof-of-work空殼，移除後保留Europe PMC正式摘要XML並明示不是全文，沒有繞過存取控制
   - 10筆取得物通過大小、MIME、SHA-256、題名、PDF文字、XML解析與假頁面檢查；西語回顧補足語言版本邊界，但不冒充文化調適證據
   - 目前29/48來源包 audited、累計199筆實際正文／正式書目或摘要頁
-next_action: 依 research/targets.json 順序從 reality-therapy 開始，繼續採較大批次處理其餘19項，不建立正文。非英語只在原始語言、地方傳統或翻譯／版本差異影響正確性時補，不設配額
+  - reality-therapy 已 audited：8筆正文／正式書目或摘要頁，涵蓋WGI創始史、Glasser 1965原典書目、Wubbolding WDEP方法、獨立教育實施批判、WSIPP特定親職方案記錄、土耳其青年系統回顧、韓國青少年meta-analysis及當代國際組織延續
+  - Reality Therapy／Choice Theory與virtual-reality exposure therapy、reality orientation、reality testing及一般choice／responsibility介入保持範圍邊界；教育、親職、青年團體與韓國自尊結果不升格為一般臨床療效
+  - Wiley方法章回傳Cookies Turned Off錯誤殼，移除後改存ERIC正式會議論文全文；safety/guidelines搜尋後無可公開檢查的專屬 adverse-event／contraindication指引，沒有把WGI自述的ethics standards冒充安全證據
+  - 8筆取得物通過大小、MIME、SHA-256、題名、PDF文字與假頁面檢查；土耳其與韓語來源保留語言、地域、族群及結果邊界
+  - 目前30/48來源包 audited、累計207筆實際正文／正式書目或摘要頁
+next_action: 依 research/targets.json 順序從 social-constructionism 開始，繼續採較大批次處理其餘18項，不建立正文。非英語只在原始語言、地方傳統或翻譯／版本差異影響正確性時補，不設配額
 ```
 
 ## P3-S COMPLETION RECORD

@@ -5,42 +5,225 @@
   "slots": {
     "identity_history": {
       "description": "Independent scholarly identity and historical placement",
-      "status": "not_searched"
+      "status": "covered"
     },
     "primary_works": {
       "description": "Primary works or first-generation programme statements",
-      "status": "not_searched"
+      "status": "covered"
     },
     "theory_methods": {
       "description": "Core concepts, methods and internal variants",
-      "status": "not_searched"
+      "status": "covered"
     },
     "independent_critique": {
       "description": "Independent historiography, criticism or boundary analysis",
-      "status": "not_searched"
+      "status": "covered"
     },
     "empirical_status": {
       "description": "Empirical tests, syntheses, replications or current assessment",
-      "status": "not_searched"
+      "status": "covered"
     },
     "current_status": {
       "description": "Contemporary continuation, institutions or present disciplinary status",
-      "status": "not_searched"
+      "status": "covered"
     },
     "clinical_outcomes": {
       "description": "Systematic reviews, meta-analyses or comparative outcome research",
-      "status": "not_searched"
+      "status": "covered"
     },
     "safety_guidelines": {
       "description": "Guidelines, limitations, adverse effects or contraindications",
-      "status": "not_searched"
+      "status": "searched_no_qualifying_source"
     },
     "cultural_language_context": {
       "description": "Non-English, local, cultural or knowledge-sovereignty context where applicable",
-      "status": "not_searched"
+      "status": "covered"
     }
   },
-  "searches": [],
-  "items": [],
-  "status": "not_started"
+  "searches": [
+    {
+      "searched_at": "2026-07-30",
+      "system": "William Glasser International / Open Library / ERIC / WSIPP / Wiley / DergiPark / KCI / publisher indexes",
+      "queries": [
+        "William Glasser reality therapy history primary book choice theory",
+        "reality therapy WDEP methods limitations critical review",
+        "reality therapy choice theory systematic review meta-analysis outcomes",
+        "reality therapy ethics contraindications harms guideline",
+        "gerçeklik terapisi systematic review 현실치료 meta-analysis"
+      ],
+      "purpose": "Locate historical identity, Glasser primary bibliography, Choice Theory and WDEP method boundaries, independent evaluation, outcome synthesis, current professional continuation and non-English evidence while excluding virtual-reality exposure therapy, reality orientation, reality testing and generic choice or responsibility interventions"
+    }
+  ],
+  "items": [
+    {
+      "id": "wgi-glasser-life-work-history",
+      "title": "About Dr. William Glasser: A History of His Life and Work",
+      "slot": "identity_history",
+      "source_kind": "professional_association_founder_history",
+      "landing_url": "https://wglasserinternational.com/about-dr-william-glasser/",
+      "download_url": "https://wglasserinternational.com/about-dr-william-glasser/",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "WGI's current founder history documents the sequence Reality Therapy to Control Theory to Choice Theory; it is an interested institutional account, not independent historiography.",
+      "status": "retrieved",
+      "issued": "retrieved 2026",
+      "retrieval": {
+        "retrieved_at": "2026-07-30T03:50:20+00:00",
+        "sha256": "8b167fd95777f9e1c18b9347747cbb7c198bb7d82d8a538988933200ccfb8407",
+        "bytes": 475613,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/reality-therapy/wgi-glasser-life-work-history.html"
+      }
+    },
+    {
+      "id": "glasser-1965-reality-therapy-book-record",
+      "title": "Reality Therapy: A New Approach to Psychiatry",
+      "slot": "primary_works",
+      "source_kind": "foundational_book_record",
+      "landing_url": "https://openlibrary.org/books/OL18177931M/Reality_therapy",
+      "download_url": "https://openlibrary.org/books/OL18177931M/Reality_therapy",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Open Library record for the 1965 Harper & Row edition; preview-only availability does not authorize caching or treating the book body as read.",
+      "status": "retrieved",
+      "issued": "1965",
+      "identifiers": {
+        "isbn": "0060020407",
+        "lccn": "65014672",
+        "oclc": "68380106",
+        "openlibrary": "OL18177931M"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-30T03:50:22+00:00",
+        "sha256": "e34c5c167292a61b65ef8d4ca6a29c667e110262269724a611461ce21071fadf",
+        "bytes": 100046,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/reality-therapy/glasser-1965-reality-therapy-book-record.html"
+      }
+    },
+    {
+      "id": "wubbolding-1992-wdep-system-proceedings",
+      "title": "Reality Therapy: The WDEP System",
+      "slot": "theory_methods",
+      "source_kind": "first_generation_method_conference_paper",
+      "landing_url": "https://eric.ed.gov/?id=ED439310",
+      "download_url": "https://files.eric.ed.gov/fulltext/ED439310.pdf",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Wubbolding's WDEP method paper appears at the end of an ERIC-hosted 1992 international counseling conference proceedings volume; it is a proponent-authored method source, not independent outcome evidence.",
+      "status": "retrieved",
+      "issued": "1992",
+      "identifiers": {
+        "eric": "ED439310"
+      },
+      "failure_note": "The preferred independent 2015 Wiley handbook summary returned an 'Error - Cookies Turned Off' shell to the collector; it was removed and this ERIC full method paper selected without bypassing site controls.",
+      "retrieval": {
+        "retrieved_at": "2026-07-30T03:52:01+00:00",
+        "sha256": "6acadf95985d88fc10ed3f440c20e80e11dfd414b135f392e89f28e0793547e3",
+        "bytes": 3039772,
+        "media_type": "application/pdf",
+        "cache_key": ".private-sources/reality-therapy/wubbolding-1992-wdep-system-proceedings.pdf"
+      }
+    },
+    {
+      "id": "emmer-1986-disciplinary-approaches-review",
+      "title": "Effects of Teacher Training in Disciplinary Approaches",
+      "slot": "independent_critique",
+      "source_kind": "independent_government_repository_review",
+      "landing_url": "https://eric.ed.gov/?id=ED316927",
+      "download_url": "https://files.eric.ed.gov/fulltext/ED316927.pdf",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "ERIC full report independently reviews Reality Therapy among four school discipline approaches and records mixed or null student outcomes plus design and attribution limits; its scope is educational implementation, not psychotherapy generally.",
+      "status": "retrieved",
+      "issued": "1986",
+      "identifiers": {
+        "eric": "ED316927"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-30T03:50:25+00:00",
+        "sha256": "b36b6172cc0dfe31c9c4fba95f3435990d8ce6d47315a797451646b8ed830cf9",
+        "bytes": 1159132,
+        "media_type": "application/pdf",
+        "cache_key": ".private-sources/reality-therapy/emmer-1986-disciplinary-approaches-review.pdf"
+      }
+    },
+    {
+      "id": "wsipp-choice-reality-therapy-program",
+      "title": "Choice Theory/Reality Therapy for Children with Disruptive Behavior",
+      "slot": "empirical_status",
+      "source_kind": "independent_policy_evidence_program_record",
+      "landing_url": "https://www.wsipp.wa.gov/BenefitCost/Program/617",
+      "download_url": "https://www.wsipp.wa.gov/BenefitCost/Program/617",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Independent state policy institute program record for a specific nine-session parent intervention; it must not be generalized to adult psychotherapy, other protocols, or Choice Theory as a personality theory.",
+      "status": "retrieved",
+      "issued": "retrieved 2026",
+      "retrieval": {
+        "retrieved_at": "2026-07-30T03:50:27+00:00",
+        "sha256": "dad1ffab16249c659ffa8f4e3348585c6cb8d56753c5e42abf184ff010325112",
+        "bytes": 48870,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/reality-therapy/wsipp-choice-reality-therapy-program.html"
+      }
+    },
+    {
+      "id": "guner-uzun-2022-turkish-reality-therapy-review",
+      "title": "Group Interventions Based on Reality Therapy for Adolescents and Young Adults: Systematic Review",
+      "slot": "clinical_outcomes",
+      "source_kind": "systematic_review",
+      "landing_url": "https://dergipark.org.tr/en/pub/inuefd/article/951530",
+      "download_url": "https://dergipark.org.tr/tr/download/article-file/1820758",
+      "access_status": "open_fulltext",
+      "rights_note": "Turkish open systematic review screening Turkish and English studies from 2010-2021; eight included group-intervention studies, heterogeneous outcomes and youth samples prevent general efficacy conclusions.",
+      "status": "retrieved",
+      "issued": "2022",
+      "retrieval": {
+        "retrieved_at": "2026-07-30T03:50:31+00:00",
+        "sha256": "9af79f98cf423095332854ed83aed16fa5b1df05bb07288f31e7d8cd49e47625",
+        "bytes": 1013565,
+        "media_type": "application/pdf",
+        "cache_key": ".private-sources/reality-therapy/guner-uzun-2022-turkish-reality-therapy-review.pdf"
+      }
+    },
+    {
+      "id": "kang-choi-2025-korean-adolescent-meta-analysis",
+      "title": "Meta-analysis of the Effectiveness of Reality Therapy Group Counseling Programs to Improve Self-esteem in Adolescents",
+      "slot": "cultural_language_context",
+      "source_kind": "korean_language_regional_meta_analysis_record",
+      "landing_url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003193959",
+      "download_url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003193959",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "KCI Korean/English abstract and bibliographic record for a meta-analysis of 16 Korean adolescent self-esteem programs; regional publication and narrow outcome are context boundaries, not cross-cultural equivalence evidence.",
+      "status": "retrieved",
+      "issued": "2025",
+      "identifiers": {
+        "doi": "10.22251/jlcci.2025.25.7.295",
+        "kci": "ART003193959"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-30T03:50:32+00:00",
+        "sha256": "9d69046fd0b884b3f3a359e1a9772ade6178c8177b2f79fbd344e2542c23ba53",
+        "bytes": 109224,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/reality-therapy/kang-choi-2025-korean-adolescent-meta-analysis.html"
+      }
+    },
+    {
+      "id": "wgi-current-international-organization",
+      "title": "About William Glasser International",
+      "slot": "current_status",
+      "source_kind": "professional_association_self_description",
+      "landing_url": "https://wglasserinternational.com/about-wgi/",
+      "download_url": "https://wglasserinternational.com/about-wgi/",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Current WGI self-description of certification, member organizations and international activity; institutional continuation does not validate theory or clinical outcomes. Its standards claims are not a publicly inspectable adverse-event or contraindication guideline.",
+      "status": "retrieved",
+      "issued": "retrieved 2026",
+      "retrieval": {
+        "retrieved_at": "2026-07-30T03:50:38+00:00",
+        "sha256": "1565d20d396d1ba5c245d51c75fb2e0d5ca5ad37a63ac867f046dab3b28762b5",
+        "bytes": 352651,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/reality-therapy/wgi-current-international-organization.html"
+      }
+    }
+  ],
+  "status": "audited"
 }
