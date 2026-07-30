@@ -9,12 +9,12 @@ status: in_progress
 base_commit: 593551e
 started_at: 2026-07-28
 objective: 先為原版48項研究目標完成可恢復、可稽核的來源蒐集，再開始閱讀、建立主張或撰寫內容
-active_target: systems-family-therapy
+active_target: art-therapy
 canonical_inputs:
   - research/targets.json
   - research/source-packs/*.json
 target_files:
-  - research/source-packs/systems-family-therapy.json
+  - research/source-packs/art-therapy.json
 expected_result: 下一來源包的所有槽位完成搜尋與裁決；合格可讀正文完成私有快取、格式與雜湊稽核；不建立 claims 或 reader prose
 boundaries:
   - legacy repo 只提供48項 identity/order seed；不匯入舊文章、摘要或 verdict
@@ -89,7 +89,14 @@ completed_items:
   - 跨國取樣不自動等於跨文化研究，翻譯不自動等於測量等值，群體平均不外推成個人或國家固定特質；cross-cultural psychology與cultural psychology、indigenous psychology及intercultural communication保留邊界
   - Harvard全文端點回傳403後改存UBC正式作者摘要頁；Many Labs 2取得101頁LSE repository manuscript，ITC準則取得41頁PDF；正常IACCP頁面雖含表單reCAPTCHA設定字串，但正文與題名完整，不是challenge殼
   - 目前34/48來源包 audited、累計242筆實際正文／正式書目或摘要頁；本批18筆均通過大小、MIME、SHA-256、題名／PDF文字與假頁面人工判讀
-next_action: 依 research/targets.json 順序從 systems-family-therapy 開始，繼續採每批2至3項處理其餘14項，不建立正文。非英語只在原始語言、地方傳統或翻譯／版本差異影響正確性時補，不設配額
+  - systems-family-therapy 已 audited：10筆正文／正式書目頁，涵蓋葡語領域史、Bowen與Minuchin兩支原典書目、SAMHSA方法章、性別權力批判、兒童與成人問題證據回顧、難民家庭介入綜整、AAMFT倫理規範及當代專業協會延續
+  - 系統／家庭治療保持 therapy family 邊界：Bowen、結構、策略、Milan、行為、solution-focused與multisystemic模式不視為單一標準療程；廣泛child review內的parent training與parent-implemented behavioral programmes不冒充所有家庭治療分支的共同證據
+  - Wiley兩個端點回傳403，改存Crossref正式書目紀錄且不把文章正文當成已讀；AAMFT倫理規範處理多重當事人、同意、保密與權力，但不冒充adverse-event review或取代地方法律
+  - attachment-theory 已 audited：8筆正文／正式書目頁，涵蓋Bretherton歷史紀錄、Bowlby與Ainsworth原典書目、當代理論綜整、跨文化普遍性批判、CATS個體資料統合計畫、納入西／葡語的拉丁美洲回顧及SEAS當代延續
+  - 依附理論保持測量與應用邊界：嬰兒Strange Situation、Adult Attachment Interview與成人浪漫依附自陳量表不互換；依附理論不等同attachment parenting、reactive attachment disorder、generic bonding或具爭議的強制性attachment therapy，統計關聯亦不作個人診斷或決定論預測
+  - SUNY作者PDF因TLS主機憑證不符而改存INIST-CNRS正式書目紀錄；CATS的PMC端點回傳Google reCAPTCHA空殼，移除後改存UCL repository的8頁正式版本，均未停用憑證驗證或繞過技術控制
+  - 目前36/48來源包 audited、累計260筆實際正文／正式書目或摘要頁；本批18筆通過大小、MIME、SHA-256、題名／PDF文字與假頁面人工判讀
+next_action: 依 research/targets.json 順序從 art-therapy 開始，繼續採每批2至3項處理其餘12項，不建立正文。非英語只在原始語言、地方傳統或翻譯／版本差異影響正確性時補，不設配額
 ```
 
 ## P3-S COMPLETION RECORD

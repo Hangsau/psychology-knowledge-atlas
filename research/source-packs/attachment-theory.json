@@ -5,34 +5,255 @@
   "slots": {
     "identity_history": {
       "description": "Independent scholarly identity and historical placement",
-      "status": "not_searched"
+      "status": "covered"
     },
     "primary_works": {
       "description": "Primary works or first-generation programme statements",
-      "status": "not_searched"
+      "status": "covered"
     },
     "theory_methods": {
       "description": "Core concepts, methods and internal variants",
-      "status": "not_searched"
+      "status": "covered"
     },
     "independent_critique": {
       "description": "Independent historiography, criticism or boundary analysis",
-      "status": "not_searched"
+      "status": "covered"
     },
     "empirical_status": {
       "description": "Empirical tests, syntheses, replications or current assessment",
-      "status": "not_searched"
+      "status": "covered"
     },
     "current_status": {
       "description": "Contemporary continuation, institutions or present disciplinary status",
-      "status": "not_searched"
+      "status": "covered"
     },
     "cultural_language_context": {
       "description": "Non-English, local, cultural or knowledge-sovereignty context where applicable",
-      "status": "not_searched"
+      "status": "covered"
     }
   },
-  "searches": [],
-  "items": [],
-  "status": "not_started"
+  "searches": [
+    {
+      "searched_at": "2026-07-30",
+      "system": "PubMed Central / university repositories / Open Library / PNAS / Wiley / Society for Emotion and Attachment Studies",
+      "queries": [
+        "attachment theory origins Bowlby Ainsworth primary works history",
+        "attachment theory measures Strange Situation Adult Attachment Interview self-report distinctions",
+        "attachment transmission individual participant data meta-analysis replication",
+        "attachment theory universality cultural critique Global South Latin America",
+        "attachment theory current society journal research practice"
+      ],
+      "purpose": "Locate independent history, foundational participant works, a modern theory-and-method synthesis, independent cultural critique, large-scale evidence synthesis, region-specific non-English-inclusive research and current institutional continuation while excluding generic bonding, attachment parenting, reactive attachment disorder and coercive attachment therapy, and while refusing to treat infant observational classifications, the Adult Attachment Interview and adult romantic self-report scales as interchangeable measures"
+    }
+  ],
+  "items": [
+    {
+      "id": "bretherton-1992-origins-attachment-theory",
+      "title": "The Origins of Attachment Theory: John Bowlby and Mary Ainsworth",
+      "slot": "identity_history",
+      "source_kind": "independent_scholarly_history_bibliographic_record",
+      "landing_url": "https://pascal-francis.inist.fr/vibad/index.php?action=getRecordDetail&idt=5501010",
+      "download_url": "https://pascal-francis.inist.fr/vibad/index.php?action=getRecordDetail&idt=5501010",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "CC BY 4.0 INIST-CNRS bibliographic record for Bretherton's historical account; the article body is not cached or treated as read, so detailed historical claims require a qualifying full text.",
+      "status": "retrieved",
+      "authors": [
+        "Inge Bretherton"
+      ],
+      "issued": "1992",
+      "identifiers": {
+        "doi": "10.1037/0012-1649.28.5.759"
+      },
+      "failure_note": "The author-hosted SUNY PDF endpoint failed TLS hostname verification; the INIST-CNRS bibliographic record was selected without disabling certificate validation.",
+      "retrieval": {
+        "retrieved_at": "2026-07-30T12:38:15+00:00",
+        "sha256": "b2c11bfc5b6ba8e42c44e39caf739547a3b4ee1aa9bc91d46f6181b8acfeb018",
+        "bytes": 36038,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/attachment-theory/bretherton-1992-origins-attachment-theory.html"
+      }
+    },
+    {
+      "id": "bowlby-1969-attachment-loss-record",
+      "title": "Attachment and Loss, Volume I: Attachment",
+      "slot": "primary_works",
+      "source_kind": "foundational_participant_book_record",
+      "landing_url": "https://openlibrary.org/books/OL7594250M/Attachment_(Volume_I)",
+      "download_url": "https://openlibrary.org/books/OL7594250M/Attachment_(Volume_I)",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Open Library edition record for Bowlby's foundational ethological-developmental formulation; the copyrighted book body is not cached or treated as read, and this record does not establish the validity of later adult-style or clinical extensions.",
+      "status": "retrieved",
+      "authors": [
+        "John Bowlby"
+      ],
+      "issued": "1969",
+      "identifiers": {
+        "isbn": "9780465097159",
+        "oclc": "7111186",
+        "openlibrary": "OL7594250M"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-30T12:35:28+00:00",
+        "sha256": "03455f5ef22dd6236ce026716d4afe03b9d45acb12a4bc77f556d7edd6350581",
+        "bytes": 80438,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/attachment-theory/bowlby-1969-attachment-loss-record.html"
+      }
+    },
+    {
+      "id": "ainsworth-etal-1978-patterns-attachment-record",
+      "title": "Patterns of Attachment: A Psychological Study of the Strange Situation",
+      "slot": "primary_works",
+      "source_kind": "foundational_observational_monograph_record",
+      "landing_url": "https://openlibrary.org/books/OL4725635M/Patterns_of_attachment",
+      "download_url": "https://openlibrary.org/books/OL4725635M/Patterns_of_attachment",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Open Library bibliographic record for the Baltimore study and Strange Situation monograph; the copyrighted body is not cached or treated as read, and infant-caregiver observational classifications are not interchangeable with adult interview or self-report constructs.",
+      "status": "retrieved",
+      "authors": [
+        "Mary D. Salter Ainsworth",
+        "Mary C. Blehar",
+        "Everett Waters",
+        "Sally Wall"
+      ],
+      "issued": "1978",
+      "identifiers": {
+        "isbn": "0470265345",
+        "lccn": "78013303",
+        "oclc": "230160511",
+        "openlibrary": "OL4725635M"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-30T12:35:36+00:00",
+        "sha256": "f1046528a4749a5c82f0deed6482979039d274f45be8474abc40f6153107c77c",
+        "bytes": 87350,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/attachment-theory/ainsworth-etal-1978-patterns-attachment-record.html"
+      }
+    },
+    {
+      "id": "cassidy-etal-2013-contributions-framework",
+      "title": "Contributions of Attachment Theory and Research: A Framework for Future Research, Translation, and Policy",
+      "slot": "theory_methods",
+      "source_kind": "peer_reviewed_theory_and_evidence_synthesis",
+      "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4085672/",
+      "download_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4085672/",
+      "access_status": "open_fulltext",
+      "rights_note": "Open full text synthesis of attachment antecedents, consequences, measurement, intervention and policy questions; it maps an active research programme rather than proving every proposed pathway or licensing deterministic prediction about individuals.",
+      "status": "retrieved",
+      "issued": "2013",
+      "identifiers": {
+        "doi": "10.1017/S0954579413000692",
+        "pmcid": "PMC4085672",
+        "pmid": "24342848"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-30T12:35:39+00:00",
+        "sha256": "53cd3d1baa17e64583671188925687af1e12a64027536ffed5045d6a71bb903a",
+        "bytes": 406531,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/attachment-theory/cassidy-etal-2013-contributions-framework.html"
+      }
+    },
+    {
+      "id": "keller-2018-universality-claim",
+      "title": "Universality Claim of Attachment Theory: Children's Socioemotional Development Across Cultures",
+      "slot": "independent_critique",
+      "source_kind": "cross_cultural_theory_critique",
+      "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6233114/",
+      "download_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6233114/",
+      "access_status": "open_fulltext",
+      "rights_note": "Open PNAS critique contrasts culturally variable caregiving strategies and challenges Western middle-class assumptions about dyadic, child-led responsiveness; it is a theoretical review and critique, not by itself a cross-cultural prevalence estimate or final refutation of all universality claims.",
+      "status": "retrieved",
+      "authors": [
+        "Heidi Keller"
+      ],
+      "issued": "2018",
+      "identifiers": {
+        "doi": "10.1073/pnas.1720325115",
+        "pmcid": "PMC6233114",
+        "pmid": "30397121"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-30T12:35:42+00:00",
+        "sha256": "a99fbd9a781016ff1bf2dc9a06aceabf73856fe2740182669796ee16927500e1",
+        "bytes": 177653,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/attachment-theory/keller-2018-universality-claim.html"
+      }
+    },
+    {
+      "id": "cats-2020-ipd-meta-analysis-programme",
+      "title": "The Collaboration on Attachment Transmission Synthesis (CATS): A Move to the Level of Individual-Participant-Data Meta-Analysis",
+      "slot": "empirical_status",
+      "source_kind": "individual_participant_data_synthesis_programme",
+      "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7324077/",
+      "download_url": "https://discovery.ucl.ac.uk/id/eprint/10096310/7/Fearon_The%20Collaboration%20on%20Attachment%20Transmission%20Synthesis%20%28CATS%29_VoR.pdf",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Publicly readable version-of-record copy in UCL Discovery explains the CATS individual-participant-data programme for reassessing intergenerational attachment transmission and pooling limitations; it is a synthesis framework and status report, not a single final pooled estimate.",
+      "status": "retrieved",
+      "issued": "2020",
+      "identifiers": {
+        "doi": "10.1177/0963721420904967",
+        "pmcid": "PMC7324077"
+      },
+      "failure_note": "The PMC endpoint returned a reCAPTCHA challenge shell; the UCL institutional-repository version was selected without attempting to bypass the challenge.",
+      "retrieval": {
+        "retrieved_at": "2026-07-30T12:38:03+00:00",
+        "sha256": "c0e9da83a41f4d9eac9a09e2e377fd81f6c49a753cc10699e60ffaebaa0e5bc8",
+        "bytes": 194749,
+        "media_type": "application/pdf",
+        "cache_key": ".private-sources/attachment-theory/cats-2020-ipd-meta-analysis-programme.pdf"
+      }
+    },
+    {
+      "id": "fourment-etal-2022-latin-american-review",
+      "title": "Latin American Attachment Studies: A Narrative Review",
+      "slot": "cultural_language_context",
+      "source_kind": "regional_multilingual_narrative_review",
+      "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9546405/",
+      "download_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9546405/",
+      "access_status": "open_fulltext",
+      "rights_note": "Open review searched English, Spanish and Portuguese literature and found 82 publications from eight Latin American countries; supportive findings were concentrated in urban middle-class non-risk mother-child samples, so they cannot represent all Latin American caregiving ecologies or substitute for emic concepts.",
+      "status": "retrieved",
+      "authors": [
+        "Katherine Fourment",
+        "Camila Espinoza",
+        "Ana Carla Lima Ribeiro",
+        "Judi Mesman"
+      ],
+      "issued": "2022",
+      "identifiers": {
+        "doi": "10.1002/imhj.21995",
+        "pmcid": "PMC9546405"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-30T12:35:47+00:00",
+        "sha256": "c4b833384eed7deb2c532de049800f77bfb1e31f14df706c87e0fd5d4cfb28f2",
+        "bytes": 400684,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/attachment-theory/fourment-etal-2022-latin-american-review.html"
+      }
+    },
+    {
+      "id": "seas-current-society",
+      "title": "Society for Emotion and Attachment Studies",
+      "slot": "current_status",
+      "source_kind": "current_international_scholarly_society_self_description",
+      "landing_url": "https://seasinternational.org/",
+      "download_url": "https://seasinternational.org/",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Official society page documents contemporary international research, measurement, education and intervention activity across the lifespan; institutional continuation demonstrates an active field, not the validity of every attachment construct, measure or therapy branded with attachment language.",
+      "status": "retrieved",
+      "issued": "retrieved 2026",
+      "retrieval": {
+        "retrieved_at": "2026-07-30T12:35:51+00:00",
+        "sha256": "2fe2570667b9a414cc566d55f8e5bb0c9d653f9f23596b5b2e1351283b668275",
+        "bytes": 103413,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/attachment-theory/seas-current-society.html"
+      }
+    }
+  ],
+  "status": "audited"
 }

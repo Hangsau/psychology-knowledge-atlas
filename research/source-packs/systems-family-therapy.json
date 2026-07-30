@@ -5,42 +5,280 @@
   "slots": {
     "identity_history": {
       "description": "Independent scholarly identity and historical placement",
-      "status": "not_searched"
+      "status": "covered"
     },
     "primary_works": {
       "description": "Primary works or first-generation programme statements",
-      "status": "not_searched"
+      "status": "covered"
     },
     "theory_methods": {
       "description": "Core concepts, methods and internal variants",
-      "status": "not_searched"
+      "status": "covered"
     },
     "independent_critique": {
       "description": "Independent historiography, criticism or boundary analysis",
-      "status": "not_searched"
+      "status": "covered"
     },
     "empirical_status": {
       "description": "Empirical tests, syntheses, replications or current assessment",
-      "status": "not_searched"
+      "status": "covered"
     },
     "current_status": {
       "description": "Contemporary continuation, institutions or present disciplinary status",
-      "status": "not_searched"
+      "status": "covered"
     },
     "clinical_outcomes": {
       "description": "Systematic reviews, meta-analyses or comparative outcome research",
-      "status": "not_searched"
+      "status": "covered"
     },
     "safety_guidelines": {
       "description": "Guidelines, limitations, adverse effects or contraindications",
-      "status": "not_searched"
+      "status": "covered"
     },
     "cultural_language_context": {
       "description": "Non-English, local, cultural or knowledge-sovereignty context where applicable",
-      "status": "not_searched"
+      "status": "covered"
     }
   },
-  "searches": [],
-  "items": [],
-  "status": "not_started"
+  "searches": [
+    {
+      "searched_at": "2026-07-30",
+      "system": "AAMFT / NCBI Bookshelf and PMC / Open Library / Wiley and Crossref / SciELO and Portuguese journal indexes / publisher and citation indexes",
+      "queries": [
+        "systemic family therapy history cybernetics Bowen Minuchin primary works",
+        "family therapy systems methods variants structural strategic multigenerational",
+        "family therapy effectiveness systematic review meta-analysis child adult problems",
+        "family therapy ethics safety confidentiality multiple clients power gender critique",
+        "systemic family therapy cultural adaptation refugees Global South Portuguese history"
+      ],
+      "purpose": "Locate independent history, foundational participant works, systems concepts and major variants, gender and power critique, broad and diagnosis-bounded outcome reviews, current professional continuation, multi-client ethics and cultural implementation evidence while excluding generic family support, parenting or couples programmes unless the source explicitly places them within a systemic/family intervention review, and while refusing to treat Bowen, structural, strategic, Milan, behavioural, solution-focused or multisystemic models as one standardized protocol"
+    }
+  ],
+  "items": [
+    {
+      "id": "vogel-2011-brief-history-family-therapy",
+      "title": "Um breve histórico da Terapia Familiar Sistêmica: A Brief History of Family Therapy",
+      "slot": "identity_history",
+      "source_kind": "independent_portuguese_field_history",
+      "landing_url": "https://igt.psc.br/ojs3/index.php/IGTnaRede/article/view/279",
+      "download_url": "https://igt.psc.br/ojs3/index.php/IGTnaRede/article/view/279",
+      "access_status": "open_fulltext",
+      "rights_note": "Portuguese open-journal article traces the field's context, systems and cybernetic bases, first- and second-order cybernetics, early research and later currents; it is one concise historiography rather than a definitive global origin account.",
+      "status": "retrieved",
+      "issued": "2011",
+      "identifiers": {
+        "doi": "10.5281/zenodo.15041090"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-30T12:30:24+00:00",
+        "sha256": "8e239177202dbee9d411d236597eb86b892f4a192ab44e2c99fe42e22cc3945a",
+        "bytes": 25878,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/systems-family-therapy/vogel-2011-brief-history-family-therapy.html"
+      }
+    },
+    {
+      "id": "bowen-1978-family-therapy-clinical-practice-record",
+      "title": "Family Therapy in Clinical Practice",
+      "slot": "primary_works",
+      "source_kind": "foundational_participant_book_record",
+      "landing_url": "https://openlibrary.org/books/OL4572917M/Family_therapy_in_clinical_practice",
+      "download_url": "https://openlibrary.org/books/OL4572917M/Family_therapy_in_clinical_practice",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Open Library record for Bowen's collected clinical writings and multigenerational systems programme; the copyrighted book body is not cached or treated as read, and Bowen theory is one branch rather than a synonym for all family therapy.",
+      "status": "retrieved",
+      "issued": "1978",
+      "identifiers": {
+        "isbn": "0876683340",
+        "lccn": "77094096",
+        "oclc": "3985518",
+        "openlibrary": "OL4572917M"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-30T12:30:29+00:00",
+        "sha256": "f79c923378060cbc81d093e09e11812d18af7ac9d9ef17048326d776b3d45582",
+        "bytes": 96948,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/systems-family-therapy/bowen-1978-family-therapy-clinical-practice-record.html"
+      }
+    },
+    {
+      "id": "minuchin-1974-families-family-therapy-record",
+      "title": "Families & Family Therapy",
+      "slot": "primary_works",
+      "source_kind": "foundational_structural_family_therapy_book_record",
+      "landing_url": "https://openlibrary.org/books/OL24746296M/Families_family_therapy",
+      "download_url": "https://openlibrary.org/books/OL24746296M/Families_family_therapy",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Open Library edition record and contents for Minuchin's structural family therapy text, including family structure, boundaries, therapeutic joining and restructuring; the copyrighted body is not cached or treated as read, and structural therapy remains a specific branch.",
+      "status": "retrieved",
+      "issued": "1974",
+      "identifiers": {
+        "isbn": "9780674292369",
+        "lccn": "73089710",
+        "oclc": "841468",
+        "openlibrary": "OL24746296M"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-30T12:30:35+00:00",
+        "sha256": "bec2c54218706dd67f933cfc36fcadce790efa16aa25bc7336f48c10426294d8",
+        "bytes": 91467,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/systems-family-therapy/minuchin-1974-families-family-therapy-record.html"
+      }
+    },
+    {
+      "id": "samhsa-2020-family-counseling-approaches",
+      "title": "Family Counseling Approaches",
+      "slot": "theory_methods",
+      "source_kind": "government_clinical_methods_chapter",
+      "landing_url": "https://www.ncbi.nlm.nih.gov/books/NBK571088/",
+      "download_url": "https://www.ncbi.nlm.nih.gov/books/NBK571088/",
+      "access_status": "public_domain_fulltext",
+      "rights_note": "SAMHSA TIP 39 chapter explains systems principles and several research-based family approaches for substance use disorders; its method descriptions are condition-specific and do not exhaust all family therapy theories or establish efficacy outside SUD care.",
+      "status": "retrieved",
+      "issued": "2020",
+      "identifiers": {
+        "ncbi_bookshelf": "NBK571088"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-30T12:30:39+00:00",
+        "sha256": "02fefb92cef8d933267d225ea8f6c5f1e4c4726fc9a756b9c8232eab7589db05",
+        "bytes": 141156,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/systems-family-therapy/samhsa-2020-family-counseling-approaches.html"
+      }
+    },
+    {
+      "id": "hare-mustin-1987-gender-problem-record",
+      "title": "The Problem of Gender in Family Therapy Theory",
+      "slot": "independent_critique",
+      "source_kind": "feminist_power_critique_bibliographic_record",
+      "landing_url": "https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1545-5300.1987.00015.x",
+      "download_url": "https://search.crossref.org/search/works?q=10.1111%2Fj.1545-5300.1987.00015.x&from_ui=yes",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Crossref bibliographic record for Hare-Mustin's feminist critique of gender in family therapy theory; the article body and publisher abstract are not treated as read, so this supports discovery and critical coverage rather than detailed claims about her argument.",
+      "status": "retrieved",
+      "issued": "1987",
+      "identifiers": {
+        "doi": "10.1111/j.1545-5300.1987.00015.x"
+      },
+      "failure_note": "The Wiley abstract endpoint returned HTTP 403; the Crossref HTML record was selected without bypassing access controls.",
+      "retrieval": {
+        "retrieved_at": "2026-07-30T12:30:41+00:00",
+        "sha256": "dc3dac0927c2af45555ebefcc44ae8c2ab68dfbab066688d6a4900cf0e657513",
+        "bytes": 15699,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/systems-family-therapy/hare-mustin-1987-gender-problem-record.html"
+      }
+    },
+    {
+      "id": "carr-2019-child-focused-evidence-review",
+      "title": "Family Therapy and Systemic Interventions for Child-Focused Problems: The Current Evidence Base",
+      "slot": "clinical_outcomes",
+      "source_kind": "broad_child_focused_evidence_review",
+      "landing_url": "https://onlinelibrary.wiley.com/doi/abs/10.1111/1467-6427.12226",
+      "download_url": "https://amytielemans.com/wp-content/uploads/2020/04/JFT_Family_therapy_and_systemic_interventions_for_child-focused_problems.pdf",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Publicly readable copy of Carr's review of meta-analyses, systematic and narrative reviews and controlled trials across multiple child-focused problems; its broad category includes family therapy, parent training and parent-implemented behavioural programmes, so findings cannot be assigned uniformly to every family-therapy branch.",
+      "status": "retrieved",
+      "issued": "2019",
+      "identifiers": {
+        "doi": "10.1111/1467-6427.12226"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-30T12:31:10+00:00",
+        "sha256": "38d33cf6c9dadf328d9a2b1a0a8fef6a738b8a0fd6693274eddd0ca6d269e1fe",
+        "bytes": 673046,
+        "media_type": "application/pdf",
+        "cache_key": ".private-sources/systems-family-therapy/carr-2019-child-focused-evidence-review.pdf"
+      }
+    },
+    {
+      "id": "carr-2025-adult-focused-evidence-record",
+      "title": "Couple Therapy and Systemic Interventions for Adult-Focused Problems: The Evidence Base",
+      "slot": "empirical_status",
+      "source_kind": "broad_adult_focused_review_bibliographic_record",
+      "landing_url": "https://onlinelibrary.wiley.com/doi/full/10.1111/1467-6427.12481",
+      "download_url": "https://search.crossref.org/search/works?q=10.1111%2F1467-6427.12481&from_ui=yes",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Crossref record for the 2025 adult-focused evidence update; the publisher body is not treated as read, and couple therapy plus heterogeneous systemic interventions cannot be collapsed into a single protocol or effect estimate.",
+      "status": "retrieved",
+      "issued": "2025",
+      "identifiers": {
+        "doi": "10.1111/1467-6427.12481"
+      },
+      "failure_note": "The Wiley full-text endpoint returned HTTP 403; the Crossref HTML record was selected without bypassing access controls.",
+      "retrieval": {
+        "retrieved_at": "2026-07-30T12:31:13+00:00",
+        "sha256": "588959ab16c75111dba5b48611b47f7473301ba92189139dc38111b30bda3967",
+        "bytes": 15715,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/systems-family-therapy/carr-2025-adult-focused-evidence-record.html"
+      }
+    },
+    {
+      "id": "bunn-etal-2022-refugee-family-interventions",
+      "title": "Family-Based Mental Health Interventions for Refugees Across the Migration Continuum: A Systematic Review",
+      "slot": "cultural_language_context",
+      "source_kind": "refugee_cross_context_systematic_review",
+      "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10392776/",
+      "download_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10392776/",
+      "access_status": "open_fulltext",
+      "rights_note": "CC BY-NC-ND review of ten family-based intervention studies across Global North and South refugee settings identifies parenting, multiple-family and home-visiting models and a limited emerging evidence base; these are not all formal systemic family therapy and cannot establish cross-cultural equivalence.",
+      "status": "retrieved",
+      "issued": "2022",
+      "identifiers": {
+        "doi": "10.1016/j.ssmmh.2022.100153",
+        "pmcid": "PMC10392776",
+        "pmid": "37529116"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-30T12:31:16+00:00",
+        "sha256": "0923d2a96c31ce550488ad3c1ca198622606a40c2f45c20d03e3fef31856f9f0",
+        "bytes": 297841,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/systems-family-therapy/bunn-etal-2022-refugee-family-interventions.html"
+      }
+    },
+    {
+      "id": "aamft-2026-code-ethics",
+      "title": "AAMFT Code of Ethics",
+      "slot": "safety_guidelines",
+      "source_kind": "profession_specific_ethics_code",
+      "landing_url": "https://www.aamft.org/AAMFT/web/Action-Advocacy/Code-of-Ethics-New.aspx",
+      "download_url": "https://www.aamft.org/common/Uploaded%20files/Legal%20Ethics/AAMFT%20Code%20of%20Ethics.pdf",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "AAMFT's code effective January 1, 2026 addresses informed consent, multiple clients, confidentiality, power, competence, technology and conflicts of interest; it is a professional ethics standard rather than an adverse-event review and does not replace local law or licensing rules.",
+      "status": "retrieved",
+      "issued": "2026 effective revision",
+      "retrieval": {
+        "retrieved_at": "2026-07-30T12:31:20+00:00",
+        "sha256": "dec18de998c17205253766d8aec74bafbef26a28342df015a289a73b1efbd44c",
+        "bytes": 294198,
+        "media_type": "application/pdf",
+        "cache_key": ".private-sources/systems-family-therapy/aamft-2026-code-ethics.pdf"
+      }
+    },
+    {
+      "id": "aamft-current-association",
+      "title": "About the American Association for Marriage and Family Therapy",
+      "slot": "current_status",
+      "source_kind": "current_professional_association_self_description",
+      "landing_url": "https://www.aamft.org/AAMFT/AAMFT/about.aspx",
+      "download_url": "https://www.aamft.org/AAMFT/AAMFT/about.aspx",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Current AAMFT page documents professional membership, training, research, ethics and publication functions; a North American association's institutional continuation does not define worldwide systemic practice or validate particular interventions.",
+      "status": "retrieved",
+      "issued": "retrieved 2026",
+      "retrieval": {
+        "retrieved_at": "2026-07-30T12:31:22+00:00",
+        "sha256": "35c4955b7f2cd71690317f9eb40f2099a4cffb93ec1f3bf7277d7b00fdadcddd",
+        "bytes": 61097,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/systems-family-therapy/aamft-current-association.html"
+      }
+    }
+  ],
+  "status": "audited"
 }
