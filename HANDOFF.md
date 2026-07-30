@@ -9,12 +9,12 @@ status: in_progress
 base_commit: 593551e
 started_at: 2026-07-28
 objective: 先為原版48項研究目標完成可恢復、可稽核的來源蒐集，再開始閱讀、建立主張或撰寫內容
-active_target: transactional-analysis
+active_target: reality-therapy
 canonical_inputs:
   - research/targets.json
   - research/source-packs/*.json
 target_files:
-  - research/source-packs/transactional-analysis.json
+  - research/source-packs/reality-therapy.json
 expected_result: 下一來源包的所有槽位完成搜尋與裁決；合格可讀正文完成私有快取、格式與雜湊稽核；不建立 claims 或 reader prose
 boundaries:
   - legacy repo 只提供48項 identity/order seed；不匯入舊文章、摘要或 verdict
@@ -62,7 +62,12 @@ completed_items:
   - 一個Deep Blue端點回傳1.9 KB Angular空殼而移除；另有出版社PDF 403、UvA全文兩次逾時及CRD主機TLS驗證失敗，均改用正式PubMed／Europe PMC／NCBI來源，沒有繞過存取或TLS防護
   - safety/guidelines 已搜尋但無合格專屬來源；8筆取得物通過大小、MIME、SHA-256、題名、XML解析與假頁面檢查
   - 目前28/48來源包 audited、累計189筆實際正文／正式書目頁
-next_action: 依 research/targets.json 順序從 transactional-analysis 開始，繼續採較大批次處理其餘20項，不建立正文。非英語只在原始語言、地方傳統或翻譯／版本差異影響正確性時補，不設配額
+  - transactional-analysis 已 audited：10筆正文／正式書目或摘要頁，涵蓋Berne檔案史、1961原典書目、早期原文重刊摘要、ITAA核心概念、獨立博士論文建構檢驗、聚焦研究回顧、探索性meta-analysis、EATA倫理規範、西語系統回顧及當代國際協會延續
+  - 溝通分析的心理治療／人格理論與金融交易分析、語言學transaction analysis、一般溝通訓練及只引用TA的整合治療保持範圍邊界；探索性meta-analysis跨設計、族群、學派與結果的合併效果不升格為特定適應症療效
+  - 1983建構效度出版社頁回傳403，改存Utah State正式論文摘要；PMC PDF端點回傳1.8 KB proof-of-work空殼，移除後保留Europe PMC正式摘要XML並明示不是全文，沒有繞過存取控制
+  - 10筆取得物通過大小、MIME、SHA-256、題名、PDF文字、XML解析與假頁面檢查；西語回顧補足語言版本邊界，但不冒充文化調適證據
+  - 目前29/48來源包 audited、累計199筆實際正文／正式書目或摘要頁
+next_action: 依 research/targets.json 順序從 reality-therapy 開始，繼續採較大批次處理其餘19項，不建立正文。非英語只在原始語言、地方傳統或翻譯／版本差異影響正確性時補，不設配額
 ```
 
 ## P3-S COMPLETION RECORD

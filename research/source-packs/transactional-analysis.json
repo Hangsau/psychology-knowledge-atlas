@@ -5,42 +5,270 @@
   "slots": {
     "identity_history": {
       "description": "Independent scholarly identity and historical placement",
-      "status": "not_searched"
+      "status": "covered"
     },
     "primary_works": {
       "description": "Primary works or first-generation programme statements",
-      "status": "not_searched"
+      "status": "covered"
     },
     "theory_methods": {
       "description": "Core concepts, methods and internal variants",
-      "status": "not_searched"
+      "status": "covered"
     },
     "independent_critique": {
       "description": "Independent historiography, criticism or boundary analysis",
-      "status": "not_searched"
+      "status": "covered"
     },
     "empirical_status": {
       "description": "Empirical tests, syntheses, replications or current assessment",
-      "status": "not_searched"
+      "status": "covered"
     },
     "current_status": {
       "description": "Contemporary continuation, institutions or present disciplinary status",
-      "status": "not_searched"
+      "status": "covered"
     },
     "clinical_outcomes": {
       "description": "Systematic reviews, meta-analyses or comparative outcome research",
-      "status": "not_searched"
+      "status": "covered"
     },
     "safety_guidelines": {
       "description": "Guidelines, limitations, adverse effects or contraindications",
-      "status": "not_searched"
+      "status": "covered"
     },
     "cultural_language_context": {
       "description": "Non-English, local, cultural or knowledge-sovereignty context where applicable",
-      "status": "not_searched"
+      "status": "covered"
     }
   },
-  "searches": [],
-  "items": [],
-  "status": "not_started"
+  "searches": [
+    {
+      "searched_at": "2026-07-30",
+      "system": "UCSF Eric Berne Archives / Open Library / PubMed-PMC / MIrep / SAGE-Taylor & Francis / Revista de Psicoterapia / ITAA / EATA",
+      "queries": [
+        "Eric Berne transactional analysis history archive primary work",
+        "transactional analysis ego states construct validity critique",
+        "transactional analysis psychotherapy systematic review meta-analysis outcomes",
+        "transactional analysis ethics safety professional guidelines",
+        "análisis transaccional revisión sistemática eficacia"
+      ],
+      "purpose": "Locate archival identity, Berne primary works, theory and construct tests, treatment evidence, professional continuation, ethical safeguards and Spanish-language synthesis while excluding financial transaction analysis, linguistic transaction analysis, generic communication training and integrative treatments that merely cite TA"
+    }
+  ],
+  "items": [
+    {
+      "id": "ucsf-eric-berne-archives-mission",
+      "title": "Eric Berne Archives: Our Mission",
+      "slot": "identity_history",
+      "source_kind": "institutional_archive_description",
+      "landing_url": "https://www.ericbernearchives.org/our-mission/index.html",
+      "download_url": "https://www.ericbernearchives.org/our-mission/index.html",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Official description of the Berne collection held at UCSF and its provenance; the digitization project is supported by TA organizations and is not independent historiography.",
+      "status": "retrieved",
+      "issued": "retrieved 2026",
+      "retrieval": {
+        "retrieved_at": "2026-07-30T00:29:18+00:00",
+        "sha256": "96ce5a707325503a68dfc11ed7a3a8508ae3d632329c7ea5e3af79d7a9bdedc2",
+        "bytes": 18499,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/transactional-analysis/ucsf-eric-berne-archives-mission.html"
+      }
+    },
+    {
+      "id": "berne-1961-transactional-analysis-book-record",
+      "title": "Transactional Analysis in Psychotherapy: A Systematic Individual and Social Psychiatry",
+      "slot": "primary_works",
+      "source_kind": "foundational_book_record",
+      "landing_url": "https://openlibrary.org/books/OL5800513M/Transactional_analysis_in_psychotherapy",
+      "download_url": "https://openlibrary.org/books/OL5800513M/Transactional_analysis_in_psychotherapy",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Open Library record for the 1961 Grove Press edition; availability or preview links do not authorize caching or treating the book body as read.",
+      "status": "retrieved",
+      "issued": "1961",
+      "identifiers": {
+        "openlibrary": "OL5800513M"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-30T00:29:20+00:00",
+        "sha256": "0154d1c16cbbe43773b76216d541a8fe24de1a8099ee97ce4e8115b8ae708d46",
+        "bytes": 101649,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/transactional-analysis/berne-1961-transactional-analysis-book-record.html"
+      }
+    },
+    {
+      "id": "berne-1958-principles-reprint",
+      "title": "Principles of Transactional Analysis",
+      "slot": "primary_works",
+      "source_kind": "foundational_article_reprint_abstract_record",
+      "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2970834/",
+      "download_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC2970834/fullTextXML",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Official Europe PMC XML record and abstract for a 1996 journal reprint of Berne's foundational presentation; the record explicitly points to a PDF-only body, so it is not treated as full-text reading or as a newly authored 1996 theory.",
+      "status": "retrieved",
+      "issued": "1996 reprint",
+      "identifiers": {
+        "pmid": "21709849",
+        "pmcid": "PMC2970834"
+      },
+      "failure_note": "The direct PMC PDF endpoint returned a 1.8 KB proof-of-work 'Preparing to download' page; it was removed and the official Europe PMC abstract record retained without solving or bypassing the challenge.",
+      "retrieval": {
+        "retrieved_at": "2026-07-30T00:32:04+00:00",
+        "sha256": "2a420bfc7ffc0daceb33cfd9a71267da129434ed5e6583a7e01941e539e1efb2",
+        "bytes": 4337,
+        "media_type": "application/xml",
+        "cache_key": ".private-sources/transactional-analysis/berne-1958-principles-reprint.xml"
+      }
+    },
+    {
+      "id": "itaa-2000-core-concepts",
+      "title": "The Core Concepts of Transactional Analysis",
+      "slot": "theory_methods",
+      "source_kind": "professional_association_concept_statement",
+      "landing_url": "https://itaaworld.com/transactional-analysis/",
+      "download_url": "https://itaaworld.com/wp-admin/itaa-forms/ITAA_TA_Core_Concepts_2000_English_3_2024.pdf",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "ITAA task-force statement approved in 2000 and redistributed in 2024; an internal consensus description of concepts, not independent empirical validation.",
+      "status": "retrieved",
+      "issued": "2000 (2024 file)",
+      "retrieval": {
+        "retrieved_at": "2026-07-30T00:29:23+00:00",
+        "sha256": "b3e193db0c06864a3a64872564687ae5f84c1b8500c077b9229d6224a3ab6781",
+        "bytes": 277981,
+        "media_type": "application/pdf",
+        "cache_key": ".private-sources/transactional-analysis/itaa-2000-core-concepts.pdf"
+      }
+    },
+    {
+      "id": "emerson-1990-ego-state-client-change",
+      "title": "Use of the Transactional Analysis Ego State Concept to Measure Client Change in Psychotherapy",
+      "slot": "independent_critique",
+      "source_kind": "doctoral_dissertation_record_and_abstract",
+      "landing_url": "https://digitalcommons.usu.edu/etd/6018/",
+      "download_url": "https://digitalcommons.usu.edu/etd/6018/",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Official Utah State University dissertation record and abstract reporting partial construct support and explicit limitations; copyright remains with the author, so the dissertation body is not cached or claimed as read.",
+      "status": "retrieved",
+      "issued": "1990",
+      "identifiers": {
+        "doi": "10.26076/787a-1072",
+        "repository": "USU ETD 6018"
+      },
+      "failure_note": "The preferred 1983 Williams et al. construct-validity publisher abstract returned HTTP 403 to the collector; this university dissertation record was selected without bypassing access controls.",
+      "retrieval": {
+        "retrieved_at": "2026-07-30T00:30:32+00:00",
+        "sha256": "d8b5fe7869b930d535102035d13036e488c91c36c31dff24b7ead10199c2d737",
+        "bytes": 37012,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/transactional-analysis/emerson-1990-ego-state-client-change.html"
+      }
+    },
+    {
+      "id": "vos-van-rijn-2021-evidence-conceptual-review",
+      "title": "The Evidence-Based Conceptual Model of Transactional Analysis: A Focused Review of the Research Literature",
+      "slot": "empirical_status",
+      "source_kind": "focused_review_repository_record",
+      "landing_url": "https://mirep.metanoia.ac.uk/id/eprint/379/",
+      "download_url": "https://mirep.metanoia.ac.uk/id/eprint/379/",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Institutional repository abstract and bibliographic record, not the article body. The authors are TA practitioner-researchers and their broad evidence-based conclusion requires comparison with construct and outcome limitations.",
+      "status": "retrieved",
+      "issued": "2021",
+      "identifiers": {
+        "doi": "10.1080/03621537.2021.1904364",
+        "repository": "MIrep 379"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-30T00:29:25+00:00",
+        "sha256": "94a24091c4641b35b70236593fef3801909c2eec3041b1b54ee2c24a4c73b191",
+        "bytes": 47058,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/transactional-analysis/vos-van-rijn-2021-evidence-conceptual-review.html"
+      }
+    },
+    {
+      "id": "vos-van-rijn-2022-ta-meta-analysis",
+      "title": "The Effectiveness of Transactional Analysis Treatments and Their Predictors: A Systematic Literature Review and Explorative Meta-Analysis",
+      "slot": "clinical_outcomes",
+      "source_kind": "systematic_review_exploratory_meta_analysis",
+      "landing_url": "https://mirep.metanoia.ac.uk/id/eprint/410/",
+      "download_url": "https://mirep.metanoia.ac.uk/id/eprint/410/1/The%20Effectiveness%20of%20Transactional%20Analysis%20Treatments%20and%20Their%20Predictors%20%281%29.pdf",
+      "access_status": "repository_manuscript",
+      "rights_note": "Author manuscript of a broad exploratory meta-analysis. It combines designs, populations, TA schools and outcomes, and its authors are practitioner-researchers; pooled effects must not be treated as indication-specific efficacy.",
+      "status": "retrieved",
+      "issued": "2022",
+      "identifiers": {
+        "doi": "10.1177/00221678221117111",
+        "repository": "MIrep 410"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-30T00:29:27+00:00",
+        "sha256": "5590cd6ce84035f3ad9c1e6445448b32804ae7bc5658c115a295da2e388b5987",
+        "bytes": 542516,
+        "media_type": "application/pdf",
+        "cache_key": ".private-sources/transactional-analysis/vos-van-rijn-2022-ta-meta-analysis.pdf"
+      }
+    },
+    {
+      "id": "eata-2025-ethical-practice-guidelines",
+      "title": "Ethical Code, Professional Practice Guidelines and Ethics Committee",
+      "slot": "safety_guidelines",
+      "source_kind": "professional_ethics_guideline",
+      "landing_url": "https://handbook.eatanews.org/",
+      "download_url": "https://handbook.eatanews.org/wp-content/uploads/2025/04/Section-5-Ethical-Code-and-Professional-Practice-Guidelines-and-Ethics-Committee-rev-Apr-2025.pdf",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Current EATA/ITAA professional ethics and complaints guidance covering protection, confidentiality, exploitation and credential claims; it is not an adverse-event evidence review or clinical contraindication guideline.",
+      "status": "retrieved",
+      "issued": "2025",
+      "retrieval": {
+        "retrieved_at": "2026-07-30T00:29:29+00:00",
+        "sha256": "a4d2f40ab2dbfada62a8077fda2eede932c3abbdfdc86234812c10d8f6389042",
+        "bytes": 108346,
+        "media_type": "application/pdf",
+        "cache_key": ".private-sources/transactional-analysis/eata-2025-ethical-practice-guidelines.pdf"
+      }
+    },
+    {
+      "id": "martinez-rodriguez-etal-2024-spanish-ta-review",
+      "title": "Eficacia y efectividad del análisis transaccional para mejorar la autoestima, la resolución de problemas y las relaciones: una revisión sistemática",
+      "slot": "cultural_language_context",
+      "source_kind": "spanish_language_systematic_review",
+      "landing_url": "https://revistas.uned.es/index.php/rdp/article/view/41502",
+      "download_url": "https://revistas.uned.es/index.php/rdp/article/download/41502/31487",
+      "access_status": "open_fulltext",
+      "rights_note": "CC BY-NC Spanish-language systematic review of selected psychosocial outcomes through 2023; publication language adds a translation boundary but does not by itself demonstrate cultural adaptation or cross-cultural equivalence.",
+      "status": "retrieved",
+      "issued": "2024",
+      "identifiers": {
+        "doi": "10.5944/rdp.v35i129.41502"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-30T00:29:32+00:00",
+        "sha256": "b58a2d3121e397a41c220194b174f7ac55cc5ff537db6ff19e1c945438b9164c",
+        "bytes": 861216,
+        "media_type": "application/pdf",
+        "cache_key": ".private-sources/transactional-analysis/martinez-rodriguez-etal-2024-spanish-ta-review.pdf"
+      }
+    },
+    {
+      "id": "itaa-current-global-association",
+      "title": "International Transactional Analysis Association",
+      "slot": "current_status",
+      "source_kind": "professional_association_self_description",
+      "landing_url": "https://itaaworld.com/",
+      "download_url": "https://itaaworld.com/",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Current association self-description and certification activity; evidence of institutional continuation only, not proof of theoretical validity or treatment effectiveness.",
+      "status": "retrieved",
+      "issued": "retrieved 2026",
+      "retrieval": {
+        "retrieved_at": "2026-07-30T00:29:33+00:00",
+        "sha256": "40478f04508e7dde564cfb0c7d8558afdcc37383f86661b059c996bab2c820ba",
+        "bytes": 684133,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/transactional-analysis/itaa-current-global-association.html"
+      }
+    }
+  ],
+  "status": "audited"
 }
