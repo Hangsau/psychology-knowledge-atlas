@@ -5,42 +5,255 @@
   "slots": {
     "identity_history": {
       "description": "Independent scholarly identity and historical placement",
-      "status": "not_searched"
+      "status": "covered"
     },
     "primary_works": {
       "description": "Primary works or first-generation programme statements",
-      "status": "not_searched"
+      "status": "covered"
     },
     "theory_methods": {
       "description": "Core concepts, methods and internal variants",
-      "status": "not_searched"
+      "status": "covered"
     },
     "independent_critique": {
       "description": "Independent historiography, criticism or boundary analysis",
-      "status": "not_searched"
+      "status": "covered"
     },
     "empirical_status": {
       "description": "Empirical tests, syntheses, replications or current assessment",
-      "status": "not_searched"
+      "status": "covered"
     },
     "current_status": {
       "description": "Contemporary continuation, institutions or present disciplinary status",
-      "status": "not_searched"
+      "status": "covered"
     },
     "clinical_outcomes": {
       "description": "Systematic reviews, meta-analyses or comparative outcome research",
-      "status": "not_searched"
+      "status": "covered"
     },
     "safety_guidelines": {
       "description": "Guidelines, limitations, adverse effects or contraindications",
-      "status": "not_searched"
+      "status": "covered"
     },
     "cultural_language_context": {
       "description": "Non-English, local, cultural or knowledge-sovereignty context where applicable",
-      "status": "not_searched"
+      "status": "covered"
     }
   },
-  "searches": [],
-  "items": [],
-  "status": "not_started"
+  "searches": [
+    {
+      "searched_at": "2026-07-30",
+      "system": "PubMed Central / Cochrane Library / Open Library / WFMT and AMTA / Voices / University of Edinburgh journals / publisher and citation indexes",
+      "queries": [
+        "music therapy history profession Juliette Alvin primary work",
+        "music therapy definition active receptive methods music medicine boundary",
+        "music therapy systematic review meta-review psychiatry reporting quality",
+        "music therapy ethics adverse events professional competence",
+        "music therapy culturally centered practice decolonial context"
+      ],
+      "purpose": "Locate independent historiography, a foundational participant book record, profession-specific method and terminology boundaries, critical reporting assessment, cross-diagnostic and condition-bounded syntheses, ethics, cultural-context critique and current global institutional continuation while excluding ordinary music listening, music medicine, arts-in-health, sound healing and studies that label any music exposure as music therapy without identifying trained therapeutic delivery"
+    }
+  ],
+  "items": [
+    {
+      "id": "taits-2023-music-therapy-historiography",
+      "title": "Music Therapy: An Embodiment of the Interdisciplinary Problem",
+      "slot": "identity_history",
+      "source_kind": "independent_history_of_medicine_methodology_article",
+      "landing_url": "https://journals.ed.ac.uk/music-ology-eca/article/view/8172",
+      "download_url": "https://journals.ed.ac.uk/music-ology-eca/article/view/8172",
+      "access_status": "open_fulltext",
+      "rights_note": "CC BY article examines why UK music-therapy history is difficult to reconstruct across medicine and music and calls for collaborative social historiography; its UK focus is not a complete global origin narrative.",
+      "status": "retrieved",
+      "authors": [
+        "Katja Taits"
+      ],
+      "issued": "2023",
+      "identifiers": {
+        "doi": "10.2218/music.2023.8172"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-30T14:10:22+00:00",
+        "sha256": "70df1c26dda6cf05ea4a0af3f99841ba7dec0e89740667e7ee01d17d7886f5b8",
+        "bytes": 22746,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/music-therapy/taits-2023-music-therapy-historiography.html"
+      }
+    },
+    {
+      "id": "alvin-1966-music-therapy-record",
+      "title": "Music Therapy",
+      "slot": "primary_works",
+      "source_kind": "foundational_participant_book_record",
+      "landing_url": "https://openlibrary.org/books/OL9580649M/Music_Therapy",
+      "download_url": "https://openlibrary.org/books/OL9580649M/Music_Therapy",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Open Library work and edition record for Juliette Alvin's book, first published in 1966; the copyrighted book body is not cached or treated as read, and later revised editions must not be silently treated as the 1966 text.",
+      "status": "retrieved",
+      "authors": [
+        "Juliette Alvin"
+      ],
+      "issued": "1966; record displays 1991 edition",
+      "identifiers": {
+        "openlibrary": "OL9580649M",
+        "isbn": "9780852498033"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-30T14:10:27+00:00",
+        "sha256": "30aed7873e63d30c12cbedec0161b71ed3c7b93966537fd44742ca26d35ec2fb",
+        "bytes": 98678,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/music-therapy/alvin-1966-music-therapy-record.html"
+      }
+    },
+    {
+      "id": "robgron-etal-2018-reporting-quality",
+      "title": "Reporting Quality of Music Intervention Research in Healthcare: A Systematic Review",
+      "slot": "independent_critique",
+      "source_kind": "systematic_terminology_and_reporting_review",
+      "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5988263/",
+      "download_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5988263/",
+      "access_status": "open_fulltext",
+      "rights_note": "Open systematic review distinguishes profession-specific music therapy from music medicine and other music interventions and documents inconsistent terminology and reporting; credentials alone do not specify the intervention technique or demonstrate efficacy.",
+      "status": "retrieved",
+      "issued": "2018",
+      "identifiers": {
+        "pmcid": "PMC5988263"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-30T14:10:28+00:00",
+        "sha256": "029f3419a9a4260dff88cac64f1d3c4addf3c5ebd5293dd6064d1a5a93ca792f",
+        "bytes": 517323,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/music-therapy/robgron-etal-2018-reporting-quality.html"
+      }
+    },
+    {
+      "id": "amta-cbmt-scope-music-therapy-practice",
+      "title": "Scope of Music Therapy Practice",
+      "slot": "theory_methods",
+      "source_kind": "profession_specific_scope_and_method_document",
+      "landing_url": "https://www.musictherapy.org/about/scope_of_music_therapy_practice/",
+      "download_url": "https://www.musictherapy.org/assets/1/7/CBMT_AMTA_Scope_of_Music_Therapy_Practice.pdf",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Joint AMTA/CBMT scope document describes assessment, treatment planning, active and receptive methods, therapeutic relationship and credentialed practice; it is a US participant standard, not a worldwide definition or outcome study.",
+      "status": "retrieved",
+      "issued": "current document; retrieved 2026",
+      "retrieval": {
+        "retrieved_at": "2026-07-30T14:12:18+00:00",
+        "sha256": "70711f85d106555e3367c0493b5d0968a05c077b790c6f89da9e8d5d297d40ec",
+        "bytes": 239760,
+        "media_type": "application/pdf",
+        "cache_key": ".private-sources/music-therapy/amta-cbmt-scope-music-therapy-practice.pdf"
+      }
+    },
+    {
+      "id": "gold-etal-2024-psychiatry-meta-review",
+      "title": "Evidence for Music Therapy and Music Medicine in Psychiatry: Transdiagnostic Meta-Review of Meta-Analyses",
+      "slot": "empirical_status",
+      "source_kind": "transdiagnostic_meta_review",
+      "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11733488/",
+      "download_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11733488/",
+      "access_status": "open_fulltext",
+      "rights_note": "Open meta-review separates diagnoses, outcomes, music therapy and music medicine and reports variable certainty and overlap among syntheses; cross-diagnostic findings are not a single universal treatment effect.",
+      "status": "retrieved",
+      "issued": "2024",
+      "identifiers": {
+        "pmcid": "PMC11733488"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-30T14:10:30+00:00",
+        "sha256": "14a3b3099267184dc0c94f73863c1653921c8584c3a64a43f7b98837f04af226",
+        "bytes": 273102,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/music-therapy/gold-etal-2024-psychiatry-meta-review.html"
+      }
+    },
+    {
+      "id": "cochrane-2024-music-therapy-autistic-people",
+      "title": "Music Therapy for Autistic People",
+      "slot": "clinical_outcomes",
+      "source_kind": "condition_bounded_cochrane_review",
+      "landing_url": "https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD004381.pub4/full",
+      "download_url": "https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD004381.pub4/pdf/CDSR/CD004381/CD004381.pdf",
+      "access_status": "open_fulltext",
+      "rights_note": "Current Cochrane review is bounded to autistic people and separates outcomes and certainty; it cannot establish effects for other populations or make all active, receptive, improvisational and parent-involved programmes interchangeable.",
+      "status": "retrieved",
+      "issued": "2024 update",
+      "identifiers": {
+        "doi": "10.1002/14651858.CD004381.pub4"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-30T14:10:31+00:00",
+        "sha256": "b745b2b686616f536bda2f85086e9faecc68fc242b2a822b8f26d95063bceac5",
+        "bytes": 1502493,
+        "media_type": "application/pdf",
+        "cache_key": ".private-sources/music-therapy/cochrane-2024-music-therapy-autistic-people.pdf"
+      }
+    },
+    {
+      "id": "amta-code-ethics",
+      "title": "American Music Therapy Association Code of Ethics",
+      "slot": "safety_guidelines",
+      "source_kind": "profession_specific_ethics_code",
+      "landing_url": "https://www.musictherapy.org/about/ethics/",
+      "download_url": "https://www.musictherapy.org/about/ethics/",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "AMTA code addresses competence, client welfare, consent, confidentiality, boundaries, evidence and accountability for members and credentialed practitioners; it is aspirational US professional guidance, not adverse-event surveillance or a substitute for local regulation.",
+      "status": "retrieved",
+      "issued": "2018 code; current web edition",
+      "retrieval": {
+        "retrieved_at": "2026-07-30T14:10:35+00:00",
+        "sha256": "4439f87b48e33fead698eb80a75c0e4f68bb261b3ef1f97944eddde08d885add",
+        "bytes": 66380,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/music-therapy/amta-code-ethics.html"
+      }
+    },
+    {
+      "id": "brown-2002-culturally-centered-practice",
+      "title": "Towards a Culturally Centered Music Therapy Practice",
+      "slot": "cultural_language_context",
+      "source_kind": "culture_centered_practice_critique",
+      "landing_url": "https://voices.no/index.php/voices/article/view/1601",
+      "download_url": "https://voices.no/index.php/voices/article/view/1601",
+      "access_status": "open_fulltext",
+      "rights_note": "Open field article challenges assumptions that music is a universal language and foregrounds therapist and client worldviews and cultural empathy; it is a North American practice argument, not evidence for one universal cultural adaptation.",
+      "status": "retrieved",
+      "authors": [
+        "Julie M. Brown"
+      ],
+      "issued": "2002",
+      "identifiers": {
+        "doi": "10.15845/voices.v2i1.72"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-30T14:10:38+00:00",
+        "sha256": "e2dfebbe75f850f30084404830d53cf9f0eb574ee9119eb5bca954f7078e5011",
+        "bytes": 22608,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/music-therapy/brown-2002-culturally-centered-practice.html"
+      }
+    },
+    {
+      "id": "wfmt-current-federation-definition",
+      "title": "About the World Federation of Music Therapy",
+      "slot": "current_status",
+      "source_kind": "current_global_professional_federation_self_description",
+      "landing_url": "https://www.wfmt.info/about",
+      "download_url": "https://www.wfmt.info/about",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "WFMT official page documents its 1985 formation, current global mission and 2026 definition emphasizing trained professionals, therapeutic relationship and cultural context; federation consensus does not determine national licensure or validate particular interventions.",
+      "status": "retrieved",
+      "issued": "2026 definition; retrieved 2026",
+      "retrieval": {
+        "retrieved_at": "2026-07-30T14:10:39+00:00",
+        "sha256": "c4f916204b991bfa711fb801f90c33ae54537e5bb8eb39d2f9b1b90e2f874479",
+        "bytes": 53222,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/music-therapy/wfmt-current-federation-definition.html"
+      }
+    }
+  ],
+  "status": "audited"
 }

@@ -5,42 +5,239 @@
   "slots": {
     "identity_history": {
       "description": "Independent scholarly identity and historical placement",
-      "status": "not_searched"
+      "status": "covered"
     },
     "primary_works": {
       "description": "Primary works or first-generation programme statements",
-      "status": "not_searched"
+      "status": "covered"
     },
     "theory_methods": {
       "description": "Core concepts, methods and internal variants",
-      "status": "not_searched"
+      "status": "covered"
     },
     "independent_critique": {
       "description": "Independent historiography, criticism or boundary analysis",
-      "status": "not_searched"
+      "status": "covered"
     },
     "empirical_status": {
       "description": "Empirical tests, syntheses, replications or current assessment",
-      "status": "not_searched"
+      "status": "covered"
     },
     "current_status": {
       "description": "Contemporary continuation, institutions or present disciplinary status",
-      "status": "not_searched"
+      "status": "covered"
     },
     "clinical_outcomes": {
       "description": "Systematic reviews, meta-analyses or comparative outcome research",
-      "status": "not_searched"
+      "status": "covered"
     },
     "safety_guidelines": {
       "description": "Guidelines, limitations, adverse effects or contraindications",
-      "status": "not_searched"
+      "status": "searched_no_qualifying_source"
     },
     "cultural_language_context": {
       "description": "Non-English, local, cultural or knowledge-sovereignty context where applicable",
-      "status": "not_searched"
+      "status": "covered"
     }
   },
-  "searches": [],
-  "items": [],
-  "status": "not_started"
+  "searches": [
+    {
+      "searched_at": "2026-07-30",
+      "system": "J-STAGE / National Diet Library and CiNii / PubMed Central and Cochrane / Japanese Society for Morita Therapy and International Committee / Springer and publisher indexes",
+      "queries": [
+        "森田正馬 神経質の本態及療法 1928 原典",
+        "Morita therapy history classic inpatient outpatient guidelines",
+        "Morita therapy systematic review randomized trial anxiety depression",
+        "Morita therapy adverse effects contraindications safety guidelines",
+        "Morita therapy Japanese culture cross-cultural adaptation"
+      ],
+      "purpose": "Locate Japanese primary bibliography, independent socio-history, classical and outpatient method boundaries, century review, controlled evidence, a condition-bounded synthesis, Japanese current institutions and cross-cultural adaptation while distinguishing classical residential Morita therapy from outpatient, dialog-based, UK-adapted, generic acceptance or Constructive Living programmes; no dedicated publicly inspectable profession-specific adverse-event or contraindication guideline met the retrieval threshold"
+    }
+  ],
+  "items": [
+    {
+      "id": "wu-2024-work-self-society-history",
+      "title": "Work, Self, and Society: A Socio-Historical Study of Morita Therapy",
+      "slot": "identity_history",
+      "source_kind": "independent_sociohistorical_analysis",
+      "landing_url": "https://link.springer.com/article/10.1007/s11013-024-09845-9",
+      "download_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11362480/",
+      "access_status": "open_fulltext",
+      "rights_note": "Open socio-history situates work, self and therapy in 1920s–1930s Japan and complicates timeless Buddhist-only narratives; its work-centered interpretation is not a complete clinical history or outcome assessment.",
+      "status": "retrieved",
+      "authors": [
+        "Yu-Chuan Wu"
+      ],
+      "issued": "2024",
+      "identifiers": {
+        "doi": "10.1007/s11013-024-09845-9",
+        "pmcid": "PMC11362480"
+      },
+      "failure_note": "The Springer endpoint returned a 3 KB Client Challenge shell; the matching PMC full text was selected without solving the challenge.",
+      "retrieval": {
+        "retrieved_at": "2026-07-30T14:16:52+00:00",
+        "sha256": "97b82f9e8eb24b584e155d2468a80fc159783ff1f61f0bcb581cd922e1f6354b",
+        "bytes": 183886,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/morita-therapy/wu-2024-work-self-society-history.html"
+      }
+    },
+    {
+      "id": "morita-1928-shinkeishitsu-ndl-record",
+      "title": "神経質の本態及び療法",
+      "slot": "primary_works",
+      "source_kind": "foundational_japanese_book_bibliographic_record",
+      "landing_url": "https://ndlsearch.ndl.go.jp/books/R100000136-I1570009750546826240",
+      "download_url": "https://ndlsearch.ndl.go.jp/books/R100000136-I1570009750546826240",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "National Diet Library record identifies Morita's 1928 Japanese foundational work; the record is cached rather than silently substituting the 1960 revised edition or 1998 English translation for the original text.",
+      "status": "retrieved",
+      "authors": [
+        "森田正馬"
+      ],
+      "issued": "1928",
+      "retrieval": {
+        "retrieved_at": "2026-07-30T14:12:15+00:00",
+        "sha256": "f1ec2a8b664a0c6b825149e91f85ec32f7e42e1bda5c27f8a85de6e2e723f152",
+        "bytes": 177946,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/morita-therapy/morita-1928-shinkeishitsu-ndl-record.html"
+      }
+    },
+    {
+      "id": "jsmt-2021-outpatient-guidelines-bilingual",
+      "title": "Guidelines for Practising Outpatient Morita Therapy: Paired Japanese-English Translation Edition",
+      "slot": "theory_methods",
+      "source_kind": "participant_consensus_bilingual_method_guideline",
+      "landing_url": "https://moritatherapy.org/guidelines-for-practising-outpatient-morita-therapy-paired-japanese-english-translation-edition-2021/",
+      "download_url": "https://moritatherapy.org/wp-content/uploads/2014/11/GD.pdf",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Japanese Society consensus guideline and paired translation identify common outpatient components while explicitly allowing modification; outpatient dialogue and diaries must not be represented as the original residential four-stage programme.",
+      "status": "retrieved",
+      "issued": "2009 guideline; 2021 paired translation",
+      "retrieval": {
+        "retrieved_at": "2026-07-30T14:12:17+00:00",
+        "sha256": "94bbef39e776dbbcad1b73412def712aae41e53f636e1c2baf9960678a87dbca",
+        "bytes": 1720181,
+        "media_type": "application/pdf",
+        "cache_key": ".private-sources/morita-therapy/jsmt-2021-outpatient-guidelines-bilingual.pdf"
+      }
+    },
+    {
+      "id": "nakamura-etal-2023-century-review",
+      "title": "A Century of Morita Therapy: What Has and Has Not Changed",
+      "slot": "independent_critique",
+      "source_kind": "participant_historical_version_boundary_review",
+      "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10078264/",
+      "download_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10078264/",
+      "access_status": "open_fulltext",
+      "rights_note": "Open century review distinguishes declining classical inpatient practice, later dialog-based outpatient forms and comparisons with mindfulness and ACT; it is participant historiography and resemblance does not establish equivalence among therapies.",
+      "status": "retrieved",
+      "issued": "2023",
+      "identifiers": {
+        "pmcid": "PMC10078264"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-30T14:12:18+00:00",
+        "sha256": "856f71ca7bc3d287715d2ea4c77f261f7cb330cea95f8b5b074ab910ca5cad07",
+        "bytes": 192714,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/morita-therapy/nakamura-etal-2023-century-review.html"
+      }
+    },
+    {
+      "id": "sugg-etal-2018-morita-pilot-rct",
+      "title": "Morita Therapy for Depression (Morita Trial): A Pilot Randomised Controlled Trial",
+      "slot": "empirical_status",
+      "source_kind": "uk_adapted_feasibility_pilot_randomized_trial",
+      "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6089263/",
+      "download_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6089263/",
+      "access_status": "open_fulltext",
+      "rights_note": "Open UK pilot tests feasibility and estimates outcomes for an adapted 8–12-session outpatient protocol in 68 adults with major depression; it was not powered as a definitive efficacy trial and does not test classical residential Morita therapy.",
+      "status": "retrieved",
+      "issued": "2018",
+      "identifiers": {
+        "doi": "10.1136/bmjopen-2018-021605",
+        "pmcid": "PMC6089263"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-30T14:12:19+00:00",
+        "sha256": "62baf15cb6e67d7cad82b6c97447d9190de3d420550c4ab0a1ad54bf80ab7399",
+        "bytes": 261545,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/morita-therapy/sugg-etal-2018-morita-pilot-rct.html"
+      }
+    },
+    {
+      "id": "wu-etal-2015-cochrane-anxiety-review",
+      "title": "Morita Therapy for Anxiety Disorders in Adults",
+      "slot": "clinical_outcomes",
+      "source_kind": "condition_bounded_cochrane_systematic_review",
+      "landing_url": "https://www.cochrane.org/evidence/CD008619_morita-therapy-anxiety-disorders-adults",
+      "download_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10907974/",
+      "access_status": "open_fulltext",
+      "rights_note": "Cochrane review found seven small high-risk-of-bias studies, all conducted in China, and insufficient adverse-effect reporting, so it could not conclude effectiveness; applicability beyond included Chinese settings and combined pharmacotherapy protocols is limited.",
+      "status": "retrieved",
+      "issued": "2015",
+      "identifiers": {
+        "doi": "10.1002/14651858.CD008619.pub2",
+        "pmcid": "PMC10907974"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-30T14:12:20+00:00",
+        "sha256": "8719e38b357c4891dcd7af8c579fbda27ef9ba315427186bfee8dd7744b3649e",
+        "bytes": 389439,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/morita-therapy/wu-etal-2015-cochrane-anxiety-review.html"
+      }
+    },
+    {
+      "id": "sugg-richards-frost-2020-cross-cultural",
+      "title": "What Is Morita Therapy? The Nature, Origins, and Cross-Cultural Application of a Unique Japanese Psychotherapy",
+      "slot": "cultural_language_context",
+      "source_kind": "cross_cultural_adaptation_and_boundary_review",
+      "landing_url": "https://link.springer.com/article/10.1007/s10879-020-09464-6",
+      "download_url": "https://d-nb.info/1222408783/34",
+      "access_status": "open_fulltext",
+      "rights_note": "Open article describes Japanese cultural framing and recommendations from a UK adaptation team; claims of cross-cultural promise remain tied to early feasibility work and must not erase Japanese concepts, setting changes or local therapist training.",
+      "status": "retrieved",
+      "authors": [
+        "Holly V. R. Sugg",
+        "David A. Richards",
+        "Julia Frost"
+      ],
+      "issued": "2020",
+      "identifiers": {
+        "doi": "10.1007/s10879-020-09464-6"
+      },
+      "failure_note": "The Springer endpoint returned the same 3 KB Client Challenge shell as another article; the German National Library-hosted open article PDF was selected without solving the challenge.",
+      "retrieval": {
+        "retrieved_at": "2026-07-30T14:14:34+00:00",
+        "sha256": "f3f53d12bf4532cff950407c290a716c858bc9ce70bc4c7cb5e5cba9381212a5",
+        "bytes": 699695,
+        "media_type": "application/pdf",
+        "cache_key": ".private-sources/morita-therapy/sugg-richards-frost-2020-cross-cultural.pdf"
+      }
+    },
+    {
+      "id": "jsmt-current-society",
+      "title": "日本森田療法学会",
+      "slot": "current_status",
+      "source_kind": "current_japanese_professional_society",
+      "landing_url": "https://www.jps-morita.jp/",
+      "download_url": "https://www.jps-morita.jp/",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Official Japanese society site documents current conferences, certification information, institutions and multilingual materials; institutional continuation does not establish efficacy or a single globally regulated credential.",
+      "status": "retrieved",
+      "issued": "retrieved 2026",
+      "retrieval": {
+        "retrieved_at": "2026-07-30T14:12:22+00:00",
+        "sha256": "eedb662947f68eb291f6cdf1a36bb5012fb48044d9f1d91b3ec84c4ab367faa0",
+        "bytes": 23794,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/morita-therapy/jsmt-current-society.html"
+      }
+    }
+  ],
+  "status": "audited"
 }

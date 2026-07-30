@@ -9,12 +9,12 @@ status: in_progress
 base_commit: 593551e
 started_at: 2026-07-28
 objective: 先為原版48項研究目標完成可恢復、可稽核的來源蒐集，再開始閱讀、建立主張或撰寫內容
-active_target: music-therapy
+active_target: naikan-therapy
 canonical_inputs:
   - research/targets.json
   - research/source-packs/*.json
 target_files:
-  - research/source-packs/music-therapy.json
+  - research/source-packs/naikan-therapy.json
 expected_result: 下一來源包的所有槽位完成搜尋與裁決；合格可讀正文完成私有快取、格式與雜湊稽核；不建立 claims 或 reader prose
 boundaries:
   - legacy repo 只提供48項 identity/order seed；不匯入舊文章、摘要或 verdict
@@ -103,8 +103,15 @@ completed_items:
   - APT最佳實務PDF與About頁均回傳403，分別改存Play Therapy International可讀倫理框架與University of North Texas正式研究中心頁，保留失敗原因且未繞過存取控制
   - psychodrama 已 audited：9筆正文／正式書目頁，涵蓋80年計量史、Moreno多卷原典書目、FEPTO方法說明、2019與2025方法批判綜整、中國RCT meta-analysis、FEPTO倫理規範、葡／英／西語巴西回顧及ASGPP當代延續
   - psychodrama與drama therapy、sociodrama、一般角色扮演、模擬訓練及嵌入其他治療的role-playing techniques保持邊界；近期研究仍缺較多RCT／準實驗，跨族群與跨模型的正向敘述不冒充單一通用效果
-  - 目前39/48來源包 audited、累計287筆實際正文／正式書目或摘要頁；本批27筆均通過大小、MIME、SHA-256、題名、PDF文字、假頁面與批內重複檢查
-next_action: 依 research/targets.json 順序從 music-therapy 開始，繼續採每批2至3項處理其餘9項，不建立正文。非英語只在原始語言、地方傳統或翻譯／版本差異影響正確性時補，不設配額
+  - music-therapy 已 audited：9筆正文／正式書目頁，涵蓋英國醫療史方法、Alvin 1966原典書目、AMTA／CBMT方法範圍、術語與報告品質批判、精神醫療meta-review、autistic people之Cochrane review、AMTA倫理規範、文化中心實務批判及WFMT當代延續
+  - 音樂治療與一般聽音樂、music medicine、arts-in-health、sound healing保持邊界；credentialed delivery只界定專業角色，不自動指定技術或證明療效，跨診斷與特定族群綜整亦不升格為通用效果
+  - indigenous-psychology 已 audited：7筆正文／正式書目或摘要頁，涵蓋多國起源調查、2006參與者論集、楊國樞三種心理學與華人實證成果紀錄、Jahoda外部批判、當代國際網絡及CARE資料治理原則
+  - 本土心理學保持複數傳統與知識主權邊界：不把Sikolohiyang Pilipino、華人／臺灣、Māori、印度、韓國等地方運動合成單一文化，也不把indigenous psychologies等同於所有關於Indigenous Peoples的研究；CARE只處理資料治理，不冒充完整心理學研究倫理碼
+  - morita-therapy 已 audited：8筆正文／正式書目頁，涵蓋1920至30年代日本社會史、森田正馬1928日文原典紀錄、日英門診指引、百年版本回顧、英國適應性pilot RCT、Cochrane焦慮綜整、跨文化改編及日本森田療法學會延續
+  - 古典住院四階段、後期對話式門診、英國8至12節改編與Constructive Living保持邊界；Cochrane納入研究小、偏差風險高且不良事件報告不足，安全／禁忌專屬來源搜尋後無合格材料，明記searched_no_qualifying_source
+  - Springer兩個不同文章端點回傳同一3 KB Client Challenge殼，均移除並改存PMC正文與德國國家圖書館PDF；AIATSIS PDF與頁面403後以CARE原始論文補資料主權邊界，SAGE批判文章403後只存Crossref正式DOI紀錄，未繞過技術控制
+  - 目前42/48來源包 audited、累計311筆實際正文／正式書目或摘要頁；本批24筆通過大小、MIME、SHA-256、題名、PDF文字、假頁面與批內重複檢查
+next_action: 依 research/targets.json 順序從 naikan-therapy 開始，繼續採每批2至3項處理其餘6項，不建立正文。非英語只在原始語言、地方傳統或翻譯／版本差異影響正確性時補，不設配額
 ```
 
 ## P3-S COMPLETION RECORD

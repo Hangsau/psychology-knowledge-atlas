@@ -5,34 +5,219 @@
   "slots": {
     "identity_history": {
       "description": "Independent scholarly identity and historical placement",
-      "status": "not_searched"
+      "status": "covered"
     },
     "primary_works": {
       "description": "Primary works or first-generation programme statements",
-      "status": "not_searched"
+      "status": "covered"
     },
     "theory_methods": {
       "description": "Core concepts, methods and internal variants",
-      "status": "not_searched"
+      "status": "covered"
     },
     "independent_critique": {
       "description": "Independent historiography, criticism or boundary analysis",
-      "status": "not_searched"
+      "status": "covered"
     },
     "empirical_status": {
       "description": "Empirical tests, syntheses, replications or current assessment",
-      "status": "not_searched"
+      "status": "covered"
     },
     "current_status": {
       "description": "Contemporary continuation, institutions or present disciplinary status",
-      "status": "not_searched"
+      "status": "covered"
     },
     "cultural_language_context": {
       "description": "Non-English, local, cultural or knowledge-sovereignty context where applicable",
-      "status": "not_searched"
+      "status": "covered"
     }
   },
-  "searches": [],
-  "items": [],
-  "status": "not_started"
+  "searches": [
+    {
+      "searched_at": "2026-07-30",
+      "system": "IndigenousPsych.org / National Central Library Taiwan / NTU and Chinese Journal of Psychology / AIATSIS / SAGE and Wiley indexes / existing independently verified canonical source identities",
+      "queries": [
+        "indigenous psychologies origins development international analysis",
+        "Indigenous and Cultural Psychology Kim Yang Hwang primary programme methods",
+        "本土心理學 楊國樞 方法 實證 成果",
+        "indigenous psychology critical survey Jahoda",
+        "Indigenous research ethics knowledge sovereignty AIATSIS"
+      ],
+      "purpose": "Locate plural international histories, first-generation programme and method accounts, independent criticism, a bounded Chinese empirical-accomplishment review, current institutions and an Indigenous-led research-ethics boundary while distinguishing indigenous psychologies developed within cultural settings from research about Indigenous Peoples, and while refusing to collapse Sikolohiyang Pilipino, Chinese/Taiwanese, Māori, Indian, Korean or other traditions into one culture"
+    }
+  ],
+  "items": [
+    {
+      "id": "allwood-berry-2006-origins-development",
+      "title": "Origins and Development of Indigenous Psychologies: An International Analysis",
+      "slot": "identity_history",
+      "source_kind": "multi_country_scholarly_history_and_status_analysis",
+      "landing_url": "https://onlinelibrary.wiley.com/doi/abs/10.1080/00207590544000013",
+      "download_url": "https://www.indigenouspsych.org/Resources/Allwood%20%26%20Berry.pdf",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Publicly readable author-network copy reports contributors' accounts across multiple countries and global patterns; participant recollections and national summaries are heterogeneous and must not be rewritten as one origin, sequence or definition.",
+      "status": "retrieved",
+      "authors": [
+        "Carl Martin Allwood",
+        "John W. Berry"
+      ],
+      "issued": "2006",
+      "identifiers": {
+        "doi": "10.1080/00207590544000013"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-30T14:11:15+00:00",
+        "sha256": "5e59df8a8087ea7bfae010d6bac2c9d56730d1380c2ba77b85b64ef3da470ccd",
+        "bytes": 287848,
+        "media_type": "application/pdf",
+        "cache_key": ".private-sources/indigenous-psychology/allwood-berry-2006-origins-development.pdf"
+      }
+    },
+    {
+      "id": "kim-yang-hwang-2006-indigenous-cultural-psychology",
+      "title": "Indigenous and Cultural Psychology: Understanding People in Context",
+      "slot": "primary_works",
+      "source_kind": "participant_edited_programme_volume",
+      "landing_url": "https://doi.org/10.1007/0-387-28662-4",
+      "download_url": "https://indigenouspsych.org/Resources/Indigenous%20and%20Cultural%20Psychology%20-%20Understanding%20People%20in%20Context.pdf",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Publicly readable publisher-identified volume contains programme statements, cross-Indigenous method discussion and internal debates; copyrighted body is private-cache only and the edited volume's chapters do not express one unanimous school position.",
+      "status": "retrieved",
+      "authors": [
+        "Uichol Kim",
+        "Kuo-Shu Yang",
+        "Kwang-Kuo Hwang"
+      ],
+      "issued": "2006",
+      "identifiers": {
+        "doi": "10.1007/0-387-28662-4",
+        "isbn": "9780387286624"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-30T14:11:20+00:00",
+        "sha256": "38bef69395c127ede2b49091a4b5d188a7c08cd79e406b8fddcbe2e42a9c4cae",
+        "bytes": 3218791,
+        "media_type": "application/pdf",
+        "cache_key": ".private-sources/indigenous-psychology/kim-yang-hwang-2006-indigenous-cultural-psychology.pdf"
+      }
+    },
+    {
+      "id": "yang-2012-three-psychologies-record",
+      "title": "Indigenous Psychology, Westernized Psychology, and Indigenized Psychology: A Non-Western Psychologist's View",
+      "slot": "theory_methods",
+      "source_kind": "participant_conceptual_boundary_abstract_record",
+      "landing_url": "https://tpl.ncl.edu.tw/NclService/JournalContentDetail?SysId=A12016362",
+      "download_url": "https://tpl.ncl.edu.tw/NclService/JournalContentDetail?SysId=A12016362",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Taiwan National Central Library record and bilingual abstract distinguishes indigenous, Westernized and indigenized psychology and indigenous compatibility; the article body is not treated as retrieved, and this Chinese-psychology framework is not imposed on all local traditions.",
+      "status": "retrieved",
+      "authors": [
+        "Kuo-Shu Yang"
+      ],
+      "issued": "2012",
+      "retrieval": {
+        "retrieved_at": "2026-07-30T14:11:21+00:00",
+        "sha256": "752dea7a30a05a714197f3a15f3f14ef41b404eb9f9e834b532789ab25f0393f",
+        "bytes": 94212,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/indigenous-psychology/yang-2012-three-psychologies-record.html"
+      }
+    },
+    {
+      "id": "jahoda-2016-rise-decline-record",
+      "title": "On the Rise and Decline of Indigenous Psychology",
+      "slot": "independent_critique",
+      "source_kind": "independent_critical_survey_abstract_record",
+      "landing_url": "https://journals.sagepub.com/doi/10.1177/1354067X16634052",
+      "download_url": "https://chooser.crossref.org/?doi=10.1177%2F1354067X16634052",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Publisher record and abstract presents an external critique of definitional inconsistency, abstraction and universal-psychology proposals; restricted article body is not treated as read, and its strong decline thesis remains one contestable interpretation.",
+      "status": "retrieved",
+      "authors": [
+        "Gustav Jahoda"
+      ],
+      "issued": "2016",
+      "identifiers": {
+        "doi": "10.1177/1354067X16634052"
+      },
+      "failure_note": "The SAGE publisher abstract endpoint returned HTTP 403 to the collector; a Crossref DOI selection record was chosen without bypassing access controls.",
+      "retrieval": {
+        "retrieved_at": "2026-07-30T14:12:15+00:00",
+        "sha256": "6ca49071a2d2c78d4e471995b8875d199e2e763f184dfc7d9624695ddf4ab554",
+        "bytes": 4669,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/indigenous-psychology/jahoda-2016-rise-decline-record.html"
+      }
+    },
+    {
+      "id": "yang-1999-indigenous-chinese-accomplishments",
+      "title": "Towards an Indigenous Chinese Psychology: A Selective Review of Methodological, Theoretical, and Empirical Accomplishments",
+      "slot": "empirical_status",
+      "source_kind": "tradition_bounded_participant_empirical_review_record",
+      "landing_url": "https://www.cjpsy.com/academicjournaldetail_tw.php?id=3107",
+      "download_url": "https://www.cjpsy.com/academicjournaldetail_tw.php?id=3107",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Chinese Journal of Psychology record and abstract reviews methodological, theoretical and empirical work in Taiwan, Hong Kong and mainland China; it is a selective participant review, not validation of all constructs or evidence about other indigenous psychologies.",
+      "status": "retrieved",
+      "authors": [
+        "Kuo-Shu Yang"
+      ],
+      "issued": "1999",
+      "retrieval": {
+        "retrieved_at": "2026-07-30T14:11:23+00:00",
+        "sha256": "ec856b3d8fbc1731bec97c8494bfa23e748451a7c47136947ec884ec869984d4",
+        "bytes": 49082,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/indigenous-psychology/yang-1999-indigenous-chinese-accomplishments.html"
+      }
+    },
+    {
+      "id": "indigenouspsych-current-network",
+      "title": "Indigenous Psychology Network",
+      "slot": "current_status",
+      "source_kind": "current_international_participant_network",
+      "landing_url": "https://www.indigenouspsych.org/",
+      "download_url": "https://www.indigenouspsych.org/",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Current participant network documents continuing resources, calls and a plural mission for indigenous psychologies; an informal international network does not define accreditation, represent every local movement or resolve conceptual disputes.",
+      "status": "retrieved",
+      "issued": "retrieved 2026",
+      "retrieval": {
+        "retrieved_at": "2026-07-30T14:11:24+00:00",
+        "sha256": "32ea784d2f94746fd5cf4a1c30351dad574fc686d09fad98c8185358f969d868",
+        "bytes": 12811,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/indigenous-psychology/indigenouspsych-current-network.html"
+      }
+    },
+    {
+      "id": "carroll-etal-2020-care-principles",
+      "title": "The CARE Principles for Indigenous Data Governance",
+      "slot": "cultural_language_context",
+      "source_kind": "indigenous_led_data_governance_principles",
+      "landing_url": "https://doi.org/10.5334/dsj-2020-043",
+      "download_url": "https://www.gida-global.org/s/dsj-1158_carroll.pdf",
+      "access_status": "open_fulltext",
+      "rights_note": "CC BY practice paper developed through Indigenous data-sovereignty networks defines Collective Benefit, Authority to Control, Responsibility and Ethics; it governs Indigenous data rather than every aspect of psychology research, and the cached early proof's article-number placeholder must be resolved to final DOI 10.5334/dsj-2020-043.",
+      "status": "retrieved",
+      "authors": [
+        "Stephanie Russo Carroll",
+        "Ibrahim Garba",
+        "Maui Hudson"
+      ],
+      "issued": "2020",
+      "identifiers": {
+        "doi": "10.5334/dsj-2020-043"
+      },
+      "failure_note": "The preferred AIATSIS 2022 Code PDF and official landing page both returned HTTP 403 to the collector; the open CARE paper was selected as a global data and knowledge-sovereignty boundary without bypassing access controls.",
+      "retrieval": {
+        "retrieved_at": "2026-07-30T14:14:32+00:00",
+        "sha256": "089f272898cab95a251d9f03b2920f6d768ad150f2d3f24d0bc51fa00867be31",
+        "bytes": 2712341,
+        "media_type": "application/pdf",
+        "cache_key": ".private-sources/indigenous-psychology/carroll-etal-2020-care-principles.pdf"
+      }
+    }
+  ],
+  "status": "audited"
 }
