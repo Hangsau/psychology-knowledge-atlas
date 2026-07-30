@@ -9,12 +9,12 @@ status: in_progress
 base_commit: 593551e
 started_at: 2026-07-28
 objective: 先為原版48項研究目標完成可恢復、可稽核的來源蒐集，再開始閱讀、建立主張或撰寫內容
-active_target: art-therapy
+active_target: music-therapy
 canonical_inputs:
   - research/targets.json
   - research/source-packs/*.json
 target_files:
-  - research/source-packs/art-therapy.json
+  - research/source-packs/music-therapy.json
 expected_result: 下一來源包的所有槽位完成搜尋與裁決；合格可讀正文完成私有快取、格式與雜湊稽核；不建立 claims 或 reader prose
 boundaries:
   - legacy repo 只提供48項 identity/order seed；不匯入舊文章、摘要或 verdict
@@ -96,7 +96,15 @@ completed_items:
   - 依附理論保持測量與應用邊界：嬰兒Strange Situation、Adult Attachment Interview與成人浪漫依附自陳量表不互換；依附理論不等同attachment parenting、reactive attachment disorder、generic bonding或具爭議的強制性attachment therapy，統計關聯亦不作個人診斷或決定論預測
   - SUNY作者PDF因TLS主機憑證不符而改存INIST-CNRS正式書目紀錄；CATS的PMC端點回傳Google reCAPTCHA空殼，移除後改存UCL repository的8頁正式版本，均未停用憑證驗證或繞過技術控制
   - 目前36/48來源包 audited、累計260筆實際正文／正式書目或摘要頁；本批18筆通過大小、MIME、SHA-256、題名／PDF文字與假頁面人工判讀
-next_action: 依 research/targets.json 順序從 art-therapy 開始，繼續採每批2至3項處理其餘12項，不建立正文。非英語只在原始語言、地方傳統或翻譯／版本差異影響正確性時補，不設配額
+  - art-therapy 已 audited：9筆正文／正式書目頁，涵蓋英國專業史、Naumburg原典書目、AATA範圍定義、NIHR量化與質性綜整、2024跨適應症RCT meta-analysis、AATA倫理規範、難民兒少證據回顧及當代協會延續
+  - art therapy與arts-in-health、休閒藝術、藝術教育、成人著色及泛expressive arts programmes保持邊界；2024綜整中81%分析結果無效果且整體研究品質低，難民兒少回顧亦判為證據不足，不把探索性合併效果升格為普遍療效
+  - play-therapy 已 audited：9筆正文／正式書目頁，涵蓋獨立歷史章紀錄、Axline 1947原典書目、方法與分支概覽、智力障礙族群機制回顧、CCPT meta-analysis、創傷兒少回顧、PTI倫理框架、加拿大原住民族文化批判及UNT當代研究中心
+  - play therapy與一般遊戲、教育性遊戲、hospital therapeutic play、filial therapy、Theraplay、sandplay及泛play-based intervention保持邊界；CCPT、directive與其他理論分支不視為同一療程，加拿大文章不把First Nations、Métis與Inuit合成單一文化
+  - APT最佳實務PDF與About頁均回傳403，分別改存Play Therapy International可讀倫理框架與University of North Texas正式研究中心頁，保留失敗原因且未繞過存取控制
+  - psychodrama 已 audited：9筆正文／正式書目頁，涵蓋80年計量史、Moreno多卷原典書目、FEPTO方法說明、2019與2025方法批判綜整、中國RCT meta-analysis、FEPTO倫理規範、葡／英／西語巴西回顧及ASGPP當代延續
+  - psychodrama與drama therapy、sociodrama、一般角色扮演、模擬訓練及嵌入其他治療的role-playing techniques保持邊界；近期研究仍缺較多RCT／準實驗，跨族群與跨模型的正向敘述不冒充單一通用效果
+  - 目前39/48來源包 audited、累計287筆實際正文／正式書目或摘要頁；本批27筆均通過大小、MIME、SHA-256、題名、PDF文字、假頁面與批內重複檢查
+next_action: 依 research/targets.json 順序從 music-therapy 開始，繼續採每批2至3項處理其餘9項，不建立正文。非英語只在原始語言、地方傳統或翻譯／版本差異影響正確性時補，不設配額
 ```
 
 ## P3-S COMPLETION RECORD

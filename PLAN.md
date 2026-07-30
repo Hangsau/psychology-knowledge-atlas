@@ -28,7 +28,7 @@
 
 ## 即時階段
 
-目前 active gate 是 P2-SC。48項母表與來源包已建立，前36項已完成搜尋、槽位裁決與可取得來源稽核；下一項是 `art-therapy`。已下載／正式書目或摘要頁只代表來源蒐集，不代表已讀全文、已驗證或可發布。原 P4-M1 已完成，不再是 active work。
+目前 active gate 是 P2-SC。48項母表與來源包已建立，前39項已完成搜尋、槽位裁決與可取得來源稽核；下一項是 `music-therapy`。已下載／正式書目或摘要頁只代表來源蒐集，不代表已讀全文、已驗證或可發布。原 P4-M1 已完成，不再是 active work。
 
 P1、P1-E、P2-E 與 `P3-S` 均已完成並有可執行退出門檻。四個學派 pilots：`structuralism`、`psychoanalysis`、`cbt`、`indigenous-psychology` 已全部完成。P4-V1 coverage comparison 與 P4-V2 bounded chronology 均已完成；下一個 gate 開始前仍須固定讀者問題、canonical input 集合與退出門檻。
 

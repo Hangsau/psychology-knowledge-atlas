@@ -5,42 +5,259 @@
   "slots": {
     "identity_history": {
       "description": "Independent scholarly identity and historical placement",
-      "status": "not_searched"
+      "status": "covered"
     },
     "primary_works": {
       "description": "Primary works or first-generation programme statements",
-      "status": "not_searched"
+      "status": "covered"
     },
     "theory_methods": {
       "description": "Core concepts, methods and internal variants",
-      "status": "not_searched"
+      "status": "covered"
     },
     "independent_critique": {
       "description": "Independent historiography, criticism or boundary analysis",
-      "status": "not_searched"
+      "status": "covered"
     },
     "empirical_status": {
       "description": "Empirical tests, syntheses, replications or current assessment",
-      "status": "not_searched"
+      "status": "covered"
     },
     "current_status": {
       "description": "Contemporary continuation, institutions or present disciplinary status",
-      "status": "not_searched"
+      "status": "covered"
     },
     "clinical_outcomes": {
       "description": "Systematic reviews, meta-analyses or comparative outcome research",
-      "status": "not_searched"
+      "status": "covered"
     },
     "safety_guidelines": {
       "description": "Guidelines, limitations, adverse effects or contraindications",
-      "status": "not_searched"
+      "status": "covered"
     },
     "cultural_language_context": {
       "description": "Non-English, local, cultural or knowledge-sovereignty context where applicable",
-      "status": "not_searched"
+      "status": "covered"
     }
   },
-  "searches": [],
-  "items": [],
-  "status": "not_started"
+  "searches": [
+    {
+      "searched_at": "2026-07-30",
+      "system": "PubMed Central / institutional repositories / Open Library / Association for Play Therapy / First Peoples Child & Family Review / publisher and citation indexes",
+      "queries": [
+        "play therapy history Axline primary work theories directive nondirective",
+        "child centered play therapy methods systematic review meta-analysis",
+        "play therapy trauma outcomes adverse effects best practices ethics",
+        "play therapy cultural responsiveness Indigenous children",
+        "Association for Play Therapy current definition credentials"
+      ],
+      "purpose": "Locate independent history, Axline's foundational record, method and variant boundaries, evidence syntheses, trauma-specific outcomes, professional safety guidance, Indigenous cultural critique and contemporary institutional continuation while excluding ordinary play, educational play, hospital therapeutic play, filial therapy, Theraplay, sandplay and generic play-based interventions unless the source explicitly identifies their relationship to professional psychotherapy"
+    }
+  ],
+  "items": [
+    {
+      "id": "hudspeth-2023-play-therapy-history-record",
+      "title": "Play Therapy: History, Theories, and Research",
+      "slot": "identity_history",
+      "source_kind": "independent_scholarly_history_and_boundary_record",
+      "landing_url": "https://digitalcommons.sacredheart.edu/ced_fac/350/",
+      "download_url": "https://digitalcommons.sacredheart.edu/ced_fac/350/",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Sacred Heart institutional record and abstract for Hudspeth's encyclopedia chapter on history, research and the directive-to-nondirective continuum; the publisher chapter body is not cached or treated as read.",
+      "status": "retrieved",
+      "authors": [
+        "Edward F. Hudspeth"
+      ],
+      "issued": "2023",
+      "identifiers": {
+        "doi": "10.1016/B978-0-323-91497-0.00213-7"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-30T13:44:11+00:00",
+        "sha256": "15c78a4d0e5aef33ed2f7d9fbfa65f21258a176353bbf70745be0c9721209ac1",
+        "bytes": 29087,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/play-therapy/hudspeth-2023-play-therapy-history-record.html"
+      }
+    },
+    {
+      "id": "axline-1947-play-therapy-record",
+      "title": "Play Therapy: The Inner Dynamics of Childhood",
+      "slot": "primary_works",
+      "source_kind": "foundational_participant_book_record",
+      "landing_url": "https://openlibrary.org/books/OL6513138M/Play_therapy",
+      "download_url": "https://openlibrary.org/books/OL6513138M/Play_therapy",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Open Library record for Axline's 1947 nondirective play-therapy text; the copyrighted body is not cached or treated as read, and Axline's approach is an ancestor of child-centered play therapy rather than a synonym for every directive or integrative play therapy.",
+      "status": "retrieved",
+      "authors": [
+        "Virginia Mae Axline"
+      ],
+      "issued": "1947",
+      "identifiers": {
+        "lccn": "47005183",
+        "oclc": "964345",
+        "openlibrary": "OL6513138M"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-30T13:44:16+00:00",
+        "sha256": "c69c4ecd9b1dc8d3791ee1d507f0839ea438b2c40c1e398848d91f184ae110f3",
+        "bytes": 94780,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/play-therapy/axline-1947-play-therapy-record.html"
+      }
+    },
+    {
+      "id": "homeyer-etal-2010-play-therapy-considerations",
+      "title": "Play Therapy: Considerations and Applications for the Practitioner",
+      "slot": "theory_methods",
+      "source_kind": "peer_reviewed_clinical_methods_overview",
+      "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2989834/",
+      "download_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2989834/",
+      "access_status": "open_fulltext",
+      "rights_note": "Open clinical overview describes play as developmentally adapted communication and distinguishes child-centered, psychoanalytic, Jungian, Gestalt and other variants; an overview of diverse practice models is not evidence that their mechanisms or outcomes are equivalent.",
+      "status": "retrieved",
+      "issued": "2010",
+      "identifiers": {
+        "pmcid": "PMC2989834"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-30T13:44:18+00:00",
+        "sha256": "47410c699aa90ec36d6d217d20322289bafb9a4f1cc087447b19e415cfa78778",
+        "bytes": 141388,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/play-therapy/homeyer-etal-2010-play-therapy-considerations.html"
+      }
+    },
+    {
+      "id": "van-der-putten-etal-2022-id-play-therapy-factors-review",
+      "title": "Systematic Review of Common and Specific Factors in Play Therapy for Young People With Intellectual Disability",
+      "slot": "independent_critique",
+      "source_kind": "population_bounded_mechanism_and_evidence_review",
+      "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11062280/",
+      "download_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11062280/",
+      "access_status": "open_fulltext",
+      "rights_note": "Open systematic review examines common and specific factors in work with young people with intellectual disability and warns that prior reviews sometimes combine child-centered and filial approaches; findings cannot be generalized to all children or all play-therapy models.",
+      "status": "retrieved",
+      "issued": "2022",
+      "identifiers": {
+        "pmcid": "PMC11062280"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-30T13:44:21+00:00",
+        "sha256": "7a89e06c572b91ada010a5d2379ad2ee41e28f952f3de24ebf4e123dc14997ed",
+        "bytes": 189779,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/play-therapy/van-der-putten-etal-2022-id-play-therapy-factors-review.html"
+      }
+    },
+    {
+      "id": "lin-bratton-2015-ccpt-meta-analysis",
+      "title": "A Meta-Analytic Review of Child-Centered Play Therapy Approaches",
+      "slot": "empirical_status",
+      "source_kind": "controlled_outcome_meta_analysis",
+      "landing_url": "https://onlinelibrary.wiley.com/doi/abs/10.1002/j.1556-6676.2015.00180.x",
+      "download_url": "https://evidencebasedchildtherapy.com/wp-content/uploads/2023/12/Lin-Bratton-2015.pdf",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Publicly readable copy of a meta-analysis of 52 controlled CCPT studies; the moderate pooled estimate and moderators apply to child-centered approaches in the included designs, not to all therapies involving play, and funding by the Center for Play Therapy is recorded as context.",
+      "status": "retrieved",
+      "issued": "2015",
+      "identifiers": {
+        "doi": "10.1002/j.1556-6676.2015.00180.x"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-30T13:44:25+00:00",
+        "sha256": "0b9c12adf89a7ec7ae14ffb1b63438f9e331057b88b3fffbb71e108d9413a03c",
+        "bytes": 394077,
+        "media_type": "application/pdf",
+        "cache_key": ".private-sources/play-therapy/lin-bratton-2015-ccpt-meta-analysis.pdf"
+      }
+    },
+    {
+      "id": "humble-etal-2018-ccpt-trauma-review",
+      "title": "Child-Centered Play Therapy for Youths Who Have Experienced Trauma: A Systematic Literature Review",
+      "slot": "clinical_outcomes",
+      "source_kind": "trauma_population_systematic_review",
+      "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7163898/",
+      "download_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7163898/",
+      "access_status": "open_fulltext",
+      "rights_note": "Open review found only seven quantitative CCPT outcome articles for trauma-exposed youth, with some consistency for selected outcomes but important design limitations; this does not establish equivalence with trauma-focused CBT or efficacy for PTSD generally.",
+      "status": "retrieved",
+      "issued": "2018",
+      "identifiers": {
+        "doi": "10.1007/s40653-018-0235-7",
+        "pmcid": "PMC7163898"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-30T13:44:27+00:00",
+        "sha256": "1664bd8fc34f41554ff73cba10599c54efa946abf4e9df7971bfe7f3096b1233",
+        "bytes": 179377,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/play-therapy/humble-etal-2018-ccpt-trauma-review.html"
+      }
+    },
+    {
+      "id": "pti-ethical-framework-principles",
+      "title": "Ethical Framework Principles",
+      "slot": "safety_guidelines",
+      "source_kind": "profession_specific_international_ethics_framework",
+      "landing_url": "https://playtherapy.org/Principles/",
+      "download_url": "https://playtherapy.org/Principles/",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Play Therapy International framework places the child's interests first and addresses autonomy, beneficence, non-maleficence, justice, fidelity and self-respect amid competing obligations; it is professional ethical guidance rather than an adverse-event review or local legal standard.",
+      "status": "retrieved",
+      "issued": "retrieved 2026",
+      "failure_note": "The Association for Play Therapy best-practices PDF returned HTTP 403; the publicly readable Play Therapy International ethical framework was selected without bypassing access controls.",
+      "retrieval": {
+        "retrieved_at": "2026-07-30T13:45:21+00:00",
+        "sha256": "eef1094732b356f61a0ef4a747b826a155c0c3458f974d48c293f0f445323151",
+        "bytes": 96041,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/play-therapy/pti-ethical-framework-principles.html"
+      }
+    },
+    {
+      "id": "brady-2015-indigenous-cultural-considerations",
+      "title": "Cultural Considerations in Play Therapy With Aboriginal Children in Canada",
+      "slot": "cultural_language_context",
+      "source_kind": "indigenous_context_practice_critique",
+      "landing_url": "https://fpcfr.com/index.php/FPCFR/article/view/260",
+      "download_url": "https://fpcfr.com/index.php/FPCFR/article/view/260",
+      "access_status": "open_fulltext",
+      "rights_note": "Open First Peoples journal article foregrounds colonial harm, family and community context and the lack of adequate culturally competent practice guidance; it offers considerations rather than evidence that one adaptation represents First Nations, Métis and Inuit peoples collectively.",
+      "status": "retrieved",
+      "authors": [
+        "Megan Caitlin Brady"
+      ],
+      "issued": "2015",
+      "retrieval": {
+        "retrieved_at": "2026-07-30T13:44:34+00:00",
+        "sha256": "fb7494a4a1a8236fc508e051973238e9488393ea099e13ba9b93f60591c9feae",
+        "bytes": 23419,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/play-therapy/brady-2015-indigenous-cultural-considerations.html"
+      }
+    },
+    {
+      "id": "unt-center-play-therapy-current",
+      "title": "Center for Play Therapy",
+      "slot": "current_status",
+      "source_kind": "current_university_research_and_training_center",
+      "landing_url": "https://cpt.unt.edu/",
+      "download_url": "https://cpt.unt.edu/",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Official University of North Texas center page documents current research, training, databases and child-centered play-therapy programmes; one university center's continuation does not define worldwide practice or validate every play-therapy school.",
+      "status": "retrieved",
+      "issued": "retrieved 2026",
+      "failure_note": "The Association for Play Therapy About page returned HTTP 403; the University of North Texas Center for Play Therapy was selected as a readable current institutional source.",
+      "retrieval": {
+        "retrieved_at": "2026-07-30T13:45:25+00:00",
+        "sha256": "9b7dfcbab150a7b7bb3432f743761165efd61e7d5071fa90ac4d31547844ac43",
+        "bytes": 75879,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/play-therapy/unt-center-play-therapy-current.html"
+      }
+    }
+  ],
+  "status": "audited"
 }

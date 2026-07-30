@@ -5,42 +5,267 @@
   "slots": {
     "identity_history": {
       "description": "Independent scholarly identity and historical placement",
-      "status": "not_searched"
+      "status": "covered"
     },
     "primary_works": {
       "description": "Primary works or first-generation programme statements",
-      "status": "not_searched"
+      "status": "covered"
     },
     "theory_methods": {
       "description": "Core concepts, methods and internal variants",
-      "status": "not_searched"
+      "status": "covered"
     },
     "independent_critique": {
       "description": "Independent historiography, criticism or boundary analysis",
-      "status": "not_searched"
+      "status": "covered"
     },
     "empirical_status": {
       "description": "Empirical tests, syntheses, replications or current assessment",
-      "status": "not_searched"
+      "status": "covered"
     },
     "current_status": {
       "description": "Contemporary continuation, institutions or present disciplinary status",
-      "status": "not_searched"
+      "status": "covered"
     },
     "clinical_outcomes": {
       "description": "Systematic reviews, meta-analyses or comparative outcome research",
-      "status": "not_searched"
+      "status": "covered"
     },
     "safety_guidelines": {
       "description": "Guidelines, limitations, adverse effects or contraindications",
-      "status": "not_searched"
+      "status": "covered"
     },
     "cultural_language_context": {
       "description": "Non-English, local, cultural or knowledge-sovereignty context where applicable",
-      "status": "not_searched"
+      "status": "covered"
     }
   },
-  "searches": [],
-  "items": [],
-  "status": "not_started"
+  "searches": [
+    {
+      "searched_at": "2026-07-30",
+      "system": "PubMed Central and PLOS / Open Library / FEPTO and ASGPP / SciELO and PePSIC / Cambridge and publisher indexes",
+      "queries": [
+        "psychodrama Moreno history primary works sociometry group psychotherapy",
+        "psychodrama methods protagonist director auxiliary ego warm up action sharing",
+        "psychodrama systematic review meta-analysis effectiveness methodological quality",
+        "psychodrama code ethics safety contraindications group confidentiality",
+        "psychodrama Portuguese Spanish Chinese research cultural context"
+      ],
+      "purpose": "Locate independent field history, Moreno's foundational bibliographic record, classical process and participant requirements, methodological critique, recent intervention syntheses, Chinese randomized evidence, Portuguese-language review, ethics and current institutions while excluding drama therapy, sociodrama, ordinary role-play, simulation training and role-playing techniques embedded in another psychotherapy unless psychodrama itself is the intervention under review"
+    }
+  ],
+  "items": [
+    {
+      "id": "burk-etal-2021-eighty-years-psychodrama-research",
+      "title": "Surveying 80 Years of Psychodrama Research: A Scientometric Review",
+      "slot": "identity_history",
+      "source_kind": "independent_scientometric_field_history",
+      "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8634339/",
+      "download_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8634339/",
+      "access_status": "open_fulltext",
+      "rights_note": "Open scientometric review maps publication history, influential works and research clusters across eight decades; citation prominence describes field development and does not establish therapeutic validity or a single linear origin.",
+      "status": "retrieved",
+      "issued": "2021",
+      "identifiers": {
+        "doi": "10.3389/fpsyt.2021.780542",
+        "pmcid": "PMC8634339"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-30T13:46:58+00:00",
+        "sha256": "3c1fdfaec0bfb12364e235eee27b0a676ee21a05739d9f8648be826041bf8081",
+        "bytes": 310176,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/psychodrama/burk-etal-2021-eighty-years-psychodrama-research.html"
+      }
+    },
+    {
+      "id": "moreno-1964-psychodrama-record",
+      "title": "Psychodrama",
+      "slot": "primary_works",
+      "source_kind": "foundational_participant_multivolume_book_record",
+      "landing_url": "https://openlibrary.org/books/OL47071870M/Psychodrama",
+      "download_url": "https://openlibrary.org/books/OL47071870M/Psychodrama",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Open Library record for a third-edition multivolume Moreno set covering psychodrama, foundations and action therapy; the copyrighted body is not cached or treated as read, and the 1964 edition must not be backdated wholesale to the earliest development of the method.",
+      "status": "retrieved",
+      "authors": [
+        "J. L. Moreno"
+      ],
+      "issued": "1964 third edition",
+      "identifiers": {
+        "oclc": "3941828",
+        "openlibrary": "OL47071870M"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-30T13:47:02+00:00",
+        "sha256": "852820eebb43528248126981380cb0db007d9ec94acdce93d673635205f25a24",
+        "bytes": 80621,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/psychodrama/moreno-1964-psychodrama-record.html"
+      }
+    },
+    {
+      "id": "karp-fepto-what-is-psychodrama",
+      "title": "What Is Psychodrama: An Introduction to Psychodrama",
+      "slot": "theory_methods",
+      "source_kind": "participant_professional_method_overview",
+      "landing_url": "https://fepto.com/what-is-psychodrama/",
+      "download_url": "https://fepto.com/what-is-psychodrama/",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "FEPTO-hosted introduction describes present-tense enactment, protagonist, director, auxiliaries, stage and participation capacities including reality contact and impulse control; it is a participant method account, not comparative evidence or a universal eligibility rule.",
+      "status": "retrieved",
+      "authors": [
+        "Marcia Karp"
+      ],
+      "issued": "retrieved 2026",
+      "retrieval": {
+        "retrieved_at": "2026-07-30T13:47:07+00:00",
+        "sha256": "61b06818aee98b99afcfa9521bf67cb6b0d1183cadbc10fd9614a8bf7800aeb7",
+        "bytes": 177151,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/psychodrama/karp-fepto-what-is-psychodrama.html"
+      }
+    },
+    {
+      "id": "orkibi-feniger-schaal-2019-integrative-review",
+      "title": "Integrative Systematic Review of Psychodrama Psychotherapy Research: Trends and Methodological Implications",
+      "slot": "independent_critique",
+      "source_kind": "methodologically_critical_integrative_systematic_review",
+      "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6380607/",
+      "download_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6380607/",
+      "access_status": "open_fulltext",
+      "rights_note": "Open PLOS review found 31 intervention publications from 2007–2017 across heterogeneous methods and outcomes, emphasizing scarce intervention research and reporting, bias and mechanism limitations; promising results are not a pooled universal effect.",
+      "status": "retrieved",
+      "authors": [
+        "Hod Orkibi",
+        "Rinat Feniger-Schaal"
+      ],
+      "issued": "2019",
+      "identifiers": {
+        "doi": "10.1371/journal.pone.0212575",
+        "pmcid": "PMC6380607",
+        "pmid": "30779787"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-30T13:47:09+00:00",
+        "sha256": "e065d06fd5c237f0fb9996c8b9e6083b112eb48d08b8255cf43d60a4f47575ea",
+        "bytes": 318334,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/psychodrama/orkibi-feniger-schaal-2019-integrative-review.html"
+      }
+    },
+    {
+      "id": "maya-etal-2025-psychodrama-systematic-review",
+      "title": "Psychodrama: Implementation, Study Design and Effectiveness: A Systematic Review",
+      "slot": "empirical_status",
+      "source_kind": "recent_intervention_systematic_review",
+      "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12224369/",
+      "download_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12224369/",
+      "access_status": "open_fulltext",
+      "rights_note": "CC BY-NC-ND review of 27 studies published from 2018–2022 maps implementation and outcomes but reports continuing scarcity of randomized and quasi-experimental designs; varied populations, models and techniques prevent treating psychodrama as one standardized protocol.",
+      "status": "retrieved",
+      "issued": "2025",
+      "identifiers": {
+        "doi": "10.1186/s12906-025-04959-y",
+        "pmcid": "PMC12224369",
+        "pmid": "40611192"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-30T13:47:12+00:00",
+        "sha256": "4dde18a243815eee0e7442af5de38f06b65b883da64938fdd83a9f42193971cc",
+        "bytes": 218693,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/psychodrama/maya-etal-2025-psychodrama-systematic-review.html"
+      }
+    },
+    {
+      "id": "wang-etal-2024-chinese-psychodrama-meta-analysis",
+      "title": "Effectiveness of Psychodrama on Mental Health Outcomes Based on Chinese Samples: A Systematic Review and Meta-Analysis of Randomized Controlled Studies",
+      "slot": "clinical_outcomes",
+      "source_kind": "country_bounded_randomized_study_meta_analysis",
+      "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11704573/",
+      "download_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11704573/",
+      "access_status": "open_fulltext",
+      "rights_note": "CC BY synthesis of randomized studies in Chinese samples separates symptom alleviation from well-being promotion and notes too few eligible studies for several moderator and sensitivity analyses; estimates cannot be generalized outside the included Chinese contexts or to non-psychodrama drama interventions.",
+      "status": "retrieved",
+      "authors": [
+        "Xiaohui Wang",
+        "Rui Ding",
+        "Rui Luo"
+      ],
+      "issued": "2024",
+      "identifiers": {
+        "doi": "10.1017/gmh.2024.89",
+        "pmcid": "PMC11704573"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-30T13:47:15+00:00",
+        "sha256": "42eae45c9fc56885a0676a64c2eceabff0b44c5b43efc73fa4cb6435914f3020",
+        "bytes": 226749,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/psychodrama/wang-etal-2024-chinese-psychodrama-meta-analysis.html"
+      }
+    },
+    {
+      "id": "fepto-code-ethics-practice",
+      "title": "Code of Ethics and Practice for Psychodramatists",
+      "slot": "safety_guidelines",
+      "source_kind": "profession_specific_ethics_and_practice_code",
+      "landing_url": "https://fepto.com/code-of-ethics-and-practice/",
+      "download_url": "https://fepto.com/code-of-ethics-and-practice/",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "FEPTO code addresses competence, contracts, confidentiality, boundaries, supervision, insurance and complaints for psychodramatists; it is professional guidance rather than adverse-event surveillance and does not replace national regulation or the ethics of a practitioner's licensed profession.",
+      "status": "retrieved",
+      "issued": "retrieved 2026",
+      "retrieval": {
+        "retrieved_at": "2026-07-30T13:47:19+00:00",
+        "sha256": "33b5acaacc2603f4479fe787103cd1b337b9102f5b5dd0d5f71b2a461daa7ca7",
+        "bytes": 161594,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/psychodrama/fepto-code-ethics-practice.html"
+      }
+    },
+    {
+      "id": "fernandes-etal-2021-portuguese-interventions-review",
+      "title": "Intervenções em Psicodrama: Uma Revisão Sistemática",
+      "slot": "cultural_language_context",
+      "source_kind": "portuguese_spanish_abstracted_systematic_review",
+      "landing_url": "https://www.scielo.br/j/psicodrama/a/qZSnnZpDP3YLbBhNTCvsBHP/?format=html",
+      "download_url": "https://www.scielo.br/j/psicodrama/a/qZSnnZpDP3YLbBhNTCvsBHP/?format=html",
+      "access_status": "open_fulltext",
+      "rights_note": "Open Portuguese article with Portuguese, English and Spanish abstracts reviews 34 interventions across varied populations and sometimes combined theories; positive narrative conclusions and resource limitations do not supply a homogeneous effect estimate or isolate psychodrama components.",
+      "status": "retrieved",
+      "issued": "2021",
+      "identifiers": {
+        "doi": "10.15329/2318-0498.21992"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-30T13:47:22+00:00",
+        "sha256": "86c55499254d16143c178ccc570986efc9ce35517d84f8941d2600a211671703",
+        "bytes": 190512,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/psychodrama/fernandes-etal-2021-portuguese-interventions-review.html"
+      }
+    },
+    {
+      "id": "asgpp-current-association",
+      "title": "About the American Society of Group Psychotherapy and Psychodrama",
+      "slot": "current_status",
+      "source_kind": "current_professional_association_self_description",
+      "landing_url": "https://asgpp.org/about-us/",
+      "download_url": "https://asgpp.org/about-us/",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Official ASGPP page documents contemporary education, dissemination and professional-standards functions for psychodrama, sociometry and group psychotherapy; institutional continuation does not make those three fields synonymous or validate particular interventions.",
+      "status": "retrieved",
+      "issued": "retrieved 2026",
+      "retrieval": {
+        "retrieved_at": "2026-07-30T13:47:26+00:00",
+        "sha256": "da3101e0dcb0efa80416d9789c86cf47a4b5e1f5c655647cb410fec834cce79c",
+        "bytes": 221016,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/psychodrama/asgpp-current-association.html"
+      }
+    }
+  ],
+  "status": "audited"
 }

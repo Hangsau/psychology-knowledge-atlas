@@ -5,42 +5,257 @@
   "slots": {
     "identity_history": {
       "description": "Independent scholarly identity and historical placement",
-      "status": "not_searched"
+      "status": "covered"
     },
     "primary_works": {
       "description": "Primary works or first-generation programme statements",
-      "status": "not_searched"
+      "status": "covered"
     },
     "theory_methods": {
       "description": "Core concepts, methods and internal variants",
-      "status": "not_searched"
+      "status": "covered"
     },
     "independent_critique": {
       "description": "Independent historiography, criticism or boundary analysis",
-      "status": "not_searched"
+      "status": "covered"
     },
     "empirical_status": {
       "description": "Empirical tests, syntheses, replications or current assessment",
-      "status": "not_searched"
+      "status": "covered"
     },
     "current_status": {
       "description": "Contemporary continuation, institutions or present disciplinary status",
-      "status": "not_searched"
+      "status": "covered"
     },
     "clinical_outcomes": {
       "description": "Systematic reviews, meta-analyses or comparative outcome research",
-      "status": "not_searched"
+      "status": "covered"
     },
     "safety_guidelines": {
       "description": "Guidelines, limitations, adverse effects or contraindications",
-      "status": "not_searched"
+      "status": "covered"
     },
     "cultural_language_context": {
       "description": "Non-English, local, cultural or knowledge-sovereignty context where applicable",
-      "status": "not_searched"
+      "status": "covered"
     }
   },
-  "searches": [],
-  "items": [],
-  "status": "not_started"
+  "searches": [
+    {
+      "searched_at": "2026-07-30",
+      "system": "PubMed Central and NCBI Bookshelf / Open Library / Routledge / American Art Therapy Association / refugee and multilingual literature indexes",
+      "queries": [
+        "art therapy history Naumburg Kramer primary works profession",
+        "art therapy definition methods psychotherapeutic relationship scope",
+        "art therapy systematic review meta-analysis effectiveness adverse effects",
+        "art therapy ethics client artwork consent confidentiality",
+        "art therapy refugees cultural context systematic review"
+      ],
+      "purpose": "Locate professional history, foundational participant work, a current scope definition, independent quantitative and qualitative syntheses, adverse-effect and ethics material, refugee-context evidence and contemporary institutional continuation while excluding arts-in-health, recreational art, art education, adult colouring and expressive-arts programmes unless a source explicitly identifies a professionally delivered visual art therapy component"
+    }
+  ],
+  "items": [
+    {
+      "id": "waller-1991-becoming-art-therapy-profession-record",
+      "title": "Becoming a Profession: The History of Art Therapy in Britain 1940–82",
+      "slot": "identity_history",
+      "source_kind": "scholarly_professional_history_publisher_record",
+      "landing_url": "https://www.routledge.com/Becoming-a-Profession-Psychology-Revivals-The-History-of-Art-Therapy/Waller/p/book/9780203750209",
+      "download_url": "https://www.routledge.com/Becoming-a-Profession-Psychology-Revivals-The-History-of-Art-Therapy/Waller/p/book/9780203750209",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Publisher record and contents for Diane Waller's history of British art therapy professionalization from 1940 to 1982; the copyrighted book body is not cached or treated as read, and a British institutional history is not a universal origin story.",
+      "status": "retrieved",
+      "authors": [
+        "Diane Waller"
+      ],
+      "issued": "1991; publisher reissue record",
+      "identifiers": {
+        "isbn": "9780203750209"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-30T13:42:23+00:00",
+        "sha256": "409e1602267f3ea8c23c5feb61051194469ecc2c3d0b9b377f18e4e9f7ee5ed2",
+        "bytes": 163414,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/art-therapy/waller-1991-becoming-art-therapy-profession-record.html"
+      }
+    },
+    {
+      "id": "naumburg-1974-introduction-art-therapy-record",
+      "title": "Introduction to Art Therapy",
+      "slot": "primary_works",
+      "source_kind": "foundational_participant_book_record",
+      "landing_url": "https://openlibrary.org/books/OL9452051M/Introduction_to_Art_Therapy",
+      "download_url": "https://openlibrary.org/books/OL9452051M/Introduction_to_Art_Therapy",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Open Library record for Margaret Naumburg's participant text; the copyrighted book body is not cached or treated as read, and Naumburg's dynamically oriented approach is one early route rather than the definition of every later art-therapy model.",
+      "status": "retrieved",
+      "authors": [
+        "Margaret Naumburg"
+      ],
+      "issued": "1974",
+      "identifiers": {
+        "isbn": "9780807724125",
+        "lccn": "73078074",
+        "openlibrary": "OL9452051M"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-30T13:42:28+00:00",
+        "sha256": "e6c99640028eef2e257c3dff62b42351e884a6bbf8ca6dba46c2cc9af5441958",
+        "bytes": 79596,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/art-therapy/naumburg-1974-introduction-art-therapy-record.html"
+      }
+    },
+    {
+      "id": "aata-about-art-therapy",
+      "title": "About Art Therapy",
+      "slot": "theory_methods",
+      "source_kind": "professional_scope_and_method_definition",
+      "landing_url": "https://arttherapy.org/about-art-therapy/",
+      "download_url": "https://arttherapy.org/about-art-therapy/",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "AATA's current professional definition distinguishes art therapy within a psychotherapeutic relationship, delivered by trained art therapists, from art activities, colouring products and training by non-art therapists; it is a professional self-definition, not independent outcome evidence.",
+      "status": "retrieved",
+      "issued": "retrieved 2026",
+      "retrieval": {
+        "retrieved_at": "2026-07-30T13:42:31+00:00",
+        "sha256": "e596a5d5f322329ed1aa5e7991e1b86f2d8f41a48fa755bead861b5accaec88b",
+        "bytes": 176207,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/art-therapy/aata-about-art-therapy.html"
+      }
+    },
+    {
+      "id": "uttley-etal-2015-qualitative-harms-review",
+      "title": "The Acceptability and Relative Benefits and Potential Harms of Art Therapy: Qualitative Systematic Review",
+      "slot": "independent_critique",
+      "source_kind": "independent_qualitative_systematic_review",
+      "landing_url": "https://www.ncbi.nlm.nih.gov/books/NBK279642/",
+      "download_url": "https://www.ncbi.nlm.nih.gov/books/NBK279642/",
+      "access_status": "open_fulltext",
+      "rights_note": "NIHR qualitative synthesis of service-user and provider perspectives for non-psychotic mental health disorders identifies acceptability limits and unresolved evoked feelings among potential harms; it is condition- and evidence-base-specific rather than a universal contraindication list.",
+      "status": "retrieved",
+      "issued": "2015",
+      "identifiers": {
+        "ncbi_bookshelf": "NBK279642",
+        "pmid": "27257043"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-30T13:42:35+00:00",
+        "sha256": "adff9f1d30ff303898d75b60078a9dc5ee0e5fcce4d765bfc1cd5ee505eec272",
+        "bytes": 141339,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/art-therapy/uttley-etal-2015-qualitative-harms-review.html"
+      }
+    },
+    {
+      "id": "joschko-etal-2024-active-visual-art-meta-analysis",
+      "title": "Active Visual Art Therapy and Health Outcomes: A Systematic Review and Meta-Analysis",
+      "slot": "empirical_status",
+      "source_kind": "randomized_trial_systematic_review_and_meta_analysis",
+      "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11393726/",
+      "download_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11393726/",
+      "access_status": "open_fulltext",
+      "rights_note": "CC BY synthesis of 69 randomized studies across heterogeneous populations and outcomes found benefits for some outcomes but 81% of analyzed outcomes showed no effect and overall study quality was low; exploratory pooled effects cannot be assigned to every diagnosis or art-therapy protocol.",
+      "status": "retrieved",
+      "issued": "2024",
+      "identifiers": {
+        "doi": "10.1001/jamanetworkopen.2024.28709",
+        "pmcid": "PMC11393726",
+        "pmid": "39264631"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-30T13:42:38+00:00",
+        "sha256": "96b8860070b487e27b626eea6d21bf256b4d1e916e4cf38a760c9828b8ffe6b4",
+        "bytes": 233639,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/art-therapy/joschko-etal-2024-active-visual-art-meta-analysis.html"
+      }
+    },
+    {
+      "id": "uttley-etal-2015-clinical-effectiveness-review",
+      "title": "Clinical Effectiveness of Art Therapy: Quantitative Systematic Review",
+      "slot": "clinical_outcomes",
+      "source_kind": "health_technology_assessment_quantitative_review",
+      "landing_url": "https://www.ncbi.nlm.nih.gov/books/NBK279641/",
+      "download_url": "https://www.ncbi.nlm.nih.gov/books/NBK279641/",
+      "access_status": "open_fulltext",
+      "rights_note": "NIHR review of art therapy for non-psychotic mental health disorders reports a small and heterogeneous trial base and little adverse-event reporting; absence of reported adverse events is not evidence of absence, and results do not cover psychosis or all visual-art interventions.",
+      "status": "retrieved",
+      "issued": "2015",
+      "identifiers": {
+        "ncbi_bookshelf": "NBK279641"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-30T13:42:41+00:00",
+        "sha256": "087efc4d3a0e92d5083ab907b243f4d4976ed790704d79c3436af0fd9c243d45",
+        "bytes": 160966,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/art-therapy/uttley-etal-2015-clinical-effectiveness-review.html"
+      }
+    },
+    {
+      "id": "aata-ethical-principles-art-therapists",
+      "title": "Ethical Principles for Art Therapists",
+      "slot": "safety_guidelines",
+      "source_kind": "profession_specific_ethics_code",
+      "landing_url": "https://arttherapy.org/ethics/",
+      "download_url": "https://arttherapy.org/wp-content/uploads/2017/06/Ethical-Principles-for-Art-Therapists.pdf",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "AATA ethics document covers client welfare, competence, informed consent, confidentiality, storage and display of client artwork, boundaries and cultural responsibility; it is aspirational professional guidance rather than an adverse-event study or substitute for local law and licensing rules.",
+      "status": "retrieved",
+      "issued": "2013 revision; retrieved 2026",
+      "retrieval": {
+        "retrieved_at": "2026-07-30T13:42:45+00:00",
+        "sha256": "a64088889bc013deb2b009093112579fed580dd70be1bfe539e64763d48e13fc",
+        "bytes": 474410,
+        "media_type": "application/pdf",
+        "cache_key": ".private-sources/art-therapy/aata-ethical-principles-art-therapists.pdf"
+      }
+    },
+    {
+      "id": "annous-etal-2022-refugee-art-therapy-review",
+      "title": "A Systematic Review of Empirical Evidence on Art Therapy With Traumatized Refugee Children and Youth",
+      "slot": "cultural_language_context",
+      "source_kind": "forced_migration_context_systematic_review",
+      "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9189733/",
+      "download_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9189733/",
+      "access_status": "open_fulltext",
+      "rights_note": "Open review of refugee trauma studies judged the evidence insufficient under CEC standards and notes mixed intervention components and weak controls; forced-migration findings cannot establish broad cross-cultural efficacy or erase differences among refugee communities.",
+      "status": "retrieved",
+      "issued": "2022",
+      "identifiers": {
+        "doi": "10.3389/fpsyg.2022.811515",
+        "pmcid": "PMC9189733"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-30T13:42:48+00:00",
+        "sha256": "537770d107e784fed6c3a7f9ab2a9eaee0cd880464a8c8c5f0447bfadff36f82",
+        "bytes": 205084,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/art-therapy/annous-etal-2022-refugee-art-therapy-review.html"
+      }
+    },
+    {
+      "id": "aata-current-association",
+      "title": "About the American Art Therapy Association",
+      "slot": "current_status",
+      "source_kind": "current_professional_association_self_description",
+      "landing_url": "https://arttherapy.org/about/",
+      "download_url": "https://arttherapy.org/about/",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Official page documents AATA's present membership, education, research, advocacy and professional-regulation functions; a United States association's continuation does not define worldwide regulation or validate particular interventions.",
+      "status": "retrieved",
+      "issued": "retrieved 2026",
+      "retrieval": {
+        "retrieved_at": "2026-07-30T13:42:51+00:00",
+        "sha256": "1bf2fd39f1ba667ad6d928fa836ae14d248ab268e4bf2f78807ec9b4c4687a23",
+        "bytes": 160211,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/art-therapy/aata-current-association.html"
+      }
+    }
+  ],
+  "status": "audited"
 }
