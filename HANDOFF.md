@@ -9,12 +9,12 @@ status: in_progress
 base_commit: 593551e
 started_at: 2026-07-28
 objective: 先為原版48項研究目標完成可恢復、可稽核的來源蒐集，再開始閱讀、建立主張或撰寫內容
-active_target: cultural-historical-psychology
+active_target: multicultural-feminist-therapy
 canonical_inputs:
   - research/targets.json
   - research/source-packs/*.json
 target_files:
-  - research/source-packs/cultural-historical-psychology.json
+  - research/source-packs/multicultural-feminist-therapy.json
 expected_result: 下一來源包的所有槽位完成搜尋與裁決；合格可讀正文完成私有快取、格式與雜湊稽核；不建立 claims 或 reader prose
 boundaries:
   - legacy repo 只提供48項 identity/order seed；不匯入舊文章、摘要或 verdict
@@ -77,7 +77,12 @@ completed_items:
   - Nature端點回傳3 KB Client Challenge空殼，移除後改存作者網站完整PDF；USP PDF端點逾時，改用同DOI的SciELO官方PDF，Gergen舊全文連結404則只保留Swarthmore正式摘要頁，均未繞過存取控制
   - 8筆取得物通過大小、MIME、SHA-256、題名、PDF文字與假頁面檢查；葡語與巴西地方研究保留語言、地域、方法及知識主權邊界
   - 目前31/48來源包 audited、累計215筆實際正文／正式書目或摘要頁
-next_action: 依 research/targets.json 順序從 cultural-historical-psychology 開始，繼續採較大批次處理其餘17項，不建立正文。非英語只在原始語言、地方傳統或翻譯／版本差異影響正確性時補，不設配額
+  - cultural-historical-psychology 已 audited：9筆正文／正式書目或摘要頁，涵蓋Kharkov學派修正史、Vygotsky 1962英譯書目與俄文原典重刊、百年理論方法綜述、revisionist論集及其批判回應、Vygotsky-Sakharov方法重做、俄文至葡語版本比較與當代專業期刊延續
+  - Vygotsky本人的文化—歷史理論、Kharkov後繼研究、Leontiev／Engeström活動理論、廣義sociocultural learning、scaffolding與social constructivism保持範圍邊界；197名莫斯科學童的單一方法研究不升格為整個學派的實證驗證
+  - PubMed回傳reCAPTCHA頁，改用Europe PMC core XML；並由正式紀錄抓出候選Springer DOI錯誤，修正為APA DOI 10.1037/1093-4510.11.2.101，未繞過技術控制
+  - 俄文重刊PDF可視閱讀但舊字型編碼造成自動抽字亂碼，已明記readability邊界；其餘取得物通過大小、MIME、SHA-256、題名、PDF文字、XML解析與假頁面檢查
+  - 目前32/48來源包 audited、累計224筆實際正文／正式書目或摘要頁
+next_action: 依 research/targets.json 順序從 multicultural-feminist-therapy 開始，繼續採較大批次處理其餘16項，不建立正文。非英語只在原始語言、地方傳統或翻譯／版本差異影響正確性時補，不設配額
 ```
 
 ## P3-S COMPLETION RECORD

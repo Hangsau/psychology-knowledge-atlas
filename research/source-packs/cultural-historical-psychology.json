@@ -5,34 +5,240 @@
   "slots": {
     "identity_history": {
       "description": "Independent scholarly identity and historical placement",
-      "status": "not_searched"
+      "status": "covered"
     },
     "primary_works": {
       "description": "Primary works or first-generation programme statements",
-      "status": "not_searched"
+      "status": "covered"
     },
     "theory_methods": {
       "description": "Core concepts, methods and internal variants",
-      "status": "not_searched"
+      "status": "covered"
     },
     "independent_critique": {
       "description": "Independent historiography, criticism or boundary analysis",
-      "status": "not_searched"
+      "status": "covered"
     },
     "empirical_status": {
       "description": "Empirical tests, syntheses, replications or current assessment",
-      "status": "not_searched"
+      "status": "covered"
     },
     "current_status": {
       "description": "Contemporary continuation, institutions or present disciplinary status",
-      "status": "not_searched"
+      "status": "covered"
     },
     "cultural_language_context": {
       "description": "Non-English, local, cultural or knowledge-sovereignty context where applicable",
-      "status": "not_searched"
+      "status": "covered"
     }
   },
-  "searches": [],
-  "items": [],
-  "status": "not_started"
+  "searches": [
+    {
+      "searched_at": "2026-07-30",
+      "system": "PsyJournals / Europe PMC / Open Library / Routledge / ISCAR / HSE research portal / publisher and citation indexes",
+      "queries": [
+        "cultural-historical psychology Vygotsky history primary works Russian English",
+        "Vygotsky higher mental functions double stimulation cultural historical method",
+        "Vygotsky revisionist history Kharkov school translation critique",
+        "cultural-historical psychology empirical replication systematic review",
+        "культурно-историческая психология Выготский история метод перевод"
+      ],
+      "purpose": "Locate Vygotsky primary and edition records, independent post-Vygotskian historiography, theory and double-stimulation method sources, a bounded contemporary empirical re-use, present institutional continuation and Russian-to-English/Portuguese translation analysis while keeping Vygotsky's cultural-historical theory distinct from later Leontiev/Engeström activity theory, broad sociocultural learning theory, scaffolding, social constructivism and generic culturally informed psychology"
+    }
+  ],
+  "items": [
+    {
+      "id": "yasnitsky-ferrari-2008-kharkov-history",
+      "title": "Rethinking the Early History of Post-Vygotskian Psychology: The Case of the Kharkov School",
+      "slot": "identity_history",
+      "source_kind": "independent_historiography_abstract_record",
+      "landing_url": "https://pubmed.ncbi.nlm.nih.gov/19048970/",
+      "download_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:19048970&resultType=core&format=xml",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Official Europe PMC bibliographic and abstract record for independent historiography of the post-1934 Kharkov school; the abstract does not establish the full argument, and the Kharkov line is not treated as identical to Vygotsky's own programme.",
+      "status": "retrieved",
+      "issued": "2008",
+      "identifiers": {
+        "doi": "10.1037/1093-4510.11.2.101",
+        "pmid": "19048970"
+      },
+      "failure_note": "The PubMed landing page presented a reCAPTCHA shell to automated access on 2026-07-30; the official Europe PMC core record endpoint was selected without attempting to solve or bypass the challenge. A candidate Springer DOI was rejected after the Europe PMC record identified the correct APA DOI.",
+      "retrieval": {
+        "retrieved_at": "2026-07-30T04:17:40+00:00",
+        "sha256": "5ba956772dd68b2def50713ec883aa094bf6faea5f1d1f34e9b0d90c28f24e5b",
+        "bytes": 5564,
+        "media_type": "application/xml",
+        "cache_key": ".private-sources/cultural-historical-psychology/yasnitsky-ferrari-2008-kharkov-history.xml"
+      }
+    },
+    {
+      "id": "vygotsky-1962-thought-language-book-record",
+      "title": "Thought and Language",
+      "slot": "primary_works",
+      "source_kind": "foundational_translation_book_record",
+      "landing_url": "https://openlibrary.org/books/OL5827658M/Thought_and_language.",
+      "download_url": "https://openlibrary.org/books/OL5827658M/Thought_and_language.",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Open Library record for the 1962 MIT Press English edition translated from Myshlenie i rech; preview access does not authorize caching or treating the copyrighted book body as read, and later sources document abridgement and translation problems.",
+      "status": "retrieved",
+      "issued": "1962 English edition",
+      "identifiers": {
+        "lccn": "61015594",
+        "openlibrary": "OL5827658M"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-30T04:16:30+00:00",
+        "sha256": "9f811b77c7b3ef943eeb2042497e4d21b7285aa14a677d73802be92f203387e9",
+        "bytes": 92934,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/cultural-historical-psychology/vygotsky-1962-thought-language-book-record.html"
+      }
+    },
+    {
+      "id": "vygotsky-1996-higher-functions-russian-reprint",
+      "title": "History of the Development of Higher Mental Functions",
+      "slot": "primary_works",
+      "source_kind": "foundational_russian_reprint",
+      "landing_url": "https://psyjournals.ru/en/journals/pse/archive/1996_n2/Vygotsky",
+      "download_url": "https://psyjournals.ru/journals/pse/archive/1996_n2/pse_1996_n2_Vygotsky.pdf",
+      "access_status": "open_fulltext",
+      "rights_note": "CC BY-NC 4.0 Russian journal reprint of a Vygotsky text on the cultural development of higher mental functions; the 1996 publication date is a reprint date, not the date of original composition. The PDF is visually readable but uses a legacy Cyrillic encoding that produces mojibake in automated extraction, and the machine-linked English translation is not treated as an authoritative edition.",
+      "status": "retrieved",
+      "issued": "1996 reprint",
+      "retrieval": {
+        "retrieved_at": "2026-07-30T04:18:47+00:00",
+        "sha256": "2f53442acf67254344e679c233b330053cf9e755c65698b8ce4019bda2b0af12",
+        "bytes": 70395,
+        "media_type": "application/pdf",
+        "cache_key": ".private-sources/cultural-historical-psychology/vygotsky-1996-higher-functions-russian-reprint.pdf"
+      }
+    },
+    {
+      "id": "rubtsov-zaretsky-maidansky-2024-century-overview",
+      "title": "100 Years of the Development of Cultural-Historical Psychology: Milestones and Directions",
+      "slot": "theory_methods",
+      "source_kind": "participant_scholarly_centennial_overview",
+      "landing_url": "https://psyjournals.ru/en/journals/chp/archive/2024_n3/Rubtsov_et_al",
+      "download_url": "https://psyjournals.ru/en/journals/chp/archive/2024_n3/Rubtsov_et_al",
+      "access_status": "open_fulltext",
+      "rights_note": "CC BY-NC 4.0 centennial overview by senior participants maps signs, higher psychological functions, personality, cooperation and double stimulation; it is an internal synthetic account and not independent validation of the school.",
+      "status": "retrieved",
+      "issued": "2024",
+      "identifiers": {
+        "doi": "10.17759/chp.2024200301"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-30T04:16:34+00:00",
+        "sha256": "9a1d12afcb666718e035b6445e07f3346da2504a7dbdda8163bdf6b6bab3aaba",
+        "bytes": 82928,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/cultural-historical-psychology/rubtsov-zaretsky-maidansky-2024-century-overview.html"
+      }
+    },
+    {
+      "id": "yasnitsky-van-der-veer-2016-revisionist-book-record",
+      "title": "Revisionist Revolution in Vygotsky Studies: The State of the Art",
+      "slot": "independent_critique",
+      "source_kind": "independent_critical_edited_book_record",
+      "landing_url": "https://www.routledge.com/Revisionist-Revolution-in-Vygotsky-Studies-The-State-of-the-Art/Yasnitsky-Veer/p/book/9781138929692",
+      "download_url": "https://www.routledge.com/Revisionist-Revolution-in-Vygotsky-Studies-The-State-of-the-Art/Yasnitsky-Veer/p/book/9781138929692",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Publisher description and contents for a revisionist edited volume addressing chronology, authorship, archives, suppression narratives and translation; the copyrighted chapters are not cached or treated as read, and later critics contest parts of this revisionist programme.",
+      "status": "retrieved",
+      "issued": "2016",
+      "identifiers": {
+        "isbn": "9781138929692"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-30T04:16:35+00:00",
+        "sha256": "735c94ee46cc799ffab14a624a90d0bb7dc7a862875880d67a8cd1effd8aece3",
+        "bytes": 167372,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/cultural-historical-psychology/yasnitsky-van-der-veer-2016-revisionist-book-record.html"
+      }
+    },
+    {
+      "id": "maidansky-2021-revisionist-revolution-critique",
+      "title": "The Revisionist Revolution and Future Prospects of Vygotskian Studies",
+      "slot": "independent_critique",
+      "source_kind": "critical_response_fulltext",
+      "landing_url": "https://psyjournals.ru/en/journals/chp/archive/2021_n2/Maidansky",
+      "download_url": "https://psyjournals.ru/en/journals/chp/archive/2021_n2/Maidansky",
+      "access_status": "open_fulltext",
+      "rights_note": "CC BY-NC 4.0 critical response challenges elements of Yasnitsky's revisionist project and its proposed cultural-historical Gestalt psychology; retaining both sides records a live historiographical dispute rather than selecting one camp as settled fact.",
+      "status": "retrieved",
+      "issued": "2021",
+      "identifiers": {
+        "doi": "10.17759/chp.2021170202"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-30T04:19:13+00:00",
+        "sha256": "b5b894621063c8ea5556c57bd569c96e493b1e998c5a5f1315b404c2dab4a743",
+        "bytes": 75511,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/cultural-historical-psychology/maidansky-2021-revisionist-revolution-critique.html"
+      }
+    },
+    {
+      "id": "vucicevic-shumakova-2020-vygotsky-sakharov",
+      "title": "Intellectual Development of Elementary Schoolchildren and Their Performance on the Vygotsky-Sakharov Method",
+      "slot": "empirical_status",
+      "source_kind": "contemporary_method_replication_study",
+      "landing_url": "https://psyjournals.ru/en/journals/chp/archive/2020_n4/Vucicevic_Shumakova",
+      "download_url": "https://psyjournals.ru/en/journals/chp/archive/2020_n4/chp_2020_n4_Vucicevic_Shumakova_en.pdf",
+      "access_status": "open_fulltext",
+      "rights_note": "CC BY-NC 4.0 study of 197 Moscow first- and third-grade pupils that attempts to reproduce the Vygotsky-Sakharov double-stimulation task and reports partial correspondence; this tests one method and sample, not cultural-historical psychology as a unified theory.",
+      "status": "retrieved",
+      "issued": "2020",
+      "identifiers": {
+        "doi": "10.17759/chp.2020160407"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-07-30T04:16:38+00:00",
+        "sha256": "cb7edac2b6e443f949b595b0a1794829553f6409d94fad271d3361b62bc4c86f",
+        "bytes": 231803,
+        "media_type": "application/pdf",
+        "cache_key": ".private-sources/cultural-historical-psychology/vucicevic-shumakova-2020-vygotsky-sakharov.pdf"
+      }
+    },
+    {
+      "id": "prestes-tunes-2012-vygotsky-translations",
+      "title": "Works of Vygotsky and His Translations: Discussing Some Concepts",
+      "slot": "cultural_language_context",
+      "source_kind": "russian_portuguese_edition_comparison",
+      "landing_url": "https://psyjournals.ru/en/journals/chp/archive/2012_n3/56453",
+      "download_url": "https://psyjournals.ru/en/journals/chp/archive/2012_n3/56453",
+      "access_status": "open_fulltext",
+      "rights_note": "CC BY-NC 4.0 comparison of Russian editions and Brazilian Portuguese translations documents omissions, added material and contested renderings such as zona blizhaishego razvitiia; its proposed translation is an argued choice, not a universal terminological settlement.",
+      "status": "retrieved",
+      "issued": "2012",
+      "retrieval": {
+        "retrieved_at": "2026-07-30T04:16:40+00:00",
+        "sha256": "6baaaa08da2584236d978b1786c9b3f06208ba0d1fe3e35b7ddffd5a3eb0693a",
+        "bytes": 75998,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/cultural-historical-psychology/prestes-tunes-2012-vygotsky-translations.html"
+      }
+    },
+    {
+      "id": "psyjournals-cultural-historical-psychology-current",
+      "title": "Cultural-Historical Psychology: Journal About and Scope",
+      "slot": "current_status",
+      "source_kind": "current_journal_self_description",
+      "landing_url": "https://psyjournals.ru/en/journals/chp",
+      "download_url": "https://psyjournals.ru/en/journals/chp",
+      "access_status": "open_fulltext",
+      "rights_note": "Current Moscow State University of Psychology and Education journal self-description records quarterly Russian/English publication, open access and ISCAR affiliation; it demonstrates an active publication venue, not agreement across variants or empirical validity.",
+      "status": "retrieved",
+      "issued": "retrieved 2026",
+      "retrieval": {
+        "retrieved_at": "2026-07-30T04:16:41+00:00",
+        "sha256": "27b2122f3d98a5f9fde62a77d6ec4206bce8c2f873059203930b0eea482367ca",
+        "bytes": 39510,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/cultural-historical-psychology/psyjournals-cultural-historical-psychology-current.html"
+      }
+    }
+  ],
+  "status": "audited"
 }
