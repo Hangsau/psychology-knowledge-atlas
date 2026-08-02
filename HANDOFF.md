@@ -9,12 +9,12 @@ status: in_progress
 base_commit: 593551e
 started_at: 2026-07-28
 objective: 先為原版48項研究目標完成可恢復、可稽核的來源蒐集，再開始閱讀、建立主張或撰寫內容
-active_target: naikan-therapy
+active_target: positive-psychology
 canonical_inputs:
   - research/targets.json
   - research/source-packs/*.json
 target_files:
-  - research/source-packs/naikan-therapy.json
+  - research/source-packs/positive-psychology.json
 expected_result: 下一來源包的所有槽位完成搜尋與裁決；合格可讀正文完成私有快取、格式與雜湊稽核；不建立 claims 或 reader prose
 boundaries:
   - legacy repo 只提供48項 identity/order seed；不匯入舊文章、摘要或 verdict
@@ -111,7 +111,13 @@ completed_items:
   - 古典住院四階段、後期對話式門診、英國8至12節改編與Constructive Living保持邊界；Cochrane納入研究小、偏差風險高且不良事件報告不足，安全／禁忌專屬來源搜尋後無合格材料，明記searched_no_qualifying_source
   - Springer兩個不同文章端點回傳同一3 KB Client Challenge殼，均移除並改存PMC正文與德國國家圖書館PDF；AIATSIS PDF與頁面403後以CARE原始論文補資料主權邊界，SAGE批判文章403後只存Crossref正式DOI紀錄，未繞過技術控制
   - 目前42/48來源包 audited、累計311筆實際正文／正式書目或摘要頁；本批24筆通過大小、MIME、SHA-256、題名、PDF文字、假頁面與批內重複檢查
-next_action: 依 research/targets.json 順序從 naikan-therapy 開始，繼續採每批2至3項處理其餘6項，不建立正文。非英語只在原始語言、地方傳統或翻譯／版本差異影響正確性時補，不設配額
+  - naikan-therapy 已 audited：12筆正文／正式書目或摘要頁，涵蓋維也納大學宗教學獨立專章與竹元隆洋日本學會史、吉本伊信1957與1975原典NDL紀錄、川原隆造方法論、Ozawa-de Silva世俗化批判、田代等長期憂鬱摘要與Qian等唾液oxytocin／cortisol研究、Zhang等思覺失調症輔助RCT、日本内観学会認定制度與沿革、榛木美恵子國際化日文研究
+  - naikan與morita-therapy分屬獨立目標，未共用任一來源；亦與一般感恩練習、正念、慈心與西方自我反思材料保持邊界。淨土真宗「身調べ」與吉本世俗化「内観」分開登錄（竹元含兩者對照表、Pokorny記明身調べ知識僅來自吉本本人陳述）；集中內觀（一週、每日約15小時）與日常／分散內觀分開，兩項成效研究皆為中國改編式給予（Zhang為20次×2小時住院輔助、Qian為連續5天），不當作日本一週住宿式內觀的證據
+  - 安全／禁忌槽位標 searched_no_qualifying_source：日本内観学会1995倫理規程只有責任、秘密保持與利益衝突，無不良事件、篩選或中止協定；日文禁忌說法只溯及無引用的百科段落與商業機構頁；精神神経学雑誌2019全文須登入
+  - 牛津研究百科Chilson條目的公開PDF自帶「Subscriber: OUP-Reference Gratis Access／Personal use only」限制，刪除快取改標 excluded；改用的Crossref unixref transform雖回200但無Content-Type，collector無法歸類故一併標 excluded，最後以維也納大學自存專章（Religion in Austria vol.6, pp.161–218）補獨立學術身分；oxfordre landing導向Cloudflare未繞過
+  - 日本内観学会一個4.8 KB近空頁移除，改存認定制度與沿革兩頁；WebFetch對日文頁摘要曾杜撰刊名與年份，改以urllib取原始位元組並以shift_jis解碼核對
+  - 目前43/48來源包 audited、累計323筆實際正文／正式書目或摘要頁；本包12筆通過大小、MIME、SHA-256、題名、PDF文字（pypdf）、假頁面與包內重複檢查
+next_action: 依 research/targets.json 順序從 positive-psychology 開始，繼續採每批2至3項處理其餘5項，不建立正文。非英語只在原始語言、地方傳統或翻譯／版本差異影響正確性時補，不設配額
 ```
 
 ## P3-S COMPLETION RECORD

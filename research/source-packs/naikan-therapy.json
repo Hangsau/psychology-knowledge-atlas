@@ -5,42 +5,426 @@
   "slots": {
     "identity_history": {
       "description": "Independent scholarly identity and historical placement",
-      "status": "not_searched"
+      "status": "covered"
     },
     "primary_works": {
       "description": "Primary works or first-generation programme statements",
-      "status": "not_searched"
+      "status": "covered"
     },
     "theory_methods": {
       "description": "Core concepts, methods and internal variants",
-      "status": "not_searched"
+      "status": "covered"
     },
     "independent_critique": {
       "description": "Independent historiography, criticism or boundary analysis",
-      "status": "not_searched"
+      "status": "covered"
     },
     "empirical_status": {
       "description": "Empirical tests, syntheses, replications or current assessment",
-      "status": "not_searched"
+      "status": "covered"
     },
     "current_status": {
       "description": "Contemporary continuation, institutions or present disciplinary status",
-      "status": "not_searched"
+      "status": "covered"
     },
     "clinical_outcomes": {
       "description": "Systematic reviews, meta-analyses or comparative outcome research",
-      "status": "not_searched"
+      "status": "covered"
     },
     "safety_guidelines": {
       "description": "Guidelines, limitations, adverse effects or contraindications",
-      "status": "not_searched"
+      "status": "searched_no_qualifying_source"
     },
     "cultural_language_context": {
       "description": "Non-English, local, cultural or knowledge-sovereignty context where applicable",
-      "status": "not_searched"
+      "status": "covered"
     }
   },
-  "searches": [],
-  "items": [],
-  "status": "not_started"
+  "searches": [
+    {
+      "searched_at": "2026-08-03",
+      "system": "WebSearch / Oxford Research Encyclopedia of Religion / National Diet Library Search / Japan Naikan Association",
+      "queries": [
+        "Naikan therapy Yoshimoto Ishin history Jodo Shinshu mishirabe origins scholarly",
+        "Clark Chilson Naikan meditation self-cultivation Shin Buddhism article academic",
+        "日本内観学会 内観療法 吉本伊信 原典 国立国会図書館",
+        "吉本伊信 内観法 1965 春秋社 NDL ndlsearch 書誌"
+      ],
+      "purpose": "Locate independent scholarly placement of Naikan, Yoshimoto Ishin's own first-generation programme statements and the current Japanese professional body, while keeping the Jōdo Shinshū antecedent mishirabe distinct from Yoshimoto's secularised method and excluding Morita therapy, generic gratitude exercises, mindfulness and Western self-reflection material"
+    },
+    {
+      "searched_at": "2026-08-03",
+      "system": "J-STAGE / PubMed and PMC / NCBI E-utilities / Kinki University institutional repository / Journal of the Japanese Society of Psychiatry and Neurology",
+      "queries": [
+        "内観療法 適応 禁忌 副作用 注意点 集中内観 精神科 論文 J-STAGE",
+        "Naikan therapy 内観療法 systematic review empirical outcomes PubMed",
+        "\"Naikan\" systematic review effectiveness studies quality evidence psychotherapy Japan review of research",
+        "\"Naikan\" schizophrenia single-blind randomized controlled trial adjunctive one-year follow-up PubMed PMID",
+        "Naikan therapy randomized controlled trial meta-analysis addiction alcohol effectiveness review",
+        "J-STAGE 内観研究 \"内観療法\" 適応 限界 治療構造 精神神経学雑誌 2019 121巻 内観"
+      ],
+      "purpose": "Locate method descriptions that separate intensive residential Naikan (集中内観) from daily or dispersed Naikan (日常内観／分散内観), Japanese-origin empirical work and controlled outcome research; the addiction meta-analysis query returned only unrelated pharmacological and CBT syntheses and no Naikan-specific systematic review or meta-analysis was found"
+    },
+    {
+      "searched_at": "2026-08-03",
+      "system": "WebSearch / Wiley Online Library / University of Pittsburgh Bioethics course resources / Japanese Wikipedia (discovery seed only) / Keio University Hospital KOMPAS",
+      "queries": [
+        "Ozawa-de Silva \"Naikan\" secularizing religious practices subjectivity existential transformation",
+        "Naikan critique criticism guilt indebtedness amae conformity Japanese psychotherapy critical analysis scholar",
+        "Naikan prison correctional Japan coercion ethics critique voluntary offender rehabilitation scholarly",
+        "内観療法 有害事象 危険性 適応外 中断 精神症状 悪化 報告 論文",
+        "\"Naikan\" intensive retreat adverse effects contraindications \"not suitable\" psychosis dissociation caution practitioner guideline English"
+      ],
+      "purpose": "Locate independent boundary analysis of the religious-to-secular transition and any inspectable adverse-event, screening or contraindication guideline; Japanese-language contraindication claims about schizophrenia, borderline personality disorder and suicidal ideation were traced only to an uncited encyclopedia paragraph and to commercial clinic and retreat pages, so no qualifying safety source was selected"
+    },
+    {
+      "searched_at": "2026-08-03",
+      "system": "WebSearch / Crossref REST API / University of Vienna Department of Religious Studies repository / Praesens Verlag series page",
+      "queries": [
+        "Naikan Yoshimoto Ishin history Buddhist origins open access journal article scholarly 2024",
+        "Pokorny \"Naikan in Austria: Background and Early Years\" 2021 \"Religion in Austria\" volume"
+      ],
+      "purpose": "Replace the rights-excluded Oxford encyclopedia printout with an independent scholarly identity source that can be cached lawfully; the Crossref unixref transform of the Oxford DOI was tried first and returned a valid record with no Content-Type header, which the collector cannot classify, so a self-archived University of Vienna religious-studies chapter was selected instead while continuing to exclude Morita therapy, gratitude-intervention and mindfulness material"
+    }
+  ],
+  "items": [
+    {
+      "id": "chilson-2018-naikan-meditation-and-psychotherapy",
+      "title": "Naikan: A Meditation Method and Psychotherapy",
+      "slot": "identity_history",
+      "source_kind": "independent_scholarly_encyclopedia_article",
+      "landing_url": "https://oxfordre.com/religion/display/10.1093/acrefore/9780199340378.001.0001/acrefore-9780199340378-e-570",
+      "download_url": "https://www.bioethics.pitt.edu/sites/default/files/publication-images/Messer2019/Resources/Session%202%20Chilson%202018%20Naikan%20OUP.pdf",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Excluded after inspection: the publicly posted course copy is a subscriber printout whose own header states 'Subscriber: OUP-Reference Gratis Access' and 'Personal use only; commercial use is strictly prohibited', matching the terms under which earlier packs excluded publisher digital editions. The cached body was deleted and the entry survives only as an excluded DOI-level pointer, so this article's account of the mishirabe-to-Naikan transition is registered but not treated as read; independent scholarly identity is instead carried by the self-archived Pokorny 2021 chapter.",
+      "status": "excluded",
+      "authors": [
+        "Clark Chilson"
+      ],
+      "issued": "2018",
+      "identifiers": {
+        "doi": "10.1093/acrefore/9780199340378.013.570"
+      }
+    },
+    {
+      "id": "chilson-2018-naikan-encyclopedia-crossref-record",
+      "title": "Naikan: A Meditation Method and Psychotherapy (Crossref record)",
+      "slot": "identity_history",
+      "source_kind": "official_bibliographic_record",
+      "landing_url": "https://doi.org/10.1093/acrefore/9780199340378.013.570",
+      "download_url": "https://api.crossref.org/works/10.1093%2Facrefore%2F9780199340378.013.570/transform/application/vnd.crossref.unixref+xml",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Excluded on retrieval grounds, not rights grounds: the Crossref unixref transform answers 200 with the correct record but sends no Content-Type header, so the collector classifies it as an unsupported media type and no body can be cached honestly. The DOI is retained on the excluded Chilson entry above and independent scholarly identity is carried by the Pokorny 2021 chapter instead.",
+      "status": "excluded",
+      "authors": [
+        "Clark Chilson"
+      ],
+      "issued": "2018",
+      "identifiers": {
+        "doi": "10.1093/acrefore/9780199340378.013.570"
+      }
+    },
+    {
+      "id": "pokorny-2021-naikan-in-austria-background",
+      "title": "Naikan in Austria: Background and Early Years, 1980-1986",
+      "slot": "identity_history",
+      "source_kind": "independent_scholarly_book_chapter",
+      "landing_url": "https://rw-ktf.univie.ac.at/en/research/religion-in-austria/",
+      "download_url": "https://rw-ktf.univie.ac.at/fileadmin/user_upload/i_religionswiss/Naikan_in_Austria._Background_and_Early_Years__1980-1986__Lukas_Pokorny_2021_.pdf",
+      "access_status": "repository_manuscript",
+      "rights_note": "Author-affiliated copy self-archived on the University of Vienna Department of Religious Studies site of a chapter in Religion in Austria vol. 6 (Praesens Verlag, pp. 161-218). It is independent religious-studies scholarship, and its Japanese-origins section records that knowledge of mishirabe rests exclusively on Yoshimoto's own accounts; the bulk of the chapter is an Austrian micro-history built partly on practitioner interviews and a private Naikan archive, so its European organisational detail is not evidence about Japanese practice or about clinical effect.",
+      "status": "retrieved",
+      "authors": [
+        "Lukas Pokorny"
+      ],
+      "issued": "2021",
+      "retrieval": {
+        "retrieved_at": "2026-08-02T23:33:44+00:00",
+        "sha256": "39d1353dd7255373c7bb2134c143b7b97c398442f02a0a1ced9f0ccfcb1acf4b",
+        "bytes": 2428159,
+        "media_type": "application/pdf",
+        "cache_key": ".private-sources/naikan-therapy/pokorny-2021-naikan-in-austria-background.pdf"
+      }
+    },
+    {
+      "id": "takemoto-2021-naikan-history-and-society-founding",
+      "title": "内観の歴史と内観学会の誕生",
+      "slot": "identity_history",
+      "source_kind": "participant_historical_account",
+      "landing_url": "https://www.jstage.jst.go.jp/article/jna/27/1/27_5/_article/-char/ja/",
+      "download_url": "https://www.jstage.jst.go.jp/article/jna/27/1/27_5/_pdf",
+      "access_status": "open_fulltext",
+      "rights_note": "Open J-STAGE Japanese account of Naikan's history and of the 1978 founding of the Japan Naikan Association, written by the psychiatrist who convened that first congress (not by Naikan's founder Yoshimoto). It is first-hand participant historiography by an interested party and is retained for dating, sequence and its mishirabe-versus-Naikan comparison table, not as independent assessment of Naikan's origins, claims or standing.",
+      "status": "retrieved",
+      "authors": [
+        "竹元隆洋"
+      ],
+      "issued": "2021",
+      "identifiers": {
+        "doi": "10.34593/jna.27.1_5"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-08-02T23:33:46+00:00",
+        "sha256": "87e0963ec2853c1f24fd524b4b98437dcceffea823e38f1ca0be0494edea37ed",
+        "bytes": 1018636,
+        "media_type": "application/pdf",
+        "cache_key": ".private-sources/naikan-therapy/takemoto-2021-naikan-history-and-society-founding.pdf"
+      }
+    },
+    {
+      "id": "yoshimoto-1975-naikanho-ndl-record",
+      "title": "内観法",
+      "slot": "primary_works",
+      "source_kind": "founder_book_bibliographic_record",
+      "landing_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000001133482",
+      "download_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000001133482",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "National Diet Library record for Yoshimoto's own 1975 Naikan Kenshūjo volume; the bibliographic record is cached rather than substituting the later Shunjūsha reissues (1989, 1997, 2000, 2007) or any English secondary account for the founder's Japanese text, and the record is not the book body.",
+      "status": "retrieved",
+      "authors": [
+        "吉本伊信"
+      ],
+      "issued": "1975",
+      "identifiers": {
+        "ndl_bib_id": "000001133482",
+        "jpno": "69014867",
+        "ndl_call_number": "SB237-63"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-08-02T23:21:36+00:00",
+        "sha256": "0dd242d7dc54aaf8d181ff7c2fa47a5d321556c16260123869bec51aa2ef90d6",
+        "bytes": 298457,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/naikan-therapy/yoshimoto-1975-naikanho-ndl-record.html"
+      }
+    },
+    {
+      "id": "yoshimoto-1957-transmission-manual-ndl-record",
+      "title": "内観法の傳え方 : 矯正職員・学校教師用",
+      "slot": "primary_works",
+      "source_kind": "founder_programme_manual_bibliographic_record",
+      "landing_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000011100494",
+      "download_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000011100494",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "National Diet Library record for Yoshimoto's self-published 40-page 1957 manual addressed to correctional officers and schoolteachers; it documents that correctional and educational transmission is an early founder-authored programme statement, not a later clinical adaptation. Existence of the manual says nothing about voluntariness or outcomes in those settings.",
+      "status": "retrieved",
+      "authors": [
+        "吉本伊信"
+      ],
+      "issued": "1957",
+      "identifiers": {
+        "ndl_bib_id": "000011100494",
+        "jpno": "21874371",
+        "ndl_call_number": "Y95-M77-3777"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-08-02T23:21:36+00:00",
+        "sha256": "ca9299318e5e775941a88a3a109829e3aef7b025a3e32bf54f0f664632c9ceac",
+        "bytes": 183600,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/naikan-therapy/yoshimoto-1957-transmission-manual-ndl-record.html"
+      }
+    },
+    {
+      "id": "kawahara-2002-principles-and-applications",
+      "title": "内観療法の原理と応用",
+      "slot": "theory_methods",
+      "source_kind": "participant_authored_method_review",
+      "landing_url": "https://www.jstage.jst.go.jp/article/jjpm/42/6/42_KJ00002380065/_article/-char/ja/",
+      "download_url": "https://www.jstage.jst.go.jp/article/jjpm/42/6/42_KJ00002380065/_pdf",
+      "access_status": "open_fulltext",
+      "rights_note": "Open Japanese psychosomatic-medicine review of the three Naikan questions, the external structure of intensive Naikan and the separate dispersed or daily form for outpatients; it is written by a Naikan clinician-proponent, so its account of therapeutic process and its list of indications are method description, not outcome evidence.",
+      "status": "retrieved",
+      "authors": [
+        "川原隆造"
+      ],
+      "issued": "2002",
+      "identifiers": {
+        "doi": "10.15064/jjpm.42.6_355"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-08-02T23:21:38+00:00",
+        "sha256": "9bf73efe28ae4846c1bbfe6120c599c9319a8c13c458a85de8473217c58347a0",
+        "bytes": 1011059,
+        "media_type": "application/pdf",
+        "cache_key": ".private-sources/naikan-therapy/kawahara-2002-principles-and-applications.pdf"
+      }
+    },
+    {
+      "id": "ozawa-de-silva-2010-secularizing-religious-practices",
+      "title": "Secularizing Religious Practices: A Study of Subjectivity and Existential Transformation in Naikan Therapy",
+      "slot": "independent_critique",
+      "source_kind": "independent_ethnographic_boundary_analysis",
+      "landing_url": "https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1468-5906.2010.01497.x",
+      "download_url": "https://bioethics.pitt.edu/sites/default/files/publication-images/Messer2019/Resources/Session%202%20Ozawa-de%20Silva.pdf",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Ethnographic analysis of Naikan in Japan and Austria that interrogates how far the removal of explicit Buddhist references makes the practice secular; it is a boundary analysis of the religion-to-therapy transition, not efficacy evidence, and the Wiley version is paywalled so this publicly posted university course copy is cached privately only with an unclear publisher licence.",
+      "status": "retrieved",
+      "authors": [
+        "Chikako Ozawa-de Silva"
+      ],
+      "issued": "2010",
+      "identifiers": {
+        "doi": "10.1111/j.1468-5906.2010.01497.x"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-08-02T23:21:51+00:00",
+        "sha256": "9a50f447d15d99f8afb42d47e601e0f827a020ba357305ffb387590d51ae1733",
+        "bytes": 150534,
+        "media_type": "application/pdf",
+        "cache_key": ".private-sources/naikan-therapy/ozawa-de-silva-2010-secularizing-religious-practices.pdf"
+      }
+    },
+    {
+      "id": "tashiro-etal-2004-prolonged-depression-abstract-record",
+      "title": "[Naikan therapy for prolonged depression: psychological changes and long-term efficacy of intensive Naikan therapy]",
+      "slot": "empirical_status",
+      "source_kind": "official_bibliographic_abstract_record",
+      "landing_url": "https://pubmed.ncbi.nlm.nih.gov/15179795/",
+      "download_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=15179795&retmode=xml",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "NCBI E-utilities record for a Japanese-language study of intensive Naikan in 23 inpatients with prolonged depression; only the official abstract record was obtained, the Japanese full text was not read, and the authors' comparison with Morita therapy, interpersonal therapy and group psychotherapy is an uncontrolled between-study claim.",
+      "status": "retrieved",
+      "authors": [
+        "Shuji Tashiro",
+        "Shinji Hosoda",
+        "Ryuzo Kawahara"
+      ],
+      "issued": "2004",
+      "identifiers": {
+        "pmid": "15179795"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-08-02T23:21:52+00:00",
+        "sha256": "813c31ddbf159cafd7ceaa8c34952eb52144ba01a9a8bb35f2ea441091424e01",
+        "bytes": 7195,
+        "media_type": "text/xml",
+        "cache_key": ".private-sources/naikan-therapy/tashiro-etal-2004-prolonged-depression-abstract-record.xml"
+      }
+    },
+    {
+      "id": "qian-etal-2025-salivary-oxytocin-cortisol",
+      "title": "Investigating the psychophysiological effects of NaiKan Therapy: salivary oxytocin and cortisol release",
+      "slot": "empirical_status",
+      "source_kind": "open_access_uncontrolled_psychophysiological_study",
+      "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11893859/",
+      "download_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11893859/",
+      "access_status": "open_fulltext",
+      "rights_note": "CC BY study of 60 adults in Shanghai undergoing five consecutive days of Naikan, reporting salivary oxytocin increase and cortisol decrease; it has no randomised control condition, uses a five-day Chinese delivery rather than the Japanese one-week residential form, and its authors flag short follow-up and limited generalisability beyond East Asian samples.",
+      "status": "retrieved",
+      "authors": [
+        "Ming Qian",
+        "Minghui Wang",
+        "Siyi Song",
+        "Hui Zhang"
+      ],
+      "issued": "2025",
+      "identifiers": {
+        "doi": "10.3389/fnint.2025.1476654",
+        "pmcid": "PMC11893859"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-08-02T23:21:53+00:00",
+        "sha256": "bf5e5730b105b79b62b4461bcb91be8d5cb945ae082b75ecf7a60646214e8061",
+        "bytes": 192722,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/naikan-therapy/qian-etal-2025-salivary-oxytocin-cortisol.html"
+      }
+    },
+    {
+      "id": "zhang-etal-2015-schizophrenia-adjunctive-rct",
+      "title": "Single-blind, randomized controlled trial of effectiveness of Naikan therapy as an adjunctive treatment for schizophrenia over a one-year follow-up period",
+      "slot": "clinical_outcomes",
+      "source_kind": "single_blind_randomized_controlled_trial",
+      "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4621287/",
+      "download_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4621287/",
+      "access_status": "open_fulltext",
+      "rights_note": "CC BY-NC-SA trial of 235 Shanghai inpatients receiving twenty two-hour Naikan sessions over four weeks in addition to antipsychotic medication and routine rehabilitation; it tests an adjunctive Chinese inpatient delivery, not intensive residential Japanese Naikan, and the authors record selection to educated inpatients, modified intention-to-treat exclusion of early dropouts and self-reported adherence as limits. No Naikan-specific systematic review or meta-analysis was located for this slot.",
+      "status": "retrieved",
+      "authors": [
+        "Hong Zhang",
+        "Chenhu Li",
+        "Liyu Zhao",
+        "Guilai Zhan"
+      ],
+      "issued": "2015",
+      "identifiers": {
+        "doi": "10.11919/j.issn.1002-0829.215055",
+        "pmid": "26549958",
+        "pmcid": "PMC4621287"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-08-02T23:21:54+00:00",
+        "sha256": "26df897d2bdd2a871af6ce57de5dbfc78d37d4b93d27e328d642f3916960d731",
+        "bytes": 148705,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/naikan-therapy/zhang-etal-2015-schizophrenia-adjunctive-rct.html"
+      }
+    },
+    {
+      "id": "japan-naikan-association-certification-scheme",
+      "title": "日本内観学会認定医師・認定心理療法士・認定内観面接士 新規申請の手順",
+      "slot": "current_status",
+      "source_kind": "current_professional_society_certification_scheme",
+      "landing_url": "https://jpnaikan.jp/authorize/index.html",
+      "download_url": "https://jpnaikan.jp/authorize/index.html",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Japan Naikan Association's current requirements for its three credentials (certified physician, certified psychotherapist, certified Naikan interviewer), each requiring personal completion of intensive Naikan at an association-accredited facility plus society membership, conference presentations and workshops; a credential scheme defines who may claim the title and does not establish efficacy, nor is it an adverse-event or contraindication guideline. The society's separate 1995 ethics regulation covers confidentiality, competence and conflict of interest only.",
+      "status": "retrieved",
+      "issued": "scheme operating since 2018; retrieved 2026",
+      "failure_note": "The society's 日本内観学会について landing page was retrieved first but its cached body contained only the navigation and the society's name section, so it was deleted and replaced by this substantive current institutional document.",
+      "retrieval": {
+        "retrieved_at": "2026-08-02T23:23:57+00:00",
+        "sha256": "c1c6c347231923fae90adac346ca4f05b3ac4748c1785cae8d61a1031fb4577c",
+        "bytes": 11351,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/naikan-therapy/japan-naikan-association-certification-scheme.html"
+      }
+    },
+    {
+      "id": "japan-naikan-association-chronology",
+      "title": "日本内観学会 沿革",
+      "slot": "current_status",
+      "source_kind": "professional_society_self_reported_chronology",
+      "landing_url": "https://jpnaikan.jp/guide/enkaku.html",
+      "download_url": "https://jpnaikan.jp/guide/enkaku.html",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Society chronology dating the three Naikan questions to 1968, the society's founding to 1978, its designation as a cooperative academic research body of the Science Council of Japan to 2015 and the 2017 merger of the Japan Naikan Association with the Japan Naikan Medical Association; it is an interested self-account and its remark that practical recognition outpaced proof of effectiveness is the society's own framing, not an external assessment.",
+      "status": "retrieved",
+      "issued": "retrieved 2026",
+      "retrieval": {
+        "retrieved_at": "2026-08-02T23:23:57+00:00",
+        "sha256": "9d4d6d0af6b69c5cda5aeac451a5c1af5b8023570893b0bf91beecf56b989083",
+        "bytes": 7132,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/naikan-therapy/japan-naikan-association-chronology.html"
+      }
+    },
+    {
+      "id": "hariki-2009-birth-and-internationalization",
+      "title": "〈心理療法の展開〉日本の心理療法 : 内観法の誕生と国際化",
+      "slot": "cultural_language_context",
+      "source_kind": "japanese_language_repository_review",
+      "landing_url": "https://kindai.repo.nii.ac.jp/records/13575",
+      "download_url": "https://kindai.repo.nii.ac.jp/record/13575/files/AA1248107X-20090930-0025.pdf",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Japanese-language institutional-repository article on the birth of Naikan and its movement abroad; it is retained because Japanese terminology, the Jōdo Shinshū background and export or translation of the format bear on interpretation, and its account of internationalisation is descriptive rather than evidence of cross-cultural equivalence.",
+      "status": "retrieved",
+      "authors": [
+        "榛木美恵子"
+      ],
+      "issued": "2009",
+      "identifiers": {
+        "oai": "oai:kindai.repo.nii.ac.jp:00013575"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-08-02T23:21:57+00:00",
+        "sha256": "69b3ffa93fac77f383915fe79215a92d783c7bc12a0d3070aa2b3d87afe83d44",
+        "bytes": 1079602,
+        "media_type": "application/pdf",
+        "cache_key": ".private-sources/naikan-therapy/hariki-2009-birth-and-internationalization.pdf"
+      }
+    }
+  ],
+  "status": "audited"
 }
