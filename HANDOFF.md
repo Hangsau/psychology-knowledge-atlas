@@ -10,6 +10,10 @@ base_commit: 593551e
 started_at: 2026-07-28
 objective: 先為原版48項研究目標完成可恢復、可稽核的來源蒐集，再開始閱讀、建立主張或撰寫內容
 active_target: transpersonal-psychology
+remaining_targets: [transpersonal-psychology(45), biopsychosocial-model(46), social-psychology(47), health-psychology(48)]
+remaining_notes:
+  - 一包一 agent、串行不平行；每包獨立 commit + push 後才派下一包，一個 Sonnet agent 約吃 33% 的 Claude 5H 窗
+  - health-psychology(48) 最後跑，且用全新隔離 process；醫療／疾病主題詞密集曾在 psychology-schools 觸發 AUP 假陽性連鎖
 canonical_inputs:
   - research/targets.json
   - research/source-packs/*.json
