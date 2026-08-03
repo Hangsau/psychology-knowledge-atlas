@@ -9,12 +9,12 @@ status: in_progress
 base_commit: 593551e
 started_at: 2026-07-28
 objective: 先為原版48項研究目標完成可恢復、可稽核的來源蒐集，再開始閱讀、建立主張或撰寫內容
-active_target: positive-psychology
+active_target: transpersonal-psychology
 canonical_inputs:
   - research/targets.json
   - research/source-packs/*.json
 target_files:
-  - research/source-packs/positive-psychology.json
+  - research/source-packs/transpersonal-psychology.json
 expected_result: 下一來源包的所有槽位完成搜尋與裁決；合格可讀正文完成私有快取、格式與雜湊稽核；不建立 claims 或 reader prose
 boundaries:
   - legacy repo 只提供48項 identity/order seed；不匯入舊文章、摘要或 verdict
@@ -117,7 +117,12 @@ completed_items:
   - 牛津研究百科Chilson條目的公開PDF自帶「Subscriber: OUP-Reference Gratis Access／Personal use only」限制，刪除快取改標 excluded；改用的Crossref unixref transform雖回200但無Content-Type，collector無法歸類故一併標 excluded，最後以維也納大學自存專章（Religion in Austria vol.6, pp.161–218）補獨立學術身分；oxfordre landing導向Cloudflare未繞過
   - 日本内観学会一個4.8 KB近空頁移除，改存認定制度與沿革兩頁；WebFetch對日文頁摘要曾杜撰刊名與年份，改以urllib取原始位元組並以shift_jis解碼核對
   - 目前43/48來源包 audited、累計323筆實際正文／正式書目或摘要頁；本包12筆通過大小、MIME、SHA-256、題名、PDF文字（pypdf）、假頁面與包內重複檢查
-next_action: 依 research/targets.json 順序從 positive-psychology 開始，繼續採每批2至3項處理其餘5項，不建立正文。非英語只在原始語言、地方傳統或翻譯／版本差異影響正確性時補，不設配額
+  - positive-psychology 已 audited：18筆正文／正式書目或摘要頁，涵蓋Froh 2004優先權史與Ryff 2022外部回顧、Seligman與Csikszentmihalyi 2000創刊綱領、Peterson與Seligman 2004 VIA手冊書目、Fredrickson broaden-and-build與Butler／Kern PERMA-Profiler、Waterman人本／正向分裂分析與van Zyl等2024批判系統回顧、Coyne與Tennen癌症照護批判摘要、White等PPI效果量重估、Brown／Sokal／Friedman critical positivity ratio數學駁斥、Fredrickson與Losada 2005更正紀錄、Lim與Tierney對照活性治療綜整、IPPA與2023計量學現況、非西方PPI meta-analysis、Fernández Ríos西語批判與非洲wellbeing回顧
+  - 正向心理學與人本心理學保持爭議史邊界：Maslow 1954已用該詞、Froh主張優先權、Waterman記錄兩者哲學分歧，一律登錄為爭議歷史而非既定血緣，且與已 audited 的 humanistic-psychology 包零來源重疊；亦與正向思考、自助、快樂產業及勵志文學分離（pursuit-of-happiness.org、positivepsychology.com、sessionlab、bartleby 等教練／自助頁全數排除，未當研究或批判證據）；Diener系subjective wellbeing泛論不冒充本subfield，PERMA、VIA、broaden-and-build以框架身分登錄不等同整個subfield；second-wave PP／PP 2.0 已搜尋但Wong全部落在T&F／Routledge／Springer或作者推廣站，無合格開放正文故未納入
+  - empirical_status 刻意納入方法學批判而非只收有利meta-analysis：White等2019重估PPI效果量遠小於原估、Brown等2013以arXiv預印本駁斥critical positivity ratio的數學基礎、Fredrickson與Losada 2005經PubMed ErratumIn（Am Psychol 2013;68(9):822）與5筆CommentIn正式記錄部分撤稿、Lim與Tierney以活性對照治療檢驗憂鬱PPI；每筆身分皆以實際檢索核對而非憑記憶
+  - 三筆因權利或存取限制標 excluded 且不快取：Annual Review的Seligman 2019自述PDF帶「Access provided by University of Pennsylvania／For personal use only」訂閱者浮水印，1998 APA會長演說掃描本帶APA「solely for the personal use of the individual user and is not to be disseminated broadly」邊註，兩份已下載正文均刪除只留引用指標；Cabanas 2018在SAGE與MPG.PuRe皆403，僅存DOI指標，其意識形態批判改由van Zyl等系統回顧承擔。替代候選同因權利否決：UPenn站上的Seligman與Pawelski 2003 FAQs是帶「All use subject to about.jstor.org/terms」的JSTOR列印本，Park等2006五十四國研究是帶訂閱大學與下載日期戳記的T&F機構下載本；改採開放取用的Ryff 2022 Frontiers回顧。Oxford Academic的Coyne與Tennen全文403後改存NCBI E-utilities官方摘要XML並明記不算全文
+  - 目前44/48來源包 audited、累計341筆實際正文／正式書目或摘要頁；本包18筆通過大小、MIME、SHA-256、題名、PDF文字（pypdf）、假頁面、權利浮水印全檔regex掃描與包內重複檢查
+next_action: 依 research/targets.json 順序從 transpersonal-psychology 開始，繼續採每批2至3項處理其餘4項，不建立正文。非英語只在原始語言、地方傳統或翻譯／版本差異影響正確性時補，不設配額
 ```
 
 ## P3-S COMPLETION RECORD

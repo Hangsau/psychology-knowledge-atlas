@@ -5,34 +5,634 @@
   "slots": {
     "identity_history": {
       "description": "Independent scholarly identity and historical placement",
-      "status": "not_searched"
+      "status": "covered"
     },
     "primary_works": {
       "description": "Primary works or first-generation programme statements",
-      "status": "not_searched"
+      "status": "covered"
     },
     "theory_methods": {
       "description": "Core concepts, methods and internal variants",
-      "status": "not_searched"
+      "status": "covered"
     },
     "independent_critique": {
       "description": "Independent historiography, criticism or boundary analysis",
-      "status": "not_searched"
+      "status": "covered"
     },
     "empirical_status": {
       "description": "Empirical tests, syntheses, replications or current assessment",
-      "status": "not_searched"
+      "status": "covered"
     },
     "current_status": {
       "description": "Contemporary continuation, institutions or present disciplinary status",
-      "status": "not_searched"
+      "status": "covered"
     },
     "cultural_language_context": {
       "description": "Non-English, local, cultural or knowledge-sovereignty context where applicable",
-      "status": "not_searched"
+      "status": "covered"
     }
   },
-  "searches": [],
-  "items": [],
-  "status": "not_started"
+  "searches": [
+    {
+      "searched_at": "2026-08-03",
+      "system": "WebSearch / University of Pennsylvania Positive Psychology Center / Annual Reviews / Semantic Scholar",
+      "queries": [
+        "history of positive psychology Seligman 1998 APA presidency independent scholarly account Maslow priority claim",
+        "Froh 2004 \"The history of positive psychology\" truth be told NYS Psychologist Maslow 1954 chapter \"positive psychology\"",
+        "Seligman Csikszentmihalyi 2000 \"Positive psychology: An introduction\" American Psychologist PDF full text"
+      ],
+      "purpose": "Locate the institutional founding documents of the subfield (the 1998 APA presidential address and the January 2000 American Psychologist special-issue introduction) and a historiographic treatment of the priority question, since Maslow used the phrase 'positive psychology' as a 1954 chapter title in Motivation and Personality. Popular founder-profile and coaching-industry pages returned by the same queries (pursuit-of-happiness.org, positivepsychology.com, sessionlab, bartleby) were excluded as self-help or content-marketing material, not scholarship"
+    },
+    {
+      "searched_at": "2026-08-03",
+      "system": "WebSearch / American Psychologist / University of Twente research repository / Oxford Academic / NCBI E-utilities",
+      "queries": [
+        "Waterman 2013 \"humanistic psychology\" \"positive psychology\" divide contrasts philosophical foundations American Psychologist full text PDF",
+        "van Zyl 2024 \"critiques and criticisms of positive psychology\" systematic review Journal of Positive Psychology open access",
+        "Coyne Tennen 2010 \"positive psychology in cancer care\" bad science exaggerated claims unproven medicine Annals of Behavioral Medicine PDF",
+        "Cabanas positive psychology legitimation individualism Theory Psychology critique happiness industry academic article",
+        "Cabanas 2018 \"Positive Psychology and the legitimation of individualism\" repository PDF open access digital.csic OR repositorio"
+      ],
+      "purpose": "Locate independent boundary analysis against humanistic psychology and consolidated criticism of the subfield. The Cabanas (2018) Theory and Psychology neoliberal-ideology critique was identified but no lawfully retrievable copy was found: the SAGE page and the Max Planck MPG.PuRe record both answer 403, and only Academia.edu, ResearchGate and Scribd re-uploads remain, so it is registered as an excluded pointer rather than cached; the same ideological critique is carried in consolidated form by the van Zyl et al. systematic review"
+    },
+    {
+      "searched_at": "2026-08-03",
+      "system": "WebSearch / PLOS ONE / arXiv / PubMed / Retraction Watch / NCBI E-utilities",
+      "queries": [
+        "Brown Sokal Friedman critical positivity ratio complex dynamics of wishful thinking retraction Fredrickson Losada",
+        "White Uttl Holder 2019 meta-analysis positive psychology interventions effect sizes much smaller PLOS ONE",
+        "\"Fredrickson\" 2013 \"Updated thinking on positivity ratios\" American Psychologist partial retraction notice PMID",
+        "Hendriks 2018 methodological quality positive psychology intervention studies systematic review open access"
+      ],
+      "purpose": "Deliberately search the methodological-critique literature rather than only favourable syntheses: the re-analysis showing positive-psychology-intervention effect sizes shrink once outliers and baseline differences are handled, the mathematical demolition of the critical positivity ratio, and the official PubMed record carrying the 2013 erratum against Fredrickson and Losada (2005). A comparative-outcome meta-analysis was added so the slot is not one-sided"
+    },
+    {
+      "searched_at": "2026-08-03",
+      "system": "WebSearch / Royal Society Philosophical Transactions via PMC / International Journal of Wellbeing / Open Library",
+      "queries": [
+        "Fredrickson 2004 broaden-and-build theory of positive emotions PMC full text Philosophical Transactions",
+        "\"Butler\" \"Kern\" PERMA-Profiler brief multidimensional measure of flourishing International Journal of Wellbeing 2016 PDF",
+        "VIA character strengths classification cross-cultural validity measurement invariance non-Western samples study"
+      ],
+      "purpose": "Separate the subfield from the specific frameworks inside it: broaden-and-build as an emotion theory, PERMA as a five-element wellbeing model with its own measurement instrument and version history, and the VIA classification as a strengths taxonomy. The Partsch et al. (2022) SAGE re-analysis of VIA structure and the 2025 Taylor and Francis machine-learning cross-cultural paper were both identified but are behind publisher access controls"
+    },
+    {
+      "searched_at": "2026-08-03",
+      "system": "WebSearch / IPPA / Frontiers in Psychology via PMC / SciELO, Redalyc and Dialnet",
+      "queries": [
+        "International Positive Psychology Association IPPA about mission history official site",
+        "bibliometric analysis positive psychology field growth open access review \"positive psychology\" scientific literature scope Donaldson",
+        "psicologia positiva revision critica articulo espanol acceso abierto validez transcultural bienestar",
+        "Wong second wave positive psychology PP 2.0 open access article existential positive psychology definition"
+      ],
+      "purpose": "Establish the present institutional and publication status of the subfield and locate non-English and non-Western material where language or local tradition actually changes interpretation. Second-wave positive psychology (PP 2.0) was searched and the Wong sources located are behind Taylor and Francis, Routledge or Springer access controls or on the author's own promotional site, so PP 2.0 is recorded here as a boundary that is searched but not yet sourced; generic subjective-wellbeing and happiness-economics literature was excluded because it predates and sits partly outside the institutional subfield"
+    },
+    {
+      "searched_at": "2026-08-03",
+      "system": "PubMed Central / Annual Reviews / JSTOR via UPenn PPC / Taylor & Francis / Frontiers in Psychology",
+      "queries": [
+        "Seligman positive psychology personal history Annual Review rights notice",
+        "Seligman 1998 APA president address American Psychologist scan",
+        "Seligman Pawelski positive psychology FAQs Psychological Inquiry 2003",
+        "Park Peterson Seligman character strengths fifty-four nations full text",
+        "Ryff positive psychology looking back looking forward"
+      ],
+      "purpose": "Rights re-audit of already-retrieved bodies plus replacement round. Located the personal-use restriction watermarks on the Annual Review Seligman retrospective and on the scanned 1998 APA president's address; both were excluded and their cached bodies deleted rather than kept, matching this corpus's precedent for subscriber printouts. Two candidate replacements were also rejected on the same ground: the UPenn-hosted Seligman & Pawelski 2003 FAQs is a JSTOR printout stamped \"All use subject to http://about.jstor.org/terms\", and the UPenn-hosted Park, Peterson & Seligman 2006 fifty-four-nations paper is a Taylor & Francis institutional download stamped with the subscribing university and download date. Selected instead the open-access Ryff 2022 Frontiers retrospective, which supplies identity_history from a eudaimonic-wellbeing vantage that predates the 1998 launch and therefore does not simply restate the founders' own account. No login, paywall or access control was circumvented at any point."
+    }
+  ],
+  "items": [
+    {
+      "id": "froh-2004-history-of-positive-psychology",
+      "title": "The History of Positive Psychology: Truth Be Told",
+      "slot": "identity_history",
+      "source_kind": "historiographic_correction_article",
+      "landing_url": "https://www.semanticscholar.org/paper/The-History-of-Positive-Psychology:-Truth-Be-Told-Froh/f5dc8a2acfa774bfee26c7b0c8a6a0a71437abfb",
+      "download_url": "https://library.scottbarrykaufman.com/uploads/2015/01/Froh-2004.pdf",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Short NYS Psychologist piece arguing that the phrase 'positive psychology' is Maslow's, from the closing chapter of Motivation and Personality (1954), and tracing earlier antecedents including James. Cached from a researcher's public library site with no stated redistribution licence. It is a priority-claim argument by a positive-psychology researcher, not a neutral archival history, so it records that the lineage is contested rather than settling it.",
+      "status": "retrieved",
+      "authors": [
+        "Jeffrey J. Froh"
+      ],
+      "issued": "2004",
+      "retrieval": {
+        "retrieved_at": "2026-08-02T23:54:38+00:00",
+        "sha256": "9500d16c2c26228238a41b6ea91c626ec9f657b663d2caf3bdf1f85a648a9ecf",
+        "bytes": 117084,
+        "media_type": "application/pdf",
+        "cache_key": ".private-sources/positive-psychology/froh-2004-history-of-positive-psychology.pdf"
+      }
+    },
+    {
+      "id": "ryff-2022-positive-psychology-looking-back-and-forward",
+      "title": "Positive Psychology: Looking Back and Looking Forward",
+      "slot": "identity_history",
+      "source_kind": "peer_reviewed_historical_review",
+      "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8967995/",
+      "download_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8967995/",
+      "access_status": "open_fulltext",
+      "rights_note": "Open full text (Frontiers, CC BY). Written by a psychological-wellbeing researcher whose eudaimonic programme predates the 1998 subfield launch, so it is a partly external account of positive psychology's founding narrative rather than a founder retrospective; treat its priority and continuity claims as one position in contested historiography, not as settled lineage.",
+      "status": "retrieved",
+      "authors": [
+        "Carol D. Ryff"
+      ],
+      "issued": "2022",
+      "identifiers": {
+        "pmcid": "PMC8967995",
+        "doi": "10.3389/fpsyg.2022.840062"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-08-03T00:03:21+00:00",
+        "sha256": "ff645463c053b4b53390f73d26356b61780170448f7a5adfc79b150521b2ed43",
+        "bytes": 314706,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/positive-psychology/ryff-2022-positive-psychology-looking-back-and-forward.html"
+      }
+    },
+    {
+      "id": "seligman-2019-positive-psychology-personal-history",
+      "title": "Positive Psychology: A Personal History",
+      "slot": "identity_history",
+      "source_kind": "founder_first_person_account",
+      "landing_url": "https://www.annualreviews.org/content/journals/10.1146/annurev-clinpsy-050718-095653",
+      "download_url": "https://ppc.sas.upenn.edu/sites/default/files/pppersonalhistory.pdf",
+      "access_status": "restricted_no_redistribution",
+      "rights_note": "Excluded on rights grounds. The publicly linked PDF is an institutional subscriber printout whose page furniture reads \"Downloaded from www.annualreviews.org Access provided by University of Pennsylvania on 12/15/18. For personal use only.\" and \"Copyright (c) 2019 by Annual Reviews. All rights reserved\". Consistent with this corpus's precedent for personal-use printouts, the retrieved body was deleted and is not cached; the DOI is kept as a citation pointer only. Would in any case be an author's own retrospective, needing independent historiography beside it.",
+      "status": "excluded",
+      "authors": [
+        "Martin E. P. Seligman"
+      ],
+      "issued": "2019",
+      "identifiers": {
+        "doi": "10.1146/annurev-clinpsy-050718-095653"
+      }
+    },
+    {
+      "id": "seligman-1998-apa-president-address",
+      "title": "APA President's Address (1998)",
+      "slot": "primary_works",
+      "source_kind": "founding_programme_statement",
+      "landing_url": "https://ppc.sas.upenn.edu/",
+      "download_url": "https://ppc.sas.upenn.edu/sites/default/files/apapresidentaddress.pdf",
+      "access_status": "restricted_no_redistribution",
+      "rights_note": "Excluded on rights grounds. The scanned PDF carries the side-margin notice \"This document is copyrighted by the American Psychological Association or one of its allied publishers. This article is intended solely for the personal use of the individual user and is not to be disseminated broadly.\" Consistent with this corpus's precedent for personal-use printouts, the retrieved body was deleted and is not cached; the citation (American Psychologist, August 1999, 1998 APA Annual Report, p.559) is kept as a pointer only.",
+      "status": "excluded",
+      "authors": [
+        "Martin E. P. Seligman"
+      ],
+      "issued": "1998"
+    },
+    {
+      "id": "seligman-csikszentmihalyi-2000-positive-psychology-introduction",
+      "title": "Positive Psychology: An Introduction",
+      "slot": "primary_works",
+      "source_kind": "founding_journal_special_issue_introduction",
+      "landing_url": "https://pubmed.ncbi.nlm.nih.gov/11392865/",
+      "download_url": "https://ppc.sas.upenn.edu/sites/default/files/ppintroarticle.pdf",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Introduction to the January 2000 American Psychologist special issue, the canonical first-generation definition of the field as the study of positive subjective experience, positive individual traits and positive institutions. Author-affiliated copy with no stated redistribution licence. This is the document that sets the subfield's own boundaries; it also contains the authors' contested account of humanistic psychology, which must be read against the humanistic-side responses rather than accepted as settled lineage.",
+      "status": "retrieved",
+      "authors": [
+        "Martin E. P. Seligman",
+        "Mihaly Csikszentmihalyi"
+      ],
+      "issued": "2000",
+      "identifiers": {
+        "doi": "10.1037/0003-066X.55.1.5",
+        "pmid": "11392865"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-08-02T23:54:42+00:00",
+        "sha256": "04611f2bf9bc6cd9382befd758ace10c0a3a312718c20b8e5edf7ad061542cea",
+        "bytes": 1208093,
+        "media_type": "application/pdf",
+        "cache_key": ".private-sources/positive-psychology/seligman-csikszentmihalyi-2000-positive-psychology-introduction.pdf"
+      }
+    },
+    {
+      "id": "peterson-seligman-2004-character-strengths-and-virtues-record",
+      "title": "Character Strengths and Virtues: A Handbook and Classification (bibliographic record)",
+      "slot": "primary_works",
+      "source_kind": "official_bibliographic_record",
+      "landing_url": "https://openlibrary.org/works/OL16980739W",
+      "download_url": "https://openlibrary.org/works/OL16980739W",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Open Library record for the 2004 handbook that established the VIA classification of 24 character strengths under six virtues. Only the bibliographic record is cached; the handbook body was not obtained and is not treated as read. The existence of a classification is not evidence that its 24-strength structure or six-virtue grouping replicates, which is a separate empirical question handled in the empirical and cultural slots.",
+      "status": "retrieved",
+      "authors": [
+        "Christopher Peterson",
+        "Martin E. P. Seligman"
+      ],
+      "issued": "2004",
+      "identifiers": {
+        "openlibrary_work": "OL16980739W",
+        "isbn13": "9780195167016"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-08-02T23:54:44+00:00",
+        "sha256": "3c5b3de565f827486f8f5791d2bd9f19506c30f199d3b170de2254c4a602d57a",
+        "bytes": 84185,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/positive-psychology/peterson-seligman-2004-character-strengths-and-virtues-record.html"
+      }
+    },
+    {
+      "id": "fredrickson-2004-broaden-and-build-theory",
+      "title": "The broaden-and-build theory of positive emotions",
+      "slot": "theory_methods",
+      "source_kind": "peer_reviewed_theory_article",
+      "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1693418/",
+      "download_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1693418/",
+      "access_status": "open_fulltext",
+      "rights_note": "Royal Society Philosophical Transactions B statement of broaden-and-build, one specific theory inside positive psychology rather than the subfield's general framework: positive emotions broaden momentary thought-action repertoires and build durable personal resources. Its author's later positivity-ratio work is a separate downstream claim whose nonlinear-dynamics basis was withdrawn in 2013, and nothing here should be read as carrying that ratio.",
+      "status": "retrieved",
+      "authors": [
+        "Barbara L. Fredrickson"
+      ],
+      "issued": "2004",
+      "identifiers": {
+        "doi": "10.1098/rstb.2004.1512",
+        "pmid": "15347528",
+        "pmcid": "PMC1693418"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-08-02T23:54:45+00:00",
+        "sha256": "5796c401c6c3af36817365bc5e67c44082945f8b33631ba49f0c94ea0f036b07",
+        "bytes": 126194,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/positive-psychology/fredrickson-2004-broaden-and-build-theory.html"
+      }
+    },
+    {
+      "id": "butler-kern-2016-perma-profiler",
+      "title": "The PERMA-Profiler: A brief multidimensional measure of flourishing",
+      "slot": "theory_methods",
+      "source_kind": "open_access_instrument_development_article",
+      "landing_url": "https://www.internationaljournalofwellbeing.org/index.php/ijow/article/view/526",
+      "download_url": "https://internationaljournalofwellbeing.org/index.php/ijow/article/download/526/579/2749",
+      "access_status": "open_fulltext",
+      "rights_note": "Open-access development report for the operational measure of Seligman's five-element PERMA model (positive emotion, engagement, relationships, meaning, accomplishment), reduced across three studies to 15 scored items plus filler items. It fixes a version boundary: PERMA as a 2011 theoretical model, the 2016 PERMA-Profiler as one instrument for it, and neither is interchangeable with the earlier three-pillar authentic-happiness formulation or with general subjective-wellbeing scales.",
+      "status": "retrieved",
+      "authors": [
+        "Julie Butler",
+        "Margaret L. Kern"
+      ],
+      "issued": "2016",
+      "identifiers": {
+        "doi": "10.5502/ijw.v6i3.526"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-08-02T23:54:47+00:00",
+        "sha256": "65ab761b0470c932d876c6ac1022ef697dd908e0700338eb725e3440b5169058",
+        "bytes": 1645821,
+        "media_type": "application/pdf",
+        "cache_key": ".private-sources/positive-psychology/butler-kern-2016-perma-profiler.pdf"
+      }
+    },
+    {
+      "id": "waterman-2013-humanistic-positive-psychology-divide",
+      "title": "The Humanistic Psychology-Positive Psychology Divide: Contrasts in Philosophical Foundations",
+      "slot": "independent_critique",
+      "source_kind": "boundary_analysis_article",
+      "landing_url": "https://pubmed.ncbi.nlm.nih.gov/23586488/",
+      "download_url": "https://library.scottbarrykaufman.com/uploads/2017/08/Humanistic-Positive-Psychology-Divide-AP.pdf",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "American Psychologist analysis of why the two movements have remained in tension, locating the divide in ontology, epistemology and practical philosophy rather than in subject matter. Cached from a researcher's public library site with no stated licence. This is the pivotal source for keeping positive psychology and humanistic psychology as separate targets: it is one position in an exchange that drew several published humanistic replies in the January 2014 issue, so continuity-versus-rupture remains contested historiography and must not be recorded as a settled lineage.",
+      "status": "retrieved",
+      "authors": [
+        "Alan S. Waterman"
+      ],
+      "issued": "2013",
+      "identifiers": {
+        "doi": "10.1037/a0032168",
+        "pmid": "23586488"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-08-02T23:54:48+00:00",
+        "sha256": "83ae47e328bceaf1dd040c1a3864c577b6f23925b1e01cef7f0ea8c5a7b150f6",
+        "bytes": 404702,
+        "media_type": "application/pdf",
+        "cache_key": ".private-sources/positive-psychology/waterman-2013-humanistic-positive-psychology-divide.pdf"
+      }
+    },
+    {
+      "id": "van-zyl-etal-2024-critiques-and-criticisms-systematic-review",
+      "title": "The critiques and criticisms of positive psychology: A systematic review",
+      "slot": "independent_critique",
+      "source_kind": "systematic_review_of_criticism",
+      "landing_url": "https://research.utwente.nl/en/publications/the-critiques-and-criticisms-of-positive-psychology-a-systematic-/",
+      "download_url": "https://ris.utwente.nl/ws/files/307340812/The_critiques_and_criticisms_of_positive_psychology_A_systematic_review.pdf",
+      "access_status": "repository_manuscript",
+      "rights_note": "University of Twente repository copy of the Journal of Positive Psychology systematic review that consolidates 117 distinct criticisms drawn from 32 records, spanning weak theorising, measurement and method problems, replication and pseudoscience charges, lack of novelty relative to earlier traditions, and the decontextualised-neoliberalism and commercialisation arguments. It is a catalogue of what critics assert, compiled partly by authors working inside the field, so it maps the critique landscape and does not by itself adjudicate any single charge.",
+      "status": "retrieved",
+      "authors": [
+        "Llewellyn E. van Zyl",
+        "Catherine Gaffaney",
+        "Leoni van der Vaart",
+        "Bryan J. Dik",
+        "Stewart I. Donaldson"
+      ],
+      "issued": "2024",
+      "identifiers": {
+        "doi": "10.1080/17439760.2023.2178956"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-08-02T23:54:51+00:00",
+        "sha256": "5f010f58ebd49c4a7dc2c713d4ad5a868d9cb8a4fb3deef6ecbc82d695a2cf13",
+        "bytes": 4048967,
+        "media_type": "application/pdf",
+        "cache_key": ".private-sources/positive-psychology/van-zyl-etal-2024-critiques-and-criticisms-systematic-review.pdf"
+      }
+    },
+    {
+      "id": "coyne-tennen-2010-cancer-care-abstract-record",
+      "title": "Positive psychology in cancer care: bad science, exaggerated claims, and unproven medicine (abstract record)",
+      "slot": "independent_critique",
+      "source_kind": "official_bibliographic_abstract_record",
+      "landing_url": "https://pubmed.ncbi.nlm.nih.gov/20146038/",
+      "download_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=20146038&retmode=xml",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "NCBI E-utilities record for the Annals of Behavioral Medicine critique of positive-psychology claims about fighting spirit, benefit finding and immune or survival effects in cancer. Only the official abstract record was obtained; the Oxford Academic full-text PDF answers 403 and was not bypassed, so this article is registered as a citation index entry and is not treated as read.",
+      "status": "retrieved",
+      "authors": [
+        "James C. Coyne",
+        "Howard Tennen"
+      ],
+      "issued": "2010",
+      "identifiers": {
+        "doi": "10.1007/s12160-009-9154-z",
+        "pmid": "20146038"
+      },
+      "failure_note": "https://academic.oup.com/abm/article-pdf/39/1/16/22057213/12160_2009_article_9154.pdf returned HTTP 403.",
+      "retrieval": {
+        "retrieved_at": "2026-08-02T23:54:52+00:00",
+        "sha256": "191e28194d6bf962b2fa0ebba6880a3bd893e870f3fe2ec7ce0fc010b126c7a4",
+        "bytes": 33305,
+        "media_type": "text/xml",
+        "cache_key": ".private-sources/positive-psychology/coyne-tennen-2010-cancer-care-abstract-record.xml"
+      }
+    },
+    {
+      "id": "cabanas-2018-legitimation-of-individualism",
+      "title": "Positive Psychology and the legitimation of individualism",
+      "slot": "independent_critique",
+      "source_kind": "theoretical_ideology_critique",
+      "landing_url": "https://journals.sagepub.com/doi/10.1177/0959354317747988",
+      "download_url": "https://pure.mpg.de/pubman/faces/ViewItemFullPage.jsp?itemId=item_3244090_2",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Excluded on access grounds. This Theory and Psychology article is the standard statement of the argument that positive psychology carries an individualist bias aligned with neoliberal ideology, but the SAGE page and the Max Planck MPG.PuRe record both answer HTTP 403 and the only remaining copies are Academia.edu, ResearchGate and Scribd re-uploads of the publisher version. No access control was bypassed, no body was cached, and the entry survives as a DOI-level pointer; the same line of criticism is represented in cached form inside the van Zyl et al. systematic review.",
+      "status": "excluded",
+      "authors": [
+        "Edgar Cabanas"
+      ],
+      "issued": "2018",
+      "identifiers": {
+        "doi": "10.1177/0959354317747988"
+      }
+    },
+    {
+      "id": "white-uttl-holder-2019-ppi-effects-much-smaller",
+      "title": "Meta-analyses of positive psychology interventions: The effects are much smaller than previously reported",
+      "slot": "empirical_status",
+      "source_kind": "open_access_meta_analytic_reanalysis",
+      "landing_url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0216588",
+      "download_url": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0216588&type=printable",
+      "access_status": "open_fulltext",
+      "rights_note": "CC BY re-analysis of the two most-cited positive-psychology-intervention meta-analyses, reporting that after outlier removal the effects shrink to roughly r = .13 for subjective wellbeing, r = .08 for psychological wellbeing and r = .09 for depression, far below the earlier Sin and Lyubomirsky figures. It is a re-analysis of published aggregate data, so it bounds the size of the effect literature rather than testing any single intervention, and its conclusions apply to the pooled intervention set, not to the subfield's theories.",
+      "status": "retrieved",
+      "authors": [
+        "Carmela A. White",
+        "Bob Uttl",
+        "Mark D. Holder"
+      ],
+      "issued": "2019",
+      "identifiers": {
+        "doi": "10.1371/journal.pone.0216588",
+        "pmid": "31141537",
+        "pmcid": "PMC6541265"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-08-02T23:55:10+00:00",
+        "sha256": "784cca4f66e40e9098c973ffe78ea892af64985a22f7947e1de61254be82c058",
+        "bytes": 8780116,
+        "media_type": "application/pdf",
+        "cache_key": ".private-sources/positive-psychology/white-uttl-holder-2019-ppi-effects-much-smaller.pdf"
+      }
+    },
+    {
+      "id": "brown-sokal-friedman-2013-critical-positivity-ratio",
+      "title": "The complex dynamics of wishful thinking: The critical positivity ratio",
+      "slot": "empirical_status",
+      "source_kind": "open_preprint_of_published_critique",
+      "landing_url": "https://arxiv.org/abs/1307.7006",
+      "download_url": "https://arxiv.org/pdf/1307.7006",
+      "access_status": "preprint",
+      "rights_note": "arXiv copy of the American Psychologist article that dismantled the mathematical basis of the claimed critical positivity ratio of 2.9013, showing that fluid-dynamics differential equations were applied to emotion data without theoretical or empirical justification. This is a mathematical and conceptual audit of one high-profile claim, not a verdict on positive psychology as a whole; the arXiv version is the authors' own and may differ in pagination from the published record.",
+      "status": "retrieved",
+      "authors": [
+        "Nicholas J. L. Brown",
+        "Alan D. Sokal",
+        "Harris L. Friedman"
+      ],
+      "issued": "2013",
+      "identifiers": {
+        "arxiv": "1307.7006",
+        "doi": "10.1037/a0032850",
+        "pmid": "23855896"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-08-02T23:55:11+00:00",
+        "sha256": "35d4f5073b00018aa8ff25aed5ab550dcefabf86f64e1a205e20ffea7cfd9469",
+        "bytes": 277797,
+        "media_type": "application/pdf",
+        "cache_key": ".private-sources/positive-psychology/brown-sokal-friedman-2013-critical-positivity-ratio.pdf"
+      }
+    },
+    {
+      "id": "fredrickson-losada-2005-flourishing-erratum-record",
+      "title": "Positive affect and the complex dynamics of human flourishing (record with 2013 erratum)",
+      "slot": "empirical_status",
+      "source_kind": "official_bibliographic_record_with_correction_notice",
+      "landing_url": "https://pubmed.ncbi.nlm.nih.gov/16221001/",
+      "download_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=16221001&retmode=xml",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "NCBI E-utilities record for the 2005 American Psychologist paper that introduced the positivity ratio, retained because its corrections list carries the 2013 erratum (Am Psychol 68(9):822) and the published comments by Brown, Sokal and Friedman, Nickerson, Guastello and Lefebvre and Schwartz. Only the metadata record was obtained. The withdrawal was partial: the nonlinear-dynamics model and the 2.9 and 11.6 threshold predictions were retracted, while the author's separate empirical claims about positivity ratios were maintained in her 2013 response, so this must not be described as a full retraction of the paper.",
+      "status": "retrieved",
+      "authors": [
+        "Barbara L. Fredrickson",
+        "Marcial F. Losada"
+      ],
+      "issued": "2005",
+      "identifiers": {
+        "doi": "10.1037/0003-066X.60.7.678",
+        "pmid": "16221001"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-08-02T23:55:12+00:00",
+        "sha256": "0fd0e75f57d359f2027ae668240fd178ad45ddce1806395be71ff8fef24cccd6",
+        "bytes": 19060,
+        "media_type": "text/xml",
+        "cache_key": ".private-sources/positive-psychology/fredrickson-losada-2005-flourishing-erratum-record.xml"
+      }
+    },
+    {
+      "id": "lim-tierney-2023-ppi-versus-active-treatments-depression",
+      "title": "The Effectiveness of Positive Psychology Interventions for Promoting Well-being of Adults Experiencing Depression Compared to Other Active Psychological Treatments: A Systematic Review and Meta-analysis",
+      "slot": "empirical_status",
+      "source_kind": "open_access_systematic_review_and_meta_analysis",
+      "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9638203/",
+      "download_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9638203/",
+      "access_status": "open_fulltext",
+      "rights_note": "Open-access Journal of Happiness Studies synthesis included so this slot is not built only from unfavourable re-analyses. It compares positive-psychology interventions against other active psychological treatments in adults with depression, which is a narrow clinical comparison in one population; it is not evidence for the subfield's wider claims about flourishing, character strengths or institutions, and comparative equivalence with an active treatment is not the same as superiority over control.",
+      "status": "retrieved",
+      "authors": [
+        "Wei Ling Lim",
+        "Stephanie Tierney"
+      ],
+      "issued": "2023",
+      "identifiers": {
+        "doi": "10.1007/s10902-022-00598-z",
+        "pmcid": "PMC9638203"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-08-02T23:55:13+00:00",
+        "sha256": "0b54875b4d1f2693f6b210b18198403e84dbab5f18ceeb31476a0be268d6e1bd",
+        "bytes": 226008,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/positive-psychology/lim-tierney-2023-ppi-versus-active-treatments-depression.html"
+      }
+    },
+    {
+      "id": "ippa-about-the-association",
+      "title": "The International Positive Psychology Association (IPPA)",
+      "slot": "current_status",
+      "source_kind": "professional_association_self_description",
+      "landing_url": "https://ippanetwork.org/aboutippa/",
+      "download_url": "https://ippanetwork.org/aboutippa/",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "The field's principal international membership body, founded 2007, describing its three-part mission and its network across more than seventy countries. It is an interested self-account that documents institutional existence and scale only; membership counts and country coverage are not evidence about research quality, and the association is distinct from the university centres and from the commercial coaching market that trades on the same vocabulary.",
+      "status": "retrieved",
+      "issued": "retrieved 2026",
+      "retrieval": {
+        "retrieved_at": "2026-08-02T23:55:14+00:00",
+        "sha256": "9f4e1e9109ef9ae8d97fca6dab7a0222b4c7d255db6df4534079de9d9681754f",
+        "bytes": 61476,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/positive-psychology/ippa-about-the-association.html"
+      }
+    },
+    {
+      "id": "wang-guo-yang-2023-positive-psychology-bibliometric",
+      "title": "Study on positive psychology from 1999 to 2021: A bibliometric analysis",
+      "slot": "current_status",
+      "source_kind": "open_access_bibliometric_analysis",
+      "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10015893/",
+      "download_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10015893/",
+      "access_status": "open_fulltext",
+      "rights_note": "Open-access Frontiers in Psychology mapping of the Web of Science record from 1999 to 2021, giving publication growth, leading countries, institutions, journals and most-cited authors. Bibliometrics measure attention and output, not validity: high citation counts for a construct say nothing about whether its effects replicate, and the counts depend on the database and the search string the authors chose.",
+      "status": "retrieved",
+      "authors": [
+        "Fei Wang",
+        "Jing Guo",
+        "Guang Yang"
+      ],
+      "issued": "2023",
+      "identifiers": {
+        "doi": "10.3389/fpsyg.2023.1101157",
+        "pmcid": "PMC10015893"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-08-02T23:55:15+00:00",
+        "sha256": "2c0fa5beb09aeede76daafc39f716323cc73d8361d1c5d726eb8a1d0eac2bc14",
+        "bytes": 276281,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/positive-psychology/wang-guo-yang-2023-positive-psychology-bibliometric.html"
+      }
+    },
+    {
+      "id": "hendriks-etal-2018-non-western-ppi-meta-analysis",
+      "title": "The efficacy of positive psychology interventions from non-Western countries: A systematic review and meta-analysis",
+      "slot": "cultural_language_context",
+      "source_kind": "open_access_systematic_review_and_meta_analysis",
+      "landing_url": "https://internationaljournalofwellbeing.org/index.php/ijow/article/view/711",
+      "download_url": "https://internationaljournalofwellbeing.org/index.php/ijow/article/download/711/639/3368",
+      "access_status": "open_fulltext",
+      "rights_note": "Open-access synthesis of positive-psychology interventions conducted outside Western countries, reporting larger pooled effects than the Western literature while rating the study quality as low. The authors themselves read the size gap as a possible bias artefact rather than as evidence that the interventions transfer better, so this source is retained for the geography and quality question, not as proof of cross-cultural efficacy.",
+      "status": "retrieved",
+      "authors": [
+        "Tom Hendriks",
+        "Marijke Schotanus-Dijkstra",
+        "Aabidien Hassankhan",
+        "Tobi Graafsma",
+        "Ernst Bohlmeijer",
+        "Joop de Jong"
+      ],
+      "issued": "2018",
+      "identifiers": {
+        "doi": "10.5502/ijw.v8i1.711"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-08-02T23:55:17+00:00",
+        "sha256": "90bda8160a82b5831a265b8b2b43fd5366a6a803c525e2c93a9808ea59719201",
+        "bytes": 780957,
+        "media_type": "application/pdf",
+        "cache_key": ".private-sources/positive-psychology/hendriks-etal-2018-non-western-ppi-meta-analysis.pdf"
+      }
+    },
+    {
+      "id": "fernandez-rios-2008-revision-critica-psicologia-positiva",
+      "title": "Una revision critica de la psicologia positiva: historia y concepto",
+      "slot": "cultural_language_context",
+      "source_kind": "spanish_language_critical_review",
+      "landing_url": "https://dialnet.unirioja.es/servlet/articulo?codigo=3244939",
+      "download_url": "https://www.redalyc.org/pdf/804/80411803012.pdf",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Spanish-language critical review in Revista Colombiana de Psicologia arguing that the field's core ideas have a long prior history in Western and Eastern philosophical anthropology and that its novelty claim is overstated. It is retained because the Spanish-language reception frames positive psychology's originality differently from the Anglophone founding narrative; it is a conceptual and historical argument, not empirical evidence, and it speaks for Spanish-language academic reception rather than for all non-English contexts.",
+      "status": "retrieved",
+      "authors": [
+        "Luis Fernandez Rios"
+      ],
+      "issued": "2008",
+      "identifiers": {
+        "issn": "0121-5469"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-08-02T23:55:19+00:00",
+        "sha256": "9929fda3dfb1d145766780bd27be185a39c8770938f7ac101637b2590e4962d9",
+        "bytes": 223035,
+        "media_type": "application/pdf",
+        "cache_key": ".private-sources/positive-psychology/fernandez-rios-2008-revision-critica-psicologia-positiva.pdf"
+      }
+    },
+    {
+      "id": "fadiji-etal-2024-africa-wellbeing-bibliometric-review",
+      "title": "A bibliometric review of positive psychology and well-being research in Africa",
+      "slot": "cultural_language_context",
+      "source_kind": "open_access_regional_bibliometric_review",
+      "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11225939/",
+      "download_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11225939/",
+      "access_status": "open_fulltext",
+      "rights_note": "Open-access Frontiers in Psychology review of the African wellbeing and positive-psychology literature, retained for knowledge-sovereignty and coverage reasons: it documents where the research is produced and by whom, against the field's heavily Western publication base. Regional output counts are not evidence that Western constructs, strengths taxonomies or wellbeing instruments are valid in African settings, which remains a separate measurement question.",
+      "status": "retrieved",
+      "authors": [
+        "Angelina Wilson Fadiji",
+        "Itumeleng P. Khumalo",
+        "Marie P. Wissing",
+        "Richard Appiah"
+      ],
+      "issued": "2024",
+      "identifiers": {
+        "doi": "10.3389/fpsyg.2024.1384362",
+        "pmcid": "PMC11225939"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-08-02T23:55:20+00:00",
+        "sha256": "3361e08d5f2cb83c53fac756606f74fa451c4296985d24dffc1c3e71aded8327",
+        "bytes": 308789,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/positive-psychology/fadiji-etal-2024-africa-wellbeing-bibliometric-review.html"
+      }
+    }
+  ],
+  "status": "audited"
 }
