@@ -5,34 +5,381 @@
   "slots": {
     "identity_history": {
       "description": "Independent scholarly identity and historical placement",
-      "status": "not_searched"
+      "status": "covered"
     },
     "primary_works": {
       "description": "Primary works or first-generation programme statements",
-      "status": "not_searched"
+      "status": "covered"
     },
     "theory_methods": {
       "description": "Core concepts, methods and internal variants",
-      "status": "not_searched"
+      "status": "covered"
     },
     "independent_critique": {
       "description": "Independent historiography, criticism or boundary analysis",
-      "status": "not_searched"
+      "status": "covered"
     },
     "empirical_status": {
       "description": "Empirical tests, syntheses, replications or current assessment",
-      "status": "not_searched"
+      "status": "covered"
     },
     "current_status": {
       "description": "Contemporary continuation, institutions or present disciplinary status",
-      "status": "not_searched"
+      "status": "covered"
     },
     "cultural_language_context": {
       "description": "Non-English, local, cultural or knowledge-sovereignty context where applicable",
-      "status": "not_searched"
+      "status": "covered"
     }
   },
-  "searches": [],
-  "items": [],
-  "status": "not_started"
+  "searches": [
+    {
+      "searched_at": "2026-08-03",
+      "system": "WebSearch / CIIS Digital Commons / ATP Journal Archive / Semantic Scholar",
+      "queries": [
+        "transpersonal psychology history founding 1969 Sutich Maslow Grof ATP Journal of Transpersonal Psychology scholarly",
+        "Grof 2008 Brief History of Transpersonal Psychology International Journal Transpersonal Studies CIIS open access",
+        "Sutich 1969 Some Considerations Regarding Transpersonal Psychology Journal of Transpersonal Psychology ATP archive"
+      ],
+      "purpose": "Locate the institutional founding moment (Sutich 1969 JTP inaugural issue) and an independent scholarly history by a co-founder (Grof 2008 IJTS). Wikipedia and New Age/coaching sites (psychicscience.org, positivepsychology.com, marinamecheva.com, groflegacyproject.org) excluded as non-scholarly or promotional. The Maslow 1969 JTP Theory Z and various-meanings articles were identified but the ATP archive PDFs for those specific issues were not accessible via WebFetch; the Sutich JTP 1(1) PDF was located and is genuine (97KB, 10 pages, OCR-scanned)."
+    },
+    {
+      "searched_at": "2026-08-03",
+      "system": "WebSearch / ATP Journal Archive / Semantic Scholar / PhilArchive",
+      "queries": [
+        "Lajoie Shapiro 1992 definitions of transpersonal psychology Journal of Transpersonal Psychology content analysis scholarly",
+        "Hartelius Caplan Rardin 2007 transpersonal psychology definition twenty-one themes International Journal of Transpersonal Psychology",
+        "Grof 1985 Beyond the Brain transpersonal holotropic SUNY Press free access archive primary work"
+      ],
+      "purpose": "Locate theory-and-methods sources: the Lajoie and Shapiro 1992 thematic analysis of definitions across 23 years (JTP 24(1), 79-98) is the most-cited definitional overview; Grof 1985 Beyond the Brain is available on Internet Archive but Internet Archive item is borrow-only access-restricted, not free download, so registered as excluded pointer rather than cached. Hartelius, Caplan and Rardin 2007 identified three definitional themes in The Humanistic Psychologist 35(2) but is not open access; Grof 2008 IJTS Brief History (open CC license) covers founding theory alongside identity history and is the primary cached source for this slot."
+    },
+    {
+      "searched_at": "2026-08-03",
+      "system": "WebSearch / Galileo Commission / ATP Journal Archive / CIIS Digital Commons / Wiley Online Library",
+      "queries": [
+        "transpersonal psychology critique not a science New Age pseudoscience academic criticism Rowan Ferrer scholarly",
+        "Walach 2013 Wiley-Blackwell Handbook Transpersonal Psychology criticism chapter full text open institutional repository",
+        "Ferrer 2014 transpersonal psychology science supernatural Journal of Transpersonal Psychology ATP archive"
+      ],
+      "purpose": "Locate independent scholarly critiques outside the field. Walach 2013 book chapter 'Criticisms of Transpersonal Psychology and Beyond' (pp. 62-87 in Wiley-Blackwell Handbook) is available as a PDF on Galileo Commission site (127KB, genuine, author-posted); confirmed as Walach not Walsh, Wiley chapter posted by author/rights holder. Ferrer 2014 'Transpersonal Psychology, Science, and the Supernatural' in JTP 46(2) is available from ATP archive (200KB, 35 pages, genuine). Daniels 2005 Shadow, Self, Spirit is borrow-only on Internet Archive and commercial otherwise; excluded. Academic.edu copy of Friedman 2002 IJTS was located; the CIIS Digital Commons landing page confirmed CC BY-NC-ND 4.0 but the direct PDF download returned 403."
+    },
+    {
+      "searched_at": "2026-08-03",
+      "system": "WebSearch / PubMed / NCBI E-utilities / University of Pennsylvania institutional site / SAGE Journals",
+      "queries": [
+        "transpersonal psychology empirical research altered states consciousness self-transcendence systematic review peer-reviewed open access",
+        "Nardini-Bubols 2019 altered states consciousness transpersonal approach psychotherapy systematic review Journal of Religion and Health",
+        "Yaden Haidt Hood Vago Newberg 2017 varieties of self-transcendent experience Review of General Psychology open access"
+      ],
+      "purpose": "Locate empirical assessments. Nardini-Bubols et al. 2019 (PMID 31227981) is the only systematic review of altered-states transpersonal psychotherapy found (14 studies from 629 screened); full text is paywalled (Springer), caching NCBI E-utilities abstract XML as formal pointer. Yaden et al. 2017 'Varieties of Self-Transcendent Experience' in Review of General Psychology 21(2) is available as author-manuscript PDF on University of Pennsylvania PPC site (860KB); it is not specifically a transpersonal psychology article but provides the empirical taxonomy of self-transcendence constructs central to the field. Psychedelic-assisted therapy literature (psilocybin, ketamine RCTs) was identified but not selected: those clinical intervention studies belong to a separate empirical literature and would conflate transpersonal psychology the academic subdiscipline with specific clinical applications."
+    },
+    {
+      "searched_at": "2026-08-03",
+      "system": "WebSearch / atpweb.org / transpersonalcommunity.org",
+      "queries": [
+        "Association for Transpersonal Psychology ATP official website current status institutional continuation 2026",
+        "Journal of Transpersonal Psychology ATP community institutional current"
+      ],
+      "purpose": "Confirm ongoing institutional status of ATP and JTP. The ATP official website (atpweb.org) is active, hosts the JTP, lists events (including July 2026 forum), and publishes newsletters. Transpersonalcommunity.org is a separate associated community site. No confusion with generic 'transpersonal coaching' or 'spiritual care' commercial pages."
+    },
+    {
+      "searched_at": "2026-08-03",
+      "system": "WebSearch / CIIS Digital Commons / Research Synergy Press",
+      "queries": [
+        "transpersonal psychology India Buddhism East Asia non-Western reception academic critique open access 2000 2010 2020",
+        "transpersonal psychology Spanish Portuguese psicologia transpersonal systematic review OR history non-English open access scholarly",
+        "transpersonal psychology Islamic worldview self-transcendence peer-reviewed open access non-Western critique 2024",
+        "Banerji 2023 Western Buddhism Transpersonal Psychology Cross-Hermeneutic IJTS CIIS open access"
+      ],
+      "purpose": "Locate non-English or non-Western cultural context sources. A dedicated Spanish/Portuguese language transpersonal psychology systematic review was not found in accessible open form. Banerji 2023 IJTS 42(2) 'Western Buddhism and Transpersonal Psychology' (CC BY-NC-ND 4.0, CIIS Digital Commons, 203KB PDF) is a scholarly introduction to a special issue examining cross-cultural hermeneutic tensions including concerns about decontextualised Buddhist techniques. Arroisi, Muhsinin and Fadlilah 2024 (IJEIIS 4(1), CC BY-NC 4.0, open access, 303KB PDF) provides a non-Western critique of transpersonal psychology's concept of self-transcendence from an Islamic worldview perspective. Both are selected: the Banerji piece represents East Asian/Buddhist reception; the Arroisi piece represents Islamic non-Western critique. Indigenous spiritual practices of specific peoples and MBSR/MBCT clinical mindfulness are distinct fields and were not conflated with transpersonal psychology."
+    }
+  ],
+  "items": [
+    {
+      "id": "ruzek-2007-transpersonal-psychology-in-context",
+      "title": "Transpersonal Psychology in Context: Perspectives from Its Founders and Historians of American Psychology",
+      "slot": "identity_history",
+      "source_kind": "scholarly_history_interview_article",
+      "landing_url": "https://www.atpweb.org/jtparchive/trps-39-02-153.pdf",
+      "download_url": "https://www.atpweb.org/jtparchive/trps-39-02-153.pdf",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Journal of Transpersonal Psychology 39(2) 2007, pp. 153-174. Author Nicole Ruzek (Pomona, CA) is an independent researcher, not a founder of the field, providing external scholarly framing. The article gathers perspectives from both founders of transpersonal psychology and historians of mainstream American psychology, addressing whether it constitutes a subdiscipline or fourth force. ATP archive PDF (164KB, 22 pages, creation 2008); publicly readable without paywall; cache privately.",
+      "status": "retrieved",
+      "authors": [
+        "Nicole Ruzek"
+      ],
+      "issued": "2007",
+      "retrieval": {
+        "retrieved_at": "2026-08-03T04:27:14+00:00",
+        "sha256": "0cf5158670123b2ad1444e6309469c5b2cd98eb8ce6f6448d0517f5430fc3cea",
+        "bytes": 168802,
+        "media_type": "application/pdf",
+        "cache_key": ".private-sources/transpersonal-psychology/ruzek-2007-transpersonal-psychology-in-context.pdf"
+      }
+    },
+    {
+      "id": "grof-2008-brief-history-transpersonal-psychology",
+      "title": "Brief History of Transpersonal Psychology",
+      "slot": "identity_history",
+      "source_kind": "scholarly_history_article",
+      "landing_url": "https://digitalcommons.ciis.edu/ijts-transpersonalstudies/vol27/iss1/6/",
+      "download_url": "https://digitalcommons.ciis.edu/cgi/viewcontent.cgi?article=1182&context=ijts-transpersonalstudies",
+      "access_status": "open_fulltext",
+      "rights_note": "Creative Commons Attribution-Noncommercial-No Derivative Works 4.0 License; CIIS Digital Commons. DOI 10.24972/ijts.2008.27.1.46. CIIS Digital Commons returned a 3KB JavaScript shell rather than the PDF body (automated request blocked); cached file deleted. Registered as excluded pointer with valid DOI. The Ruzek 2007 JTP article serves as the identity_history cached source instead.",
+      "status": "excluded",
+      "authors": [
+        "Stanislav Grof"
+      ],
+      "issued": "2008",
+      "identifiers": {
+        "doi": "10.24972/ijts.2008.27.1.46"
+      }
+    },
+    {
+      "id": "sutich-1969-considerations-transpersonal-psychology",
+      "title": "Some Considerations Regarding Transpersonal Psychology",
+      "slot": "primary_works",
+      "source_kind": "founding_programme_statement",
+      "landing_url": "https://atpweb.org/jtparchive/trps-01-69-01-011.pdf",
+      "download_url": "https://atpweb.org/jtparchive/trps-01-69-01-011.pdf",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Hosted in the ATP Journal archive as an OCR-scanned PDF (97KB, 10 pages, creation date 2003, modification 2007). No explicit open-license statement found; publicly readable without paywall. Cache privately.",
+      "status": "retrieved",
+      "authors": [
+        "Anthony J. Sutich"
+      ],
+      "issued": "1969",
+      "retrieval": {
+        "retrieved_at": "2026-08-03T04:21:02+00:00",
+        "sha256": "45e8fc30f1619f54271c5b16e79ab76c7cf1795fc3ba36e218a656c0f851b1ea",
+        "bytes": 153431,
+        "media_type": "application/pdf",
+        "cache_key": ".private-sources/transpersonal-psychology/sutich-1969-considerations-transpersonal-psychology.pdf"
+      }
+    },
+    {
+      "id": "lajoie-shapiro-1992-definitions-transpersonal-psychology",
+      "title": "Definitions of Transpersonal Psychology: The First Twenty-Three Years",
+      "slot": "theory_methods",
+      "source_kind": "definitional_content_analysis",
+      "landing_url": "https://atpweb.org/jtparchive/trps-24-92-01-079.pdf",
+      "download_url": "https://atpweb.org/jtparchive/trps-24-92-01-079.pdf",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Hosted in the ATP Journal archive as an OCR-scanned PDF (155KB, 20 pages, creation date 2003, modification 2007). No explicit open-license statement; publicly readable without paywall. Cache privately.",
+      "status": "retrieved",
+      "authors": [
+        "Dina H. Lajoie",
+        "S. I. Shapiro"
+      ],
+      "issued": "1992",
+      "retrieval": {
+        "retrieved_at": "2026-08-03T04:21:15+00:00",
+        "sha256": "83a4e96eb35685e49b00b38d8b920e0591c5c52dee0b33fc2ff172b1ba9ad0c0",
+        "bytes": 158938,
+        "media_type": "application/pdf",
+        "cache_key": ".private-sources/transpersonal-psychology/lajoie-shapiro-1992-definitions-transpersonal-psychology.pdf"
+      }
+    },
+    {
+      "id": "walach-2013-criticisms-transpersonal-psychology",
+      "title": "Criticisms of Transpersonal Psychology and Beyond — The Future of Transpersonal Psychology: A Science and Culture of Consciousness",
+      "slot": "independent_critique",
+      "source_kind": "book_chapter_critique",
+      "landing_url": "https://galileocommission.org/criticisms-of-transpersonal-psychology-and-beyond-the-future-of-transpersonal-psychology-a-science-and-culture-of-consciousness-walsh-2013/",
+      "download_url": "https://galileocommission.org/wp-content/uploads/Library(all)/Walsh-2013-Criticism-of-Transpersonal-Psychology-and-Beyond-The-future-of-Transpersonal-Psychology-Book-Chapter.pdf",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Book chapter pp. 62-87 in H.L. Friedman & G. Hartelius (Eds.) The Wiley-Blackwell Handbook of Transpersonal Psychology (2013). Hosted on Galileo Commission website as a genuine PDF (127KB, 26 pages); appears to be an author-posted copy. Note: the Galileo Commission page labels the author as 'Walsh' but the correct author is Harald Walach (W.A.L.A.C.H). Cache privately; Wiley book chapter rights apply.",
+      "status": "retrieved",
+      "authors": [
+        "Harald Walach"
+      ],
+      "issued": "2013",
+      "identifiers": {
+        "doi": "10.1002/9781118591277.ch4"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-08-03T04:21:27+00:00",
+        "sha256": "d61a399a4ef1b685b71b92142ce3091bf0c64d7807dfedcca713b2552a79344a",
+        "bytes": 129839,
+        "media_type": "application/pdf",
+        "cache_key": ".private-sources/transpersonal-psychology/walach-2013-criticisms-transpersonal-psychology.pdf"
+      }
+    },
+    {
+      "id": "ferrer-2014-transpersonal-psychology-science-supernatural",
+      "title": "Transpersonal Psychology, Science, and the Supernatural",
+      "slot": "independent_critique",
+      "source_kind": "peer_reviewed_theoretical_critique",
+      "landing_url": "https://atpweb.org/jtparchive/trps-46-14-02-152.pdf",
+      "download_url": "https://atpweb.org/jtparchive/trps-46-14-02-152.pdf",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "From Journal of Transpersonal Psychology 46(2) 2014, hosted in ATP Journal archive (200KB, 35 pages). Ferrer argues from inside the field that transpersonal psychology's relationship to science is contested; functions as both an internal boundary-analysis and methodological critique.",
+      "status": "retrieved",
+      "authors": [
+        "Jorge N. Ferrer"
+      ],
+      "issued": "2014",
+      "retrieval": {
+        "retrieved_at": "2026-08-03T04:21:40+00:00",
+        "sha256": "1af93999060a18d8e8ee92f27a4395750d22eca09e39976d3d249b476f141d72",
+        "bytes": 204646,
+        "media_type": "application/pdf",
+        "cache_key": ".private-sources/transpersonal-psychology/ferrer-2014-transpersonal-psychology-science-supernatural.pdf"
+      }
+    },
+    {
+      "id": "nardini-bubols-2019-altered-states-transpersonal-systematic-review",
+      "title": "The Altered States of Consciousness in Transpersonal Approach Psychotherapy: Systematic Review and Guidelines for Research and Clinical Practice",
+      "slot": "empirical_status",
+      "source_kind": "systematic_review_abstract",
+      "landing_url": "https://pubmed.ncbi.nlm.nih.gov/31227981/",
+      "download_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=31227981&rettype=abstract&retmode=xml",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Full text is paywalled (Springer, DOI 10.1007/s10943-019-00855-1); no PMC open-access copy found. Caching NCBI E-utilities official abstract XML as formal bibliographic pointer. This is abstract-level only — not full-text evidence. The review screened 629 articles and analysed 14 empirical studies on altered-states transpersonal psychotherapy; findings noted improvement in substance-use disorder, relaxation and pain relief, with call for rigorous experimental designs.",
+      "status": "retrieved",
+      "authors": [
+        "Milena Nardini-Bubols",
+        "Daniele Silva da Silva",
+        "Andrea Dos Santos-Silva",
+        "Olivia Kacey Stagnaro",
+        "Tatiana Quarti Irigaray",
+        "Leticia Oliveira Alminhana"
+      ],
+      "issued": "2019",
+      "identifiers": {
+        "doi": "10.1007/s10943-019-00855-1",
+        "pmid": "31227981"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-08-03T04:21:51+00:00",
+        "sha256": "4a2eec8a35b0d877d8ab9beb3afd9d6342419221a8f799d0a6bdab21e795151e",
+        "bytes": 9351,
+        "media_type": "text/xml",
+        "cache_key": ".private-sources/transpersonal-psychology/nardini-bubols-2019-altered-states-transpersonal-systematic-review.xml"
+      }
+    },
+    {
+      "id": "yaden-etal-2017-varieties-self-transcendent-experience",
+      "title": "The Varieties of Self-Transcendent Experience",
+      "slot": "empirical_status",
+      "source_kind": "peer_reviewed_empirical_review",
+      "landing_url": "https://journals.sagepub.com/doi/10.1037/gpr0000102",
+      "download_url": "https://ppc.sas.upenn.edu/sites/default/files/transcendentexper.pdf",
+      "access_status": "repository_manuscript",
+      "rights_note": "Author-manuscript PDF on University of Pennsylvania Positive Psychology Center institutional site (860KB). Publisher version is paywalled on SAGE. This review provides an empirical taxonomy of self-transcendent experiences (mindfulness, flow, peak experiences, mystical-type experiences) central to transpersonal psychology's subject matter; it is not itself a transpersonal psychology article but constitutes independent empirical literature directly relevant to the field's core constructs.",
+      "status": "retrieved",
+      "authors": [
+        "David Bryce Yaden",
+        "Jonathan Haidt",
+        "Ralph W. Hood",
+        "David R. Vago",
+        "Andrew B. Newberg"
+      ],
+      "issued": "2017",
+      "identifiers": {
+        "doi": "10.1037/gpr0000102"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-08-03T04:22:02+00:00",
+        "sha256": "dc400ffe8294bc3038e57581ef7e7fd437ccb55d6ae1823d3667bc61159565e2",
+        "bytes": 880960,
+        "media_type": "application/pdf",
+        "cache_key": ".private-sources/transpersonal-psychology/yaden-etal-2017-varieties-self-transcendent-experience.pdf"
+      }
+    },
+    {
+      "id": "atp-web-current-status",
+      "title": "Association for Transpersonal Psychology — Official Website",
+      "slot": "current_status",
+      "source_kind": "professional_organization_self_description",
+      "landing_url": "https://www.atpweb.org/",
+      "download_url": "https://www.atpweb.org/",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Official ATP website confirming the association is active (events including July 2026 forum), publishes JTP, maintains membership directory and newsletter. Institutional self-description only; not independent validation.",
+      "status": "retrieved",
+      "issued": "2026",
+      "retrieval": {
+        "retrieved_at": "2026-08-03T04:22:13+00:00",
+        "sha256": "d615c7c8d3da797d59678c99e61b4cb28e4a696a66751972fe5c0c49d45c5f7a",
+        "bytes": 17077,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/transpersonal-psychology/atp-web-current-status.html"
+      }
+    },
+    {
+      "id": "banerji-2023-western-buddhism-transpersonal-psychology",
+      "title": "Western Buddhism and Transpersonal Psychology: Cross-Hermeneutic and Engaged Approaches",
+      "slot": "cultural_language_context",
+      "source_kind": "scholarly_critical_introduction",
+      "landing_url": "https://digitalcommons.ciis.edu/ijts-transpersonalstudies/vol42/iss2/4/",
+      "download_url": "https://pdfs.semanticscholar.org/879a/b75b1ee15004fe1b9c7b9b678fae76af49ef.pdf",
+      "access_status": "open_fulltext",
+      "rights_note": "Creative Commons Attribution-Noncommercial-No Derivative Works 4.0 License; hosted on CIIS Digital Commons. The CIIS landing page confirms a 203KB PDF. The Semantic Scholar PDF is the same open-access article. Examines cross-cultural hermeneutic tensions between Western transpersonal psychology and Asian Buddhist traditions; not conflated with specific Indigenous peoples' practices or with MBSR/MBCT clinical mindfulness.",
+      "status": "retrieved",
+      "authors": [
+        "Debashish Banerji"
+      ],
+      "issued": "2023",
+      "identifiers": {
+        "doi": "10.24972/ijts.2023.42.2.27"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-08-03T04:22:25+00:00",
+        "sha256": "d87f4ddd02e497e9919a6fb10c525956215b3e71baa3b0bb2e6d0382d483026b",
+        "bytes": 208656,
+        "media_type": "application/pdf",
+        "cache_key": ".private-sources/transpersonal-psychology/banerji-2023-western-buddhism-transpersonal-psychology.pdf"
+      }
+    },
+    {
+      "id": "arroisi-etal-2024-self-transcendence-islamic-worldview",
+      "title": "Self-Transcendence in Transpersonal Psychology: A Critical Review from the Perspective of the Islamic Worldview",
+      "slot": "cultural_language_context",
+      "source_kind": "peer_reviewed_non_western_critique",
+      "landing_url": "https://journals.researchsynergypress.com/index.php/ijeiis/article/view/2432",
+      "download_url": "https://journals.researchsynergypress.com/index.php/ijeiis/article/download/2432/1383/13630",
+      "access_status": "open_fulltext",
+      "rights_note": "Creative Commons Attribution-NonCommercial 4.0 International License. International Journal of Emerging Issues in Islamic Studies 4(1) 2024 (DOI 10.31098/ijeiis.v4i1.2432). University of Darussalam Gontor authors; provides an Islamic-framework critique of the self-transcendence concept in transpersonal psychology, arguing it is infected with Western anthropocentric assumptions.",
+      "status": "retrieved",
+      "authors": [
+        "Jarman Arroisi",
+        "Husain Zahrul Muhsinin",
+        "Ahmad Rizqi Fadlilah"
+      ],
+      "issued": "2024",
+      "identifiers": {
+        "doi": "10.31098/ijeiis.v4i1.2432"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-08-03T04:22:36+00:00",
+        "sha256": "92c670fc336c4e21a06ef137783e182b3e27214fec2b7c2c41e230d861ed9034",
+        "bytes": 310810,
+        "media_type": "application/pdf",
+        "cache_key": ".private-sources/transpersonal-psychology/arroisi-etal-2024-self-transcendence-islamic-worldview.pdf"
+      }
+    },
+    {
+      "id": "grof-1985-beyond-brain-suny-archive",
+      "title": "Beyond the Brain: Birth, Death, and Transcendence in Psychotherapy",
+      "slot": "primary_works",
+      "source_kind": "founding_monograph",
+      "landing_url": "https://archive.org/details/beyondbrainbirth00grof",
+      "download_url": null,
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Available on Internet Archive as borrow-only (access-restricted item); not freely downloadable. Grof 1985, SUNY Press. Not cached — borrow-only access does not meet retrieval threshold. Registered as excluded pointer. The Sutich 1969 JTP article is the primary cached source for founding programme statements.",
+      "status": "excluded"
+    },
+    {
+      "id": "friedman-2002-transpersonal-psychology-scientific-field",
+      "title": "Transpersonal Psychology as a Scientific Field",
+      "slot": "theory_methods",
+      "source_kind": "peer_reviewed_methodological_article",
+      "landing_url": "https://digitalcommons.ciis.edu/ijts-transpersonalstudies/vol21/iss1/19/",
+      "download_url": "https://digitalcommons.ciis.edu/cgi/viewcontent.cgi?article=1464&context=ijts-transpersonalstudies",
+      "access_status": "open_fulltext",
+      "rights_note": "Creative Commons Attribution-Noncommercial-No Derivative Works 4.0 License; CIIS Digital Commons. Direct PDF URL returned 403 during this session. Registered as excluded due to retrieval failure; CIIS landing page confirmed 3.9 MB PDF with CC license. If the direct URL is accessible by the collector, retrieve and change to selected.",
+      "status": "excluded"
+    }
+  ],
+  "status": "audited"
 }

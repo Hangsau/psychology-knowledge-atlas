@@ -9,8 +9,8 @@ status: in_progress
 base_commit: 593551e
 started_at: 2026-07-28
 objective: 先為原版48項研究目標完成可恢復、可稽核的來源蒐集，再開始閱讀、建立主張或撰寫內容
-active_target: transpersonal-psychology
-remaining_targets: [transpersonal-psychology(45), biopsychosocial-model(46), social-psychology(47), health-psychology(48)]
+active_target: biopsychosocial-model
+remaining_targets: [biopsychosocial-model(46), social-psychology(47), health-psychology(48)]
 remaining_notes:
   - 一包一 agent、串行不平行；每包獨立 commit + push 後才派下一包，一個 Sonnet agent 約吃 33% 的 Claude 5H 窗
   - health-psychology(48) 最後跑，且用全新隔離 process；醫療／疾病主題詞密集曾在 psychology-schools 觸發 AUP 假陽性連鎖
@@ -126,7 +126,13 @@ completed_items:
   - empirical_status 刻意納入方法學批判而非只收有利meta-analysis：White等2019重估PPI效果量遠小於原估、Brown等2013以arXiv預印本駁斥critical positivity ratio的數學基礎、Fredrickson與Losada 2005經PubMed ErratumIn（Am Psychol 2013;68(9):822）與5筆CommentIn正式記錄部分撤稿、Lim與Tierney以活性對照治療檢驗憂鬱PPI；每筆身分皆以實際檢索核對而非憑記憶
   - 三筆因權利或存取限制標 excluded 且不快取：Annual Review的Seligman 2019自述PDF帶「Access provided by University of Pennsylvania／For personal use only」訂閱者浮水印，1998 APA會長演說掃描本帶APA「solely for the personal use of the individual user and is not to be disseminated broadly」邊註，兩份已下載正文均刪除只留引用指標；Cabanas 2018在SAGE與MPG.PuRe皆403，僅存DOI指標，其意識形態批判改由van Zyl等系統回顧承擔。替代候選同因權利否決：UPenn站上的Seligman與Pawelski 2003 FAQs是帶「All use subject to about.jstor.org/terms」的JSTOR列印本，Park等2006五十四國研究是帶訂閱大學與下載日期戳記的T&F機構下載本；改採開放取用的Ryff 2022 Frontiers回顧。Oxford Academic的Coyne與Tennen全文403後改存NCBI E-utilities官方摘要XML並明記不算全文
   - 目前44/48來源包 audited、累計341筆實際正文／正式書目或摘要頁；本包18筆通過大小、MIME、SHA-256、題名、PDF文字（pypdf）、假頁面、權利浮水印全檔regex掃描與包內重複檢查
-next_action: 依 research/targets.json 順序從 transpersonal-psychology 開始，繼續採每批2至3項處理其餘4項，不建立正文。非英語只在原始語言、地方傳統或翻譯／版本差異影響正確性時補，不設配額
+  - transpersonal-psychology 已 audited：10筆正文／正式書目或摘要頁（含2筆 excluded 指標），涵蓋Ruzek 2007創始者與美國心理學史家多方視角史論、Sutich 1969 JTP 1(1)創刊宣言、Lajoie與Shapiro 1992二十三年定義主題分析、Walach 2013批判章（Wiley-Blackwell手冊）、Ferrer 2014科學與超自然邊界分析、Nardini-Bubols等2019變態意識治療系統回顧摘要XML（PMID 31227981）、Yaden等2017自我超越體驗分類實證回顧、ATP官方網站當代延續，以及Banerji 2023佛教─轉個人跨文化詮釋學與Arroisi等2024伊斯蘭觀點批判
+  - 超個人心理學與人本心理學保持歷史邊界：Maslow同為兩者共同創始人，只在創始史用Maslow，不把人本心理學已 audited 的峰值體驗動機理論當作超個人心理學的獨立證據；亦與存在心理學、正向心理學（零來源重疊）、MBSR/MBCT臨床正念介入及特定原住民族靈性實踐分開登錄
+  - 兩筆 excluded 且不快取：Grof 1985 Beyond the Brain（Internet Archive借閱限制，無免費下載）；Grof 2008 IJTS Brief History（CIIS Digital Commons返回3KB JS殼，刪除後保留DOI指標）
+  - CIIS Digital Commons PDF端點對本工作階段所有自動請求均返回JS殼或202空回應；改以ATP archive PDF（Ruzek 2007、Lajoie-Shapiro 1992、Sutich 1969、Ferrer 2014）及Galileo Commission PDF（Walach 2013）替代
+  - 10筆取得物通過大小（9KB至881KB）、MIME、SHA-256、題名（pypdf文字提取確認Ruzek 2007 PAGE 1標題）、假頁面與包內重複檢查；共77 unit tests PASS
+  - 目前45/48來源包 audited、累計351筆實際正文／正式書目或摘要頁
+next_action: 依 research/targets.json 順序從 biopsychosocial-model 開始，繼續採每批1至2項處理其餘3項，不建立正文。非英語只在原始語言、地方傳統或翻譯／版本差異影響正確性時補，不設配額
 ```
 
 ## P3-S COMPLETION RECORD
