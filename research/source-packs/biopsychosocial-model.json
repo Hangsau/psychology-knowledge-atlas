@@ -5,34 +5,332 @@
   "slots": {
     "identity_history": {
       "description": "Independent scholarly identity and historical placement",
-      "status": "not_searched"
+      "status": "covered"
     },
     "primary_works": {
       "description": "Primary works or first-generation programme statements",
-      "status": "not_searched"
+      "status": "covered"
     },
     "theory_methods": {
       "description": "Core concepts, methods and internal variants",
-      "status": "not_searched"
+      "status": "covered"
     },
     "independent_critique": {
       "description": "Independent historiography, criticism or boundary analysis",
-      "status": "not_searched"
+      "status": "covered"
     },
     "empirical_status": {
       "description": "Empirical tests, syntheses, replications or current assessment",
-      "status": "not_searched"
+      "status": "covered"
     },
     "current_status": {
       "description": "Contemporary continuation, institutions or present disciplinary status",
-      "status": "not_searched"
+      "status": "covered"
     },
     "cultural_language_context": {
       "description": "Non-English, local, cultural or knowledge-sovereignty context where applicable",
-      "status": "not_searched"
+      "status": "covered"
     }
   },
-  "searches": [],
-  "items": [],
-  "status": "not_started"
+  "searches": [
+    {
+      "searched_at": "2026-08-07",
+      "system": "WebSearch / PubMed / NCBI E-utilities / NCBI Bookshelf",
+      "queries": [
+        "biopsychosocial model Engel 1977 The Need for a New Medical Model Science open access DOI",
+        "biopsychosocial model history origin George Engel 1977 scholarly history review open access",
+        "Engel 1980 clinical application biopsychosocial model American Journal of Psychiatry DOI open access"
+      ],
+      "purpose": "Locate founding documents and independent scholarly identity history. Engel 1977 (Science 196:129-136, DOI 10.1126/science.847460) and Engel 1980 (Am J Psychiatry 137:535-544, PMID 7369396) confirmed via E-utilities; both full texts paywalled — Science returned 403, AJP paywalled. URMC Rochester institutional PDF (349KB) found for Engel 1977 but rights status uncertain; not cached. Bolton and Gillett 2019 'The Biopsychosocial Model 40 Years On' confirmed open access on NCBI Bookshelf (Palgrave Pivot, DOI 10.1007/978-3-030-11899-0_1); selected as scholarly historical identity source."
+    },
+    {
+      "searched_at": "2026-08-07",
+      "system": "WebSearch / PubMed Central / Annals of Family Medicine",
+      "queries": [
+        "biopsychosocial model Borrell-Carrio 2004 The Biopsychosocial Model 25 Years Later Annals of Family Medicine open access DOI",
+        "biopsychosocial model theory methods framework clinical guide open access PMC"
+      ],
+      "purpose": "Locate theory-and-methods sources. Borrell-Carrió, Suchman and Epstein 2004 'The Biopsychosocial Model 25 Years Later: Principles, Practice, and Scientific Inquiry' (Annals of Family Medicine 2(6):576-582, DOI 10.1370/afm.245, PMC1466742) confirmed as PMC open-access full text. Selected as theory_methods source. This paper provides the most-cited synthesis of the model's guiding principles and clinical application framework."
+    },
+    {
+      "searched_at": "2026-08-07",
+      "system": "WebSearch / PubMed Central",
+      "queries": [
+        "biopsychosocial model critique criticism not a theory vacuous scholarly peer-reviewed open access PMC 2020 2021 2022",
+        "biopsychosocial model Ghaemi OR Kendler critique philosophical criticism scholarly open access 2010 2015 2020",
+        "biopsychosocial model use abuse Medicine Health Care Philosophy Springer 2023"
+      ],
+      "purpose": "Locate independent scholarly critiques. Williamson 2022 'The biopsychosocial model: not dead, but in need of revival' (BJPsych Bulletin 46(4):232-234, DOI 10.1192/bjb.2022.29, PMC9768512, CC-BY 4.0) confirmed as open-access PMC full text; selected for independent_critique. It frames the critique around validity, usefulness and implementation gaps. Springer 2023 'Its use and abuse' article (DOI 10.1007/s11019-023-10150-2, PMID 37067677) is paywalled. Bolton and Gillett 2019 NCBI Bookshelf chapter addresses critiques in depth but is allocated to identity_history."
+    },
+    {
+      "searched_at": "2026-08-07",
+      "system": "WebSearch / PubMed Central / Cambridge Core",
+      "queries": [
+        "biopsychosocial model empirical status systematic review meta-analysis open access PMC revitalized",
+        "Bolton 2023 revitalized biopsychosocial model core theory research paradigms Psychological Medicine PMC"
+      ],
+      "purpose": "Locate empirical assessment sources. Bolton 2023 'A revitalized biopsychosocial model: core theory, research paradigms, and clinical implications' (Psychological Medicine 53(16), DOI 10.1017/S0033291723002660, PMC10755226, CC-BY 4.0) confirmed full-text PMC open access. Selected for empirical_status. Article provides the most recent systematic theoretical and empirical evaluation of the model's scientific content, distinguishing condition-specific applications from vacuous general statements."
+    },
+    {
+      "searched_at": "2026-08-07",
+      "system": "WebSearch / PubMed Central",
+      "queries": [
+        "biopsychosocial model contemporary psychiatry current validity future prospects open access PMC India",
+        "biopsychosocial model current institutional disciplinary status WHO APA SAMHSA 2015 2020"
+      ],
+      "purpose": "Locate current institutional and disciplinary status sources. Tripathi, Das and Kar 2019 'Biopsychosocial Model in Contemporary Psychiatry: Current Validity and Future Prospects' (Indian Journal of Psychological Medicine 41(6), DOI 10.4103/IJPSYM.IJPSYM_314_19, PMC6875848, CC-BY-NC-SA 4.0) confirmed open-access PMC full text. Selected for current_status. This review assesses the model's current standing in psychiatric training and practice globally, including limitations and future directions. WHO/SAMHSA/APA formal endorsement pages were searched but not found as open standalone documents suitable for caching."
+    },
+    {
+      "searched_at": "2026-08-07",
+      "system": "WebSearch / PubMed Central / SciELO",
+      "queries": [
+        "biopsychosocial model non-English Spanish Portuguese Chinese systematic review OR meta-analysis open access PMC 2015 2020 2025",
+        "biopsychosocial model Spanish Portuguese Latin America modelo biopsicosocial systematic review open access peer-reviewed 2015 2020",
+        "site:scielo.br biopsychosocial modelo biopsicossocial biopsicosocial open access 2015 2020"
+      ],
+      "purpose": "Locate non-English and non-Western cultural context sources. Two sources selected: (1) Leiva-Peña, Rubí-González and Vicente-Parada 2021 'Social Determinants of Mental Health: Public Policies Based on the Biopsychosocial Model in Latin American Countries' (Rev Panam Salud Publica, DOI 10.26633/RPSP.2021.158, PMC8678097, CC-BY-NC-ND 3.0 IGO) — a Spanish/English/Portuguese trilingual open-access review of Latin American mental health policy through the biopsychosocial lens; (2) De Marco 2006 'Do modelo biomédico ao modelo biopsicossocial: um projeto de educação permanente' (Revista Brasileira de Educação Médica, DOI 10.1590/S0100-55022006000100010, CC-BY-NC 4.0, SciELO) — a Portuguese-language Brazilian article on the transition from biomedical to biopsychosocial model in medical education. These two together cover Spanish/Portuguese language contexts and Latin American applications."
+    }
+  ],
+  "items": [
+    {
+      "id": "bolton-gillett-2019-bps-model-40-years-on",
+      "title": "The Biopsychosocial Model 40 Years On",
+      "slot": "identity_history",
+      "source_kind": "scholarly_book_chapter_open_access",
+      "landing_url": "https://www.ncbi.nlm.nih.gov/books/NBK552030/",
+      "download_url": "https://www.ncbi.nlm.nih.gov/books/NBK552030/",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Chapter 1 in: Bolton D, Gillett G (2019). The Biopsychosocial Model of Health and Disease: New Philosophical and Scientific Developments. Palgrave Pivot (DOI 10.1007/978-3-030-11899-0_1). Book is open access via Springer/OAPEN (Creative Commons). Chapter text accessible on NCBI Bookshelf without paywall. Places Engel's 1977 proposal in 40-year historical context with philosophical critique.",
+      "status": "retrieved",
+      "authors": [
+        "Derek Bolton",
+        "Grant Gillett"
+      ],
+      "issued": "2019",
+      "identifiers": {
+        "doi": "10.1007/978-3-030-11899-0_1"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-08-07T01:20:57+00:00",
+        "sha256": "6b75a8074fdaae00ffa8dd403df000ab70185b9ed07980e7dd83e193c99ce1db",
+        "bytes": 205446,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/biopsychosocial-model/bolton-gillett-2019-bps-model-40-years-on.html"
+      }
+    },
+    {
+      "id": "engel-1977-need-new-medical-model-abstract",
+      "title": "The Need for a New Medical Model: A Challenge for Biomedicine",
+      "slot": "primary_works",
+      "source_kind": "founding_journal_article_abstract",
+      "landing_url": "https://pubmed.ncbi.nlm.nih.gov/847460/",
+      "download_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=847460&rettype=abstract&retmode=xml",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Science 196(4286):129-136, 8 April 1977. DOI 10.1126/science.847460. Full text paywalled at science.org (returned 403 this session). Institutional PDF found at URMC Rochester (349KB) but rights status unclear; not cached. Caching NCBI E-utilities official abstract XML as formal bibliographic pointer. This is abstract-level only, not full-text evidence.",
+      "status": "retrieved",
+      "authors": [
+        "George L. Engel"
+      ],
+      "issued": "1977",
+      "identifiers": {
+        "doi": "10.1126/science.847460",
+        "pmid": "847460"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-08-07T01:21:10+00:00",
+        "sha256": "4faee60fd601d00d72d1501c0c7220e8e30017a938756f36128f55d01d55ab7e",
+        "bytes": 3201,
+        "media_type": "text/xml",
+        "cache_key": ".private-sources/biopsychosocial-model/engel-1977-need-new-medical-model-abstract.xml"
+      }
+    },
+    {
+      "id": "engel-1980-clinical-application-bps-model-abstract",
+      "title": "The Clinical Application of the Biopsychosocial Model",
+      "slot": "primary_works",
+      "source_kind": "founding_journal_article_abstract",
+      "landing_url": "https://pubmed.ncbi.nlm.nih.gov/7369396/",
+      "download_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=7369396&rettype=abstract&retmode=xml",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "American Journal of Psychiatry 137(5):535-544, May 1980. DOI 10.1176/ajp.137.5.535. Full text paywalled at AJP online. PACES Connection hosts a 1.6MB scan PDF but rights status unclear; not cached. Caching NCBI E-utilities official abstract XML as formal bibliographic pointer. This is abstract-level only, not full-text evidence.",
+      "status": "retrieved",
+      "authors": [
+        "George L. Engel"
+      ],
+      "issued": "1980",
+      "identifiers": {
+        "doi": "10.1176/ajp.137.5.535",
+        "pmid": "7369396"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-08-07T01:21:10+00:00",
+        "sha256": "e9bb97d6c5632d7669b2d941b4189e9cddcf542590db144c30a6c18b58df1e16",
+        "bytes": 4171,
+        "media_type": "text/xml",
+        "cache_key": ".private-sources/biopsychosocial-model/engel-1980-clinical-application-bps-model-abstract.xml"
+      }
+    },
+    {
+      "id": "borrell-carrio-2004-bps-model-25-years-later",
+      "title": "The Biopsychosocial Model 25 Years Later: Principles, Practice, and Scientific Inquiry",
+      "slot": "theory_methods",
+      "source_kind": "peer_reviewed_framework_review",
+      "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1466742/",
+      "download_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1466742/",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Annals of Family Medicine 2(6):576-582, November 2004. DOI 10.1370/afm.245. PMC open-access subset; no explicit CC license stated (copyright Annals of Family Medicine Inc.). The most-cited methodological synthesis of the biopsychosocial model: defines the model as both philosophy of clinical care and practical guide; discusses three core properties (multileveled, patient-centred, relational); not to be conflated with WHO-ICF or generic holistic care slogans.",
+      "status": "retrieved",
+      "authors": [
+        "Francesc Borrell-Carrió",
+        "Anthony L. Suchman",
+        "Ronald M. Epstein"
+      ],
+      "issued": "2004",
+      "identifiers": {
+        "doi": "10.1370/afm.245",
+        "pmcid": "PMC1466742"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-08-07T01:21:22+00:00",
+        "sha256": "0afffffce8ae72579bb36e5c1dac924126a31d9840460f816294fd9776c815bc",
+        "bytes": 156381,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/biopsychosocial-model/borrell-carrio-2004-bps-model-25-years-later.html"
+      }
+    },
+    {
+      "id": "williamson-2022-bps-model-not-dead",
+      "title": "The biopsychosocial model: not dead, but in need of revival",
+      "slot": "independent_critique",
+      "source_kind": "peer_reviewed_critical_commentary",
+      "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9768512/",
+      "download_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9768512/",
+      "access_status": "open_fulltext",
+      "rights_note": "BJPsych Bulletin 46(4):232-234, 2022. DOI 10.1192/bjb.2022.29. Creative Commons Attribution (CC-BY 4.0). Independent commentary examining the model's validity (does it accurately describe causes of illness?), usefulness (does it help clinicians?), and implementation (why is it poorly applied in practice?). Distinct from the Bolton 2023 empirical/theoretical revision in empirical_status.",
+      "status": "retrieved",
+      "authors": [
+        "Simon Williamson"
+      ],
+      "issued": "2022",
+      "identifiers": {
+        "doi": "10.1192/bjb.2022.29",
+        "pmcid": "PMC9768512"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-08-07T01:21:23+00:00",
+        "sha256": "af942be5112eed0b015af34ccfbe3298b12bc9d783cd2eea5708c2f00f75c36a",
+        "bytes": 108910,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/biopsychosocial-model/williamson-2022-bps-model-not-dead.html"
+      }
+    },
+    {
+      "id": "bolton-2023-revitalized-bps-model",
+      "title": "A Revitalized Biopsychosocial Model: Core Theory, Research Paradigms, and Clinical Implications",
+      "slot": "empirical_status",
+      "source_kind": "peer_reviewed_theoretical_empirical_review",
+      "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10755226/",
+      "download_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10755226/",
+      "access_status": "open_fulltext",
+      "rights_note": "Psychological Medicine 53(16), 2023. DOI 10.1017/S0033291723002660. Creative Commons Attribution (CC-BY 4.0). Provides the most recent systematic theoretical and empirical evaluation of the model's scientific content. Argues the model has scientific content through condition-specific causal models, not through vacuous general statements. Distinct from Williamson 2022 critique; this source proposes a revitalized version with testable research paradigms.",
+      "status": "retrieved",
+      "authors": [
+        "Derek Bolton"
+      ],
+      "issued": "2023",
+      "identifiers": {
+        "doi": "10.1017/S0033291723002660",
+        "pmcid": "PMC10755226"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-08-07T01:21:35+00:00",
+        "sha256": "c986ff3941bbda9878d1ae5e25bb8aab77379d5af0b014483dd2830077389bf3",
+        "bytes": 206653,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/biopsychosocial-model/bolton-2023-revitalized-bps-model.html"
+      }
+    },
+    {
+      "id": "tripathi-2019-bps-model-contemporary-psychiatry",
+      "title": "Biopsychosocial Model in Contemporary Psychiatry: Current Validity and Future Prospects",
+      "slot": "current_status",
+      "source_kind": "peer_reviewed_disciplinary_status_review",
+      "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6875848/",
+      "download_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6875848/",
+      "access_status": "open_fulltext",
+      "rights_note": "Indian Journal of Psychological Medicine 41(6), 2019. DOI 10.4103/IJPSYM.IJPSYM_314_19. Creative Commons Attribution-NonCommercial-ShareAlike 4.0 (CC-BY-NC-SA). Reviews the current use of the biopsychosocial model in psychiatric training and practice, its limitations and future directions. Non-Western (Indian) psychiatric perspective; does not conflate biopsychosocial model with WHO-ICF or with integrative medicine more broadly.",
+      "status": "retrieved",
+      "authors": [
+        "Adarsh Tripathi",
+        "Anamika Das",
+        "Sujita K. Kar"
+      ],
+      "issued": "2019",
+      "identifiers": {
+        "doi": "10.4103/IJPSYM.IJPSYM_314_19",
+        "pmcid": "PMC6875848"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-08-07T01:21:36+00:00",
+        "sha256": "18e9ffa9f0cf10589e0502f7584fd16189e464510e9dbead69027ed1d74b4c51",
+        "bytes": 123109,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/biopsychosocial-model/tripathi-2019-bps-model-contemporary-psychiatry.html"
+      }
+    },
+    {
+      "id": "leiva-pena-2021-bps-latin-american-mental-health",
+      "title": "Social Determinants of Mental Health: Public Policies Based on the Biopsychosocial Model in Latin American Countries",
+      "slot": "cultural_language_context",
+      "source_kind": "systematic_theoretical_review",
+      "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8678097/",
+      "download_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8678097/",
+      "access_status": "open_fulltext",
+      "rights_note": "Revista Panamericana de Salud Publica (PAHO), December 2021. DOI 10.26633/RPSP.2021.158. Creative Commons Attribution-NonCommercial-NoDerivs 3.0 IGO (CC-BY-NC-ND 3.0 IGO). Published in English, Spanish and Portuguese. Examines advances and challenges in implementing biopsychosocial model-based mental health policies in Latin America through Web of Science, Scopus, PubMed and SciELO sources. Latin American applications and policy contexts are distinct from Engel's original medical model and from WHO-ICF.",
+      "status": "retrieved",
+      "authors": [
+        "Varinia Leiva-Peña",
+        "Patricia Rubí-González",
+        "Benjamin Vicente-Parada"
+      ],
+      "issued": "2021",
+      "identifiers": {
+        "doi": "10.26633/RPSP.2021.158",
+        "pmcid": "PMC8678097"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-08-07T01:21:49+00:00",
+        "sha256": "772fed85839806fcd96e6420498a58e8f8ac3e2e90899cb39fb10435a2377075",
+        "bytes": 175535,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/biopsychosocial-model/leiva-pena-2021-bps-latin-american-mental-health.html"
+      }
+    },
+    {
+      "id": "demarco-2006-biomedical-biopsicossocial-education-pt",
+      "title": "Do modelo biomédico ao modelo biopsicossocial: um projeto de educação permanente",
+      "slot": "cultural_language_context",
+      "source_kind": "portuguese_language_medical_education_article",
+      "landing_url": "https://www.scielo.br/j/rbem/a/63Ck5wPNn4gxyN39SZfCZsv/?lang=pt",
+      "download_url": "https://www.scielo.br/j/rbem/a/63Ck5wPNn4gxyN39SZfCZsv/?format=pdf&lang=pt",
+      "access_status": "open_fulltext",
+      "rights_note": "Revista Brasileira de Educação Médica 30(1), 2006. DOI 10.1590/S0100-55022006000100010. Creative Commons Attribution-NonCommercial 4.0 (CC-BY-NC 4.0). SciELO Brazil. Portuguese-language Brazilian article on transitioning from the biomedical to the biopsychosocial model in medical education and hospital practice. Author Mario Alfredo De Marco is from São Paulo. Portuguese-language medical education context distinct from Engel's original Anglo-American psychiatric framing.",
+      "status": "retrieved",
+      "authors": [
+        "Mario Alfredo De Marco"
+      ],
+      "issued": "2006",
+      "identifiers": {
+        "doi": "10.1590/S0100-55022006000100010"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-08-07T01:21:50+00:00",
+        "sha256": "710479c795d29335e37150ff504603292961ae9c0bde21c09ff411e78cc891f9",
+        "bytes": 263158,
+        "media_type": "application/pdf",
+        "cache_key": ".private-sources/biopsychosocial-model/demarco-2006-biomedical-biopsicossocial-education-pt.pdf"
+      }
+    }
+  ],
+  "status": "audited"
 }
