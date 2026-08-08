@@ -52,6 +52,38 @@
         "mindfulness programme cultural adaptation framework"
       ],
       "purpose": "Full-text discovery across programme origin, methods, empirical synthesis, active-control boundaries, present continuation, safety and cultural adaptation"
+    },
+    {
+      "searched_at": "2026-08-09",
+      "system": "WebSearch / Brown University / Open Science Framework / UMass curriculum records / PubMed Central",
+      "queries": [
+        "MBSR Authorized Curriculum Guide 8 week body scan sitting meditation mindful movement all day retreat official PDF",
+        "site:umassmed.edu \"MBSR Curriculum Guide\" PDF",
+        "site:brown.edu MBSR curriculum guide teacher certification official",
+        "MBSR teacher competence curriculum fidelity MBI TAC peer reviewed open access"
+      ],
+      "purpose": "Re-adjudicate theory_methods against a defined MBSR object. Selected the public-domain 2025 MBSR Curriculum and Teaching Guide v1.1 for the current eight-week curriculum, formal and informal practices, home practice and all-day class, plus Crane and Hecht's open intervention-integrity review for adherence, differentiation, teacher competence and MBI:TAC validation limits. Version boundaries are explicit: the 1979 Stress Reduction Clinic programme, the 2017 UMass Authorized Curriculum Guide and the living 2025 guide are different objects. The 2017 guide was found at third-party and NHS mirrors but its own notice prohibits copying or distribution without written permission, so it is retained only as an excluded pointer and no body is cached. Two otherwise relevant PMC candidate pages (PMC7673238 and PMC10270397) returned browser-check/reCAPTCHA shells during inspection and were not cached. MBCT curricula, Buddhist vipassana, generic trait mindfulness, apps, corporate courses, self-help, coaching, retreat marketing and private teacher-training sales pages were excluded."
+    },
+    {
+      "searched_at": "2026-08-09",
+      "system": "WebSearch / UMass Memorial Health / Brown University School of Professional Studies",
+      "queries": [
+        "UMass Memorial Health Center for Mindfulness MBSR current official teacher certification",
+        "site:ummhealth.org MBSR Center for Mindfulness 8 week current",
+        "site:brown.edu MBSR teaching certificate Mindfulness Center current pathway"
+      ],
+      "purpose": "Re-adjudicate current_status using current institutional records rather than outcome or marketing claims. Selected the UMass Memorial Health Center for Mindfulness MBSR page to document continuation at the programme's originating medical institution and Brown University's MBSR teaching-certificate page to document a current qualification and certification pathway. Prices, registration prompts, benefit claims, private-practice and corporate-training language are outside the evidentiary use of these pages. Brown's MBCT certificate is a separate pathway; commercial training vendors, course marketplaces, apps, wellness brands and coaching pages were excluded."
+    },
+    {
+      "searched_at": "2026-08-09",
+      "system": "WebSearch / Campbell Systematic Reviews via SAGE / PLOS ONE / PubMed / PubMed Central",
+      "queries": [
+        "MBSR systematic review meta-analysis active control risk of bias publication bias chronic pain anxiety depression",
+        "mindfulness-based stress reduction for improving health quality of life social functioning adults active control",
+        "MBSR anxiety depression meta-analysis active control MBSR subgroup",
+        "Reporting of Positive Results randomized trials mindfulness Coronado-Montoya PLOS"
+      ],
+      "purpose": "Re-adjudicate clinical_outcomes with unfavourable methodological findings searched as deliberately as favourable syntheses. Selected de Vibe et al.'s MBSR-specific review of 101 RCTs, which separates active from inactive controls and reports considerable risk of bias, smaller active-control effects and possible small-study/publication bias; Strauss et al.'s anxiety/depression meta-analysis, where only the MBSR subgroup is relevant and neither active-control nor MBSR subgroup estimates establish benefit; and Coronado-Montoya et al.'s registry-based audit of positive-result reporting across mindfulness-based mental-health trials. Chronic pain, current anxiety/depression, mild or moderate psychological problems, somatic conditions and non-clinical stress/wellbeing remain separate indication and population claims. MBCT relapse-prevention evidence, ACT and DBT trials, generic meditation, trait-mindfulness correlates, apps and commercial wellness studies were excluded. Cross-program reviews are marked as shared methodological bodies and are not counted as independent MBSR-specific efficacy evidence."
     }
   ],
   "items": [
@@ -86,7 +118,7 @@
       "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8364929/",
       "download_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8364929/",
       "access_status": "open_fulltext",
-      "rights_note": "Open meta-review that identifies MBSR as a prototypical MBI; programme-specific findings remain separate from MBCT and other MBIs.",
+      "rights_note": "Open meta-review that identifies MBSR as a prototypical MBI; programme-specific findings remain separate from MBCT and other MBIs. The same publication is cached separately under the same item id in the mbct pack: it is one shared cross-program source body, not two independent sources and not independent MBSR-specific outcome evidence.",
       "status": "retrieved",
       "issued": "2021",
       "identifiers": {
@@ -154,7 +186,7 @@
       "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6575147/",
       "download_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6575147/",
       "access_status": "open_fulltext",
-      "rights_note": "Open harm framework covering MBSR and MBCT; notes under-reporting and distinguishes difficult experiences from attributable sustained harm.",
+      "rights_note": "Open harm framework covering MBSR and MBCT; notes under-reporting and distinguishes difficult experiences from attributable sustained harm. The same publication is cached separately under the same item id in the mbct pack: it is one shared cross-program source body, not two independent sources and not independent MBSR-specific safety evidence.",
       "status": "retrieved",
       "issued": "2019",
       "identifiers": {
@@ -188,6 +220,205 @@
         "bytes": 213425,
         "media_type": "text/html",
         "cache_key": ".private-sources/mbsr/loucks-etal-2022-mbp-adaptation-framework.html"
+      }
+    },
+    {
+      "id": "kabat-zinn-etal-2025-mbsr-curriculum-guide-v1-1",
+      "title": "2025 Mindfulness-Based Stress Reduction (MBSR) Curriculum and Teaching Guide, version 1.1",
+      "slot": "theory_methods",
+      "source_kind": "public_domain_current_curriculum_guide",
+      "landing_url": "https://doi.org/10.17605/OSF.IO/TCKB3",
+      "download_url": "https://osf.io/mbvdk/download",
+      "access_status": "public_domain_fulltext",
+      "rights_note": "OSF describes this v1.1 guide as offered in the public domain, and Brown University links the project as an open-source resource. It documents the 2025 curriculum, including orientation, eight weekly classes, an all-day class, formal body-scan, sitting, walking and mindful-movement practices, informal practice and home practice. It is a living later guide, not retroactive evidence for the original 1979 Stress Reduction Clinic programme and not interchangeable with the distinct 2017 UMass Authorized Curriculum Guide. The guide asks readers not to use it as a substitute for the training needed to teach MBSR. Curriculum content is not clinical-outcome evidence and is not MBCT, generic mindfulness or a commercial course.",
+      "status": "retrieved",
+      "issued": "2025-09-10, version 1.1",
+      "identifiers": {
+        "doi": "10.17605/OSF.IO/TCKB3",
+        "osf_file": "mbvdk"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-08-08T19:02:27+00:00",
+        "sha256": "a1652e28d1403610a27630f41a804368048e1fd85eb602241f237e0951cf46b6",
+        "bytes": 5172375,
+        "media_type": "application/pdf",
+        "cache_key": ".private-sources/mbsr/kabat-zinn-etal-2025-mbsr-curriculum-guide-v1-1.pdf"
+      }
+    },
+    {
+      "id": "crane-hecht-2018-intervention-integrity",
+      "title": "Intervention Integrity in Mindfulness-Based Research",
+      "slot": "theory_methods",
+      "source_kind": "open_access_methodological_review",
+      "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6153890/",
+      "download_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6153890/",
+      "access_status": "open_fulltext",
+      "rights_note": "CC BY 4.0 full text on adherence, differentiation, competence, teacher training and MBI:TAC, with explicit limits on the tool's validation and on links between competence and outcomes. It addresses mindfulness-based programs including both MBSR and MBCT; the shared MBI:TAC framework is not MBSR-specific, and MBCT findings or adaptations must not stand in for standard MBSR. This is methods and fidelity literature, not proof that MBSR produces a clinical outcome.",
+      "status": "retrieved",
+      "authors": [
+        "Rebecca S. Crane",
+        "Frederick M. Hecht"
+      ],
+      "issued": "2018",
+      "identifiers": {
+        "doi": "10.1007/s12671-018-0886-3",
+        "pmid": "30294386",
+        "pmcid": "PMC6153890"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-08-08T19:02:33+00:00",
+        "sha256": "4375fe88477f6c0c496378bf4a0c405e4d4dc7e347f0f402a71e5cff5cfa1235",
+        "bytes": 181681,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/mbsr/crane-hecht-2018-intervention-integrity.html"
+      }
+    },
+    {
+      "id": "santorelli-etal-2017-authorized-curriculum-guide",
+      "title": "Mindfulness-Based Stress Reduction (MBSR) Authorized Curriculum Guide, 2017",
+      "slot": "theory_methods",
+      "source_kind": "excluded_no_redistribution_curriculum_pointer",
+      "landing_url": "https://www.umassmed.edu/globalassets/center-for-mindfulness/documents/mbsr-curriculum-guide-2017.pdf",
+      "download_url": "https://rightdecisions.scot.nhs.uk/media/2105/mbsr-curriculum-guide-2017.pdf",
+      "access_status": "restricted_no_redistribution",
+      "rights_note": "Excluded on rights grounds. The guide's own opening notice identifies it as University of Massachusetts Medical School Center for Mindfulness property and says it may not be copied, distributed or transferred without written permission. The original UMass file is no longer a stable retrievable endpoint; search located third-party and NHS mirrors, but public reachability does not grant redistribution rights. No body is cached. This 2017 authorized guide remains a version pointer only and is not conflated with either the 1979 clinic programme or the public-domain 2025 v1.1 guide.",
+      "status": "excluded",
+      "authors": [
+        "Saki F. Santorelli",
+        "Florence Meleo-Meyer",
+        "Lynn Koerbel",
+        "Jon Kabat-Zinn"
+      ],
+      "issued": "2017"
+    },
+    {
+      "id": "umass-memorial-mbsr-current-program",
+      "title": "Mindfulness-Based Stress Reduction (MBSR) - Center for Mindfulness",
+      "slot": "current_status",
+      "source_kind": "originating_institution_current_program_page",
+      "landing_url": "https://www.ummhealth.org/services-treatments/center-mindfulness/mindfulness-programs/mbsr",
+      "download_url": "https://www.ummhealth.org/services-treatments/center-mindfulness/mindfulness-programs/mbsr",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Official current UMass Memorial Health page documenting continuation of MBSR at the programme's originating medical institution, its link to the 1979 clinic and the current orientation, eight-class, all-day-class and home-practice structure. It is used only for institutional identity and contemporary continuation. Prices, registration prompts and benefit claims on the page are promotional material and are not clinical-outcome evidence; this institutional offering is not generic mindfulness, an app or a commercial wellness course.",
+      "status": "retrieved",
+      "issued": "current page; retrieved 2026",
+      "retrieval": {
+        "retrieved_at": "2026-08-08T19:02:39+00:00",
+        "sha256": "abe3dbaf13435bf87d08d5f48c9108b45b00510f5963759542a98b1e744d7e60",
+        "bytes": 164185,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/mbsr/umass-memorial-mbsr-current-program.html"
+      }
+    },
+    {
+      "id": "brown-mbsr-teaching-certificate-current",
+      "title": "Mindfulness-Based Stress Reduction Teaching Certificate",
+      "slot": "current_status",
+      "source_kind": "university_teacher_certification_pathway",
+      "landing_url": "https://professional.brown.edu/academics/mindfulness-education/stress-reduction",
+      "download_url": "https://professional.brown.edu/academics/mindfulness-education/stress-reduction",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Official Brown University page documenting a current multi-tier MBSR teacher qualification and certification pathway and its institutional partnership with the Mindfulness Center at Brown. It is used only for present institutional and credential status, not as evidence that MBSR is effective, that certification predicts outcomes or that private-practice and corporate uses are supported. Brown's MBCT certificate is a separate programme, and registration, sales and career language is not retained as evidence.",
+      "status": "retrieved",
+      "issued": "current page; retrieved 2026",
+      "retrieval": {
+        "retrieved_at": "2026-08-08T19:02:47+00:00",
+        "sha256": "9530c566a59f2df4d8240fca3bd545f98391f1a22133f25c225b2f55f24e7cd0",
+        "bytes": 69111,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/mbsr/brown-mbsr-teaching-certificate-current.html"
+      }
+    },
+    {
+      "id": "de-vibe-etal-2017-mbsr-systematic-review",
+      "title": "Mindfulness-based stress reduction (MBSR) for improving health, quality of life and social functioning in adults: a systematic review and meta-analysis",
+      "slot": "clinical_outcomes",
+      "source_kind": "open_access_mbsr_systematic_review_meta_analysis",
+      "landing_url": "https://journals.sagepub.com/doi/10.4073/csr.2017.11",
+      "download_url": "https://journals.sagepub.com/doi/10.4073/csr.2017.11",
+      "access_status": "open_fulltext",
+      "rights_note": "CC BY 3.0 full text of an MBSR-specific review of 101 randomized trials. It separates inactive and active controls and reports smaller active-control effects, considerable risk of bias in roughly two thirds of studies, and possible small-study/publication bias for inactive-control mental-health comparisons. Its somatic-condition, mild or moderate psychological-problem and general-population evidence must remain separate rather than becoming one universal outcome claim. It is not MBCT, ACT or DBT evidence, and brief or adapted programs count only where the review's MBSR inclusion criteria were met.",
+      "status": "retrieved",
+      "authors": [
+        "Michael de Vibe",
+        "Arild Bjørndal",
+        "Sabina Fattah",
+        "Gunvor M. Dyrdal",
+        "Even Halland",
+        "Emily E. Tanner-Smith"
+      ],
+      "issued": "2017",
+      "identifiers": {
+        "doi": "10.4073/csr.2017.11"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-08-08T19:02:56+00:00",
+        "sha256": "af262ab4bd3883a78e2b4a62e370e7d61dc2d5b0847bda425fe3beb20366080d",
+        "bytes": 1111533,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/mbsr/de-vibe-etal-2017-mbsr-systematic-review.html"
+      }
+    },
+    {
+      "id": "strauss-etal-2014-anxiety-depression-meta-analysis",
+      "title": "Mindfulness-Based Interventions for People Diagnosed with a Current Episode of an Anxiety or Depressive Disorder: A Meta-Analysis of Randomised Controlled Trials",
+      "slot": "clinical_outcomes",
+      "source_kind": "open_access_cross_program_meta_analysis_with_mbsr_subgroup",
+      "landing_url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0096110",
+      "download_url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0096110",
+      "access_status": "open_fulltext",
+      "rights_note": "CC BY full text of a cross-program meta-analysis in people with a diagnosed current anxiety or depressive episode. Only its separately reported MBSR subgroup is relevant here: the pooled MBI and MBCT estimates do not stand in for MBSR. The review found no significant MBSR subgroup effect and no difference from active controls, with few studies and wide intervals. Current-episode evidence remains distinct from MBCT depressive-relapse prevention, chronic-pain outcomes and non-clinical stress or wellbeing.",
+      "status": "retrieved",
+      "authors": [
+        "Clara Strauss",
+        "Kate Cavanagh",
+        "Annie Oliver",
+        "Danelle Pettman"
+      ],
+      "issued": "2014",
+      "identifiers": {
+        "doi": "10.1371/journal.pone.0096110",
+        "pmid": "24763812",
+        "pmcid": "PMC4000176"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-08-08T19:03:02+00:00",
+        "sha256": "96d8c55571300c4ff809f3a3022bf65e802c16b1abc0303bc67abba3b827dc89",
+        "bytes": 240886,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/mbsr/strauss-etal-2014-anxiety-depression-meta-analysis.html"
+      }
+    },
+    {
+      "id": "coronado-montoya-etal-2016-positive-results-reporting",
+      "title": "Reporting of Positive Results in Randomized Controlled Trials of Mindfulness-Based Mental Health Interventions",
+      "slot": "clinical_outcomes",
+      "source_kind": "open_access_registry_based_methodological_audit",
+      "landing_url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0153220",
+      "download_url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0153220",
+      "access_status": "open_fulltext",
+      "rights_note": "CC BY full text comparing published randomized mindfulness-based mental-health trials with statistical power and trial registries to assess positive-result reporting, selective outcome reporting and nonpublication. It includes MBSR, MBCT and other mindfulness-based therapies and is therefore one shared methodological body, not independent MBSR-specific efficacy evidence. It is retained to bound the outcome literature, not to supply an effect estimate; generic trait mindfulness, meditation apps and commercial wellness programs are outside its evidentiary role.",
+      "status": "retrieved",
+      "authors": [
+        "Stephanie Coronado-Montoya",
+        "Alexander W. Levis",
+        "Linda Kwakkenbos",
+        "Russell J. Steele",
+        "Erick H. Turner",
+        "Brett D. Thombs"
+      ],
+      "issued": "2016",
+      "identifiers": {
+        "doi": "10.1371/journal.pone.0153220",
+        "pmid": "27058355",
+        "pmcid": "PMC4824444"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-08-08T19:03:18+00:00",
+        "sha256": "00cf19d0b300c7dc09239477c8fd265da994a6cc517cd36a9cfc89b3552a3c77",
+        "bytes": 271004,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/mbsr/coronado-montoya-etal-2016-positive-results-reporting.html"
       }
     }
   ],

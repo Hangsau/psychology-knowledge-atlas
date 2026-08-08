@@ -152,6 +152,7 @@ completed_items:
   - BCT版本邊界分開記錄：2008的22 techniques＋4 packages、2011的40-item CALO-RE與2013的93-item／16-group BCTTv1不互換；TIDieR 2014明記延伸CONSORT 2010與SPIRIT 2013而非取代或療效證據
   - 目前48/48來源包 audited、累計403筆實際正文／正式書目或摘要頁
   - dbt 的 P2-SC exit-gate 四項缺陷已修復：theory_methods 以 Linehan 2015 第二版 skills manual 官方樣章與 Tan 等2022方法邊界全文補齊，empirical_status 以 Cristea 等2017正式摘要及 Juul 2022方法學全文同時保存小效果、偏差、比較組與 allegiance 限制，clinical_outcomes 以 Kothgassner 等2021 DBT-A青少年自傷／自殺意念meta-analysis限定適應症，cultural_language_context 以 Ramaiya 等2017尼泊爾文化調適NIH manuscript取代；Haft 等2022 APA個人使用浮水印PDF已刪快取並標excluded，另修正PMC2963469由Swales 2000誤標為Chapman 2006。標準DBT、skills-only、DBT-A、RO DBT與ACT／MBCT／MBSR／REBT／泛CBT保持邊界，成人BPD、青少年自傷、飲食疾患與物質使用結果不混用；dbt現有11筆retrieved本體＋1筆excluded指標，6筆新增本體跨包SHA-256零重複
+  - mbsr 的 P2-SC exit-gate 三個空 covered 槽已實搜重裁並維持 covered：theory_methods 以公版2025 MBSR Curriculum and Teaching Guide v1.1及Crane／Hecht 2018介入完整性全文補齊，另把明示不得複製散布的2017 UMass Authorized Curriculum Guide列excluded指標；current_status 只以UMass Memorial Health現行MBSR頁與Brown大學MBSR教師證書路徑記錄機構延續，不採其療效／銷售語言；clinical_outcomes 收de Vibe等2017的101項RCT系統回顧、Strauss等2014焦慮／憂鬱meta-analysis之MBSR子群與Coronado-Montoya等2016登錄資料方法稽核，保留活性對照、小效果／不顯著、偏差與選擇性報告限制。1979原診所方案、2017授權課綱與2025 living guide不互換；MBCT／ACT／DBT、宗教vipassana、泛mindfulness、app／企業／商業wellness材料不冒充MBSR，既有Goldberg 2021與Baer 2019明標為與mbct共用出版物而非獨立證據；7筆新增本體跨包SHA-256零重複，mbsr現有13筆retrieved本體＋1筆excluded指標
 next_action: 48份來源包已全數 audited；P2-SC exit gate（tools/p2sc_exit_gate.py）已建立並執行，結果 FAIL（14 項）——11 個 covered 但零本體的槽位、3 份 APA 個人使用浮水印 PDF，細節與補救順序見下方 P2-SC EXIT GATE RECORD。補救完成並重跑 gate 至 PASS 前，P2-SC 不得宣告完成
 ```
 
@@ -204,6 +205,7 @@ verification:
 next_action: gate 已建立且明確 FAIL，來源資料未被工具或本次紀錄修改。補救分兩單位串行處理，每單位完成後重跑 gate：①11 個 covered 但零本體的槽位（act／constructivist-psychotherapy／dbt／mbct／mbsr／rebt）—— 補齊合格來源，或誠實降級為 searched_no_qualifying_source 並補記搜尋；②3 份 APA 個人使用 PDF —— 依既有先例刪快取、改標 excluded 並寫 rights_note，另尋開放取用替代或官方摘要。兩者皆結案後才可宣告 P2-SC 完成，下一 gate 為 P4 views
 stop_rule: 本工具唯讀；發現失敗不得由工具或自動化改動來源資料，一律回報後停，由人裁決
 repair_update: 2026-08-09 dbt 的3個空 covered 槽與Haft浮水印PDF共4項均已解決；重跑後剩餘10項為 act／constructivist-psychotherapy／mbct／mbsr／rebt 的8個空槽，以及 existential-psychology／transpersonal-psychology 的2份浮水印PDF，失敗清單已無dbt
+repair_update_mbsr: 2026-08-09 mbsr 的theory_methods／current_status／clinical_outcomes三個空 covered 槽均已補上合格本體；重跑後剩餘7項為 act／constructivist-psychotherapy／mbct／rebt 的5個空槽，以及 existential-psychology／transpersonal-psychology 的2份浮水印PDF，失敗清單已無mbsr
 ```
 
 ## P3-S COMPLETION RECORD
