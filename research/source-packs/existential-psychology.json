@@ -59,6 +59,26 @@
         "Frankl May existential psychology primary full text authorized"
       ],
       "purpose": "Non-English context and primary-work access boundary"
+    },
+    {
+      "searched_at": "2026-08-09",
+      "system": "WebSearch / PubMed / Europe PMC / University of Roehampton Research Explorer / APA DOI",
+      "queries": [
+        "\"Existential Therapies: A Meta-Analysis of Their Effects\" 10.1037/a0037167 open access full text",
+        "site:europepmc.org 25045907 PMC open access",
+        "\"Existential Therapies\" accepted manuscript University of Roehampton repository"
+      ],
+      "purpose": "Recheck the restricted Vos, Craig and Cooper article for a lawful full-text copy. Europe PMC returned one MED record with inPMC=N, isOpenAccess=N and hasPDF=N; the University of Roehampton record exposes abstract and metadata only; no publisher open full text was located. The indexed clinica.ispa.pt PDF is the personal-use publisher copy already rejected and deleted. PubMed and Roehampton remain abstract-level discovery records, not full text."
+    },
+    {
+      "searched_at": "2026-08-09",
+      "system": "WebSearch / PubMed / PubMed Central / Europe PMC / Frontiers",
+      "queries": [
+        "existential therapy intervention systematic review meta-analysis open access full text",
+        "site:pmc.ncbi.nlm.nih.gov existential therapy systematic review psychotherapy meta-analysis",
+        "\"The Present State of Existential Interventions Within Palliative Care\""
+      ],
+      "purpose": "Locate a distinct open empirical review without importing humanistic psychology or positive psychology sources. Selected Terao and Satoh 2022, a CC BY PubMed Central review of 19 randomized trials across nine existential interventions for advanced-cancer and palliative-care populations. Its narrow clinical scope is explicit and it is not treated as a general verdict on existential psychology."
     }
   ],
   "items": [
@@ -69,9 +89,9 @@
       "source_kind": "systematic_review_meta_analysis",
       "landing_url": "https://pubmed.ncbi.nlm.nih.gov/25045907/",
       "download_url": "https://clinica.ispa.pt/sites/default/files/22._vos_et_al_2015.pdf",
-      "access_status": "repository_manuscript",
-      "rights_note": "Public university-hosted PDF; preserve journal-version metadata and repository-copy provenance.",
-      "status": "retrieved",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Excluded on rights grounds. The university-hosted publisher PDF carries the notice \"This article is intended solely for the personal use of the individual user and is not to be disseminated broadly.\" Consistent with this corpus's precedent for personal-use printouts, the retrieved body was deleted and is not cached; the DOI and PMID are kept as citation pointers only. This record is not treated as full text.",
+      "status": "excluded",
       "authors": [
         "Joël Vos",
         "Meghan Craig",
@@ -81,13 +101,34 @@
       "identifiers": {
         "doi": "10.1037/a0037167",
         "pmid": "25045907"
+      }
+    },
+    {
+      "id": "terao-satoh-2022-existential-interventions-palliative-care",
+      "title": "The Present State of Existential Interventions Within Palliative Care",
+      "slot": "empirical_status",
+      "source_kind": "empirical_review",
+      "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8792983/",
+      "download_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8792983/fullTextXML",
+      "access_status": "open_fulltext",
+      "rights_note": "Open full text via PubMed Central under the Creative Commons Attribution License (CC BY). The review covers 19 randomized trials across nine existential psychotherapies for advanced-cancer and palliative-care populations. This narrow clinical evidence does not establish the empirical status of existential psychology as a whole, does not generalize beyond palliative populations, and is not evidence for humanistic therapy or positive psychology generally.",
+      "status": "retrieved",
+      "authors": [
+        "Takeshi Terao",
+        "Moriaki Satoh"
+      ],
+      "issued": "2022",
+      "identifiers": {
+        "doi": "10.3389/fpsyt.2021.811612",
+        "pmid": "35095620",
+        "pmcid": "PMC8792983"
       },
       "retrieval": {
-        "retrieved_at": "2026-07-28T10:34:36+00:00",
-        "sha256": "4b346c50dd7ae06f28f84da7cf4af5d059a66d27fe962d356a2a082cd24e6662",
-        "bytes": 332853,
-        "media_type": "application/pdf",
-        "cache_key": ".private-sources/existential-psychology/vos-craig-cooper-2015-existential-meta-analysis.pdf"
+        "retrieved_at": "2026-08-08T20:44:55+00:00",
+        "sha256": "82aa23a8df20f16c3a12f65f6ca6920b5648594d531f114686502be6a0b9268d",
+        "bytes": 81850,
+        "media_type": "application/xml",
+        "cache_key": ".private-sources/existential-psychology/terao-satoh-2022-existential-interventions-palliative-care.xml"
       }
     },
     {
