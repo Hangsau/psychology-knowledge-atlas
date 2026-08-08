@@ -52,9 +52,49 @@
         "ACT cultural adaptation review"
       ],
       "purpose": "Full-text discovery across first-generation evidence, model/processes, outcome syntheses, methodological boundaries, current institutional continuation, safety and cultural context"
+    },
+    {
+      "searched_at": "2026-08-09",
+      "system": "WebSearch / Cambridge Core / PubMed / PubMed Central / ERIC / UCL Discovery / CiteSeerX",
+      "queries": [
+        "Acceptance Commitment Therapy history comprehensive distancing Relational Frame Theory third wave scholarly review open access",
+        "ACT historical development comprehensive distancing 1980s functional contextualism scholarly article",
+        "\"Acceptance and Commitment Therapy\" \"comprehensive distancing\" history",
+        "\"Acceptance and Commitment Therapy\" historiography \"third wave\" independent",
+        "\"Acceptance and Commitment Therapy (ACT): A Third Wave Behaviour Therapy\" PDF Cullen",
+        "\"Chris Cullen\" \"Acceptance and Commitment Therapy\" 2008 pdf",
+        "site:pubmed.ncbi.nlm.nih.gov acceptance commitment therapy history third wave contextualism RFT review",
+        "site:pmc.ncbi.nlm.nih.gov \"acceptance and commitment therapy\" \"comprehensive distancing\""
+      ],
+      "purpose": "Re-adjudicate identity_history for an ACT-specific independent scholarly account rather than another ACBS self-description. Selected the official Cambridge Core abstract and bibliographic page for Cullen 2008: a Keele University/NHS clinician's peer-reviewed article that explicitly outlines ACT's development, identifies it as a newer contextualist and third-wave behaviour therapy, and describes the RFT-to-ACT relationship. Cambridge requires purchase or login for the article body, so only the openly readable official abstract page is cached and it is not treated as full text; a CiteSeerX PDF mirror with no clear redistribution basis was not used. Zettle's ERIC history and Hayes's PubMed third-wave article were excluded as founding-lineage accounts rather than independent historiography. The PubMed review of the third-wave metaphor, the PMC historical review of CBT, and the restricted UCL chapter were excluded because their multi-therapy framing cannot substitute for ACT-specific identity history; the PMC browser endpoint also displayed a reCAPTCHA checking shell. RFT-only scholarship, generic third-wave CBT, DBT, MBCT, MBSR, REBT, constructivist psychotherapy, cognitive-behavioral therapy as a whole, commercial ACT coaching, apps, self-help workbooks, and training-provider promotion were not counted as ACT identity evidence."
     }
   ],
   "items": [
+    {
+      "id": "cullen-2008-act-third-wave-history-record",
+      "title": "Acceptance and Commitment Therapy (ACT): A Third Wave Behaviour Therapy (abstract record)",
+      "slot": "identity_history",
+      "source_kind": "official_publisher_abstract_record_independent_scholarly_history",
+      "landing_url": "https://www.cambridge.org/core/journals/behavioural-and-cognitive-psychotherapy/article/abs/acceptance-and-commitment-therapy-act-a-third-wave-behaviour-therapy/423B984578C94F0E89DE13F2A4C9D82C",
+      "download_url": "https://www.cambridge.org/core/journals/behavioural-and-cognitive-psychotherapy/article/abs/acceptance-and-commitment-therapy-act-a-third-wave-behaviour-therapy/423B984578C94F0E89DE13F2A4C9D82C",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Official Cambridge University Press abstract and bibliographic page for a peer-reviewed article by a Keele University/NHS clinician, not an ACBS organizational self-description or a founding-author account. The abstract directly identifies ACT as a newer contextualist behaviour therapy, states that the article outlines its development, and describes the relationship between RFT and ACT; the keywords and issue placement also identify third-wave and contextual-therapy historiography. Cambridge marks the article body as purchase- or login-dependent, so the cached page is an abstract record only and is not treated as full text; no access control was bypassed, and a CiteSeerX PDF mirror with unclear redistribution authorization was not retained. RFT-only material cannot establish ACT identity, and generic third-wave CBT or adjacent DBT, MBCT, MBSR, REBT, constructivist-psychotherapy, and cognitive-behavioral-therapy sources cannot stand in for ACT. Commercial coaching, apps, self-help workbooks, and training-provider promotion were also excluded.",
+      "status": "retrieved",
+      "authors": [
+        "Chris Cullen"
+      ],
+      "issued": "2008",
+      "identifiers": {
+        "doi": "10.1017/S1352465808004797"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-08-08T19:45:33+00:00",
+        "sha256": "7067399026c0bab995ad5cd1b7f8e5619023ca42bbf18e40e22c3f228db91718",
+        "bytes": 878767,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/act/cullen-2008-act-third-wave-history-record.html"
+      }
+    },
     {
       "id": "zettle-hayes-1986-component-process",
       "title": "Component and Process Analysis of Cognitive Therapy",
