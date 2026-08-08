@@ -52,6 +52,20 @@
         "REBT adverse events guideline cultural adaptation"
       ],
       "purpose": "Full-text discovery across naming history, founder theory, later synthesis, contemporary institution, outcome evidence, safety and cultural context"
+    },
+    {
+      "searched_at": "2026-08-09",
+      "system": "WebSearch / PubMed / NCBI Bookshelf / NICE / CRD DARE",
+      "queries": [
+        "site:ncbi.nlm.nih.gov/books rational emotive therapy meta-analysis critical abstract",
+        "Efficacy of rational-emotive therapy quantitative analysis meta-analysis control group",
+        "rational emotive behavior therapy meta-analysis active control allegiance effect",
+        "REBT outcome research researcher allegiance methodological limitations meta-analysis",
+        "The efficacy of rational emotive therapy in adults clinical fact or psychometric artifact PubMed",
+        "NICE rational emotive therapy active comparator evidence statement OCD",
+        "site:ncbi.nlm.nih.gov/books/NBK rational-emotive therapy meta-analysis adults"
+      ],
+      "purpose": "Re-adjudicate empirical_status with adverse and methodological findings searched as deliberately as favourable syntheses. Selected the 2006 NICE/NCBI Bookshelf OCD evidence review because it keeps historical rational-emotive therapy (RET) separate from general CBT and Beckian cognitive therapy and directly compares two small RET studies with active behaviour therapy, and selected the official PubMed abstract record for Gossette and O'Brien's 1992 adult critical review because it examines wait-list, placebo and other-treatment comparisons and explicitly identifies earlier reviews as partisan. David et al. 2018 and Turner et al. 2024 were not double-counted from their existing slots. The Engels et al. 1993 controlled-study meta-analysis was located, but the APA body was subscriber-only and the ResearchGate publisher preview was not retained; its abstract reports superiority to placebo or no treatment but equivalence to active treatments. The CRD DARE appraisal of Gonzalez et al. 2004 was located but not used because its child and adolescent evidence mixes school and clinic delivery and substantially overlaps the distinct Rational Emotive Education boundary. Generic psychotherapy allegiance reviews, general-CBT meta-analyses without a separately analysed RET or REBT subgroup, Beckian CT, educational REE, sport REBT, institute promotion and commercial material were excluded. Browser opens of PubMed 1430252 and PMC11377144 returned reCAPTCHA checking shells, so neither shell was cached; the official PubMed E-utilities XML and substantive NCBI Bookshelf HTML endpoints were used instead without bypassing access controls."
     }
   ],
   "items": [
@@ -175,6 +189,59 @@
         "bytes": 354030,
         "media_type": "application/pdf",
         "cache_key": ".private-sources/rebt/nice-depression-rebt-evidence-table.pdf"
+      }
+    },
+    {
+      "id": "nice-2006-ocd-ret-active-comparator-evidence",
+      "title": "Obsessive-Compulsive Disorder: Appendix 18 — Psychological versus Psychological Evidence Statements",
+      "slot": "empirical_status",
+      "source_kind": "independent_clinical_guideline_evidence_review",
+      "landing_url": "https://www.ncbi.nlm.nih.gov/books/NBK56484/",
+      "download_url": "https://www.ncbi.nlm.nih.gov/books/NBK56484/table/appendixes.app18.t2/?report=objectonly",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Publicly readable NCBI Bookshelf HTML table from Appendix 18 of the 2006 NICE CG31 evidence review; the page states that the book is all rights reserved, so it is privately cached for research and no open licence is asserted. The review separately identifies rational-emotive therapy in two small adult OCD studies (Emmelkamp 1988 and 1991) compared with active behaviour therapy rather than pooling it as general CBT or Beckian cognitive therapy. It judges efficacy inconclusive; the cached table reports N = 2, n = 39, SMD = 0.25 (95% CI -0.38 to 0.88) for obsessive-compulsive symptoms and SMD = 0.27 (95% CI -0.37 to 0.90) for irrational beliefs, so this cannot establish superiority, overall effectiveness, or transfer to other indications. Naming boundary: these historical studies use rational-emotive therapy (RET), not the 1993 rational emotive behaviour therapy name. This is not evidence for Rational Emotive Education or sport REBT, and the review does not assess researcher allegiance.",
+      "status": "retrieved",
+      "authors": [
+        "National Collaborating Centre for Mental Health (UK)"
+      ],
+      "issued": "2006",
+      "identifiers": {
+        "bookshelf": "NBK56484",
+        "guideline": "NICE CG31"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-08-08T20:21:03+00:00",
+        "sha256": "6f7e34612b1a147fe7ee2e93b611ccb19f006e04e176d15d5d337b09423f989d",
+        "bytes": 227269,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/rebt/nice-2006-ocd-ret-active-comparator-evidence.html"
+      }
+    },
+    {
+      "id": "gossette-obrien-1992-ret-adult-critical-review-record",
+      "title": "The efficacy of rational emotive therapy in adults: clinical fact or psychometric artifact? (official abstract record)",
+      "slot": "empirical_status",
+      "source_kind": "official_bibliographic_abstract_record_of_independent_critical_review",
+      "landing_url": "https://pubmed.ncbi.nlm.nih.gov/1430252/",
+      "download_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=1430252&rettype=abstract&retmode=xml",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Official PubMed E-utilities abstract record only; the Elsevier article body is subscriber-only and was neither bypassed nor cached, so this is not treated as full text. The abstract reviews 75 adult RET outcome reports across wait-list, placebo and other-treatment comparisons, reports improvement in only about 25% of comparisons, chiefly on self-reported irrationality and dysphoria, notes little change in behavioural measures, and explicitly characterizes earlier reviews as partisan. It does not provide extractable effect sizes or formally code and estimate researcher allegiance. Naming boundary: the 1992 article studies rational-emotive therapy (RET), not the 1993 rational emotive behaviour therapy name. Its findings are not generalized to Beckian cognitive therapy, general CBT, Rational Emotive Education, or sport REBT.",
+      "status": "retrieved",
+      "authors": [
+        "Robert L. Gossette",
+        "Robert M. O'Brien"
+      ],
+      "issued": "1992",
+      "identifiers": {
+        "doi": "10.1016/0005-7916(92)90020-J",
+        "pmid": "1430252"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-08-08T20:18:30+00:00",
+        "sha256": "03c1c307d7aef788e31f99180573c9cf2277b29e8343b23cfbbc0eb2b77b69e4",
+        "bytes": 4819,
+        "media_type": "text/xml",
+        "cache_key": ".private-sources/rebt/gossette-obrien-1992-ret-adult-critical-review-record.xml"
       }
     }
   ],
