@@ -5,34 +5,681 @@
   "slots": {
     "identity_history": {
       "description": "Independent scholarly identity and historical placement",
-      "status": "not_searched"
+      "status": "covered"
     },
     "primary_works": {
       "description": "Primary works or first-generation programme statements",
-      "status": "not_searched"
+      "status": "covered"
     },
     "theory_methods": {
       "description": "Core concepts, methods and internal variants",
-      "status": "not_searched"
+      "status": "covered"
     },
     "independent_critique": {
       "description": "Independent historiography, criticism or boundary analysis",
-      "status": "not_searched"
+      "status": "covered"
     },
     "empirical_status": {
       "description": "Empirical tests, syntheses, replications or current assessment",
-      "status": "not_searched"
+      "status": "covered"
     },
     "current_status": {
       "description": "Contemporary continuation, institutions or present disciplinary status",
-      "status": "not_searched"
+      "status": "covered"
     },
     "cultural_language_context": {
       "description": "Non-English, local, cultural or knowledge-sovereignty context where applicable",
-      "status": "not_searched"
+      "status": "covered"
     }
   },
-  "searches": [],
-  "items": [],
-  "status": "not_started"
+  "searches": [
+    {
+      "searched_at": "2026-08-08",
+      "system": "WebSearch / Cambridge Core / Bangor University Research Portal / PMC / International Society of Behavioral Medicine literature",
+      "queries": [
+        "health psychology history independent historiography development field Matarazzo 1978 Division 38 scholarly article PDF",
+        "health psychology boundaries behavioral medicine psychosomatic medicine clinical health psychology public health health promotion scholarly",
+        "history of health psychology Pickren Degni chapter PDF",
+        "Proposal for an Update of the Definition and Scope of Behavioral Medicine health psychology psychosomatic medicine PMC"
+      ],
+      "purpose": "Define health psychology as an academic psychological subfield and hold its boundaries before selecting sources. The single most dangerous neighbour is the already-audited biopsychosocial-model target: Engel's 1977 framework is a different object, so Engel 1977 and 1980, Borrell-Carrio 2004, Bolton 2023, Williamson 2022 and every other body in that pack were excluded rather than recycled as health psychology identity sources. Material belonging to the already-audited mbsr, mbct, act, cbt, biological-psychology, cross-cultural-psychology, positive-psychology and social-psychology targets was also excluded. Discipline boundaries held: health psychology is psychology-led and overlaps with, but is not interchangeable with, multidisciplinary behavioral medicine; medical or clinical psychology; psychosomatic medicine; public health and health promotion; health services research; or health education. An adjacent behavioral-medicine charter paper is retained only to document that boundary, not as this subfield's programme statement. Popular and commercial homonyms were excluded: wellness and self-help publishing, holistic-health and lifestyle coaching, fitness and nutrition marketing, corporate wellbeing products, and mind-over-matter healing claims. The target remains the subfield, not a catalogue of conditions or interventions. Cambridge and Oxford history chapters were access-gated; only Cambridge's official summary is selected."
+    },
+    {
+      "searched_at": "2026-08-08",
+      "system": "WebSearch / PubMed / NCBI E-utilities / SAGE publisher assets / Society for Health Psychology",
+      "queries": [
+        "Matarazzo 1980 behavioral health behavioral medicine frontiers new health psychology PubMed DOI",
+        "Matarazzo 1982 behavioral health challenge psychology full text official PDF",
+        "health psychology history task force 1978 Division 38 Matarazzo official APA",
+        "Stone Cohen Adler 1979 Health Psychology handbook founding field"
+      ],
+      "purpose": "Locate first-generation, participant-authored programme statements while marking them as interested founding accounts rather than neutral history. Matarazzo's 1980 bibliographic record fixes the widely cited field definition and the 1982 publisher-hosted article records the proposed disciplinary programme. Neither is substituted for independent historiography. The Society for Health Psychology timeline answered HTTP 403 to direct retrieval and is recorded as excluded, not bypassed. Engel's medical-model papers were deliberately not selected: their separate home is the audited biopsychosocial-model pack."
+    },
+    {
+      "searched_at": "2026-08-08",
+      "system": "WebSearch / SAGE / UCL Discovery / BMJ",
+      "queries": [
+        "SAGE Handbook of Health Psychology second edition contents theory methods official",
+        "BCT taxonomy v1 93 techniques Michie 2013 PDF repository version 1",
+        "Abraham Michie 2008 taxonomy 26 behaviour change techniques CALO-RE 2011 40 techniques",
+        "TIDieR checklist intervention description reporting standards 2014 BMJ open access"
+      ],
+      "purpose": "Map field-level theory and method without turning the pack into a condition or intervention catalogue. The 2025 SAGE Handbook second-edition contents record maps contexts, health-behavior theories, biological approaches, methods and measurement; only the publisher record is cached, not the copyrighted books. Version boundaries are explicit: Abraham and Michie's 2008 list of 22 techniques plus four packages, the 2011 40-item CALO-RE taxonomy and the 2013 BCT Taxonomy v1 of 93 techniques in 16 groups are distinct stages, not interchangeable versions. TIDieR's 12-item 2014 guide is likewise an extension of CONSORT 2010 and SPIRIT 2013, not a replacement for them and not evidence that an intervention works."
+    },
+    {
+      "searched_at": "2026-08-08",
+      "system": "WebSearch / Taylor & Francis / White Rose Research Online / University of Surrey Research Portal / PubMed / NCBI E-utilities / SAGE",
+      "queries": [
+        "Sniehotta Presseau Araujo-Soares 2014 time to retire theory planned behaviour PDF repository",
+        "Ajzen 2015 theory planned behaviour alive well not ready retire PDF official repository",
+        "Ogden 2003 problems social cognition models pragmatic conceptual analysis health psychology PubMed repository",
+        "critical health psychology internal counter tradition Hepworth Crossley full text",
+        "independent critical history health psychology Pickren Stam"
+      ],
+      "purpose": "Search critique directly and retain disagreement, not a favourable-only canon: Ogden's conceptual audit of dominant social-cognition models; Sniehotta, Presseau and Araujo-Soares's argument to retire the Theory of Planned Behaviour; Conner's published defence of extending rather than retiring it; and Hepworth's map of critical health psychology as an internal counter-tradition. The University of Surrey landing page for Ogden exposed only a client-rendered shell to direct inspection, so the official PubMed abstract record is cached instead of pretending the repository article was obtained. SAGE restricts Hepworth's full text, so only the official abstract record is cached. Ajzen's author-hosted PDF visibly carries the subscriber attribution 'Downloaded by [Icek Ajzen]' and was excluded without caching; Conner's lawful accepted manuscript supplies a defence without reusing that marked file. Independent historiography is supplied by Pickren rather than relying only on founders' recollections."
+    },
+    {
+      "searched_at": "2026-08-08",
+      "system": "WebSearch / Wiley / PubMed / NCBI E-utilities / White Rose Research Online / PMC / Griffith Research Repository",
+      "queries": [
+        "behavior change intervention effect size inflation reporting quality health psychology systematic review meta-analysis open access",
+        "Examining the theory-effectiveness hypothesis systematic review of systematic reviews Dalgetty Miller Dombrowski",
+        "Selective outcome reporting trials behavioural health interventions health psychology journals review PDF",
+        "Reporting behaviour change interventions BCT taxonomy v1 training quality descriptions PMC",
+        "Are we speaking the same language improve theory application reporting behaviour change research"
+      ],
+      "purpose": "Assess the evidence and reform literature rather than infer effectiveness from popularity. Selected sources address the theory-effectiveness hypothesis, selective outcome reporting and resulting effect-size inflation, and an empirical test of whether BCTTv1 and training improve intervention descriptions. The Wiley full-text endpoint for Dalgetty et al. answered HTTP 403, so its official NCBI abstract is cached and is not treated as full text. A PMC route for Willmott and Rundle-Thiele returned a browser-check/reCAPTCHA shell; a lawful Griffith copy was found but not needed after stronger directly sampled reporting studies were selected, and no shell was cached. Social psychology's Reproducibility Project, Many Labs 1, ego-depletion replication and questionable-research-practice bodies remain in the audited social-psychology pack and were not duplicated. Coyne and Tennen's critique of positive-thinking cancer claims remains in positive-psychology and was not re-used here."
+    },
+    {
+      "searched_at": "2026-08-08",
+      "system": "WebSearch / European Health Psychology Society / Society for Health Psychology",
+      "queries": [
+        "European Health Psychology Society about history official formed Tilburg 1986 journals",
+        "Society for Health Psychology Division 38 official current about",
+        "health psychology current professional society EHPS official"
+      ],
+      "purpose": "Document present institutional continuation without treating association self-description as evidence that any theory or intervention is valid. The EHPS page records a continuing psychology-specific society, annual conference, journals and special-interest groups. The US Society for Health Psychology history endpoint answered HTTP 403 and was excluded rather than bypassed; its indexed snippets were not cached as a substitute body."
+    },
+    {
+      "searched_at": "2026-08-08",
+      "system": "WebSearch / PubMed / NCBI E-utilities / SciELO Brazil / J-STAGE",
+      "queries": [
+        "Psychology and health after apartheid why there is no health psychology South Africa Yen 2016",
+        "site:scielo.br Psicologia da saude no Brasil historia psicologia hospitalar clinica",
+        "J-STAGE What is Health Psychology history development Kinoshita 1988 Japanese",
+        "health psychology Global South local history critical tradition"
+      ],
+      "purpose": "Record cases where language, institution and political history change the field rather than merely translate US categories: Yen's post-apartheid argument about why a separate South African health psychology did not form; Gorayeb's explicitly personal account of Brazilian health psychology and its distinction from clinical and hospital psychology; and Kinoshita's Japanese-language 1988 programme overview. Yen's ResearchGate publisher PDF states that it is for personal use and may not be disseminated broadly, so it was rejected and only the official NCBI abstract record is cached. WEIRD-sampling and test-translation sources already belong to the audited cross-cultural-psychology pack and were not duplicated here."
+    }
+  ],
+  "items": [
+    {
+      "id": "pickren-2019-intellectual-history-record",
+      "title": "Health Psychology (Chapter 19, official summary)",
+      "slot": "identity_history",
+      "source_kind": "independent_history_publisher_abstract_record",
+      "landing_url": "https://www.cambridge.org/core/books/abs/cambridge-handbook-of-the-intellectual-history-of-psychology/health-psychology/396EE52ECF99ABB1BC26D385EAC23395",
+      "download_url": "https://www.cambridge.org/core/books/abs/cambridge-handbook-of-the-intellectual-history-of-psychology/health-psychology/396EE52ECF99ABB1BC26D385EAC23395",
+      "access_status": "publicly_readable_license_unclear",
+      "status": "retrieved",
+      "authors": [
+        "Wade E. Pickren"
+      ],
+      "issued": "2019",
+      "identifiers": {
+        "doi": "10.1017/9781108290876.020"
+      },
+      "rights_note": "Cambridge University Press's public summary of a chapter by a historian of psychology, selected as independent historiography of the subfield's emergence in the last third of the twentieth century and its clinical, community, critical and public-health expressions. Abstract/summary level only: the chapter body requires institutional or purchased access and was not obtained, so this is a publisher record and not treated as read.",
+      "retrieval": {
+        "retrieved_at": "2026-08-08T14:53:41+00:00",
+        "sha256": "a1eb67b843a02f3f8595c8032b462308641b40aba5a06ed6d38e39d69c500721",
+        "bytes": 1034743,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/health-psychology/pickren-2019-intellectual-history-record.html"
+      }
+    },
+    {
+      "id": "quinn-chater-morrison-2020-uk-oral-history",
+      "title": "An oral history of health psychology in the UK",
+      "slot": "identity_history",
+      "source_kind": "open_access_oral_history",
+      "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7497242/",
+      "download_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7497242/",
+      "access_status": "open_fulltext",
+      "status": "retrieved",
+      "authors": [
+        "Francis Quinn",
+        "Angel Chater",
+        "Val Morrison"
+      ],
+      "issued": "2020",
+      "identifiers": {
+        "doi": "10.1111/bjhp.12418",
+        "pmid": "32314477",
+        "pmcid": "PMC7497242"
+      },
+      "rights_note": "CC BY full text of an oral-history study based on interviews with 53 UK health psychologists who entered the field from the 1970s through the 2000s. It documents UK pathways through medical schools, pragmatic health-care research, social psychology, clinical work and professionalisation. Its evidence is participant testimony reconstructed by researchers within the field, so it is a regional oral history, not an independent global origin verdict.",
+      "retrieval": {
+        "retrieved_at": "2026-08-08T14:53:42+00:00",
+        "sha256": "05ec5bdc4bb2a69d47dc5217b30cfbc536ae9fe7880071425a71412cfe5ca08f",
+        "bytes": 174002,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/health-psychology/quinn-chater-morrison-2020-uk-oral-history.html"
+      }
+    },
+    {
+      "id": "dekker-stauder-penedo-2017-behavioral-medicine-boundary",
+      "title": "Proposal for an Update of the Definition and Scope of Behavioral Medicine",
+      "slot": "identity_history",
+      "source_kind": "adjacent_discipline_boundary_statement",
+      "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5288409/",
+      "download_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5288409/",
+      "access_status": "open_fulltext",
+      "status": "retrieved",
+      "authors": [
+        "Joost Dekker",
+        "Adrienne Stauder",
+        "Frank J. Penedo"
+      ],
+      "issued": "2017",
+      "identifiers": {
+        "doi": "10.1007/s12529-016-9610-7",
+        "pmid": "27844398",
+        "pmcid": "PMC5288409"
+      },
+      "rights_note": "CC BY full text of an International Society of Behavioral Medicine proposal retained only for boundary work. It defines behavioral medicine as multidisciplinary across biobehavioral mechanisms, clinical work and public health, and contrasts that structure with psychology-led health psychology and medically focused psychosomatic medicine. This is an adjacent discipline's participant statement, not health psychology's own programme and not the biopsychosocial model.",
+      "retrieval": {
+        "retrieved_at": "2026-08-08T14:53:42+00:00",
+        "sha256": "a849f5cde7ae944fd5080b4e6883ffe72bde9b9dcb7876dbb89c0eb8991d7521",
+        "bytes": 115644,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/health-psychology/dekker-stauder-penedo-2017-behavioral-medicine-boundary.html"
+      }
+    },
+    {
+      "id": "matarazzo-1980-new-health-psychology-record",
+      "title": "Behavioral health and behavioral medicine: frontiers for a new health psychology (bibliographic record)",
+      "slot": "primary_works",
+      "source_kind": "founding_programme_official_bibliographic_record",
+      "landing_url": "https://pubmed.ncbi.nlm.nih.gov/7416568/",
+      "download_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=7416568&retmode=xml",
+      "access_status": "publicly_readable_license_unclear",
+      "status": "retrieved",
+      "authors": [
+        "Joseph D. Matarazzo"
+      ],
+      "issued": "1980",
+      "identifiers": {
+        "doi": "10.1037/0003-066X.35.9.807",
+        "pmid": "7416568"
+      },
+      "rights_note": "NCBI E-utilities bibliographic record for the American Psychologist programme statement usually cited for the aggregate definition of health psychology. PubMed supplies no abstract and APA full text is restricted, so only metadata is cached and the article is not treated as read. Matarazzo was a founding participant; this record fixes a primary definition, not an independent history or an endorsement of its boundaries.",
+      "retrieval": {
+        "retrieved_at": "2026-08-08T14:53:44+00:00",
+        "sha256": "26cbaed3ba480e1add6ffb2d2e27fb63a1a1fe1ade223c5fade31416f6cebd7e",
+        "bytes": 2790,
+        "media_type": "text/xml",
+        "cache_key": ".private-sources/health-psychology/matarazzo-1980-new-health-psychology-record.xml"
+      }
+    },
+    {
+      "id": "matarazzo-1982-behavioral-health-challenge",
+      "title": "Behavioral Health's Challenge to Academic, Scientific, and Professional Psychology",
+      "slot": "primary_works",
+      "source_kind": "founding_programme_publisher_excerpt",
+      "landing_url": "https://doi.org/10.1037/0003-066X.37.1.1",
+      "download_url": "https://us.sagepub.com/sites/default/files/upm-assets/9483_book_item_9483.pdf",
+      "access_status": "publicly_readable_license_unclear",
+      "status": "retrieved",
+      "authors": [
+        "Joseph D. Matarazzo"
+      ],
+      "issued": "1982",
+      "identifiers": {
+        "doi": "10.1037/0003-066X.37.1.1",
+        "pmid": "7081800"
+      },
+      "rights_note": "Publisher-hosted SAGE teaching excerpt reproducing the American Psychologist article that proposed behavioral health as a challenge across academic, scientific and professional psychology. Publicly readable but no reuse licence is stated; it is cached for research intake only. This is a participant programme statement, not independent evidence that its behavioral-health agenda succeeded and not a substitute for the separate biopsychosocial-model literature.",
+      "retrieval": {
+        "retrieved_at": "2026-08-08T14:53:46+00:00",
+        "sha256": "c58ae936093470fcac57ab9af56812ee953f28a5187768a737f6ff722dc6ab29",
+        "bytes": 172744,
+        "media_type": "application/pdf",
+        "cache_key": ".private-sources/health-psychology/matarazzo-1982-behavioral-health-challenge.pdf"
+      }
+    },
+    {
+      "id": "sage-handbook-health-psychology-second-edition-record",
+      "title": "The SAGE Handbook of Health Psychology, Second Edition (publisher contents record)",
+      "slot": "theory_methods",
+      "source_kind": "current_field_handbook_publisher_contents_record",
+      "landing_url": "https://uk.sagepub.com/en-gb/eur/the-sage-handbook-of-health-psychology/book277415",
+      "download_url": "https://uk.sagepub.com/en-gb/eur/the-sage-handbook-of-health-psychology/book277415",
+      "access_status": "publicly_readable_license_unclear",
+      "status": "retrieved",
+      "authors": [
+        "Katherine Brown",
+        "Cecilia Cheng",
+        "Martin Hagger",
+        "Kyra Hamilton",
+        "Stephen Sutton"
+      ],
+      "issued": "2025, second edition",
+      "rights_note": "SAGE's public description and table of contents for the two-volume second edition. Volume 1 maps contexts and perspectives, theories of health-related behavior, biological health psychology, and methods and measurement; Volume 2 maps debates, intervention development and applications. Only the publisher record is cached, not either copyrighted volume. The second edition is not conflated with the 2004 first edition, and the contents map does not validate any listed theory.",
+      "retrieval": {
+        "retrieved_at": "2026-08-08T14:53:48+00:00",
+        "sha256": "0e206b520c189ec7bdbd76986cb5c72e69758bb12cb35430d69eacb2211e1468",
+        "bytes": 117714,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/health-psychology/sage-handbook-health-psychology-second-edition-record.html"
+      }
+    },
+    {
+      "id": "michie-etal-2013-bct-taxonomy-v1",
+      "title": "The Behavior Change Technique Taxonomy (v1) of 93 Hierarchically Clustered Techniques: Building an International Consensus for the Reporting of Behavior Change Interventions",
+      "slot": "theory_methods",
+      "source_kind": "repository_manuscript_method_taxonomy",
+      "landing_url": "https://discovery.ucl.ac.uk/id/eprint/1400691/",
+      "download_url": "https://discovery.ucl.ac.uk/id/eprint/1400691/1/Michie_et%20al.%20%28in%20press%29%20-%20BCT%20Taxonomy%20v1%20development%20paper.pdf",
+      "access_status": "repository_manuscript",
+      "status": "retrieved",
+      "authors": [
+        "Susan Michie",
+        "Michelle Richardson",
+        "Marie Johnston",
+        "Charles Abraham",
+        "Jill Francis",
+        "Wendy Hardeman",
+        "Martin P. Eccles",
+        "James Cane",
+        "Caroline E. Wood"
+      ],
+      "issued": "2013",
+      "identifiers": {
+        "doi": "10.1007/s12160-013-9486-6"
+      },
+      "rights_note": "UCL repository manuscript for BCT Taxonomy v1: 93 techniques in 16 groups developed through expert rating, open sorting and reliability testing. Version boundary retained: it reports the 2008 precursor as 22 techniques plus four packages and follows the distinct 2011 40-item CALO-RE taxonomy; none of those versions should be silently substituted for another. BCTTv1 specifies proposed intervention content and does not establish that any technique is effective.",
+      "retrieval": {
+        "retrieved_at": "2026-08-08T14:53:55+00:00",
+        "sha256": "8fd8d14cfff25fc5c0a000abec8bd1346094e5b6ac5e68d4d9a368bd9a79e900",
+        "bytes": 1817735,
+        "media_type": "application/pdf",
+        "cache_key": ".private-sources/health-psychology/michie-etal-2013-bct-taxonomy-v1.pdf"
+      }
+    },
+    {
+      "id": "hoffmann-etal-2014-tidier-guide",
+      "title": "Better reporting of interventions: template for intervention description and replication (TIDieR) checklist and guide",
+      "slot": "theory_methods",
+      "source_kind": "publicly_readable_reporting_standard_fulltext",
+      "landing_url": "https://www.bmj.com/content/348/bmj.g1687",
+      "download_url": "https://www.bmj.com/content/348/bmj.g1687",
+      "access_status": "publicly_readable_license_unclear",
+      "status": "retrieved",
+      "authors": [
+        "Tammy C. Hoffmann",
+        "Paul P. Glasziou",
+        "Isabelle Boutron",
+        "Ruairidh Milne",
+        "Rafael Perera",
+        "David Moher",
+        "Douglas G. Altman",
+        "Virginia Barbour",
+        "Helen Macdonald",
+        "Marie Johnston",
+        "Sarah E. Lamb",
+        "Mary Dixon-Woods",
+        "Peter McCulloch",
+        "Jeremy C. Wyatt",
+        "An-Wen Chan",
+        "Susan Michie"
+      ],
+      "issued": "2014",
+      "identifiers": {
+        "doi": "10.1136/bmj.g1687",
+        "pmid": "24609605"
+      },
+      "rights_note": "Publicly readable BMJ HTML full text of the 12-item TIDieR checklist and explanation guide for describing interventions sufficiently for appraisal and replication. The downloadable PDF was rejected and its cached copy deleted because it carried a dated guest-download line and 'For personal use only'; no marked PDF is retained. Version boundary retained: TIDieR extends CONSORT 2010 item 5 and SPIRIT 2013 item 11, does not replace those standards and does not demonstrate intervention efficacy.",
+      "failure_note": "The PDF at https://www.bmj.com/content/bmj/348/bmj.g1687.full.pdf was retrieved, inspected, then deleted because it was marked 'Downloaded ... by guest' and 'For personal use only'; the public HTML full text was used instead.",
+      "retrieval": {
+        "retrieved_at": "2026-08-08T14:56:49+00:00",
+        "sha256": "fb33b195a66ebe2d69edb8d4312c4219972719c8fc05620d3e4cc5261248820b",
+        "bytes": 233503,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/health-psychology/hoffmann-etal-2014-tidier-guide.html"
+      }
+    },
+    {
+      "id": "ogden-2003-social-cognition-models-abstract-record",
+      "title": "Some problems with social cognition models: A pragmatic and conceptual analysis (abstract record)",
+      "slot": "independent_critique",
+      "source_kind": "official_bibliographic_abstract_record",
+      "landing_url": "https://pubmed.ncbi.nlm.nih.gov/12940399/",
+      "download_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=12940399&retmode=xml",
+      "access_status": "publicly_readable_license_unclear",
+      "status": "retrieved",
+      "authors": [
+        "Jane Ogden"
+      ],
+      "issued": "2003",
+      "identifiers": {
+        "doi": "10.1037/0278-6133.22.4.424",
+        "pmid": "12940399"
+      },
+      "rights_note": "NCBI E-utilities abstract record for a conceptual audit of 47 papers applying the theory of reasoned action, Theory of Planned Behaviour, Health Belief Model or protection motivation theory. The Surrey repository advertises a file but its direct landing response was a client shell and no stable repository download was obtained, so the official abstract is cached and the paper is not treated as full text.",
+      "retrieval": {
+        "retrieved_at": "2026-08-08T14:53:57+00:00",
+        "sha256": "9060221b67f227a6b6f8586c1ab404f242531e35579c5c501c546ac85908abbe",
+        "bytes": 4276,
+        "media_type": "text/xml",
+        "cache_key": ".private-sources/health-psychology/ogden-2003-social-cognition-models-abstract-record.xml"
+      }
+    },
+    {
+      "id": "sniehotta-presseau-araujo-soares-2014-retire-tpb",
+      "title": "Time to retire the theory of planned behaviour",
+      "slot": "independent_critique",
+      "source_kind": "official_bibliographic_record_of_published_theory_critique",
+      "landing_url": "https://www.tandfonline.com/doi/full/10.1080/17437199.2013.869710",
+      "download_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=25053004&retmode=xml",
+      "access_status": "publicly_readable_license_unclear",
+      "status": "retrieved",
+      "authors": [
+        "Falko F. Sniehotta",
+        "Justin Presseau",
+        "Vera Araujo-Soares"
+      ],
+      "issued": "2014",
+      "identifiers": {
+        "doi": "10.1080/17437199.2013.869710",
+        "pmid": "25053004"
+      },
+      "rights_note": "NCBI E-utilities bibliographic record for the editorial arguing that the dominant Theory of Planned Behaviour should be retired. Taylor & Francis marks the article free access, but its PDF endpoint answered HTTP 403 to the project collector and was not bypassed; PubMed supplies no abstract, so only metadata is cached and the article is not treated as read. It is one side of a published debate and is paired with Conner's lawful accepted manuscript rather than treated as a settled verdict.",
+      "failure_note": "https://www.tandfonline.com/doi/pdf/10.1080/17437199.2013.869710 returned HTTP 403.",
+      "retrieval": {
+        "retrieved_at": "2026-08-08T14:55:15+00:00",
+        "sha256": "ece291e133cc92cc05f9906d394a056991acdaf231e2ddee63b32064a3fbfb2a",
+        "bytes": 5413,
+        "media_type": "text/xml",
+        "cache_key": ".private-sources/health-psychology/sniehotta-presseau-araujo-soares-2014-retire-tpb.xml"
+      }
+    },
+    {
+      "id": "conner-2015-extend-not-retire-tpb",
+      "title": "Extending not retiring the theory of planned behaviour: a commentary on Sniehotta, Presseau and Araujo-Soares",
+      "slot": "independent_critique",
+      "source_kind": "repository_manuscript_theory_defence",
+      "landing_url": "https://eprints.whiterose.ac.uk/id/eprint/97099/",
+      "download_url": "https://eprints.whiterose.ac.uk/97099/2/pub%202015_12.pdf",
+      "access_status": "repository_manuscript",
+      "status": "retrieved",
+      "authors": [
+        "Mark Conner"
+      ],
+      "issued": "2015 (online 2014)",
+      "identifiers": {
+        "doi": "10.1080/17437199.2014.899060",
+        "pmid": "26209200"
+      },
+      "rights_note": "White Rose accepted manuscript uploaded under the publisher's self-archiving policy. It defends extending and testing the Theory of Planned Behaviour instead of retiring it, while accepting the need for better measurement and experimental work. The repository cover limits reuse to applicable copyright exceptions; the manuscript is cached for research intake and may differ from the version of record.",
+      "retrieval": {
+        "retrieved_at": "2026-08-08T14:54:02+00:00",
+        "sha256": "355a8385e1f01b5921dac1e92fafc99f23e5b1ff78e3c3a00c77e632a55613f0",
+        "bytes": 266440,
+        "media_type": "application/pdf",
+        "cache_key": ".private-sources/health-psychology/conner-2015-extend-not-retire-tpb.pdf"
+      }
+    },
+    {
+      "id": "hepworth-2006-critical-health-psychology-abstract-record",
+      "title": "The emergence of critical health psychology: can it contribute to promoting public health? (abstract record)",
+      "slot": "independent_critique",
+      "source_kind": "official_bibliographic_abstract_record",
+      "landing_url": "https://pubmed.ncbi.nlm.nih.gov/16774882/",
+      "download_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=16774882&retmode=xml",
+      "access_status": "publicly_readable_license_unclear",
+      "status": "retrieved",
+      "authors": [
+        "Julie Hepworth"
+      ],
+      "issued": "2006",
+      "identifiers": {
+        "doi": "10.1177/1359105306063298",
+        "pmid": "16774882"
+      },
+      "rights_note": "NCBI E-utilities abstract record for a review of the emergence, philosophical phases and public-health ambitions of critical health psychology as an internal counter-tradition. SAGE restricts the full article and ResearchGate provides only a copyrighted publisher preview, so no full body was obtained and the source is not treated as read.",
+      "retrieval": {
+        "retrieved_at": "2026-08-08T14:54:03+00:00",
+        "sha256": "12df9c3d267569f3fee75b0b61c0cf00a4f60dce8199c14c8fed823ef31bf048",
+        "bytes": 6206,
+        "media_type": "text/xml",
+        "cache_key": ".private-sources/health-psychology/hepworth-2006-critical-health-psychology-abstract-record.xml"
+      }
+    },
+    {
+      "id": "ajzen-2015-tpb-alive-well-marked-copy",
+      "title": "The theory of planned behaviour is alive and well, and not ready to retire",
+      "slot": "independent_critique",
+      "source_kind": "excluded_subscriber_marked_publisher_copy",
+      "landing_url": "https://www.tandfonline.com/doi/abs/10.1080/17437199.2014.883474",
+      "download_url": "https://people.umass.edu/aizen/pubs/sniehotta.pdf",
+      "access_status": "publicly_readable_license_unclear",
+      "status": "excluded",
+      "authors": [
+        "Icek Ajzen"
+      ],
+      "issued": "2015",
+      "identifiers": {
+        "doi": "10.1080/17437199.2014.883474",
+        "pmid": "26209199"
+      },
+      "rights_note": "Excluded on rights grounds. The author-hosted publisher PDF visibly carries the subscriber attribution 'Downloaded by [Icek Ajzen] at 16:34 20 February 2014' and Taylor & Francis copyright text. It was not cached or redistributed. The defence side of the debate is represented by Conner's lawful White Rose accepted manuscript instead."
+    },
+    {
+      "id": "dalgetty-miller-dombrowski-2019-theory-effectiveness-abstract-record",
+      "title": "Examining the theory-effectiveness hypothesis: A systematic review of systematic reviews (abstract record)",
+      "slot": "empirical_status",
+      "source_kind": "official_bibliographic_abstract_record",
+      "landing_url": "https://pubmed.ncbi.nlm.nih.gov/30793445/",
+      "download_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=30793445&retmode=xml",
+      "access_status": "publicly_readable_license_unclear",
+      "status": "retrieved",
+      "authors": [
+        "Rebecca Dalgetty",
+        "Christopher B. Miller",
+        "Stephan U. Dombrowski"
+      ],
+      "issued": "2019",
+      "identifiers": {
+        "doi": "10.1111/bjhp.12356",
+        "pmid": "30793445"
+      },
+      "rights_note": "NCBI E-utilities abstract record for a systematic review of nine systematic reviews testing whether explicit use of theory increases health-behavior intervention effectiveness. It reports that eight reviews did not find support and that theory use and methods were often poorly reported. Abstract-level only: the Wiley PDF answered HTTP 403 and was not bypassed, so the review is registered but not treated as full text.",
+      "retrieval": {
+        "retrieved_at": "2026-08-08T14:54:04+00:00",
+        "sha256": "f63bb555904bc189a6baa328eb33b6b5cd332b61a60813f794ec16c3e488ceb4",
+        "bytes": 7419,
+        "media_type": "text/xml",
+        "cache_key": ".private-sources/health-psychology/dalgetty-miller-dombrowski-2019-theory-effectiveness-abstract-record.xml"
+      }
+    },
+    {
+      "id": "matvienko-sikar-etal-2024-selective-outcome-reporting",
+      "title": "Selective outcome reporting in trials of behavioural health interventions in health psychology and behavioural medicine journals: a review",
+      "slot": "empirical_status",
+      "source_kind": "open_access_methodological_review",
+      "landing_url": "https://eprints.whiterose.ac.uk/id/eprint/214582/",
+      "download_url": "https://eprints.whiterose.ac.uk/id/eprint/214582/1/Selective%20outcome%20reporting%20in%20trials%20of%20behavioural%20health%20interventions%20in%20health%20psychology%20and%20behavioural%20medicine%20journals%20%20a%20review.pdf",
+      "access_status": "open_fulltext",
+      "status": "retrieved",
+      "authors": [
+        "Karen Matvienko-Sikar",
+        "Jen O'Shea",
+        "Stephen Kennedy",
+        "Siobhan D. Thomas",
+        "Kerry Avery",
+        "Molly Byrne",
+        "Sheena McHugh",
+        "Daryl B. O'Connor",
+        "Ian J. Saldanha",
+        "Valerie Smith",
+        "Elaine Toomey",
+        "Kerry Dwan",
+        "Jamie J. Kirkham"
+      ],
+      "issued": "2024",
+      "identifiers": {
+        "doi": "10.1080/17437199.2024.2367613",
+        "pmid": "38923431"
+      },
+      "rights_note": "CC BY-NC-ND 4.0 published full text reviewing randomized behavioral-health trials in nine health psychology and behavioral medicine journals. It compares reports with registrations or protocols and directly addresses omissions, newly introduced outcomes and changes in outcome priority that can inflate effects. The journal sample spans two neighboring fields, so it assesses their published intervention literature rather than health psychology alone.",
+      "retrieval": {
+        "retrieved_at": "2026-08-08T14:54:07+00:00",
+        "sha256": "76266b9f0e174b42b93eac5d13e50765c7a7b745c3a524b9e61f471d05a7e28c",
+        "bytes": 1431275,
+        "media_type": "application/pdf",
+        "cache_key": ".private-sources/health-psychology/matvienko-sikar-etal-2024-selective-outcome-reporting.pdf"
+      }
+    },
+    {
+      "id": "wood-etal-2016-bct-reporting-test",
+      "title": "Reporting behaviour change interventions: do the behaviour change technique taxonomy v1, and training in its use, improve the quality of intervention descriptions?",
+      "slot": "empirical_status",
+      "source_kind": "open_access_empirical_method_test",
+      "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4897953/",
+      "download_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4897953/",
+      "access_status": "open_fulltext",
+      "status": "retrieved",
+      "authors": [
+        "Caroline E. Wood",
+        "Wendy Hardeman",
+        "Marie Johnston",
+        "Jill Francis",
+        "Charles Abraham",
+        "Susan Michie"
+      ],
+      "issued": "2016",
+      "identifiers": {
+        "doi": "10.1186/s13012-016-0448-9",
+        "pmid": "27268131",
+        "pmcid": "PMC4897953"
+      },
+      "rights_note": "CC BY full text of three studies testing whether BCTTv1 and training improve clarity, replicability and coding reliability of descriptions written after observed interventions. Results were mixed across between-group and within-group designs, including poorer ratings after training in one study; the artificial task and time constraints limit generalization. This tests a reporting tool, not intervention effectiveness.",
+      "retrieval": {
+        "retrieved_at": "2026-08-08T14:54:08+00:00",
+        "sha256": "95e2a3e407574f6fb1419e1be1d26af9a6afc0566063f7e7222a6e400cbfa119",
+        "bytes": 178764,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/health-psychology/wood-etal-2016-bct-reporting-test.html"
+      }
+    },
+    {
+      "id": "ehps-about-current-association",
+      "title": "About the European Health Psychology Society",
+      "slot": "current_status",
+      "source_kind": "professional_association_self_description",
+      "landing_url": "https://ehps.net/about/",
+      "download_url": "https://ehps.net/about/",
+      "access_status": "publicly_readable_license_unclear",
+      "status": "retrieved",
+      "issued": "current page; society formed after 1986 meeting",
+      "rights_note": "EHPS participant self-description documenting an extant psychology-specific professional society, its origin after the 1986 Tilburg meeting, annual conferences from 1988, journals, special-interest groups and international links. It establishes institutional continuation only; association activity and membership do not validate any theory, method, finding or professional claim.",
+      "retrieval": {
+        "retrieved_at": "2026-08-08T14:54:13+00:00",
+        "sha256": "2e29ae11bee7d021678c50339bbb7216ca8a0fa348c7e4e5263f35a35d359015",
+        "bytes": 333120,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/health-psychology/ehps-about-current-association.html"
+      }
+    },
+    {
+      "id": "society-health-psychology-history-blocked",
+      "title": "Our History - Society for Health Psychology",
+      "slot": "current_status",
+      "source_kind": "excluded_blocked_professional_association_history",
+      "landing_url": "https://societyforhealthpsychology.org/about/our-history-timeline-version/",
+      "download_url": "https://societyforhealthpsychology.org/about/our-history-timeline-version/",
+      "access_status": "publicly_readable_license_unclear",
+      "status": "excluded",
+      "issued": "current web timeline",
+      "rights_note": "Excluded on technical access grounds. The official US Society for Health Psychology timeline returned HTTP 403 to direct retrieval during this search. No access control was bypassed and no search-engine snippet or challenge page was cached as a source body; current institutional coverage is supplied by the retrievable EHPS page."
+    },
+    {
+      "id": "yen-2016-health-after-apartheid-abstract-record",
+      "title": "Psychology and health after apartheid: Or, Why there is no health psychology in South Africa (abstract record)",
+      "slot": "cultural_language_context",
+      "source_kind": "official_bibliographic_abstract_record",
+      "landing_url": "https://pubmed.ncbi.nlm.nih.gov/26881425/",
+      "download_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=26881425&retmode=xml",
+      "access_status": "publicly_readable_license_unclear",
+      "status": "retrieved",
+      "authors": [
+        "Jeffery Yen"
+      ],
+      "issued": "2016",
+      "identifiers": {
+        "doi": "10.1037/hop0000025",
+        "pmid": "26881425"
+      },
+      "rights_note": "NCBI E-utilities abstract record for a history of South African psychologists' engagement with health after apartheid and the argument that a separate imported 'health psychology' did not form. The ResearchGate publisher PDF states that it is solely for personal use and may not be disseminated broadly; it was rejected and deleted from consideration. Only the official abstract is cached and the paper is not treated as full text.",
+      "retrieval": {
+        "retrieved_at": "2026-08-08T14:54:13+00:00",
+        "sha256": "cdb71eabe9e2a01febf829035493015c4ea253782e7adfc98ecd242b578a0f51",
+        "bytes": 4773,
+        "media_type": "text/xml",
+        "cache_key": ".private-sources/health-psychology/yen-2016-health-after-apartheid-abstract-record.xml"
+      }
+    },
+    {
+      "id": "gorayeb-2010-health-psychology-brazil",
+      "title": "Psicologia da Saude no Brasil",
+      "slot": "cultural_language_context",
+      "source_kind": "portuguese_language_regional_field_history",
+      "landing_url": "https://www.scielo.br/j/ptp/a/FRYYPBbcthyCtqmjYM93SKj/?format=html&lang=pt",
+      "download_url": "https://www.scielo.br/j/ptp/a/FRYYPBbcthyCtqmjYM93SKj/?format=pdf&lang=pt",
+      "access_status": "open_fulltext",
+      "status": "retrieved",
+      "authors": [
+        "Ricardo Gorayeb"
+      ],
+      "issued": "2010",
+      "identifiers": {
+        "doi": "10.1590/S0102-37722010000500010"
+      },
+      "rights_note": "SciELO open full text in Portuguese describing Brazilian health psychology, research production and local distinctions among Psicologia da Saude, Psicologia Clinica and Psicologia Hospitalar. The author explicitly presents a personal, evidence-oriented viewpoint and warns that it is not a complete history, so it is retained as a situated participant account rather than a canonical Brazilian taxonomy.",
+      "retrieval": {
+        "retrieved_at": "2026-08-08T14:54:14+00:00",
+        "sha256": "6bdf42aa7a4683cfad75a91f85c1569b783e1e7a4ac8511e2d6abfa347bcf57e",
+        "bytes": 390341,
+        "media_type": "application/pdf",
+        "cache_key": ".private-sources/health-psychology/gorayeb-2010-health-psychology-brazil.pdf"
+      }
+    },
+    {
+      "id": "kinoshita-1988-what-is-health-psychology-japan",
+      "title": "What is Health Psychology?: Its history of development and field of researches",
+      "slot": "cultural_language_context",
+      "source_kind": "japanese_language_early_programme_overview",
+      "landing_url": "https://www.jstage.jst.go.jp/article/jahp/1/1/1_7/_article",
+      "download_url": "https://www.jstage.jst.go.jp/article/jahp/1/1/1_7/_pdf/-char/ja",
+      "access_status": "publicly_readable_license_unclear",
+      "status": "retrieved",
+      "authors": [
+        "Tomio Kinoshita"
+      ],
+      "issued": "1988",
+      "identifiers": {
+        "doi": "10.11560/jahp.1.1_7"
+      },
+      "rights_note": "J-STAGE free-access Japanese full text of a programme overview presented at the 1988 meeting of the Japanese Association of Health Psychology. It records how an early Japanese-language field statement translated and organized US definitions, history and research topics. No open reuse licence is stated, and it is a participant overview rather than independent historiography or advice.",
+      "retrieval": {
+        "retrieved_at": "2026-08-08T14:54:17+00:00",
+        "sha256": "74bb29754b7905898d221c9cb7e5db194c14b9f32597158e18a2a041f9aba3f2",
+        "bytes": 2005066,
+        "media_type": "application/pdf",
+        "cache_key": ".private-sources/health-psychology/kinoshita-1988-what-is-health-psychology-japan.pdf"
+      }
+    }
+  ],
+  "status": "audited"
 }

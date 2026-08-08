@@ -9,17 +9,18 @@ status: in_progress
 base_commit: 593551e
 started_at: 2026-07-28
 objective: 先為原版48項研究目標完成可恢復、可稽核的來源蒐集，再開始閱讀、建立主張或撰寫內容
-active_target: health-psychology
-remaining_targets: [health-psychology(48)]
+active_target: none
+remaining_targets: []
 remaining_notes:
-  - 一包一 agent、串行不平行；每包獨立 commit + push 後才派下一包，一個 Sonnet agent 約吃 33% 的 Claude 5H 窗
-  - health-psychology(48) 最後跑，且用全新隔離 process；醫療／疾病主題詞密集曾在 psychology-schools 觸發 AUP 假陽性連鎖
+  - 48包均已獨立 audited；本 gate 只完成來源蒐集與裁決，仍不等於閱讀、驗證或可發布內容
+  - P2-SC exit gate 尚待執行，需再確認48包搜尋／槽位裁決、私有快取、版本與失敗紀錄及完整驗證結果
 canonical_inputs:
   - research/targets.json
   - research/source-packs/*.json
 target_files:
-  - research/source-packs/transpersonal-psychology.json
-expected_result: 下一來源包的所有槽位完成搜尋與裁決；合格可讀正文完成私有快取、格式與雜湊稽核；不建立 claims 或 reader prose
+  - research/source-packs/health-psychology.json
+  - HANDOFF.md
+expected_result: 48份來源包均 audited，P2-SC exit gate 可執行；本 unit 不建立 claims 或 reader prose
 boundaries:
   - legacy repo 只提供48項 identity/order seed；不匯入舊文章、摘要或 verdict
   - downloaded 不等於 read/verified/publishable
@@ -143,7 +144,14 @@ completed_items:
   - 權利檢查：KU Leuven 的 RPP PDF 帶「Downloaded from www.sciencemag.org」機構下載戳與 AAAS 版權聲明，但全檔 regex 掃描無 personal use／不得散布條款，與先前包排除的訂閱者列印本性質不同，故保留並在 rights_note 揭露；其餘 PDF（Klein、Doyen、Agnoli、Montero、Lane、開放教科書）掃描零命中，開放教科書經前置頁確認為 CC BY-NC-SA 4.0
   - 24筆取得物通過大小（4.6KB至34.9MB）、MIME、SHA-256、題名、PDF文字（pypdf）、假頁面（Incapsula／PoW／Angular／reCAPTCHA／cookies-off）與跨包重複檢查；所有20KB以下檔案（5筆 E-utilities XML 與 EASP About 頁）逐一解碼讀取確認為真實記錄；Open Library 的 .json 端點被 collect_sources 判為不支援 MIME，改存 HTML 書目頁；archive.org Allport 首次500為暫時性錯誤，重試成功
   - 目前47/48來源包 audited、累計384筆實際正文／正式書目或摘要頁
-next_action: 以全新隔離 process 處理最後一包 health-psychology(48)，不建立正文。非英語只在原始語言、地方傳統或翻譯／版本差異影響正確性時補，不設配額
+  - health-psychology 已 audited：19筆實際正文／正式書目或摘要頁，7槽位全 covered；分布為 identity_history 3、primary_works 2、theory_methods 3、independent_critique 4、empirical_status 3、current_status 1、cultural_language_context 3
+  - 身分與邊界固定：Engel 1977／1980、Borrell-Carrió 2004、Williamson 2022、Bolton 2023等已屬 biopsychosocial-model(46)，本包零重用且跨47包SHA-256比對零相同正文；health psychology亦不與behavioral medicine、medical／clinical psychology、psychosomatic medicine、public health／health promotion、health services research或health education互換，wellness／自助／holistic health／教練／行銷／mind-over-matter材料全數排除
+  - 批判為實搜且保留論爭雙方：Ogden 2003社會認知模型概念批判摘要XML、Sniehotta等2014退役TPB正式書目XML、Conner 2015延伸而非退役TPB之White Rose accepted manuscript、Hepworth 2006 critical health psychology摘要XML；empirical_status另收Dalgetty等2019 theory-effectiveness review摘要、Matvienko-Sikar等2024選擇性結果報告全文及Wood等2016 BCTTv1描述品質混合結果全文
+  - 被擋、假殼與權利端點均未繞過：T&F的Sniehotta PDF 403後改存E-utilities書目且明示無摘要；Surrey的Ogden頁為client-rendered殼後改存PubMed摘要；Wiley的Dalgetty全文403後改存正式摘要；Willmott的PMC路徑回browser-check／reCAPTCHA殼且未快取；US Society for Health Psychology歷史頁403列excluded。Ajzen作者站PDF帶「Downloaded by [Icek Ajzen]」訂閱者戳記列excluded；Yen的ResearchGate PDF明示僅限個人使用，改存E-utilities摘要
+  - BMJ TIDieR PDF下載後查出dated guest-download與「For personal use only」標記，已刪除並改存233,503-byte公開HTML全文；其餘PDF逐檔抽字與權利詞掃描、所有20KB以下E-utilities XML逐一解析，19筆均確認題名／正文或書目實體，無Incapsula、PoW、Angular、reCAPTCHA或cookies-off假頁
+  - BCT版本邊界分開記錄：2008的22 techniques＋4 packages、2011的40-item CALO-RE與2013的93-item／16-group BCTTv1不互換；TIDieR 2014明記延伸CONSORT 2010與SPIRIT 2013而非取代或療效證據
+  - 目前48/48來源包 audited、累計403筆實際正文／正式書目或摘要頁
+next_action: 48份來源包已全數 audited；執行 P2-SC exit gate，確認48包搜尋與槽位裁決、selected本體MIME／大小／SHA-256／私有快取、失敗與版本邊界，以及validator、完整tests與diff checks
 ```
 
 ## P3-S COMPLETION RECORD
