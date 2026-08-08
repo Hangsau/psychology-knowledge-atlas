@@ -5,34 +5,662 @@
   "slots": {
     "identity_history": {
       "description": "Independent scholarly identity and historical placement",
-      "status": "not_searched"
+      "status": "covered"
     },
     "primary_works": {
       "description": "Primary works or first-generation programme statements",
-      "status": "not_searched"
+      "status": "covered"
     },
     "theory_methods": {
       "description": "Core concepts, methods and internal variants",
-      "status": "not_searched"
+      "status": "covered"
     },
     "independent_critique": {
       "description": "Independent historiography, criticism or boundary analysis",
-      "status": "not_searched"
+      "status": "covered"
     },
     "empirical_status": {
       "description": "Empirical tests, syntheses, replications or current assessment",
-      "status": "not_searched"
+      "status": "covered"
     },
     "current_status": {
       "description": "Contemporary continuation, institutions or present disciplinary status",
-      "status": "not_searched"
+      "status": "covered"
     },
     "cultural_language_context": {
       "description": "Non-English, local, cultural or knowledge-sovereignty context where applicable",
-      "status": "not_searched"
+      "status": "covered"
     }
   },
-  "searches": [],
-  "items": [],
-  "status": "not_started"
+  "searches": [
+    {
+      "searched_at": "2026-08-08",
+      "system": "WebSearch / EASP institutional history site / American Sociological Association / Open Library / NCBI E-utilities",
+      "queries": [
+        "history of social psychology \"two social psychologies\" psychological versus sociological House 1977 three faces of social psychology open access",
+        "European Association of Social Psychology EASP founding 1966 history \"crisis\" social psychology transatlantic Moscovici open access article",
+        "\"sociological social psychology\" versus psychological social psychology boundary open access article \"Social Psychology Quarterly\" symbolic interactionism social structure and personality",
+        "Danziger \"Making social psychology experimental: a conceptual history 1920-1970\" kurtdanziger.com PDF"
+      ],
+      "purpose": "Fix the subfield's identity along two real institutional fault lines rather than a single origin story: (a) psychological social psychology versus sociological social psychology, the 'two disciplines' split whose sociological branch has its own association journal and textbook tradition; (b) the European (EASP, founded 1966 out of the Royaumont and Sorrento meetings) versus North American (SESP, SPSP) traditions. Excluded from this slot: the adjacent already-audited targets whose material must not be re-used as if it were social psychology's own property, namely social-learning-theory, social-constructionism, cultural-historical-psychology, cross-cultural-psychology, indigenous-psychology, multicultural-feminist-therapy, evolutionary-psychology, cognitive-psychology and biopsychosocial-model; also excluded are sociology proper, social work, organisational/industrial psychology, social-skills training and 'social intelligence' self-help. The American Sociological Association's Social Psychology Quarterly page answered HTTP 403, so the sociological branch is documented by an Open Library record for a sociological-perspectives textbook instead. Danziger's 2000 conceptual history of the experimental turn exists only on Wiley (paywalled) and on Academia.edu/ResearchGate re-uploads, so only its official PubMed record is cached."
+    },
+    {
+      "searched_at": "2026-08-08",
+      "system": "WebSearch / Internet Archive full-text scans / Classics in the History of Psychology (York University) / Open Library",
+      "queries": [
+        "McDougall 1908 \"An Introduction to Social Psychology\" Ross 1908 \"Social Psychology: An Outline and Source Book\" archive.org full text public domain first textbooks",
+        "archive.org advancedsearch title:(social psychology) creator:(Allport) 1924",
+        "archive.org advancedsearch title:(experimental social psychology) creator:(Murphy)"
+      ],
+      "purpose": "Locate first-generation programme statements in the public domain rather than paraphrases: the two simultaneous 1908 textbooks that carried opposite parentages (McDougall from Darwinian instinct theory, Ross from Tarde and Le Bon via sociology), Floyd Allport's 1924 Social Psychology as the individualist-experimental programme statement, and Triplett's 1898 pacemaking-and-competition paper as the earliest experimental precedent. The Murphy and Murphy Experimental Social Psychology scan answered HTTP 401 (lending-restricted) and was not pursued. This slot deliberately registers programme statements, not the effect canon: named effects already live in the atlas's separate phenomenon layer, so no famous-experiment catalogue was built here."
+    },
+    {
+      "searched_at": "2026-08-08",
+      "system": "WebSearch / BCcampus OpenEd (opentextbc.ca) / Open Textbook Library / Open Library / Wiley",
+      "queries": [
+        "\"Handbook of Social Psychology\" Fiske Gilbert Lindzey fifth edition Open Library record contents 2010",
+        "Principles of Social Psychology open textbook BCcampus opentextbc download PDF",
+        "openlibrary search Handbook of Social Psychology 2010 Wiley edition record"
+      ],
+      "purpose": "Document core concepts, laboratory-experimental method and internal variants through a field reference work and an openly licensed teaching text, not through a list of famous studies. The Wiley Handbook body is copyrighted, so only its Open Library edition record is cached as a contents-level pointer; the openly licensed adapted textbook is cached in full but recorded as an undergraduate teaching text, not a research authority. Excluded: social-media pop psychology, 'social intelligence' training manuals and consultancy material returned by the same queries."
+    },
+    {
+      "searched_at": "2026-08-08",
+      "system": "WebSearch / PLOS Biology via PMC / Swarthmore College works repository / HAL (archives-ouvertes API) / NCBI E-utilities",
+      "queries": [
+        "Gergen 1973 \"Social psychology as history\" full text PDF Swarthmore works.swarthmore.edu crisis social psychology",
+        "Haslam Reicher 2012 PLOS Biology \"Contesting the Nature of Conformity\" Milgram Zimbardo open access",
+        "Le Texier 2019 \"Debunking the Stanford Prison Experiment\" American Psychologist HAL open access PDF archival",
+        "HAL API authFullName_s:\"Thibault Le Texier\" full text Stanford Prison Experiment"
+      ],
+      "purpose": "Search the critique literature directly instead of asserting it: the 1970s crisis argument that social-psychological regularities are historically contingent, and the historiographic re-examination of the classic obedience and prison-study canon rather than celebratory histories. Le Texier's archival re-analysis is in APA's American Psychologist; the HAL API returns no author deposit for it and the only free copies are third-party re-uploads (gwern.net, ResearchGate), so only its official PubMed record is cached and the body is not treated as read. Gergen's 1973 article is likewise registered from its Swarthmore repository record only. Note the boundary: Gergen's later social-constructionist programme belongs to the already-audited social-constructionism pack and is not re-used here."
+    },
+    {
+      "searched_at": "2026-08-08",
+      "system": "WebSearch / KU Leuven OKP / Stanford-hosted course copy / Tilburg, Utrecht, Radboud and Curtin repositories / PLOS ONE / NCBI E-utilities",
+      "queries": [
+        "Open Science Collaboration 2015 \"Estimating the reproducibility of psychological science\" full text PDF repository open access",
+        "Gilbert King Pettigrew Wilson 2016 comment \"Estimating the reproducibility of psychological science\" response Anderson technical comment PDF Harvard",
+        "Klein et al 2014 \"Investigating Variation in Replicability: A Many Labs Replication Project\" Social Psychology Hogrefe open access PDF",
+        "Hagger 2016 \"A Multilab Preregistered Replication of the Ego-Depletion Effect\" Perspectives on Psychological Science repository PDF open access",
+        "Doyen Klein Pichon Cleeremans 2012 \"Behavioral priming: it's all in the mind, but whose mind?\" PLOS ONE elderly priming failed replication",
+        "John Loewenstein Prelec 2012 \"Measuring the prevalence of questionable research practices\" PDF repository open access"
+      ],
+      "purpose": "Cover the replication and methods-reform literature that is central to this subfield's current empirical standing, and cover both sides of it. Retrieved: the Reproducibility Project: Psychology, the published technical comment arguing the opposite conclusion and the collaboration's response to that comment, the first Many Labs project, a multi-lab preregistered ego-depletion replication, a failed social-priming replication with an experimenter-expectancy manipulation, and a questionable-research-practice prevalence survey. Version and scope boundaries kept: Many Labs 1 (Klein et al. 2014, 36 samples, mostly US and Western) is a different study from Many Labs 2, which is already cached in the cross-cultural-psychology pack and is not duplicated here. Blocked endpoints: Dundee repository, HKU hub, Harvard psychology-replications site, Hogrefe eContent, Tilburg and Utrecht repository files, Radboud and Curtin repositories all answered 403 (Curtin returned a 2 KB HTTP 202 shell); none was bypassed. John, Loewenstein and Prelec (2012) is behind SAGE and only on SSRN's JavaScript downloader, so the prevalence question is carried by the open Italian replication of that survey instead. Power posing was also searched: Ranehill et al. (2015), Simmons and Simonsohn (2017) and Cuddy et al. (2018) are all behind SAGE access controls, so it is recorded here as searched-but-not-sourced rather than padded with secondary commentary."
+    },
+    {
+      "searched_at": "2026-08-08",
+      "system": "WebSearch / EASP / SESP / SPSP / APA",
+      "queries": [
+        "Society for Personality and Social Psychology SPSP about current membership divisions",
+        "Society of Experimental Social Psychology SESP official site current status",
+        "European Association of Social Psychology about the association membership"
+      ],
+      "purpose": "Establish present institutional continuation on both sides of the Atlantic, which is a real identity distinction for this subfield rather than a stylistic one. spsp.org answered HTTP 403 to every automated request this session, so the North American tradition is documented from the Society of Experimental Social Psychology's own site and the European tradition from EASP's own pages. Institutional continuation is recorded as evidence of an organised field, not as validation of any theory or finding."
+    },
+    {
+      "searched_at": "2026-08-08",
+      "system": "WebSearch / Dialnet / SciELO Brazil / PePSIC / SciELO Colombia and Chile",
+      "queries": [
+        "psicología social latinoamericana historia SciELO artículo acceso abierto crisis psicología social latinoamericana Montero",
+        "scielo.br \"psicologia social\" história crítica artigo acesso aberto \"Psicologia & Sociedade\" psicologia social brasileira movimento crítico",
+        "Apontamentos sobre a História da Psicologia Social no Brasil pepsic texto completo"
+      ],
+      "purpose": "Record where language and region change the content of the field rather than merely translating it: the Latin American critique of theoretical-methodological dependence on North American social psychology, and the Brazilian ABRAPSO tradition that grew out of the 1976 Miami and 1979 Lima congresses. SciELO Colombia (www.scielo.org.co) did not resolve from this host and the SciELO Chile PDF answered 403/522, so Spanish-language coverage comes from a Dialnet-hosted Montero lecture and Portuguese-language coverage from SciELO Brazil and PePSIC. WEIRD-sampling criticism is deliberately not re-cached here: it belongs to the already-audited cross-cultural-psychology pack."
+    }
+  ],
+  "items": [
+    {
+      "id": "easp-history-of-the-association",
+      "title": "History of the EASP",
+      "slot": "identity_history",
+      "source_kind": "professional_association_field_history",
+      "landing_url": "https://www.easp.eu/history/",
+      "download_url": "https://www.easp.eu/history/",
+      "access_status": "publicly_readable_license_unclear",
+      "status": "retrieved",
+      "issued": "current web history; events from 1963",
+      "rights_note": "Participant institutional history by the European Association of Social Psychology covering its 1966 formation as the European Association of Experimental Social Psychology, the Royaumont and Sorrento meetings and the initial American funding involvement. It is the association's own account of its founding, not an independent history of the European tradition or of the transatlantic tensions it describes.",
+      "retrieval": {
+        "retrieved_at": "2026-08-08T13:59:33+00:00",
+        "sha256": "094ea16163b416aaa63fa49a72d3bd4f122a4c2ba21d771351ae1bfb9f9d98ef",
+        "bytes": 22783,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/social-psychology/easp-history-of-the-association.html"
+      }
+    },
+    {
+      "id": "danziger-2000-experimental-social-psychology-record",
+      "title": "Making Social Psychology Experimental: A Conceptual History, 1920-1970",
+      "slot": "identity_history",
+      "source_kind": "official_bibliographic_abstract_record",
+      "landing_url": "https://pubmed.ncbi.nlm.nih.gov/11054730/",
+      "download_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=11054730&retmode=xml",
+      "access_status": "publicly_readable_license_unclear",
+      "status": "retrieved",
+      "issued": "2000",
+      "identifiers": {
+        "pmid": "11054730",
+        "doi": "10.1002/1520-6696(200023)36:4<329::AID-JHBS3>3.0.CO;2-5"
+      },
+      "rights_note": "NCBI E-utilities record for a Journal of the History of the Behavioral Sciences conceptual history of how 'the social' was narrowed to what laboratory experiment could handle. Abstract-level only: the Wiley full text is paywalled and the freely circulating copies are Academia.edu and ResearchGate re-uploads, which were not used. Registered as a citation-index entry, not as read.",
+      "retrieval": {
+        "retrieved_at": "2026-08-08T13:59:34+00:00",
+        "sha256": "63a6c309f50c07d1a6ee18edf3142e39573c98269439aeb8a4ee758f4172a13d",
+        "bytes": 4601,
+        "media_type": "text/xml",
+        "cache_key": ".private-sources/social-psychology/danziger-2000-experimental-social-psychology-record.xml"
+      }
+    },
+    {
+      "id": "rohall-milkie-lucas-sociological-social-psychology-record",
+      "title": "Social Psychology: Sociological Perspectives",
+      "slot": "identity_history",
+      "source_kind": "adjacent_discipline_textbook_library_record",
+      "landing_url": "https://openlibrary.org/books/OL7412241M",
+      "download_url": "https://openlibrary.org/books/OL7412241M",
+      "access_status": "publicly_readable_license_unclear",
+      "status": "retrieved",
+      "issued": "2006",
+      "identifiers": {
+        "openlibrary": "OL7412241M"
+      },
+      "rights_note": "Open Library edition record for a sociological social psychology textbook, cached to fix the two-disciplines boundary: the sociological branch has its own textbook line, association journal and perspectives (symbolic interactionism, social structure and personality, group processes). Only the catalogue record is cached, not the copyrighted book body, and its existence documents the split without settling which branch owns which topic.",
+      "retrieval": {
+        "retrieved_at": "2026-08-08T14:00:38+00:00",
+        "sha256": "5173ec68ac388755e3103995fcc792a75435046dac3df01e7fa071d9030c4423",
+        "bytes": 82874,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/social-psychology/rohall-milkie-lucas-sociological-social-psychology-record.html"
+      }
+    },
+    {
+      "id": "mcdougall-1908-introduction-to-social-psychology",
+      "title": "An Introduction to Social Psychology",
+      "slot": "primary_works",
+      "source_kind": "founding_textbook_public_domain_fulltext",
+      "landing_url": "https://archive.org/details/b28106246",
+      "download_url": "https://archive.org/download/b28106246/b28106246_djvu.txt",
+      "access_status": "public_domain_fulltext",
+      "status": "retrieved",
+      "issued": "1908 (scan of an early edition)",
+      "authors": [
+        "William McDougall"
+      ],
+      "rights_note": "Full OCR text of one of the two 1908 books usually named as the field's founding textbooks. McDougall derives social conduct from a Darwinian catalogue of instincts and sentiments; the instinct doctrine was rejected within two decades, so this is a historical programme statement and not a current theoretical source. OCR of an old scan, so wording must be checked against the page images before quotation.",
+      "retrieval": {
+        "retrieved_at": "2026-08-08T14:00:44+00:00",
+        "sha256": "2be31003912899c46306b1762de5800eb477d953b848c9c436e3cd41c6a6e441",
+        "bytes": 1041459,
+        "media_type": "text/plain",
+        "cache_key": ".private-sources/social-psychology/mcdougall-1908-introduction-to-social-psychology.txt"
+      }
+    },
+    {
+      "id": "ross-1908-social-psychology-outline-source-book",
+      "title": "Social Psychology: An Outline and Source Book",
+      "slot": "primary_works",
+      "source_kind": "founding_textbook_public_domain_fulltext",
+      "landing_url": "https://archive.org/details/b28102241",
+      "download_url": "https://archive.org/download/b28102241/b28102241_djvu.txt",
+      "access_status": "public_domain_fulltext",
+      "status": "retrieved",
+      "issued": "1908",
+      "authors": [
+        "Edward Alsworth Ross"
+      ],
+      "rights_note": "Full OCR text of the other 1908 founding textbook, written by a sociologist and built on suggestion, imitation and crowd phenomena after Tarde and Le Bon. Cached to keep the two parentages visible: the same title in the same year did not mean the same programme. Contains period racial and evolutionary language that is part of the historical record and must not be reproduced as current science; OCR wording needs page-image checking.",
+      "retrieval": {
+        "retrieved_at": "2026-08-08T14:00:48+00:00",
+        "sha256": "e94acba2ed64a91a96844d0832b47787203fc69e6ea6a858fdb1a6d7d9b34137",
+        "bytes": 808757,
+        "media_type": "text/plain",
+        "cache_key": ".private-sources/social-psychology/ross-1908-social-psychology-outline-source-book.txt"
+      }
+    },
+    {
+      "id": "allport-1924-social-psychology",
+      "title": "Social Psychology",
+      "slot": "primary_works",
+      "source_kind": "programme_statement_public_domain_fulltext",
+      "landing_url": "https://archive.org/details/socialpsychology00allp",
+      "download_url": "https://archive.org/download/socialpsychology00allp/socialpsychology00allp_djvu.txt",
+      "access_status": "public_domain_fulltext",
+      "status": "retrieved",
+      "issued": "1924",
+      "authors": [
+        "Floyd Henry Allport"
+      ],
+      "rights_note": "Full OCR text of the individualist-experimental programme statement that pushed the psychological branch towards laboratory study of individuals in social settings and against group-mind explanation. It is one side of a live dispute of its period, not a neutral field definition; OCR wording needs page-image checking before quotation.",
+      "retrieval": {
+        "retrieved_at": "2026-08-08T14:02:06+00:00",
+        "sha256": "1e135ea5115d8e8192600cb5696faa8b5fbf77849685cdcc422cc3285f1ec55b",
+        "bytes": 1251634,
+        "media_type": "text/plain",
+        "cache_key": ".private-sources/social-psychology/allport-1924-social-psychology.txt"
+      }
+    },
+    {
+      "id": "triplett-1898-dynamogenic-factors",
+      "title": "The Dynamogenic Factors in Pacemaking and Competition",
+      "slot": "primary_works",
+      "source_kind": "early_experimental_paper_public_domain_fulltext",
+      "landing_url": "https://psychclassics.yorku.ca/Triplett/",
+      "download_url": "https://psychclassics.yorku.ca/Triplett/",
+      "access_status": "public_domain_fulltext",
+      "status": "retrieved",
+      "issued": "1898",
+      "authors": [
+        "Norman Triplett"
+      ],
+      "identifiers": {
+        "doi": "10.2307/1412188"
+      },
+      "rights_note": "Classics in the History of Psychology (York University) transcription of the American Journal of Psychology paper usually cited as the earliest social-psychological experiment. Cached as a historical primary text: its cycling records and competition-machine trials are small, and the retrospective 'first experiment' label is a later historiographic claim about it, not a claim it makes.",
+      "retrieval": {
+        "retrieved_at": "2026-08-08T14:01:06+00:00",
+        "sha256": "b5013653562f80d17e2e246942336a463f7f52e0043471389020bc7de9874f90",
+        "bytes": 56474,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/social-psychology/triplett-1898-dynamogenic-factors.html"
+      }
+    },
+    {
+      "id": "fiske-gilbert-lindzey-2010-handbook-record",
+      "title": "Handbook of Social Psychology, Fifth Edition",
+      "slot": "theory_methods",
+      "source_kind": "reference_handbook_library_record",
+      "landing_url": "https://openlibrary.org/books/OL24546672M",
+      "download_url": "https://openlibrary.org/books/OL24546672M",
+      "access_status": "publicly_readable_license_unclear",
+      "status": "retrieved",
+      "issued": "2010",
+      "identifiers": {
+        "openlibrary": "OL24546672M"
+      },
+      "rights_note": "Open Library edition record for the two-volume Wiley reference handbook whose successive editions (from 1935 onward) function as the psychological branch's own map of its concepts and methods. Only the catalogue record is cached; the copyrighted chapter bodies are neither cached nor treated as read, and a handbook's table of contents shows what the field counted as central in 2010, not what is currently supported.",
+      "retrieval": {
+        "retrieved_at": "2026-08-08T14:02:21+00:00",
+        "sha256": "abe06ce4f638bfab7a8a0e00751afc084977f036bd4d28536e916fb74fdf885b",
+        "bytes": 89467,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/social-psychology/fiske-gilbert-lindzey-2010-handbook-record.html"
+      }
+    },
+    {
+      "id": "stangor-principles-of-social-psychology-open-textbook",
+      "title": "Principles of Social Psychology, 1st International H5P Edition (BCcampus open textbook adapted from Stangor)",
+      "slot": "theory_methods",
+      "source_kind": "openly_licensed_teaching_textbook",
+      "landing_url": "https://opentextbc.ca/socialpsychology/",
+      "download_url": "https://opentextbc.ca/socialpsychology/open/download?type=pdf",
+      "access_status": "open_fulltext",
+      "status": "retrieved",
+      "issued": "2022 (H5P edition of the 2014 BCcampus adaptation of a 2011 open text)",
+      "rights_note": "Openly licensed (CC BY-NC-SA 4.0, verified in the cached front matter) undergraduate textbook by Rajiv Jhangiani and Hammond Tarry, adapted from Charles Stangor’s open text; cached in full (763 pages) for its treatment of the field’s core constructs, laboratory and correlational methods, and internal areas. It is a teaching synthesis, not a research authority or an evidence source: several literatures it summarises (notably priming and self-control effects) were contested by the replication work also cached in this pack, so it must be read against those sources rather than beside them.",
+      "retrieval": {
+        "retrieved_at": "2026-08-08T14:02:23+00:00",
+        "sha256": "cc4b48640f817c95a99360637f6e458d7e4d6d262328e5a3b64facfea136692e",
+        "bytes": 34951784,
+        "media_type": "application/pdf",
+        "cache_key": ".private-sources/social-psychology/stangor-principles-of-social-psychology-open-textbook.pdf"
+      }
+    },
+    {
+      "id": "gergen-1973-social-psychology-as-history-record",
+      "title": "Social Psychology as History",
+      "slot": "independent_critique",
+      "source_kind": "repository_bibliographic_record",
+      "landing_url": "https://works.swarthmore.edu/fac-psychology/329/",
+      "download_url": "https://works.swarthmore.edu/fac-psychology/329/",
+      "access_status": "publicly_readable_license_unclear",
+      "status": "retrieved",
+      "issued": "1973",
+      "authors": [
+        "Kenneth J. Gergen"
+      ],
+      "identifiers": {
+        "doi": "10.1037/h0034436"
+      },
+      "rights_note": "Swarthmore College repository record for the article that helped precipitate the 1970s crisis by arguing that social-psychological regularities are historically contingent rather than transhistorical laws. The repository page carries only metadata and a link out to the APA full text, so this is registered at citation level and not treated as read. Distinct from Gergen's later social-constructionist programme, which belongs to the social-constructionism pack.",
+      "retrieval": {
+        "retrieved_at": "2026-08-08T14:02:24+00:00",
+        "sha256": "a419663d0c4ff604eb61129009efba7851f001a827358f28f348033dd55ab28f",
+        "bytes": 31142,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/social-psychology/gergen-1973-social-psychology-as-history-record.html"
+      }
+    },
+    {
+      "id": "haslam-reicher-2012-contesting-nature-of-conformity",
+      "title": "Contesting the \"Nature\" of Conformity: What Milgram and Zimbardo's Studies Really Show",
+      "slot": "independent_critique",
+      "source_kind": "peer_reviewed_reinterpretation_of_classic_canon",
+      "landing_url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1001426",
+      "download_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3502509/",
+      "access_status": "open_fulltext",
+      "status": "retrieved",
+      "issued": "2012",
+      "authors": [
+        "S. Alexander Haslam",
+        "Stephen D. Reicher"
+      ],
+      "identifiers": {
+        "pmcid": "PMC3502509",
+        "doi": "10.1371/journal.pbio.1001426"
+      },
+      "rights_note": "Open-access PLOS Biology essay (CC BY) arguing that the obedience and prison studies do not show passive conformity to role or authority but engaged followership conditional on identification with the authority. It is an interpretive argument advanced by researchers with their own social-identity programme and their own restaging of the prison study, so it is a competing reading of the canon, not a neutral audit of it.",
+      "retrieval": {
+        "retrieved_at": "2026-08-08T14:02:25+00:00",
+        "sha256": "c410101ca5716e60a606dc713e268fbcfd2454e3e12d5fb456ad9a8e2fd9b6a1",
+        "bytes": 140189,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/social-psychology/haslam-reicher-2012-contesting-nature-of-conformity.html"
+      }
+    },
+    {
+      "id": "le-texier-2019-debunking-stanford-prison-experiment-record",
+      "title": "Debunking the Stanford Prison Experiment",
+      "slot": "independent_critique",
+      "source_kind": "official_bibliographic_abstract_record",
+      "landing_url": "https://pubmed.ncbi.nlm.nih.gov/31380664/",
+      "download_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=31380664&retmode=xml",
+      "access_status": "publicly_readable_license_unclear",
+      "status": "retrieved",
+      "issued": "2019",
+      "authors": [
+        "Thibault Le Texier"
+      ],
+      "identifiers": {
+        "pmid": "31380664",
+        "doi": "10.1037/amp0000401"
+      },
+      "rights_note": "NCBI E-utilities record for the archival re-examination of the Stanford prison study based on the study's own archives and interviews with fifteen participants. Abstract-level only: the American Psychologist full text is behind APA access control, the HAL API holds no author deposit for it, and the free copies in circulation are third-party re-uploads, which were not used. Registered as a citation-index entry, not as read.",
+      "retrieval": {
+        "retrieved_at": "2026-08-08T14:02:26+00:00",
+        "sha256": "67306d09ba1be054767120c59a235477a6257754b5101dea9289417fff1e2788",
+        "bytes": 5793,
+        "media_type": "text/xml",
+        "cache_key": ".private-sources/social-psychology/le-texier-2019-debunking-stanford-prison-experiment-record.xml"
+      }
+    },
+    {
+      "id": "open-science-collaboration-2015-reproducibility-project",
+      "title": "Estimating the Reproducibility of Psychological Science",
+      "slot": "empirical_status",
+      "source_kind": "large_scale_replication_project",
+      "landing_url": "https://www.science.org/doi/10.1126/science.aac4716",
+      "download_url": "https://ppw.kuleuven.be/okp/_pdf/Nosek2015ETROP.pdf",
+      "access_status": "publicly_readable_license_unclear",
+      "status": "retrieved",
+      "issued": "2015",
+      "identifiers": {
+        "doi": "10.1126/science.aac4716",
+        "pmid": "26315443"
+      },
+      "rights_note": "University-hosted copy of the Science report on 100 replication attempts drawn from three 2008 journals, including Journal of Personality and Social Psychology; mean replication effect sizes were about half the originals and 36 percent of replications reached significance. The PDF carries the era's standard sciencemag download stamp ('Downloaded from www.sciencemag.org') but no subscriber or personal-use restriction notice, so unlike the personal-use printouts excluded elsewhere in this corpus it is cached, with the stamp disclosed here. Scope boundary: the sample is not a random sample of social psychology, and a failed replication is not proof that an original effect is absent. Verification note: the cached KU Leuven copy carries repeated “Downloaded from www.sciencemag.org on November 10, 2015” stamps and the AAAS copyright notice, but contains no personal-use or no-redistribution clause, so it was kept rather than excluded like the watermarked personal printouts dropped in earlier packs.",
+      "retrieval": {
+        "retrieved_at": "2026-08-08T14:02:41+00:00",
+        "sha256": "048fe4c385b85072ca21934c0bfa48ab741c39d4fb15131e815dc690c1001333",
+        "bytes": 657677,
+        "media_type": "application/pdf",
+        "cache_key": ".private-sources/social-psychology/open-science-collaboration-2015-reproducibility-project.pdf"
+      }
+    },
+    {
+      "id": "gilbert-etal-2016-comment-on-reproducibility-record",
+      "title": "Comment on \"Estimating the Reproducibility of Psychological Science\"",
+      "slot": "empirical_status",
+      "source_kind": "official_bibliographic_abstract_record",
+      "landing_url": "https://pubmed.ncbi.nlm.nih.gov/26941311/",
+      "download_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=26941311&retmode=xml",
+      "access_status": "publicly_readable_license_unclear",
+      "status": "retrieved",
+      "issued": "2016",
+      "authors": [
+        "Daniel T. Gilbert",
+        "Gary King",
+        "Stephen Pettigrew",
+        "Timothy D. Wilson"
+      ],
+      "identifiers": {
+        "pmid": "26941311",
+        "doi": "10.1126/science.aad7243"
+      },
+      "rights_note": "Official record for the published technical comment arguing that error, power and bias in the replication project make its data consistent with high reproducibility. Cached so that the critique slot is not one-sided; the Harvard-hosted PDF answered 403 and was not bypassed, so this is abstract-level only and the argument's statistical claims are not treated as verified.",
+      "retrieval": {
+        "retrieved_at": "2026-08-08T14:02:43+00:00",
+        "sha256": "8df74b772de090fb6d6d2ea300952bbec1d661dff0eb3c272662dacbe9e69572",
+        "bytes": 4845,
+        "media_type": "text/xml",
+        "cache_key": ".private-sources/social-psychology/gilbert-etal-2016-comment-on-reproducibility-record.xml"
+      }
+    },
+    {
+      "id": "anderson-etal-2016-response-to-comment-record",
+      "title": "Response to Comment on \"Estimating the Reproducibility of Psychological Science\"",
+      "slot": "empirical_status",
+      "source_kind": "official_bibliographic_abstract_record",
+      "landing_url": "https://pubmed.ncbi.nlm.nih.gov/26941312/",
+      "download_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=26941312&retmode=xml",
+      "access_status": "publicly_readable_license_unclear",
+      "status": "retrieved",
+      "issued": "2016",
+      "identifiers": {
+        "pmid": "26941312",
+        "doi": "10.1126/science.aad9163"
+      },
+      "rights_note": "Official record for the Open Science Collaboration's published reply, which holds that the comment's optimistic reading rests on statistical misconceptions and selectively interpreted correlational data, and that both optimistic and pessimistic readings remain possible. Cached as the second half of a published exchange; abstract-level only, and it does not settle the dispute.",
+      "retrieval": {
+        "retrieved_at": "2026-08-08T14:02:44+00:00",
+        "sha256": "f32b71086db290f631646a60a59b2ebab6f24356a067b5315725fdf000f9078b",
+        "bytes": 13753,
+        "media_type": "text/xml",
+        "cache_key": ".private-sources/social-psychology/anderson-etal-2016-response-to-comment-record.xml"
+      }
+    },
+    {
+      "id": "klein-etal-2014-many-labs-replication-project",
+      "title": "Investigating Variation in Replicability: A \"Many Labs\" Replication Project",
+      "slot": "empirical_status",
+      "source_kind": "multilab_coordinated_replication",
+      "landing_url": "https://econtent.hogrefe.com/doi/10.1027/1864-9335/a000178",
+      "download_url": "https://stanford.edu/~knutson/jdm/klein14.pdf",
+      "access_status": "publicly_readable_license_unclear",
+      "status": "retrieved",
+      "issued": "2014",
+      "identifiers": {
+        "doi": "10.1027/1864-9335/a000178"
+      },
+      "rights_note": "University-hosted copy of the first Many Labs project: 13 classic and contemporary effects replicated across 36 samples and 6,344 participants, with most effects reproducing and variation across samples and settings generally small, while two effects failed consistently. The publisher PDF answered 403 and this copy carries no personal-use or subscriber notice. Version boundary: this is Many Labs 1 and is a different study from Many Labs 2, which is cached in the cross-cultural-psychology pack and is not duplicated here; a set of effects reproducing does not generalise to the subfield as a whole.",
+      "retrieval": {
+        "retrieved_at": "2026-08-08T14:02:53+00:00",
+        "sha256": "936acb5eba753502ad5b8d632a1792190b15b1185a9a75858c3eae18a8591644",
+        "bytes": 631045,
+        "media_type": "application/pdf",
+        "cache_key": ".private-sources/social-psychology/klein-etal-2014-many-labs-replication-project.pdf"
+      }
+    },
+    {
+      "id": "hagger-etal-2016-ego-depletion-multilab-replication-record",
+      "title": "A Multilab Preregistered Replication of the Ego-Depletion Effect",
+      "slot": "empirical_status",
+      "source_kind": "official_bibliographic_abstract_record",
+      "landing_url": "https://pubmed.ncbi.nlm.nih.gov/27474142/",
+      "download_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=27474142&retmode=xml",
+      "access_status": "publicly_readable_license_unclear",
+      "status": "retrieved",
+      "issued": "2016",
+      "identifiers": {
+        "pmid": "27474142",
+        "doi": "10.1177/1745691616652873"
+      },
+      "rights_note": "Official record for the 23-laboratory preregistered replication of self-control depletion, one of the specifically contested literatures in this subfield. Full text is behind SAGE access control and the Utrecht, Tilburg, Radboud and Curtin repository files all answered 403 or returned a JavaScript shell, so this is abstract-level only. The registered protocol tested one depletion paradigm; a null result for that paradigm is not a general disproof of self-control research.",
+      "retrieval": {
+        "retrieved_at": "2026-08-08T14:02:54+00:00",
+        "sha256": "3b9a9f81dda9fa44fe4466cc152bb11f448f145025b76410f0a18be64afb4805",
+        "bytes": 15097,
+        "media_type": "text/xml",
+        "cache_key": ".private-sources/social-psychology/hagger-etal-2016-ego-depletion-multilab-replication-record.xml"
+      }
+    },
+    {
+      "id": "doyen-etal-2012-behavioral-priming",
+      "title": "Behavioral Priming: It's All in the Mind, but Whose Mind?",
+      "slot": "empirical_status",
+      "source_kind": "open_access_replication_study",
+      "landing_url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0029081",
+      "download_url": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0029081&type=printable",
+      "access_status": "open_fulltext",
+      "status": "retrieved",
+      "issued": "2012",
+      "authors": [
+        "Stephane Doyen",
+        "Olivier Klein",
+        "Cora-Lise Pichon",
+        "Axel Cleeremans"
+      ],
+      "identifiers": {
+        "doi": "10.1371/journal.pone.0029081",
+        "pmid": "22279526"
+      },
+      "rights_note": "Open-access PLOS ONE report of a failed replication of elderly-stereotype priming plus a second study in which the walking-speed effect appeared only where experimenters expected it. Cached as the entry point to the contested social-priming literature; it is two experiments in one laboratory, it does not adjudicate the whole priming literature, and the original authors publicly disputed it, a dispute that took place largely in blog posts rather than in cacheable peer-reviewed sources.",
+      "retrieval": {
+        "retrieved_at": "2026-08-08T14:02:55+00:00",
+        "sha256": "76d2f7a7af69185e1e9b688e434df6aeb211584fec8127239d1320249d2c91b6",
+        "bytes": 192959,
+        "media_type": "application/pdf",
+        "cache_key": ".private-sources/social-psychology/doyen-etal-2012-behavioral-priming.pdf"
+      }
+    },
+    {
+      "id": "agnoli-etal-2017-questionable-research-practices-italy",
+      "title": "Questionable Research Practices among Italian Research Psychologists",
+      "slot": "empirical_status",
+      "source_kind": "open_access_survey_replication",
+      "landing_url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0172792",
+      "download_url": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0172792&type=printable",
+      "access_status": "open_fulltext",
+      "status": "retrieved",
+      "issued": "2017",
+      "authors": [
+        "Franca Agnoli",
+        "Jelte M. Wicherts",
+        "Coosje L. S. Veldkamp",
+        "Paolo Albiero",
+        "Roberto Cubelli"
+      ],
+      "identifiers": {
+        "doi": "10.1371/journal.pone.0172792",
+        "pmid": "28296929"
+      },
+      "rights_note": "Open-access replication in an Italian sample of the questionable-research-practice prevalence survey; the paywalled US original (John, Loewenstein and Prelec 2012) is registered only through this replication rather than cached. Self-report admission rates depend heavily on the elicitation method and the practices listed span outright misconduct and defensible judgement calls, so the numbers bound the plausible prevalence, they do not measure how often published findings are wrong.",
+      "retrieval": {
+        "retrieved_at": "2026-08-08T14:02:57+00:00",
+        "sha256": "0efb5358f607e193a9fa658531364130113bcd155991489a51d6787fabc18dcd",
+        "bytes": 1589706,
+        "media_type": "application/pdf",
+        "cache_key": ".private-sources/social-psychology/agnoli-etal-2017-questionable-research-practices-italy.pdf"
+      }
+    },
+    {
+      "id": "sesp-society-of-experimental-social-psychology",
+      "title": "Society of Experimental Social Psychology",
+      "slot": "current_status",
+      "source_kind": "current_professional_society_self_description",
+      "landing_url": "https://www.sesp.org/",
+      "download_url": "https://www.sesp.org/",
+      "access_status": "publicly_readable_license_unclear",
+      "status": "retrieved",
+      "issued": "retrieved 2026",
+      "rights_note": "Self-description of the North American experimental society, cached to document the continuing institutional base on that side of the field. The Society for Personality and Social Psychology's site answered HTTP 403 to every automated request this session and is not represented. Society self-description shows organised continuation, not the validity of any body of work.",
+      "retrieval": {
+        "retrieved_at": "2026-08-08T14:03:09+00:00",
+        "sha256": "6545b57a6ad9d9d523bae55245713e0026f3a74e083dae52e6451d1dc0f02fa7",
+        "bytes": 24627,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/social-psychology/sesp-society-of-experimental-social-psychology.html"
+      }
+    },
+    {
+      "id": "easp-about-the-association",
+      "title": "About the Association (EASP)",
+      "slot": "current_status",
+      "source_kind": "current_professional_association_self_description",
+      "landing_url": "https://www.easp.eu/about/",
+      "download_url": "https://www.easp.eu/about/",
+      "access_status": "publicly_readable_license_unclear",
+      "status": "retrieved",
+      "issued": "retrieved 2026",
+      "rights_note": "EASP's current self-description of membership, meetings and publications, cached as the European half of the institutional picture. Continuation of an association does not validate the theories or findings associated with it.",
+      "retrieval": {
+        "retrieved_at": "2026-08-08T14:03:10+00:00",
+        "sha256": "4a830384c590e17dea7f82aba38a7d0515cda445f1696aec64fd09f1ec4c8dd7",
+        "bytes": 16855,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/social-psychology/easp-about-the-association.html"
+      }
+    },
+    {
+      "id": "montero-1986-psicologia-social-america-latina",
+      "title": "La psicologia social en America Latina: Desarrollo y tendencias actuales",
+      "slot": "cultural_language_context",
+      "source_kind": "spanish_language_regional_field_analysis",
+      "landing_url": "https://dialnet.unirioja.es/servlet/articulo?codigo=2903505",
+      "download_url": "https://dialnet.unirioja.es/descarga/articulo/2903505.pdf",
+      "access_status": "publicly_readable_license_unclear",
+      "status": "retrieved",
+      "issued": "lecture delivered 1986; Dialnet-hosted publication",
+      "authors": [
+        "Maritza Montero"
+      ],
+      "rights_note": "Spanish-language lecture tracing how Latin American social psychology chairs were founded in the 1950s and 1960s by staff trained in Europe and North America, and the subsequent turn against that dependence. Dialnet hosts the PDF with no explicit redistribution licence. It is a participant's regional account from 1986: its account of tendencies is dated and it speaks for a critical current, not for all Spanish-speaking social psychology.",
+      "retrieval": {
+        "retrieved_at": "2026-08-08T14:03:13+00:00",
+        "sha256": "94f947e6886b6ee011a7e3f7fa68c8edd7b80bfdd5efda7980a3314310c0ef69",
+        "bytes": 416480,
+        "media_type": "application/pdf",
+        "cache_key": ".private-sources/social-psychology/montero-1986-psicologia-social-america-latina.pdf"
+      }
+    },
+    {
+      "id": "historia-psicologia-social-brasil",
+      "title": "Apontamentos sobre a Historia da Psicologia Social no Brasil",
+      "slot": "cultural_language_context",
+      "source_kind": "portuguese_language_regional_history",
+      "landing_url": "https://pepsic.bvsalud.org/scielo.php?script=sci_arttext&pid=S1808-42812018000400003",
+      "download_url": "https://pepsic.bvsalud.org/scielo.php?script=sci_arttext&pid=S1808-42812018000400003",
+      "access_status": "publicly_readable_license_unclear",
+      "status": "retrieved",
+      "issued": "2018",
+      "rights_note": "Portuguese-language history of Brazilian social psychology on PePSIC, covering the questioning of imported experimental social psychology at the 1976 Miami and 1979 Lima congresses and the founding of ABRAPSO. It is a national account written from inside the critical tradition it describes; it does not represent Brazilian psychology as a whole and does not transfer to other Lusophone contexts.",
+      "retrieval": {
+        "retrieved_at": "2026-08-08T14:03:15+00:00",
+        "sha256": "f66b718b48565faeb13ac703ccc41476bef1970c02148942f996d19dfb7e9345",
+        "bytes": 90909,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/social-psychology/historia-psicologia-social-brasil.html"
+      }
+    },
+    {
+      "id": "lane-compromisso-social-da-psicologia",
+      "title": "Silvia Lane e o projeto do \"Compromisso Social da Psicologia\"",
+      "slot": "cultural_language_context",
+      "source_kind": "portuguese_language_journal_article",
+      "landing_url": "https://www.scielo.br/j/psoc/a/w5gPmcgxnB5w5ThhFkCyCtb/",
+      "download_url": "https://www.scielo.br/j/psoc/a/w5gPmcgxnB5w5ThhFkCyCtb/?format=pdf&lang=pt",
+      "access_status": "open_fulltext",
+      "status": "retrieved",
+      "issued": "Psicologia & Sociedade (SciELO open access)",
+      "rights_note": "Open-access SciELO Brazil article on the social-commitment project that reoriented Brazilian social psychology around collective and materially situated subjects. Cached as evidence that the reorientation was programmatic rather than a translation choice; it is an account of one national movement and its normative commitments, not an evaluation of that movement's empirical results.",
+      "retrieval": {
+        "retrieved_at": "2026-08-08T14:03:16+00:00",
+        "sha256": "bf4902cd4b336d966e762573cf772510a3316a7924b1bdb21badaf161429d5fc",
+        "bytes": 85326,
+        "media_type": "application/pdf",
+        "cache_key": ".private-sources/social-psychology/lane-compromisso-social-da-psicologia.pdf"
+      }
+    }
+  ],
+  "status": "audited"
 }

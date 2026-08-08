@@ -9,8 +9,8 @@ status: in_progress
 base_commit: 593551e
 started_at: 2026-07-28
 objective: 先為原版48項研究目標完成可恢復、可稽核的來源蒐集，再開始閱讀、建立主張或撰寫內容
-active_target: social-psychology
-remaining_targets: [social-psychology(47), health-psychology(48)]
+active_target: health-psychology
+remaining_targets: [health-psychology(48)]
 remaining_notes:
   - 一包一 agent、串行不平行；每包獨立 commit + push 後才派下一包，一個 Sonnet agent 約吃 33% 的 Claude 5H 窗
   - health-psychology(48) 最後跑，且用全新隔離 process；醫療／疾病主題詞密集曾在 psychology-schools 觸發 AUP 假陽性連鎖
@@ -135,7 +135,15 @@ completed_items:
   - biopsychosocial-model 已 audited：9筆正文／正式摘要頁涵蓋7個槽位，包含Bolton與Gillett 2019開放取用專書、Engel 1977 Science與1980 AJP原典（出版社全文付費，改存E-utilities摘要XML並明示不算全文）、Borrell-Carrió等2004方法論、Williamson 2022獨立批判、Bolton 2023實證現況、Tripathi等2019當代精神醫學角色、Leiva-Peña等2021 PAHO三語與De Marco 2006葡語SciELO
   - 生物心理社會模型（Engel 1977）與WHO-ICF、泛稱holistic care及特定臨床應用保持邊界；De Marco葡語PDF為13頁真實正文，舊字型編碼造成pypdf抽字替換，已記入rights_note
   - 目前46/48來源包 audited、累計360筆實際正文／正式書目或摘要頁（本行由協調 session 補記，原 commit 76b81dc 只改了 pack 檔）
-next_action: 依 research/targets.json 順序處理 social-psychology(47)，再以隔離 process 處理 health-psychology(48)，不建立正文。非英語只在原始語言、地方傳統或翻譯／版本差異影響正確性時補，不設配額
+  - social-psychology 已 audited：24筆實際正文／正式書目或摘要頁，7槽位全 covered。identity_history 收 EASP 官方會史、Danziger 2000 實驗社會心理學概念史摘要XML（PMID 11054730）與 Rohall 等社會學派教科書 Open Library 書目；primary_works 收四筆公有領域全文（McDougall 1908、Ross 1908、Allport 1924、Triplett 1898 York 轉錄本）；theory_methods 收 Fiske-Gilbert-Lindzey 2010 手冊書目與 CC BY-NC-SA 開放教科書全文（763頁）
+  - 兩學門邊界（psychological vs sociological social psychology）與歐陸／北美傳統分歧以來源登錄而非以敘述斷定：EASP 會史與 About 頁對照 SESP 官網，社會學派只存 Open Library 書目不存版權書體
+  - 批判與複製危機為實搜而非引用既有印象：independent_critique 收 Gergen 1973「社會心理學即歷史」、Haslam 與 Reicher 2012 對 Milgram／Zimbardo 的再詮釋（PMC3502509）、Le Texier 2019 SPE 解構摘要XML；empirical_status 同時收 OSC 2015 RPP 全文、Gilbert 等 2016 質疑與 Anderson 等 2016 回應（正反雙方各存官方摘要XML）、Klein 等 2014 Many Labs 1、Hagger 等 2016 ego depletion 多實驗室 RRR 摘要XML、Doyen 等 2012 priming 未複製全文、Agnoli 等 2017 QRP 調查全文
+  - 範圍邊界：本包為 subfield 層非效應目錄，具名效應留給 phenomenon 層；Many Labs 2 與 WEIRD 批判已在 cross-cultural-psychology 包，本包只取 Many Labs 1 且經 SHA-256 跨包比對確認零重複；health/illness 材料一律不收留給 health-psychology(48)；social skills training、社會智能自助、社群媒體通俗心理、社會學本科、社會工作與 I/O 心理學排除
+  - 被擋或不可用端點皆記錄未繞過：asanet.org（SPQ）、Dundee 的 RPP PDF、HKU hub、Harvard 兩份 replication PDF、Hogrefe eContent、spsp.org、Tilburg／Utrecht／Radboud 機構典藏檔全數403，改以 KU Leuven 的 RPP 副本、Stanford 站上的 Many Labs 1、SESP 官網與 PubMed E-utilities 摘要XML 合法替代；archive.org 的 Murphy 與 Murphy 1931 為401借閱限制故放棄；espace.curtin.edu.au 回2,009位元組 JS 殼判為假頁面；SciELO Colombia DNS 失敗、SciELO Chile 522／403，非英語改由 Dialnet（Montero 1986 西語）、PePSIC 與 SciELO Brasil（Lane 相關葡語兩筆）承擔
+  - 權利檢查：KU Leuven 的 RPP PDF 帶「Downloaded from www.sciencemag.org」機構下載戳與 AAAS 版權聲明，但全檔 regex 掃描無 personal use／不得散布條款，與先前包排除的訂閱者列印本性質不同，故保留並在 rights_note 揭露；其餘 PDF（Klein、Doyen、Agnoli、Montero、Lane、開放教科書）掃描零命中，開放教科書經前置頁確認為 CC BY-NC-SA 4.0
+  - 24筆取得物通過大小（4.6KB至34.9MB）、MIME、SHA-256、題名、PDF文字（pypdf）、假頁面（Incapsula／PoW／Angular／reCAPTCHA／cookies-off）與跨包重複檢查；所有20KB以下檔案（5筆 E-utilities XML 與 EASP About 頁）逐一解碼讀取確認為真實記錄；Open Library 的 .json 端點被 collect_sources 判為不支援 MIME，改存 HTML 書目頁；archive.org Allport 首次500為暫時性錯誤，重試成功
+  - 目前47/48來源包 audited、累計384筆實際正文／正式書目或摘要頁
+next_action: 以全新隔離 process 處理最後一包 health-psychology(48)，不建立正文。非英語只在原始語言、地方傳統或翻譯／版本差異影響正確性時補，不設配額
 ```
 
 ## P3-S COMPLETION RECORD
