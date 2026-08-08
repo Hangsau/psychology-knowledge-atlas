@@ -52,6 +52,47 @@
         "culturally adapted MBCT trial"
       ],
       "purpose": "Full-text discovery across origin, first trial, theory, outcome evidence, guideline status, harm reporting and culturally responsive adaptation"
+    },
+    {
+      "searched_at": "2026-08-09",
+      "system": "WebSearch / PubMed / PubMed Central / Europe PMC / Guilford Press / Oxford Mindfulness",
+      "queries": [
+        "site:pmc.ncbi.nlm.nih.gov mindfulness-based cognitive therapy differential activation cognitive reactivity metacognitive awareness eight week curriculum MBCT",
+        "site:pubmed.ncbi.nlm.nih.gov MBCT differential activation hypothesis cognitive reactivity Teasdale Segal Williams metacognitive awareness",
+        "MBCT MBSR structural differences curriculum relapse prevention cognitive exercises scholarly review",
+        "site:oxfordmindfulness.org MBCT curriculum eight week MBCT-L for life digital programme manual",
+        "site:guilford.com Mindfulness-Based Cognitive Therapy Depression second edition 2013 sample chapter PDF",
+        "site:pmc.ncbi.nlm.nih.gov online web-based mindfulness-based cognitive therapy depression randomized MBCT digital"
+      ],
+      "purpose": "Re-adjudicate theory_methods across the differential-activation and cognitive-reactivity rationale, decentering and metacognitive awareness, the manualized eight-week programme, its MBSR ancestry and additional depression-focused cognitive work, and named adaptations. Selected the MBCT-specific MacKenzie and Kocovski review and Batink et al.'s open mediation study. Guilford's official 2013 second-edition reproducible-materials PDF was inspected but excluded because it grants photocopying only to book purchasers for personal use and prohibits redistribution; the commercial contents page was used only to confirm bibliographic identity, not as method evidence. The 2002 first edition and 2013 second edition remain distinct objects. Oxford's MBCT-L teacher-training sales page, online MBCT trials, and MBCT for current symptoms were retained only as discovery of named adaptations and were not silently treated as the original relapse-prevention curriculum. MBSR, ACT, DBT, generic CBT with meditation, Buddhist contemplative practice, trait-mindfulness scales, self-help, apps, coaching and commercial wellness material were excluded as substitutes for MBCT method evidence."
+    },
+    {
+      "searched_at": "2026-08-09",
+      "system": "WebSearch / PubMed / PubMed Central / Europe PMC",
+      "queries": [
+        "MBCT relapse meta-analysis risk of bias allegiance publication bias recurrent depression active control",
+        "mindfulness-based cognitive therapy childhood adversity prior episodes subgroup randomized dismantling trial",
+        "MBCT individual patient data meta-analysis maintenance antidepressants treatment as usual recurrent depression relapse",
+        "mindfulness-based cognitive therapy risk of bias publication bias systematic review recurrent depression",
+        "MBCT current depression meta-analysis active control risk of bias PubMed",
+        "MBCT anxiety physical health systematic review outcomes comparator limitations PubMed",
+        "mindfulness-based cognitive therapy researcher allegiance depression relapse"
+      ],
+      "purpose": "Re-adjudicate clinical_outcomes while preserving indication, comparator and methodological boundaries. Selected Kuyken et al.'s individual-patient-data meta-analysis for recurrent-depression relapse prevention, with no-MBCT, alternative active treatment and maintenance-antidepressant comparisons kept separate; Goldberg et al.'s meta-analysis for adults with current depressive symptoms, which separates specific active from nonspecific controls and reports risk-of-bias and publication-bias limitations; and Williams et al.'s dismantling trial, which reports no significant whole-sample advantage over cognitive psychoeducation or usual care and a childhood-trauma interaction that cannot be generalized beyond that trial. Searches for anxiety and physical-health populations were not mixed into depression evidence. Broad mindfulness-based-intervention reviews, MBSR trials, generic CBT, ACT, DBT, app and wellness studies were excluded as MBCT-specific outcomes. Direct MBCT-specific quantification of researcher allegiance was not located; developer participation in the selected relapse IPD meta-analysis is therefore disclosed rather than treated as independence."
+    },
+    {
+      "searched_at": "2026-08-09",
+      "system": "WebFetch / PubMed / PubMed Central / Europe PMC / Guilford Press / local source collector",
+      "queries": [
+        "PMC4876939 full text Europe PMC XML",
+        "PMC3751886 full text Europe PMC XML",
+        "PMC6640038 full text Europe PMC XML",
+        "PMC6687569 full text Europe PMC XML",
+        "PMC3964149 full text Europe PMC XML",
+        "Guilford segal2 reproducible forms personal use redistribution",
+        "PMC6990961 online MBCT full text"
+      ],
+      "purpose": "Retrieval and shell-verification round. WebFetch opens for PMC4876939, PMC3751886, PMC6640038, PMC6687569, PMC3964149, PMC10539522 and PMC6990961, plus PubMed 11952186, exposed three-line reCAPTCHA checking shells; none was cached from WebFetch. The Europe PMC fullTextXML endpoints for PMC6640038 and PMC6687569 returned HTTP 404 and were not bypassed; direct public PMC HTML instead returned the correct titles, substantive bodies of 218,551 and 236,600 bytes, and no challenge markers. The other three selected bodies were retrieved as official complete Europe PMC XML. Guilford's real 64-page second-edition forms PDF displayed purchaser-only personal-use and no-redistribution terms and was not cached. All five retained bodies passed title, size, MIME, body-structure and challenge-shell checks; no PDF was newly cached, and their five SHA-256 hashes are unique within the new set and have zero matches in other packs."
     }
   ],
   "items": [
@@ -130,7 +171,7 @@
       "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8364929/",
       "download_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8364929/",
       "access_status": "open_fulltext",
-      "rights_note": "Open cross-program meta-review; MBCT-specific findings must not be blended with MBSR or other mindfulness programmes.",
+      "rights_note": "Open cross-program meta-review; MBCT-specific findings must not be blended with MBSR or other mindfulness programmes. The same publication is separately indexed in the mbsr pack, so it is a shared source and must not be counted as independent MBCT-specific evidence.",
       "status": "retrieved",
       "issued": "2021",
       "identifiers": {
@@ -152,7 +193,7 @@
       "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6575147/",
       "download_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6575147/",
       "access_status": "open_fulltext",
-      "rights_note": "Open harm framework covering MBCT and MBSR; distinguishes adverse events, sustained attributable harm and under-reporting.",
+      "rights_note": "Open harm framework covering MBCT and MBSR; distinguishes adverse events, sustained attributable harm and under-reporting. The same publication is separately indexed in the mbsr pack, so it is a shared source and must not be counted as independent MBCT-specific evidence.",
       "status": "retrieved",
       "issued": "2019",
       "identifiers": {
@@ -204,6 +245,210 @@
         "bytes": 266198,
         "media_type": "text/html",
         "cache_key": ".private-sources/mbct/nice-ng222-depression-recommendations.html"
+      }
+    },
+    {
+      "id": "mackenzie-kocovski-2016-mbct-trends",
+      "title": "Mindfulness-Based Cognitive Therapy for Depression: Trends and Developments",
+      "slot": "theory_methods",
+      "source_kind": "open_access_mbct_theory_methods_review",
+      "landing_url": "https://pubmed.ncbi.nlm.nih.gov/27274325/",
+      "download_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4876939/fullTextXML",
+      "access_status": "open_fulltext",
+      "rights_note": "CC BY-NC full text retrieved from the official Europe PMC XML service. This MBCT-specific narrative review describes the recurrent-depression rationale, differential activation of negative thinking, decentering, rumination, the manualized programme, its derivation from but non-equivalence to MBSR, active-control questions, mechanisms and moderators. It is not the Segal, Williams and Teasdale manual and not MBSR outcome evidence. Its references to the 2002 first edition and 2013 second edition do not collapse those manuals into one version, and its discussion of third-wave therapies does not make generic CBT, ACT or DBT equivalent to MBCT.",
+      "status": "retrieved",
+      "authors": [
+        "Meagan B. MacKenzie",
+        "Nancy L. Kocovski"
+      ],
+      "issued": "2016",
+      "identifiers": {
+        "doi": "10.2147/PRBM.S63949",
+        "pmid": "27274325",
+        "pmcid": "PMC4876939"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-08-08T19:27:38+00:00",
+        "sha256": "23145535dd5d409edff9712d6de82033799e9e8ad46de101303cfdf2b46a7bc0",
+        "bytes": 80507,
+        "media_type": "application/xml",
+        "cache_key": ".private-sources/mbct/mackenzie-kocovski-2016-mbct-trends.xml"
+      }
+    },
+    {
+      "id": "batink-etal-2013-mbct-mediation-pathways",
+      "title": "How Does MBCT for Depression Work? Studying Cognitive and Affective Mediation Pathways",
+      "slot": "theory_methods",
+      "source_kind": "open_access_mbct_mechanism_mediation_study",
+      "landing_url": "https://pubmed.ncbi.nlm.nih.gov/24009704/",
+      "download_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC3751886/fullTextXML",
+      "access_status": "open_fulltext",
+      "rights_note": "CC BY PLOS full text retrieved from the official Europe PMC XML service. The study examines mindfulness skills, rumination, worry and affect as mediation pathways during an eight-week group MBCT course for people with residual depressive symptoms; people meeting criteria for a current depressive disorder were excluded. Same-time-frame mediation is not proof of a causal mechanism, the study lacked an active control, and its symptom-reduction goal is distinct from the original remission-stage relapse-prevention indication. It is not evidence for MBSR, a generic CBT-plus-meditation package, a mindfulness app or a commercial wellness course.",
+      "status": "retrieved",
+      "authors": [
+        "Tim Batink",
+        "Frenk Peeters",
+        "Nicole Geschwind",
+        "Jim van Os",
+        "Marieke Wichers"
+      ],
+      "issued": "2013",
+      "identifiers": {
+        "doi": "10.1371/journal.pone.0072778",
+        "pmid": "24009704",
+        "pmcid": "PMC3751886"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-08-08T19:27:51+00:00",
+        "sha256": "2603af1e4ca81ed1f13b4a49d4924125b9fc48af524d98d50667bf693937c073",
+        "bytes": 135302,
+        "media_type": "application/xml",
+        "cache_key": ".private-sources/mbct/batink-etal-2013-mbct-mediation-pathways.xml"
+      }
+    },
+    {
+      "id": "segal-williams-teasdale-2013-second-edition-forms",
+      "title": "Reproducible Materials: Mindfulness-Based Cognitive Therapy for Depression, Second Edition",
+      "slot": "theory_methods",
+      "source_kind": "official_publisher_supplementary_forms",
+      "landing_url": "https://www.guilford.com/books/Mindfulness-Based-Cognitive-Therapy-for-Depression/Segal-Williams-Teasdale/9781462537037/contents",
+      "download_url": "https://www.guilford.com/add/forms/segal2-forms.pdf?t=1",
+      "access_status": "restricted_no_redistribution",
+      "rights_note": "Excluded on rights grounds and not cached. Guilford's real 64-page public PDF states that photocopying permission is granted only to purchasers of the book for personal use, and its copyright page prohibits resale, redistribution and use as workshop handouts without written permission. The official commercial contents page was used only to identify the 2013 second edition and its session sequence, not as research evidence. This second-edition supplement is a different object from the 2002 first-edition manual.",
+      "status": "excluded",
+      "authors": [
+        "Zindel V. Segal",
+        "J. Mark G. Williams",
+        "John D. Teasdale"
+      ],
+      "issued": "2013, second edition",
+      "identifiers": {
+        "isbn13": "9781462507504"
+      }
+    },
+    {
+      "id": "kuyken-etal-2016-mbct-relapse-ipd-meta-analysis",
+      "title": "Efficacy of Mindfulness-Based Cognitive Therapy in Prevention of Depressive Relapse: An Individual Patient Data Meta-analysis From Randomized Trials",
+      "slot": "clinical_outcomes",
+      "source_kind": "repository_manuscript_individual_patient_data_meta_analysis",
+      "landing_url": "https://pubmed.ncbi.nlm.nih.gov/27119968/",
+      "download_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6640038/",
+      "access_status": "repository_manuscript",
+      "rights_note": "Official public PMC author manuscript; it is not represented as the publisher's final formatted article. The Europe PMC fullTextXML route returned HTTP 404, so the complete real-title PMC HTML was used instead without bypassing access controls. This IPD meta-analysis concerns relapse prevention among people with recurrent depression and keeps comparisons with no MBCT, alternative active treatments and maintenance antidepressants separate. It reports two of nine trials without blinded assessors, one with incomplete outcome data, and funnel asymmetry whose Egger test had limited power. It is not evidence for treating a current depressive episode, anxiety, physical-health populations or MBSR. All authors except the independent statistician and independent systematic reviewer had investigated at least one included trial, and MBCT developers are coauthors, so the synthesis is not labeled independent and cannot by itself resolve researcher-allegiance concerns.",
+      "status": "retrieved",
+      "authors": [
+        "Willem Kuyken",
+        "Fiona C. Warren",
+        "Rod S. Taylor",
+        "Ben Whalley",
+        "Catherine Crane",
+        "Guido Bondolfi",
+        "Rachel Hayes",
+        "Marloes Huijbers",
+        "Helen Ma",
+        "Susanne Schweizer",
+        "Zindel Segal",
+        "Anne Speckens",
+        "John D. Teasdale",
+        "Kees Van Heeringen",
+        "Mark Williams",
+        "Sarah Byford",
+        "Richard Byng",
+        "Tim Dalgleish"
+      ],
+      "issued": "2016",
+      "identifiers": {
+        "doi": "10.1001/jamapsychiatry.2016.0076",
+        "pmid": "27119968",
+        "pmcid": "PMC6640038",
+        "manuscript_id": "EMS83428"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-08-08T19:28:35+00:00",
+        "sha256": "3bfa44499775aad12c1242dae3204d854c5b67b8271e34497714309593d59081",
+        "bytes": 218551,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/mbct/kuyken-etal-2016-mbct-relapse-ipd-meta-analysis.html"
+      }
+    },
+    {
+      "id": "goldberg-etal-2019-mbct-current-depression-meta-analysis",
+      "title": "Mindfulness-Based Cognitive Therapy for the Treatment of Current Depressive Symptoms: A Meta-analysis",
+      "slot": "clinical_outcomes",
+      "source_kind": "repository_manuscript_systematic_review_meta_analysis",
+      "landing_url": "https://pubmed.ncbi.nlm.nih.gov/30732534/",
+      "download_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6687569/",
+      "access_status": "repository_manuscript",
+      "rights_note": "Official public NIH manuscript; it is not represented as the publisher's final formatted article. The Europe PMC fullTextXML route returned HTTP 404, so the complete real-title PMC HTML was used instead without bypassing access controls. The meta-analysis is restricted to randomized trials of adults with current depressive symptoms and distinguishes specific active controls from nonspecific controls. It found no advantage over specific active therapies at post-treatment or longest follow-up, smaller post-treatment effects in higher-quality studies, sparse long-term evidence, and funnel asymmetry for one active-control follow-up model although trim-and-fill did not change its inference. These symptom-treatment findings are not relapse-prevention evidence and are not generalized to anxiety, physical-health populations, MBSR or generic mindfulness interventions.",
+      "status": "retrieved",
+      "authors": [
+        "Simon B. Goldberg",
+        "Raymond P. Tucker",
+        "Preston A. Greene",
+        "Richard J. Davidson",
+        "David J. Kearney",
+        "Tracy L. Simpson"
+      ],
+      "issued": "2019",
+      "identifiers": {
+        "doi": "10.1080/16506073.2018.1556330",
+        "pmid": "30732534",
+        "pmcid": "PMC6687569",
+        "manuscript_id": "NIHMS1520703"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-08-08T19:29:09+00:00",
+        "sha256": "b2f908352a63a9082278edd18f9d60f0f541bef218f2a61ab523cb5af0920d80",
+        "bytes": 236600,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/mbct/goldberg-etal-2019-mbct-current-depression-meta-analysis.html"
+      }
+    },
+    {
+      "id": "williams-etal-2014-mbct-dismantling-trial",
+      "title": "Mindfulness-Based Cognitive Therapy for Preventing Relapse in Recurrent Depression: A Randomized Dismantling Trial",
+      "slot": "clinical_outcomes",
+      "source_kind": "open_access_randomized_active_control_dismantling_trial",
+      "landing_url": "https://pubmed.ncbi.nlm.nih.gov/24294837/",
+      "download_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC3964149/fullTextXML",
+      "access_status": "open_fulltext",
+      "rights_note": "CC BY full text retrieved from the official Europe PMC XML service. This comparative trial concerns people in remission after at least three depressive episodes and separates manual-based MBCT plus usual care from structurally matched cognitive psychoeducation without meditation plus usual care and from usual care alone. It reports no significant whole-sample treatment effect and a childhood-trauma interaction; a single subgroup interaction does not establish a universal moderator. The authors disclose mindfulness or MBCT honoraria, fees and book royalties, so this developer-led trial is not labeled independent. The modified trial programme, recurrent-depression population and comparators must not be generalized to current depression, other indications, MBSR or generic CBT.",
+      "status": "retrieved",
+      "authors": [
+        "J. Mark G. Williams",
+        "Catherine Crane",
+        "Thorsten Barnhofer",
+        "Kate Brennan",
+        "Danielle S. Duggan",
+        "Melanie J. V. Fennell",
+        "Ann Hackmann",
+        "Adele Krusche",
+        "Kate Muse",
+        "Isabelle Rudolf von Rohr",
+        "Dhruvi Shah",
+        "Rebecca S. Crane",
+        "Catrin Eames",
+        "Mariel Jones",
+        "Sholto Radford",
+        "Sarah Silverton",
+        "Yongzhong Sun",
+        "Elaine Weatherley-Jones",
+        "Christopher J. Whitaker",
+        "Daphne Russell",
+        "Ian T. Russell"
+      ],
+      "issued": "2014",
+      "identifiers": {
+        "doi": "10.1037/a0035036",
+        "pmid": "24294837",
+        "pmcid": "PMC3964149"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-08-08T19:29:17+00:00",
+        "sha256": "3bd00dfbd0f0a57c683bcc326f8cf3cd0b590bf5b613add01c7fc4428af6289d",
+        "bytes": 126538,
+        "media_type": "application/xml",
+        "cache_key": ".private-sources/mbct/williams-etal-2014-mbct-dismantling-trial.xml"
       }
     }
   ],
