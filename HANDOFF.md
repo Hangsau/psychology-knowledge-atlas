@@ -159,7 +159,7 @@ completed_items:
   - rebt 的 P2-SC exit-gate empirical_status 覆蓋膨脹已修復並維持 covered：新增 NICE CG31／NCBI Bookshelf 2006 Appendix 18獨立evidence table，將成人OCD的歷史性RET與活性behaviour therapy分開比較（2 studies、n=39；OCD symptoms SMD=0.25, 95% CI -0.38–0.88；irrational beliefs SMD=0.27, 95% CI -0.37–0.90，皆不確定），以及 Gossette／O'Brien 1992成人RET批判回顧的PubMed E-utilities正式摘要（75份outcome reports僅約25%比較有利、行為測量改變很少，並明指前期綜述partisan，但未正式編碼或估計researcher allegiance）。1955 rational therapy、1961 rational emotive therapy與1993 rational emotive behaviour therapy命名階段不互換；一般CBT、Beckian CT、教育REE、sport REBT及泛心理治療allegiance研究不冒充REBT證據，David 2018與Turner 2024既有本體不重算。Elsevier／APA全文付費牆未繞過、ResearchGate出版社預覽未保留，PubMed與PMC瀏覽端reCAPTCHA殼未快取；兩筆新增HTML／XML本體通過題名、內容、假殼與跨包SHA-256檢查，未新增PDF，rebt現有8筆retrieved本體，全集累計424筆
   - existential-psychology 的 P2-SC exit-gate 權利缺陷已修復：Vos、Craig與Cooper 2015 PDF逐頁抽出「This article is intended solely for the personal use of the individual user and is not to be disseminated broadly.」，原332,853-byte本體已刪除、item改標excluded且只保留DOI／PMID引文指標；Europe PMC確認無PMC／OA／PDF，Roehampton僅有摘要後，改以Terao與Satoh 2022之PMC／Europe PMC CC BY完整XML補empirical_status，限定為晚期癌症／安寧照護19項RCT的狹義回顧，不外推至整個存在心理學且不混同人本或正向心理學。替代本體跨包SHA-256零重複，該包仍為5筆retrieved本體
   - transpersonal-psychology 的 P2-SC exit-gate 權利缺陷已修復：Yaden等2017 PDF抽出同一APA個人使用／不得廣泛散布邊註，原880,960-byte本體已刪除、item改標excluded且只保留DOI引文指標；SAGE為restricted access、Europe PMC無紀錄，共同作者Andrew Newberg網站之730,291-byte候選亦掃出同一限制並於系統暫存即刻刪除。改以Kitson等2020之PMC／Europe PMC CC BY完整XML補回self-transcendence構念與方法角色，明定此相鄰研究不等於transpersonal psychology本身；替代本體跨包SHA-256零重複，該包仍為10筆retrieved本體，全集維持424筆
-next_action: 48份來源包已全數 audited；P2-SC exit gate（tools/p2sc_exit_gate.py）已建立並執行，結果 FAIL（14 項）——11 個 covered 但零本體的槽位、3 份 APA 個人使用浮水印 PDF，細節與補救順序見下方 P2-SC EXIT GATE RECORD。補救完成並重跑 gate 至 PASS 前，P2-SC 不得宣告完成
+next_action: P2-SC 已結案。48份來源包全數 audited，exit gate（tools/p2sc_exit_gate.py）建立當下 FAIL（14 項），經 7 次串行修復後重跑為 PASS（failure count 0）；424 筆 retrieved 本體、19 筆 excluded 指標、槽位分布 covered 347／searched_no_qualifying_source 31，347 個 covered 槽全部真有 retrieved item、Stage 7 零浮水印命中。歷程與最終狀態見下方 P2-SC EXIT GATE RECORD。下一 gate 為 P4 views；注意 gate PASS 不建立 searched_no_qualifying_source 與其搜尋的機器連結（見 schema_caveat），該裁決仍只有人工可追溯
 ```
 
 ## P2-SC EXIT GATE RECORD
@@ -167,7 +167,9 @@ next_action: 48份來源包已全數 audited；P2-SC exit gate（tools/p2sc_exit
 ```yaml
 phase: P2-SC
 unit: exit-gate-checker
-status: gate_built_and_failing
+status: gate_passing_after_repair
+status_note: 下方 stages／result／failures_* 各段是 2026-08-09 建閘當下的原始 FAIL 快照，刻意保留不改寫，以免工具存在被讀成當時就通過；補救歷程與最終狀態見末尾 repair_update_* 各行
+final_result: PASS（failure count 0），exit code 0；驗於 2026-08-09 兩份浮水印 PDF 結案後
 tool: tools/p2sc_exit_gate.py
 tool_mode: strictly read-only（不寫、不移動、不刪除任何 pack、快取或紀錄；已 grep 確認無 write_text／open(w)／unlink／rmtree／mkdir／dump）
 run_command: PYTHONIOENCODING=utf-8 python tools/p2sc_exit_gate.py（另有 --json 輸出同內容）
@@ -208,7 +210,8 @@ verification:
   - PYTHONIOENCODING=utf-8 python -m unittest discover -s tests — 77 tests OK（約 130 秒）
   - git diff --check — 無輸出
   - git status --porcelain — 僅本工具為新檔
-next_action: gate 已建立且明確 FAIL，來源資料未被工具或本次紀錄修改。補救分兩單位串行處理，每單位完成後重跑 gate：①11 個 covered 但零本體的槽位（act／constructivist-psychotherapy／dbt／mbct／mbsr／rebt）—— 補齊合格來源，或誠實降級為 searched_no_qualifying_source 並補記搜尋；②3 份 APA 個人使用 PDF —— 依既有先例刪快取、改標 excluded 並寫 rights_note，另尋開放取用替代或官方摘要。兩者皆結案後才可宣告 P2-SC 完成，下一 gate 為 P4 views
+next_action: 原定兩補救單位皆已結案（見 repair_update_* 各行），gate 重跑 PASS，P2-SC 可宣告完成，下一 gate 為 P4 views。補救全程由外部 agent 逐包串行執行、每包完成後由本地重跑 gate 並逐筆核對 SHA-256／位元組／本體題名與權利詞，未以 agent 自述為準
+repair_summary: 14 項 finding 全數 resolved，過程零「為填滿槽位而降級」——11 個空 covered 槽全部補到合格本體，無一降為 searched_no_qualifying_source；3 份浮水印 PDF 全部刪快取改標 excluded，其中 dbt 由 Ramaiya 2017 NIH manuscript、existential-psychology 由 Terao／Satoh 2022、transpersonal-psychology 由 Kitson 等2020 的 PMC CC BY 全文替代。過程另主動排除 4 份新發現的權利受限候選（2017 UMass authorized curriculum guide、Guilford 2013 第二版表單、第三方 Metcalfe PDF、Newberg 站 Yaden 副本），均未快取或即刻刪除，未新增任何浮水印本體。本體數 403→424
 stop_rule: 本工具唯讀；發現失敗不得由工具或自動化改動來源資料，一律回報後停，由人裁決
 repair_update: 2026-08-09 dbt 的3個空 covered 槽與Haft浮水印PDF共4項均已解決；重跑後剩餘10項為 act／constructivist-psychotherapy／mbct／mbsr／rebt 的8個空槽，以及 existential-psychology／transpersonal-psychology 的2份浮水印PDF，失敗清單已無dbt
 repair_update_mbsr: 2026-08-09 mbsr 的theory_methods／current_status／clinical_outcomes三個空 covered 槽均已補上合格本體；重跑後剩餘7項為 act／constructivist-psychotherapy／mbct／rebt 的5個空槽，以及 existential-psychology／transpersonal-psychology 的2份浮水印PDF，失敗清單已無mbsr
