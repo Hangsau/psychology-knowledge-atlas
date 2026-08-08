@@ -26,6 +26,7 @@ tools/store.py           原子寫入與同實體鎖
 tools/build_views.py     由 canonical records 原子重生 indexes 與 reader profiles
 tools/collect_sources.py 選定來源的受限下載、格式檢查與 SHA-256 紀錄
 tools/audit_source_packs.py 48項清單、槽位、路徑與檔案完整性稽核
+tools/p2sc_exit_gate.py  P2-SC 退出閘唯讀檢查器：裁決完整性、搜尋紀錄、槽位／item 一致性、假頁面與權利浮水印、跨包共用本體
 tests/                   邊界、schema、參照、併發、安全測試
 ```
 
@@ -37,6 +38,7 @@ tests/                   邊界、schema、參照、併發、安全測試
 | 新增參考系 | `schemas/reference-system.schema.json` + `schemas/coverage.schema.json`；候選集合必須與裁決集合完全一致 |
 | 新增來源 | `schemas/source.schema.json`；取得狀態不等於證據品質 |
 | 蒐集48項來源 | `research/targets.json` + `research/source-packs/` + `schemas/source-pack.schema.json`；下載不等於已讀 |
+| 檢查 P2-SC 可否結案 | `tools/p2sc_exit_gate.py`（唯讀，含 `--json`）；covered 槽必須真有 retrieved 本體，20 KB 以下本體逐檔解碼、PDF 前三頁掃權利詞；發現失敗由人裁決不得自動改資料 |
 | 新增主張／證據 | claim + evidence schema；locator 與 source access gate |
 | 新增命名效應 | `schemas/entity.schema.json` 的 `phenomenon` contract + `vocabularies/phenomenon-kinds.json`；必須有受控 kind 與可解析 `domain_entity_ids`，名稱本身不得建立 claim |
 | 新增命名現象參考系 | `schemas/reference-system.schema.json` + `vocabularies/reference-system-roles.json`；先判定 canonical taxonomy / specialist index / discovery seed / popular-language inventory |

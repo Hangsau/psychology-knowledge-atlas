@@ -151,7 +151,57 @@ completed_items:
   - BMJ TIDieR PDF下載後查出dated guest-download與「For personal use only」標記，已刪除並改存233,503-byte公開HTML全文；其餘PDF逐檔抽字與權利詞掃描、所有20KB以下E-utilities XML逐一解析，19筆均確認題名／正文或書目實體，無Incapsula、PoW、Angular、reCAPTCHA或cookies-off假頁
   - BCT版本邊界分開記錄：2008的22 techniques＋4 packages、2011的40-item CALO-RE與2013的93-item／16-group BCTTv1不互換；TIDieR 2014明記延伸CONSORT 2010與SPIRIT 2013而非取代或療效證據
   - 目前48/48來源包 audited、累計403筆實際正文／正式書目或摘要頁
-next_action: 48份來源包已全數 audited；執行 P2-SC exit gate，確認48包搜尋與槽位裁決、selected本體MIME／大小／SHA-256／私有快取、失敗與版本邊界，以及validator、完整tests與diff checks
+next_action: 48份來源包已全數 audited；P2-SC exit gate（tools/p2sc_exit_gate.py）已建立並執行，結果 FAIL（14 項）——11 個 covered 但零本體的槽位、3 份 APA 個人使用浮水印 PDF，細節與補救順序見下方 P2-SC EXIT GATE RECORD。補救完成並重跑 gate 至 PASS 前，P2-SC 不得宣告完成
+```
+
+## P2-SC EXIT GATE RECORD
+
+```yaml
+phase: P2-SC
+unit: exit-gate-checker
+status: gate_built_and_failing
+tool: tools/p2sc_exit_gate.py
+tool_mode: strictly read-only（不寫、不移動、不刪除任何 pack、快取或紀錄；已 grep 確認無 write_text／open(w)／unlink／rmtree／mkdir／dump）
+run_command: PYTHONIOENCODING=utf-8 python tools/p2sc_exit_gate.py（另有 --json 輸出同內容）
+stages:
+  - Stage 0 基線稽核：重用 audit_source_packs.audit(require_files=True)，48 包載入、0 錯誤 — PASS
+  - Stage 1 裁決完整性：48/48 包 audited，378/378 槽位為終局狀態（covered 347、searched_no_qualifying_source 31） — PASS
+  - Stage 2 搜尋紀錄：48/48 包有非空 searches[]，109/109 筆條目具備 purpose／queries／system — PASS
+  - Stage 3 槽位與 item 一致性：covered 槽 347 中僅 336 實際持有 retrieved item；31 個 searched_no_qualifying_source 槽全數確為零 retrieved — FAIL（11 項）
+  - Stage 4 失敗顯性化：14/14 個 excluded item 均有非空 rights_note — PASS
+  - Stage 5 宣告大小與 MIME：403/403 筆 retrieved 的磁碟位元組等於 retrieval.bytes，media_type 全非空 — PASS
+  - Stage 6 假頁面偵測：37 筆 20 KB 以下本體全數解碼掃描（incapsula／client challenge／just a moment／checking your browser／cookies turned off／proof of work／enable javascript／ng-app／reCAPTCHA 表單），0 命中；37 筆均逐檔列於報告供人工目視 — PASS
+  - Stage 7 權利浮水印掃描：102 筆 PDF 取前三頁 pypdf 抽字，101 筆可抽字、1 筆列資訊性註記，3 筆命中「not to be disseminated」 — FAIL（3 項）
+  - Stage 8 跨包共用本體：3 組共用 SHA-256／7 筆 item 參照／399 個唯一雜湊，資訊性不判失敗 — PASS
+  - Stage 9 統計：audited_packs 48、retrieved_bodies 403、excluded_items 14、槽位分布 covered 347／searched_no_qualifying_source 31 — PASS
+result: FAIL（failure count 14），exit code 1
+failures_stage3_covered_slot_without_body:
+  - act:identity_history
+  - constructivist-psychotherapy:empirical_status
+  - dbt:theory_methods / dbt:empirical_status / dbt:clinical_outcomes
+  - mbct:theory_methods / mbct:clinical_outcomes
+  - mbsr:theory_methods / mbsr:current_status / mbsr:clinical_outcomes
+  - rebt:empirical_status
+failures_stage7_rights_watermark:
+  - .private-sources/dbt/haft-etal-2022-cultural-dbt.pdf
+  - .private-sources/existential-psychology/vos-craig-cooper-2015-existential-meta-analysis.pdf
+  - .private-sources/transpersonal-psychology/yaden-etal-2017-varieties-self-transcendent-experience.pdf
+  - 三者皆為 APA 標準邊註「This article is intended solely for the personal use of the individual user and is not to be disseminated broadly.」；與 positive-psychology 包既有先例同性質
+informational_shared_bodies:
+  - watson-1913-psychology-behaviorist-views（behaviorism／functionalism／structuralism 三包）
+  - angell-1907-province-functional-psychology（functionalism／structuralism 兩包）
+  - pacja-2014 supportive／Rogerian review（humanistic-psychology／person-centered-therapy 兩包）
+  - 共用本體允許存在但必須被識別，不得當作獨立來源計數
+pdf_extraction_note:
+  - .private-sources/evolutionary-psychology/buss-1995-new-paradigm.pdf 前三頁 pypdf 抽不到文字（舊字型），列資訊性註記不判失敗
+schema_caveat: 槽位只有 description 與 status，searches[] 條目不帶槽位連結，因此 searched_no_qualifying_source 的裁決無法機器追溯到產生它的那次搜尋；gate PASS 不建立此連結，不得被讀成比實際更強的保證。本次不改 schema
+verification:
+  - PYTHONIOENCODING=utf-8 python tools/validate.py — PASS
+  - PYTHONIOENCODING=utf-8 python -m unittest discover -s tests — 77 tests OK（約 130 秒）
+  - git diff --check — 無輸出
+  - git status --porcelain — 僅本工具為新檔
+next_action: gate 已建立且明確 FAIL，來源資料未被工具或本次紀錄修改。補救分兩單位串行處理，每單位完成後重跑 gate：①11 個 covered 但零本體的槽位（act／constructivist-psychotherapy／dbt／mbct／mbsr／rebt）—— 補齊合格來源，或誠實降級為 searched_no_qualifying_source 並補記搜尋；②3 份 APA 個人使用 PDF —— 依既有先例刪快取、改標 excluded 並寫 rights_note，另尋開放取用替代或官方摘要。兩者皆結案後才可宣告 P2-SC 完成，下一 gate 為 P4 views
+stop_rule: 本工具唯讀；發現失敗不得由工具或自動化改動來源資料，一律回報後停，由人裁決
 ```
 
 ## P3-S COMPLETION RECORD
