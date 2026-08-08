@@ -9,8 +9,8 @@ status: in_progress
 base_commit: 593551e
 started_at: 2026-07-28
 objective: 先為原版48項研究目標完成可恢復、可稽核的來源蒐集，再開始閱讀、建立主張或撰寫內容
-active_target: biopsychosocial-model
-remaining_targets: [biopsychosocial-model(46), social-psychology(47), health-psychology(48)]
+active_target: social-psychology
+remaining_targets: [social-psychology(47), health-psychology(48)]
 remaining_notes:
   - 一包一 agent、串行不平行；每包獨立 commit + push 後才派下一包，一個 Sonnet agent 約吃 33% 的 Claude 5H 窗
   - health-psychology(48) 最後跑，且用全新隔離 process；醫療／疾病主題詞密集曾在 psychology-schools 觸發 AUP 假陽性連鎖
@@ -132,7 +132,10 @@ completed_items:
   - CIIS Digital Commons PDF端點對本工作階段所有自動請求均返回JS殼或202空回應；改以ATP archive PDF（Ruzek 2007、Lajoie-Shapiro 1992、Sutich 1969、Ferrer 2014）及Galileo Commission PDF（Walach 2013）替代
   - 10筆取得物通過大小（9KB至881KB）、MIME、SHA-256、題名（pypdf文字提取確認Ruzek 2007 PAGE 1標題）、假頁面與包內重複檢查；共77 unit tests PASS
   - 目前45/48來源包 audited、累計351筆實際正文／正式書目或摘要頁
-next_action: 依 research/targets.json 順序從 biopsychosocial-model 開始，繼續採每批1至2項處理其餘3項，不建立正文。非英語只在原始語言、地方傳統或翻譯／版本差異影響正確性時補，不設配額
+  - biopsychosocial-model 已 audited：9筆正文／正式摘要頁涵蓋7個槽位，包含Bolton與Gillett 2019開放取用專書、Engel 1977 Science與1980 AJP原典（出版社全文付費，改存E-utilities摘要XML並明示不算全文）、Borrell-Carrió等2004方法論、Williamson 2022獨立批判、Bolton 2023實證現況、Tripathi等2019當代精神醫學角色、Leiva-Peña等2021 PAHO三語與De Marco 2006葡語SciELO
+  - 生物心理社會模型（Engel 1977）與WHO-ICF、泛稱holistic care及特定臨床應用保持邊界；De Marco葡語PDF為13頁真實正文，舊字型編碼造成pypdf抽字替換，已記入rights_note
+  - 目前46/48來源包 audited、累計360筆實際正文／正式書目或摘要頁（本行由協調 session 補記，原 commit 76b81dc 只改了 pack 檔）
+next_action: 依 research/targets.json 順序處理 social-psychology(47)，再以隔離 process 處理 health-psychology(48)，不建立正文。非英語只在原始語言、地方傳統或翻譯／版本差異影響正確性時補，不設配額
 ```
 
 ## P3-S COMPLETION RECORD
