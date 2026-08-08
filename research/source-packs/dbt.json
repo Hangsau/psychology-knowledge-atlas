@@ -52,20 +52,78 @@
         "DBT cultural adaptation systematic review"
       ],
       "purpose": "Full-text discovery across programme history, primary trial, methods, independent outcome appraisal, current guidance, harm reporting and cultural adaptation"
+    },
+    {
+      "searched_at": "2026-08-09",
+      "system": "WebSearch / PubMed / PubMed Central / Europe PMC / Guilford Press",
+      "queries": [
+        "dialectical behavior therapy biosocial theory four modes skills modules DBT-A radically open DBT open access review PMC",
+        "site:pmc.ncbi.nlm.nih.gov dialectical behavior therapy review standard treatment modes individual skills phone consultation team biosocial theory",
+        "site:guilford.com Dialectical Behavior Therapy Skills Training Manual Second Edition Linehan 2015 contents",
+        "Application of Dialectical Behaviour Therapy in treating common psychiatric disorders four treatment modes PubMed"
+      ],
+      "purpose": "Re-adjudicate theory_methods with sources that distinguish comprehensive standard DBT from skills training and from adaptations. Selected Guilford's official Chapter 1 sample from Linehan's 2015 second-edition skills manual and the open BMJ protocol that operationalizes standard DBT as four modes and excludes integrative treatments that merely borrow DBT elements. The 1993 main treatment text, the 2015 second-edition skills manual, and the 2025 revised skills manual are separate objects; DBT-A and radically open DBT were searched as named adaptations rather than silently treated as standard adult DBT. Generic CBT and third-wave summaries, ACT, MBCT, MBSR, REBT, commercial coaching, apps, self-help workbooks, and training-provider marketing were excluded."
+    },
+    {
+      "searched_at": "2026-08-09",
+      "system": "WebSearch / JAMA Psychiatry / Cochrane / PubMed / PubMed Central / Europe PMC",
+      "queries": [
+        "dialectical behavior therapy meta-analysis risk of bias allegiance active control methodological limitations open access systematic review",
+        "Cristea Gentili Cotet Palomba Barbui Cuijpers 2017 efficacy psychotherapies borderline personality disorder small effects high quality trials PubMed",
+        "dialectical behavior therapy meta-analysis small effect sizes high risk of bias treatment as usual active control borderline 2017",
+        "Improving methodological quality randomized clinical trials psychotherapy borderline personality disorder researcher allegiance active comparator"
+      ],
+      "purpose": "Re-adjudicate empirical_status by searching adverse methodological findings as deliberately as favourable syntheses. Selected the official PubMed abstract record for Cristea et al. 2017, which directly reports small DBT-inclusive effects, risk-of-bias and publication-bias inflation, manualized or supportive controls, and developer involvement, plus Juul 2022 open full text on comparator specification, researcher allegiance, conflicts of interest, sample size, missing data, harms, and transparent reporting in BPD psychotherapy trials. The 2020 Cochrane review was also located and reports low-certainty DBT estimates, while the pack already contains Kliem et al. 2010; neither generic third-wave evidence nor ACT, MBCT, MBSR, REBT, or undifferentiated CBT findings were used as DBT evidence."
+    },
+    {
+      "searched_at": "2026-08-09",
+      "system": "WebSearch / PubMed / PubMed Central / Europe PMC",
+      "queries": [
+        "dialectical behavior therapy adolescent self-harm suicidal ideation systematic review meta-analysis open access PMC",
+        "Efficacy of dialectical behavior therapy for adolescent self-harm and suicidal ideation PubMed",
+        "dialectical behavior therapy adolescent active supportive control randomized trial self-harm suicide PMC",
+        "dialectical behavior therapy eating disorder substance use adaptation systematic review outcome boundary"
+      ],
+      "purpose": "Re-adjudicate clinical_outcomes with diagnosis, age, target behaviour, and comparator boundaries intact. Selected Kothgassner et al. 2021 for DBT-A in adolescents aged 12-19 with self-harm and suicidal ideation; its controlled estimates are kept separate from its pre-post estimates and from adult BPD symptom claims. McCauley et al. 2018 was located as an active supportive-therapy comparison but was not added separately because it is included in the selected synthesis. Eating-disorder, substance-use, adult BPD, and generic CBT outcomes were searched but not pooled into the adolescent DBT-A claim."
+    },
+    {
+      "searched_at": "2026-08-09",
+      "system": "WebSearch / PubMed / PubMed Central / Europe PMC / Open Science Framework",
+      "queries": [
+        "Cultural adaptations of dialectical behavior therapy systematic review open access Haft 2022 PubMed",
+        "Cultural adaptations of dialectical behavior therapy accepted manuscript repository",
+        "A Cultural Adaptation of Dialectical Behavior Therapy in Nepal PubMed PMC",
+        "dialectical behavior therapy cultural adaptation non-Western open access full text"
+      ],
+      "purpose": "Replace the APA-personal-use Haft et al. publisher PDF with a lawfully retrievable DBT-specific cultural source. No accepted manuscript for Haft et al. was located; its PubMed abstract remains available as a citation pointer, but the selected replacement is the public NIH manuscript of Ramaiya et al. 2017 describing stakeholder interviews, a Nepali clinician workshop, and a small rural pilot. The Europe PMC fullTextXML route for PMC5645023 returned 404, so the complete PMC HTML was used without bypassing any control. A paywalled single-client SAGE case, generic culturally adapted CBT frameworks, commercial institute pages, and general mindfulness material were excluded."
+    },
+    {
+      "searched_at": "2026-08-09",
+      "system": "WebFetch / PubMed / PubMed Central / Europe PMC / Cochrane / local source collector",
+      "queries": [
+        "Psychological therapies for people with borderline personality disorder 2020 Cochrane full review",
+        "PMC9794985 full text Europe PMC XML",
+        "PMC8188531 full text Europe PMC XML",
+        "PMC5645023 full text Europe PMC XML"
+      ],
+      "purpose": "Retrieval and shell-verification round. The Cochrane DOI full-review endpoint returned HTTP 403 and was not bypassed. WebFetch page opens for PMC9794985, PMC4997665, PMC8188531 and PubMed 33875025 or 36167385 exposed reCAPTCHA checking shells; none was cached. The selected Tan, Juul and Kothgassner bodies were instead retrieved as official complete Europe PMC XML. Europe PMC returned 404 for the Ramaiya NIH manuscript, while direct PMC HTML returned 236,777 bytes with the correct title and substantive article text and was retained. The Guilford sample PDF, four XML bodies, one PMC HTML body and the corrected Chapman cache all passed title, size, MIME and challenge checks; the new PDF had no restricted-use watermark phrase in the first three pages or the full 22-page file."
     }
   ],
   "items": [
     {
-      "id": "swales-heard-williams-2000-dbt-overview",
-      "title": "Linehan's Dialectical Behaviour Therapy (DBT) for Borderline Personality Disorder: Overview and Adaptation",
+      "id": "chapman-2006-dbt-current-indications-elements",
+      "title": "Dialectical Behavior Therapy: Current Indications and Unique Elements",
       "slot": "identity_history",
-      "source_kind": "independent_clinical_overview",
+      "source_kind": "independent_clinical_identity_and_method_overview",
       "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2963469/",
       "download_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2963469/",
       "access_status": "open_fulltext",
-      "rights_note": "Open clinical overview; useful for history and treatment structure, not a primary efficacy trial.",
+      "rights_note": "Open PMC clinical overview used for DBT identity, historical placement, and the distinction between comprehensive DBT and its relatively distinctive elements. It is not a primary efficacy trial. This corrects the former pack metadata, which mislabeled the cached PMC2963469 body as a Swales, Heard and Williams 2000 article; the body is Chapman's 2006 article.",
       "status": "retrieved",
-      "issued": "2000",
+      "authors": [
+        "Alexander L. Chapman"
+      ],
+      "issued": "2006",
       "identifiers": {
         "pmcid": "PMC2963469"
       },
@@ -74,7 +132,7 @@
         "sha256": "2e738f50b13d9e2694c9c359a837587984075a061b3f8f2bad9240e0f31dc679",
         "bytes": 134366,
         "media_type": "text/html",
-        "cache_key": ".private-sources/dbt/swales-heard-williams-2000-dbt-overview.html"
+        "cache_key": ".private-sources/dbt/chapman-2006-dbt-current-indications-elements.html"
       }
     },
     {
@@ -101,6 +159,60 @@
       }
     },
     {
+      "id": "linehan-2015-dbt-skills-training-rationale",
+      "title": "Rationale for Dialectical Behavior Therapy Skills Training",
+      "slot": "theory_methods",
+      "source_kind": "official_publisher_sample_chapter_of_second_edition_manual",
+      "landing_url": "https://www.guilford.com/books/DBT-Skills-Training-Manual/Marsha-Linehan/9781462556359/prior-editions",
+      "download_url": "https://www.guilford.com/excerpts/linehan7_old_ch1.pdf?t=1",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Guilford's official public sample of Chapter 1 from the 2015 second edition of DBT Skills Training Manual. The excerpt describes the dialectical basis, comprehensive-treatment modes, skills-training role, and four modules; it is only the publisher-authorized sample chapter, not the complete manual and not outcome evidence. Version boundary: this 2015 skills manual (ISBN 9781462516995) is distinct from Linehan's 1993 Cognitive-Behavioral Treatment of Borderline Personality Disorder main treatment text and from Guilford's 2025 revised skills manual. PDF metadata identifies the sample and all 22 pages were searched for the corpus's six restricted-use watermark phrases with no hits.",
+      "status": "retrieved",
+      "authors": [
+        "Marsha M. Linehan"
+      ],
+      "issued": "2015, second edition",
+      "identifiers": {
+        "isbn13": "9781462516995"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-08-08T18:43:38+00:00",
+        "sha256": "53ace3f1899d0a5de2b5e8b542f0f255a6e326726fa80f7895f38d8ca5f695fc",
+        "bytes": 1155398,
+        "media_type": "application/pdf",
+        "cache_key": ".private-sources/dbt/linehan-2015-dbt-skills-training-rationale.pdf"
+      }
+    },
+    {
+      "id": "tan-mcconnell-barlas-2022-dbt-applications-protocol",
+      "title": "Application of Dialectical Behaviour Therapy in treating common psychiatric disorders: study protocol for a scoping review",
+      "slot": "theory_methods",
+      "source_kind": "open_access_method_and_scope_protocol",
+      "landing_url": "https://pubmed.ncbi.nlm.nih.gov/36167385/",
+      "download_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9516170/fullTextXML",
+      "access_status": "open_fulltext",
+      "rights_note": "CC BY-NC full text retrieved as official Europe PMC XML. The protocol operationalizes standard one-year DBT as individual psychotherapy, group skills training, telephone coaching, and therapist consultation team, and distinguishes changes in modes, length, and modules from treatments that merely incorporate DBT elements. It is a protocol and method-boundary source, not a completed evidence synthesis or outcome verdict; named adaptations require their own evidence.",
+      "status": "retrieved",
+      "authors": [
+        "Michelle Yan Ling Tan",
+        "Bridget McConnell",
+        "Joanna Barlas"
+      ],
+      "issued": "2022",
+      "identifiers": {
+        "doi": "10.1136/bmjopen-2021-058565",
+        "pmid": "36167385",
+        "pmcid": "PMC9516170"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-08-08T18:43:42+00:00",
+        "sha256": "fbe3ab43eb8eb62260f9720191f19e3602248c9e004ca516c8ce3968b1aa7178",
+        "bytes": 146427,
+        "media_type": "application/xml",
+        "cache_key": ".private-sources/dbt/tan-mcconnell-barlas-2022-dbt-applications-protocol.xml"
+      }
+    },
+    {
       "id": "kliem-etal-2010-dbt-meta-analysis",
       "title": "Meta-Analysis and Systematic Review Assessing the Efficacy of Dialectical Behavior Therapy",
       "slot": "independent_critique",
@@ -124,6 +236,64 @@
       }
     },
     {
+      "id": "cristea-etal-2017-bpd-psychotherapies-meta-analysis-record",
+      "title": "Efficacy of Psychotherapies for Borderline Personality Disorder: A Systematic Review and Meta-analysis (abstract record)",
+      "slot": "empirical_status",
+      "source_kind": "official_bibliographic_abstract_record_of_systematic_review_meta_analysis",
+      "landing_url": "https://pubmed.ncbi.nlm.nih.gov/28249086/",
+      "download_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=28249086&retmode=xml",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "NCBI E-utilities abstract record for a 33-trial BPD psychotherapy meta-analysis in which DBT was the best represented approach. The abstract records small effects, moderation by risk of bias, persistent publication bias, and instability at follow-up; the study also coded supportive or manualized controls and treatment-developer involvement. Only the official abstract record is cached, not the JAMA article body, so it is not treated as full text and its BPD-level findings are not generalized to every DBT adaptation or indication.",
+      "status": "retrieved",
+      "authors": [
+        "Ioana A. Cristea",
+        "Claudio Gentili",
+        "Carmen D. Cotet",
+        "Daniela Palomba",
+        "Corrado Barbui",
+        "Pim Cuijpers"
+      ],
+      "issued": "2017",
+      "identifiers": {
+        "doi": "10.1001/jamapsychiatry.2016.4287",
+        "pmid": "28249086"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-08-08T18:43:45+00:00",
+        "sha256": "68c1090efe3853dcf414e87c8fef1a86a0e1109f3330c4ac093d1c463e5130be",
+        "bytes": 10297,
+        "media_type": "text/xml",
+        "cache_key": ".private-sources/dbt/cristea-etal-2017-bpd-psychotherapies-meta-analysis-record.xml"
+      }
+    },
+    {
+      "id": "juul-2022-bpd-psychotherapy-trial-methods",
+      "title": "Improving the methodological quality of randomized clinical trials assessing psychotherapy for borderline personality disorder: Recommendations for the future",
+      "slot": "empirical_status",
+      "source_kind": "open_access_methodological_assessment",
+      "landing_url": "https://pubmed.ncbi.nlm.nih.gov/36590623/",
+      "download_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9794985/fullTextXML",
+      "access_status": "open_fulltext",
+      "rights_note": "CC BY Frontiers full text retrieved as official Europe PMC XML. This methodological assessment covers BPD psychotherapy trials, including DBT but not DBT alone, and addresses adequately powered samples, clear specification of experimental and control interventions, blinded outcome assessment, missing data, harms, researcher allegiance, financial conflicts, publication bias, and protocol transparency. It supplies design limitations rather than an efficacy estimate, and cannot establish that any one treatment is effective or ineffective.",
+      "status": "retrieved",
+      "authors": [
+        "Sophie Juul"
+      ],
+      "issued": "2022",
+      "identifiers": {
+        "doi": "10.3389/fpsyt.2022.1053844",
+        "pmid": "36590623",
+        "pmcid": "PMC9794985"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-08-08T18:43:48+00:00",
+        "sha256": "de9214271b9f034ff0c663ad292bff8ddec9d142dbfa573b19cd19ba772fa811",
+        "bytes": 66325,
+        "media_type": "application/xml",
+        "cache_key": ".private-sources/dbt/juul-2022-bpd-psychotherapy-trial-methods.xml"
+      }
+    },
+    {
       "id": "nice-cg78-bpd-recommendations",
       "title": "Borderline personality disorder: recognition and management — Recommendations",
       "slot": "current_status",
@@ -139,6 +309,38 @@
         "bytes": 77423,
         "media_type": "text/html",
         "cache_key": ".private-sources/dbt/nice-cg78-bpd-recommendations.html"
+      }
+    },
+    {
+      "id": "kothgassner-etal-2021-dbt-a-self-harm-meta-analysis",
+      "title": "Efficacy of dialectical behavior therapy for adolescent self-harm and suicidal ideation: a systematic review and meta-analysis",
+      "slot": "clinical_outcomes",
+      "source_kind": "open_access_systematic_review_and_meta_analysis",
+      "landing_url": "https://pubmed.ncbi.nlm.nih.gov/33875025/",
+      "download_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8188531/fullTextXML",
+      "access_status": "open_fulltext",
+      "rights_note": "CC BY full text retrieved as official Europe PMC XML. This synthesis is restricted to DBT for Adolescents (DBT-A), ages 12-19, and the outcomes self-harm and suicidal ideation. It separates five RCTs and three controlled clinical trials from 13 pre-post evaluations; evidence for adolescent BPD symptoms came only from pre-post data. It is not evidence for adult standard DBT, eating-disorder or substance-use adaptations, or DBT's mindfulness module as a stand-alone programme.",
+      "status": "retrieved",
+      "authors": [
+        "Oswald D. Kothgassner",
+        "Andreas Goreis",
+        "Kealagh Robinson",
+        "Mercedes M. Huscsava",
+        "Christian Schmahl",
+        "Paul L. Plener"
+      ],
+      "issued": "2021",
+      "identifiers": {
+        "doi": "10.1017/S0033291721001355",
+        "pmid": "33875025",
+        "pmcid": "PMC8188531"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-08-08T18:43:52+00:00",
+        "sha256": "b85b17fb2d2432a1444ecfbc0aae2ac749f80337de13dcace9688f2814853edb",
+        "bytes": 124626,
+        "media_type": "application/xml",
+        "cache_key": ".private-sources/dbt/kothgassner-etal-2021-dbt-a-self-harm-meta-analysis.xml"
       }
     },
     {
@@ -170,20 +372,45 @@
       "source_kind": "systematic_review_cultural_adaptation",
       "landing_url": "https://pubmed.ncbi.nlm.nih.gov/35420839/",
       "download_url": "https://www.pdbti.org/wp-content/uploads/2024/10/Cultural-Adaptations-of-Dialectical-Behavior-Therapy-A-Systematic-Review.pdf",
-      "access_status": "publicly_readable_license_unclear",
-      "rights_note": "Public author/institute-hosted copy; cache privately. Review finds adaptation activity but insufficient evidence of superiority over unadapted DBT.",
-      "status": "retrieved",
+      "access_status": "restricted_no_redistribution",
+      "rights_note": "Excluded on rights grounds. The institute-hosted publisher PDF carries the APA sidebar stating that the article is intended solely for the personal use of the individual user and is not to be disseminated broadly. Consistent with this corpus's precedent for personal-use publisher copies, the cached body was deleted and is not retained; the DOI and PMID remain only as citation pointers, and the article is not treated as read. Cultural coverage is instead supplied by the public NIH manuscript of Ramaiya et al. 2017.",
+      "status": "excluded",
       "issued": "2022",
       "identifiers": {
         "doi": "10.1037/ccp0000730",
         "pmid": "35420839"
+      }
+    },
+    {
+      "id": "ramaiya-etal-2017-cultural-dbt-nepal",
+      "title": "A Cultural Adaptation of Dialectical Behavior Therapy in Nepal",
+      "slot": "cultural_language_context",
+      "source_kind": "public_repository_manuscript_cultural_adaptation_study",
+      "landing_url": "https://pubmed.ncbi.nlm.nih.gov/29056846/",
+      "download_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5645023/",
+      "access_status": "repository_manuscript",
+      "rights_note": "Public NIH manuscript in PMC describing a three-stage DBT adaptation in Nepal: interviews with local stakeholders, a workshop with 15 Nepali counselors, and a small pilot with 10 suicidal or self-harming women in one rural district. It documents language, literacy, mind-body concepts, caste representation, delivery, and adherence issues; the exploratory pilot is not a comparative efficacy test and cannot establish transfer to other Nepali populations or cultures. The Europe PMC fullTextXML endpoint returned 404, so the complete real-title PMC HTML was used instead without bypassing access controls.",
+      "status": "retrieved",
+      "authors": [
+        "Megan K. Ramaiya",
+        "Devika Fiorillo",
+        "Upasana Regmi",
+        "Clive J. Robins",
+        "Brandon A. Kohrt"
+      ],
+      "issued": "2017",
+      "identifiers": {
+        "doi": "10.1016/j.cbpra.2016.12.005",
+        "pmid": "29056846",
+        "pmcid": "PMC5645023",
+        "manuscript_id": "NIHMS869210"
       },
       "retrieval": {
-        "retrieved_at": "2026-07-29T23:25:19+00:00",
-        "sha256": "7c2c417cd4844156b64136cb2c575ca4b751297be4d37e8bfef999408d03ab5b",
-        "bytes": 561574,
-        "media_type": "application/pdf",
-        "cache_key": ".private-sources/dbt/haft-etal-2022-cultural-dbt.pdf"
+        "retrieved_at": "2026-08-08T18:43:55+00:00",
+        "sha256": "61a79d35a82424d60598f3d7c99a36c53b7529a72a4a59a9018631f227dec74e",
+        "bytes": 236777,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/dbt/ramaiya-etal-2017-cultural-dbt-nepal.html"
       }
     }
   ],

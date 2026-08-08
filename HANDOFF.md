@@ -151,6 +151,7 @@ completed_items:
   - BMJ TIDieR PDF下載後查出dated guest-download與「For personal use only」標記，已刪除並改存233,503-byte公開HTML全文；其餘PDF逐檔抽字與權利詞掃描、所有20KB以下E-utilities XML逐一解析，19筆均確認題名／正文或書目實體，無Incapsula、PoW、Angular、reCAPTCHA或cookies-off假頁
   - BCT版本邊界分開記錄：2008的22 techniques＋4 packages、2011的40-item CALO-RE與2013的93-item／16-group BCTTv1不互換；TIDieR 2014明記延伸CONSORT 2010與SPIRIT 2013而非取代或療效證據
   - 目前48/48來源包 audited、累計403筆實際正文／正式書目或摘要頁
+  - dbt 的 P2-SC exit-gate 四項缺陷已修復：theory_methods 以 Linehan 2015 第二版 skills manual 官方樣章與 Tan 等2022方法邊界全文補齊，empirical_status 以 Cristea 等2017正式摘要及 Juul 2022方法學全文同時保存小效果、偏差、比較組與 allegiance 限制，clinical_outcomes 以 Kothgassner 等2021 DBT-A青少年自傷／自殺意念meta-analysis限定適應症，cultural_language_context 以 Ramaiya 等2017尼泊爾文化調適NIH manuscript取代；Haft 等2022 APA個人使用浮水印PDF已刪快取並標excluded，另修正PMC2963469由Swales 2000誤標為Chapman 2006。標準DBT、skills-only、DBT-A、RO DBT與ACT／MBCT／MBSR／REBT／泛CBT保持邊界，成人BPD、青少年自傷、飲食疾患與物質使用結果不混用；dbt現有11筆retrieved本體＋1筆excluded指標，6筆新增本體跨包SHA-256零重複
 next_action: 48份來源包已全數 audited；P2-SC exit gate（tools/p2sc_exit_gate.py）已建立並執行，結果 FAIL（14 項）——11 個 covered 但零本體的槽位、3 份 APA 個人使用浮水印 PDF，細節與補救順序見下方 P2-SC EXIT GATE RECORD。補救完成並重跑 gate 至 PASS 前，P2-SC 不得宣告完成
 ```
 
@@ -202,6 +203,7 @@ verification:
   - git status --porcelain — 僅本工具為新檔
 next_action: gate 已建立且明確 FAIL，來源資料未被工具或本次紀錄修改。補救分兩單位串行處理，每單位完成後重跑 gate：①11 個 covered 但零本體的槽位（act／constructivist-psychotherapy／dbt／mbct／mbsr／rebt）—— 補齊合格來源，或誠實降級為 searched_no_qualifying_source 並補記搜尋；②3 份 APA 個人使用 PDF —— 依既有先例刪快取、改標 excluded 並寫 rights_note，另尋開放取用替代或官方摘要。兩者皆結案後才可宣告 P2-SC 完成，下一 gate 為 P4 views
 stop_rule: 本工具唯讀；發現失敗不得由工具或自動化改動來源資料，一律回報後停，由人裁決
+repair_update: 2026-08-09 dbt 的3個空 covered 槽與Haft浮水印PDF共4項均已解決；重跑後剩餘10項為 act／constructivist-psychotherapy／mbct／mbsr／rebt 的8個空槽，以及 existential-psychology／transpersonal-psychology 的2份浮水印PDF，失敗清單已無dbt
 ```
 
 ## P3-S COMPLETION RECORD
