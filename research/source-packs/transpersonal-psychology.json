@@ -92,6 +92,26 @@
         "Banerji 2023 Western Buddhism Transpersonal Psychology Cross-Hermeneutic IJTS CIIS open access"
       ],
       "purpose": "Locate non-English or non-Western cultural context sources. A dedicated Spanish/Portuguese language transpersonal psychology systematic review was not found in accessible open form. Banerji 2023 IJTS 42(2) 'Western Buddhism and Transpersonal Psychology' (CC BY-NC-ND 4.0, CIIS Digital Commons, 203KB PDF) is a scholarly introduction to a special issue examining cross-cultural hermeneutic tensions including concerns about decontextualised Buddhist techniques. Arroisi, Muhsinin and Fadlilah 2024 (IJEIIS 4(1), CC BY-NC 4.0, open access, 303KB PDF) provides a non-Western critique of transpersonal psychology's concept of self-transcendence from an Islamic worldview perspective. Both are selected: the Banerji piece represents East Asian/Buddhist reception; the Arroisi piece represents Islamic non-Western critique. Indigenous spiritual practices of specific peoples and MBSR/MBCT clinical mindfulness are distinct fields and were not conflated with transpersonal psychology."
+    },
+    {
+      "searched_at": "2026-08-09",
+      "system": "WebSearch / Europe PMC / SAGE Journals / author site / ResearchGate",
+      "queries": [
+        "\"The Varieties of Self-Transcendent Experience\" gpr0000102 open access full text",
+        "\"The Varieties of Self-Transcendent Experience\" accepted manuscript repository -ppc.sas.upenn.edu",
+        "site:europepmc.org 10.1037/gpr0000102"
+      ],
+      "purpose": "Recheck the Yaden et al. review for a lawful same-article copy. Europe PMC returned no record and SAGE labels the publisher page restricted access. ResearchGate and an indexed third-party PDF expose the same APA personal-use notice. A 730,291-byte PDF from co-author Andrew Newberg's site (SHA-256 64062fac3ceca72979adef626a8f1b115696fa47e5e1e191681ee80f77f3a337) was downloaded to a temporary directory, scanned, found to carry 'not to be disseminated broadly', and immediately deleted. No qualifying same-article full text was retained."
+    },
+    {
+      "searched_at": "2026-08-09",
+      "system": "WebSearch / PubMed / PubMed Central / Europe PMC / Frontiers",
+      "queries": [
+        "transpersonal psychology empirical review open access self-transcendence measurement systematic review",
+        "site:pmc.ncbi.nlm.nih.gov self-transcendence research evaluation methods review",
+        "\"A Review on Research and Evaluation Methods for Investigating Self-Transcendence\""
+      ],
+      "purpose": "Locate an open replacement for the Yaden review's adjacent construct-and-methods role without equating self-transcendence research with transpersonal psychology as a field. Selected Kitson et al. 2020, a CC BY PubMed Central review of research and evaluation methods for self-transcendence. Nardini-Bubols et al. remains the field-specific systematic-review abstract record."
     }
   ],
   "items": [
@@ -265,9 +285,9 @@
       "source_kind": "peer_reviewed_empirical_review",
       "landing_url": "https://journals.sagepub.com/doi/10.1037/gpr0000102",
       "download_url": "https://ppc.sas.upenn.edu/sites/default/files/transcendentexper.pdf",
-      "access_status": "repository_manuscript",
-      "rights_note": "Author-manuscript PDF on University of Pennsylvania Positive Psychology Center institutional site (860KB). Publisher version is paywalled on SAGE. This review provides an empirical taxonomy of self-transcendent experiences (mindfulness, flow, peak experiences, mystical-type experiences) central to transpersonal psychology's subject matter; it is not itself a transpersonal psychology article but constitutes independent empirical literature directly relevant to the field's core constructs.",
-      "status": "retrieved",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Excluded on rights grounds. The University of Pennsylvania-hosted publisher PDF carries the notice \"This article is intended solely for the personal use of the individual user and is not to be disseminated broadly.\" Consistent with this corpus's precedent for personal-use printouts, the retrieved body was deleted and is not cached; the DOI is kept as a citation pointer only. This record is not treated as full text. Self-transcendent-experience research remains adjacent evidence and must not be conflated with transpersonal psychology as a field.",
+      "status": "excluded",
       "authors": [
         "David Bryce Yaden",
         "Jonathan Haidt",
@@ -278,13 +298,36 @@
       "issued": "2017",
       "identifiers": {
         "doi": "10.1037/gpr0000102"
+      }
+    },
+    {
+      "id": "kitson-etal-2020-self-transcendence-research-methods-review",
+      "title": "A Review on Research and Evaluation Methods for Investigating Self-Transcendence",
+      "slot": "empirical_status",
+      "source_kind": "methodological_review",
+      "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7701337/",
+      "download_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7701337/fullTextXML",
+      "access_status": "open_fulltext",
+      "rights_note": "Open full text via PubMed Central under the Creative Commons Attribution License (CC BY). This review evaluates questionnaires, diaries, interviews, neurological and physiological measures, and behavioral methods used to investigate self-transcendence. It replaces only the excluded Yaden review's adjacent construct-and-methods role: self-transcendence research is not the same object as transpersonal psychology as a field, and this source is not treated as field-specific validation. The Nardini-Bubols systematic-review abstract remains the direct transpersonal-psychotherapy record.",
+      "status": "retrieved",
+      "authors": [
+        "Alexandra Kitson",
+        "Alice Chirico",
+        "Andrea Gaggioli",
+        "Bernhard E. Riecke"
+      ],
+      "issued": "2020",
+      "identifiers": {
+        "doi": "10.3389/fpsyg.2020.547687",
+        "pmid": "33312147",
+        "pmcid": "PMC7701337"
       },
       "retrieval": {
-        "retrieved_at": "2026-08-03T04:22:02+00:00",
-        "sha256": "dc400ffe8294bc3038e57581ef7e7fd437ccb55d6ae1823d3667bc61159565e2",
-        "bytes": 880960,
-        "media_type": "application/pdf",
-        "cache_key": ".private-sources/transpersonal-psychology/yaden-etal-2017-varieties-self-transcendent-experience.pdf"
+        "retrieved_at": "2026-08-08T20:45:11+00:00",
+        "sha256": "80ace9065893a235c1197c1205af33067cc4e64b552c8e4fd0115d2fc89606d0",
+        "bytes": 350192,
+        "media_type": "application/xml",
+        "cache_key": ".private-sources/transpersonal-psychology/kitson-etal-2020-self-transcendence-research-methods-review.xml"
       }
     },
     {
