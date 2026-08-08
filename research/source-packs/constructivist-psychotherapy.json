@@ -52,6 +52,32 @@
         "constructivist psychotherapy safety cultural adaptation"
       ],
       "purpose": "Distinguish the broad constructivist family from personal construct therapy and narrative/dialogical descendants while locating history, programme statements, methods, empirical outcomes, current continuation, safety and cultural boundaries"
+    },
+    {
+      "searched_at": "2026-08-09",
+      "system": "WebSearch / NCBI Bookshelf DARE / CRD / PubMed E-utilities / Crossref / Wiley / NICE / institutional repositories",
+      "queries": [
+        "\"constructivist psychotherapy\" meta-analysis outcome controlled trials",
+        "\"personal construct therapy\" systematic review meta-analysis psychotherapy outcomes",
+        "\"constructivist psychotherapy\" \"systematic review\" outcomes evidence",
+        "\"personal construct psychotherapy\" systematic review meta-analysis 2008..2026",
+        "constructivist psychotherapy randomized controlled trials risk bias allegiance effects",
+        "(\"constructivist psychotherapy\"[Title/Abstract] OR \"personal construct therapy\"[Title/Abstract] OR \"personal construct psychotherapy\"[Title/Abstract]) AND (systematic review[Title/Abstract] OR meta-analysis[Title/Abstract] OR randomized controlled trial[Publication Type])",
+        "Crossref title query: personal construct therapy",
+        "Crossref title query: constructivist psychotherapy"
+      ],
+      "purpose": "Re-adjudicate empirical_status with outcome syntheses and methodological limitations searched as deliberately as favourable findings. Selected the University of York CRD's independent DARE critical abstract of Metcalfe, Winter and Viney's 2007 personal construct psychotherapy review; it reports 27 studies (15 randomized, eight non-randomized controlled and four repeated-measures), a small clinical effect against no treatment, no significant difference from active treatments, and substantial review and study limitations. The publisher-form Metcalfe PDF found on a third-party site displayed 'Downloaded by [Universita Studi la Sapienza]' plus no-redistribution terms and was not cached. Wiley blocked direct access to Holland et al. 2007 with HTTP 403; its official abstract reports 22 controlled PCT studies and weaker efficacy than earlier reviews, while a ResearchGate copy was not treated as redistribution authority. PubMed's synthesis/RCT query returned zero records and broader PubMed and Crossref searches found no newer family-wide synthesis. A 2025 humanistic-psychotherapy allegiance meta-analysis was excluded because it pools constructivist psychotherapy with person-centered, emotion-focused, existential, gestalt and transpersonal approaches and gives no PCT-specific estimate; generic psychotherapy allegiance reviews, NICE's single postpartum relational-constructivist RCT evidence table, the already-held fibromyalgia PCT trial/protocol and dialogical/narrative review, social constructionism, coherence and narrative therapy, education and philosophy, neighbouring atlas therapies, and commercial coaching, self-help or training pages were not allowed to stand for the broad constructivist family. No PCT-specific allegiance-adjusted estimate was located."
+    },
+    {
+      "searched_at": "2026-08-09",
+      "system": "WebFetch / NCBI Bookshelf / Wiley / Taylor & Francis / PsychiatryOnline / local source collector",
+      "queries": [
+        "NCBI Bookshelf NBK74788 DARE critical abstract",
+        "10.1002/jclp.20332 Wiley full text",
+        "10.1080/10503300600755115 repository full text",
+        "personal construct psychotherapy independent guideline evidence table"
+      ],
+      "purpose": "Retrieval and access-verification round. The selected official NCBI Bookshelf DARE HTML retrieved as a 51,110-byte body containing the correct title, CRD summary, 27-study count, active-comparator result and CRD commentary, with no challenge-shell marker; its SHA-256 was unique across all source-pack retrieval metadata. No PDF was added. The third-party Metcalfe publisher PDF was rejected without caching because its visible first-page terms included a named 'Downloaded by' watermark and forbade redistribution. Wiley returned HTTP 403 for Holland et al.; PsychiatryOnline returned HTTP 403 for a suicide-risk review that only included one PCT trial among heterogeneous interventions; Taylor & Francis returned HTTP 403 for a 2026 PCT current-status article; the direct CRD record and the NCBI NICE evidence-table PDF did not open through WebFetch. None was bypassed, and the official NCBI DARE mirror was used for the qualifying critical record. No fake or challenge-shell body was retained."
     }
   ],
   "items": [
@@ -170,6 +196,35 @@
         "bytes": 311824,
         "media_type": "text/html",
         "cache_key": ".private-sources/constructivist-psychotherapy/martinez-etal-2024-dialogical-narrative-review.html"
+      }
+    },
+    {
+      "id": "crd-2009-pct-meta-analysis-critical-abstract",
+      "title": "The effectiveness of personal construct psychotherapy in clinical practice: a systematic review and meta-analysis (DARE critical abstract)",
+      "slot": "empirical_status",
+      "source_kind": "independent_critical_abstract_of_systematic_review_and_meta_analysis",
+      "landing_url": "https://www.ncbi.nlm.nih.gov/books/NBK74788/",
+      "download_url": "https://www.ncbi.nlm.nih.gov/books/NBK74788/",
+      "access_status": "publicly_readable_license_unclear",
+      "rights_note": "Official NCBI Bookshelf copy of the University of York Centre for Reviews and Dissemination's DARE critical abstract, not the publisher article body. It independently cautions that the underlying 2007 review did not formally assess validity, did not predetermine outcomes, left language limits and duplicate study-selection/data-extraction procedures unclear, pooled clinically and statistically heterogeneous studies, and included studies with randomization, allocation-concealment, attrition and intention-to-treat limitations. It records 27 personal construct psychotherapy studies (15 RCTs, eight non-randomized controlled trials and four repeated-measures studies; n=1,511), a small effect in clinical samples against no treatment (d=-0.34, 95% CI -0.55 to -0.13), and no significant difference from active treatments. Most studies came from two research groups; neither the review nor DARE estimated a PCT-specific allegiance effect, so research-group concentration is retained as an independence limitation rather than converted into an allegiance effect. Scope is Kelly-derived personal construct psychotherapy only, not empirical support for constructivist and constructionist psychotherapies as a whole, social constructionism as an epistemology, coherence therapy, narrative therapy, or the separate systems-family-therapy, existential-psychology, humanistic-psychology, person-centered-therapy and cognitive-behavioral-therapy targets. Educational and philosophy-of-science constructivism and commercial coaching, self-help or training claims are outside scope.",
+      "status": "retrieved",
+      "authors": [
+        "Chris Metcalfe",
+        "David A. Winter",
+        "Linda L. Viney"
+      ],
+      "issued": "2009 critical abstract of 2007 review",
+      "identifiers": {
+        "doi": "10.1080/10503300600755115",
+        "dare_accession": "12007002368",
+        "ncbi_bookshelf": "NBK74788"
+      },
+      "retrieval": {
+        "retrieved_at": "2026-08-08T20:01:13+00:00",
+        "sha256": "af82834455191159627278dbddcfd332488d0a12cd9b83797fd682617666ca57",
+        "bytes": 51110,
+        "media_type": "text/html",
+        "cache_key": ".private-sources/constructivist-psychotherapy/crd-2009-pct-meta-analysis-critical-abstract.html"
       }
     },
     {
