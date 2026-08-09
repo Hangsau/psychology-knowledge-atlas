@@ -14,7 +14,7 @@
 6. `P5 cross-project`：D1–D13、細標籤與 evidence-backed relations 對接 religions-history。
 7. `P6 expansion`：門檻通過後才擴展全庫。
 
-## P2-SC：48項來源先行蒐集（進行中）
+## P2-SC：48項來源先行蒐集（完成）
 
 本階段依使用者核准，暫停新增正文與 claims，先完成固定48項研究目標的來源母體。`research/targets.json` 保留原版順序，但明確區分 school、tradition、paradigm、theory、therapy、subfield 與 model；舊庫只提供 identity/order seed，不提供文章、摘要或 verdict。
 
@@ -26,9 +26,15 @@
 
 舊 `psychology-schools` 保留為 legacy archive，不刪除、不改寫歷史。
 
+退出門檻已滿足（2026-08-09）：48/48 來源包 audited，`tools/p2sc_exit_gate.py` 重跑 PASS（failure count 0）。424 筆 retrieved 本體、19 筆 excluded 指標，槽位分布 covered 347／searched_no_qualifying_source 31，347 個 covered 槽全部真有 retrieved item。建閘當下為 FAIL 14 項（11 個 covered 但零本體的槽位、3 份 APA 個人使用浮水印 PDF），經 7 輪串行修復結案；11 個空槽全部補到合格來源、無一靠降級蒙混，3 份浮水印 PDF 全部刪快取改標 excluded 並由開放授權全文替代。完整歷程見 `HANDOFF.md` 的 `P2-SC EXIT GATE RECORD`。
+
+已知門檻限制，不得讀成比實際更強：gate PASS **不**建立 `searched_no_qualifying_source` 與產生它的那次搜尋之間的機器連結（slots 只有 description／status，`searches[]` 不帶槽位連結），該 31 筆裁決仍只有人工可追溯；本階段未改 schema。
+
 ## 即時階段
 
-目前 active gate 是 P2-SC。48項母表與來源包已建立，前42項已完成搜尋、槽位裁決與可取得來源稽核；下一項是 `naikan-therapy`。已下載／正式書目或摘要頁只代表來源蒐集，不代表已讀全文、已驗證或可發布。原 P4-M1 已完成，不再是 active work。
+P2-SC 已於 2026-08-09 結案，目前沒有 active gate；下一個是完整 P4 views，但開工前必須先處理下面的接軌缺口。已下載／正式書目或摘要頁只代表來源蒐集，不代表已讀全文、已驗證或可發布。原 P4-M1 已完成，不再是 active work。
+
+**來源母體與 canonical 層的接軌缺口（開 P4 views 前必讀）**：P2-SC 產出的 419 個唯一 retrieved item id，與 `library/sources` 現有 69 筆 canonical source records **只重疊 5 筆**。canonical 層目前是 claims 146、evidence 146、sources 69、relations 15。也就是說 P2-SC 蓋出的書架幾乎整批還在 `research/` 這個 staging 區，沒有進 canonical。這是階段定義使然而非缺陷（P2-SC 明定只蒐集不讀），但後果是：若直接開 P4 views，能重排的仍只有既有 146 筆 claim，424 筆本體不會參與，view 的覆蓋不會因 P2-SC 而變厚。因此下一個 bounded gate 應優先處理「本體升進 library/sources 並依發布閘門產生 evidence」，而不是先做 view。另註 `relations` 僅 15 筆是全庫最薄一層，而 P5 跨專案對接 religions-history 正依賴 evidence-backed relations。
 
 P1、P1-E、P2-E 與 `P3-S` 均已完成並有可執行退出門檻。四個學派 pilots：`structuralism`、`psychoanalysis`、`cbt`、`indigenous-psychology` 已全部完成。P4-V1 coverage comparison 與 P4-V2 bounded chronology 均已完成；下一個 gate 開始前仍須固定讀者問題、canonical input 集合與退出門檻。
 

@@ -54,6 +54,8 @@ tests/                   邊界、schema、參照、併發、安全測試
 - 舊 48 項不是封閉全集，也不是同一實體類型。
 - 48項在 P2-SC 是固定研究計畫，不是全球心理學全集；不得把 theory、therapy、subfield 或 model 全部改叫 school。
 - `.private-sources/` 只保存研究快取；公開網址不自動代表可散布，權利判定與內容正確性必須分欄記錄。
+- `research/source-packs/` 是 staging 區不是 canonical：P2-SC 的 419 個唯一 retrieved item id 與 `library/sources` 的 69 筆只重疊 5 筆。看到「424 筆本體」不等於 atlas 有 424 筆可用來源；講來源數必須說明是哪一層，且來源包的 item id 不得當 `source_id`。
+- 來源包槽位 `searched_no_qualifying_source` 無法機器追溯到產生它的搜尋（slots 只有 description／status，`searches[]` 不帶槽位連結）。`tools/p2sc_exit_gate.py` PASS 不建立此連結，其 CAVEAT 每次都會印，不得把 PASS 讀成該裁決已被驗證。
 - 舊文章、confidence emoji、`reviewed` 與 `corroborated` 不可繼承。
 - metadata、snippet、abstract 與全文證據必須區分。
 - 同一實體寫入必須取得 lock；禁止直接覆寫 canonical JSON。
